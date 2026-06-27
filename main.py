@@ -1,21 +1,17 @@
 from core.corpus import Corpus
 from analysis.entropy import entropy
 
+
 def main():
     corpus = Corpus()
 
-    print("AncientScriptLab v1.0")
+    print("AncientScriptLab v2.0")
 
-    # ЗАГРУЗКА РОНГО-РОНГО
-    corpus.load_rongorongo("data/raw/rongorongo.txt")
+    test_seq = [1, 2, 2, 3, 3, 3, 4]
 
-    print("Records:", len(corpus.records))
+    print("Test entropy:", entropy(test_seq))
+    print("System ready")
 
-    # ОБЪЕДИНЁННАЯ ПОСЛЕДОВАТЕЛЬНОСТЬ
-    seq = corpus.all_sequences("Rongorongo")
-
-    print("Total symbols:", len(seq))
-    print("Entropy:", entropy(seq))
 
 if __name__ == "__main__":
     main()
