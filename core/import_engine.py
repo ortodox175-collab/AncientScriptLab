@@ -1,6 +1,7 @@
 from core.record import TextRecord
 import json
 
+
 class ImportEngine:
 
     def load_generic_json(self, path, script_name):
