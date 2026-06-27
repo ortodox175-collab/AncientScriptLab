@@ -6,15 +6,16 @@ def main():
 
     print("AncientScriptLab v1.0")
 
-    # ПУСТОЙ СТАРТ
-    print("Initial records:", len(corpus))
+    # ЗАГРУЗКА РОНГО-РОНГО
+    corpus.load_rongorongo("data/raw/rongorongo.txt")
 
-    # ТЕСТ МАТЕМАТИКИ
-    test_seq = [1, 2, 2, 3, 3, 3, 4]
-    print("Test entropy:", entropy(test_seq))
+    print("Records:", len(corpus.records))
 
-    # РОНГО-РОНГО (пока файл НЕ подключён — просто подготовка)
-    print("Rongorongo importer ready")
+    # ОБЪЕДИНЁННАЯ ПОСЛЕДОВАТЕЛЬНОСТЬ
+    seq = corpus.all_sequences("Rongorongo")
+
+    print("Total symbols:", len(seq))
+    print("Entropy:", entropy(seq))
 
 if __name__ == "__main__":
     main()
