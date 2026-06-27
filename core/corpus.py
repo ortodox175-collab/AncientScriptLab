@@ -1,6 +1,7 @@
 from typing import List
 from core.record import TextRecord
-from core.import_rongorongo import load_rongorongo_file
+from core.import_engine import ImportEngine
+
 
 class Corpus:
     def __init__(self):
@@ -9,8 +10,9 @@ class Corpus:
     def add(self, record: TextRecord):
         self.records.append(record)
 
-    def load_rongorongo(self, path: str):
-        records = load_rongorongo_file(path)
+    def load_generic(self, path: str, script_name: str):
+        engine = ImportEngine()
+        records = engine.load_generic_json(path, script_name)
         self.records.extend(records)
 
     def filter(self, script: str):
