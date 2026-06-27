@@ -7,10 +7,15 @@ def main():
 
     print("AncientScriptLab v2.0")
 
-    test_seq = [1, 2, 2, 3, 3, 3, 4]
+    # универсальная загрузка (НЕ rongorongo-specific)
+    corpus.load_generic("data/raw/rongorongo.json", "Rongorongo")
 
-    print("Test entropy:", entropy(test_seq))
-    print("System ready")
+    print("Records:", len(corpus.records))
+
+    seq = corpus.all_sequences("Rongorongo")
+
+    print("Total symbols:", len(seq))
+    print("Entropy:", entropy(seq))
 
 
 if __name__ == "__main__":
