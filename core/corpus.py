@@ -11,8 +11,12 @@ class Corpus:
 
     # текущий рабочий загрузчик ронго-ронго
     def load_rongorongo(self, path: str):
-        records = load_rongorongo_file(path)
-        self.records.extend(records)
+        self.records.extend(load_rongorongo_file(path))
+
+    def load_generic(self, path: str, script_name: str):
+        if script_name == "Rongorongo":
+            return self.load_rongorongo(path)
+        raise ValueError(f"Unsupported script: {script_name}")
 
     # временный универсальный интерфейс (без ломки системы)
     def load_generic(self, path: str, script_name: str):
