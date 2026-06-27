@@ -1,27 +1,36 @@
-from typing import List
 from core.record import TextRecord
-from core.import_engine import ImportEngine
+from core.import_rongorongo import load_rongorongo_file
 
 
 class Corpus:
     def __init__(self):
-        self.records: List[TextRecord] = []
+        self.records = []
 
     def add(self, record: TextRecord):
         self.records.append(record)
 
-    def load_generic(self, path: str, script_name: str):
-        engine = ImportEngine()
-        records = engine.load_generic_json(path, script_name)
+    # текущий рабочий загрузчик ронго-ронго
+    def load_rongorongo(self, path: str):
+        records = load_rongorongo_file(path)
         self.records.extend(records)
 
+    # временный универсальный интерфейс (без ломки системы)
+    def load_generic(self, path: str, script_name: str):
+        if script_name.lower() == "rongorongo":
+            self.load_rongorongo(path)
+        else:
+            raise NotImplementedError(
+                f"Script '{script_name}' not supported yet in current pipeline"
+            )
+
     def filter(self, script: str):
-        return [r for r in self.records if r.script == script]
+        return [r for r in self.records if getattr(r, "script", script) == script]
 
     def all_sequences(self, script: str):
         seq = []
-        for r in self.filter(script):
-            seq.extend(r.sequence)
+        for r in self.records:
+            if getattr(r, "script", script) == script:
+                seq.extend(r.sequence)
         return seq
 
     def __len__(self):
