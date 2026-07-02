@@ -1,0 +1,97 @@
+version: "1.0"
+
+metadata:
+  project: AncientScriptLab
+  registry: Feature Registry
+  status: Draft
+  description: >
+    Machine-readable registry of all measurable features used by
+    AncientScriptLab.
+
+categories:
+
+  G:
+    name: Geometry
+    description: Geometric properties measured directly from sign images.
+
+  T:
+    name: Topology
+    description: Topological descriptors.
+
+  S:
+    name: Skeleton
+    description: Skeleton graph descriptors.
+
+  C:
+    name: Contour
+    description: Contour-based descriptors.
+
+  Y:
+    name: Symmetry
+    description: Symmetry descriptors.
+
+  V:
+    name: Vision
+    description: Computer vision descriptors.
+
+  X:
+    name: Corpus
+    description: Statistical corpus descriptors.
+
+  P:
+    name: Statistical
+    description: Statistical feature descriptors.
+
+  E:
+    name: Experimental
+    description: Experimental features.
+
+features:
+
+  - id: G-001
+
+    internal_name: geometry.bounding_box.width
+
+    name: Bounding Box Width
+
+    short_name: Width
+
+    category: G
+
+    origin: Image
+
+    computation_level: 1
+
+    algorithm: bounding_box_width
+
+    input:
+      - binary_image
+
+    output:
+      type: float
+
+    units:
+      raw: pixel
+
+    normalization:
+      allowed:
+        - none
+        - image_width
+        - bounding_box
+
+    deterministic: true
+
+    dependencies: []
+
+    invariance:
+      translation: true
+      rotation: false
+      mirror: true
+      scale: false
+
+    complexity: O(n)
+
+    scientific_status: Established
+
+    maturity: Draft
+

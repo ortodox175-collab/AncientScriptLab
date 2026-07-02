@@ -1,0 +1,10 @@
+{
+    "mahadevan1977": {
+        "version": "1977",
+        "source": "TBD",
+        "parser": "import_mahadevan",
+        "filename": "mahadevan.txt",
+        "sha256": "",
+        "description": "Canonical Indus corpus"
+    }
+}

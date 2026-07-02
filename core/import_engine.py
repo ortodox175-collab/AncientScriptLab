@@ -1,23 +1,78 @@
+from pathlib import Path
+
 from core.record import TextRecord
-import json
 
 
 class ImportEngine:
+    """
+    Universal Import Engine
+    AncientScriptLab v8
+    """
 
-    def load_generic_json(self, path, script_name):
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+    @staticmethod
+    def load_unicode_file(
+        path,
+        script="Unknown",
+        text_id=None,
+        metadata=None,
+        encoding="utf-8"
+    ):
 
-        records = []
+        path = Path(path)
 
-        for item in data:
-            records.append(
-                TextRecord(
-                    script=script_name,
-                    text_id=item["text_id"],
-                    sequence=item["sequence"],
-                    metadata=item.get("metadata", {})
-                )
-            )
+        if text_id is None:
+            text_id = path.stem
 
-        return records
+        if metadata is None:
+            metadata = {}
+
+        text = path.read_text(
+            encoding=encoding
+        )
+
+        sequence = [ord(ch) for ch in text]
+
+        return TextRecord(
+            script=script,
+            text_id=text_id,
+            sequence=sequence,
+            metadata=metadata,
+            source=str(path),
+            corpus=script,
+            version="v8",
+            encoding="unicode",
+        )
+
+    @staticmethod
+    def load_numeric_file(
+        path,
+        script="Unknown",
+        separator=" "
+    ):
+
+        path = Path(path)
+
+        data = path.read_text(
+            encoding="utf-8"
+        ).split(separator)
+
+        sequence = []
+
+        for x in data:
+
+            x = x.strip()
+
+            if x == "":
+                continue
+
+            sequence.append(int(x))
+
+        return TextRecord(
+            script=script,
+            text_id=path.stem,
+            sequence=sequence,
+            source=str(path),
+            corpus=script,
+            version="v8",
+            encoding="numeric",
+        )

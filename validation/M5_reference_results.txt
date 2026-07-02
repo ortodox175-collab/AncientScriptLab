@@ -1,0 +1,64 @@
+==============================================================================================================
+AncientScriptLab Geometry Validation
+==============================================================================================================
+
+001_square.png
+  Width       : 40.0
+  Height      : 40.0
+  BBoxArea    : 1600.0
+  Foreground  : 1600.0
+  Perimeter   : 156.0
+  Aspect      : 1.0
+  Extent      : 1.0
+  CentroidX   : 49.5
+  CentroidY   : 49.5
+  Compactness : 0.7853981633974482
+
+002_rectangle.png
+  Width       : 60.0
+  Height      : 50.0
+  BBoxArea    : 3000.0
+  Foreground  : 3000.0
+  Perimeter   : 216.0
+  Aspect      : 1.2
+  Extent      : 1.0
+  CentroidX   : 49.5
+  CentroidY   : 49.5
+  Compactness : 0.7786646400487047
+
+003_circle.png
+  Width       : 41.0
+  Height      : 41.0
+  BBoxArea    : 1681.0
+  Foreground  : 1257.0
+  Perimeter   : 131.88224983215332
+  Aspect      : 1.0
+  Extent      : 0.7477691850089233
+  CentroidX   : 50.0
+  CentroidY   : 50.0
+  Compactness : 0.8669986383319356
+
+004_triangle.png
+  Width       : 61.0
+  Height      : 61.0
+  BBoxArea    : 3721.0
+  Foreground  : 1891.0
+  Perimeter   : 204.85281229019165
+  Aspect      : 1.0
+  Extent      : 0.5081967213114754
+  CentroidX   : 49.75409836065574
+  CentroidY   : 60.0
+  Compactness : 0.5390120920947209
+
+005_cross.png
+  Width       : 60.0
+  Height      : 60.0
+  BBoxArea    : 3600.0
+  Foreground  : 1100.0
+  Perimeter   : 233.65685415267944
+  Aspect      : 1.0
+  Extent      : 0.3055555555555556
+  CentroidX   : 49.5
+  CentroidY   : 49.5
+  Compactness : 0.2262592438203752
+

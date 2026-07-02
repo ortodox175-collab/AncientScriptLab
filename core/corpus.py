@@ -1,41 +1,84 @@
 from core.record import TextRecord
-from core.import_rongorongo import load_rongorongo_file
+from core.import_engine import ImportEngine
 
 
 class Corpus:
+    """
+    Universal corpus container.
+
+    AncientScriptLab v8
+    """
+
     def __init__(self):
+
         self.records = []
 
+    # ---------------------------------------------
+
     def add(self, record: TextRecord):
+
         self.records.append(record)
 
-    # текущий рабочий загрузчик ронго-ронго
-    def load_rongorongo(self, path: str):
-        self.records.extend(load_rongorongo_file(path))
+    # ---------------------------------------------
 
-    def load_generic(self, path: str, script_name: str):
-        if script_name == "Rongorongo":
-            return self.load_rongorongo(path)
-        raise ValueError(f"Unsupported script: {script_name}")
+    def extend(self, records):
 
-    # временный универсальный интерфейс (без ломки системы)
-    def load_generic(self, path: str, script_name: str):
-        if script_name.lower() == "rongorongo":
-            self.load_rongorongo(path)
-        else:
-            raise NotImplementedError(
-                f"Script '{script_name}' not supported yet in current pipeline"
-            )
+        self.records.extend(records)
 
-    def filter(self, script: str):
-        return [r for r in self.records if getattr(r, "script", script) == script]
+    # ---------------------------------------------
 
-    def all_sequences(self, script: str):
-        seq = []
-        for r in self.records:
-            if getattr(r, "script", script) == script:
-                seq.extend(r.sequence)
-        return seq
+    def clear(self):
+
+        self.records.clear()
+
+    # ---------------------------------------------
+
+    def load_unicode(
+        self,
+        path,
+        script="Unknown"
+    ):
+
+        record = ImportEngine.load_unicode_file(
+            path=path,
+            script=script
+        )
+
+        self.add(record)
+
+        return record
+
+    # ---------------------------------------------
+
+    def load_numeric(
+        self,
+        path,
+        script="Unknown",
+        separator=" "
+    ):
+
+        record = ImportEngine.load_numeric_file(
+            path=path,
+            script=script,
+            separator=separator
+        )
+
+        self.add(record)
+
+        return record
+
+    # ---------------------------------------------
+
+    def summary(self):
+
+        return {
+            "records": len(self.records),
+            "symbols": sum(len(r) for r in self.records)
+        }
+
+    # ---------------------------------------------
 
     def __len__(self):
+
         return len(self.records)
+
