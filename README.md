@@ -20,6 +20,24 @@ the system asks:
 
 ---
 
+# Project Foundations
+
+Before contributing to AncientScriptLab, every developer and AI assistant should first read the following documents.
+
+These documents define the philosophy, engineering principles and architectural rules of the project.
+
+1. PROJECT_PHILOSOPHY.md
+
+2. DEVELOPMENT_PRINCIPLES.md
+
+3. docs/ARCHITECTURE_OVERVIEW.md
+
+4. docs/DEPENDENCY_RULES.md
+
+Understanding these documents is considered a prerequisite for making architectural or implementation decisions.
+
+---
+
 # Project Goal
 
 The long-term goal of AncientScriptLab is to build a reproducible and explainable computational framework capable of assisting in the decipherment of unknown writing systems.
@@ -89,13 +107,14 @@ Current implementation includes:
 
 - Execution Engine
 - Algorithm Registry
-- Context System
-- Feature Vector Framework
-- Geometry Feature Pack
+- Feature Context
+- Feature Vector
+- Feature Packs
+- Normalization Framework
 - Comparison Framework
 - Statistics Framework
-- Normalization Framework
-- Validation Tools
+- Experiment Framework
+- Validation Framework
 
 The platform is under active scientific development.
 
@@ -105,12 +124,23 @@ The platform is under active scientific development.
 
 AncientScriptLab is governed by the following documents.
 
+## Foundation
+
 - README.md
-- ROADMAP.md
+- docs/PROJECT_PHILOSOPHY.md
 - DEVELOPMENT_PRINCIPLES.md
-- RESEARCH_RULES.md
+- docs/ARCHITECTURE_OVERVIEW.md
+- docs/DEPENDENCY_RULES.md
+
+## Planning
+
+- ROADMAP.md
 - PROJECT_STATE.md
 - BACKLOG.md
+
+## Research
+
+- RESEARCH_RULES.md
 
 Together these documents define both the engineering process and the scientific methodology of the project.
 
@@ -123,3 +153,4 @@ The ultimate objective is to create a universal scientific platform capable of a
 AncientScriptLab should become a research instrument that enables scholars to move from images of ancient symbols to mathematically supported hypotheses about their structure, relationships and possible meanings.
 
 The final goal is not automatic translation, but scientifically justified decipherment supported by objective computational evidence.
+
