@@ -60,3 +60,7 @@ Thumbs.db
 *.tmp
 *.bak
 
+
+# Local full backups
+AncientScriptLab_FULL_2026-08-07.tar.gz
+AncientScriptLab_2026-08-03_FULL.tar.gz

@@ -1,0 +1,12 @@
+{
+  "corpus": "egyptian",
+  "identifier_column": "image_id",
+  "tokens": 1072,
+  "unique_signs": 1072,
+  "frequency_entropy": 10.06608919045772,
+  "top10_coverage": 0.009328358208955223,
+  "top20_coverage": 0.018656716417910446,
+  "rare_sign_ratio": 1.0,
+  "hapax_legomena": 1072,
+  "gini_coefficient": 0.0
+}

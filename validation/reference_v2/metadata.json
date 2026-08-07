@@ -1,0 +1,52 @@
+{
+  "square": {
+    "components": 1,
+    "holes": 0,
+    "euler": 1
+  },
+  "two_squares": {
+    "components": 2,
+    "holes": 0,
+    "euler": 2
+  },
+  "three_squares": {
+    "components": 3,
+    "holes": 0,
+    "euler": 3
+  },
+  "ring": {
+    "components": 1,
+    "holes": 1,
+    "euler": 0
+  },
+  "square_hole": {
+    "components": 1,
+    "holes": 1,
+    "euler": 0
+  },
+  "three_rings": {
+    "components": 3,
+    "holes": 3,
+    "euler": 0
+  },
+  "bridge": {
+    "components": 1,
+    "holes": 0,
+    "euler": 1
+  },
+  "diagonal_contact": {
+    "components": 1,
+    "holes": 0,
+    "euler": 1
+  },
+  "nested_rings": {
+    "components": 2,
+    "holes": 2,
+    "euler": 0
+  },
+  "double_hole_component": {
+    "components": 1,
+    "holes": 2,
+    "euler": -1
+  }
+}

@@ -175,5 +175,25 @@ Known Critical Architectural Debt:
 
 None
 
-Future development should focus on scientific validation and expansion rather than architectural redesign.
+Future development should focus on scientific validation and expansion rather than architectural redesign.\n\n---\n## Corpus Diagnostics Layer (уровень диагностики корпуса)
 
+Назначение слоя:
+
+оценка вероятности того, что исследуемый корпус является письменной системой.
+
+Используемые группы признаков:
+
+- частотное распределение;
+- энтропия;
+- условная энтропия;
+- повторяемость последовательностей;
+- позиционные ограничения;
+- графовая структура;
+- масштабная устойчивость;
+- архитектурная согласованность знаков (GSS).
+
+Выход слоя:
+
+- индекс системности корпуса;
+- вероятностная оценка письменной системы;
+- отчёт о структурных ограничениях корпуса.\n

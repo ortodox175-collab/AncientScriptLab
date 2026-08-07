@@ -1,0 +1,14 @@
+{
+  "corpus": "example",
+  "inscriptions": 2,
+  "mean_length": 4.5,
+  "median_length": 4.5,
+  "min_length": 4,
+  "max_length": 5,
+  "mean_lexical_diversity": 0.9,
+  "median_lexical_diversity": 0.9,
+  "mean_inscription_entropy": 1.9609640474436811,
+  "median_inscription_entropy": 1.9609640474436811,
+  "mean_repeat_density": 0.1,
+  "median_repeat_density": 0.1
+}

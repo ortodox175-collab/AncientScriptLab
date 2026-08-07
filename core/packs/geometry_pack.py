@@ -1,36 +1,60 @@
 """
 AncientScriptLab
 
-Geometry Pack
+Geometry Feature Pack
+
+M7 compatibility layer
 """
 
 from __future__ import annotations
 
-from core.algorithms.geometry.bounding_box_width import ALGORITHM as WIDTH
-from core.algorithms.geometry.bounding_box_height import ALGORITHM as HEIGHT
-from core.algorithms.geometry.bounding_box_area import ALGORITHM as BOX_AREA
-from core.algorithms.geometry.foreground_area import ALGORITHM as FG_AREA
-from core.algorithms.geometry.perimeter import ALGORITHM as PERIMETER
-from core.algorithms.geometry.aspect_ratio import ALGORITHM as ASPECT_RATIO
-from core.algorithms.geometry.extent import ALGORITHM as EXTENT
-from core.algorithms.geometry.centroid_x import ALGORITHM as CENTROID_X
-from core.algorithms.geometry.centroid_y import ALGORITHM as CENTROID_Y
-from core.algorithms.geometry.compactness import ALGORITHM as COMPACTNESS
+from typing import Dict
+
+from core.execution.algorithm import Algorithm
 
 
 class GeometryPack:
+    """
+    Geometry pack using legacy Algorithm interface.
+    """
 
-    @staticmethod
-    def register_all(registry):
+    def __init__(self) -> None:
 
-        registry.register(WIDTH)
-        registry.register(HEIGHT)
-        registry.register(BOX_AREA)
-        registry.register(FG_AREA)
-        registry.register(PERIMETER)
-        registry.register(ASPECT_RATIO)
-        registry.register(EXTENT)
-        registry.register(CENTROID_X)
-        registry.register(CENTROID_Y)
-        registry.register(COMPACTNESS)
+        self._features: Dict[str, Algorithm] = {}
 
+        self._features["aspect_ratio"] = Algorithm(
+            name="aspect_ratio",
+            title="Aspect Ratio",
+            version="1.0",
+            author="AncientScriptLab",
+            features=("G-006",),
+            implementation=self._aspect_ratio,
+        )
+
+    # ---------------------------------------------
+    # Feature implementation
+    # ---------------------------------------------
+
+    def _aspect_ratio(self, context) -> float:
+
+        bbox = context.bounding_box
+
+        if bbox.height == 0:
+            return 0.0
+
+        return float(bbox.width / bbox.height)
+
+    # ---------------------------------------------
+    # API
+    # ---------------------------------------------
+
+    def get(self, name: str):
+
+        if name not in self._features:
+            raise KeyError(f"Geometry feature not found: {name}")
+
+        return self._features[name]
+
+    def list_features(self):
+
+        return list(self._features.keys())

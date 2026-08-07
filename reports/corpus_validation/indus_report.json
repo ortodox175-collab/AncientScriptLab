@@ -1,0 +1,76 @@
+{
+    "corpus": "Indus Script",
+    "images": 1446,
+    "features": {
+        "topology.connected_components": {
+            "count": 1446,
+            "mean": 1.5829875518672198,
+            "std": 1.3079027518972597,
+            "min": 1.0,
+            "max": 10.0
+        },
+        "topology.hole_count": {
+            "count": 1446,
+            "mean": 2.6894882434301524,
+            "std": 1.9727711167756008,
+            "min": 1.0,
+            "max": 13.0
+        },
+        "topology.euler_characteristic": {
+            "count": 1446,
+            "mean": -1.1065006915629323,
+            "std": 2.633122209111926,
+            "min": -12.0,
+            "max": 9.0
+        },
+        "topology.largest_component_area": {
+            "count": 1446,
+            "mean": 3647.875518672199,
+            "std": 195.79379094033877,
+            "min": 2492.0,
+            "max": 4014.0
+        },
+        "topology.smallest_component_area": {
+            "count": 1446,
+            "mean": 2671.2392807745505,
+            "std": 1641.6557882141665,
+            "min": 1.0,
+            "max": 4014.0
+        },
+        "topology.mean_component_area": {
+            "count": 1446,
+            "mean": 3066.3629349711305,
+            "std": 1052.4552274154335,
+            "min": 337.5,
+            "max": 4014.0
+        },
+        "topology.component_area_ratio": {
+            "count": 1446,
+            "mean": 0.9867469330782067,
+            "std": 0.03005147462699772,
+            "min": 0.8139600337742753,
+            "max": 1.0
+        },
+        "topology.total_foreground_area": {
+            "count": 1446,
+            "mean": 3696.0414937759338,
+            "std": 145.78407627426492,
+            "min": 2972.0,
+            "max": 4014.0
+        },
+        "topology.component_density": {
+            "count": 1446,
+            "mean": 0.00038647157028008297,
+            "std": 0.0003193121952874169,
+            "min": 0.000244140625,
+            "max": 0.00244140625
+        },
+        "topology.foreground_density": {
+            "count": 1446,
+            "mean": 0.9023538803163901,
+            "std": 0.03559181549664671,
+            "min": 0.7255859375,
+            "max": 0.97998046875
+        }
+    }
+}

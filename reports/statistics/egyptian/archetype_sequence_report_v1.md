@@ -1,0 +1,1 @@
+# Archetype sequence report v1.0\n\nInscriptions: 2\n\n## Macro distribution\n\n

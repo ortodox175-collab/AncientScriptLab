@@ -1,0 +1,67 @@
+{
+  "module": "M11.1A Archetype Sequence Mapping",
+  "inscriptions": 2,
+  "macro_distribution": {},
+  "meso_distribution": {},
+  "micro_distribution": {},
+  "archetype_sequences": [
+    {
+      "id": "I001",
+      "sign_sequence": [
+        "A12",
+        "D36",
+        "G17",
+        "N5"
+      ],
+      "macro_sequence": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "meso_sequence": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "micro_sequence": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "I002",
+      "sign_sequence": [
+        "D36",
+        "G17",
+        "A12",
+        "A12",
+        "N5"
+      ],
+      "macro_sequence": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "meso_sequence": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "micro_sequence": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5365 @@
+{
+  "module": "M10.3A Gardiner Sign Registry",
+  "registry": [
+    {
+      "image_id": "hiero_0000",
+      "gardiner_code": null,
+      "filename": "hiero_0000.png"
+    },
+    {
+      "image_id": "hiero_0001",
+      "gardiner_code": null,
+      "filename": "hiero_0001.png"
+    },
+    {
+      "image_id": "hiero_0002",
+      "gardiner_code": null,
+      "filename": "hiero_0002.png"
+    },
+    {
+      "image_id": "hiero_0003",
+      "gardiner_code": null,
+      "filename": "hiero_0003.png"
+    },
+    {
+      "image_id": "hiero_0004",
+      "gardiner_code": null,
+      "filename": "hiero_0004.png"
+    },
+    {
+      "image_id": "hiero_0005",
+      "gardiner_code": null,
+      "filename": "hiero_0005.png"
+    },
+    {
+      "image_id": "hiero_0006",
+      "gardiner_code": null,
+      "filename": "hiero_0006.png"
+    },
+    {
+      "image_id": "hiero_0007",
+      "gardiner_code": null,
+      "filename": "hiero_0007.png"
+    },
+    {
+      "image_id": "hiero_0008",
+      "gardiner_code": null,
+      "filename": "hiero_0008.png"
+    },
+    {
+      "image_id": "hiero_0009",
+      "gardiner_code": null,
+      "filename": "hiero_0009.png"
+    },
+    {
+      "image_id": "hiero_0010",
+      "gardiner_code": null,
+      "filename": "hiero_0010.png"
+    },
+    {
+      "image_id": "hiero_0011",
+      "gardiner_code": null,
+      "filename": "hiero_0011.png"
+    },
+    {
+      "image_id": "hiero_0012",
+      "gardiner_code": null,
+      "filename": "hiero_0012.png"
+    },
+    {
+      "image_id": "hiero_0013",
+      "gardiner_code": null,
+      "filename": "hiero_0013.png"
+    },
+    {
+      "image_id": "hiero_0014",
+      "gardiner_code": null,
+      "filename": "hiero_0014.png"
+    },
+    {
+      "image_id": "hiero_0015",
+      "gardiner_code": null,
+      "filename": "hiero_0015.png"
+    },
+    {
+      "image_id": "hiero_0016",
+      "gardiner_code": null,
+      "filename": "hiero_0016.png"
+    },
+    {
+      "image_id": "hiero_0017",
+      "gardiner_code": null,
+      "filename": "hiero_0017.png"
+    },
+    {
+      "image_id": "hiero_0018",
+      "gardiner_code": null,
+      "filename": "hiero_0018.png"
+    },
+    {
+      "image_id": "hiero_0019",
+      "gardiner_code": null,
+      "filename": "hiero_0019.png"
+    },
+    {
+      "image_id": "hiero_0020",
+      "gardiner_code": null,
+      "filename": "hiero_0020.png"
+    },
+    {
+      "image_id": "hiero_0021",
+      "gardiner_code": null,
+      "filename": "hiero_0021.png"
+    },
+    {
+      "image_id": "hiero_0022",
+      "gardiner_code": null,
+      "filename": "hiero_0022.png"
+    },
+    {
+      "image_id": "hiero_0023",
+      "gardiner_code": null,
+      "filename": "hiero_0023.png"
+    },
+    {
+      "image_id": "hiero_0024",
+      "gardiner_code": null,
+      "filename": "hiero_0024.png"
+    },
+    {
+      "image_id": "hiero_0025",
+      "gardiner_code": null,
+      "filename": "hiero_0025.png"
+    },
+    {
+      "image_id": "hiero_0026",
+      "gardiner_code": null,
+      "filename": "hiero_0026.png"
+    },
+    {
+      "image_id": "hiero_0027",
+      "gardiner_code": null,
+      "filename": "hiero_0027.png"
+    },
+    {
+      "image_id": "hiero_0028",
+      "gardiner_code": null,
+      "filename": "hiero_0028.png"
+    },
+    {
+      "image_id": "hiero_0029",
+      "gardiner_code": null,
+      "filename": "hiero_0029.png"
+    },
+    {
+      "image_id": "hiero_0030",
+      "gardiner_code": null,
+      "filename": "hiero_0030.png"
+    },
+    {
+      "image_id": "hiero_0031",
+      "gardiner_code": null,
+      "filename": "hiero_0031.png"
+    },
+    {
+      "image_id": "hiero_0032",
+      "gardiner_code": null,
+      "filename": "hiero_0032.png"
+    },
+    {
+      "image_id": "hiero_0033",
+      "gardiner_code": null,
+      "filename": "hiero_0033.png"
+    },
+    {
+      "image_id": "hiero_0034",
+      "gardiner_code": null,
+      "filename": "hiero_0034.png"
+    },
+    {
+      "image_id": "hiero_0035",
+      "gardiner_code": null,
+      "filename": "hiero_0035.png"
+    },
+    {
+      "image_id": "hiero_0036",
+      "gardiner_code": null,
+      "filename": "hiero_0036.png"
+    },
+    {
+      "image_id": "hiero_0037",
+      "gardiner_code": null,
+      "filename": "hiero_0037.png"
+    },
+    {
+      "image_id": "hiero_0038",
+      "gardiner_code": null,
+      "filename": "hiero_0038.png"
+    },
+    {
+      "image_id": "hiero_0039",
+      "gardiner_code": null,
+      "filename": "hiero_0039.png"
+    },
+    {
+      "image_id": "hiero_0040",
+      "gardiner_code": null,
+      "filename": "hiero_0040.png"
+    },
+    {
+      "image_id": "hiero_0041",
+      "gardiner_code": null,
+      "filename": "hiero_0041.png"
+    },
+    {
+      "image_id": "hiero_0042",
+      "gardiner_code": null,
+      "filename": "hiero_0042.png"
+    },
+    {
+      "image_id": "hiero_0043",
+      "gardiner_code": null,
+      "filename": "hiero_0043.png"
+    },
+    {
+      "image_id": "hiero_0044",
+      "gardiner_code": null,
+      "filename": "hiero_0044.png"
+    },
+    {
+      "image_id": "hiero_0045",
+      "gardiner_code": null,
+      "filename": "hiero_0045.png"
+    },
+    {
+      "image_id": "hiero_0046",
+      "gardiner_code": null,
+      "filename": "hiero_0046.png"
+    },
+    {
+      "image_id": "hiero_0047",
+      "gardiner_code": null,
+      "filename": "hiero_0047.png"
+    },
+    {
+      "image_id": "hiero_0048",
+      "gardiner_code": null,
+      "filename": "hiero_0048.png"
+    },
+    {
+      "image_id": "hiero_0049",
+      "gardiner_code": null,
+      "filename": "hiero_0049.png"
+    },
+    {
+      "image_id": "hiero_0050",
+      "gardiner_code": null,
+      "filename": "hiero_0050.png"
+    },
+    {
+      "image_id": "hiero_0051",
+      "gardiner_code": null,
+      "filename": "hiero_0051.png"
+    },
+    {
+      "image_id": "hiero_0052",
+      "gardiner_code": null,
+      "filename": "hiero_0052.png"
+    },
+    {
+      "image_id": "hiero_0053",
+      "gardiner_code": null,
+      "filename": "hiero_0053.png"
+    },
+    {
+      "image_id": "hiero_0054",
+      "gardiner_code": null,
+      "filename": "hiero_0054.png"
+    },
+    {
+      "image_id": "hiero_0055",
+      "gardiner_code": null,
+      "filename": "hiero_0055.png"
+    },
+    {
+      "image_id": "hiero_0056",
+      "gardiner_code": null,
+      "filename": "hiero_0056.png"
+    },
+    {
+      "image_id": "hiero_0057",
+      "gardiner_code": null,
+      "filename": "hiero_0057.png"
+    },
+    {
+      "image_id": "hiero_0058",
+      "gardiner_code": null,
+      "filename": "hiero_0058.png"
+    },
+    {
+      "image_id": "hiero_0059",
+      "gardiner_code": null,
+      "filename": "hiero_0059.png"
+    },
+    {
+      "image_id": "hiero_0060",
+      "gardiner_code": null,
+      "filename": "hiero_0060.png"
+    },
+    {
+      "image_id": "hiero_0061",
+      "gardiner_code": null,
+      "filename": "hiero_0061.png"
+    },
+    {
+      "image_id": "hiero_0062",
+      "gardiner_code": null,
+      "filename": "hiero_0062.png"
+    },
+    {
+      "image_id": "hiero_0063",
+      "gardiner_code": null,
+      "filename": "hiero_0063.png"
+    },
+    {
+      "image_id": "hiero_0064",
+      "gardiner_code": null,
+      "filename": "hiero_0064.png"
+    },
+    {
+      "image_id": "hiero_0065",
+      "gardiner_code": null,
+      "filename": "hiero_0065.png"
+    },
+    {
+      "image_id": "hiero_0066",
+      "gardiner_code": null,
+      "filename": "hiero_0066.png"
+    },
+    {
+      "image_id": "hiero_0067",
+      "gardiner_code": null,
+      "filename": "hiero_0067.png"
+    },
+    {
+      "image_id": "hiero_0068",
+      "gardiner_code": null,
+      "filename": "hiero_0068.png"
+    },
+    {
+      "image_id": "hiero_0069",
+      "gardiner_code": null,
+      "filename": "hiero_0069.png"
+    },
+    {
+      "image_id": "hiero_0070",
+      "gardiner_code": null,
+      "filename": "hiero_0070.png"
+    },
+    {
+      "image_id": "hiero_0071",
+      "gardiner_code": null,
+      "filename": "hiero_0071.png"
+    },
+    {
+      "image_id": "hiero_0072",
+      "gardiner_code": null,
+      "filename": "hiero_0072.png"
+    },
+    {
+      "image_id": "hiero_0073",
+      "gardiner_code": null,
+      "filename": "hiero_0073.png"
+    },
+    {
+      "image_id": "hiero_0074",
+      "gardiner_code": null,
+      "filename": "hiero_0074.png"
+    },
+    {
+      "image_id": "hiero_0075",
+      "gardiner_code": null,
+      "filename": "hiero_0075.png"
+    },
+    {
+      "image_id": "hiero_0076",
+      "gardiner_code": null,
+      "filename": "hiero_0076.png"
+    },
+    {
+      "image_id": "hiero_0077",
+      "gardiner_code": null,
+      "filename": "hiero_0077.png"
+    },
+    {
+      "image_id": "hiero_0078",
+      "gardiner_code": null,
+      "filename": "hiero_0078.png"
+    },
+    {
+      "image_id": "hiero_0079",
+      "gardiner_code": null,
+      "filename": "hiero_0079.png"
+    },
+    {
+      "image_id": "hiero_0080",
+      "gardiner_code": null,
+      "filename": "hiero_0080.png"
+    },
+    {
+      "image_id": "hiero_0081",
+      "gardiner_code": null,
+      "filename": "hiero_0081.png"
+    },
+    {
+      "image_id": "hiero_0082",
+      "gardiner_code": null,
+      "filename": "hiero_0082.png"
+    },
+    {
+      "image_id": "hiero_0083",
+      "gardiner_code": null,
+      "filename": "hiero_0083.png"
+    },
+    {
+      "image_id": "hiero_0084",
+      "gardiner_code": null,
+      "filename": "hiero_0084.png"
+    },
+    {
+      "image_id": "hiero_0085",
+      "gardiner_code": null,
+      "filename": "hiero_0085.png"
+    },
+    {
+      "image_id": "hiero_0086",
+      "gardiner_code": null,
+      "filename": "hiero_0086.png"
+    },
+    {
+      "image_id": "hiero_0087",
+      "gardiner_code": null,
+      "filename": "hiero_0087.png"
+    },
+    {
+      "image_id": "hiero_0088",
+      "gardiner_code": null,
+      "filename": "hiero_0088.png"
+    },
+    {
+      "image_id": "hiero_0089",
+      "gardiner_code": null,
+      "filename": "hiero_0089.png"
+    },
+    {
+      "image_id": "hiero_0090",
+      "gardiner_code": null,
+      "filename": "hiero_0090.png"
+    },
+    {
+      "image_id": "hiero_0091",
+      "gardiner_code": null,
+      "filename": "hiero_0091.png"
+    },
+    {
+      "image_id": "hiero_0092",
+      "gardiner_code": null,
+      "filename": "hiero_0092.png"
+    },
+    {
+      "image_id": "hiero_0093",
+      "gardiner_code": null,
+      "filename": "hiero_0093.png"
+    },
+    {
+      "image_id": "hiero_0094",
+      "gardiner_code": null,
+      "filename": "hiero_0094.png"
+    },
+    {
+      "image_id": "hiero_0095",
+      "gardiner_code": null,
+      "filename": "hiero_0095.png"
+    },
+    {
+      "image_id": "hiero_0096",
+      "gardiner_code": null,
+      "filename": "hiero_0096.png"
+    },
+    {
+      "image_id": "hiero_0097",
+      "gardiner_code": null,
+      "filename": "hiero_0097.png"
+    },
+    {
+      "image_id": "hiero_0098",
+      "gardiner_code": null,
+      "filename": "hiero_0098.png"
+    },
+    {
+      "image_id": "hiero_0099",
+      "gardiner_code": null,
+      "filename": "hiero_0099.png"
+    },
+    {
+      "image_id": "hiero_0100",
+      "gardiner_code": null,
+      "filename": "hiero_0100.png"
+    },
+    {
+      "image_id": "hiero_0101",
+      "gardiner_code": null,
+      "filename": "hiero_0101.png"
+    },
+    {
+      "image_id": "hiero_0102",
+      "gardiner_code": null,
+      "filename": "hiero_0102.png"
+    },
+    {
+      "image_id": "hiero_0103",
+      "gardiner_code": null,
+      "filename": "hiero_0103.png"
+    },
+    {
+      "image_id": "hiero_0104",
+      "gardiner_code": null,
+      "filename": "hiero_0104.png"
+    },
+    {
+      "image_id": "hiero_0105",
+      "gardiner_code": null,
+      "filename": "hiero_0105.png"
+    },
+    {
+      "image_id": "hiero_0106",
+      "gardiner_code": null,
+      "filename": "hiero_0106.png"
+    },
+    {
+      "image_id": "hiero_0107",
+      "gardiner_code": null,
+      "filename": "hiero_0107.png"
+    },
+    {
+      "image_id": "hiero_0108",
+      "gardiner_code": null,
+      "filename": "hiero_0108.png"
+    },
+    {
+      "image_id": "hiero_0109",
+      "gardiner_code": null,
+      "filename": "hiero_0109.png"
+    },
+    {
+      "image_id": "hiero_0110",
+      "gardiner_code": null,
+      "filename": "hiero_0110.png"
+    },
+    {
+      "image_id": "hiero_0111",
+      "gardiner_code": null,
+      "filename": "hiero_0111.png"
+    },
+    {
+      "image_id": "hiero_0112",
+      "gardiner_code": null,
+      "filename": "hiero_0112.png"
+    },
+    {
+      "image_id": "hiero_0113",
+      "gardiner_code": null,
+      "filename": "hiero_0113.png"
+    },
+    {
+      "image_id": "hiero_0114",
+      "gardiner_code": null,
+      "filename": "hiero_0114.png"
+    },
+    {
+      "image_id": "hiero_0115",
+      "gardiner_code": null,
+      "filename": "hiero_0115.png"
+    },
+    {
+      "image_id": "hiero_0116",
+      "gardiner_code": null,
+      "filename": "hiero_0116.png"
+    },
+    {
+      "image_id": "hiero_0117",
+      "gardiner_code": null,
+      "filename": "hiero_0117.png"
+    },
+    {
+      "image_id": "hiero_0118",
+      "gardiner_code": null,
+      "filename": "hiero_0118.png"
+    },
+    {
+      "image_id": "hiero_0119",
+      "gardiner_code": null,
+      "filename": "hiero_0119.png"
+    },
+    {
+      "image_id": "hiero_0120",
+      "gardiner_code": null,
+      "filename": "hiero_0120.png"
+    },
+    {
+      "image_id": "hiero_0121",
+      "gardiner_code": null,
+      "filename": "hiero_0121.png"
+    },
+    {
+      "image_id": "hiero_0122",
+      "gardiner_code": null,
+      "filename": "hiero_0122.png"
+    },
+    {
+      "image_id": "hiero_0123",
+      "gardiner_code": null,
+      "filename": "hiero_0123.png"
+    },
+    {
+      "image_id": "hiero_0124",
+      "gardiner_code": null,
+      "filename": "hiero_0124.png"
+    },
+    {
+      "image_id": "hiero_0125",
+      "gardiner_code": null,
+      "filename": "hiero_0125.png"
+    },
+    {
+      "image_id": "hiero_0126",
+      "gardiner_code": null,
+      "filename": "hiero_0126.png"
+    },
+    {
+      "image_id": "hiero_0127",
+      "gardiner_code": null,
+      "filename": "hiero_0127.png"
+    },
+    {
+      "image_id": "hiero_0128",
+      "gardiner_code": null,
+      "filename": "hiero_0128.png"
+    },
+    {
+      "image_id": "hiero_0129",
+      "gardiner_code": null,
+      "filename": "hiero_0129.png"
+    },
+    {
+      "image_id": "hiero_0130",
+      "gardiner_code": null,
+      "filename": "hiero_0130.png"
+    },
+    {
+      "image_id": "hiero_0131",
+      "gardiner_code": null,
+      "filename": "hiero_0131.png"
+    },
+    {
+      "image_id": "hiero_0132",
+      "gardiner_code": null,
+      "filename": "hiero_0132.png"
+    },
+    {
+      "image_id": "hiero_0133",
+      "gardiner_code": null,
+      "filename": "hiero_0133.png"
+    },
+    {
+      "image_id": "hiero_0134",
+      "gardiner_code": null,
+      "filename": "hiero_0134.png"
+    },
+    {
+      "image_id": "hiero_0135",
+      "gardiner_code": null,
+      "filename": "hiero_0135.png"
+    },
+    {
+      "image_id": "hiero_0136",
+      "gardiner_code": null,
+      "filename": "hiero_0136.png"
+    },
+    {
+      "image_id": "hiero_0137",
+      "gardiner_code": null,
+      "filename": "hiero_0137.png"
+    },
+    {
+      "image_id": "hiero_0138",
+      "gardiner_code": null,
+      "filename": "hiero_0138.png"
+    },
+    {
+      "image_id": "hiero_0139",
+      "gardiner_code": null,
+      "filename": "hiero_0139.png"
+    },
+    {
+      "image_id": "hiero_0140",
+      "gardiner_code": null,
+      "filename": "hiero_0140.png"
+    },
+    {
+      "image_id": "hiero_0141",
+      "gardiner_code": null,
+      "filename": "hiero_0141.png"
+    },
+    {
+      "image_id": "hiero_0142",
+      "gardiner_code": null,
+      "filename": "hiero_0142.png"
+    },
+    {
+      "image_id": "hiero_0143",
+      "gardiner_code": null,
+      "filename": "hiero_0143.png"
+    },
+    {
+      "image_id": "hiero_0144",
+      "gardiner_code": null,
+      "filename": "hiero_0144.png"
+    },
+    {
+      "image_id": "hiero_0145",
+      "gardiner_code": null,
+      "filename": "hiero_0145.png"
+    },
+    {
+      "image_id": "hiero_0146",
+      "gardiner_code": null,
+      "filename": "hiero_0146.png"
+    },
+    {
+      "image_id": "hiero_0147",
+      "gardiner_code": null,
+      "filename": "hiero_0147.png"
+    },
+    {
+      "image_id": "hiero_0148",
+      "gardiner_code": null,
+      "filename": "hiero_0148.png"
+    },
+    {
+      "image_id": "hiero_0149",
+      "gardiner_code": null,
+      "filename": "hiero_0149.png"
+    },
+    {
+      "image_id": "hiero_0150",
+      "gardiner_code": null,
+      "filename": "hiero_0150.png"
+    },
+    {
+      "image_id": "hiero_0151",
+      "gardiner_code": null,
+      "filename": "hiero_0151.png"
+    },
+    {
+      "image_id": "hiero_0152",
+      "gardiner_code": null,
+      "filename": "hiero_0152.png"
+    },
+    {
+      "image_id": "hiero_0153",
+      "gardiner_code": null,
+      "filename": "hiero_0153.png"
+    },
+    {
+      "image_id": "hiero_0154",
+      "gardiner_code": null,
+      "filename": "hiero_0154.png"
+    },
+    {
+      "image_id": "hiero_0155",
+      "gardiner_code": null,
+      "filename": "hiero_0155.png"
+    },
+    {
+      "image_id": "hiero_0156",
+      "gardiner_code": null,
+      "filename": "hiero_0156.png"
+    },
+    {
+      "image_id": "hiero_0157",
+      "gardiner_code": null,
+      "filename": "hiero_0157.png"
+    },
+    {
+      "image_id": "hiero_0158",
+      "gardiner_code": null,
+      "filename": "hiero_0158.png"
+    },
+    {
+      "image_id": "hiero_0159",
+      "gardiner_code": null,
+      "filename": "hiero_0159.png"
+    },
+    {
+      "image_id": "hiero_0160",
+      "gardiner_code": null,
+      "filename": "hiero_0160.png"
+    },
+    {
+      "image_id": "hiero_0161",
+      "gardiner_code": null,
+      "filename": "hiero_0161.png"
+    },
+    {
+      "image_id": "hiero_0162",
+      "gardiner_code": null,
+      "filename": "hiero_0162.png"
+    },
+    {
+      "image_id": "hiero_0163",
+      "gardiner_code": null,
+      "filename": "hiero_0163.png"
+    },
+    {
+      "image_id": "hiero_0164",
+      "gardiner_code": null,
+      "filename": "hiero_0164.png"
+    },
+    {
+      "image_id": "hiero_0165",
+      "gardiner_code": null,
+      "filename": "hiero_0165.png"
+    },
+    {
+      "image_id": "hiero_0166",
+      "gardiner_code": null,
+      "filename": "hiero_0166.png"
+    },
+    {
+      "image_id": "hiero_0167",
+      "gardiner_code": null,
+      "filename": "hiero_0167.png"
+    },
+    {
+      "image_id": "hiero_0168",
+      "gardiner_code": null,
+      "filename": "hiero_0168.png"
+    },
+    {
+      "image_id": "hiero_0169",
+      "gardiner_code": null,
+      "filename": "hiero_0169.png"
+    },
+    {
+      "image_id": "hiero_0170",
+      "gardiner_code": null,
+      "filename": "hiero_0170.png"
+    },
+    {
+      "image_id": "hiero_0171",
+      "gardiner_code": null,
+      "filename": "hiero_0171.png"
+    },
+    {
+      "image_id": "hiero_0172",
+      "gardiner_code": null,
+      "filename": "hiero_0172.png"
+    },
+    {
+      "image_id": "hiero_0173",
+      "gardiner_code": null,
+      "filename": "hiero_0173.png"
+    },
+    {
+      "image_id": "hiero_0174",
+      "gardiner_code": null,
+      "filename": "hiero_0174.png"
+    },
+    {
+      "image_id": "hiero_0175",
+      "gardiner_code": null,
+      "filename": "hiero_0175.png"
+    },
+    {
+      "image_id": "hiero_0176",
+      "gardiner_code": null,
+      "filename": "hiero_0176.png"
+    },
+    {
+      "image_id": "hiero_0177",
+      "gardiner_code": null,
+      "filename": "hiero_0177.png"
+    },
+    {
+      "image_id": "hiero_0178",
+      "gardiner_code": null,
+      "filename": "hiero_0178.png"
+    },
+    {
+      "image_id": "hiero_0179",
+      "gardiner_code": null,
+      "filename": "hiero_0179.png"
+    },
+    {
+      "image_id": "hiero_0180",
+      "gardiner_code": null,
+      "filename": "hiero_0180.png"
+    },
+    {
+      "image_id": "hiero_0181",
+      "gardiner_code": null,
+      "filename": "hiero_0181.png"
+    },
+    {
+      "image_id": "hiero_0182",
+      "gardiner_code": null,
+      "filename": "hiero_0182.png"
+    },
+    {
+      "image_id": "hiero_0183",
+      "gardiner_code": null,
+      "filename": "hiero_0183.png"
+    },
+    {
+      "image_id": "hiero_0184",
+      "gardiner_code": null,
+      "filename": "hiero_0184.png"
+    },
+    {
+      "image_id": "hiero_0185",
+      "gardiner_code": null,
+      "filename": "hiero_0185.png"
+    },
+    {
+      "image_id": "hiero_0186",
+      "gardiner_code": null,
+      "filename": "hiero_0186.png"
+    },
+    {
+      "image_id": "hiero_0187",
+      "gardiner_code": null,
+      "filename": "hiero_0187.png"
+    },
+    {
+      "image_id": "hiero_0188",
+      "gardiner_code": null,
+      "filename": "hiero_0188.png"
+    },
+    {
+      "image_id": "hiero_0189",
+      "gardiner_code": null,
+      "filename": "hiero_0189.png"
+    },
+    {
+      "image_id": "hiero_0190",
+      "gardiner_code": null,
+      "filename": "hiero_0190.png"
+    },
+    {
+      "image_id": "hiero_0191",
+      "gardiner_code": null,
+      "filename": "hiero_0191.png"
+    },
+    {
+      "image_id": "hiero_0192",
+      "gardiner_code": null,
+      "filename": "hiero_0192.png"
+    },
+    {
+      "image_id": "hiero_0193",
+      "gardiner_code": null,
+      "filename": "hiero_0193.png"
+    },
+    {
+      "image_id": "hiero_0194",
+      "gardiner_code": null,
+      "filename": "hiero_0194.png"
+    },
+    {
+      "image_id": "hiero_0195",
+      "gardiner_code": null,
+      "filename": "hiero_0195.png"
+    },
+    {
+      "image_id": "hiero_0196",
+      "gardiner_code": null,
+      "filename": "hiero_0196.png"
+    },
+    {
+      "image_id": "hiero_0197",
+      "gardiner_code": null,
+      "filename": "hiero_0197.png"
+    },
+    {
+      "image_id": "hiero_0198",
+      "gardiner_code": null,
+      "filename": "hiero_0198.png"
+    },
+    {
+      "image_id": "hiero_0199",
+      "gardiner_code": null,
+      "filename": "hiero_0199.png"
+    },
+    {
+      "image_id": "hiero_0200",
+      "gardiner_code": null,
+      "filename": "hiero_0200.png"
+    },
+    {
+      "image_id": "hiero_0201",
+      "gardiner_code": null,
+      "filename": "hiero_0201.png"
+    },
+    {
+      "image_id": "hiero_0202",
+      "gardiner_code": null,
+      "filename": "hiero_0202.png"
+    },
+    {
+      "image_id": "hiero_0203",
+      "gardiner_code": null,
+      "filename": "hiero_0203.png"
+    },
+    {
+      "image_id": "hiero_0204",
+      "gardiner_code": null,
+      "filename": "hiero_0204.png"
+    },
+    {
+      "image_id": "hiero_0205",
+      "gardiner_code": null,
+      "filename": "hiero_0205.png"
+    },
+    {
+      "image_id": "hiero_0206",
+      "gardiner_code": null,
+      "filename": "hiero_0206.png"
+    },
+    {
+      "image_id": "hiero_0207",
+      "gardiner_code": null,
+      "filename": "hiero_0207.png"
+    },
+    {
+      "image_id": "hiero_0208",
+      "gardiner_code": null,
+      "filename": "hiero_0208.png"
+    },
+    {
+      "image_id": "hiero_0209",
+      "gardiner_code": null,
+      "filename": "hiero_0209.png"
+    },
+    {
+      "image_id": "hiero_0210",
+      "gardiner_code": null,
+      "filename": "hiero_0210.png"
+    },
+    {
+      "image_id": "hiero_0211",
+      "gardiner_code": null,
+      "filename": "hiero_0211.png"
+    },
+    {
+      "image_id": "hiero_0212",
+      "gardiner_code": null,
+      "filename": "hiero_0212.png"
+    },
+    {
+      "image_id": "hiero_0213",
+      "gardiner_code": null,
+      "filename": "hiero_0213.png"
+    },
+    {
+      "image_id": "hiero_0214",
+      "gardiner_code": null,
+      "filename": "hiero_0214.png"
+    },
+    {
+      "image_id": "hiero_0215",
+      "gardiner_code": null,
+      "filename": "hiero_0215.png"
+    },
+    {
+      "image_id": "hiero_0216",
+      "gardiner_code": null,
+      "filename": "hiero_0216.png"
+    },
+    {
+      "image_id": "hiero_0217",
+      "gardiner_code": null,
+      "filename": "hiero_0217.png"
+    },
+    {
+      "image_id": "hiero_0218",
+      "gardiner_code": null,
+      "filename": "hiero_0218.png"
+    },
+    {
+      "image_id": "hiero_0219",
+      "gardiner_code": null,
+      "filename": "hiero_0219.png"
+    },
+    {
+      "image_id": "hiero_0220",
+      "gardiner_code": null,
+      "filename": "hiero_0220.png"
+    },
+    {
+      "image_id": "hiero_0221",
+      "gardiner_code": null,
+      "filename": "hiero_0221.png"
+    },
+    {
+      "image_id": "hiero_0222",
+      "gardiner_code": null,
+      "filename": "hiero_0222.png"
+    },
+    {
+      "image_id": "hiero_0223",
+      "gardiner_code": null,
+      "filename": "hiero_0223.png"
+    },
+    {
+      "image_id": "hiero_0224",
+      "gardiner_code": null,
+      "filename": "hiero_0224.png"
+    },
+    {
+      "image_id": "hiero_0225",
+      "gardiner_code": null,
+      "filename": "hiero_0225.png"
+    },
+    {
+      "image_id": "hiero_0226",
+      "gardiner_code": null,
+      "filename": "hiero_0226.png"
+    },
+    {
+      "image_id": "hiero_0227",
+      "gardiner_code": null,
+      "filename": "hiero_0227.png"
+    },
+    {
+      "image_id": "hiero_0228",
+      "gardiner_code": null,
+      "filename": "hiero_0228.png"
+    },
+    {
+      "image_id": "hiero_0229",
+      "gardiner_code": null,
+      "filename": "hiero_0229.png"
+    },
+    {
+      "image_id": "hiero_0230",
+      "gardiner_code": null,
+      "filename": "hiero_0230.png"
+    },
+    {
+      "image_id": "hiero_0231",
+      "gardiner_code": null,
+      "filename": "hiero_0231.png"
+    },
+    {
+      "image_id": "hiero_0232",
+      "gardiner_code": null,
+      "filename": "hiero_0232.png"
+    },
+    {
+      "image_id": "hiero_0233",
+      "gardiner_code": null,
+      "filename": "hiero_0233.png"
+    },
+    {
+      "image_id": "hiero_0234",
+      "gardiner_code": null,
+      "filename": "hiero_0234.png"
+    },
+    {
+      "image_id": "hiero_0235",
+      "gardiner_code": null,
+      "filename": "hiero_0235.png"
+    },
+    {
+      "image_id": "hiero_0236",
+      "gardiner_code": null,
+      "filename": "hiero_0236.png"
+    },
+    {
+      "image_id": "hiero_0237",
+      "gardiner_code": null,
+      "filename": "hiero_0237.png"
+    },
+    {
+      "image_id": "hiero_0238",
+      "gardiner_code": null,
+      "filename": "hiero_0238.png"
+    },
+    {
+      "image_id": "hiero_0239",
+      "gardiner_code": null,
+      "filename": "hiero_0239.png"
+    },
+    {
+      "image_id": "hiero_0240",
+      "gardiner_code": null,
+      "filename": "hiero_0240.png"
+    },
+    {
+      "image_id": "hiero_0241",
+      "gardiner_code": null,
+      "filename": "hiero_0241.png"
+    },
+    {
+      "image_id": "hiero_0242",
+      "gardiner_code": null,
+      "filename": "hiero_0242.png"
+    },
+    {
+      "image_id": "hiero_0243",
+      "gardiner_code": null,
+      "filename": "hiero_0243.png"
+    },
+    {
+      "image_id": "hiero_0244",
+      "gardiner_code": null,
+      "filename": "hiero_0244.png"
+    },
+    {
+      "image_id": "hiero_0245",
+      "gardiner_code": null,
+      "filename": "hiero_0245.png"
+    },
+    {
+      "image_id": "hiero_0246",
+      "gardiner_code": null,
+      "filename": "hiero_0246.png"
+    },
+    {
+      "image_id": "hiero_0247",
+      "gardiner_code": null,
+      "filename": "hiero_0247.png"
+    },
+    {
+      "image_id": "hiero_0248",
+      "gardiner_code": null,
+      "filename": "hiero_0248.png"
+    },
+    {
+      "image_id": "hiero_0249",
+      "gardiner_code": null,
+      "filename": "hiero_0249.png"
+    },
+    {
+      "image_id": "hiero_0250",
+      "gardiner_code": null,
+      "filename": "hiero_0250.png"
+    },
+    {
+      "image_id": "hiero_0251",
+      "gardiner_code": null,
+      "filename": "hiero_0251.png"
+    },
+    {
+      "image_id": "hiero_0252",
+      "gardiner_code": null,
+      "filename": "hiero_0252.png"
+    },
+    {
+      "image_id": "hiero_0253",
+      "gardiner_code": null,
+      "filename": "hiero_0253.png"
+    },
+    {
+      "image_id": "hiero_0254",
+      "gardiner_code": null,
+      "filename": "hiero_0254.png"
+    },
+    {
+      "image_id": "hiero_0255",
+      "gardiner_code": null,
+      "filename": "hiero_0255.png"
+    },
+    {
+      "image_id": "hiero_0256",
+      "gardiner_code": null,
+      "filename": "hiero_0256.png"
+    },
+    {
+      "image_id": "hiero_0257",
+      "gardiner_code": null,
+      "filename": "hiero_0257.png"
+    },
+    {
+      "image_id": "hiero_0258",
+      "gardiner_code": null,
+      "filename": "hiero_0258.png"
+    },
+    {
+      "image_id": "hiero_0259",
+      "gardiner_code": null,
+      "filename": "hiero_0259.png"
+    },
+    {
+      "image_id": "hiero_0260",
+      "gardiner_code": null,
+      "filename": "hiero_0260.png"
+    },
+    {
+      "image_id": "hiero_0261",
+      "gardiner_code": null,
+      "filename": "hiero_0261.png"
+    },
+    {
+      "image_id": "hiero_0262",
+      "gardiner_code": null,
+      "filename": "hiero_0262.png"
+    },
+    {
+      "image_id": "hiero_0263",
+      "gardiner_code": null,
+      "filename": "hiero_0263.png"
+    },
+    {
+      "image_id": "hiero_0264",
+      "gardiner_code": null,
+      "filename": "hiero_0264.png"
+    },
+    {
+      "image_id": "hiero_0265",
+      "gardiner_code": null,
+      "filename": "hiero_0265.png"
+    },
+    {
+      "image_id": "hiero_0266",
+      "gardiner_code": null,
+      "filename": "hiero_0266.png"
+    },
+    {
+      "image_id": "hiero_0267",
+      "gardiner_code": null,
+      "filename": "hiero_0267.png"
+    },
+    {
+      "image_id": "hiero_0268",
+      "gardiner_code": null,
+      "filename": "hiero_0268.png"
+    },
+    {
+      "image_id": "hiero_0269",
+      "gardiner_code": null,
+      "filename": "hiero_0269.png"
+    },
+    {
+      "image_id": "hiero_0270",
+      "gardiner_code": null,
+      "filename": "hiero_0270.png"
+    },
+    {
+      "image_id": "hiero_0271",
+      "gardiner_code": null,
+      "filename": "hiero_0271.png"
+    },
+    {
+      "image_id": "hiero_0272",
+      "gardiner_code": null,
+      "filename": "hiero_0272.png"
+    },
+    {
+      "image_id": "hiero_0273",
+      "gardiner_code": null,
+      "filename": "hiero_0273.png"
+    },
+    {
+      "image_id": "hiero_0274",
+      "gardiner_code": null,
+      "filename": "hiero_0274.png"
+    },
+    {
+      "image_id": "hiero_0275",
+      "gardiner_code": null,
+      "filename": "hiero_0275.png"
+    },
+    {
+      "image_id": "hiero_0276",
+      "gardiner_code": null,
+      "filename": "hiero_0276.png"
+    },
+    {
+      "image_id": "hiero_0277",
+      "gardiner_code": null,
+      "filename": "hiero_0277.png"
+    },
+    {
+      "image_id": "hiero_0278",
+      "gardiner_code": null,
+      "filename": "hiero_0278.png"
+    },
+    {
+      "image_id": "hiero_0279",
+      "gardiner_code": null,
+      "filename": "hiero_0279.png"
+    },
+    {
+      "image_id": "hiero_0280",
+      "gardiner_code": null,
+      "filename": "hiero_0280.png"
+    },
+    {
+      "image_id": "hiero_0281",
+      "gardiner_code": null,
+      "filename": "hiero_0281.png"
+    },
+    {
+      "image_id": "hiero_0282",
+      "gardiner_code": null,
+      "filename": "hiero_0282.png"
+    },
+    {
+      "image_id": "hiero_0283",
+      "gardiner_code": null,
+      "filename": "hiero_0283.png"
+    },
+    {
+      "image_id": "hiero_0284",
+      "gardiner_code": null,
+      "filename": "hiero_0284.png"
+    },
+    {
+      "image_id": "hiero_0285",
+      "gardiner_code": null,
+      "filename": "hiero_0285.png"
+    },
+    {
+      "image_id": "hiero_0286",
+      "gardiner_code": null,
+      "filename": "hiero_0286.png"
+    },
+    {
+      "image_id": "hiero_0287",
+      "gardiner_code": null,
+      "filename": "hiero_0287.png"
+    },
+    {
+      "image_id": "hiero_0288",
+      "gardiner_code": null,
+      "filename": "hiero_0288.png"
+    },
+    {
+      "image_id": "hiero_0289",
+      "gardiner_code": null,
+      "filename": "hiero_0289.png"
+    },
+    {
+      "image_id": "hiero_0290",
+      "gardiner_code": null,
+      "filename": "hiero_0290.png"
+    },
+    {
+      "image_id": "hiero_0291",
+      "gardiner_code": null,
+      "filename": "hiero_0291.png"
+    },
+    {
+      "image_id": "hiero_0292",
+      "gardiner_code": null,
+      "filename": "hiero_0292.png"
+    },
+    {
+      "image_id": "hiero_0293",
+      "gardiner_code": null,
+      "filename": "hiero_0293.png"
+    },
+    {
+      "image_id": "hiero_0294",
+      "gardiner_code": null,
+      "filename": "hiero_0294.png"
+    },
+    {
+      "image_id": "hiero_0295",
+      "gardiner_code": null,
+      "filename": "hiero_0295.png"
+    },
+    {
+      "image_id": "hiero_0296",
+      "gardiner_code": null,
+      "filename": "hiero_0296.png"
+    },
+    {
+      "image_id": "hiero_0297",
+      "gardiner_code": null,
+      "filename": "hiero_0297.png"
+    },
+    {
+      "image_id": "hiero_0298",
+      "gardiner_code": null,
+      "filename": "hiero_0298.png"
+    },
+    {
+      "image_id": "hiero_0299",
+      "gardiner_code": null,
+      "filename": "hiero_0299.png"
+    },
+    {
+      "image_id": "hiero_0300",
+      "gardiner_code": null,
+      "filename": "hiero_0300.png"
+    },
+    {
+      "image_id": "hiero_0301",
+      "gardiner_code": null,
+      "filename": "hiero_0301.png"
+    },
+    {
+      "image_id": "hiero_0302",
+      "gardiner_code": null,
+      "filename": "hiero_0302.png"
+    },
+    {
+      "image_id": "hiero_0303",
+      "gardiner_code": null,
+      "filename": "hiero_0303.png"
+    },
+    {
+      "image_id": "hiero_0304",
+      "gardiner_code": null,
+      "filename": "hiero_0304.png"
+    },
+    {
+      "image_id": "hiero_0305",
+      "gardiner_code": null,
+      "filename": "hiero_0305.png"
+    },
+    {
+      "image_id": "hiero_0306",
+      "gardiner_code": null,
+      "filename": "hiero_0306.png"
+    },
+    {
+      "image_id": "hiero_0307",
+      "gardiner_code": null,
+      "filename": "hiero_0307.png"
+    },
+    {
+      "image_id": "hiero_0308",
+      "gardiner_code": null,
+      "filename": "hiero_0308.png"
+    },
+    {
+      "image_id": "hiero_0309",
+      "gardiner_code": null,
+      "filename": "hiero_0309.png"
+    },
+    {
+      "image_id": "hiero_0310",
+      "gardiner_code": null,
+      "filename": "hiero_0310.png"
+    },
+    {
+      "image_id": "hiero_0311",
+      "gardiner_code": null,
+      "filename": "hiero_0311.png"
+    },
+    {
+      "image_id": "hiero_0312",
+      "gardiner_code": null,
+      "filename": "hiero_0312.png"
+    },
+    {
+      "image_id": "hiero_0313",
+      "gardiner_code": null,
+      "filename": "hiero_0313.png"
+    },
+    {
+      "image_id": "hiero_0314",
+      "gardiner_code": null,
+      "filename": "hiero_0314.png"
+    },
+    {
+      "image_id": "hiero_0315",
+      "gardiner_code": null,
+      "filename": "hiero_0315.png"
+    },
+    {
+      "image_id": "hiero_0316",
+      "gardiner_code": null,
+      "filename": "hiero_0316.png"
+    },
+    {
+      "image_id": "hiero_0317",
+      "gardiner_code": null,
+      "filename": "hiero_0317.png"
+    },
+    {
+      "image_id": "hiero_0318",
+      "gardiner_code": null,
+      "filename": "hiero_0318.png"
+    },
+    {
+      "image_id": "hiero_0319",
+      "gardiner_code": null,
+      "filename": "hiero_0319.png"
+    },
+    {
+      "image_id": "hiero_0320",
+      "gardiner_code": null,
+      "filename": "hiero_0320.png"
+    },
+    {
+      "image_id": "hiero_0321",
+      "gardiner_code": null,
+      "filename": "hiero_0321.png"
+    },
+    {
+      "image_id": "hiero_0322",
+      "gardiner_code": null,
+      "filename": "hiero_0322.png"
+    },
+    {
+      "image_id": "hiero_0323",
+      "gardiner_code": null,
+      "filename": "hiero_0323.png"
+    },
+    {
+      "image_id": "hiero_0324",
+      "gardiner_code": null,
+      "filename": "hiero_0324.png"
+    },
+    {
+      "image_id": "hiero_0325",
+      "gardiner_code": null,
+      "filename": "hiero_0325.png"
+    },
+    {
+      "image_id": "hiero_0326",
+      "gardiner_code": null,
+      "filename": "hiero_0326.png"
+    },
+    {
+      "image_id": "hiero_0327",
+      "gardiner_code": null,
+      "filename": "hiero_0327.png"
+    },
+    {
+      "image_id": "hiero_0328",
+      "gardiner_code": null,
+      "filename": "hiero_0328.png"
+    },
+    {
+      "image_id": "hiero_0329",
+      "gardiner_code": null,
+      "filename": "hiero_0329.png"
+    },
+    {
+      "image_id": "hiero_0330",
+      "gardiner_code": null,
+      "filename": "hiero_0330.png"
+    },
+    {
+      "image_id": "hiero_0331",
+      "gardiner_code": null,
+      "filename": "hiero_0331.png"
+    },
+    {
+      "image_id": "hiero_0332",
+      "gardiner_code": null,
+      "filename": "hiero_0332.png"
+    },
+    {
+      "image_id": "hiero_0333",
+      "gardiner_code": null,
+      "filename": "hiero_0333.png"
+    },
+    {
+      "image_id": "hiero_0334",
+      "gardiner_code": null,
+      "filename": "hiero_0334.png"
+    },
+    {
+      "image_id": "hiero_0335",
+      "gardiner_code": null,
+      "filename": "hiero_0335.png"
+    },
+    {
+      "image_id": "hiero_0336",
+      "gardiner_code": null,
+      "filename": "hiero_0336.png"
+    },
+    {
+      "image_id": "hiero_0337",
+      "gardiner_code": null,
+      "filename": "hiero_0337.png"
+    },
+    {
+      "image_id": "hiero_0338",
+      "gardiner_code": null,
+      "filename": "hiero_0338.png"
+    },
+    {
+      "image_id": "hiero_0339",
+      "gardiner_code": null,
+      "filename": "hiero_0339.png"
+    },
+    {
+      "image_id": "hiero_0340",
+      "gardiner_code": null,
+      "filename": "hiero_0340.png"
+    },
+    {
+      "image_id": "hiero_0341",
+      "gardiner_code": null,
+      "filename": "hiero_0341.png"
+    },
+    {
+      "image_id": "hiero_0342",
+      "gardiner_code": null,
+      "filename": "hiero_0342.png"
+    },
+    {
+      "image_id": "hiero_0343",
+      "gardiner_code": null,
+      "filename": "hiero_0343.png"
+    },
+    {
+      "image_id": "hiero_0344",
+      "gardiner_code": null,
+      "filename": "hiero_0344.png"
+    },
+    {
+      "image_id": "hiero_0345",
+      "gardiner_code": null,
+      "filename": "hiero_0345.png"
+    },
+    {
+      "image_id": "hiero_0346",
+      "gardiner_code": null,
+      "filename": "hiero_0346.png"
+    },
+    {
+      "image_id": "hiero_0347",
+      "gardiner_code": null,
+      "filename": "hiero_0347.png"
+    },
+    {
+      "image_id": "hiero_0348",
+      "gardiner_code": null,
+      "filename": "hiero_0348.png"
+    },
+    {
+      "image_id": "hiero_0349",
+      "gardiner_code": null,
+      "filename": "hiero_0349.png"
+    },
+    {
+      "image_id": "hiero_0350",
+      "gardiner_code": null,
+      "filename": "hiero_0350.png"
+    },
+    {
+      "image_id": "hiero_0351",
+      "gardiner_code": null,
+      "filename": "hiero_0351.png"
+    },
+    {
+      "image_id": "hiero_0352",
+      "gardiner_code": null,
+      "filename": "hiero_0352.png"
+    },
+    {
+      "image_id": "hiero_0353",
+      "gardiner_code": null,
+      "filename": "hiero_0353.png"
+    },
+    {
+      "image_id": "hiero_0354",
+      "gardiner_code": null,
+      "filename": "hiero_0354.png"
+    },
+    {
+      "image_id": "hiero_0355",
+      "gardiner_code": null,
+      "filename": "hiero_0355.png"
+    },
+    {
+      "image_id": "hiero_0356",
+      "gardiner_code": null,
+      "filename": "hiero_0356.png"
+    },
+    {
+      "image_id": "hiero_0357",
+      "gardiner_code": null,
+      "filename": "hiero_0357.png"
+    },
+    {
+      "image_id": "hiero_0358",
+      "gardiner_code": null,
+      "filename": "hiero_0358.png"
+    },
+    {
+      "image_id": "hiero_0359",
+      "gardiner_code": null,
+      "filename": "hiero_0359.png"
+    },
+    {
+      "image_id": "hiero_0360",
+      "gardiner_code": null,
+      "filename": "hiero_0360.png"
+    },
+    {
+      "image_id": "hiero_0361",
+      "gardiner_code": null,
+      "filename": "hiero_0361.png"
+    },
+    {
+      "image_id": "hiero_0362",
+      "gardiner_code": null,
+      "filename": "hiero_0362.png"
+    },
+    {
+      "image_id": "hiero_0363",
+      "gardiner_code": null,
+      "filename": "hiero_0363.png"
+    },
+    {
+      "image_id": "hiero_0364",
+      "gardiner_code": null,
+      "filename": "hiero_0364.png"
+    },
+    {
+      "image_id": "hiero_0365",
+      "gardiner_code": null,
+      "filename": "hiero_0365.png"
+    },
+    {
+      "image_id": "hiero_0366",
+      "gardiner_code": null,
+      "filename": "hiero_0366.png"
+    },
+    {
+      "image_id": "hiero_0367",
+      "gardiner_code": null,
+      "filename": "hiero_0367.png"
+    },
+    {
+      "image_id": "hiero_0368",
+      "gardiner_code": null,
+      "filename": "hiero_0368.png"
+    },
+    {
+      "image_id": "hiero_0369",
+      "gardiner_code": null,
+      "filename": "hiero_0369.png"
+    },
+    {
+      "image_id": "hiero_0370",
+      "gardiner_code": null,
+      "filename": "hiero_0370.png"
+    },
+    {
+      "image_id": "hiero_0371",
+      "gardiner_code": null,
+      "filename": "hiero_0371.png"
+    },
+    {
+      "image_id": "hiero_0372",
+      "gardiner_code": null,
+      "filename": "hiero_0372.png"
+    },
+    {
+      "image_id": "hiero_0373",
+      "gardiner_code": null,
+      "filename": "hiero_0373.png"
+    },
+    {
+      "image_id": "hiero_0374",
+      "gardiner_code": null,
+      "filename": "hiero_0374.png"
+    },
+    {
+      "image_id": "hiero_0375",
+      "gardiner_code": null,
+      "filename": "hiero_0375.png"
+    },
+    {
+      "image_id": "hiero_0376",
+      "gardiner_code": null,
+      "filename": "hiero_0376.png"
+    },
+    {
+      "image_id": "hiero_0377",
+      "gardiner_code": null,
+      "filename": "hiero_0377.png"
+    },
+    {
+      "image_id": "hiero_0378",
+      "gardiner_code": null,
+      "filename": "hiero_0378.png"
+    },
+    {
+      "image_id": "hiero_0379",
+      "gardiner_code": null,
+      "filename": "hiero_0379.png"
+    },
+    {
+      "image_id": "hiero_0380",
+      "gardiner_code": null,
+      "filename": "hiero_0380.png"
+    },
+    {
+      "image_id": "hiero_0381",
+      "gardiner_code": null,
+      "filename": "hiero_0381.png"
+    },
+    {
+      "image_id": "hiero_0382",
+      "gardiner_code": null,
+      "filename": "hiero_0382.png"
+    },
+    {
+      "image_id": "hiero_0383",
+      "gardiner_code": null,
+      "filename": "hiero_0383.png"
+    },
+    {
+      "image_id": "hiero_0384",
+      "gardiner_code": null,
+      "filename": "hiero_0384.png"
+    },
+    {
+      "image_id": "hiero_0385",
+      "gardiner_code": null,
+      "filename": "hiero_0385.png"
+    },
+    {
+      "image_id": "hiero_0386",
+      "gardiner_code": null,
+      "filename": "hiero_0386.png"
+    },
+    {
+      "image_id": "hiero_0387",
+      "gardiner_code": null,
+      "filename": "hiero_0387.png"
+    },
+    {
+      "image_id": "hiero_0388",
+      "gardiner_code": null,
+      "filename": "hiero_0388.png"
+    },
+    {
+      "image_id": "hiero_0389",
+      "gardiner_code": null,
+      "filename": "hiero_0389.png"
+    },
+    {
+      "image_id": "hiero_0390",
+      "gardiner_code": null,
+      "filename": "hiero_0390.png"
+    },
+    {
+      "image_id": "hiero_0391",
+      "gardiner_code": null,
+      "filename": "hiero_0391.png"
+    },
+    {
+      "image_id": "hiero_0392",
+      "gardiner_code": null,
+      "filename": "hiero_0392.png"
+    },
+    {
+      "image_id": "hiero_0393",
+      "gardiner_code": null,
+      "filename": "hiero_0393.png"
+    },
+    {
+      "image_id": "hiero_0394",
+      "gardiner_code": null,
+      "filename": "hiero_0394.png"
+    },
+    {
+      "image_id": "hiero_0395",
+      "gardiner_code": null,
+      "filename": "hiero_0395.png"
+    },
+    {
+      "image_id": "hiero_0396",
+      "gardiner_code": null,
+      "filename": "hiero_0396.png"
+    },
+    {
+      "image_id": "hiero_0397",
+      "gardiner_code": null,
+      "filename": "hiero_0397.png"
+    },
+    {
+      "image_id": "hiero_0398",
+      "gardiner_code": null,
+      "filename": "hiero_0398.png"
+    },
+    {
+      "image_id": "hiero_0399",
+      "gardiner_code": null,
+      "filename": "hiero_0399.png"
+    },
+    {
+      "image_id": "hiero_0400",
+      "gardiner_code": null,
+      "filename": "hiero_0400.png"
+    },
+    {
+      "image_id": "hiero_0401",
+      "gardiner_code": null,
+      "filename": "hiero_0401.png"
+    },
+    {
+      "image_id": "hiero_0402",
+      "gardiner_code": null,
+      "filename": "hiero_0402.png"
+    },
+    {
+      "image_id": "hiero_0403",
+      "gardiner_code": null,
+      "filename": "hiero_0403.png"
+    },
+    {
+      "image_id": "hiero_0404",
+      "gardiner_code": null,
+      "filename": "hiero_0404.png"
+    },
+    {
+      "image_id": "hiero_0405",
+      "gardiner_code": null,
+      "filename": "hiero_0405.png"
+    },
+    {
+      "image_id": "hiero_0406",
+      "gardiner_code": null,
+      "filename": "hiero_0406.png"
+    },
+    {
+      "image_id": "hiero_0407",
+      "gardiner_code": null,
+      "filename": "hiero_0407.png"
+    },
+    {
+      "image_id": "hiero_0408",
+      "gardiner_code": null,
+      "filename": "hiero_0408.png"
+    },
+    {
+      "image_id": "hiero_0409",
+      "gardiner_code": null,
+      "filename": "hiero_0409.png"
+    },
+    {
+      "image_id": "hiero_0410",
+      "gardiner_code": null,
+      "filename": "hiero_0410.png"
+    },
+    {
+      "image_id": "hiero_0411",
+      "gardiner_code": null,
+      "filename": "hiero_0411.png"
+    },
+    {
+      "image_id": "hiero_0412",
+      "gardiner_code": null,
+      "filename": "hiero_0412.png"
+    },
+    {
+      "image_id": "hiero_0413",
+      "gardiner_code": null,
+      "filename": "hiero_0413.png"
+    },
+    {
+      "image_id": "hiero_0414",
+      "gardiner_code": null,
+      "filename": "hiero_0414.png"
+    },
+    {
+      "image_id": "hiero_0415",
+      "gardiner_code": null,
+      "filename": "hiero_0415.png"
+    },
+    {
+      "image_id": "hiero_0416",
+      "gardiner_code": null,
+      "filename": "hiero_0416.png"
+    },
+    {
+      "image_id": "hiero_0417",
+      "gardiner_code": null,
+      "filename": "hiero_0417.png"
+    },
+    {
+      "image_id": "hiero_0418",
+      "gardiner_code": null,
+      "filename": "hiero_0418.png"
+    },
+    {
+      "image_id": "hiero_0419",
+      "gardiner_code": null,
+      "filename": "hiero_0419.png"
+    },
+    {
+      "image_id": "hiero_0420",
+      "gardiner_code": null,
+      "filename": "hiero_0420.png"
+    },
+    {
+      "image_id": "hiero_0421",
+      "gardiner_code": null,
+      "filename": "hiero_0421.png"
+    },
+    {
+      "image_id": "hiero_0422",
+      "gardiner_code": null,
+      "filename": "hiero_0422.png"
+    },
+    {
+      "image_id": "hiero_0423",
+      "gardiner_code": null,
+      "filename": "hiero_0423.png"
+    },
+    {
+      "image_id": "hiero_0424",
+      "gardiner_code": null,
+      "filename": "hiero_0424.png"
+    },
+    {
+      "image_id": "hiero_0425",
+      "gardiner_code": null,
+      "filename": "hiero_0425.png"
+    },
+    {
+      "image_id": "hiero_0426",
+      "gardiner_code": null,
+      "filename": "hiero_0426.png"
+    },
+    {
+      "image_id": "hiero_0427",
+      "gardiner_code": null,
+      "filename": "hiero_0427.png"
+    },
+    {
+      "image_id": "hiero_0428",
+      "gardiner_code": null,
+      "filename": "hiero_0428.png"
+    },
+    {
+      "image_id": "hiero_0429",
+      "gardiner_code": null,
+      "filename": "hiero_0429.png"
+    },
+    {
+      "image_id": "hiero_0430",
+      "gardiner_code": null,
+      "filename": "hiero_0430.png"
+    },
+    {
+      "image_id": "hiero_0431",
+      "gardiner_code": null,
+      "filename": "hiero_0431.png"
+    },
+    {
+      "image_id": "hiero_0432",
+      "gardiner_code": null,
+      "filename": "hiero_0432.png"
+    },
+    {
+      "image_id": "hiero_0433",
+      "gardiner_code": null,
+      "filename": "hiero_0433.png"
+    },
+    {
+      "image_id": "hiero_0434",
+      "gardiner_code": null,
+      "filename": "hiero_0434.png"
+    },
+    {
+      "image_id": "hiero_0435",
+      "gardiner_code": null,
+      "filename": "hiero_0435.png"
+    },
+    {
+      "image_id": "hiero_0436",
+      "gardiner_code": null,
+      "filename": "hiero_0436.png"
+    },
+    {
+      "image_id": "hiero_0437",
+      "gardiner_code": null,
+      "filename": "hiero_0437.png"
+    },
+    {
+      "image_id": "hiero_0438",
+      "gardiner_code": null,
+      "filename": "hiero_0438.png"
+    },
+    {
+      "image_id": "hiero_0439",
+      "gardiner_code": null,
+      "filename": "hiero_0439.png"
+    },
+    {
+      "image_id": "hiero_0440",
+      "gardiner_code": null,
+      "filename": "hiero_0440.png"
+    },
+    {
+      "image_id": "hiero_0441",
+      "gardiner_code": null,
+      "filename": "hiero_0441.png"
+    },
+    {
+      "image_id": "hiero_0442",
+      "gardiner_code": null,
+      "filename": "hiero_0442.png"
+    },
+    {
+      "image_id": "hiero_0443",
+      "gardiner_code": null,
+      "filename": "hiero_0443.png"
+    },
+    {
+      "image_id": "hiero_0444",
+      "gardiner_code": null,
+      "filename": "hiero_0444.png"
+    },
+    {
+      "image_id": "hiero_0445",
+      "gardiner_code": null,
+      "filename": "hiero_0445.png"
+    },
+    {
+      "image_id": "hiero_0446",
+      "gardiner_code": null,
+      "filename": "hiero_0446.png"
+    },
+    {
+      "image_id": "hiero_0447",
+      "gardiner_code": null,
+      "filename": "hiero_0447.png"
+    },
+    {
+      "image_id": "hiero_0448",
+      "gardiner_code": null,
+      "filename": "hiero_0448.png"
+    },
+    {
+      "image_id": "hiero_0449",
+      "gardiner_code": null,
+      "filename": "hiero_0449.png"
+    },
+    {
+      "image_id": "hiero_0450",
+      "gardiner_code": null,
+      "filename": "hiero_0450.png"
+    },
+    {
+      "image_id": "hiero_0451",
+      "gardiner_code": null,
+      "filename": "hiero_0451.png"
+    },
+    {
+      "image_id": "hiero_0452",
+      "gardiner_code": null,
+      "filename": "hiero_0452.png"
+    },
+    {
+      "image_id": "hiero_0453",
+      "gardiner_code": null,
+      "filename": "hiero_0453.png"
+    },
+    {
+      "image_id": "hiero_0454",
+      "gardiner_code": null,
+      "filename": "hiero_0454.png"
+    },
+    {
+      "image_id": "hiero_0455",
+      "gardiner_code": null,
+      "filename": "hiero_0455.png"
+    },
+    {
+      "image_id": "hiero_0456",
+      "gardiner_code": null,
+      "filename": "hiero_0456.png"
+    },
+    {
+      "image_id": "hiero_0457",
+      "gardiner_code": null,
+      "filename": "hiero_0457.png"
+    },
+    {
+      "image_id": "hiero_0458",
+      "gardiner_code": null,
+      "filename": "hiero_0458.png"
+    },
+    {
+      "image_id": "hiero_0459",
+      "gardiner_code": null,
+      "filename": "hiero_0459.png"
+    },
+    {
+      "image_id": "hiero_0460",
+      "gardiner_code": null,
+      "filename": "hiero_0460.png"
+    },
+    {
+      "image_id": "hiero_0461",
+      "gardiner_code": null,
+      "filename": "hiero_0461.png"
+    },
+    {
+      "image_id": "hiero_0462",
+      "gardiner_code": null,
+      "filename": "hiero_0462.png"
+    },
+    {
+      "image_id": "hiero_0463",
+      "gardiner_code": null,
+      "filename": "hiero_0463.png"
+    },
+    {
+      "image_id": "hiero_0464",
+      "gardiner_code": null,
+      "filename": "hiero_0464.png"
+    },
+    {
+      "image_id": "hiero_0465",
+      "gardiner_code": null,
+      "filename": "hiero_0465.png"
+    },
+    {
+      "image_id": "hiero_0466",
+      "gardiner_code": null,
+      "filename": "hiero_0466.png"
+    },
+    {
+      "image_id": "hiero_0467",
+      "gardiner_code": null,
+      "filename": "hiero_0467.png"
+    },
+    {
+      "image_id": "hiero_0468",
+      "gardiner_code": null,
+      "filename": "hiero_0468.png"
+    },
+    {
+      "image_id": "hiero_0469",
+      "gardiner_code": null,
+      "filename": "hiero_0469.png"
+    },
+    {
+      "image_id": "hiero_0470",
+      "gardiner_code": null,
+      "filename": "hiero_0470.png"
+    },
+    {
+      "image_id": "hiero_0471",
+      "gardiner_code": null,
+      "filename": "hiero_0471.png"
+    },
+    {
+      "image_id": "hiero_0472",
+      "gardiner_code": null,
+      "filename": "hiero_0472.png"
+    },
+    {
+      "image_id": "hiero_0473",
+      "gardiner_code": null,
+      "filename": "hiero_0473.png"
+    },
+    {
+      "image_id": "hiero_0474",
+      "gardiner_code": null,
+      "filename": "hiero_0474.png"
+    },
+    {
+      "image_id": "hiero_0475",
+      "gardiner_code": null,
+      "filename": "hiero_0475.png"
+    },
+    {
+      "image_id": "hiero_0476",
+      "gardiner_code": null,
+      "filename": "hiero_0476.png"
+    },
+    {
+      "image_id": "hiero_0477",
+      "gardiner_code": null,
+      "filename": "hiero_0477.png"
+    },
+    {
+      "image_id": "hiero_0478",
+      "gardiner_code": null,
+      "filename": "hiero_0478.png"
+    },
+    {
+      "image_id": "hiero_0479",
+      "gardiner_code": null,
+      "filename": "hiero_0479.png"
+    },
+    {
+      "image_id": "hiero_0480",
+      "gardiner_code": null,
+      "filename": "hiero_0480.png"
+    },
+    {
+      "image_id": "hiero_0481",
+      "gardiner_code": null,
+      "filename": "hiero_0481.png"
+    },
+    {
+      "image_id": "hiero_0482",
+      "gardiner_code": null,
+      "filename": "hiero_0482.png"
+    },
+    {
+      "image_id": "hiero_0483",
+      "gardiner_code": null,
+      "filename": "hiero_0483.png"
+    },
+    {
+      "image_id": "hiero_0484",
+      "gardiner_code": null,
+      "filename": "hiero_0484.png"
+    },
+    {
+      "image_id": "hiero_0485",
+      "gardiner_code": null,
+      "filename": "hiero_0485.png"
+    },
+    {
+      "image_id": "hiero_0486",
+      "gardiner_code": null,
+      "filename": "hiero_0486.png"
+    },
+    {
+      "image_id": "hiero_0487",
+      "gardiner_code": null,
+      "filename": "hiero_0487.png"
+    },
+    {
+      "image_id": "hiero_0488",
+      "gardiner_code": null,
+      "filename": "hiero_0488.png"
+    },
+    {
+      "image_id": "hiero_0489",
+      "gardiner_code": null,
+      "filename": "hiero_0489.png"
+    },
+    {
+      "image_id": "hiero_0490",
+      "gardiner_code": null,
+      "filename": "hiero_0490.png"
+    },
+    {
+      "image_id": "hiero_0491",
+      "gardiner_code": null,
+      "filename": "hiero_0491.png"
+    },
+    {
+      "image_id": "hiero_0492",
+      "gardiner_code": null,
+      "filename": "hiero_0492.png"
+    },
+    {
+      "image_id": "hiero_0493",
+      "gardiner_code": null,
+      "filename": "hiero_0493.png"
+    },
+    {
+      "image_id": "hiero_0494",
+      "gardiner_code": null,
+      "filename": "hiero_0494.png"
+    },
+    {
+      "image_id": "hiero_0495",
+      "gardiner_code": null,
+      "filename": "hiero_0495.png"
+    },
+    {
+      "image_id": "hiero_0496",
+      "gardiner_code": null,
+      "filename": "hiero_0496.png"
+    },
+    {
+      "image_id": "hiero_0497",
+      "gardiner_code": null,
+      "filename": "hiero_0497.png"
+    },
+    {
+      "image_id": "hiero_0498",
+      "gardiner_code": null,
+      "filename": "hiero_0498.png"
+    },
+    {
+      "image_id": "hiero_0499",
+      "gardiner_code": null,
+      "filename": "hiero_0499.png"
+    },
+    {
+      "image_id": "hiero_0500",
+      "gardiner_code": null,
+      "filename": "hiero_0500.png"
+    },
+    {
+      "image_id": "hiero_0501",
+      "gardiner_code": null,
+      "filename": "hiero_0501.png"
+    },
+    {
+      "image_id": "hiero_0502",
+      "gardiner_code": null,
+      "filename": "hiero_0502.png"
+    },
+    {
+      "image_id": "hiero_0503",
+      "gardiner_code": null,
+      "filename": "hiero_0503.png"
+    },
+    {
+      "image_id": "hiero_0504",
+      "gardiner_code": null,
+      "filename": "hiero_0504.png"
+    },
+    {
+      "image_id": "hiero_0505",
+      "gardiner_code": null,
+      "filename": "hiero_0505.png"
+    },
+    {
+      "image_id": "hiero_0506",
+      "gardiner_code": null,
+      "filename": "hiero_0506.png"
+    },
+    {
+      "image_id": "hiero_0507",
+      "gardiner_code": null,
+      "filename": "hiero_0507.png"
+    },
+    {
+      "image_id": "hiero_0508",
+      "gardiner_code": null,
+      "filename": "hiero_0508.png"
+    },
+    {
+      "image_id": "hiero_0509",
+      "gardiner_code": null,
+      "filename": "hiero_0509.png"
+    },
+    {
+      "image_id": "hiero_0510",
+      "gardiner_code": null,
+      "filename": "hiero_0510.png"
+    },
+    {
+      "image_id": "hiero_0511",
+      "gardiner_code": null,
+      "filename": "hiero_0511.png"
+    },
+    {
+      "image_id": "hiero_0512",
+      "gardiner_code": null,
+      "filename": "hiero_0512.png"
+    },
+    {
+      "image_id": "hiero_0513",
+      "gardiner_code": null,
+      "filename": "hiero_0513.png"
+    },
+    {
+      "image_id": "hiero_0514",
+      "gardiner_code": null,
+      "filename": "hiero_0514.png"
+    },
+    {
+      "image_id": "hiero_0515",
+      "gardiner_code": null,
+      "filename": "hiero_0515.png"
+    },
+    {
+      "image_id": "hiero_0516",
+      "gardiner_code": null,
+      "filename": "hiero_0516.png"
+    },
+    {
+      "image_id": "hiero_0517",
+      "gardiner_code": null,
+      "filename": "hiero_0517.png"
+    },
+    {
+      "image_id": "hiero_0518",
+      "gardiner_code": null,
+      "filename": "hiero_0518.png"
+    },
+    {
+      "image_id": "hiero_0519",
+      "gardiner_code": null,
+      "filename": "hiero_0519.png"
+    },
+    {
+      "image_id": "hiero_0520",
+      "gardiner_code": null,
+      "filename": "hiero_0520.png"
+    },
+    {
+      "image_id": "hiero_0521",
+      "gardiner_code": null,
+      "filename": "hiero_0521.png"
+    },
+    {
+      "image_id": "hiero_0522",
+      "gardiner_code": null,
+      "filename": "hiero_0522.png"
+    },
+    {
+      "image_id": "hiero_0523",
+      "gardiner_code": null,
+      "filename": "hiero_0523.png"
+    },
+    {
+      "image_id": "hiero_0524",
+      "gardiner_code": null,
+      "filename": "hiero_0524.png"
+    },
+    {
+      "image_id": "hiero_0525",
+      "gardiner_code": null,
+      "filename": "hiero_0525.png"
+    },
+    {
+      "image_id": "hiero_0526",
+      "gardiner_code": null,
+      "filename": "hiero_0526.png"
+    },
+    {
+      "image_id": "hiero_0527",
+      "gardiner_code": null,
+      "filename": "hiero_0527.png"
+    },
+    {
+      "image_id": "hiero_0528",
+      "gardiner_code": null,
+      "filename": "hiero_0528.png"
+    },
+    {
+      "image_id": "hiero_0529",
+      "gardiner_code": null,
+      "filename": "hiero_0529.png"
+    },
+    {
+      "image_id": "hiero_0530",
+      "gardiner_code": null,
+      "filename": "hiero_0530.png"
+    },
+    {
+      "image_id": "hiero_0531",
+      "gardiner_code": null,
+      "filename": "hiero_0531.png"
+    },
+    {
+      "image_id": "hiero_0532",
+      "gardiner_code": null,
+      "filename": "hiero_0532.png"
+    },
+    {
+      "image_id": "hiero_0533",
+      "gardiner_code": null,
+      "filename": "hiero_0533.png"
+    },
+    {
+      "image_id": "hiero_0534",
+      "gardiner_code": null,
+      "filename": "hiero_0534.png"
+    },
+    {
+      "image_id": "hiero_0535",
+      "gardiner_code": null,
+      "filename": "hiero_0535.png"
+    },
+    {
+      "image_id": "hiero_0536",
+      "gardiner_code": null,
+      "filename": "hiero_0536.png"
+    },
+    {
+      "image_id": "hiero_0537",
+      "gardiner_code": null,
+      "filename": "hiero_0537.png"
+    },
+    {
+      "image_id": "hiero_0538",
+      "gardiner_code": null,
+      "filename": "hiero_0538.png"
+    },
+    {
+      "image_id": "hiero_0539",
+      "gardiner_code": null,
+      "filename": "hiero_0539.png"
+    },
+    {
+      "image_id": "hiero_0540",
+      "gardiner_code": null,
+      "filename": "hiero_0540.png"
+    },
+    {
+      "image_id": "hiero_0541",
+      "gardiner_code": null,
+      "filename": "hiero_0541.png"
+    },
+    {
+      "image_id": "hiero_0542",
+      "gardiner_code": null,
+      "filename": "hiero_0542.png"
+    },
+    {
+      "image_id": "hiero_0543",
+      "gardiner_code": null,
+      "filename": "hiero_0543.png"
+    },
+    {
+      "image_id": "hiero_0544",
+      "gardiner_code": null,
+      "filename": "hiero_0544.png"
+    },
+    {
+      "image_id": "hiero_0545",
+      "gardiner_code": null,
+      "filename": "hiero_0545.png"
+    },
+    {
+      "image_id": "hiero_0546",
+      "gardiner_code": null,
+      "filename": "hiero_0546.png"
+    },
+    {
+      "image_id": "hiero_0547",
+      "gardiner_code": null,
+      "filename": "hiero_0547.png"
+    },
+    {
+      "image_id": "hiero_0548",
+      "gardiner_code": null,
+      "filename": "hiero_0548.png"
+    },
+    {
+      "image_id": "hiero_0549",
+      "gardiner_code": null,
+      "filename": "hiero_0549.png"
+    },
+    {
+      "image_id": "hiero_0550",
+      "gardiner_code": null,
+      "filename": "hiero_0550.png"
+    },
+    {
+      "image_id": "hiero_0551",
+      "gardiner_code": null,
+      "filename": "hiero_0551.png"
+    },
+    {
+      "image_id": "hiero_0552",
+      "gardiner_code": null,
+      "filename": "hiero_0552.png"
+    },
+    {
+      "image_id": "hiero_0553",
+      "gardiner_code": null,
+      "filename": "hiero_0553.png"
+    },
+    {
+      "image_id": "hiero_0554",
+      "gardiner_code": null,
+      "filename": "hiero_0554.png"
+    },
+    {
+      "image_id": "hiero_0555",
+      "gardiner_code": null,
+      "filename": "hiero_0555.png"
+    },
+    {
+      "image_id": "hiero_0556",
+      "gardiner_code": null,
+      "filename": "hiero_0556.png"
+    },
+    {
+      "image_id": "hiero_0557",
+      "gardiner_code": null,
+      "filename": "hiero_0557.png"
+    },
+    {
+      "image_id": "hiero_0558",
+      "gardiner_code": null,
+      "filename": "hiero_0558.png"
+    },
+    {
+      "image_id": "hiero_0559",
+      "gardiner_code": null,
+      "filename": "hiero_0559.png"
+    },
+    {
+      "image_id": "hiero_0560",
+      "gardiner_code": null,
+      "filename": "hiero_0560.png"
+    },
+    {
+      "image_id": "hiero_0561",
+      "gardiner_code": null,
+      "filename": "hiero_0561.png"
+    },
+    {
+      "image_id": "hiero_0562",
+      "gardiner_code": null,
+      "filename": "hiero_0562.png"
+    },
+    {
+      "image_id": "hiero_0563",
+      "gardiner_code": null,
+      "filename": "hiero_0563.png"
+    },
+    {
+      "image_id": "hiero_0564",
+      "gardiner_code": null,
+      "filename": "hiero_0564.png"
+    },
+    {
+      "image_id": "hiero_0565",
+      "gardiner_code": null,
+      "filename": "hiero_0565.png"
+    },
+    {
+      "image_id": "hiero_0566",
+      "gardiner_code": null,
+      "filename": "hiero_0566.png"
+    },
+    {
+      "image_id": "hiero_0567",
+      "gardiner_code": null,
+      "filename": "hiero_0567.png"
+    },
+    {
+      "image_id": "hiero_0568",
+      "gardiner_code": null,
+      "filename": "hiero_0568.png"
+    },
+    {
+      "image_id": "hiero_0569",
+      "gardiner_code": null,
+      "filename": "hiero_0569.png"
+    },
+    {
+      "image_id": "hiero_0570",
+      "gardiner_code": null,
+      "filename": "hiero_0570.png"
+    },
+    {
+      "image_id": "hiero_0571",
+      "gardiner_code": null,
+      "filename": "hiero_0571.png"
+    },
+    {
+      "image_id": "hiero_0572",
+      "gardiner_code": null,
+      "filename": "hiero_0572.png"
+    },
+    {
+      "image_id": "hiero_0573",
+      "gardiner_code": null,
+      "filename": "hiero_0573.png"
+    },
+    {
+      "image_id": "hiero_0574",
+      "gardiner_code": null,
+      "filename": "hiero_0574.png"
+    },
+    {
+      "image_id": "hiero_0575",
+      "gardiner_code": null,
+      "filename": "hiero_0575.png"
+    },
+    {
+      "image_id": "hiero_0576",
+      "gardiner_code": null,
+      "filename": "hiero_0576.png"
+    },
+    {
+      "image_id": "hiero_0577",
+      "gardiner_code": null,
+      "filename": "hiero_0577.png"
+    },
+    {
+      "image_id": "hiero_0578",
+      "gardiner_code": null,
+      "filename": "hiero_0578.png"
+    },
+    {
+      "image_id": "hiero_0579",
+      "gardiner_code": null,
+      "filename": "hiero_0579.png"
+    },
+    {
+      "image_id": "hiero_0580",
+      "gardiner_code": null,
+      "filename": "hiero_0580.png"
+    },
+    {
+      "image_id": "hiero_0581",
+      "gardiner_code": null,
+      "filename": "hiero_0581.png"
+    },
+    {
+      "image_id": "hiero_0582",
+      "gardiner_code": null,
+      "filename": "hiero_0582.png"
+    },
+    {
+      "image_id": "hiero_0583",
+      "gardiner_code": null,
+      "filename": "hiero_0583.png"
+    },
+    {
+      "image_id": "hiero_0584",
+      "gardiner_code": null,
+      "filename": "hiero_0584.png"
+    },
+    {
+      "image_id": "hiero_0585",
+      "gardiner_code": null,
+      "filename": "hiero_0585.png"
+    },
+    {
+      "image_id": "hiero_0586",
+      "gardiner_code": null,
+      "filename": "hiero_0586.png"
+    },
+    {
+      "image_id": "hiero_0587",
+      "gardiner_code": null,
+      "filename": "hiero_0587.png"
+    },
+    {
+      "image_id": "hiero_0588",
+      "gardiner_code": null,
+      "filename": "hiero_0588.png"
+    },
+    {
+      "image_id": "hiero_0589",
+      "gardiner_code": null,
+      "filename": "hiero_0589.png"
+    },
+    {
+      "image_id": "hiero_0590",
+      "gardiner_code": null,
+      "filename": "hiero_0590.png"
+    },
+    {
+      "image_id": "hiero_0591",
+      "gardiner_code": null,
+      "filename": "hiero_0591.png"
+    },
+    {
+      "image_id": "hiero_0592",
+      "gardiner_code": null,
+      "filename": "hiero_0592.png"
+    },
+    {
+      "image_id": "hiero_0593",
+      "gardiner_code": null,
+      "filename": "hiero_0593.png"
+    },
+    {
+      "image_id": "hiero_0594",
+      "gardiner_code": null,
+      "filename": "hiero_0594.png"
+    },
+    {
+      "image_id": "hiero_0595",
+      "gardiner_code": null,
+      "filename": "hiero_0595.png"
+    },
+    {
+      "image_id": "hiero_0596",
+      "gardiner_code": null,
+      "filename": "hiero_0596.png"
+    },
+    {
+      "image_id": "hiero_0597",
+      "gardiner_code": null,
+      "filename": "hiero_0597.png"
+    },
+    {
+      "image_id": "hiero_0598",
+      "gardiner_code": null,
+      "filename": "hiero_0598.png"
+    },
+    {
+      "image_id": "hiero_0599",
+      "gardiner_code": null,
+      "filename": "hiero_0599.png"
+    },
+    {
+      "image_id": "hiero_0600",
+      "gardiner_code": null,
+      "filename": "hiero_0600.png"
+    },
+    {
+      "image_id": "hiero_0601",
+      "gardiner_code": null,
+      "filename": "hiero_0601.png"
+    },
+    {
+      "image_id": "hiero_0602",
+      "gardiner_code": null,
+      "filename": "hiero_0602.png"
+    },
+    {
+      "image_id": "hiero_0603",
+      "gardiner_code": null,
+      "filename": "hiero_0603.png"
+    },
+    {
+      "image_id": "hiero_0604",
+      "gardiner_code": null,
+      "filename": "hiero_0604.png"
+    },
+    {
+      "image_id": "hiero_0605",
+      "gardiner_code": null,
+      "filename": "hiero_0605.png"
+    },
+    {
+      "image_id": "hiero_0606",
+      "gardiner_code": null,
+      "filename": "hiero_0606.png"
+    },
+    {
+      "image_id": "hiero_0607",
+      "gardiner_code": null,
+      "filename": "hiero_0607.png"
+    },
+    {
+      "image_id": "hiero_0608",
+      "gardiner_code": null,
+      "filename": "hiero_0608.png"
+    },
+    {
+      "image_id": "hiero_0609",
+      "gardiner_code": null,
+      "filename": "hiero_0609.png"
+    },
+    {
+      "image_id": "hiero_0610",
+      "gardiner_code": null,
+      "filename": "hiero_0610.png"
+    },
+    {
+      "image_id": "hiero_0611",
+      "gardiner_code": null,
+      "filename": "hiero_0611.png"
+    },
+    {
+      "image_id": "hiero_0612",
+      "gardiner_code": null,
+      "filename": "hiero_0612.png"
+    },
+    {
+      "image_id": "hiero_0613",
+      "gardiner_code": null,
+      "filename": "hiero_0613.png"
+    },
+    {
+      "image_id": "hiero_0614",
+      "gardiner_code": null,
+      "filename": "hiero_0614.png"
+    },
+    {
+      "image_id": "hiero_0615",
+      "gardiner_code": null,
+      "filename": "hiero_0615.png"
+    },
+    {
+      "image_id": "hiero_0616",
+      "gardiner_code": null,
+      "filename": "hiero_0616.png"
+    },
+    {
+      "image_id": "hiero_0617",
+      "gardiner_code": null,
+      "filename": "hiero_0617.png"
+    },
+    {
+      "image_id": "hiero_0618",
+      "gardiner_code": null,
+      "filename": "hiero_0618.png"
+    },
+    {
+      "image_id": "hiero_0619",
+      "gardiner_code": null,
+      "filename": "hiero_0619.png"
+    },
+    {
+      "image_id": "hiero_0620",
+      "gardiner_code": null,
+      "filename": "hiero_0620.png"
+    },
+    {
+      "image_id": "hiero_0621",
+      "gardiner_code": null,
+      "filename": "hiero_0621.png"
+    },
+    {
+      "image_id": "hiero_0622",
+      "gardiner_code": null,
+      "filename": "hiero_0622.png"
+    },
+    {
+      "image_id": "hiero_0623",
+      "gardiner_code": null,
+      "filename": "hiero_0623.png"
+    },
+    {
+      "image_id": "hiero_0624",
+      "gardiner_code": null,
+      "filename": "hiero_0624.png"
+    },
+    {
+      "image_id": "hiero_0625",
+      "gardiner_code": null,
+      "filename": "hiero_0625.png"
+    },
+    {
+      "image_id": "hiero_0626",
+      "gardiner_code": null,
+      "filename": "hiero_0626.png"
+    },
+    {
+      "image_id": "hiero_0627",
+      "gardiner_code": null,
+      "filename": "hiero_0627.png"
+    },
+    {
+      "image_id": "hiero_0628",
+      "gardiner_code": null,
+      "filename": "hiero_0628.png"
+    },
+    {
+      "image_id": "hiero_0629",
+      "gardiner_code": null,
+      "filename": "hiero_0629.png"
+    },
+    {
+      "image_id": "hiero_0630",
+      "gardiner_code": null,
+      "filename": "hiero_0630.png"
+    },
+    {
+      "image_id": "hiero_0631",
+      "gardiner_code": null,
+      "filename": "hiero_0631.png"
+    },
+    {
+      "image_id": "hiero_0632",
+      "gardiner_code": null,
+      "filename": "hiero_0632.png"
+    },
+    {
+      "image_id": "hiero_0633",
+      "gardiner_code": null,
+      "filename": "hiero_0633.png"
+    },
+    {
+      "image_id": "hiero_0634",
+      "gardiner_code": null,
+      "filename": "hiero_0634.png"
+    },
+    {
+      "image_id": "hiero_0635",
+      "gardiner_code": null,
+      "filename": "hiero_0635.png"
+    },
+    {
+      "image_id": "hiero_0636",
+      "gardiner_code": null,
+      "filename": "hiero_0636.png"
+    },
+    {
+      "image_id": "hiero_0637",
+      "gardiner_code": null,
+      "filename": "hiero_0637.png"
+    },
+    {
+      "image_id": "hiero_0638",
+      "gardiner_code": null,
+      "filename": "hiero_0638.png"
+    },
+    {
+      "image_id": "hiero_0639",
+      "gardiner_code": null,
+      "filename": "hiero_0639.png"
+    },
+    {
+      "image_id": "hiero_0640",
+      "gardiner_code": null,
+      "filename": "hiero_0640.png"
+    },
+    {
+      "image_id": "hiero_0641",
+      "gardiner_code": null,
+      "filename": "hiero_0641.png"
+    },
+    {
+      "image_id": "hiero_0642",
+      "gardiner_code": null,
+      "filename": "hiero_0642.png"
+    },
+    {
+      "image_id": "hiero_0643",
+      "gardiner_code": null,
+      "filename": "hiero_0643.png"
+    },
+    {
+      "image_id": "hiero_0644",
+      "gardiner_code": null,
+      "filename": "hiero_0644.png"
+    },
+    {
+      "image_id": "hiero_0645",
+      "gardiner_code": null,
+      "filename": "hiero_0645.png"
+    },
+    {
+      "image_id": "hiero_0646",
+      "gardiner_code": null,
+      "filename": "hiero_0646.png"
+    },
+    {
+      "image_id": "hiero_0647",
+      "gardiner_code": null,
+      "filename": "hiero_0647.png"
+    },
+    {
+      "image_id": "hiero_0648",
+      "gardiner_code": null,
+      "filename": "hiero_0648.png"
+    },
+    {
+      "image_id": "hiero_0649",
+      "gardiner_code": null,
+      "filename": "hiero_0649.png"
+    },
+    {
+      "image_id": "hiero_0650",
+      "gardiner_code": null,
+      "filename": "hiero_0650.png"
+    },
+    {
+      "image_id": "hiero_0651",
+      "gardiner_code": null,
+      "filename": "hiero_0651.png"
+    },
+    {
+      "image_id": "hiero_0652",
+      "gardiner_code": null,
+      "filename": "hiero_0652.png"
+    },
+    {
+      "image_id": "hiero_0653",
+      "gardiner_code": null,
+      "filename": "hiero_0653.png"
+    },
+    {
+      "image_id": "hiero_0654",
+      "gardiner_code": null,
+      "filename": "hiero_0654.png"
+    },
+    {
+      "image_id": "hiero_0655",
+      "gardiner_code": null,
+      "filename": "hiero_0655.png"
+    },
+    {
+      "image_id": "hiero_0656",
+      "gardiner_code": null,
+      "filename": "hiero_0656.png"
+    },
+    {
+      "image_id": "hiero_0657",
+      "gardiner_code": null,
+      "filename": "hiero_0657.png"
+    },
+    {
+      "image_id": "hiero_0658",
+      "gardiner_code": null,
+      "filename": "hiero_0658.png"
+    },
+    {
+      "image_id": "hiero_0659",
+      "gardiner_code": null,
+      "filename": "hiero_0659.png"
+    },
+    {
+      "image_id": "hiero_0660",
+      "gardiner_code": null,
+      "filename": "hiero_0660.png"
+    },
+    {
+      "image_id": "hiero_0661",
+      "gardiner_code": null,
+      "filename": "hiero_0661.png"
+    },
+    {
+      "image_id": "hiero_0662",
+      "gardiner_code": null,
+      "filename": "hiero_0662.png"
+    },
+    {
+      "image_id": "hiero_0663",
+      "gardiner_code": null,
+      "filename": "hiero_0663.png"
+    },
+    {
+      "image_id": "hiero_0664",
+      "gardiner_code": null,
+      "filename": "hiero_0664.png"
+    },
+    {
+      "image_id": "hiero_0665",
+      "gardiner_code": null,
+      "filename": "hiero_0665.png"
+    },
+    {
+      "image_id": "hiero_0666",
+      "gardiner_code": null,
+      "filename": "hiero_0666.png"
+    },
+    {
+      "image_id": "hiero_0667",
+      "gardiner_code": null,
+      "filename": "hiero_0667.png"
+    },
+    {
+      "image_id": "hiero_0668",
+      "gardiner_code": null,
+      "filename": "hiero_0668.png"
+    },
+    {
+      "image_id": "hiero_0669",
+      "gardiner_code": null,
+      "filename": "hiero_0669.png"
+    },
+    {
+      "image_id": "hiero_0670",
+      "gardiner_code": null,
+      "filename": "hiero_0670.png"
+    },
+    {
+      "image_id": "hiero_0671",
+      "gardiner_code": null,
+      "filename": "hiero_0671.png"
+    },
+    {
+      "image_id": "hiero_0672",
+      "gardiner_code": null,
+      "filename": "hiero_0672.png"
+    },
+    {
+      "image_id": "hiero_0673",
+      "gardiner_code": null,
+      "filename": "hiero_0673.png"
+    },
+    {
+      "image_id": "hiero_0674",
+      "gardiner_code": null,
+      "filename": "hiero_0674.png"
+    },
+    {
+      "image_id": "hiero_0675",
+      "gardiner_code": null,
+      "filename": "hiero_0675.png"
+    },
+    {
+      "image_id": "hiero_0676",
+      "gardiner_code": null,
+      "filename": "hiero_0676.png"
+    },
+    {
+      "image_id": "hiero_0677",
+      "gardiner_code": null,
+      "filename": "hiero_0677.png"
+    },
+    {
+      "image_id": "hiero_0678",
+      "gardiner_code": null,
+      "filename": "hiero_0678.png"
+    },
+    {
+      "image_id": "hiero_0679",
+      "gardiner_code": null,
+      "filename": "hiero_0679.png"
+    },
+    {
+      "image_id": "hiero_0680",
+      "gardiner_code": null,
+      "filename": "hiero_0680.png"
+    },
+    {
+      "image_id": "hiero_0681",
+      "gardiner_code": null,
+      "filename": "hiero_0681.png"
+    },
+    {
+      "image_id": "hiero_0682",
+      "gardiner_code": null,
+      "filename": "hiero_0682.png"
+    },
+    {
+      "image_id": "hiero_0683",
+      "gardiner_code": null,
+      "filename": "hiero_0683.png"
+    },
+    {
+      "image_id": "hiero_0684",
+      "gardiner_code": null,
+      "filename": "hiero_0684.png"
+    },
+    {
+      "image_id": "hiero_0685",
+      "gardiner_code": null,
+      "filename": "hiero_0685.png"
+    },
+    {
+      "image_id": "hiero_0686",
+      "gardiner_code": null,
+      "filename": "hiero_0686.png"
+    },
+    {
+      "image_id": "hiero_0687",
+      "gardiner_code": null,
+      "filename": "hiero_0687.png"
+    },
+    {
+      "image_id": "hiero_0688",
+      "gardiner_code": null,
+      "filename": "hiero_0688.png"
+    },
+    {
+      "image_id": "hiero_0689",
+      "gardiner_code": null,
+      "filename": "hiero_0689.png"
+    },
+    {
+      "image_id": "hiero_0690",
+      "gardiner_code": null,
+      "filename": "hiero_0690.png"
+    },
+    {
+      "image_id": "hiero_0691",
+      "gardiner_code": null,
+      "filename": "hiero_0691.png"
+    },
+    {
+      "image_id": "hiero_0692",
+      "gardiner_code": null,
+      "filename": "hiero_0692.png"
+    },
+    {
+      "image_id": "hiero_0693",
+      "gardiner_code": null,
+      "filename": "hiero_0693.png"
+    },
+    {
+      "image_id": "hiero_0694",
+      "gardiner_code": null,
+      "filename": "hiero_0694.png"
+    },
+    {
+      "image_id": "hiero_0695",
+      "gardiner_code": null,
+      "filename": "hiero_0695.png"
+    },
+    {
+      "image_id": "hiero_0696",
+      "gardiner_code": null,
+      "filename": "hiero_0696.png"
+    },
+    {
+      "image_id": "hiero_0697",
+      "gardiner_code": null,
+      "filename": "hiero_0697.png"
+    },
+    {
+      "image_id": "hiero_0698",
+      "gardiner_code": null,
+      "filename": "hiero_0698.png"
+    },
+    {
+      "image_id": "hiero_0699",
+      "gardiner_code": null,
+      "filename": "hiero_0699.png"
+    },
+    {
+      "image_id": "hiero_0700",
+      "gardiner_code": null,
+      "filename": "hiero_0700.png"
+    },
+    {
+      "image_id": "hiero_0701",
+      "gardiner_code": null,
+      "filename": "hiero_0701.png"
+    },
+    {
+      "image_id": "hiero_0702",
+      "gardiner_code": null,
+      "filename": "hiero_0702.png"
+    },
+    {
+      "image_id": "hiero_0703",
+      "gardiner_code": null,
+      "filename": "hiero_0703.png"
+    },
+    {
+      "image_id": "hiero_0704",
+      "gardiner_code": null,
+      "filename": "hiero_0704.png"
+    },
+    {
+      "image_id": "hiero_0705",
+      "gardiner_code": null,
+      "filename": "hiero_0705.png"
+    },
+    {
+      "image_id": "hiero_0706",
+      "gardiner_code": null,
+      "filename": "hiero_0706.png"
+    },
+    {
+      "image_id": "hiero_0707",
+      "gardiner_code": null,
+      "filename": "hiero_0707.png"
+    },
+    {
+      "image_id": "hiero_0708",
+      "gardiner_code": null,
+      "filename": "hiero_0708.png"
+    },
+    {
+      "image_id": "hiero_0709",
+      "gardiner_code": null,
+      "filename": "hiero_0709.png"
+    },
+    {
+      "image_id": "hiero_0710",
+      "gardiner_code": null,
+      "filename": "hiero_0710.png"
+    },
+    {
+      "image_id": "hiero_0711",
+      "gardiner_code": null,
+      "filename": "hiero_0711.png"
+    },
+    {
+      "image_id": "hiero_0712",
+      "gardiner_code": null,
+      "filename": "hiero_0712.png"
+    },
+    {
+      "image_id": "hiero_0713",
+      "gardiner_code": null,
+      "filename": "hiero_0713.png"
+    },
+    {
+      "image_id": "hiero_0714",
+      "gardiner_code": null,
+      "filename": "hiero_0714.png"
+    },
+    {
+      "image_id": "hiero_0715",
+      "gardiner_code": null,
+      "filename": "hiero_0715.png"
+    },
+    {
+      "image_id": "hiero_0716",
+      "gardiner_code": null,
+      "filename": "hiero_0716.png"
+    },
+    {
+      "image_id": "hiero_0717",
+      "gardiner_code": null,
+      "filename": "hiero_0717.png"
+    },
+    {
+      "image_id": "hiero_0718",
+      "gardiner_code": null,
+      "filename": "hiero_0718.png"
+    },
+    {
+      "image_id": "hiero_0719",
+      "gardiner_code": null,
+      "filename": "hiero_0719.png"
+    },
+    {
+      "image_id": "hiero_0720",
+      "gardiner_code": null,
+      "filename": "hiero_0720.png"
+    },
+    {
+      "image_id": "hiero_0721",
+      "gardiner_code": null,
+      "filename": "hiero_0721.png"
+    },
+    {
+      "image_id": "hiero_0722",
+      "gardiner_code": null,
+      "filename": "hiero_0722.png"
+    },
+    {
+      "image_id": "hiero_0723",
+      "gardiner_code": null,
+      "filename": "hiero_0723.png"
+    },
+    {
+      "image_id": "hiero_0724",
+      "gardiner_code": null,
+      "filename": "hiero_0724.png"
+    },
+    {
+      "image_id": "hiero_0725",
+      "gardiner_code": null,
+      "filename": "hiero_0725.png"
+    },
+    {
+      "image_id": "hiero_0726",
+      "gardiner_code": null,
+      "filename": "hiero_0726.png"
+    },
+    {
+      "image_id": "hiero_0727",
+      "gardiner_code": null,
+      "filename": "hiero_0727.png"
+    },
+    {
+      "image_id": "hiero_0728",
+      "gardiner_code": null,
+      "filename": "hiero_0728.png"
+    },
+    {
+      "image_id": "hiero_0729",
+      "gardiner_code": null,
+      "filename": "hiero_0729.png"
+    },
+    {
+      "image_id": "hiero_0730",
+      "gardiner_code": null,
+      "filename": "hiero_0730.png"
+    },
+    {
+      "image_id": "hiero_0731",
+      "gardiner_code": null,
+      "filename": "hiero_0731.png"
+    },
+    {
+      "image_id": "hiero_0732",
+      "gardiner_code": null,
+      "filename": "hiero_0732.png"
+    },
+    {
+      "image_id": "hiero_0733",
+      "gardiner_code": null,
+      "filename": "hiero_0733.png"
+    },
+    {
+      "image_id": "hiero_0734",
+      "gardiner_code": null,
+      "filename": "hiero_0734.png"
+    },
+    {
+      "image_id": "hiero_0735",
+      "gardiner_code": null,
+      "filename": "hiero_0735.png"
+    },
+    {
+      "image_id": "hiero_0736",
+      "gardiner_code": null,
+      "filename": "hiero_0736.png"
+    },
+    {
+      "image_id": "hiero_0737",
+      "gardiner_code": null,
+      "filename": "hiero_0737.png"
+    },
+    {
+      "image_id": "hiero_0738",
+      "gardiner_code": null,
+      "filename": "hiero_0738.png"
+    },
+    {
+      "image_id": "hiero_0739",
+      "gardiner_code": null,
+      "filename": "hiero_0739.png"
+    },
+    {
+      "image_id": "hiero_0740",
+      "gardiner_code": null,
+      "filename": "hiero_0740.png"
+    },
+    {
+      "image_id": "hiero_0741",
+      "gardiner_code": null,
+      "filename": "hiero_0741.png"
+    },
+    {
+      "image_id": "hiero_0742",
+      "gardiner_code": null,
+      "filename": "hiero_0742.png"
+    },
+    {
+      "image_id": "hiero_0743",
+      "gardiner_code": null,
+      "filename": "hiero_0743.png"
+    },
+    {
+      "image_id": "hiero_0744",
+      "gardiner_code": null,
+      "filename": "hiero_0744.png"
+    },
+    {
+      "image_id": "hiero_0745",
+      "gardiner_code": null,
+      "filename": "hiero_0745.png"
+    },
+    {
+      "image_id": "hiero_0746",
+      "gardiner_code": null,
+      "filename": "hiero_0746.png"
+    },
+    {
+      "image_id": "hiero_0747",
+      "gardiner_code": null,
+      "filename": "hiero_0747.png"
+    },
+    {
+      "image_id": "hiero_0748",
+      "gardiner_code": null,
+      "filename": "hiero_0748.png"
+    },
+    {
+      "image_id": "hiero_0749",
+      "gardiner_code": null,
+      "filename": "hiero_0749.png"
+    },
+    {
+      "image_id": "hiero_0750",
+      "gardiner_code": null,
+      "filename": "hiero_0750.png"
+    },
+    {
+      "image_id": "hiero_0751",
+      "gardiner_code": null,
+      "filename": "hiero_0751.png"
+    },
+    {
+      "image_id": "hiero_0752",
+      "gardiner_code": null,
+      "filename": "hiero_0752.png"
+    },
+    {
+      "image_id": "hiero_0753",
+      "gardiner_code": null,
+      "filename": "hiero_0753.png"
+    },
+    {
+      "image_id": "hiero_0754",
+      "gardiner_code": null,
+      "filename": "hiero_0754.png"
+    },
+    {
+      "image_id": "hiero_0755",
+      "gardiner_code": null,
+      "filename": "hiero_0755.png"
+    },
+    {
+      "image_id": "hiero_0756",
+      "gardiner_code": null,
+      "filename": "hiero_0756.png"
+    },
+    {
+      "image_id": "hiero_0757",
+      "gardiner_code": null,
+      "filename": "hiero_0757.png"
+    },
+    {
+      "image_id": "hiero_0758",
+      "gardiner_code": null,
+      "filename": "hiero_0758.png"
+    },
+    {
+      "image_id": "hiero_0759",
+      "gardiner_code": null,
+      "filename": "hiero_0759.png"
+    },
+    {
+      "image_id": "hiero_0760",
+      "gardiner_code": null,
+      "filename": "hiero_0760.png"
+    },
+    {
+      "image_id": "hiero_0761",
+      "gardiner_code": null,
+      "filename": "hiero_0761.png"
+    },
+    {
+      "image_id": "hiero_0762",
+      "gardiner_code": null,
+      "filename": "hiero_0762.png"
+    },
+    {
+      "image_id": "hiero_0763",
+      "gardiner_code": null,
+      "filename": "hiero_0763.png"
+    },
+    {
+      "image_id": "hiero_0764",
+      "gardiner_code": null,
+      "filename": "hiero_0764.png"
+    },
+    {
+      "image_id": "hiero_0765",
+      "gardiner_code": null,
+      "filename": "hiero_0765.png"
+    },
+    {
+      "image_id": "hiero_0766",
+      "gardiner_code": null,
+      "filename": "hiero_0766.png"
+    },
+    {
+      "image_id": "hiero_0767",
+      "gardiner_code": null,
+      "filename": "hiero_0767.png"
+    },
+    {
+      "image_id": "hiero_0768",
+      "gardiner_code": null,
+      "filename": "hiero_0768.png"
+    },
+    {
+      "image_id": "hiero_0769",
+      "gardiner_code": null,
+      "filename": "hiero_0769.png"
+    },
+    {
+      "image_id": "hiero_0770",
+      "gardiner_code": null,
+      "filename": "hiero_0770.png"
+    },
+    {
+      "image_id": "hiero_0771",
+      "gardiner_code": null,
+      "filename": "hiero_0771.png"
+    },
+    {
+      "image_id": "hiero_0772",
+      "gardiner_code": null,
+      "filename": "hiero_0772.png"
+    },
+    {
+      "image_id": "hiero_0773",
+      "gardiner_code": null,
+      "filename": "hiero_0773.png"
+    },
+    {
+      "image_id": "hiero_0774",
+      "gardiner_code": null,
+      "filename": "hiero_0774.png"
+    },
+    {
+      "image_id": "hiero_0775",
+      "gardiner_code": null,
+      "filename": "hiero_0775.png"
+    },
+    {
+      "image_id": "hiero_0776",
+      "gardiner_code": null,
+      "filename": "hiero_0776.png"
+    },
+    {
+      "image_id": "hiero_0777",
+      "gardiner_code": null,
+      "filename": "hiero_0777.png"
+    },
+    {
+      "image_id": "hiero_0778",
+      "gardiner_code": null,
+      "filename": "hiero_0778.png"
+    },
+    {
+      "image_id": "hiero_0779",
+      "gardiner_code": null,
+      "filename": "hiero_0779.png"
+    },
+    {
+      "image_id": "hiero_0780",
+      "gardiner_code": null,
+      "filename": "hiero_0780.png"
+    },
+    {
+      "image_id": "hiero_0781",
+      "gardiner_code": null,
+      "filename": "hiero_0781.png"
+    },
+    {
+      "image_id": "hiero_0782",
+      "gardiner_code": null,
+      "filename": "hiero_0782.png"
+    },
+    {
+      "image_id": "hiero_0783",
+      "gardiner_code": null,
+      "filename": "hiero_0783.png"
+    },
+    {
+      "image_id": "hiero_0784",
+      "gardiner_code": null,
+      "filename": "hiero_0784.png"
+    },
+    {
+      "image_id": "hiero_0785",
+      "gardiner_code": null,
+      "filename": "hiero_0785.png"
+    },
+    {
+      "image_id": "hiero_0786",
+      "gardiner_code": null,
+      "filename": "hiero_0786.png"
+    },
+    {
+      "image_id": "hiero_0787",
+      "gardiner_code": null,
+      "filename": "hiero_0787.png"
+    },
+    {
+      "image_id": "hiero_0788",
+      "gardiner_code": null,
+      "filename": "hiero_0788.png"
+    },
+    {
+      "image_id": "hiero_0789",
+      "gardiner_code": null,
+      "filename": "hiero_0789.png"
+    },
+    {
+      "image_id": "hiero_0790",
+      "gardiner_code": null,
+      "filename": "hiero_0790.png"
+    },
+    {
+      "image_id": "hiero_0791",
+      "gardiner_code": null,
+      "filename": "hiero_0791.png"
+    },
+    {
+      "image_id": "hiero_0792",
+      "gardiner_code": null,
+      "filename": "hiero_0792.png"
+    },
+    {
+      "image_id": "hiero_0793",
+      "gardiner_code": null,
+      "filename": "hiero_0793.png"
+    },
+    {
+      "image_id": "hiero_0794",
+      "gardiner_code": null,
+      "filename": "hiero_0794.png"
+    },
+    {
+      "image_id": "hiero_0795",
+      "gardiner_code": null,
+      "filename": "hiero_0795.png"
+    },
+    {
+      "image_id": "hiero_0796",
+      "gardiner_code": null,
+      "filename": "hiero_0796.png"
+    },
+    {
+      "image_id": "hiero_0797",
+      "gardiner_code": null,
+      "filename": "hiero_0797.png"
+    },
+    {
+      "image_id": "hiero_0798",
+      "gardiner_code": null,
+      "filename": "hiero_0798.png"
+    },
+    {
+      "image_id": "hiero_0799",
+      "gardiner_code": null,
+      "filename": "hiero_0799.png"
+    },
+    {
+      "image_id": "hiero_0800",
+      "gardiner_code": null,
+      "filename": "hiero_0800.png"
+    },
+    {
+      "image_id": "hiero_0801",
+      "gardiner_code": null,
+      "filename": "hiero_0801.png"
+    },
+    {
+      "image_id": "hiero_0802",
+      "gardiner_code": null,
+      "filename": "hiero_0802.png"
+    },
+    {
+      "image_id": "hiero_0803",
+      "gardiner_code": null,
+      "filename": "hiero_0803.png"
+    },
+    {
+      "image_id": "hiero_0804",
+      "gardiner_code": null,
+      "filename": "hiero_0804.png"
+    },
+    {
+      "image_id": "hiero_0805",
+      "gardiner_code": null,
+      "filename": "hiero_0805.png"
+    },
+    {
+      "image_id": "hiero_0806",
+      "gardiner_code": null,
+      "filename": "hiero_0806.png"
+    },
+    {
+      "image_id": "hiero_0807",
+      "gardiner_code": null,
+      "filename": "hiero_0807.png"
+    },
+    {
+      "image_id": "hiero_0808",
+      "gardiner_code": null,
+      "filename": "hiero_0808.png"
+    },
+    {
+      "image_id": "hiero_0809",
+      "gardiner_code": null,
+      "filename": "hiero_0809.png"
+    },
+    {
+      "image_id": "hiero_0810",
+      "gardiner_code": null,
+      "filename": "hiero_0810.png"
+    },
+    {
+      "image_id": "hiero_0811",
+      "gardiner_code": null,
+      "filename": "hiero_0811.png"
+    },
+    {
+      "image_id": "hiero_0812",
+      "gardiner_code": null,
+      "filename": "hiero_0812.png"
+    },
+    {
+      "image_id": "hiero_0813",
+      "gardiner_code": null,
+      "filename": "hiero_0813.png"
+    },
+    {
+      "image_id": "hiero_0814",
+      "gardiner_code": null,
+      "filename": "hiero_0814.png"
+    },
+    {
+      "image_id": "hiero_0815",
+      "gardiner_code": null,
+      "filename": "hiero_0815.png"
+    },
+    {
+      "image_id": "hiero_0816",
+      "gardiner_code": null,
+      "filename": "hiero_0816.png"
+    },
+    {
+      "image_id": "hiero_0817",
+      "gardiner_code": null,
+      "filename": "hiero_0817.png"
+    },
+    {
+      "image_id": "hiero_0818",
+      "gardiner_code": null,
+      "filename": "hiero_0818.png"
+    },
+    {
+      "image_id": "hiero_0819",
+      "gardiner_code": null,
+      "filename": "hiero_0819.png"
+    },
+    {
+      "image_id": "hiero_0820",
+      "gardiner_code": null,
+      "filename": "hiero_0820.png"
+    },
+    {
+      "image_id": "hiero_0821",
+      "gardiner_code": null,
+      "filename": "hiero_0821.png"
+    },
+    {
+      "image_id": "hiero_0822",
+      "gardiner_code": null,
+      "filename": "hiero_0822.png"
+    },
+    {
+      "image_id": "hiero_0823",
+      "gardiner_code": null,
+      "filename": "hiero_0823.png"
+    },
+    {
+      "image_id": "hiero_0824",
+      "gardiner_code": null,
+      "filename": "hiero_0824.png"
+    },
+    {
+      "image_id": "hiero_0825",
+      "gardiner_code": null,
+      "filename": "hiero_0825.png"
+    },
+    {
+      "image_id": "hiero_0826",
+      "gardiner_code": null,
+      "filename": "hiero_0826.png"
+    },
+    {
+      "image_id": "hiero_0827",
+      "gardiner_code": null,
+      "filename": "hiero_0827.png"
+    },
+    {
+      "image_id": "hiero_0828",
+      "gardiner_code": null,
+      "filename": "hiero_0828.png"
+    },
+    {
+      "image_id": "hiero_0829",
+      "gardiner_code": null,
+      "filename": "hiero_0829.png"
+    },
+    {
+      "image_id": "hiero_0830",
+      "gardiner_code": null,
+      "filename": "hiero_0830.png"
+    },
+    {
+      "image_id": "hiero_0831",
+      "gardiner_code": null,
+      "filename": "hiero_0831.png"
+    },
+    {
+      "image_id": "hiero_0832",
+      "gardiner_code": null,
+      "filename": "hiero_0832.png"
+    },
+    {
+      "image_id": "hiero_0833",
+      "gardiner_code": null,
+      "filename": "hiero_0833.png"
+    },
+    {
+      "image_id": "hiero_0834",
+      "gardiner_code": null,
+      "filename": "hiero_0834.png"
+    },
+    {
+      "image_id": "hiero_0835",
+      "gardiner_code": null,
+      "filename": "hiero_0835.png"
+    },
+    {
+      "image_id": "hiero_0836",
+      "gardiner_code": null,
+      "filename": "hiero_0836.png"
+    },
+    {
+      "image_id": "hiero_0837",
+      "gardiner_code": null,
+      "filename": "hiero_0837.png"
+    },
+    {
+      "image_id": "hiero_0838",
+      "gardiner_code": null,
+      "filename": "hiero_0838.png"
+    },
+    {
+      "image_id": "hiero_0839",
+      "gardiner_code": null,
+      "filename": "hiero_0839.png"
+    },
+    {
+      "image_id": "hiero_0840",
+      "gardiner_code": null,
+      "filename": "hiero_0840.png"
+    },
+    {
+      "image_id": "hiero_0841",
+      "gardiner_code": null,
+      "filename": "hiero_0841.png"
+    },
+    {
+      "image_id": "hiero_0842",
+      "gardiner_code": null,
+      "filename": "hiero_0842.png"
+    },
+    {
+      "image_id": "hiero_0843",
+      "gardiner_code": null,
+      "filename": "hiero_0843.png"
+    },
+    {
+      "image_id": "hiero_0844",
+      "gardiner_code": null,
+      "filename": "hiero_0844.png"
+    },
+    {
+      "image_id": "hiero_0845",
+      "gardiner_code": null,
+      "filename": "hiero_0845.png"
+    },
+    {
+      "image_id": "hiero_0846",
+      "gardiner_code": null,
+      "filename": "hiero_0846.png"
+    },
+    {
+      "image_id": "hiero_0847",
+      "gardiner_code": null,
+      "filename": "hiero_0847.png"
+    },
+    {
+      "image_id": "hiero_0848",
+      "gardiner_code": null,
+      "filename": "hiero_0848.png"
+    },
+    {
+      "image_id": "hiero_0849",
+      "gardiner_code": null,
+      "filename": "hiero_0849.png"
+    },
+    {
+      "image_id": "hiero_0850",
+      "gardiner_code": null,
+      "filename": "hiero_0850.png"
+    },
+    {
+      "image_id": "hiero_0851",
+      "gardiner_code": null,
+      "filename": "hiero_0851.png"
+    },
+    {
+      "image_id": "hiero_0852",
+      "gardiner_code": null,
+      "filename": "hiero_0852.png"
+    },
+    {
+      "image_id": "hiero_0853",
+      "gardiner_code": null,
+      "filename": "hiero_0853.png"
+    },
+    {
+      "image_id": "hiero_0854",
+      "gardiner_code": null,
+      "filename": "hiero_0854.png"
+    },
+    {
+      "image_id": "hiero_0855",
+      "gardiner_code": null,
+      "filename": "hiero_0855.png"
+    },
+    {
+      "image_id": "hiero_0856",
+      "gardiner_code": null,
+      "filename": "hiero_0856.png"
+    },
+    {
+      "image_id": "hiero_0857",
+      "gardiner_code": null,
+      "filename": "hiero_0857.png"
+    },
+    {
+      "image_id": "hiero_0858",
+      "gardiner_code": null,
+      "filename": "hiero_0858.png"
+    },
+    {
+      "image_id": "hiero_0859",
+      "gardiner_code": null,
+      "filename": "hiero_0859.png"
+    },
+    {
+      "image_id": "hiero_0860",
+      "gardiner_code": null,
+      "filename": "hiero_0860.png"
+    },
+    {
+      "image_id": "hiero_0861",
+      "gardiner_code": null,
+      "filename": "hiero_0861.png"
+    },
+    {
+      "image_id": "hiero_0862",
+      "gardiner_code": null,
+      "filename": "hiero_0862.png"
+    },
+    {
+      "image_id": "hiero_0863",
+      "gardiner_code": null,
+      "filename": "hiero_0863.png"
+    },
+    {
+      "image_id": "hiero_0864",
+      "gardiner_code": null,
+      "filename": "hiero_0864.png"
+    },
+    {
+      "image_id": "hiero_0865",
+      "gardiner_code": null,
+      "filename": "hiero_0865.png"
+    },
+    {
+      "image_id": "hiero_0866",
+      "gardiner_code": null,
+      "filename": "hiero_0866.png"
+    },
+    {
+      "image_id": "hiero_0867",
+      "gardiner_code": null,
+      "filename": "hiero_0867.png"
+    },
+    {
+      "image_id": "hiero_0868",
+      "gardiner_code": null,
+      "filename": "hiero_0868.png"
+    },
+    {
+      "image_id": "hiero_0869",
+      "gardiner_code": null,
+      "filename": "hiero_0869.png"
+    },
+    {
+      "image_id": "hiero_0870",
+      "gardiner_code": null,
+      "filename": "hiero_0870.png"
+    },
+    {
+      "image_id": "hiero_0871",
+      "gardiner_code": null,
+      "filename": "hiero_0871.png"
+    },
+    {
+      "image_id": "hiero_0872",
+      "gardiner_code": null,
+      "filename": "hiero_0872.png"
+    },
+    {
+      "image_id": "hiero_0873",
+      "gardiner_code": null,
+      "filename": "hiero_0873.png"
+    },
+    {
+      "image_id": "hiero_0874",
+      "gardiner_code": null,
+      "filename": "hiero_0874.png"
+    },
+    {
+      "image_id": "hiero_0875",
+      "gardiner_code": null,
+      "filename": "hiero_0875.png"
+    },
+    {
+      "image_id": "hiero_0876",
+      "gardiner_code": null,
+      "filename": "hiero_0876.png"
+    },
+    {
+      "image_id": "hiero_0877",
+      "gardiner_code": null,
+      "filename": "hiero_0877.png"
+    },
+    {
+      "image_id": "hiero_0878",
+      "gardiner_code": null,
+      "filename": "hiero_0878.png"
+    },
+    {
+      "image_id": "hiero_0879",
+      "gardiner_code": null,
+      "filename": "hiero_0879.png"
+    },
+    {
+      "image_id": "hiero_0880",
+      "gardiner_code": null,
+      "filename": "hiero_0880.png"
+    },
+    {
+      "image_id": "hiero_0881",
+      "gardiner_code": null,
+      "filename": "hiero_0881.png"
+    },
+    {
+      "image_id": "hiero_0882",
+      "gardiner_code": null,
+      "filename": "hiero_0882.png"
+    },
+    {
+      "image_id": "hiero_0883",
+      "gardiner_code": null,
+      "filename": "hiero_0883.png"
+    },
+    {
+      "image_id": "hiero_0884",
+      "gardiner_code": null,
+      "filename": "hiero_0884.png"
+    },
+    {
+      "image_id": "hiero_0885",
+      "gardiner_code": null,
+      "filename": "hiero_0885.png"
+    },
+    {
+      "image_id": "hiero_0886",
+      "gardiner_code": null,
+      "filename": "hiero_0886.png"
+    },
+    {
+      "image_id": "hiero_0887",
+      "gardiner_code": null,
+      "filename": "hiero_0887.png"
+    },
+    {
+      "image_id": "hiero_0888",
+      "gardiner_code": null,
+      "filename": "hiero_0888.png"
+    },
+    {
+      "image_id": "hiero_0889",
+      "gardiner_code": null,
+      "filename": "hiero_0889.png"
+    },
+    {
+      "image_id": "hiero_0890",
+      "gardiner_code": null,
+      "filename": "hiero_0890.png"
+    },
+    {
+      "image_id": "hiero_0891",
+      "gardiner_code": null,
+      "filename": "hiero_0891.png"
+    },
+    {
+      "image_id": "hiero_0892",
+      "gardiner_code": null,
+      "filename": "hiero_0892.png"
+    },
+    {
+      "image_id": "hiero_0893",
+      "gardiner_code": null,
+      "filename": "hiero_0893.png"
+    },
+    {
+      "image_id": "hiero_0894",
+      "gardiner_code": null,
+      "filename": "hiero_0894.png"
+    },
+    {
+      "image_id": "hiero_0895",
+      "gardiner_code": null,
+      "filename": "hiero_0895.png"
+    },
+    {
+      "image_id": "hiero_0896",
+      "gardiner_code": null,
+      "filename": "hiero_0896.png"
+    },
+    {
+      "image_id": "hiero_0897",
+      "gardiner_code": null,
+      "filename": "hiero_0897.png"
+    },
+    {
+      "image_id": "hiero_0898",
+      "gardiner_code": null,
+      "filename": "hiero_0898.png"
+    },
+    {
+      "image_id": "hiero_0899",
+      "gardiner_code": null,
+      "filename": "hiero_0899.png"
+    },
+    {
+      "image_id": "hiero_0900",
+      "gardiner_code": null,
+      "filename": "hiero_0900.png"
+    },
+    {
+      "image_id": "hiero_0901",
+      "gardiner_code": null,
+      "filename": "hiero_0901.png"
+    },
+    {
+      "image_id": "hiero_0902",
+      "gardiner_code": null,
+      "filename": "hiero_0902.png"
+    },
+    {
+      "image_id": "hiero_0903",
+      "gardiner_code": null,
+      "filename": "hiero_0903.png"
+    },
+    {
+      "image_id": "hiero_0904",
+      "gardiner_code": null,
+      "filename": "hiero_0904.png"
+    },
+    {
+      "image_id": "hiero_0905",
+      "gardiner_code": null,
+      "filename": "hiero_0905.png"
+    },
+    {
+      "image_id": "hiero_0906",
+      "gardiner_code": null,
+      "filename": "hiero_0906.png"
+    },
+    {
+      "image_id": "hiero_0907",
+      "gardiner_code": null,
+      "filename": "hiero_0907.png"
+    },
+    {
+      "image_id": "hiero_0908",
+      "gardiner_code": null,
+      "filename": "hiero_0908.png"
+    },
+    {
+      "image_id": "hiero_0909",
+      "gardiner_code": null,
+      "filename": "hiero_0909.png"
+    },
+    {
+      "image_id": "hiero_0910",
+      "gardiner_code": null,
+      "filename": "hiero_0910.png"
+    },
+    {
+      "image_id": "hiero_0911",
+      "gardiner_code": null,
+      "filename": "hiero_0911.png"
+    },
+    {
+      "image_id": "hiero_0912",
+      "gardiner_code": null,
+      "filename": "hiero_0912.png"
+    },
+    {
+      "image_id": "hiero_0913",
+      "gardiner_code": null,
+      "filename": "hiero_0913.png"
+    },
+    {
+      "image_id": "hiero_0914",
+      "gardiner_code": null,
+      "filename": "hiero_0914.png"
+    },
+    {
+      "image_id": "hiero_0915",
+      "gardiner_code": null,
+      "filename": "hiero_0915.png"
+    },
+    {
+      "image_id": "hiero_0916",
+      "gardiner_code": null,
+      "filename": "hiero_0916.png"
+    },
+    {
+      "image_id": "hiero_0917",
+      "gardiner_code": null,
+      "filename": "hiero_0917.png"
+    },
+    {
+      "image_id": "hiero_0918",
+      "gardiner_code": null,
+      "filename": "hiero_0918.png"
+    },
+    {
+      "image_id": "hiero_0919",
+      "gardiner_code": null,
+      "filename": "hiero_0919.png"
+    },
+    {
+      "image_id": "hiero_0920",
+      "gardiner_code": null,
+      "filename": "hiero_0920.png"
+    },
+    {
+      "image_id": "hiero_0921",
+      "gardiner_code": null,
+      "filename": "hiero_0921.png"
+    },
+    {
+      "image_id": "hiero_0922",
+      "gardiner_code": null,
+      "filename": "hiero_0922.png"
+    },
+    {
+      "image_id": "hiero_0923",
+      "gardiner_code": null,
+      "filename": "hiero_0923.png"
+    },
+    {
+      "image_id": "hiero_0924",
+      "gardiner_code": null,
+      "filename": "hiero_0924.png"
+    },
+    {
+      "image_id": "hiero_0925",
+      "gardiner_code": null,
+      "filename": "hiero_0925.png"
+    },
+    {
+      "image_id": "hiero_0926",
+      "gardiner_code": null,
+      "filename": "hiero_0926.png"
+    },
+    {
+      "image_id": "hiero_0927",
+      "gardiner_code": null,
+      "filename": "hiero_0927.png"
+    },
+    {
+      "image_id": "hiero_0928",
+      "gardiner_code": null,
+      "filename": "hiero_0928.png"
+    },
+    {
+      "image_id": "hiero_0929",
+      "gardiner_code": null,
+      "filename": "hiero_0929.png"
+    },
+    {
+      "image_id": "hiero_0930",
+      "gardiner_code": null,
+      "filename": "hiero_0930.png"
+    },
+    {
+      "image_id": "hiero_0931",
+      "gardiner_code": null,
+      "filename": "hiero_0931.png"
+    },
+    {
+      "image_id": "hiero_0932",
+      "gardiner_code": null,
+      "filename": "hiero_0932.png"
+    },
+    {
+      "image_id": "hiero_0933",
+      "gardiner_code": null,
+      "filename": "hiero_0933.png"
+    },
+    {
+      "image_id": "hiero_0934",
+      "gardiner_code": null,
+      "filename": "hiero_0934.png"
+    },
+    {
+      "image_id": "hiero_0935",
+      "gardiner_code": null,
+      "filename": "hiero_0935.png"
+    },
+    {
+      "image_id": "hiero_0936",
+      "gardiner_code": null,
+      "filename": "hiero_0936.png"
+    },
+    {
+      "image_id": "hiero_0937",
+      "gardiner_code": null,
+      "filename": "hiero_0937.png"
+    },
+    {
+      "image_id": "hiero_0938",
+      "gardiner_code": null,
+      "filename": "hiero_0938.png"
+    },
+    {
+      "image_id": "hiero_0939",
+      "gardiner_code": null,
+      "filename": "hiero_0939.png"
+    },
+    {
+      "image_id": "hiero_0940",
+      "gardiner_code": null,
+      "filename": "hiero_0940.png"
+    },
+    {
+      "image_id": "hiero_0941",
+      "gardiner_code": null,
+      "filename": "hiero_0941.png"
+    },
+    {
+      "image_id": "hiero_0942",
+      "gardiner_code": null,
+      "filename": "hiero_0942.png"
+    },
+    {
+      "image_id": "hiero_0943",
+      "gardiner_code": null,
+      "filename": "hiero_0943.png"
+    },
+    {
+      "image_id": "hiero_0944",
+      "gardiner_code": null,
+      "filename": "hiero_0944.png"
+    },
+    {
+      "image_id": "hiero_0945",
+      "gardiner_code": null,
+      "filename": "hiero_0945.png"
+    },
+    {
+      "image_id": "hiero_0946",
+      "gardiner_code": null,
+      "filename": "hiero_0946.png"
+    },
+    {
+      "image_id": "hiero_0947",
+      "gardiner_code": null,
+      "filename": "hiero_0947.png"
+    },
+    {
+      "image_id": "hiero_0948",
+      "gardiner_code": null,
+      "filename": "hiero_0948.png"
+    },
+    {
+      "image_id": "hiero_0949",
+      "gardiner_code": null,
+      "filename": "hiero_0949.png"
+    },
+    {
+      "image_id": "hiero_0950",
+      "gardiner_code": null,
+      "filename": "hiero_0950.png"
+    },
+    {
+      "image_id": "hiero_0951",
+      "gardiner_code": null,
+      "filename": "hiero_0951.png"
+    },
+    {
+      "image_id": "hiero_0952",
+      "gardiner_code": null,
+      "filename": "hiero_0952.png"
+    },
+    {
+      "image_id": "hiero_0953",
+      "gardiner_code": null,
+      "filename": "hiero_0953.png"
+    },
+    {
+      "image_id": "hiero_0954",
+      "gardiner_code": null,
+      "filename": "hiero_0954.png"
+    },
+    {
+      "image_id": "hiero_0955",
+      "gardiner_code": null,
+      "filename": "hiero_0955.png"
+    },
+    {
+      "image_id": "hiero_0956",
+      "gardiner_code": null,
+      "filename": "hiero_0956.png"
+    },
+    {
+      "image_id": "hiero_0957",
+      "gardiner_code": null,
+      "filename": "hiero_0957.png"
+    },
+    {
+      "image_id": "hiero_0958",
+      "gardiner_code": null,
+      "filename": "hiero_0958.png"
+    },
+    {
+      "image_id": "hiero_0959",
+      "gardiner_code": null,
+      "filename": "hiero_0959.png"
+    },
+    {
+      "image_id": "hiero_0960",
+      "gardiner_code": null,
+      "filename": "hiero_0960.png"
+    },
+    {
+      "image_id": "hiero_0961",
+      "gardiner_code": null,
+      "filename": "hiero_0961.png"
+    },
+    {
+      "image_id": "hiero_0962",
+      "gardiner_code": null,
+      "filename": "hiero_0962.png"
+    },
+    {
+      "image_id": "hiero_0963",
+      "gardiner_code": null,
+      "filename": "hiero_0963.png"
+    },
+    {
+      "image_id": "hiero_0964",
+      "gardiner_code": null,
+      "filename": "hiero_0964.png"
+    },
+    {
+      "image_id": "hiero_0965",
+      "gardiner_code": null,
+      "filename": "hiero_0965.png"
+    },
+    {
+      "image_id": "hiero_0966",
+      "gardiner_code": null,
+      "filename": "hiero_0966.png"
+    },
+    {
+      "image_id": "hiero_0967",
+      "gardiner_code": null,
+      "filename": "hiero_0967.png"
+    },
+    {
+      "image_id": "hiero_0968",
+      "gardiner_code": null,
+      "filename": "hiero_0968.png"
+    },
+    {
+      "image_id": "hiero_0969",
+      "gardiner_code": null,
+      "filename": "hiero_0969.png"
+    },
+    {
+      "image_id": "hiero_0970",
+      "gardiner_code": null,
+      "filename": "hiero_0970.png"
+    },
+    {
+      "image_id": "hiero_0971",
+      "gardiner_code": null,
+      "filename": "hiero_0971.png"
+    },
+    {
+      "image_id": "hiero_0972",
+      "gardiner_code": null,
+      "filename": "hiero_0972.png"
+    },
+    {
+      "image_id": "hiero_0973",
+      "gardiner_code": null,
+      "filename": "hiero_0973.png"
+    },
+    {
+      "image_id": "hiero_0974",
+      "gardiner_code": null,
+      "filename": "hiero_0974.png"
+    },
+    {
+      "image_id": "hiero_0975",
+      "gardiner_code": null,
+      "filename": "hiero_0975.png"
+    },
+    {
+      "image_id": "hiero_0976",
+      "gardiner_code": null,
+      "filename": "hiero_0976.png"
+    },
+    {
+      "image_id": "hiero_0977",
+      "gardiner_code": null,
+      "filename": "hiero_0977.png"
+    },
+    {
+      "image_id": "hiero_0978",
+      "gardiner_code": null,
+      "filename": "hiero_0978.png"
+    },
+    {
+      "image_id": "hiero_0979",
+      "gardiner_code": null,
+      "filename": "hiero_0979.png"
+    },
+    {
+      "image_id": "hiero_0980",
+      "gardiner_code": null,
+      "filename": "hiero_0980.png"
+    },
+    {
+      "image_id": "hiero_0981",
+      "gardiner_code": null,
+      "filename": "hiero_0981.png"
+    },
+    {
+      "image_id": "hiero_0982",
+      "gardiner_code": null,
+      "filename": "hiero_0982.png"
+    },
+    {
+      "image_id": "hiero_0983",
+      "gardiner_code": null,
+      "filename": "hiero_0983.png"
+    },
+    {
+      "image_id": "hiero_0984",
+      "gardiner_code": null,
+      "filename": "hiero_0984.png"
+    },
+    {
+      "image_id": "hiero_0985",
+      "gardiner_code": null,
+      "filename": "hiero_0985.png"
+    },
+    {
+      "image_id": "hiero_0986",
+      "gardiner_code": null,
+      "filename": "hiero_0986.png"
+    },
+    {
+      "image_id": "hiero_0987",
+      "gardiner_code": null,
+      "filename": "hiero_0987.png"
+    },
+    {
+      "image_id": "hiero_0988",
+      "gardiner_code": null,
+      "filename": "hiero_0988.png"
+    },
+    {
+      "image_id": "hiero_0989",
+      "gardiner_code": null,
+      "filename": "hiero_0989.png"
+    },
+    {
+      "image_id": "hiero_0990",
+      "gardiner_code": null,
+      "filename": "hiero_0990.png"
+    },
+    {
+      "image_id": "hiero_0991",
+      "gardiner_code": null,
+      "filename": "hiero_0991.png"
+    },
+    {
+      "image_id": "hiero_0992",
+      "gardiner_code": null,
+      "filename": "hiero_0992.png"
+    },
+    {
+      "image_id": "hiero_0993",
+      "gardiner_code": null,
+      "filename": "hiero_0993.png"
+    },
+    {
+      "image_id": "hiero_0994",
+      "gardiner_code": null,
+      "filename": "hiero_0994.png"
+    },
+    {
+      "image_id": "hiero_0995",
+      "gardiner_code": null,
+      "filename": "hiero_0995.png"
+    },
+    {
+      "image_id": "hiero_0996",
+      "gardiner_code": null,
+      "filename": "hiero_0996.png"
+    },
+    {
+      "image_id": "hiero_0997",
+      "gardiner_code": null,
+      "filename": "hiero_0997.png"
+    },
+    {
+      "image_id": "hiero_0998",
+      "gardiner_code": null,
+      "filename": "hiero_0998.png"
+    },
+    {
+      "image_id": "hiero_0999",
+      "gardiner_code": null,
+      "filename": "hiero_0999.png"
+    },
+    {
+      "image_id": "hiero_1000",
+      "gardiner_code": null,
+      "filename": "hiero_1000.png"
+    },
+    {
+      "image_id": "hiero_1001",
+      "gardiner_code": null,
+      "filename": "hiero_1001.png"
+    },
+    {
+      "image_id": "hiero_1002",
+      "gardiner_code": null,
+      "filename": "hiero_1002.png"
+    },
+    {
+      "image_id": "hiero_1003",
+      "gardiner_code": null,
+      "filename": "hiero_1003.png"
+    },
+    {
+      "image_id": "hiero_1004",
+      "gardiner_code": null,
+      "filename": "hiero_1004.png"
+    },
+    {
+      "image_id": "hiero_1005",
+      "gardiner_code": null,
+      "filename": "hiero_1005.png"
+    },
+    {
+      "image_id": "hiero_1006",
+      "gardiner_code": null,
+      "filename": "hiero_1006.png"
+    },
+    {
+      "image_id": "hiero_1007",
+      "gardiner_code": null,
+      "filename": "hiero_1007.png"
+    },
+    {
+      "image_id": "hiero_1008",
+      "gardiner_code": null,
+      "filename": "hiero_1008.png"
+    },
+    {
+      "image_id": "hiero_1009",
+      "gardiner_code": null,
+      "filename": "hiero_1009.png"
+    },
+    {
+      "image_id": "hiero_1010",
+      "gardiner_code": null,
+      "filename": "hiero_1010.png"
+    },
+    {
+      "image_id": "hiero_1011",
+      "gardiner_code": null,
+      "filename": "hiero_1011.png"
+    },
+    {
+      "image_id": "hiero_1012",
+      "gardiner_code": null,
+      "filename": "hiero_1012.png"
+    },
+    {
+      "image_id": "hiero_1013",
+      "gardiner_code": null,
+      "filename": "hiero_1013.png"
+    },
+    {
+      "image_id": "hiero_1014",
+      "gardiner_code": null,
+      "filename": "hiero_1014.png"
+    },
+    {
+      "image_id": "hiero_1015",
+      "gardiner_code": null,
+      "filename": "hiero_1015.png"
+    },
+    {
+      "image_id": "hiero_1016",
+      "gardiner_code": null,
+      "filename": "hiero_1016.png"
+    },
+    {
+      "image_id": "hiero_1017",
+      "gardiner_code": null,
+      "filename": "hiero_1017.png"
+    },
+    {
+      "image_id": "hiero_1018",
+      "gardiner_code": null,
+      "filename": "hiero_1018.png"
+    },
+    {
+      "image_id": "hiero_1019",
+      "gardiner_code": null,
+      "filename": "hiero_1019.png"
+    },
+    {
+      "image_id": "hiero_1020",
+      "gardiner_code": null,
+      "filename": "hiero_1020.png"
+    },
+    {
+      "image_id": "hiero_1021",
+      "gardiner_code": null,
+      "filename": "hiero_1021.png"
+    },
+    {
+      "image_id": "hiero_1022",
+      "gardiner_code": null,
+      "filename": "hiero_1022.png"
+    },
+    {
+      "image_id": "hiero_1023",
+      "gardiner_code": null,
+      "filename": "hiero_1023.png"
+    },
+    {
+      "image_id": "hiero_1024",
+      "gardiner_code": null,
+      "filename": "hiero_1024.png"
+    },
+    {
+      "image_id": "hiero_1025",
+      "gardiner_code": null,
+      "filename": "hiero_1025.png"
+    },
+    {
+      "image_id": "hiero_1026",
+      "gardiner_code": null,
+      "filename": "hiero_1026.png"
+    },
+    {
+      "image_id": "hiero_1027",
+      "gardiner_code": null,
+      "filename": "hiero_1027.png"
+    },
+    {
+      "image_id": "hiero_1028",
+      "gardiner_code": null,
+      "filename": "hiero_1028.png"
+    },
+    {
+      "image_id": "hiero_1029",
+      "gardiner_code": null,
+      "filename": "hiero_1029.png"
+    },
+    {
+      "image_id": "hiero_1030",
+      "gardiner_code": null,
+      "filename": "hiero_1030.png"
+    },
+    {
+      "image_id": "hiero_1031",
+      "gardiner_code": null,
+      "filename": "hiero_1031.png"
+    },
+    {
+      "image_id": "hiero_1032",
+      "gardiner_code": null,
+      "filename": "hiero_1032.png"
+    },
+    {
+      "image_id": "hiero_1033",
+      "gardiner_code": null,
+      "filename": "hiero_1033.png"
+    },
+    {
+      "image_id": "hiero_1034",
+      "gardiner_code": null,
+      "filename": "hiero_1034.png"
+    },
+    {
+      "image_id": "hiero_1035",
+      "gardiner_code": null,
+      "filename": "hiero_1035.png"
+    },
+    {
+      "image_id": "hiero_1036",
+      "gardiner_code": null,
+      "filename": "hiero_1036.png"
+    },
+    {
+      "image_id": "hiero_1037",
+      "gardiner_code": null,
+      "filename": "hiero_1037.png"
+    },
+    {
+      "image_id": "hiero_1038",
+      "gardiner_code": null,
+      "filename": "hiero_1038.png"
+    },
+    {
+      "image_id": "hiero_1039",
+      "gardiner_code": null,
+      "filename": "hiero_1039.png"
+    },
+    {
+      "image_id": "hiero_1040",
+      "gardiner_code": null,
+      "filename": "hiero_1040.png"
+    },
+    {
+      "image_id": "hiero_1041",
+      "gardiner_code": null,
+      "filename": "hiero_1041.png"
+    },
+    {
+      "image_id": "hiero_1042",
+      "gardiner_code": null,
+      "filename": "hiero_1042.png"
+    },
+    {
+      "image_id": "hiero_1043",
+      "gardiner_code": null,
+      "filename": "hiero_1043.png"
+    },
+    {
+      "image_id": "hiero_1044",
+      "gardiner_code": null,
+      "filename": "hiero_1044.png"
+    },
+    {
+      "image_id": "hiero_1045",
+      "gardiner_code": null,
+      "filename": "hiero_1045.png"
+    },
+    {
+      "image_id": "hiero_1046",
+      "gardiner_code": null,
+      "filename": "hiero_1046.png"
+    },
+    {
+      "image_id": "hiero_1047",
+      "gardiner_code": null,
+      "filename": "hiero_1047.png"
+    },
+    {
+      "image_id": "hiero_1048",
+      "gardiner_code": null,
+      "filename": "hiero_1048.png"
+    },
+    {
+      "image_id": "hiero_1049",
+      "gardiner_code": null,
+      "filename": "hiero_1049.png"
+    },
+    {
+      "image_id": "hiero_1050",
+      "gardiner_code": null,
+      "filename": "hiero_1050.png"
+    },
+    {
+      "image_id": "hiero_1051",
+      "gardiner_code": null,
+      "filename": "hiero_1051.png"
+    },
+    {
+      "image_id": "hiero_1052",
+      "gardiner_code": null,
+      "filename": "hiero_1052.png"
+    },
+    {
+      "image_id": "hiero_1053",
+      "gardiner_code": null,
+      "filename": "hiero_1053.png"
+    },
+    {
+      "image_id": "hiero_1054",
+      "gardiner_code": null,
+      "filename": "hiero_1054.png"
+    },
+    {
+      "image_id": "hiero_1055",
+      "gardiner_code": null,
+      "filename": "hiero_1055.png"
+    },
+    {
+      "image_id": "hiero_1056",
+      "gardiner_code": null,
+      "filename": "hiero_1056.png"
+    },
+    {
+      "image_id": "hiero_1057",
+      "gardiner_code": null,
+      "filename": "hiero_1057.png"
+    },
+    {
+      "image_id": "hiero_1058",
+      "gardiner_code": null,
+      "filename": "hiero_1058.png"
+    },
+    {
+      "image_id": "hiero_1059",
+      "gardiner_code": null,
+      "filename": "hiero_1059.png"
+    },
+    {
+      "image_id": "hiero_1060",
+      "gardiner_code": null,
+      "filename": "hiero_1060.png"
+    },
+    {
+      "image_id": "hiero_1061",
+      "gardiner_code": null,
+      "filename": "hiero_1061.png"
+    },
+    {
+      "image_id": "hiero_1062",
+      "gardiner_code": null,
+      "filename": "hiero_1062.png"
+    },
+    {
+      "image_id": "hiero_1063",
+      "gardiner_code": null,
+      "filename": "hiero_1063.png"
+    },
+    {
+      "image_id": "hiero_1064",
+      "gardiner_code": null,
+      "filename": "hiero_1064.png"
+    },
+    {
+      "image_id": "hiero_1065",
+      "gardiner_code": null,
+      "filename": "hiero_1065.png"
+    },
+    {
+      "image_id": "hiero_1066",
+      "gardiner_code": null,
+      "filename": "hiero_1066.png"
+    },
+    {
+      "image_id": "hiero_1067",
+      "gardiner_code": null,
+      "filename": "hiero_1067.png"
+    },
+    {
+      "image_id": "hiero_1068",
+      "gardiner_code": null,
+      "filename": "hiero_1068.png"
+    },
+    {
+      "image_id": "hiero_1069",
+      "gardiner_code": null,
+      "filename": "hiero_1069.png"
+    },
+    {
+      "image_id": "hiero_1070",
+      "gardiner_code": null,
+      "filename": "hiero_1070.png"
+    },
+    {
+      "image_id": "hiero_1071",
+      "gardiner_code": null,
+      "filename": "hiero_1071.png"
+    }
+  ]
+}

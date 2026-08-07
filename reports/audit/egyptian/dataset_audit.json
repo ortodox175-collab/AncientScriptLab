@@ -1,0 +1,43 @@
+{
+  "dataset": "Egyptian",
+  "image_directory": "datasets/egyptian/images",
+  "total_images": 1072,
+  "file_format": "PNG",
+  "size_distribution": {
+    "64x64": 1072
+  },
+  "prefix_distribution": {
+    "hiero": 1072
+  },
+  "first_files": [
+    "hiero_0000.png",
+    "hiero_0001.png",
+    "hiero_0002.png",
+    "hiero_0003.png",
+    "hiero_0004.png",
+    "hiero_0005.png",
+    "hiero_0006.png",
+    "hiero_0007.png",
+    "hiero_0008.png",
+    "hiero_0009.png"
+  ],
+  "last_files": [
+    "hiero_1062.png",
+    "hiero_1063.png",
+    "hiero_1064.png",
+    "hiero_1065.png",
+    "hiero_1066.png",
+    "hiero_1067.png",
+    "hiero_1068.png",
+    "hiero_1069.png",
+    "hiero_1070.png",
+    "hiero_1071.png"
+  ],
+  "metadata_files": [],
+  "duplicate_groups": {},
+  "duplicate_image_count": 0,
+  "empty_images": [],
+  "corrupted_images": [],
+  "preliminary_gardiner_assessment": "Prefix structure does not yet demonstrate verified Gardiner mapping.",
+  "audit_status": "COMPLETED"
+}

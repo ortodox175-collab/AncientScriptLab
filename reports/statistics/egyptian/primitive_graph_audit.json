@@ -1,0 +1,270 @@
+{
+  "graphs_analyzed": 1072,
+  "node_count": {
+    "min": 2,
+    "max": 752,
+    "mean": 253.260261,
+    "median": 238.0,
+    "std": 143.096547,
+    "entropy": 8.543272,
+    "unique_values": 448
+  },
+  "edge_count": {
+    "min": 1,
+    "max": 1519,
+    "mean": 494.559701,
+    "median": 469.0,
+    "std": 282.526105,
+    "entropy": 9.142991,
+    "unique_values": 647
+  },
+  "endpoint_count": {
+    "min": 0,
+    "max": 81,
+    "mean": 8.439366,
+    "median": 5.0,
+    "std": 10.540436,
+    "entropy": 4.465603,
+    "unique_values": 54
+  },
+  "junction_count": {
+    "min": 0,
+    "max": 708,
+    "mean": 244.820896,
+    "median": 229.5,
+    "std": 138.245151,
+    "entropy": 8.515567,
+    "unique_values": 442
+  },
+  "average_degree": {
+    "min": 1.0,
+    "max": 4.635417,
+    "mean": 3.791119,
+    "median": 3.896659,
+    "std": 0.566555,
+    "entropy": 9.758679,
+    "unique_values": 960
+  },
+  "top_signatures": [
+    {
+      "signature": {
+        "node_count": 24,
+        "edge_count": 24,
+        "endpoint_count": 0,
+        "junction_count": 24,
+        "average_degree": 2.0
+      },
+      "count": 4,
+      "frequency": 0.003731
+    },
+    {
+      "signature": {
+        "node_count": 20,
+        "edge_count": 18,
+        "endpoint_count": 3,
+        "junction_count": 17,
+        "average_degree": 1.8
+      },
+      "count": 4,
+      "frequency": 0.003731
+    },
+    {
+      "signature": {
+        "node_count": 8,
+        "edge_count": 8,
+        "endpoint_count": 0,
+        "junction_count": 8,
+        "average_degree": 2.0
+      },
+      "count": 4,
+      "frequency": 0.003731
+    },
+    {
+      "signature": {
+        "node_count": 28,
+        "edge_count": 33,
+        "endpoint_count": 0,
+        "junction_count": 28,
+        "average_degree": 2.357
+      },
+      "count": 3,
+      "frequency": 0.002799
+    },
+    {
+      "signature": {
+        "node_count": 10,
+        "edge_count": 5,
+        "endpoint_count": 10,
+        "junction_count": 0,
+        "average_degree": 1.0
+      },
+      "count": 3,
+      "frequency": 0.002799
+    },
+    {
+      "signature": {
+        "node_count": 231,
+        "edge_count": 451,
+        "endpoint_count": 5,
+        "junction_count": 226,
+        "average_degree": 3.905
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 28,
+        "edge_count": 50,
+        "endpoint_count": 2,
+        "junction_count": 26,
+        "average_degree": 3.571
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 149,
+        "edge_count": 289,
+        "endpoint_count": 2,
+        "junction_count": 147,
+        "average_degree": 3.879
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 24,
+        "edge_count": 27,
+        "endpoint_count": 4,
+        "junction_count": 20,
+        "average_degree": 2.25
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 8,
+        "edge_count": 6,
+        "endpoint_count": 3,
+        "junction_count": 5,
+        "average_degree": 1.5
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 275,
+        "edge_count": 568,
+        "endpoint_count": 0,
+        "junction_count": 275,
+        "average_degree": 4.131
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 2,
+        "edge_count": 1,
+        "endpoint_count": 2,
+        "junction_count": 0,
+        "average_degree": 1.0
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 4,
+        "edge_count": 2,
+        "endpoint_count": 4,
+        "junction_count": 0,
+        "average_degree": 1.0
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 6,
+        "edge_count": 3,
+        "endpoint_count": 6,
+        "junction_count": 0,
+        "average_degree": 1.0
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 8,
+        "edge_count": 4,
+        "endpoint_count": 8,
+        "junction_count": 0,
+        "average_degree": 1.0
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 12,
+        "edge_count": 6,
+        "endpoint_count": 12,
+        "junction_count": 0,
+        "average_degree": 1.0
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 14,
+        "edge_count": 7,
+        "endpoint_count": 14,
+        "junction_count": 0,
+        "average_degree": 1.0
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 16,
+        "edge_count": 8,
+        "endpoint_count": 16,
+        "junction_count": 0,
+        "average_degree": 1.0
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 18,
+        "edge_count": 9,
+        "endpoint_count": 18,
+        "junction_count": 0,
+        "average_degree": 1.0
+      },
+      "count": 2,
+      "frequency": 0.001866
+    },
+    {
+      "signature": {
+        "node_count": 491,
+        "edge_count": 955,
+        "endpoint_count": 7,
+        "junction_count": 484,
+        "average_degree": 3.89
+      },
+      "count": 1,
+      "frequency": 0.000933
+    }
+  ]
+}

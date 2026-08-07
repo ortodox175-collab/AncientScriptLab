@@ -2,9 +2,24 @@
 
 # PROJECT PHILOSOPHY
 
-Version: 1.0
+Version: 1.1
 
 Status: Active
+
+---
+
+# Motto
+
+> **Measure first. Compare second. Hypothesize last.**
+
+AncientScriptLab is built on the principle that objective scientific
+measurement must always precede comparison, and comparison must always
+precede hypothesis generation.
+
+The platform does not seek to prove preconceived ideas.
+
+Its purpose is to produce reproducible evidence that enables researchers
+to formulate and evaluate scientific hypotheses.
 
 ---
 
@@ -107,6 +122,18 @@ The repository should remain self-explanatory.
 
 ---
 
+# Evidence Before Interpretation
+
+AncientScriptLab does not attempt to decipher ancient writing systems.
+
+Its responsibility is to produce objective, measurable and reproducible evidence.
+
+Interpretation belongs to researchers.
+
+Scientific hypotheses are formulated only after sufficient evidence has been collected and objectively analysed.
+
+---
+
 # Long-Term Vision
 
 AncientScriptLab is designed as a long-term scientific platform.
@@ -114,4 +141,3 @@ AncientScriptLab is designed as a long-term scientific platform.
 Its goal is to become a reliable research instrument for analysing any writing system through transparent, reproducible and explainable computational methods.
 
 Success is measured not by the amount of code, but by the scientific reliability of the conclusions it supports.
-

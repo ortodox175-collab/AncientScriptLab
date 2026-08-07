@@ -1,0 +1,122 @@
+[
+  {
+    "feature": "centroid_y_normalized",
+    "entropy": 9.98118289380786,
+    "unique_values": 1043,
+    "min": 0.261315,
+    "max": 0.686798,
+    "mean": 0.47787512220149253,
+    "median": 0.482981,
+    "std": 0.06175819844921878,
+    "cv": 0.12923501471411372,
+    "informativeness": 0.6651707524496375
+  },
+  {
+    "feature": "aspect_ratio",
+    "entropy": 8.112821000690442,
+    "unique_values": 478,
+    "min": 0.041667,
+    "max": 24.0,
+    "mean": 1.2487601417910448,
+    "median": 1.0,
+    "std": 1.1695189849106522,
+    "cv": 0.9365441334740711,
+    "informativeness": 0.663233195400846
+  },
+  {
+    "feature": "centroid_x_normalized",
+    "entropy": 9.923949254790859,
+    "unique_values": 1030,
+    "min": 0.246938,
+    "max": 0.66887,
+    "mean": 0.4903808824626866,
+    "median": 0.4912395,
+    "std": 0.03506931001162425,
+    "cv": 0.0715144314670397,
+    "informativeness": 0.6508808345861646
+  },
+  {
+    "feature": "euler",
+    "entropy": 4.8756935730668785,
+    "unique_values": 66,
+    "min": -73,
+    "max": 23,
+    "mean": -6.836753731343284,
+    "median": -3.0,
+    "std": 10.553100975922122,
+    "cv": 1.543583605701803,
+    "informativeness": 0.6454318024183519
+  },
+  {
+    "feature": "foreground_density",
+    "entropy": 8.910037338079073,
+    "unique_values": 564,
+    "min": 0.005859,
+    "max": 0.295166,
+    "mean": 0.1015759281716418,
+    "median": 0.091675,
+    "std": 0.05467187488150746,
+    "cv": 0.5382365277442858,
+    "informativeness": 0.6381147941364458
+  },
+  {
+    "feature": "junctions",
+    "entropy": 8.51556722700999,
+    "unique_values": 442,
+    "min": 0,
+    "max": 708,
+    "mean": 244.82089552238807,
+    "median": 229.5,
+    "std": 138.24515055845316,
+    "cv": 0.5646787226371006,
+    "informativeness": 0.6173360535588304
+  },
+  {
+    "feature": "skeleton_length_normalized",
+    "entropy": 8.698153903061053,
+    "unique_values": 494,
+    "min": 0.265165,
+    "max": 9.888446,
+    "mean": 3.8673303152985077,
+    "median": 3.524485,
+    "std": 1.8796494835498976,
+    "cv": 0.4860328263438788,
+    "informativeness": 0.6146370697792249
+  },
+  {
+    "feature": "endpoints",
+    "entropy": 4.46560330871822,
+    "unique_values": 54,
+    "min": 0,
+    "max": 81,
+    "mean": 8.439365671641792,
+    "median": 5.0,
+    "std": 10.540436475315662,
+    "cv": 1.2489607495897412,
+    "informativeness": 0.5778279485741427
+  },
+  {
+    "feature": "holes",
+    "entropy": 4.536820777579359,
+    "unique_values": 55,
+    "min": 0,
+    "max": 74,
+    "mean": 8.549440298507463,
+    "median": 5.0,
+    "std": 10.305925863098835,
+    "cv": 1.2054503573640973,
+    "informativeness": 0.5743446250447808
+  },
+  {
+    "feature": "components",
+    "entropy": 1.584919220449205,
+    "unique_values": 11,
+    "min": 1,
+    "max": 23,
+    "mean": 1.712686567164179,
+    "median": 1.0,
+    "std": 1.5857067562084834,
+    "cv": 0.9258592824920993,
+    "informativeness": 0.37024259287625183
+  }
+]

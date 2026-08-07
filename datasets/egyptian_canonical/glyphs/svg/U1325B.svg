@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="-100 -2100 899 2200"
+     width="512" height="512">
+  <g transform="scale(1,-1)">
+    <path d="M610 1911V1261H305V1911ZM0 2000V1911H222V1178H610V89H0V0H699V2000Z" fill="black"/>
+  </g>
+</svg>

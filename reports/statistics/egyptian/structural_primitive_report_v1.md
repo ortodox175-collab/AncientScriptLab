@@ -1,0 +1,1 @@
+# Structural primitive informativeness report v1.0\n\nSigns analyzed: 1072\n\n## Ranking\n\n1. centroid_y_normalized — 0.665\n2. aspect_ratio — 0.663\n3. centroid_x_normalized — 0.651\n4. euler — 0.645\n5. foreground_density — 0.638\n6. junctions — 0.617\n7. skeleton_length_normalized — 0.615\n8. endpoints — 0.578\n9. holes — 0.574\n10. components — 0.370\n

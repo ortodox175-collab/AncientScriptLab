@@ -1,0 +1,1061 @@
+{
+  "version": "V8.6",
+  "features": [
+    "Symmetry",
+    "Hierarchy",
+    "Complexity",
+    "Balance"
+  ],
+  "fingerprints": {
+    "A": {
+      "count": 84,
+      "centroid": {
+        "Symmetry": 0.39862654761904764,
+        "Hierarchy": 0.14720633333333333,
+        "Complexity": 0.31549042857142856,
+        "Balance": 0.07208940476190476
+      },
+      "stdev": {
+        "Symmetry": 0.10119398910360294,
+        "Hierarchy": 0.04896786747822575,
+        "Complexity": 0.14925124727039538,
+        "Balance": 0.06486044714141112
+      },
+      "variation": {
+        "Symmetry": 0.2538566227162327,
+        "Hierarchy": 0.33264783090101935,
+        "Complexity": 0.4730769422901975,
+        "Balance": 0.899722328900214
+      },
+      "compactness": 0.0910683877484088,
+      "nearest_category": {
+        "category": "B",
+        "distance": 0.02934886182260417
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.4206995186456769
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": -0.20833610270774977,
+          "score": 0.20833610270774977
+        },
+        {
+          "feature": "Hierarchy",
+          "deviation": -0.07789919794584502,
+          "score": 0.07789919794584502
+        }
+      ]
+    },
+    "C": {
+      "count": 29,
+      "centroid": {
+        "Symmetry": 0.42806251724137934,
+        "Hierarchy": 0.16997875862068965,
+        "Complexity": 0.3343043448275862,
+        "Balance": 0.0784488275862069
+      },
+      "stdev": {
+        "Symmetry": 0.09687970324231318,
+        "Hierarchy": 0.05993798836766567,
+        "Complexity": 0.13795388922146912,
+        "Balance": 0.057467629429798286
+      },
+      "variation": {
+        "Symmetry": 0.22632138844262292,
+        "Hierarchy": 0.352620461839107,
+        "Complexity": 0.41265957608961773,
+        "Balance": 0.7325492451324079
+      },
+      "compactness": 0.08805980256531157,
+      "nearest_category": {
+        "category": "B",
+        "distance": 0.025619406967387875
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.3921276717783582
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": -0.18952218645159213,
+          "score": 0.18952218645159213
+        },
+        {
+          "feature": "Hierarchy",
+          "deviation": -0.0551267726584887,
+          "score": 0.0551267726584887
+        }
+      ]
+    },
+    "B": {
+      "count": 10,
+      "centroid": {
+        "Symmetry": 0.4169462,
+        "Hierarchy": 0.1616602,
+        "Complexity": 0.3267359,
+        "Balance": 0.0582919
+      },
+      "stdev": {
+        "Symmetry": 0.11705028836598395,
+        "Hierarchy": 0.05547119290550727,
+        "Complexity": 0.10278437772390317,
+        "Balance": 0.05774018071577192
+      },
+      "variation": {
+        "Symmetry": 0.2807323543564708,
+        "Hierarchy": 0.3431345062390574,
+        "Complexity": 0.3145793826876788,
+        "Balance": 0.9905352324383305
+      },
+      "compactness": 0.08326150992779158,
+      "nearest_category": {
+        "category": "C",
+        "distance": 0.025619406967387875
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.4047970219314135
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": -0.1970906312791783,
+          "score": 0.1970906312791783
+        },
+        {
+          "feature": "Hierarchy",
+          "deviation": -0.06344533127917834,
+          "score": 0.06344533127917834
+        }
+      ]
+    },
+    "D": {
+      "count": 92,
+      "centroid": {
+        "Symmetry": 0.4393785108695652,
+        "Hierarchy": 0.26913816304347826,
+        "Complexity": 0.5844403695652174,
+        "Balance": 0.11961872826086957
+      },
+      "stdev": {
+        "Symmetry": 0.13869189969939896,
+        "Hierarchy": 0.0993965841241514,
+        "Complexity": 0.21488808944155488,
+        "Balance": 0.08245321642131152
+      },
+      "variation": {
+        "Symmetry": 0.3156547174437744,
+        "Hierarchy": 0.36931434397913404,
+        "Complexity": 0.36768180405028583,
+        "Balance": 0.6893002259771068
+      },
+      "compactness": 0.1338574474216042,
+      "nearest_category": {
+        "category": "M",
+        "distance": 0.017385826710649022
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.46642172450079694
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.06061383828603906,
+          "score": 0.06061383828603906
+        },
+        {
+          "feature": "Hierarchy",
+          "deviation": 0.04403263176429992,
+          "score": 0.04403263176429992
+        }
+      ]
+    },
+    "S": {
+      "count": 62,
+      "centroid": {
+        "Symmetry": 0.49247653225806454,
+        "Hierarchy": 0.23066382258064516,
+        "Complexity": 0.5608869516129033,
+        "Balance": 0.12270522580645161
+      },
+      "stdev": {
+        "Symmetry": 0.14167510745645245,
+        "Hierarchy": 0.10152826721808676,
+        "Complexity": 0.22110789627657465,
+        "Balance": 0.08764413866963701
+      },
+      "variation": {
+        "Symmetry": 0.2876789007729057,
+        "Hierarchy": 0.44015687454668034,
+        "Complexity": 0.3942111608065586,
+        "Balance": 0.714265738020661
+      },
+      "compactness": 0.1379888524051877,
+      "nearest_category": {
+        "category": "V",
+        "distance": 0.026761347200619505
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.39992675320258536
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.03706042033372492,
+          "score": 0.03706042033372492
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": 0.016553890801481896,
+          "score": 0.016553890801481896
+        }
+      ]
+    },
+    "E": {
+      "count": 52,
+      "centroid": {
+        "Symmetry": 0.5027424230769231,
+        "Hierarchy": 0.20133525,
+        "Complexity": 0.4028089807692308,
+        "Balance": 0.0737893076923077
+      },
+      "stdev": {
+        "Symmetry": 0.08105138865092987,
+        "Hierarchy": 0.044447540998815066,
+        "Complexity": 0.13612402872585472,
+        "Balance": 0.0530600327319981
+      },
+      "variation": {
+        "Symmetry": 0.16121851853056857,
+        "Hierarchy": 0.22076383047089404,
+        "Complexity": 0.33793692599877795,
+        "Balance": 0.7190748143789597
+      },
+      "compactness": 0.07867074777689943,
+      "nearest_category": {
+        "category": "G",
+        "distance": 0.03179141268875037
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.3294033054312135
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": -0.12101755050994756,
+          "score": 0.12101755050994756
+        },
+        {
+          "feature": "Balance",
+          "deviation": -0.04184711527687998,
+          "score": 0.04184711527687998
+        }
+      ]
+    },
+    "F": {
+      "count": 73,
+      "centroid": {
+        "Symmetry": 0.444030095890411,
+        "Hierarchy": 0.2725686849315069,
+        "Complexity": 0.6185722876712328,
+        "Balance": 0.12306346575342465
+      },
+      "stdev": {
+        "Symmetry": 0.12131216018214867,
+        "Hierarchy": 0.08260959065302065,
+        "Complexity": 0.23581673400469966,
+        "Balance": 0.09945398185931766
+      },
+      "variation": {
+        "Symmetry": 0.2732070670545025,
+        "Hierarchy": 0.3030780688316393,
+        "Complexity": 0.3812274469852014,
+        "Balance": 0.8081519665518604
+      },
+      "compactness": 0.13479811667479666,
+      "nearest_category": {
+        "category": "P",
+        "distance": 0.025082511450674947
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.4818138319967897
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.09474575639205451,
+          "score": 0.09474575639205451
+        },
+        {
+          "feature": "Hierarchy",
+          "deviation": 0.04746315365232853,
+          "score": 0.04746315365232853
+        }
+      ]
+    },
+    "G": {
+      "count": 73,
+      "centroid": {
+        "Symmetry": 0.4762387808219178,
+        "Hierarchy": 0.21081765753424658,
+        "Complexity": 0.4091987671232877,
+        "Balance": 0.08711242465753424
+      },
+      "stdev": {
+        "Symmetry": 0.07868949647707103,
+        "Hierarchy": 0.06114558665470853,
+        "Complexity": 0.17963801657393405,
+        "Balance": 0.05686197955200901
+      },
+      "variation": {
+        "Symmetry": 0.1652311815960569,
+        "Hierarchy": 0.29004015778315745,
+        "Complexity": 0.43899940812825283,
+        "Balance": 0.6527424735972045
+      },
+      "compactness": 0.09408376981443066,
+      "nearest_category": {
+        "category": "E",
+        "distance": 0.03179141268875037
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.3566380871555702
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": -0.11462776415589065,
+          "score": 0.11462776415589065
+        },
+        {
+          "feature": "Balance",
+          "deviation": -0.028523998311653434,
+          "score": 0.028523998311653434
+        }
+      ]
+    },
+    "H": {
+      "count": 10,
+      "centroid": {
+        "Symmetry": 0.3304494,
+        "Hierarchy": 0.2915565,
+        "Complexity": 0.5388197,
+        "Balance": 0.1133564
+      },
+      "stdev": {
+        "Symmetry": 0.07707255698651759,
+        "Hierarchy": 0.091910401374654,
+        "Complexity": 0.1790378963197736,
+        "Balance": 0.09683038235822473
+      },
+      "variation": {
+        "Symmetry": 0.23323557853794738,
+        "Hierarchy": 0.3152404469619233,
+        "Complexity": 0.33227793326742433,
+        "Balance": 0.8542118694509065
+      },
+      "compactness": 0.11121280925979249,
+      "nearest_category": {
+        "category": "U",
+        "distance": 0.1082578408674951
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.5471930492756704
+      },
+      "unique_markers": [
+        {
+          "feature": "Symmetry",
+          "deviation": -0.14547324145658264,
+          "score": 0.14547324145658264
+        },
+        {
+          "feature": "Hierarchy",
+          "deviation": 0.06645096872082165,
+          "score": 0.06645096872082165
+        }
+      ]
+    },
+    "I": {
+      "count": 22,
+      "centroid": {
+        "Symmetry": 0.4083633636363636,
+        "Hierarchy": 0.225391,
+        "Complexity": 0.39762268181818183,
+        "Balance": 0.10061022727272727
+      },
+      "stdev": {
+        "Symmetry": 0.11577318429566787,
+        "Hierarchy": 0.10223847833063458,
+        "Complexity": 0.19949640550199632,
+        "Balance": 0.06501715474600937
+      },
+      "variation": {
+        "Symmetry": 0.2835053156207243,
+        "Hierarchy": 0.45360497238414393,
+        "Complexity": 0.501722901193093,
+        "Balance": 0.6462280874265929
+      },
+      "compactness": 0.12063130571857704,
+      "nearest_category": {
+        "category": "G",
+        "distance": 0.07166345648353109
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.4230060555711305
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": -0.1262038494609965,
+          "score": 0.1262038494609965
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": -0.06755927782021903,
+          "score": 0.06755927782021903
+        }
+      ]
+    },
+    "K": {
+      "count": 9,
+      "centroid": {
+        "Symmetry": 0.5009581111111111,
+        "Hierarchy": 0.23206544444444444,
+        "Complexity": 0.5011912222222222,
+        "Balance": 0.071994
+      },
+      "stdev": {
+        "Symmetry": 0.062437114773265065,
+        "Hierarchy": 0.07914749322921817,
+        "Complexity": 0.17560914630177868,
+        "Balance": 0.05450242580737934
+      },
+      "variation": {
+        "Symmetry": 0.12463540042256485,
+        "Hierarchy": 0.3410567799902056,
+        "Complexity": 0.35038352332498685,
+        "Balance": 0.7570412229821837
+      },
+      "compactness": 0.09292404502791031,
+      "nearest_category": {
+        "category": "L",
+        "distance": 0.06834107918150396
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.3679933069220764
+      },
+      "unique_markers": [
+        {
+          "feature": "Balance",
+          "deviation": -0.043642422969187675,
+          "score": 0.043642422969187675
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": 0.025035469654528464,
+          "score": 0.025035469654528464
+        }
+      ]
+    },
+    "L": {
+      "count": 10,
+      "centroid": {
+        "Symmetry": 0.5122158,
+        "Hierarchy": 0.2739389,
+        "Complexity": 0.5212423,
+        "Balance": 0.1208646
+      },
+      "stdev": {
+        "Symmetry": 0.11911072879451289,
+        "Hierarchy": 0.08453764370911931,
+        "Complexity": 0.18241323897845246,
+        "Balance": 0.09182480824395987
+      },
+      "variation": {
+        "Symmetry": 0.23254013014536623,
+        "Hierarchy": 0.3086003620118184,
+        "Complexity": 0.3499586257263703,
+        "Balance": 0.7597328601092451
+      },
+      "compactness": 0.11947160493151113,
+      "nearest_category": {
+        "category": "S",
+        "distance": 0.06194721399309909
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.38014654885727456
+      },
+      "unique_markers": [
+        {
+          "feature": "Hierarchy",
+          "deviation": 0.04883336872082164,
+          "score": 0.04883336872082164
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": 0.03629315854341736,
+          "score": 0.03629315854341736
+        }
+      ]
+    },
+    "M": {
+      "count": 65,
+      "centroid": {
+        "Symmetry": 0.42734821538461537,
+        "Hierarchy": 0.2641458153846154,
+        "Complexity": 0.580057476923077,
+        "Balance": 0.13026793846153847
+      },
+      "stdev": {
+        "Symmetry": 0.13165741980241955,
+        "Hierarchy": 0.09570096386250282,
+        "Complexity": 0.19625555138081555,
+        "Balance": 0.1158514097550926
+      },
+      "variation": {
+        "Symmetry": 0.30807995695951895,
+        "Hierarchy": 0.36230353951719924,
+        "Complexity": 0.33833811163310207,
+        "Balance": 0.8893317198636536
+      },
+      "compactness": 0.13486633620020763,
+      "nearest_category": {
+        "category": "D",
+        "distance": 0.017385826710649022
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.47266744340030475
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.05623094564389863,
+          "score": 0.05623094564389863
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": -0.04857442607196727,
+          "score": 0.04857442607196727
+        }
+      ]
+    },
+    "N": {
+      "count": 63,
+      "centroid": {
+        "Symmetry": 0.542476238095238,
+        "Hierarchy": 0.24656679365079365,
+        "Complexity": 0.5767674285714286,
+        "Balance": 0.11569196825396826
+      },
+      "stdev": {
+        "Symmetry": 0.1808620019130357,
+        "Hierarchy": 0.11710946857753636,
+        "Complexity": 0.2525845089910403,
+        "Balance": 0.1078356281379385
+      },
+      "variation": {
+        "Symmetry": 0.33340078184453725,
+        "Hierarchy": 0.47496042286779117,
+        "Complexity": 0.43793129861139424,
+        "Balance": 0.932092605609549
+      },
+      "compactness": 0.1645979019048877,
+      "nearest_category": {
+        "category": "S",
+        "distance": 0.05526527302555902
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.3754416140098012
+      },
+      "unique_markers": [
+        {
+          "feature": "Symmetry",
+          "deviation": 0.0665535966386554,
+          "score": 0.0665535966386554
+        },
+        {
+          "feature": "Complexity",
+          "deviation": 0.052940897292250266,
+          "score": 0.052940897292250266
+        }
+      ]
+    },
+    "O": {
+      "count": 82,
+      "centroid": {
+        "Symmetry": 0.5430822926829268,
+        "Hierarchy": 0.20529821951219512,
+        "Complexity": 0.5463862195121951,
+        "Balance": 0.14792334146341463
+      },
+      "stdev": {
+        "Symmetry": 0.1653458306321225,
+        "Hierarchy": 0.12686992443626666,
+        "Complexity": 0.31725652030947865,
+        "Balance": 0.1348014438504873
+      },
+      "variation": {
+        "Symmetry": 0.3044581509282572,
+        "Hierarchy": 0.6179786884548715,
+        "Complexity": 0.5806451718213541,
+        "Balance": 0.911292582474736
+      },
+      "compactness": 0.18606842980708876,
+      "nearest_category": {
+        "category": "V",
+        "distance": 0.056681385427495914
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.34636562303333485
+      },
+      "unique_markers": [
+        {
+          "feature": "Symmetry",
+          "deviation": 0.06715965122634421,
+          "score": 0.06715965122634421
+        },
+        {
+          "feature": "Balance",
+          "deviation": 0.03228691849422695,
+          "score": 0.03228691849422695
+        }
+      ]
+    },
+    "T": {
+      "count": 55,
+      "centroid": {
+        "Symmetry": 0.4021925090909091,
+        "Hierarchy": 0.24598383636363635,
+        "Complexity": 0.6395845272727273,
+        "Balance": 0.12589565454545454
+      },
+      "stdev": {
+        "Symmetry": 0.1361550406463659,
+        "Hierarchy": 0.07193650904709176,
+        "Complexity": 0.20914825985713445,
+        "Balance": 0.11818506972713573
+      },
+      "variation": {
+        "Symmetry": 0.3385320153130706,
+        "Hierarchy": 0.2924440488063145,
+        "Complexity": 0.3270064408045801,
+        "Balance": 0.9387541623564545
+      },
+      "compactness": 0.13385621981943197,
+      "nearest_category": {
+        "category": "U",
+        "distance": 0.027715743749554284
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.5185548373362968
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.11575799599354897,
+          "score": 0.11575799599354897
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": -0.07373013236567355,
+          "score": 0.07373013236567355
+        }
+      ]
+    },
+    "R": {
+      "count": 34,
+      "centroid": {
+        "Symmetry": 0.4496315588235294,
+        "Hierarchy": 0.23748611764705882,
+        "Complexity": 0.6115744705882353,
+        "Balance": 0.1416619705882353
+      },
+      "stdev": {
+        "Symmetry": 0.1683701347372004,
+        "Hierarchy": 0.08476645035860546,
+        "Complexity": 0.22708999742085093,
+        "Balance": 0.10179852777147769
+      },
+      "variation": {
+        "Symmetry": 0.37446244916114085,
+        "Hierarchy": 0.35693223333829366,
+        "Complexity": 0.3713202697987495,
+        "Balance": 0.7186016638676621
+      },
+      "compactness": 0.1455062775720336,
+      "nearest_category": {
+        "category": "P",
+        "distance": 0.02561100638032115
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.4639484140718468
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.087747939309057,
+          "score": 0.087747939309057
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": -0.026291082633053242,
+          "score": 0.026291082633053242
+        }
+      ]
+    },
+    "P": {
+      "count": 14,
+      "centroid": {
+        "Symmetry": 0.4545222857142857,
+        "Hierarchy": 0.2622984285714286,
+        "Complexity": 0.6077692142857143,
+        "Balance": 0.14029314285714287
+      },
+      "stdev": {
+        "Symmetry": 0.11086970159118481,
+        "Hierarchy": 0.057652659564120086,
+        "Complexity": 0.16145905104885555,
+        "Balance": 0.13678078253220533
+      },
+      "variation": {
+        "Symmetry": 0.24392577674591273,
+        "Hierarchy": 0.21979796020173345,
+        "Complexity": 0.26565848887000904,
+        "Balance": 0.9749641340025144
+      },
+      "compactness": 0.11669054868409144,
+      "nearest_category": {
+        "category": "F",
+        "distance": 0.025082511450674947
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.46511601116751744
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.08394268300653596,
+          "score": 0.08394268300653596
+        },
+        {
+          "feature": "Hierarchy",
+          "deviation": 0.037192897292250254,
+          "score": 0.037192897292250254
+        }
+      ]
+    },
+    "Q": {
+      "count": 8,
+      "centroid": {
+        "Symmetry": 0.580854125,
+        "Hierarchy": 0.2181495,
+        "Complexity": 0.609229875,
+        "Balance": 0.152597
+      },
+      "stdev": {
+        "Symmetry": 0.20601219781449684,
+        "Hierarchy": 0.12159624717482032,
+        "Complexity": 0.2288988459371505,
+        "Balance": 0.111124197385178
+      },
+      "variation": {
+        "Symmetry": 0.35467114538352784,
+        "Hierarchy": 0.5573986975666702,
+        "Complexity": 0.3757183541551545,
+        "Balance": 0.7282200658281486
+      },
+      "compactness": 0.1669078720779114,
+      "nearest_category": {
+        "category": "N",
+        "distance": 0.06852880108402319
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.36323595509721535
+      },
+      "unique_markers": [
+        {
+          "feature": "Symmetry",
+          "deviation": 0.10493148354341736,
+          "score": 0.10493148354341736
+        },
+        {
+          "feature": "Complexity",
+          "deviation": 0.0854033437208217,
+          "score": 0.0854033437208217
+        }
+      ]
+    },
+    "U": {
+      "count": 54,
+      "centroid": {
+        "Symmetry": 0.3903422777777778,
+        "Hierarchy": 0.2654219814814815,
+        "Complexity": 0.6248642592592593,
+        "Balance": 0.12013312962962963
+      },
+      "stdev": {
+        "Symmetry": 0.09771064298325244,
+        "Hierarchy": 0.10217910914708667,
+        "Complexity": 0.24445989536771065,
+        "Balance": 0.10411947096290063
+      },
+      "variation": {
+        "Symmetry": 0.2503204201694985,
+        "Hierarchy": 0.38496852663356257,
+        "Complexity": 0.3912207999502225,
+        "Balance": 0.8667007284660018
+      },
+      "compactness": 0.1371172796152376,
+      "nearest_category": {
+        "category": "T",
+        "distance": 0.027715743749554284
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.5252929313860414
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.10103772798008093,
+          "score": 0.10103772798008093
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": -0.08558036367880484,
+          "score": 0.08558036367880484
+        }
+      ]
+    },
+    "V": {
+      "count": 76,
+      "centroid": {
+        "Symmetry": 0.49808015789473686,
+        "Hierarchy": 0.20835578947368422,
+        "Complexity": 0.5737887236842105,
+        "Balance": 0.1272511052631579
+      },
+      "stdev": {
+        "Symmetry": 0.1543657375921542,
+        "Hierarchy": 0.11470134976323648,
+        "Complexity": 0.2631594333693029,
+        "Balance": 0.11567688648781672
+      },
+      "variation": {
+        "Symmetry": 0.3099214757813691,
+        "Hierarchy": 0.5505071399886563,
+        "Complexity": 0.45863472478091943,
+        "Balance": 0.9090442574042445
+      },
+      "compactness": 0.16197585180312757,
+      "nearest_category": {
+        "category": "S",
+        "distance": 0.026761347200619505
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.3966870015432103
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.04996219240503219,
+          "score": 0.04996219240503219
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": 0.022157516438154223,
+          "score": 0.022157516438154223
+        }
+      ]
+    },
+    "W": {
+      "count": 32,
+      "centroid": {
+        "Symmetry": 0.518695125,
+        "Hierarchy": 0.2407905,
+        "Complexity": 0.63325465625,
+        "Balance": 0.13541215625
+      },
+      "stdev": {
+        "Symmetry": 0.11671840749394191,
+        "Hierarchy": 0.08384568731865402,
+        "Complexity": 0.19064699498756355,
+        "Balance": 0.08667606784607176
+      },
+      "variation": {
+        "Symmetry": 0.22502314340035856,
+        "Hierarchy": 0.34821011343327096,
+        "Complexity": 0.3010589706778229,
+        "Balance": 0.6400907440396199
+      },
+      "compactness": 0.11947178941155781,
+      "nearest_category": {
+        "category": "X",
+        "distance": 0.04724780444482179
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.42643446474670466
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.10942812497082166,
+          "score": 0.10942812497082166
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": 0.042772483543417394,
+          "score": 0.042772483543417394
+        }
+      ]
+    },
+    "X": {
+      "count": 12,
+      "centroid": {
+        "Symmetry": 0.5357701666666667,
+        "Hierarchy": 0.24573908333333333,
+        "Complexity": 0.6727005,
+        "Balance": 0.11642966666666667
+      },
+      "stdev": {
+        "Symmetry": 0.16410409037449034,
+        "Hierarchy": 0.1331990487293724,
+        "Complexity": 0.23239299007446415,
+        "Balance": 0.06913996313919243
+      },
+      "variation": {
+        "Symmetry": 0.3062956853224508,
+        "Hierarchy": 0.5420344493948253,
+        "Complexity": 0.34546278778514977,
+        "Balance": 0.5938345880276141
+      },
+      "compactness": 0.14970902307937983,
+      "nearest_category": {
+        "category": "W",
+        "distance": 0.04724780444482179
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.44332792085951883
+      },
+      "unique_markers": [
+        {
+          "feature": "Complexity",
+          "deviation": 0.1488739687208217,
+          "score": 0.1488739687208217
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": 0.05984752521008402,
+          "score": 0.05984752521008402
+        }
+      ]
+    },
+    "Y": {
+      "count": 10,
+      "centroid": {
+        "Symmetry": 0.4012104,
+        "Hierarchy": 0.2640904,
+        "Complexity": 0.5168552,
+        "Balance": 0.2641683
+      },
+      "stdev": {
+        "Symmetry": 0.06370381355021063,
+        "Hierarchy": 0.07816159329133458,
+        "Complexity": 0.14054595701890538,
+        "Balance": 0.19413716284114693
+      },
+      "variation": {
+        "Symmetry": 0.15877906841450426,
+        "Hierarchy": 0.2959652955629382,
+        "Complexity": 0.271925206554767,
+        "Balance": 0.7348995426065388
+      },
+      "compactness": 0.11913713167539938,
+      "nearest_category": {
+        "category": "M",
+        "distance": 0.15035632042696812
+      },
+      "farthest_category": {
+        "category": "Z",
+        "distance": 0.49159897252992835
+      },
+      "unique_markers": [
+        {
+          "feature": "Balance",
+          "deviation": 0.14853187703081233,
+          "score": 0.14853187703081233
+        },
+        {
+          "feature": "Symmetry",
+          "deviation": -0.07471224145658262,
+          "score": 0.07471224145658262
+        }
+      ]
+    },
+    "Z": {
+      "count": 40,
+      "centroid": {
+        "Symmetry": 0.814265425,
+        "Hierarchy": 0.1158627,
+        "Complexity": 0.3531543,
+        "Balance": 0.114884475
+      },
+      "stdev": {
+        "Symmetry": 0.19880787025403288,
+        "Hierarchy": 0.14071551169046717,
+        "Complexity": 0.3683501333113781,
+        "Balance": 0.1294597625559748
+      },
+      "variation": {
+        "Symmetry": 0.2441560996575937,
+        "Hierarchy": 1.214502265961929,
+        "Complexity": 1.0430288780608876,
+        "Balance": 1.1268690791856324
+      },
+      "compactness": 0.20933331945296324,
+      "nearest_category": {
+        "category": "E",
+        "distance": 0.3294033054312135
+      },
+      "farthest_category": {
+        "category": "H",
+        "distance": 0.5471930492756704
+      },
+      "unique_markers": [
+        {
+          "feature": "Symmetry",
+          "deviation": 0.33834278354341735,
+          "score": 0.33834278354341735
+        },
+        {
+          "feature": "Complexity",
+          "deviation": -0.17067223127917835,
+          "score": 0.17067223127917835
+        }
+      ]
+    }
+  }
+}

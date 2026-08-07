@@ -1,40 +1,18 @@
-"""
-AncientScriptLab
-
-Algorithm
-
-geometry.aspect_ratio
-
-Feature
-
-G-006 Aspect Ratio
-"""
-
 from __future__ import annotations
 
+from core.context.feature_context import FeatureContext
 from core.execution.algorithm import Algorithm
 
 
-def execute(context):
+class AspectRatio(Algorithm):
 
-    bbox = context.bounding_box
+    name = "aspect_ratio"
 
-    if bbox.height == 0:
-        return 0.0
+    def execute(self, context: FeatureContext) -> float:
 
-    return float(bbox.width / bbox.height)
+        bbox = context.bounding_box
 
+        if bbox.height == 0:
+            return 0.0
 
-ALGORITHM = Algorithm(
-    name="geometry.aspect_ratio",
-    title="Aspect Ratio",
-    version="1.0",
-    author="AncientScriptLab",
-    features=("G-006",),
-    implementation=execute,
-    dependencies=(),
-    complexity="O(1)",
-    deterministic=True,
-    reference="Bounding Box Aspect Ratio",
-)
-
+        return float(bbox.width / bbox.height)

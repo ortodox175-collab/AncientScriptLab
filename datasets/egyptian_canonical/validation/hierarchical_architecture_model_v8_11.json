@@ -1,0 +1,16 @@
+{
+  "version": "V8.11",
+  "GII": 1.0,
+  "CII": 0.9989794072958602,
+  "CSI": 0.8507544696626742,
+  "AII_v3_2": 0.9549201630875602,
+  "compactness_variance": 0.0010216353777524833,
+  "between_category_variance": {
+    "Symmetry": 0.008197384946878562,
+    "Hierarchy": 0.0018061541377739404,
+    "Complexity": 0.011780898733685985,
+    "Balance": 0.001510353309381212
+  },
+  "separation_ratio": 5.7003681633868215,
+  "marker_diversity": 1.0
+}

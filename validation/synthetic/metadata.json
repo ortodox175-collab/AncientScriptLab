@@ -1,0 +1,38 @@
+{
+  "single_square": {
+    "connected_components": 1,
+    "hole_count": 0,
+    "euler_characteristic": 1,
+    "foreground_area": 1024
+  },
+  "two_squares": {
+    "connected_components": 2,
+    "hole_count": 0,
+    "euler_characteristic": 2,
+    "foreground_area": 512
+  },
+  "three_squares": {
+    "connected_components": 3,
+    "hole_count": 0,
+    "euler_characteristic": 3,
+    "foreground_area": 507
+  },
+  "square_with_hole": {
+    "connected_components": 1,
+    "hole_count": 1,
+    "euler_characteristic": 0,
+    "foreground_area": 1344
+  },
+  "ring": {
+    "connected_components": 1,
+    "hole_count": 1,
+    "euler_characteristic": 0,
+    "foreground_area": 940
+  },
+  "three_rings": {
+    "connected_components": 3,
+    "hole_count": 3,
+    "euler_characteristic": 0,
+    "foreground_area": 480
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "corpus": "Reference Corpus v2.0",
+  "version": "2.0",
+  "objects": 10,
+  "results": {
+    "bridge": {
+      "truth": {
+        "components": 1,
+        "holes": 0,
+        "euler": 1
+      },
+      "measured": {
+        "components": 1,
+        "holes": 0,
+        "euler": 1
+      },
+      "pass": true
+    },
+    "diagonal_contact": {
+      "truth": {
+        "components": 1,
+        "holes": 0,
+        "euler": 1
+      },
+      "measured": {
+        "components": 1,
+        "holes": 0,
+        "euler": 1
+      },
+      "pass": true
+    },
+    "double_hole_component": {
+      "truth": {
+        "components": 1,
+        "holes": 2,
+        "euler": -1
+      },
+      "measured": {
+        "components": 1,
+        "holes": 2,
+        "euler": -1
+      },
+      "pass": true
+    },
+    "nested_rings": {
+      "truth": {
+        "components": 2,
+        "holes": 2,
+        "euler": 0
+      },
+      "measured": {
+        "components": 2,
+        "holes": 2,
+        "euler": 0
+      },
+      "pass": true
+    },
+    "ring": {
+      "truth": {
+        "components": 1,
+        "holes": 1,
+        "euler": 0
+      },
+      "measured": {
+        "components": 1,
+        "holes": 1,
+        "euler": 0
+      },
+      "pass": true
+    },
+    "square": {
+      "truth": {
+        "components": 1,
+        "holes": 0,
+        "euler": 1
+      },
+      "measured": {
+        "components": 1,
+        "holes": 0,
+        "euler": 1
+      },
+      "pass": true
+    },
+    "square_hole": {
+      "truth": {
+        "components": 1,
+        "holes": 1,
+        "euler": 0
+      },
+      "measured": {
+        "components": 1,
+        "holes": 1,
+        "euler": 0
+      },
+      "pass": true
+    },
+    "three_rings": {
+      "truth": {
+        "components": 3,
+        "holes": 3,
+        "euler": 0
+      },
+      "measured": {
+        "components": 3,
+        "holes": 3,
+        "euler": 0
+      },
+      "pass": true
+    },
+    "three_squares": {
+      "truth": {
+        "components": 3,
+        "holes": 0,
+        "euler": 3
+      },
+      "measured": {
+        "components": 3,
+        "holes": 0,
+        "euler": 3
+      },
+      "pass": true
+    },
+    "two_squares": {
+      "truth": {
+        "components": 2,
+        "holes": 0,
+        "euler": 2
+      },
+      "measured": {
+        "components": 2,
+        "holes": 0,
+        "euler": 2
+      },
+      "pass": true
+    }
+  },
+  "passed": 10,
+  "total": 10,
+  "certified": true
+}

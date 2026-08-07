@@ -1,0 +1,1 @@
+# Real archetype sequence report v1.0\n\nInscriptions: 154\nMapped tokens: 0\nUnmapped tokens: 2543\nCoverage: 0.000\n\n## Top unmapped signs\n\n- Y1: 233\n- N35: 217\n- G7: 189\n- Ff301: 175\n- Z2: 170\n- M17: 161\n- G17: 123\n- Z3A: 94\n- A42A: 80\n- Z3: 76\n- N23: 62\n- Z1: 48\n- A24: 47\n- D40: 47\n- D51: 46\n- O49: 43\n- O39: 42\n- N33: 35\n- G41: 33\n- Z5: 28\n

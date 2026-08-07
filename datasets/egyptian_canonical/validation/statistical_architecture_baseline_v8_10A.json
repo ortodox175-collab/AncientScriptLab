@@ -1,0 +1,421 @@
+{
+  "version": "V8.10A",
+  "baseline": {
+    "compactness": {
+      "median": 0.13385621981943197,
+      "mad": 0.017165671135340524,
+      "min": 0.07867074777689943,
+      "max": 0.20933331945296324
+    },
+    "distance": {
+      "median": 0.03179141268875037,
+      "mad": 0.014405585978101345,
+      "min": 0.017385826710649022,
+      "max": 0.3294033054312135
+    },
+    "features": {
+      "Symmetry": {
+        "median": 0.4545222857142857,
+        "mad": 0.04822013736263736,
+        "min": 0.3304494,
+        "max": 0.814265425
+      },
+      "Hierarchy": {
+        "median": 0.23748611764705882,
+        "mad": 0.026668460112812237,
+        "min": 0.1158627,
+        "max": 0.2915565
+      },
+      "Complexity": {
+        "median": 0.5608869516129033,
+        "mad": 0.057685336058329595,
+        "min": 0.31549042857142856,
+        "max": 0.6727005
+      },
+      "Balance": {
+        "median": 0.12013312962962963,
+        "mad": 0.015279026620370367,
+        "min": 0.0582919,
+        "max": 0.2641683
+      }
+    }
+  },
+  "categories": [
+    {
+      "Category": "A",
+      "N": 84,
+      "Compactness": 0.0910683877484088,
+      "Distance": 0.02934886182260417,
+      "P_compactness": 0.32,
+      "P_distance": 0.96,
+      "P_features": {
+        "Symmetry": 0.24,
+        "Hierarchy": 0.16,
+        "Complexity": 0.08,
+        "Balance": 0.24
+      },
+      "ArchitectureProbability": 0.3333333333333333
+    },
+    {
+      "Category": "B",
+      "N": 10,
+      "Compactness": 0.08326150992779158,
+      "Distance": 0.025619406967387875,
+      "P_compactness": 0.16,
+      "P_distance": 0.56,
+      "P_features": {
+        "Symmetry": 0.56,
+        "Hierarchy": 0.24,
+        "Complexity": 0.16,
+        "Balance": 0.08
+      },
+      "ArchitectureProbability": 0.29333333333333333
+    },
+    {
+      "Category": "C",
+      "N": 29,
+      "Compactness": 0.08805980256531157,
+      "Distance": 0.025619406967387875,
+      "P_compactness": 0.24,
+      "P_distance": 0.56,
+      "P_features": {
+        "Symmetry": 0.72,
+        "Hierarchy": 0.32,
+        "Complexity": 0.24,
+        "Balance": 0.4
+      },
+      "ArchitectureProbability": 0.41333333333333333
+    },
+    {
+      "Category": "D",
+      "N": 92,
+      "Compactness": 0.1338574474216042,
+      "Distance": 0.017385826710649022,
+      "P_compactness": 0.8799999999999999,
+      "P_distance": 0.16,
+      "P_features": {
+        "Symmetry": 0.8,
+        "Hierarchy": 0.24,
+        "Complexity": 0.6399999999999999,
+        "Balance": 0.96
+      },
+      "ArchitectureProbability": 0.6133333333333333
+    },
+    {
+      "Category": "E",
+      "N": 52,
+      "Compactness": 0.07867074777689943,
+      "Distance": 0.03179141268875037,
+      "P_compactness": 0.08,
+      "P_distance": 0.8799999999999999,
+      "P_features": {
+        "Symmetry": 0.56,
+        "Hierarchy": 0.4,
+        "Complexity": 0.48,
+        "Balance": 0.32
+      },
+      "ArchitectureProbability": 0.4533333333333333
+    },
+    {
+      "Category": "F",
+      "N": 73,
+      "Compactness": 0.13479811667479666,
+      "Distance": 0.025082511450674947,
+      "P_compactness": 0.8,
+      "P_distance": 0.32,
+      "P_features": {
+        "Symmetry": 0.88,
+        "Hierarchy": 0.15999999999999992,
+        "Complexity": 0.32000000000000006,
+        "Balance": 0.72
+      },
+      "ArchitectureProbability": 0.5333333333333333
+    },
+    {
+      "Category": "G",
+      "N": 73,
+      "Compactness": 0.09408376981443066,
+      "Distance": 0.03179141268875037,
+      "P_compactness": 0.48,
+      "P_distance": 0.8799999999999999,
+      "P_features": {
+        "Symmetry": 0.8799999999999999,
+        "Hierarchy": 0.64,
+        "Complexity": 0.56,
+        "Balance": 0.48
+      },
+      "ArchitectureProbability": 0.6533333333333333
+    },
+    {
+      "Category": "H",
+      "N": 10,
+      "Compactness": 0.11121280925979249,
+      "Distance": 0.1082578408674951,
+      "P_compactness": 0.56,
+      "P_distance": 0.15999999999999992,
+      "P_features": {
+        "Symmetry": 0.08,
+        "Hierarchy": 0.0,
+        "Complexity": 0.88,
+        "Balance": 0.64
+      },
+      "ArchitectureProbability": 0.38666666666666666
+    },
+    {
+      "Category": "I",
+      "N": 22,
+      "Compactness": 0.12063130571857704,
+      "Distance": 0.07166345648353109,
+      "P_compactness": 0.96,
+      "P_distance": 0.24,
+      "P_features": {
+        "Symmetry": 0.48,
+        "Hierarchy": 0.8,
+        "Complexity": 0.4,
+        "Balance": 0.56
+      },
+      "ArchitectureProbability": 0.5733333333333334
+    },
+    {
+      "Category": "K",
+      "N": 9,
+      "Compactness": 0.09292404502791031,
+      "Distance": 0.06834107918150396,
+      "P_compactness": 0.4,
+      "P_distance": 0.3999999999999999,
+      "P_features": {
+        "Symmetry": 0.6399999999999999,
+        "Hierarchy": 0.96,
+        "Complexity": 0.64,
+        "Balance": 0.16
+      },
+      "ArchitectureProbability": 0.5333333333333333
+    },
+    {
+      "Category": "L",
+      "N": 10,
+      "Compactness": 0.11947160493151113,
+      "Distance": 0.06194721399309909,
+      "P_compactness": 0.8,
+      "P_distance": 0.48,
+      "P_features": {
+        "Symmetry": 0.48,
+        "Hierarchy": 0.08000000000000007,
+        "Complexity": 0.8,
+        "Balance": 0.8799999999999999
+      },
+      "ArchitectureProbability": 0.5866666666666667
+    },
+    {
+      "Category": "M",
+      "N": 65,
+      "Compactness": 0.13486633620020763,
+      "Distance": 0.017385826710649022,
+      "P_compactness": 0.72,
+      "P_distance": 0.16,
+      "P_features": {
+        "Symmetry": 0.64,
+        "Hierarchy": 0.3999999999999999,
+        "Complexity": 0.72,
+        "Balance": 0.48
+      },
+      "ArchitectureProbability": 0.52
+    },
+    {
+      "Category": "N",
+      "N": 63,
+      "Compactness": 0.1645979019048877,
+      "Distance": 0.05526527302555902,
+      "P_compactness": 0.24,
+      "P_distance": 0.6399999999999999,
+      "P_features": {
+        "Symmetry": 0.24,
+        "Hierarchy": 0.6399999999999999,
+        "Complexity": 0.8,
+        "Balance": 0.8
+      },
+      "ArchitectureProbability": 0.5599999999999999
+    },
+    {
+      "Category": "O",
+      "N": 82,
+      "Compactness": 0.18606842980708876,
+      "Distance": 0.056681385427495914,
+      "P_compactness": 0.08000000000000007,
+      "P_distance": 0.56,
+      "P_features": {
+        "Symmetry": 0.15999999999999992,
+        "Hierarchy": 0.48,
+        "Complexity": 0.96,
+        "Balance": 0.15999999999999992
+      },
+      "ArchitectureProbability": 0.39999999999999997
+    },
+    {
+      "Category": "P",
+      "N": 14,
+      "Compactness": 0.11669054868409144,
+      "Distance": 0.025082511450674947,
+      "P_compactness": 0.64,
+      "P_distance": 0.32,
+      "P_features": {
+        "Symmetry": 0.96,
+        "Hierarchy": 0.56,
+        "Complexity": 0.56,
+        "Balance": 0.32000000000000006
+      },
+      "ArchitectureProbability": 0.56
+    },
+    {
+      "Category": "Q",
+      "N": 8,
+      "Compactness": 0.1669078720779114,
+      "Distance": 0.06852880108402319,
+      "P_compactness": 0.15999999999999992,
+      "P_distance": 0.32000000000000006,
+      "P_features": {
+        "Symmetry": 0.08000000000000007,
+        "Hierarchy": 0.72,
+        "Complexity": 0.48,
+        "Balance": 0.08000000000000007
+      },
+      "ArchitectureProbability": 0.3066666666666667
+    },
+    {
+      "Category": "R",
+      "N": 34,
+      "Compactness": 0.1455062775720336,
+      "Distance": 0.02561100638032115,
+      "P_compactness": 0.48,
+      "P_distance": 0.4,
+      "P_features": {
+        "Symmetry": 0.96,
+        "Hierarchy": 0.96,
+        "Complexity": 0.3999999999999999,
+        "Balance": 0.24
+      },
+      "ArchitectureProbability": 0.5733333333333333
+    },
+    {
+      "Category": "S",
+      "N": 62,
+      "Compactness": 0.1379888524051877,
+      "Distance": 0.026761347200619505,
+      "P_compactness": 0.56,
+      "P_distance": 0.72,
+      "P_features": {
+        "Symmetry": 0.8,
+        "Hierarchy": 0.88,
+        "Complexity": 0.96,
+        "Balance": 0.8
+      },
+      "ArchitectureProbability": 0.7866666666666666
+    },
+    {
+      "Category": "T",
+      "N": 55,
+      "Compactness": 0.13385621981943197,
+      "Distance": 0.027715743749554284,
+      "P_compactness": 0.96,
+      "P_distance": 0.88,
+      "P_features": {
+        "Symmetry": 0.4,
+        "Hierarchy": 0.72,
+        "Complexity": 0.08000000000000007,
+        "Balance": 0.6399999999999999
+      },
+      "ArchitectureProbability": 0.6133333333333333
+    },
+    {
+      "Category": "U",
+      "N": 54,
+      "Compactness": 0.1371172796152376,
+      "Distance": 0.027715743749554284,
+      "P_compactness": 0.6399999999999999,
+      "P_distance": 0.88,
+      "P_features": {
+        "Symmetry": 0.16,
+        "Hierarchy": 0.32000000000000006,
+        "Complexity": 0.24,
+        "Balance": 0.96
+      },
+      "ArchitectureProbability": 0.5333333333333333
+    },
+    {
+      "Category": "V",
+      "N": 76,
+      "Compactness": 0.16197585180312757,
+      "Distance": 0.026761347200619505,
+      "P_compactness": 0.32000000000000006,
+      "P_distance": 0.72,
+      "P_features": {
+        "Symmetry": 0.72,
+        "Hierarchy": 0.56,
+        "Complexity": 0.8799999999999999,
+        "Balance": 0.56
+      },
+      "ArchitectureProbability": 0.6266666666666667
+    },
+    {
+      "Category": "W",
+      "N": 32,
+      "Compactness": 0.11947178941155781,
+      "Distance": 0.04724780444482179,
+      "P_compactness": 0.88,
+      "P_distance": 0.72,
+      "P_features": {
+        "Symmetry": 0.3999999999999999,
+        "Hierarchy": 0.8799999999999999,
+        "Complexity": 0.15999999999999992,
+        "Balance": 0.3999999999999999
+      },
+      "ArchitectureProbability": 0.5733333333333333
+    },
+    {
+      "Category": "X",
+      "N": 12,
+      "Compactness": 0.14970902307937983,
+      "Distance": 0.04724780444482179,
+      "P_compactness": 0.3999999999999999,
+      "P_distance": 0.72,
+      "P_features": {
+        "Symmetry": 0.32000000000000006,
+        "Hierarchy": 0.8,
+        "Complexity": 0.0,
+        "Balance": 0.88
+      },
+      "ArchitectureProbability": 0.52
+    },
+    {
+      "Category": "Y",
+      "N": 10,
+      "Compactness": 0.11913713167539938,
+      "Distance": 0.15035632042696812,
+      "P_compactness": 0.72,
+      "P_distance": 0.08000000000000007,
+      "P_features": {
+        "Symmetry": 0.32,
+        "Hierarchy": 0.48,
+        "Complexity": 0.72,
+        "Balance": 0.0
+      },
+      "ArchitectureProbability": 0.38666666666666666
+    },
+    {
+      "Category": "Z",
+      "N": 40,
+      "Compactness": 0.20933331945296324,
+      "Distance": 0.3294033054312135,
+      "P_compactness": 0.0,
+      "P_distance": 0.0,
+      "P_features": {
+        "Symmetry": 0.0,
+        "Hierarchy": 0.08,
+        "Complexity": 0.32,
+        "Balance": 0.72
+      },
+      "ArchitectureProbability": 0.18666666666666668
+    }
+  ],
+  "AII_v3": 0.5258761282290695
+}

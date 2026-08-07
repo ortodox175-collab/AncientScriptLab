@@ -1,0 +1,449 @@
+{
+  "module": "M10.1J Hierarchical Archetype Extraction",
+  "macro_count": 3,
+  "meso_count": 10,
+  "micro_count": 27,
+  "hierarchy": [
+    {
+      "macro_archetype": 0,
+      "sign_count": 759,
+      "meso_archetypes": [
+        {
+          "meso_archetype": 0,
+          "sign_count": 133,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 0,
+              "sign_count": 34,
+              "sample_signs": [
+                "hiero_0033",
+                "hiero_0075",
+                "hiero_0089",
+                "hiero_0097",
+                "hiero_0100",
+                "hiero_0108",
+                "hiero_0185",
+                "hiero_0231"
+              ]
+            },
+            {
+              "micro_archetype": 1,
+              "sign_count": 72,
+              "sample_signs": [
+                "hiero_0053",
+                "hiero_0056",
+                "hiero_0074",
+                "hiero_0090",
+                "hiero_0091",
+                "hiero_0092",
+                "hiero_0093",
+                "hiero_0094"
+              ]
+            },
+            {
+              "micro_archetype": 2,
+              "sign_count": 27,
+              "sample_signs": [
+                "hiero_0098",
+                "hiero_0318",
+                "hiero_0332",
+                "hiero_0334",
+                "hiero_0398",
+                "hiero_0443",
+                "hiero_0457",
+                "hiero_0458"
+              ]
+            }
+          ]
+        },
+        {
+          "meso_archetype": 1,
+          "sign_count": 266,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 3,
+              "sign_count": 111,
+              "sample_signs": [
+                "hiero_0050",
+                "hiero_0062",
+                "hiero_0063",
+                "hiero_0120",
+                "hiero_0121",
+                "hiero_0122",
+                "hiero_0125",
+                "hiero_0131"
+              ]
+            },
+            {
+              "micro_archetype": 4,
+              "sign_count": 79,
+              "sample_signs": [
+                "hiero_0139",
+                "hiero_0140",
+                "hiero_0141",
+                "hiero_0146",
+                "hiero_0157",
+                "hiero_0163",
+                "hiero_0167",
+                "hiero_0173"
+              ]
+            },
+            {
+              "micro_archetype": 5,
+              "sign_count": 76,
+              "sample_signs": [
+                "hiero_0047",
+                "hiero_0057",
+                "hiero_0080",
+                "hiero_0099",
+                "hiero_0101",
+                "hiero_0111",
+                "hiero_0135",
+                "hiero_0137"
+              ]
+            }
+          ]
+        },
+        {
+          "meso_archetype": 2,
+          "sign_count": 123,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 6,
+              "sign_count": 89,
+              "sample_signs": [
+                "hiero_0129",
+                "hiero_0130",
+                "hiero_0138",
+                "hiero_0170",
+                "hiero_0184",
+                "hiero_0186",
+                "hiero_0201",
+                "hiero_0266"
+              ]
+            },
+            {
+              "micro_archetype": 7,
+              "sign_count": 13,
+              "sample_signs": [
+                "hiero_0264",
+                "hiero_0467",
+                "hiero_0489",
+                "hiero_0510",
+                "hiero_0616",
+                "hiero_0648",
+                "hiero_0649",
+                "hiero_0753"
+              ]
+            },
+            {
+              "micro_archetype": 8,
+              "sign_count": 21,
+              "sample_signs": [
+                "hiero_0265",
+                "hiero_0288",
+                "hiero_0307",
+                "hiero_0308",
+                "hiero_0309",
+                "hiero_0311",
+                "hiero_0465",
+                "hiero_0495"
+              ]
+            }
+          ]
+        },
+        {
+          "meso_archetype": 3,
+          "sign_count": 237,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 9,
+              "sign_count": 69,
+              "sample_signs": [
+                "hiero_0028",
+                "hiero_0046",
+                "hiero_0059",
+                "hiero_0085",
+                "hiero_0088",
+                "hiero_0151",
+                "hiero_0154",
+                "hiero_0155"
+              ]
+            },
+            {
+              "micro_archetype": 10,
+              "sign_count": 100,
+              "sample_signs": [
+                "hiero_0034",
+                "hiero_0035",
+                "hiero_0045",
+                "hiero_0048",
+                "hiero_0049",
+                "hiero_0051",
+                "hiero_0052",
+                "hiero_0054"
+              ]
+            },
+            {
+              "micro_archetype": 11,
+              "sign_count": 68,
+              "sample_signs": [
+                "hiero_0015",
+                "hiero_0020",
+                "hiero_0021",
+                "hiero_0022",
+                "hiero_0025",
+                "hiero_0029",
+                "hiero_0030",
+                "hiero_0031"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "macro_archetype": 1,
+      "sign_count": 260,
+      "meso_archetypes": [
+        {
+          "meso_archetype": 4,
+          "sign_count": 60,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 12,
+              "sign_count": 48,
+              "sample_signs": [
+                "hiero_0084",
+                "hiero_0214",
+                "hiero_0245",
+                "hiero_0252",
+                "hiero_0399",
+                "hiero_0420",
+                "hiero_0544",
+                "hiero_0545"
+              ]
+            },
+            {
+              "micro_archetype": 13,
+              "sign_count": 9,
+              "sample_signs": [
+                "hiero_0553",
+                "hiero_0569",
+                "hiero_0572",
+                "hiero_0573",
+                "hiero_0587",
+                "hiero_0591",
+                "hiero_0655",
+                "hiero_0656"
+              ]
+            },
+            {
+              "micro_archetype": 14,
+              "sign_count": 3,
+              "sample_signs": [
+                "hiero_0243",
+                "hiero_0331",
+                "hiero_0556"
+              ]
+            }
+          ]
+        },
+        {
+          "meso_archetype": 5,
+          "sign_count": 62,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 15,
+              "sign_count": 50,
+              "sample_signs": [
+                "hiero_0000",
+                "hiero_0001",
+                "hiero_0002",
+                "hiero_0006",
+                "hiero_0007",
+                "hiero_0008",
+                "hiero_0009",
+                "hiero_0013"
+              ]
+            },
+            {
+              "micro_archetype": 16,
+              "sign_count": 5,
+              "sample_signs": [
+                "hiero_0014",
+                "hiero_0176",
+                "hiero_0182",
+                "hiero_0393",
+                "hiero_0965"
+              ]
+            },
+            {
+              "micro_archetype": 17,
+              "sign_count": 7,
+              "sample_signs": [
+                "hiero_0012",
+                "hiero_0175",
+                "hiero_0287",
+                "hiero_0409",
+                "hiero_0410",
+                "hiero_0535",
+                "hiero_0739"
+              ]
+            }
+          ]
+        },
+        {
+          "meso_archetype": 6,
+          "sign_count": 124,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 18,
+              "sign_count": 53,
+              "sample_signs": [
+                "hiero_0011",
+                "hiero_0024",
+                "hiero_0027",
+                "hiero_0061",
+                "hiero_0082",
+                "hiero_0083",
+                "hiero_0086",
+                "hiero_0181"
+              ]
+            },
+            {
+              "micro_archetype": 19,
+              "sign_count": 48,
+              "sample_signs": [
+                "hiero_0003",
+                "hiero_0004",
+                "hiero_0005",
+                "hiero_0010",
+                "hiero_0018",
+                "hiero_0019",
+                "hiero_0026",
+                "hiero_0039"
+              ]
+            },
+            {
+              "micro_archetype": 20,
+              "sign_count": 23,
+              "sample_signs": [
+                "hiero_0016",
+                "hiero_0042",
+                "hiero_0067",
+                "hiero_0150",
+                "hiero_0174",
+                "hiero_0233",
+                "hiero_0298",
+                "hiero_0302"
+              ]
+            }
+          ]
+        },
+        {
+          "meso_archetype": 7,
+          "sign_count": 14,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 21,
+              "sign_count": 12,
+              "sample_signs": [
+                "hiero_0044",
+                "hiero_0177",
+                "hiero_0178",
+                "hiero_0179",
+                "hiero_0228",
+                "hiero_0246",
+                "hiero_0320",
+                "hiero_0338"
+              ]
+            },
+            {
+              "micro_archetype": 22,
+              "sign_count": 2,
+              "sample_signs": [
+                "hiero_0180",
+                "hiero_0354"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "macro_archetype": 2,
+      "sign_count": 53,
+      "meso_archetypes": [
+        {
+          "meso_archetype": 8,
+          "sign_count": 33,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 23,
+              "sign_count": 20,
+              "sample_signs": [
+                "hiero_0537",
+                "hiero_0592",
+                "hiero_0596",
+                "hiero_0599",
+                "hiero_0600",
+                "hiero_0601",
+                "hiero_0602",
+                "hiero_0603"
+              ]
+            },
+            {
+              "micro_archetype": 24,
+              "sign_count": 13,
+              "sample_signs": [
+                "hiero_0536",
+                "hiero_0597",
+                "hiero_0598",
+                "hiero_0640",
+                "hiero_0653",
+                "hiero_0654",
+                "hiero_0684",
+                "hiero_0997"
+              ]
+            }
+          ]
+        },
+        {
+          "meso_archetype": 9,
+          "sign_count": 20,
+          "micro_archetypes": [
+            {
+              "micro_archetype": 25,
+              "sign_count": 12,
+              "sample_signs": [
+                "hiero_0511",
+                "hiero_1018",
+                "hiero_1019",
+                "hiero_1020",
+                "hiero_1021",
+                "hiero_1022",
+                "hiero_1027",
+                "hiero_1028"
+              ]
+            },
+            {
+              "micro_archetype": 26,
+              "sign_count": 8,
+              "sample_signs": [
+                "hiero_1023",
+                "hiero_1024",
+                "hiero_1025",
+                "hiero_1026",
+                "hiero_1033",
+                "hiero_1034",
+                "hiero_1035",
+                "hiero_1036"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

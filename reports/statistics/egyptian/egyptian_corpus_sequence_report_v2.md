@@ -1,0 +1,1 @@
+# Egyptian CorpusSequence Report v2.0\n\nFormat: Manuel de Codage (MdC)\nInscriptions: 154\nTotal sign tokens: 2543\nUnique signs: 129\nMean length: 16.513\n

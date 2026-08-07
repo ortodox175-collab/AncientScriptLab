@@ -1,0 +1,14 @@
+{
+  "version": "V8.9",
+  "integrity_score": 1.0,
+  "stability_score": 0.9941358433260279,
+  "compactness_mean": 0.12925065521502158,
+  "separation_mean": 0.0571445060219492,
+  "marker_distribution": {
+    "Symmetry": 17,
+    "Hierarchy": 8,
+    "Complexity": 20,
+    "Balance": 5
+  },
+  "overall_status": true
+}

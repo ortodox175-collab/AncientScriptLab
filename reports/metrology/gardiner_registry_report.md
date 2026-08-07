@@ -1,0 +1,1 @@
+# Gardiner sign registry report\n\nTotal images: 1072\nRecognized Gardiner codes: 0\nUnrecognized filenames: 1072\n

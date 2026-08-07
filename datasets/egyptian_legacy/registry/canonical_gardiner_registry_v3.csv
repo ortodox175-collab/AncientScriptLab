@@ -1,0 +1,1073 @@
+gardiner_code,unicode_cp,unicode,unikemet_code,jsesh_code,category,description,function,core
+A1,13000,U+13000,A001,A1,A-01-001,"Man, seated, right knee raised, right arm raised, left arm in front of body.",Classifier human being,C
+A2,13001,U+13001,A002,A2,A-01-027,"Man, seated, right knee raised, right arm raised with hand to mouth, left arm hanging beside the body.",Classifier eating/drinking/speech/ silence/thoughts/feelings,C
+A3,13002,U+13002,A003,A3,A-01-005,"Man, seated on heel, right knee raised, right arm raised, left arm in front of body.",Classifier sitting,C
+A4,13003,U+13003,A004,A4,A-01-040,"Man, seated, right knee raised, back straight, both arms raised in front, hand palms outwards.",Classifier supplication/hiding/rejection,C
+A5,13004,U+13004,A005,A5,A-11-002,,,C
+A5A,13005,U+13005,A005A,A5A,A-11-003,"Man, seated, right knee raised, back straight, both arms raised in front, hand palms outwards, under a corner of a wall.",Logogram (to hide),C
+A6,13006,U+13006,A006,A6,A-09-001,"Man, seated, right knee raised, with a vase on its side, with liquid issuing from it (W54), orientated to the front, on his head, both arms raised towards the front, hand palms outwards.","Logogram (pure, clean)",C
+,13007,U+13007,A006A,,A-09-011,"Man, seated, both knees down, with a vase on its side, with liquid issuing from it (W54), orientated to the front, on his head, with the water ending on a block, both arms forward, extended downwards toward the block.",Classifier to libate,C
+,13008,U+13008,A006B,US1A6BEXTU,A-09-005,,,C
+A7,13009,U+13009,A007,A7,A-01-036,"Man, seated on heel, right leg extended with foot in front of left leg, right and left arm sloping downwards to either side of the body.",Classifier sitting/weak/faint,C
+,1300A,U+1300A,A008,A8,A-01-059,"Man, seated, right knee raised, right arm angled in front of the body, left arm raised, hand held vertically, hand palm inwards (hnw gesture).",Classifier joy/veneration,C
+A9,1300B,U+1300B,A009,A9,A-07-021,"Man, seated, right knee raised, a vessel on his head, right arm raised in front, with the hand at the vessel, left arm hanging beside the body.","Classifier to lift, to carry",C
+A10,1300C,U+1300C,A010,A10,A-12-042,"Man, seated, right knee raised, right arm extended forward, holding the shaft of an oar, with the blade at the level of the feet, left arm hanging beside the body.",Classifier sailing/rowing,C
+A11,1300D,U+1300D,A011,A11,A-07-041,"Man, seated, right knee raised, right arm raised In front, holding a sceptre (S42), angled towards the head, left arm in front of the body, holding a stick, resting against the shoulder.",Phonemogram,C
+A12,1300E,U+1300E,A012,A12,A-17-003,"Man, seated on heel, right knee up, with a feather (H6) on his head, angling backwards, right arm forwards, forearm horizontal, holding a composite bow (T10), left arm in front of the body, holding a stick which angles backwards, leaning against the left shoulder.",Logogram (army),C
+A13,1300F,U+1300F,A013,A13,A-18-001,"Man (enemy), seated on heel, both knees down, both arms behind the back, bound together with rope.",Classifier rebel/enemy ,C
+A14,13010,U+13010,A014,A14,A-18-081,"Man, curled up, right and left lower legs separated, back nearly horizontal, both arms forward, forearms horizontal, grasping a line of liquid (blood) which comes from the head.","Classifier rebel, opponent",C
+,13011,U+13011,A014A,A14A,A-18-074,"Man, seated on heel, right knee raised, with a band of cloth around the middle, both arms forward, holding an axe with the axeblade in the forehead of the man.",Classifier death,C
+A15,13012,U+13012,A015,A15,A-05-004,"Man, written horizontally, facing down, arms raised in front.",Logogram (to fall),C
+A16,13013,U+13013,A016,A16,A-04-005,"Man, standing, bent forwards, arms hanging downwards, extended towards the front.",Classifier bowing,C
+A17,13014,U+13014,A017,A17,A-23-002,"A child, seated on nothing, forelegs separated, right arm raised with hand to mouth, left arm hanging beside the body.",Classifier youth/child,C
+,13015,U+13015,A017A,A17A,A-23-007,"Child, seated on nothing, forelegs spread, right arm forward, extended towards the knee, hand palm down, left arm hanging beside the body.",Classifier youth/child,C
+A18,13016,U+13016,A018,A18,A-23-030,"Child, wearing the red crown (S3), seated on nothing, forelegs spread, right arm raised in front with hand to mouth, left arm hanging beside the body.",Classifier child (royal),C
+,13017,U+13017,A019,A19,A-06-017,"Old man, standing, with a bent back, right arm forwards, holding a staff/stick near the top, with the staff at a slight backward angle, left arm hanging beside the body.","Logogram (old, old age)",C
+A20,13018,U+13018,A020,A20,A-06-009,"Man, standing, with a slightly bent back, right arm in front holding a long staff or pole with a two-pronged end piece for holding down snakes (U116), left arm hanging beside the body.",Logogram (elder),C
+A21,13019,U+13019,A021,A21,A-06-005,"Man, standing, wearing a short sash-kilt, right arm in front, holding a long stick/staff, left arm hanging beside the body, holding a piece of cloth.",,C
+A22,1301A,U+1301A,A022,A22,A-06-037,"Man, standing on a base (statue), right arm forward, holding a stick/staff, which rests on the same base, left arm hanging beside the body holding a sceptre (S42), sceptre-head extending in front of the body.",Classifier statue,C
+A23,1301B,U+1301B,A023,A23,A-27-024,"The king, standing, with a long straight beard and short wig/coif, with a uraeus bound to the forehead, right arm forward, hand at the height of the shoulder, holding a staff with a triangular piece (point down) at the height of the waist, left arm hanging beside the body, holding a mace (T3) horizontally.",Classifier sovereign,C
+A24,1301C,U+1301C,A024,A24,A-16-021,"Man, standing, both arms towards the front, holding a branch, as if to strike with it.",Classifier force/effort,C
+A25,1301D,U+1301D,A025,A25,A-16-039,"Man, standing, back bent forward, right arm forward, holding a stick which slightly curves towards the body, left arm hanging beside the body.",Classifier force/effort,C
+A26,1301E,U+1301E,A026,A26,A-02-020,"Man, standing, right arm outstretched before him, with the left arm hanging beside the body.",Logogram (vocative interjection),C
+A27,1301F,U+1301F,A027,A27,A-02-041,"Man, running, right arm raised in front, left arm in front of the body.",Phonemogram/classifier messenger,C
+A28,13020,U+13020,A028,A28,A-02-044,"Man, standing, with arms raised at either side of the body, hand palms inwards.",Logogram (to be high),C
+A29,13021,U+13021,A029,A29,A-03-001,"Man, upside-down, both arms raised at either side of the body, hand palms inwards.",Classifier upside-down,C
+A30,13022,U+13022,A030,A30,A-04-001,"Man, standing, both arms raised in front, hands held vertically, hand palms outwards.",Classifier adoration,C
+A31,13023,U+13023,A031,A31,A-02-030,"Man, standing, head facing forwards, arms raised behind him, hand palms outwards.",Classifier turning away,C
+A32,13024,U+13024,A032,A32,A-19-011,"Man, dancing, left leg straight, right knee in front of the left leg, right foot behind the left leg, toes at the height of the left foot, right arm in front of the body, left arm raised at the back, hand at the height of the head.",Classifier dancing,C
+,13025,U+13025,A032A,,A-19-014,,,C
+A33,13026,U+13026,A033,A33,A-14-011,"Man, standing, bent forwards, both arms forward, holding a stick with a bundle or a mat over his shoulders, bundle behind the back.",Classifier wandering/displaced,C
+A34,13027,U+13027,A034,A34,A-12-019,"Man, standing, back slightly bent forwards, both arms forward, holding a long stick (rammer), which ends at the bottom in a mortar.","Logogram (to pound, to build)",C
+A35,13028,U+13028,A035,A35,A-12-023,"Man, standing, both arms raised in front, touching a vertically written wall with battlements near the top.",Logogram (to build),C
+A36,13029,U+13029,A036,A36,A-12-008,"Man, standing, back bent forwards, both arms forwards, extending downwards into a large vessel.",Logogram (brewer),C
+A37,1302A,U+1302A,A037,A37,A-12-045,"Man, standing inside a cross-section of a vessel that reaches to his shoulders, arms extended at either side of the body, holding the rim of the vessel.",Logogram (brewer),C
+A38,1302B,U+1302B,A038,A38,A-21-002,"Man, standing, arms at either side of the body, holding the necks of two emblematic animals with panther heads, connected by a line which runs under the feet of the man. ",Logogram (Cusae),C
+A39,1302C,U+1302C,A039,A39,A-21-001,"Man, standing on the back of two animals, which look either way, man arms extended at either side of the body, holding both heads of the animals.",Logogram (Cusae),C
+,1302D,U+1302D,A040,A40,A-26-005,"God, seated, both knees up, with covered legs and arms, with a long-curved beard and long wig.",Classifier divinity,C
+A40A,1302E,U+1302E,A040A,A40A,A-26-013,"God, seated, both knees up, with covered legs and arms, with a long-curved beard and long wig, holding a holding a sceptre with a straight shaft, topped with the head of the Seth animal.",Classifier divinity,C
+A41,1302F,U+1302F,A041,A41,A-26-008,"King, seated, both knees up, with covered legs and arms, with a long straight beard, wearing a coif with uraeus.",Logogram (first person singular),C
+A42,13030,U+13030,A042,A42,A-26-019,"King, seated, both knees up, with covered legs and arms, with a long straight beard, wearing a coif with uraeus, holding a flagellum (S45).",Classifier king,C
+A42B,13031,U+13031,A042A,A42B,A-26-029,"King, seated, both knees up, with covered legs and arms, with a long straight beard, wearing a coif with uraeus, holding a flagellum (S45) and crook (S38) with the opening inwards.",Logogram (first person singular),C
+,13032,U+13032,A043,A43,A-28-002,"King, seated, both knees up, with covered legs and arms, with a long straight beard, wearing the white crown with uraeus (S1A).",Classifier king,C
+A43M,13033,U+13033,A043A,A43M,A-28-017,"King, seated, both knees up, with covered legs and arms, with a long straight beard, wearing the white crown (S1), holding a sceptre with a straight shaft, topped with the head of the Seth animal vertically.",Logogram (king of Upper Egypt),C
+A44,13034,U+13034,A044,A44,A-28-010,"King, seated, both knees up, with covered legs and arms, without beard, wearing the white crown with uraeus (S1A), holding a flagellum (S45).",Classifier king,C
+A45,13035,U+13035,A045,A45,A-29-001,"God, seated, both knees up, with covered legs and arms, with a long-curved beard, wearing the red crown with (S3).",Classifier king,C
+A45B,13036,U+13036,A045A,A45B,A-29-007,"King, seated, both knees up, with covered legs and arms, with a long straight beard, wearing the red crown with (S3), holding a sceptre with a straight shaft, topped with the head of the Seth animal vertically.",Classifier king,C
+A46,13037,U+13037,A046,A46,A-29-004,"God, seated, both knees up, with covered legs and arms, with a long-curved beard, wearing the red crown with (S3), holding a flagellum (S45).",Classifier king,C
+A47,13038,U+13038,A047,A47,A-13-004,"Man (shepherd), seated, both knees up, with covered legs and arms, with a short straight beard and short hair/wig, holding a stick which curves inwards, with a band of string or fabric, with the ties away from the body.",Logogram (to guard),C
+,13039,U+13039,A048,A48,A-13-030,"Man, seated, both knees up, with covered legs and arms, with short hair/wig, holding an unknown object (mace/knife/stick?)","Logogram (relating to, belonging to)",C
+,1303A,U+1303A,A049,A49,A-13-032,"Man, seated, both knees up, with covered legs and arms, with a short bushy beard and short hair/wig, holding a stick which angles slightly towards the body.",Classifier foreigner,C
+A50,1303B,U+1303B,A050,A50,A-25-032,"Man, with short straight beard, seated on a chair, no arms visible.",Logogram (to be noble),C
+A51,1303C,U+1303C,A051,A51,A-25-005,"Man, with a short straight beard, seated on a chair, both arms extended forward, forearms horizontal, one above another, holding a flagellum (S45).",Logogram (to be noble),C
+A52,1303D,U+1303D,A052,A52,A-31-001,"Man, seated, both knees down, with short straight beard, both arms forward, forearms horizontal, one above the other, holding a flagellum (S45).",Classifier name (deceased person),C
+A53,1303E,U+1303E,A053,A53,A-32-001,"A mummy with a long-curved beard, standing upright.",Classifier image/statue/likeness,C
+A54,1303F,U+1303F,A054,A54,A-32-007,"A mummy with a long-curved beard, lying horizontally.",Classifier body/corpse/death,C
+A55,13040,U+13040,A055,A55,A-32-008,"A mummy with a long-curved beard, lying horizontally on top of a bed.",Logogram (to sleep/to spend the night),C
+A56,13041,U+13041,A056,A56,A-12-047,"Man, seated, right knee raised, right arm raised in front, left arm in front of body, holding a stick which rests against the left shoulder. ",Classifier enemy,C
+A57,13042,U+13042,A057,A57,A-29-029,"King, standing, with a long straight beard, wearing the red crown (S3), both arms forwards, hands at the height of the belly/waist, holding a loaf of bread on a reed mat (R4) horizontally.",Logogram (an offering that the king gives),C
+A58,13043,U+13043,A058,A58,A-12-012,"Man, standing, back bent forward, both arms toward the front, holding a hoe with a rope connecting the two pieces (U6), with the forward piece at the level of the feet.",Classifier hacking,C
+A59,13044,U+13044,A059,A59,A-16-029,"Man, standing, right arm forward, forearm and hand at the level of the waist, left arm raised, forearm vertically, holding a stick nearly horizontally.",Classifier driving away,C
+A60,13045,U+13045,A060,A60,A-10-013,"Man, standing, right arm forward, forearm horizontal, hand palm upwards, left arm backwards, upper arm horizontal, forearm nearly vertical, hand palm inwards, with a dotted line running between the hand palms.","Logogram (to sprinkle, to scatter)",C
+A61,13046,U+13046,A061,A61,A-02-033,"Man, standing, head oriented backwards, with the arms hanging at either side of the body.",Logogram (to turn back),C
+,13047,U+13047,A062,,A-02-004,"Foreign man, with a bushy beard, standing, wearing a long dress, with the arms hanging at either side of the body.","Logogram (great one, chief)",C
+A63,13048,U+13048,A063,A63,A-25-025,,,C
+A116,13049,U+13049,A064,A116,A-07-006,"Man, seated on heel, both knees down, back straight, arm extended in front, forearm horizontal, holding a wide cup (W10). ","Classifier to lift, to carry",C
+A469,1304A,U+1304A,A065,A469,A-27-023,"Stylistic early dynastic form of a man, standing, holding a stick.",Logogram (the one who belongs to the god),C
+,1304B,U+1304B,A066,A239,A-20-001,"Man, standing, wearing kilt, right arm extended in front, held horizontally, holding a sistrum (Y18), left arm hanging beside the body.",Logogram (the musician/Ihy),C
+,1304C,U+1304C,A067,,A-24-001,"A dwarf, standing, arms hanging at either side of the body.",Classifier personal name,C
+A199A,1304D,U+1304D,A068,A199A,A-16-009,"Man, standing, right arm forward, forearm horizontal at the height of the waist, holding a knife (T30) at a forward angle, left arm hanging beside the body.",Logogram (messenger),C
+A71,1304E,U+1304E,A069,A71,A-01-008,"Man, seated, right knee raised, right arm raised, left arm hanging beside the body.",Classifier occupation/relationship,C
+A73,1304F,U+1304F,A070,A73,C-13-001,"Man, seated, right knee raised, raised arms at either side of the body, hands held vertically, with the hand palms inwards.","Logogram (million, many)",C
+B1,13050,U+13050,B001,B1,B-01-003,"Woman, seated, both knees up, with covered legs and arms, with long hair.",Classifier female,C
+B2,13051,U+13051,B002,B2,B-09-002,"Woman, pregnant, seated, both knees down, with a band of cloth around the head, right arm forward, angling down towards the knee, left arm hanging beside the body.",Classifier pregnant,C
+B3,13052,U+13052,B003,B3,B-09-011,"Woman, pregnant, seated, both knees down, right arm forward, angling down towards the knee, left arm hanging beside the body, with the head and arms of a child coming from the legs.",Classifier birth,C
+B4,13053,U+13053,B004,B4,B-09-004,"Woman, pregnant, seated, both knees down, right arm forward, angling down towards the knee, left arm hanging beside the body, with three vertical lines coming from the legs.",Classifier birth,C
+B5,13054,U+13054,B005,B5,B-09-014,"Woman, seated, both knees down, nursing a child, seated on her lap, left arm forward, hand over the chest of the woman, right arm hanging beside the body; right arm forward, embracing/holding the child, left arm over the chest.","Classifier nursing, rearing",C
+,13055,U+13055,B005A,B104,B-02-010,"Woman, seated, both knees down, with long hair and a band of cloth around the head, bound at the back, with two sticks forming a cross-like structure over the legs.",Logogram weaver or nurse,C
+B6,13056,U+13056,B006,B6,B-09-020,"Woman, seated on a block throne, with a child on her lap, facing her, both arms down; both arms forward, right arm behind the child, left arm in front of the child.","Classifier nursing, rearing",C
+B7,13057,U+13057,B007,B7,B-01-022,"Woman, seated, both knees up, with covered legs and arms, with long hair, wearing a diadem, holding a flower which curves forward, with the flower orientated downwards.",Classifier female royalty,C
+B8,13058,U+13058,B008,B8,B-02-002,"Woman, seated, both knees down, no arms visible, with a flower on the knee, which curves towards the face, with the flower in front of the face.",Classifier human being (together with A1),C
+B47,13059,U+13059,B009,B47,B-08-005,"Woman, standing, with long hair, right arm extended forward, hand at the height of the shoulder, holding a sistrum (Y18), vertically, left arm hanging beside the body.",Logogram (the musician),C
+C1,1305A,U+1305A,C001,C1,C-24-002,"God, seated, knees up, with covered legs and arms, with a long-curved beard and long wig/hair, with N6 (The sun, encircled by a cobra (Naja haje), standing up, with expanded hood (uraeus)) on its head.",Logogram (Re),C
+C2,1305B,U+1305B,C002,C2,C-09-029,"God, seated, knees up, with covered legs and arms, with the head of a falcon, with a sun disk (N5) on its head, holding a tie or strap, used with sandals (ankh sign, S34), angling forward. ",Logogram (Re),C
+C2A,1305C,U+1305C,C002A,C2A,C-09-017,"God, seated, knees up, with covered legs and arms, with the head of a falcon, with a sun disk (N5) on its head.",Logogram (Re),C
+,1305D,U+1305D,C002B,,C-09-018,,,L
+,1305E,U+1305E,C002C,,C-09-030,,,L
+C3,1305F,U+1305F,C003,C3,C-31-001,"God, seated, knees up, with covered legs and arms, with the head of an ibis.",Logogram (Thot),C
+C4,13060,U+13060,C004,C4,C-15-001,"God, seated, knees up, with covered legs and arms, with the head of a ram, with horizontal twisted horns.",Classifier Khnum,C
+C5,13061,U+13061,C005,C5,C-15-007,"God, seated, knees up, with covered legs and arms, with the head of a ram with horizontal twisted horns, holding a tie or strap, used with sandals (ankh sign, S34), angling forward. ",Logogram/phonemogram (who joins with life),C
+C6,13062,U+13062,C006,C6,C-04-001,"God, seated, knees up, with covered legs and arms, with the head of a jackal.",Classifier Anubis/Wepwawet (divinity),C
+C7,13063,U+13063,C007,C7,C-26-001,"God, seated, knees up, with covered legs and arms, with the head of a Seth animal.",Logogram (Seth),C
+C8,13064,U+13064,C008,C8,C-17-001,"An ithyphallic god, with long, curved beard, standing on a platform, wearing a double plume headdress, with a line coming from the back of the head, running down to the base, arm raised in back, with a flagellum (S45) written over the arm.",Classifier Min,C
+C9,13065,U+13065,C009,,C-35-002,"Goddess, seated, knees up, with covered legs and arms, with a headdress of bovine horns with a sun disk (F102).",Logogram (Hathor),C
+C10,13066,U+13066,C010,C10,C-37-002,"Goddess, seated, knees up, with covered legs and arms, with a cloth band around her head, with a feather (H6) on her head.",Logogram (Maat),C
+C10A,13067,U+13067,C010A,C10A,C-37-005,"Goddess, seated, knees up, with covered legs and arms, with a cloth band around her head, with a feather (H6) on her head, holding a tie or strap, used with sandals (ankh sign, S34), angling forward. ",Logogram (Maat),C
+,13068,U+13068,C011,C11,C-13-004,"God, seated on heel, right knee raised, with long-curved beard and coif, with a palm branch, stripped of leaves and notched on his head (M4), notch forward, raised arms at either side of the body, hands held vertically, with the hand palms inwards.","Logogram (million, many)",C
+C12,13069,U+13069,C012,C12,C-03-003,"God, seated, knees up, with covered legs and arms, with a long-curved beard, wearing the double-plume headdress (S72A), with a line running from the crown down the back, holding a sceptre with a straight shaft, topped with the head of the Seth animal vertically.",Logogram (Amon),C
+,1306A,U+1306A,C013,,C-03-010,,,L
+C12F,1306B,U+1306B,C014,C12F,C-03-011,"God, seated, knees up, with covered legs and arms, with a long-curved beard, wearing the double-plume headdress (S72A), with a line running from the crown down the back, holding a khopesh sword (T16A) vertically.",Logogram (Amon is his strength (sꜣ-rꜥ name Ramses VI)),C
+,1306C,U+1306C,C015,,C-03-013,,,L
+,1306D,U+1306D,C016,,A-30-004,"God, seated, both knees up, with covered legs and arms, with a long, curved beard, wearing the double crown (S5), holding a tie or strap, used with sandals (ankh sign, S34), angling forward. ",Logogram (Atum),C
+C17,1306E,U+1306E,C017,C17,C-09-078,"God, seated, knees up, with covered legs and arms, with the head of a falcon, wearing a headdress consisting of two plumes with a sun disk (S63A/S70), holding a tie or strap, used with sandals (ankh sign, S34), angling forward. ",Classifier Montu (divinity),C
+,1306F,U+1306F,C018,,C-30-002,"God, seated, both knees down, with a long-curved beard and long hair/wig, wearing a headdress consisting of two feathers on ram horns (S77).",Classifier Tatenen,C
+C19,13070,U+13070,C019,C19,C-23-016,"God, in mummy form, standing upright on a platform, with a long straight beard, wearing a cap, both arms forward, holding a sceptre with a straight shaft, forked bottom and head of the Seth animal (S40) of the same size as the god, vertically.",Classifier Ptah,C
+C20,13071,U+13071,C020,C20,C-23-023,"God, in mummy form, standing upright on a platform, with a long straight beard, wearing a cap, both arms forward, holding a sceptre with a straight shaft, forked bottom, and the vertically oriented head of the Seth animal (S040), of the same size as the god, adorned with an ankh sign (S034) and a djed pillar (R011); enclosed within a shrine supported by columns resembling papyrus stems with buds (M013).",Logogram (Ptah),C
+C33,13072,U+13072,C021,C33,C-07-001,"Bes figure, seen from the front, with tail between the legs and headdress, arms downwards, hands behind the back.",Phonemogram,C
+C49B,13073,U+13073,C022,C49B,C-09-086,"God, seated, knees up, with covered legs and arms, with the head of a falcon, with a crescent moon with the entire moon disk (N62) on its head.",Classifier moon,C
+C165,13074,U+13074,C023,C165,C-36-015,"Goddess, seated, knees up, with covered legs and arms, with the head of a lion/lioness, with N6 (The sun, encircled by a cobra (Naja haje), standing up, with expanded hood (uraeus)) on her head.",Logogram (Sekhmet),C
+C185B,13075,U+13075,C024,C185B,C-40-006,"Goddess, seated, knees up, with covered legs and arms, wearing the red crown (S3), holding a sceptre with a straight shaft, topped with the head of the Seth animal vertically. ",Logogram (Neith),C
+D1,13076,U+13076,D001,D1,D-01-001,"The head of a human man, seen in profile, with a short straight beard.",Logogram (head),C
+D2,13077,U+13077,D002,D2,D-02-001,The face of a human man.,Phonemogram,C
+D3,13078,U+13078,D003,D3,D-04-004,A lock of hair with three strands.,Classifier hair,C
+D4,13079,U+13079,D004,D4,D-05-001,An eye.,Phonemogram,C
+D5,1307A,U+1307A,D005,D5,D-06-007,An eye with two touches of eye paint above the eye.,Classifier eye related actions,C
+D6,1307B,U+1307B,D006,D6,D-06-001,"An eye, with a line of eye-paint above the eye.",Classifier eye related actions,C
+D7,1307C,U+1307C,D007,D7,D-06-020,An eye with a painted lower lid.,Phonemogram,C
+D8,1307D,U+1307D,D008,D8,D-06-026,"An eye, written inside an oval.",Phonemogram,C
+D8A,1307E,U+1307E,D008A,D8A,D-06-030,An eye with a painted lower lid inside an oval.,Phonemogram,C
+D9,1307F,U+1307F,D009,D9,D-07-001,"An eye, with three lines coming from the bottom.",Logogram (to weep),C
+D10,13080,U+13080,D010,D10,D-08-002,"An eye, with the markings of the head of a falcon.",Logogram (udjat eye),C
+D11,13081,U+13081,D011,D11,D-09-001,The left part of the white of an eye.,Logogram 1/2,C
+D12,13082,U+13082,D012,D12,D-09-002,The pupil of an eye.,Classifier pupil,C
+D13,13083,U+13083,D013,D13,D-09-005,An eyebrow.,Classifier eyebrow,C
+D14,13084,U+13084,D014,D14,D-09-009,The right part of the white of an eye.,Logogram 1/16,C
+D15,13085,U+13085,D015,D15,D-09-010,The right lower marking of an udjat eye.,Logogram 1/32,C
+D16,13086,U+13086,D016,D16,D-09-011,The left lower marking of an udjat eye.,Logogram 1/64,C
+D17,13087,U+13087,D017,D17,D-09-012,The left and right lower marking of an udjat eye.,"Logogram (figure, image)",C
+D18,13088,U+13088,D018,D18,D-10-001,The ear of a human.,Logogram (ear),C
+D19,13089,U+13089,D019,D19,D-11-001,"The nose, eye and cheek of a human.",Classifier nose,C
+D20,1308A,U+1308A,D020,D20,D-11-002,"The nose, eye and cheek of a human, written in a semi-cursive fashion.",Classifier nose,C
+D21,1308B,U+1308B,D021,D21,D-12-001,A mouth.,Phonemogram,C
+D22,1308C,U+1308C,D022,D22,D-12-004,A mouth with two vertical lines at the bottom of the sign.,Logogram (2/3),C
+D23,1308D,U+1308D,D023,D23,D-12-015,A mouth with three vertical lines at the bottom of the sign,Logogram (3/4),C
+D24,1308E,U+1308E,D024,D24,D-13-001,The upper lip of a human with teeth.,"Classifier lip, border, edge",C
+D25,1308F,U+1308F,D025,D25,D-13-004,"The upper and lower lips of a human, with teeth.",Logogram (lips),C
+D26,13090,U+13090,D026,D26,D-14-005,"A human mouth, seen from the side, with a wavy downward sloping line coming from the lips.",Classifier blood,C
+D27,13091,U+13091,D027,D27,D-16-002,A human breast.,Classifier breast,C
+D27A,13092,U+13092,D027A,D27A,D-16-001,A human breast.,,L
+D28,13093,U+13093,D028,D28,D-18-001,"Two arms, raised upwards, with the forearms and hands vertical, hand palms inwards.","Logogram (spirit, essence)",C
+D29,13094,U+13094,D029,D29,D-18-008,"Two arms, raised upwards, with the forearms and hands vertical, hand palms inwards, on top of a standard used for carrying religious symbols (R12).","Logogram (spirit, essence)",C
+D30,13095,U+13095,D030,D30,D-18-009,"Two arms, raised, with the palms of the hands towards each other, written on it side, with a downward curving line at the back.",Classifier Nehebkau,C
+D31,13096,U+13096,D031,D31,D-19-012,"Two arms, lowered, with the elbows bent outwards, and the palms of the hands facing each other (D32), with a club used by washermen for beating laundry (U36) written between the arms.",Logogram (mortuary priest),C
+,13097,U+13097,D031A,D31A,D-18-072,"Two arms, raised upwards, with the forearms and hands vertical, hand palms inwards, with a club used by washermen for beating laundry (U36), written between the arms.",Logogram (mortuary priest),L
+D32,13098,U+13098,D032,D32,D-19-001,"Two arms, lowered, with the elbows bent outwards, and the palms of the hands facing each other.","Classifier enveloping, embracing, uniting",C
+D33,13099,U+13099,D033,D33,D-20-002,"Two arms, holding an oar, in a rowing motion, below a cover.",Phonemogram,C
+D34,1309A,U+1309A,D034,,D-21-007,"Two arms, connected at the shoulders, one arm forwards, with a horizontal forearm, holding a shield as seen in profile, top curving inwards, the other arm downwards, forearm vertical, holding a mace (T3) horizontally.",Logogram (to fight),C
+D34A,1309B,U+1309B,D034A,D34A,D-21-002,"Two arms, connected at the shoulders, one arm forwards, with a horizontal forearm, holding a rectangular shield with inward curving sides, the other arm downwards, forearm vertical, holding a mace (T3) horizontally.",Logogram (to fight),C
+D35,1309C,U+1309C,D035,D35,D-22-002,"Two arms, connected at the shoulders, spread sideways, forearms horizontal, with the palms of the hands facing upwards",Logogram (negative particle),C
+D36,1309D,U+1309D,D036,D36,D-23-001,"A forearm, with the palm of the hand facing upwards.",Phonemogram,C
+D37,1309E,U+1309E,D037,D37,D-24-002,A forearm with the hand holding a conical loaf of bread (X8).,Phonemogram,C
+D38,1309F,U+1309F,D038,D38,D-24-004,"A forearm with the hand holding a loaf of bread, without internal detail (X3).",Phonemogram,C
+D39,130A0,U+130A0,D039,D39,D-24-007,A forearm with the hand holding a round vessel with an upstanding rim (W24).,"Logogram (to offer, to present)",C
+D40,130A1,U+130A1,D040,D40,D-25-001,A forearm with the hand holding a stick.,"Classifier force, effort",C
+D41,130A2,U+130A2,D041,D41,D-25-014,"A forearm, with the palm of the hand downwards, with the upper arm bent forwards.",Classifier arm related movements or actions,C
+D42,130A3,U+130A3,D042,D42,D-25-017,"A forearm, with the palm of the hand downwards, upper arm vertical.",Logogram (cubit),C
+D43,130A4,U+130A4,D043,D43,D-25-021,A forearm with the hand holding a flagellum (S45).,Logogram (to protect),C
+D44,130A5,U+130A5,D044,D44,D-25-007,A forearm with the hand holding a sceptre (S42).,Classifier governing/controlling,C
+D45,130A6,U+130A6,D045,D45,D-26-011,"An arm, bent at the elbow, forearm nearly horizontal, holding a wand or brush.",Logogram (to make holy),C
+D46,130A7,U+130A7,D046,D46,D-28-001,A human hand.,Phonemogram,C
+D46C,130A8,U+130A8,D046A,D46C,D-28-009,A human hand with a forward downward line coming from the thumb.,"Logogram (scent, perfume, dew)",C
+D47,130A9,U+130A9,D047,D47,D-28-016,A human hand with the thumb upwards and the palm curved upwards.,Classifier hand,C
+D48,130AA,U+130AA,D048,D48,D-28-028,A human hand without a thumb.,Logogram (palm),C
+,130AB,U+130AB,D048A,D48A,D-28-027,"A human hand, holding an oval.",Phono-repeater,C
+D49,130AC,U+130AC,D049,D49,D-29-001,"A human hand, held as a fist, with the thumb on top.",Classifier grasping/holding,C
+D50,130AD,U+130AD,D050,D50,D-30-001,A vertical human finger.,Logogram (finger),C
+,130AE,U+130AE,D050A,,D-30-008,,\20000,C
+,130AF,U+130AF,D050B,,D-30-009,,\30000,C
+,130B0,U+130B0,D050C,,D-30-010,,\40000,C
+,130B1,U+130B1,D050D,,D-30-011,,\50000,C
+,130B2,U+130B2,D050E,,D-30-012,,\60000,C
+,130B3,U+130B3,D050F,,D-30-013,,\70000,C
+,130B4,U+130B4,D050G,,D-30-014,,\80000,C
+,130B5,U+130B5,D050H,,D-30-015,,\90000,C
+,130B6,U+130B6,D050I,,D-30-016,,\50000,C
+D51,130B7,U+130B7,D051,D51,D-30-006,A horizontal human finger.,Classifier taking,C
+D52,130B8,U+130B8,D052,D52,D-31-001,A phallus with a scrotum.,Phonemogram,C
+,130B9,U+130B9,D052A,S125,S-15-047,"A phallus with a scrotum (D52), written over a folded piece of cloth (S29).",Phonemogram,L
+D53,130BA,U+130BA,D053,D53,D-31-007,"A phallus with a scrotum, with a line of liquid issuing from it.",Phonemogram,C
+D54,130BB,U+130BB,D054,D54,D-34-001,"Legs in a walking posture, feet orientated towards the reading direction.",Classifier movement,C
+,130BC,U+130BC,D054A,D54A,D-34-013,"Legs in a walking posture, feet orientated towards the reading direction, with a hook added to the front leg.",Logogram (to come),C
+D55,130BD,U+130BD,D055,D55,D-34-002,"Legs in a walking posture, feet orientated away from the reading direction.",Classifier reverse movement,C
+D56,130BE,U+130BE,D056,D56,D-35-001,A leg with a bent knee.,Classifier leg/foot,C
+D57,130BF,U+130BF,D057,D57,D-35-005,"A leg with a bent knee (D56), with a knife with a rounded blade and rounded handle (T30) written over it.","Classifier damage, injury",C
+D58,130C0,U+130C0,D058,D58,D-35-012,A human foot and lower leg.,Phonemogram,C
+D59,130C1,U+130C1,D059,D59,D-35-031,"A forearm, with the palm of the hand facing upwards (D36) written over a human foot and lower leg (D58).",Phonemogram,L
+D60,130C2,U+130C2,D060,D60,D-35-017,"A human foot and lower leg (D58), with a vase on its side, with liquid issuing from it (W54) on top of it.","Logogram (to be pure, to be clean)",C
+D61,130C3,U+130C3,D061,D61,D-36-001,"A stylized row of three toes, with the ovals at the left side.",Phono-repeater,C
+D62,130C4,U+130C4,D062,D62,D-36-002,"A stylized row of three toes, with the ovals at the right side.",Phonemogram,C
+D63,130C5,U+130C5,D063,D63,D-36-007,"A stylized set of two toes, resembling a cloth wound on a pole, an emblem of divinity (R8), on top of a base with a loop at the far end.",Phonemogram,C
+D271,130C6,U+130C6,D064,D271,D-28-018,A human hand with the thumb downwards and the palm curved downwards.,Logogram (hand),C
+D132,130C7,U+130C7,D065,D132,D-04-015,"A sidelock, usually worn by a child.","Logogram (child, son, lad)",C
+,130C8,U+130C8,D066,D66 D245,D-26-022,"An arm, bent at the elbow, forearm nearly horizontal, hand held like a fist, with a stylus angled over the tip of the fist.",Classifier to engrave,C
+,130C9,U+130C9,D067,,D-38-001,,,C
+,130CA,U+130CA,D067A,,D-38-002,,,C
+,130CB,U+130CB,D067B,,D-38-003,,,C
+,130CC,U+130CC,D067C,,D-38-004,,,C
+,130CD,U+130CD,D067D,,D-38-005,,,C
+,130CE,U+130CE,D067E,,D-38-006,,,C
+,130CF,U+130CF,D067F,,D-38-007,,,C
+,130D0,U+130D0,D067G,,D-38-008,,,C
+,130D1,U+130D1,D067H,,D-38-009,,,C
+,130D2,U+130D2,E001,E1,E-23-002,"A bovid (bull), standing, with outwards curving horns.",Logogram (bull),C
+E2,130D3,U+130D3,E002,E2,E-23-006,"A bovid (bull), standing, with its head lowered as if to attack.",Classifier rage/aggression,C
+E3,130D4,U+130D4,E003,E3,E-25-001,"A calf, standing.",Classifier calf,C
+,130D5,U+130D5,E004,E4,E-23-091,"A cult image of a bovid (cow), lying down, with a sun disk (N5) with two feathers between the horns, with a flagellum (S45) on its back, and a necklace around the neck.",Classifier cow divinity,C
+E5,130D6,U+130D6,E005,E5,E-23-066,"A bovid (cow), standing, head facing backwards over its body, with a calf below the cow, suckling.",Classifier concern,C
+,130D7,U+130D7,E006,E6,E-09-005,"A horse, about to rear, front legs nearly vertical.",Logogram (span (of horses)/horse),C
+E7,130D8,U+130D8,E007,E7,E-01-001,"A donkey/ass, standing.",Classifier donkey/ass,C
+E8,130D9,U+130D9,E008,E8,E-10-008,A immature goat (kid).,Logogram (kid),C
+E8A,130DA,U+130DA,E008A,E8A,E-10-009,"A immature goat (kid), rearing.",Phono-repeater,C
+E9,130DB,U+130DB,E009,E9,E-05-009,"A newborn bubalis antelope, lying down, legs folded beneath the body, long tail downwards.",Phonemogram,C
+E100,130DC,U+130DC,E009A,E100,E-23-062,"A bovid (cow), lying down, legs folded beneath the body.",Classifier cow (cow of the sky),C
+E10,130DD,U+130DD,E010,E10,E-04-001,"A ram (Ovis longipes palaeo-aegyptiacus), standing, with a beard.",Classifier ram,C
+E11,130DE,U+130DE,E011,E11,E-04-002,"A ram (Ovis longipes palaeo-aegyptiacus), standing, without a beard.",Phonemogram,C
+,130DF,U+130DF,E012,E12,E-19-002,A pig.,Classifier pig,C
+E13,130E0,U+130E0,E013,E13,E-08-002,"A cat, seated, tail curled over the body towards the back.",Phonemogram,C
+E14,130E1,U+130E1,E014,E14,E-06-003,"A hunting hound, standing, tail curling upwards.",Classifier dog/hound,C
+E15,130E2,U+130E2,E015,E15,E-07-001,"A jackal, lying down, tail downwards.",Logogram (Anubis),C
+E16,130E3,U+130E3,E016,E16,E-07-017,"A jackal, lying down, tail downwards, on top of a shrine.",Logogram (privy to the secrets),C
+,130E4,U+130E4,E016A,E16AEXTU,E-07-020,"A jackal, lying down, tail downwards, with a flagellum (S45) on its back, on top of a shrine.",Classifier Anubis,C
+E17,130E5,U+130E5,E017,E17,E-06-004,"A jackal, standing, tail down.",Phonemogram,C
+E141,130E6,U+130E6,E017A,E141,E-06-015,"A jackal, standing, tail down, head looking backwards.",Phonemogram,C
+E18,130E7,U+130E7,E018,E18,E-06-018,"A jackal, standing, tail down (E17), on top of a standard used for the carrying of religious symbols, with an uraeus at the front of the standard.",Logogram (Wepwawet),C
+,130E8,U+130E8,E019,E19,E-06-022,"A jackal, standing, tail down (E17), on top of a standard used for the carrying of religious symbols, with an uraeus and šdšd-protuberance at the front of the standard, with a mace (T3) written horizontally over the vertical pole of the standard.",Classifier Wepwawet,C
+E20,130E9,U+130E9,E020,E20,E-02-003,"The animal of Seth, seated, tail up.",Logogram (Seth),C
+E147,130EA,U+130EA,E020A,E147,E-02-004,,,C
+E21,130EB,U+130EB,E021,E21,E-02-009,"The animal of Seth, lying down, tail up.",Logogram (Seth),C
+E22,130EC,U+130EC,E022,E22,E-17-001,"A lion, standing, tail downwards.",Classifier (lion),C
+E23,130ED,U+130ED,E023,E23,E-17-011,"A lion, lying down, tail curled over the body towards the back.",Phonemogram,C
+E24,130EE,U+130EE,E024,E24,E-18-001,"A panther or leopard, standing.",Classifier leopard,C
+E25,130EF,U+130EF,E025,E25,E-14-003,A hippopotamus (Hippopotamus amphibius).,Classifier hippopotamus,C
+E26,130F0,U+130F0,E026,E26,E-11-001,An elephant.,Classifier elephant,C
+E27,130F1,U+130F1,E027,E27,E-12-002,A giraffe.,Classifier to fortell,C
+E28,130F2,U+130F2,E028,E28,E-03-001,"An oryx, standing.",Classifier oryx,C
+,130F3,U+130F3,E028A,US1E28AEXTU,E-03-005,"A basket with four pieces of grain or fruit (M39) in front of an oryx, standing (E28), on top of a parcel of land with irrigation ditches (N24).","Logogram (Oryx nome, 16th nome of Upper Egypt)",C
+E29,130F4,U+130F4,E029,E29,E-03-028,"A gazelle, standing, with one horn visible.",Classifier gazelle,C
+E30,130F5,U+130F5,E030,E30,E-10-013,A Nubian ibex (Capra nubiana).,Classifier ibex,C
+E187,130F6,U+130F6,E031,E187,E-10-007,"A goat, standing, with a seal, attached to a neck string (S20) around its neck.","Logogram (rank, diginity)",C
+E32,130F7,U+130F7,E032,E32,E-20-003,A hamadryas baboon (Papio hamadryas).,"Classifier rage, fury",C
+E33,130F8,U+130F8,E033,E33,E-20-004,A monkey.,Classifier monkey,C
+,130F9,U+130F9,E034,E34,E-16-006,"A desert hare, lying down, with whiskers.",Phonemogram,C
+,130FA,U+130FA,E034A,,E-16-005,,,L
+,130FB,U+130FB,E036,US248E35VARA,E-20-007,"A hamadryas baboon (Papio hamadryas), seated, hands on knees, tail upwards.",Logogram (Thot),C
+E45,130FC,U+130FC,E037,E45,E-20-033,"A hamadryas baboon (Papio hamadryas), seated, hands on knees, tail upwards, in front of a sheath or receptacle with V shaped indentation at the top, bound at the top with a loop at the backside (V36G); on top of an alabaster basin with a diamond shaped inner marking (W3).",Logogram (symbol of the cycle of time),C
+E92,130FD,U+130FD,E038,E92,E-23-055,,,C
+,130FE,U+130FE,F001,F1,F-03-002,The head of a bovid (ox) with outwards curving horns.,"Classifier bull, ox, cattle",C
+F63,130FF,U+130FF,F001A,F63,F-03-014,"The head of a bovid (cow), without horns, with an ear.",Phonemogram,C
+F2,13100,U+13100,F002,F2,F-03-004,"The head of a bovid (bull), angled forward as if to attack.",Classifier rage/aggression,C
+F3,13101,U+13101,F003,F3,F-07-001,The head of a hippopotamus.,Phonemogram,C
+F4,13102,U+13102,F004,F4,F-08-006,"The forepart of a lion, lying down.","Logogram (beginning, front)",C
+F5,13103,U+13103,F005,F5,F-06-011,The head of a bubalis antelope.,Phonemogram,C
+F6,13104,U+13104,F006,F6,F-06-009,The forepart of a bubalis antelope.,Phonemogram,C
+F7,13105,U+13105,F007,F7,F-02-004,"The head of a ram (Ovis longipes palaeo-aegyptiacus), with beard.","Classifier worth, dignity, renown",C
+F8,13106,U+13106,F008,F8,F-02-009,"The forepart of a ram (Ovis longipes palaeo-aegyptiacus), with beard.","Logogram (worth, dignity, renown)",C
+F9,13107,U+13107,F009,F9,F-08-001,The head of a leopard.,Logogram (strength),C
+F10,13108,U+13108,F010,F10,F-05-004,"The head and neck of a long-necked horned animal, with a forked end to the neck with a horizontal line over the forked end.",Classifier throat associated action,C
+F11,13109,U+13109,F011,F11,F-05-003,The head and neck of a long-necked horned animal.,Classifier throat associated action,C
+F12,1310A,U+1310A,F012,F12,F-05-001,The head and neck of a canine animal.,Phonemogram,C
+F13,1310B,U+1310B,F013,F13,F-11-001,The horns of a bovid (ox).,Phonemogram,C
+,1310C,U+1310C,F013A,,F-11-003,,,L
+F14,1310D,U+1310D,F014,F14,F-11-006,"A palm branch, stripped of leaves and notched with a round notch (M4), written within the horns of a bovid (F13).",Logogram (New Year's Day),C
+F15,1310E,U+1310E,F015,F15,F-11-010,"A palm branch, stripped of leaves and notched with a round notch (M4), on top of a sun disk (N5), written within the horns of a bovid (F13). ",Logogram (New Year's Day),C
+F16,1310F,U+1310F,F016,F16,F-13-001,A horn of a bovid,Logogram (horn),C
+F17,13110,U+13110,F017,F17,F-13-009,"A vase on its side, with liquid issuing from it (W54), written over the horn of a bovid (F16).",Logogram purification,C
+F18,13111,U+13111,F018,F18,F-14-001,A tusk of an elephant.,Phonemogram,C
+F19,13112,U+13112,F019,F19,F-15-004,The lower jawbone of a bovid (ox).,Classifier jaw,C
+F20,13113,U+13113,F020,F20,F-16-001,A tongue.,Logogram (tongue),C
+F21,13114,U+13114,F021,F21,F-17-005,"The ear of a bovid (ox), without internal detail.",Logogram (ear),C
+,13115,U+13115,F021A,Ff4,F-17-007,"The ear of a bovid (ox), without internal detail, with two strokes on the base.","Logogram to hear, to listen",C
+F22,13116,U+13116,F022,F22,F-18-001,The hindquarters of a seated lion or leopard.,Phonemogram,C
+F23,13117,U+13117,F023,F23,F-19-010,"A foreleg of a bovid (ox), hoof orientated towards the reading direction.",Classifier foreleg/arm,C
+F24,13118,U+13118,F024,F24,F-19-009,"A foreleg of a bovid (ox), hoof orientated away from the reading direction.",Classifier foreleg/arm,L
+F25,13119,U+13119,F025,F25,F-19-006,The leg and hoof of a bovid (ox).,Phonemogram,C
+F26,1311A,U+1311A,F026,F26,F-20-001,The skin of a goat.,Phonemogram,C
+F27,1311B,U+1311B,F027,F27,F-20-005,"The skin of a cow, with the tail curved backwards.",Classifier animal,C
+F28,1311C,U+1311C,F028,F28,F-20-015,"The skin of a cow, with the tail hanging straight down.","Logogram (dappled, many-coloured)",C
+F29,1311D,U+1311D,F029,F29,F-20-016,"The skin of a cow, with the tail hanging straight down, pierced by an arrow with rounded fletching (T11).",Phonemogram,C
+F30,1311E,U+1311E,F030,F30,F-20-031,A water skin.,Phonemogram,C
+F31,1311F,U+1311F,F031,F31,F-20-037,"Three skins of foxes, tied together at the top.",Phonemogram,C
+,13120,U+13120,F031A,US22F31AEXTU,F-20-035,"A simplified representation of three skins of foxes, tied together at the top.",Phonemogram,C
+F32,13121,U+13121,F032,F32,F-21-006,"The udder and tail of an animal, seen from below.","Logogram (belly, body)",C
+F33,13122,U+13122,F033,F33,F-22-004,The tail of an animal.,Phonemogram,C
+,13123,U+13123,F034,F34,F-23-001,A heart without internal detail.,"Logogram (heart, mind, wish)",C
+F35,13124,U+13124,F035,F35,F-24-004,"A windpipe and heart, with a single horizontal stroke at the top.",Phonemogram,C
+F36,13125,U+13125,F036,F36,F-24-008,A windpipe and lungs.,Phonemogram,C
+F37,13126,U+13126,F037,F37,F-25-030,"A spine with four ribs, with a downward curving loop at the end of the spine.","Classifier spine, vertebrae",C
+F37B,13127,U+13127,F037A,F37B,F-25-016,"A spine with four ribs, written at an angle.",Logogram (to cut),C
+,13128,U+13128,F038,F38,F-25-005,"A piece of spine with three vertebrae, angling forwards.","Classifier back, backbone",C
+,13129,U+13129,F038A,F38C,F-25-038,,,C
+F39,1312A,U+1312A,F039,F39,F-25-033,"A spine, with the spinal cord hanging out at the backside, with two blocks at the bottom.",Phonemogram,C
+F40,1312B,U+1312B,F040,F40,F-25-045,"A spine, with the spinal cord hanging out at either side.","Logogram (to be long, to stretch out)",C
+F41,1312C,U+1312C,F041,F41,F-26-001,"A section of vertebrae, written vertically, with a small dot on top.",Classifier slaughter/evil,C
+F42,1312D,U+1312D,F042,F42,F-26-006,A rib.,Classifier rib,C
+F43,1312E,U+1312E,F043,F43,F-26-010,Ribs of beef.,Classifier ribs (meat of ribs),C
+F44,1312F,U+1312F,F044,F44,F-27-001,A leg-bone with meat.,Phono-repeater,C
+F45,13130,U+13130,F045,F45,D-32-011,The uterus of a cow.,"Logogram (uterus, womb)",C
+AA56,13131,U+13131,F045A,Aa56,AA-21-002,An object resembling a long vertical line with two pointed lines on top.,Phonemogram,C
+F46,13132,U+13132,F046,F46,F-28-004,"An intestine, with the opening to the bottom right.","Logogram (to go round, to turn round)",C
+F46A,13133,U+13133,F046A,F46A,F-28-001,"An intestine, with the opening to the top left.","Logogram (to go round, to turn round)",L
+F47,13134,U+13134,F047,F47,F-28-003,"An intestine, with the opening to the bottom left.","Classifier winding, intestine",L
+F47A,13135,U+13135,F047A,F47A,F-28-005,"An intestine, with the opening to the top right.","Logogram (to go round, to turn round)",L
+F48,13136,U+13136,F048,F48,F-28-006,"An intestine, with the openings top left and bottom right.","Logogram (to go round, to turn round)",C
+F49,13137,U+13137,F049,F49,F-28-007,"An intestine, with the openings top right and bottom left.",Phono-repeater,L
+F50,13138,U+13138,F050,F50,F-28-013,"A folded piece of cloth (S29), written over an intestine, with the opening to the bottom right (F46).",Phonemogram,L
+F51,13139,U+13139,F051,F51,F-29-003,"A piece of flesh, point towards the back, curving downwards.",Phonemogram,C
+,1313A,U+1313A,F051A,,F-29-009,"Three pieces of flesh, point towards the back, curving downwards, arranged horizontally.",Classifier part of a body,L
+,1313B,U+1313B,F051B,,F-29-010,"Three pieces of flesh, point towards the back, curving downwards, arranged vertically.","Logogram (limbs, body)",L
+F51A,1313C,U+1313C,F051C,F51A,F-29-011,,,L
+F52,1313D,U+1313D,F052,F52,F-30-001,A pile of excrement.,Classifier excrement,C
+F59,1313E,U+1313E,F053,F59,F-02-021,"The head of a ram (Ovis longipes palaeo-aegyptiacus), with beard, on top of a staff with a forked end.",Phonemogram,C
+G1,1313F,U+1313F,G001,G1,G-26-001,An Egyptian vulture (Neophron percnopterus).,Phonemogram,C
+G2,13140,U+13140,G002,G2,G-26-004,"Two Egyptian vultures (Neophron percnopterus), overlapping each other.",Phonemogram,C
+G3,13141,U+13141,G003,G3,G-26-022,"An Egyptian vulture (Neophron percnopterus) (G1), written over a sickle (U1), with the handle towards the back.",Phonemogram,L
+G4,13142,U+13142,G004,G4,G-02-003,A long-legged buzzard (Buteo rufinus).,Phonemogram,C
+G5,13143,U+13143,G005,G5,G-12-002,A falcon.,Logogram (Horus),C
+G6,13144,U+13144,G006,G6,G-12-005,A falcon (G5) with a flagellum (S45) on its back.,Classifier falcon,C
+G139,13145,U+13145,G006A,G139,G-12-144,A falcon (G5) on top of a wickerwork basket (V30).,Logogram (lord),C
+G7,13146,U+13146,G007,G7,G-12-047,"A falcon (G5), on top of a standard used for carrying religious symbols (R12).",Classifier divine beings/divine things,C
+G7A,13147,U+13147,G007A,G7A,G-12-132,"A falcon (G5), on top of a moon sickle shaped boat.",Logogram (Nemty (divinity)),C
+G7B,13148,U+13148,G007B,G7B,G-12-133,"A falcon (G5), on top of a moon sickle shaped boat, which rests upon a pedestal (P15).",Logogram nmty (Nemty (divinity)),C
+G8,13149,U+13149,G008,G8,G-12-148,"A falcon (G5), on top of a collar of beads (S12).",Logogram (golden Horus),C
+G9,1314A,U+1314A,G009,G9,G-12-015,A falcon (G5) with a sun disk (N5) on its head.,Logogram (Re-Hor (usually in rꜥ-ḥr-ꜣḫ.ty),C
+G10,1314B,U+1314B,G010,G10,G-12-151,"A falcon (G5), on top of a moon-sickle shaped boat with a higher prow than stern, with a rudder, with the head of an antelope (F81) on top of the prow, facing inwards, with a downward line with multiple horizontal lines written over it coming from the head, on top of a sledge (P60B).",Classifier bark of Sokar,C
+G11,1314C,U+1314C,G011,G11,G-15-001,An archaic image of a falcon/cult image of a falcon.,Classifier cult image,C
+,1314D,U+1314D,G011A,G11A,G-15-002,,,C
+G12,1314E,U+1314E,G012,G12,G-15-003,"An archaic image of a falcon/cult image of a falcon, with a flagellum (S45) on its back.",Classifier cult image,C
+G13,1314F,U+1314F,G013,G13,G-15-012,"An archaic image of a falcon/cult image of a falcon, wearing a headdress consisting of two plumes (S9).",Classifier falcon divinity,C
+G14,13150,U+13150,G014,G14,G-24-001,A griffon vulture (Gyps fulvus).,Logogram (mother),C
+G15,13151,U+13151,G015,G15,G-24-018,"A griffon vulture (Gyps fulvus), with a flagellum (S45) on its back.",Logogram (mother),C
+G16,13152,U+13152,G016,G16,G-24-029,"A griffon vulture (Gyps fulvus), on top of a wickerwork basket (V30), in front of a cobra (Naja haje), standing up, with expanded hood (uraeus), with a coiled tail (I12), upon a wickerwork basket (V30).",Logogram (the two ladies (i.e. Nekhbet and Wadjet),L
+G17,13153,U+13153,G017,G17,G-09-001,An owl.,Phonemogram,C
+G18,13154,U+13154,G018,G18,G-09-006,"Two owls, overlapping each other.",Phonemogram,C
+G19,13155,U+13155,G019,G19,G-09-023,,,L
+G20,13156,U+13156,G020,G20,G-09-008,"A forearm, with the palm of the hand facing upwards (D36), written over an owl (G17).",Phonemogram,L
+G90,13157,U+13157,G020A,G90,G-09-013,"A mouth (D21), written over an owl (G17).",Phonemogram,L
+G21,13158,U+13158,G021,G21,G-22-002,"A saharan helmeted guinea fowl (Numida m. meleagris), with a lappet.",Phonemogram,C
+,13159,U+13159,G022,,G-17-001,A hoopoe (Upupa epops).,Phonemogram,C
+G23,1315A,U+1315A,G023,G23,G-23-001,A lapwing (Vanellus cristatus).,"Logogram (common folk, subjects, people)",C
+G24,1315B,U+1315B,G024,G24,G-23-005,"A lapwing (Vanellus cristatus), legs drawn towards the body, wings extended above the body.","Logogram (common folk, subjects, people)",C
+G25,1315C,U+1315C,G025,G25,G-11-081,A crested ibis (Ibis comata).,Phonemogram,C
+G26,1315D,U+1315D,G026,G26,G-11-089,"An African sacred ibis (Threskiornis aethiopicus) (G26A), on top of a standard used for carrying religious symbols (R12).",Logogram (Thot),C
+G26A,1315E,U+1315E,G026A,G26A,G-11-085,An African sacred ibis (Threskiornis aethiopicus).,Classifier ibis,C
+G27,1315F,U+1315F,G027,G27,G-11-001,A greater flamingo (Phoenicopterus roseus).,Logogram (to be red),C
+G28,13160,U+13160,G028,G28,G-11-008,A black ibis (Plegadis falcinellus).,Phonemogram,C
+G29,13161,U+13161,G029,G29,G-11-011,"A saddle-billed stork (Ephippiorhynchus senegalensis), with lappet.",Phonemogram,C
+G30,13162,U+13162,G030,G30,G-11-018,"Three saddle-billed storks (Ephippiorhynchus senegalensis), overlapping each other, the first bird having a lappet.",Logogram (souls),C
+G31,13163,U+13163,G031,G31,G-11-050,A gray heron (Ardea cinerea).,Classifier heron,C
+G32,13164,U+13164,G032,G32,G-11-061,"A gray heron (Ardea cinerea), legs drawn towards the body, seated on a pole, held upright through ropes (R91).",Logogram (to inundate),C
+G33,13165,U+13165,G033,G33,G-11-028,A cattle egret (Bubulcus ibis).,Phonemogram,C
+G34,13166,U+13166,G034,G34,G-01-001,"An ostrich (Struthio camelus), with both wings upwards.",Classifier ostrich,C
+G35,13167,U+13167,G035,G35,G-10-001,A great cormorant (Phalacrocorax carbo).,Phonemogram,C
+G36,13168,U+13168,G036,G36,G-16-002,A swallow (Hirundo rustica savignii).,Phonemogram,C
+,13169,U+13169,G036A,,G-16-003,,,L
+G37,1316A,U+1316A,G037,G37,G-16-013,A house sparrow (Passer domesticus niloticus).,"Classifier negative, bad",C
+,1316B,U+1316B,G037A,,G-16-014,,,L
+G38,1316C,U+1316C,G038,G38,G-08-001,A greater white-fronted goose (Anser albifrons).,Phonemogram,C
+G39,1316D,U+1316D,G039,G39,G-04-001,A pintail duck (Anas acuta).,Logogram (son),C
+G40,1316E,U+1316E,G040,G40,G-05-001,"A greater white-fronted goose (Anser albifrons), flying, with a wing at either side of its body.",Phonemogram,C
+G41,1316F,U+1316F,G041,G41,G-05-010,"A greater white-fronted goose (Anser albifrons), alighting or flying up, with both wings behind the body.",Phonemogram,C
+G42,13170,U+13170,G042,G42,G-07-003,A widgeon (Mareca penelope).,Phonemogram,C
+G43,13171,U+13171,G043,G43,G-03-001,A quail chick (Coturnix coturnix).,Phonemogram,C
+,13172,U+13172,G043A,,G-03-018,"A half round loaf of bread (X1), written in front of a quail chick (G43).",Phonemogram,L
+G44,13173,U+13173,G044,G44,G-03-003,"Two quail chicks (Coturnix coturnix), overlapping each other.",Phonemogram,C
+G45,13174,U+13174,G045,G45,G-03-005,"A forearm, with the palm of the hand facing upwards (D36), written over a quail chick (G43).",Phonemogram,L
+G247,13175,U+13175,G045A,G247,G-03-007,"A forearm with the hand holding a conical loaf of bread (D37), written over a quail chick (G43).",Phonemogram,L
+G46,13176,U+13176,G046,G46,G-03-025,"A quail chick (G43), written over a sickle (U1).",Phonemogram,L
+G47,13177,U+13177,G047,G47,G-20-006,"A duckling, with open beak, outstretched wings on either side of the body, and the legs drawn towards the body.",Phonemogram,C
+G48,13178,U+13178,G048,G48,G-20-023,"Three ducklings, with open beaks, outstretched wings on either side of the body, and the legs drawn towards the body (G47), inside a nest.",Classifier nest,C
+,13179,U+13179,G049,,G-20-030,,,C
+G50,1317A,U+1317A,G050,G50,G-04-011,"Two plovers, overlapping each other.",Phonemogram,C
+G51,1317B,U+1317B,G051,G51,G-11-043,"A cattle egret (Bubulcus ibis), pecking and standing upon a fish with a long broad fin on its back, and two small fins on its belly.",Classifier catching fish,C
+G52,1317C,U+1317C,G052,G52,G-08-020,"A goose, standing, with its head downwards, as if it is picking up food","Classifier feeding, eating",C
+G53,1317D,U+1317D,G053,G53,G-18-004,"A bowl for incense with smoke rising from the bowl (R7), written in front of the legs of a human headed bird (G53A).",Logogram (soul),C
+G54,1317E,U+1317E,G054,G54,G-08-016,"A trussed and plucked goose or duck, with the head backwards below its body.",Phonemogram,C
+H1,1317F,U+1317F,H001,H1,H-03-001,The head of a pintail duck (Anas acuta).,"Logogram (bird, fowl)",C
+H2,13180,U+13180,H002,H2,H-04-005,The head of a gray heron (Ardea cinerea).,Phono-repeater,C
+H3,13181,U+13181,H003,H3,H-05-001,The head of a spoonbill (Platalea leucorodia).,Phonemogram,C
+H4,13182,U+13182,H004,H4,H-06-003,"The head of a griffon vulture (Gyps fulvus), with a backwards curved neck.",Classifier people,C
+H5,13183,U+13183,H005,H5,H-07-005,The fully extended wing of a bird.,Classifier wing,C
+H6,13184,U+13184,H006,H6,H-08-001,A feather.,Phonemogram,C
+H6A,13185,U+13185,H006A,H6A,H-08-003,A feather with tow upwards angled ticks on the front.,Phonemogram,C
+H7,13186,U+13186,H007,H7,H-09-004,"The claw of a bird, with two frontal digits visible.",Classifier claw,C
+H8,13187,U+13187,H008,H8,H-10-001,An egg.,Logogram (son),C
+I1,13188,U+13188,I001,I1,I-01-001,A lizard or gecko.,Phonemogram,C
+I2,13189,U+13189,I002,I2,I-02-001,A freshwater turtle.,Classifier turtle,C
+I3,1318A,U+1318A,I003,I3,I-03-001,A Nile crocodile (Crocodylus niloticus).,Classifier aggression,C
+I4,1318B,U+1318B,I004,I4,I-03-043,A Nile crocodile (Crocodylus niloticus) on top of a shrine.,Classifier Sobek,C
+I5,1318C,U+1318C,I005,I5,I-03-038,"A Nile crocodile (Crocodylus niloticus) with its tail curved forward, below the body.",Logogram (to gather),C
+I5A,1318D,U+1318D,I005A,I5A,I-03-003,A cult image of a crocodile.,Classifier Sobek,C
+,1318E,U+1318E,I006,I6,I-04-008,"A piece of crocodile skin with horizontal spines, or tail of a crocodile.",Phonemogram,C
+I7,1318F,U+1318F,I007,I7,I-05-001,A frog or toad.,Classifier divinity,C
+I8,13190,U+13190,I008,I8,I-05-004,A tadpole.,Logogram (one hundred thousand),C
+I9,13191,U+13191,I009,I9,I-07-002,A horned desert viper (Cerastes cerastes).,Phonemogram,C
+I24,13192,U+13192,I009A,I24,I-07-009,"A horned desert viper (Cerastes cerastes) (I9), coming out of an open rectangle, with the top line shorter than the bottom line.",Logogram (to go forth),C
+I10,13193,U+13193,I010,I10,I-09-001,A cobra in repose (Naja haje).,Phonemogram,C
+I31,13194,U+13194,I010A,I31,I-09-013,"A cobra in repose (Naja haje) (I10), with a feather (H6) on its back, angling backwards.",Phonemogram,C
+I11,13195,U+13195,I011,I11,I-09-005,"Two cobras in repose (Naja haje), overlapping each other.",Phonemogram,C
+,13196,U+13196,I011A,,I-09-021,A half round loaf of bread (X1) above a strip of land (N17); written below a cobra in repose (Naja haje) (I10).,Logogram (eternity),L
+I12,13197,U+13197,I012,I12,I-11-049,"A cobra (Naja haje), standing up, with expanded hood (uraeus), with a coiled tail.",Classifier female divinity,C
+I13,13198,U+13198,I013,I13,I-11-053,"A cobra (Naja haje), standing up, with expanded hood (uraeus), with a coiled tail (I12), upon a wickerwork basket (V30).",Classifier female divinity (Wadjet),C
+I14,13199,U+13199,I014,I14,I-13-004,"A snake with a coiled tail, consisting of two coils.","Classifier coiling, winding",C
+I15,1319A,U+1319A,I015,I15,I-13-003,"A cobra (Naja haje), standing up, with expanded hood (uraeus), with a coiled tail, consisting of two coils.",Classifier snake/uraeus,C
+K1,1319B,U+1319B,K001,K1,K-01-001,A Nile tilapia (Oreochromis niloticus).,Phonemogram,C
+K2,1319C,U+1319C,K002,K2,K-01-006,A fish (Labeobarbus bynni),Phono-repeater,C
+K3,1319D,U+1319D,K003,K3,K-01-015,A mullet (Mugil cephalus).,Logogram (fish),C
+K4,1319E,U+1319E,K004,K4,K-01-029,A freshwater elephant fish (Mormyrus kannume).,Phonemogram,C
+K5,1319F,U+1319F,K005,K5,K-01-004,"A fish with a long broad fin on its back, and two small fins on its belly.",Phono-repeater,C
+K6,131A0,U+131A0,K006,K6,K-02-008,The scale of a fish.,Logogram (scale),C
+K7,131A1,U+131A1,K007,K7,K-01-008,A fahaka puffer fish (Tetrodon fahaka).,"Classifier rage, anger",C
+K13,131A2,U+131A2,K008,K13,K-01-011,An electric catfish (Malapterurus electricus).,Classifier catfish,C
+L1,131A3,U+131A3,L001,L1,L-01-001,"A dung beetle, scarab (scarabaeus sacer).",Logogram (to become),C
+L2,131A4,U+131A4,L002,L2,L-02-002,A bee.,Logogram (king of Lower Egypt),C
+,131A5,U+131A5,L002A,,L-02-005,"A sedge (M23) written above a half round loaf of bread (X1), in front of a bee (L2) written above a half round loaf of bread (X1).",Logogram (king of Upper Egypt and Lower Egypt),L
+L3,131A6,U+131A6,L003,L3,L-02-007,,,C
+L4,131A7,U+131A7,L004,L4,L-03-001,A common locust.,Classifier locust,C
+L5,131A8,U+131A8,L005,L5,L-05-001,A centipede.,Classifier centipede,C
+L6,131A9,U+131A9,L006,L6,L-07-006,A bivalve shell.,Phonemogram,C
+,131AA,U+131AA,L006A,,L-07-007,,,L
+L7,131AB,U+131AB,L007,L7,L-06-005,A water scorpion (nep cinerea).,Classifier scorpion,C
+,131AC,U+131AC,L008,L8,L-07-004,"A click beetle (Lanelater Notodonta), without legs.",Logogram/phonemogram (type of beetle),C
+M1,131AD,U+131AD,M001,M1,M-01-001,A tree.,"Classifier tree, product of a tree",C
+M1A,131AE,U+131AE,M001A,M1A,M-01-008,"A branch, horizontally written (M3), written over a tree (M1).",Classifier product of a tree,L
+M48,131AF,U+131AF,M001B,M1E M48,M-01-006,"A horned desert viper (Cerastes cerastes), written over a tree (M1).",Phonemogram,L
+M2,131B0,U+131B0,M002,M2,M-03-001,"A herb, with three flowers or leaves, curving upwards, with the middle flower/leaf higher than the other two.",Phonemogram,C
+M3,131B1,U+131B1,M003,M3,M-04-001,"A branch, horizontally written.",Phonemogram,C
+,131B2,U+131B2,M003A,M3A,G-09-025,"A branch, horizontally written (M3), over an owl (G17).",Phonemogram,L
+M4,131B3,U+131B3,M004,M4,M-05-001,"A palm branch, stripped of leaves and notched with a round notch.",Logogram (year),C
+M5,131B4,U+131B4,M005,M5,M-05-024,"A palm branch, stripped of leaves and notched with a round notch (M4), on top of a half round loaf of bread (X1).",Logogram (time/season),C
+M6,131B5,U+131B5,M006,M6,M-05-015,"A palm branch, stripped of leaves and notched with a round notch (M4), on top of a mouth (D21).",Logogram (time/season),C
+M7,131B6,U+131B6,M007,M7,M-05-025,"A palm branch, stripped of leaves and notched with a round notch (M4), on top of a stool made of reed matting (Q3).","Classifier youth, vigour, fresh",C
+M8,131B7,U+131B7,M008,M8,M-06-023,"A pool with lotus flowers, consisting of three flowers and two buds.",Phonemogram,C
+M9,131B8,U+131B8,M009,M9,M-08-025,"A lotus flower, with the flower facing forward, and the stem facing downward.",Classifier lotus flower,C
+M10,131B9,U+131B9,M010,M10,M-07-001,"A lotus bud, with the bud facing forward, and the stem facing downward.",Classifier lotus bud,C
+M72,131BA,U+131BA,M010A,M72,M-07-005,"A lotus bud with a long stalk, folded under itself.",Classifier offering,C
+M11,131BB,U+131BB,M011,M11,M-10-001,"A lotus flower, facing forwards, with a long-twisted stalk, which is folded under itself.",Logogram (to offer),C
+M12,131BC,U+131BC,M012,M12,M-11-002,"A leaf, stem and root of a lotus plant.",Phonemogram,C
+,131BD,U+131BD,M012A,,M-11-041,,\2000,C
+,131BE,U+131BE,M012B,,M-11-043,,\3000,C
+,131BF,U+131BF,M012C,,M-11-044,,\4000,C
+,131C0,U+131C0,M012D,,M-11-046,,\5000,C
+,131C1,U+131C1,M012E,,M-11-047,,\6000,C
+,131C2,U+131C2,M012F,,M-11-048,,\7000,C
+,131C3,U+131C3,M012G,,M-11-049,,\8000,C
+,131C4,U+131C4,M012H,,M-11-050,,\9000,C
+M13,131C5,U+131C5,M013,M13,M-12-006,A stem of papyrus with a bud.,Phonemogram,C
+M14,131C6,U+131C6,M014,M14,M-12-021,"A cobra in repose (Naja haje, I10), written over a stem of papyrus with a bud (M13).",Phonemogram,L
+M15,131C7,U+131C7,M015,M15,M-13-018,"A clump of three papyrus flowers, with two buds bent down.",Logogram (Lower Egypt),C
+M139,131C8,U+131C8,M015A,M139,M-13-021,"Three thin stems of papyrus with a bud, with two buds bent down; on top of a plan of a crossroads in a village (O49).",Logogram (Lower Egypt),C
+M16,131C9,U+131C9,M016,M16,M-13-003,A clump of three papyrus flowers.,Phonemogram,C
+M139B,131CA,U+131CA,M016A,M139B,M-13-009,"Three thin stems of papyrus with a bud, on top of a plan of a crossroads in a village (O49).",Logogram (Lower Egypt),C
+M17,131CB,U+131CB,M017,M17,M-14-001,A flowering reed.,Phonemogram,C
+,131CC,U+131CC,M017A,,M-14-003,"Two flowering reeds, arranged horizontally.",Phonemogram,C
+M18,131CD,U+131CD,M018,M18,M-14-012,"A flowering reed (M17), on top of legs in a walking posture, feet orientated towards the reading direction (D54).",Phonemogram/logogram (to come),C
+M19,131CE,U+131CE,M019,M19,M-14-017,"A flowering reed (M17) and a club used by washermen for beating laundry as part of the cleaning process (U36), connected by a network consisting of four horizontal lines and three lines going from bottom corner to top corner.",Phonemogram,C
+M20,131CF,U+131CF,M020,M20,M-15-001,A field of reeds with three flowering reeds and three stumps.,"Logogram (marshland, country)",C
+M21,131D0,U+131D0,M021,M21,M-15-007,A field of reeds with three flowering reeds and a downward loop at the far end.,"Logogram (herb, plant)",C
+M22,131D1,U+131D1,M022,M22,M-16-002,A rush with two shoots.,Phonemogram,C
+,131D2,U+131D2,M022A,,M-16-005,"Two rushes with two shoots (M22), arranged horizontally.",Phonemogram,C
+M23,131D3,U+131D3,M023,M23,M-16-016,A sedge.,Logogram (king of Upper Egypt),C
+M24,131D4,U+131D4,M024,M24,M-16-026,"A sedge (M23), written on top of a mouth (D21).",Phonemogram,C
+M127,131D5,U+131D5,M024A,M127,M-12-030,A stem of papyrus with a flowering bud.,Logogram (land),C
+M25,131D6,U+131D6,M025,M25,M-16-058,"A desert plant, with four branches, with flowers on every branch (M26A), written on top of a mouth (D21).",Logogram (Upper Egypt),C
+M26,131D7,U+131D7,M026,M26,M-16-046,"A desert plant, with four branches, with flowers on every branch, on a horizontal base.",Logogram (Upper Egypt),C
+M27,131D8,U+131D8,M027,M27,M-16-053,"A forearm, with the palm of the hand facing upwards (D36), written over a desert plant, with four branches, with flowers on every branch, on a horizontal base. (M26).",Logogram (Upper Egypt),L
+M28,131D9,U+131D9,M028,,M-16-056,"A desert plant, with four branches, with flowers on every branch (M26A), written on top of a hobble for cattle without a crossbar (V20).",Logogram (the 10 of Upper Egypt),C
+M140B,131DA,U+131DA,M028A,M140B,M-13-010,"Three thin stems of papyrus with a flowering bud, on top of a plan of a crossroads in a village (O49).",Logogram (Upper Egypt),C
+M29,131DB,U+131DB,M029,M29,M-17-003,A pod of a carob (Ceratonia siliqua) tree.,Logogram (to be sweet),C
+M30,131DC,U+131DC,M030,M30,M-18-001,A root.,Logogram (to be sweet),C
+M31,131DD,U+131DD,M031,M31,M-19-001,"A rhizome of a lotus, resembling vertical lines coming from a vessel.",Classifier growing,C
+,131DE,U+131DE,M031A,US1M31AEXTU,M-19-006,"Either a tree growing in a pot, or a rhizome of a lotus, with a leaf coming from it.",Classifier growing,C
+M32,131DF,U+131DF,M032,M32,M-18-012,"A rhizome of a lotus, with two shoots at the bottom.",Classifier growing,C
+M33,131E0,U+131E0,M033,M33,M-20-004,"Three grains of corn, arranged horizontally.","Logogram (grain, barley, corn)",C
+M33A,131E1,U+131E1,M033A,M33A,M-20-005,"Three grains of corn, arranged vertically.","Classifier grain, barley, corn",L
+,131E2,U+131E2,M033B,,M-20-006,"Three grains of corn, arranged in a triangular form, with a single grain at the bottom.","Classifier grain, barley, corn",L
+M34,131E3,U+131E3,M034,M34,M-21-001,An ear of corn.,Logogram (emmer),C
+M35,131E4,U+131E4,M035,M35,M-20-007,A heap of corn.,"Classifier heap, quantity",C
+M36,131E5,U+131E5,M036,M36,M-22-016,"A bundle of flax stems, bound together with string, loop and tie at the back, with the bolls visible on the top, squared at the bottom.",Phonemogram,C
+M37,131E6,U+131E6,M037,M37,M-22-012,"A bundle of flax stems, bound together with string near the top of the bundle.",Phonemogram,C
+M38,131E7,U+131E7,M038,M38,M-22-013,"A bundle of flax stems, bound together with string near the bottom of the bundle.",Classifier flax,C
+M39,131E8,U+131E8,M039,M39,M-23-001,A basket with four pieces of grain or fruit.,Classifier granular product,C
+M40,131E9,U+131E9,M040,M40,M-24-001,"A vertical bundle of reeds, tied together, with the ties at the front",Phonemogram,C
+,131EA,U+131EA,M040A,US1M40AEXTU,M-24-004,"A vertical bundle of reeds, tied together, with the ties resembling a triangle.",Phonemogram,C
+M41,131EB,U+131EB,M041,M41,M-25-001,A log of wood.,Classifier wood/timber,C
+M42,131EC,U+131EC,M042,M42,M-08-038,A flower with four petals.,Phonemogram,C
+M43,131ED,U+131ED,M043,M43,M-26-005,"A vine with fruits on two forked supports, with the back of the vine descending down, into a basket or vessel.",Logogram (wine),C
+M44,131EE,U+131EE,M044,M44,M-27-002,A thorn.,Phonemogram,C
+N1,131EF,U+131EF,N001,N1,N-01-001,The sky.,Logogram (sky),C
+N2,131F0,U+131F0,N002,N2,N-01-022,The sky with a sceptre with a forked end hanging from it.,Classifier night,C
+N3,131F1,U+131F1,N003,N3,N-01-023,The sky with a sceptre with a cone at the end hanging from it.,Classifier night,C
+N4,131F2,U+131F2,N004,N4,N-01-028,"The sky, with lines of moisture coming from it.",Classifier storm,C
+N5,131F3,U+131F3,N005,N5,N-02-001,"The sun, within a halo.","Logogram (the sun, Re)",C
+N6,131F4,U+131F4,N006,N6,N-03-003,"The sun within a halo, encircled by a cobra (Naja haje), standing up, with expanded hood (uraeus).","Logogram (the sun, Re)",C
+N7,131F5,U+131F5,N007,N7,N-04-015,The sun disk upon a butcher's block.,"Logogram (course (of the day), daily requirements)",C
+,131F6,U+131F6,N008,,N-04-016,"The sun, with three beams of sunlight coming from it.","Classifier light, shining, rising",C
+N9,131F7,U+131F7,N009,N9,N-07-001,"The moon, with one half obscured.",Phonemogram,C
+N10,131F8,U+131F8,N010,N10,N-07-006,"The moon, partly obscured to form a crescent at the top of the circle.",Phonemogram,C
+N11,131F9,U+131F9,N011,N11,N-06-001,A crescent moon.,Logogram (month),C
+N12,131FA,U+131FA,N012,N12,N-06-005, A crescent moon with a part of the moon disc.,Classifier moon,C
+,131FB,U+131FB,N013,N13,N-08-008,"The back half of a crescent moon (N63A), written over a star (N14).",Logogram (half-month (festival)),C
+N14,131FC,U+131FC,N014,N14,N-08-001,A star.,Logogram (star),C
+N15,131FD,U+131FD,N015,N15,N-08-005,"A star, within a circle.",Classifier (netherworld),C
+N16,131FE,U+131FE,N016,N16,N-09-027,"A strip of land, with three grains of sand written beneath it.",Logogram (land),C
+N17,131FF,U+131FF,N017,N17,N-09-002,A strip of land.,Logogram (land),C
+N18,13200,U+13200,N018,N18,N-09-011,An oval of sand.,Logogram (island),C
+,13201,U+13201,N018A,,N-19-011,"A ripple of water (N35), written within an oval.",Phonemogram,C
+,13202,U+13202,N018B,,N-09-029,,,L
+N19,13203,U+13203,N019,N19,N-09-012,"Two ovals of sand, arranged vertically.",Logogram (horizon-dweller),C
+N20,13204,U+13204,N020,N20,N-10-011,A long tongue of land.,Classifier riverbank,C
+N21,13205,U+13205,N021,N21,N-10-001,A tongue of land.,Logogram (riverbank),C
+N22,13206,U+13206,N022,N22,N-10-015,A tongue of land with a vertical line at the front.,Logogram (riverbank),C
+N23,13207,U+13207,N023,N23,N-11-002,An irrigation canal.,Classifier geographical location,C
+N24,13208,U+13208,N024,N24,N-11-007,A parcel of land with irrigation ditches.,"Logogram (nome, district)",C
+N25,13209,U+13209,N025,N25,N-13-001,The hill country over the edge of the cultivated areas.,"Classifier foreign land, desert",C
+,1320A,U+1320A,N025A,,N-13-002,,,L
+N26,1320B,U+1320B,N026,N26,N-13-014,A sand covered mountain over the edge of the cultivated areas.,Phonemogram,C
+N27,1320C,U+1320C,N027,N27,N-15-002,The sun rising over a sand covered mountain over the edge of the cultivated areas.,Logogram (horizon),C
+N28,1320D,U+1320D,N028,N28,N-16-001,A hill with a halo of sun rays behind it.,Phonemogram,C
+N29,1320E,U+1320E,N029,N29,N-17-001, A sandy hill slope.,Phonemogram,C
+N30,1320F,U+1320F,N030,N30,N-17-004,A hill with shrubs.,"Logogram hill, mound",C
+N31,13210,U+13210,N031,N31,N-18-003,"A road with two shrubs at the top, and one at the bottom.",Logogram (road),C
+N32,13211,U+13211,N032,N32,N-22-001,A lump of clay.,Classifier clay,C
+N33,13212,U+13212,N033,N33,N-14-006,A grain of sand.,"Classifier medicaments, incense, oil",C
+N33A,13213,U+13213,N033A,N33A,N-14-002,Three grains of sand that are horizontally aligned to each other.,"Classifier medicaments, incense, oil",C
+N34,13214,U+13214,N034,N34,N-22-002,An ingot of metal.,Classifier metal objects,C
+,13215,U+13215,N034A,,N-22-003,A slightly less broad ingot of metal.,Logogram (metal),L
+N35,13216,U+13216,N035,N35,N-19-001,A ripple of water.,Phonemogram,C
+N35A,13217,U+13217,N035A,N35A,N-19-002,"Three ripples of water, vertically aligned above one another.",Logogram (water),C
+N36,13218,U+13218,N036,N36,N-20-001,A canal.,Phonemogram,C
+N37,13219,U+13219,N037,N37,N-20-018,A rectangular pool.,Phonemogram,C
+,1321A,U+1321A,N037A,N37A,N-20-022,"A rectangular pool, with two diagonal strokes written inside.",Phonemogram,C
+N38,1321B,U+1321B,N038,N38,N-20-019,A rectangular pool with sloping sides.,Phonemogram,C
+N39,1321C,U+1321C,N039,N39,N-20-031,"A rectangular pool, with vertical ripples of water written within it.",Phonemogram,C
+N40,1321D,U+1321D,N040,N40,N-20-033,"A rectangular pool (N37), on top of legs in a walking posture, feet orientated towards the reading direction (D54).",Logogram (to go),C
+N41,1321E,U+1321E,N041,N41,N-21-001,A well with a ripple of water.,Phonemogram,C
+N42,1321F,U+1321F,N042,N42,N-21-004,A well with a straight line of water.,Phonemogram,C
+,13220,U+13220,NL001,NL1,O-05-121,"A wall, written vertically, with battlements on the corners, and one in the middle of the long sides (O36), in front of a mace with a pear-shaped head, written vertically (T3); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (Memphis (the white wall; first nome of Lower Egypt)),C
+,13221,U+13221,NL002,NL2,F-19-029,"The thigh of a bovid (ox), on top of a standard used for the carrying of religious symbols (R12) on top of a parcel of land with irrigation ditches (N24).",Logogram (2nd nome of Lower Egypt),C
+,13222,U+13222,NL003,NL3,G-12-156,"A feather (H6), in front of a falcon (G5), on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (West, 3rd nome of Lower Egypt)",C
+,13223,U+13223,NL004,NL4,T-07-037,"A shield with a rounded top, with two arrows crossed over it, fletching upwards (T62) in front of a sedge written on top of a mouth (M24); on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (Neith-South, 4th nome of Lower Egypt)",C
+,13224,U+13224,NL005,NL5,T-07-035,"A shield with a rounded top, with two arrows crossed over it, fletching upwards (T62), in front of a clump of three papyrus flowers, with two buds bent down (M15); on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (Neith-North, 5th nome of Lower Egypt)",C
+,13225,U+13225,NL005A,NL5A,T-07-036,"A shield with a rounded top, with two arrows crossed over it, fletching upwards (T62) in front of a whip with a loop at the front (V23A) on top of a half round loaf of bread (X1); on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (Neith-North, 5th nome of Lower Egypt)",C
+,13226,U+13226,NL006,NL6,E-23-048,"A sand covered mountain over the edge of the cultivated areas (N26), in front of a bovid (bull), standing (E1), on top of a standard used for the carrying of religious symbols (R12) on top of a parcel of land with irrigation ditches (N24).",Logogram (6th nome of Lower Egypt),C
+,13227,U+13227,NL007,NL7,T-13-071,"An one-barbed harpoon, with handle, written horizontally (T21), on top of a crescent moon shape, connected by three lines, in front of a feather (H6), angled forwards on top of a standard with a round top, with an short vertical line beside the main pole (R14); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (7th nome of Lower Egypt),C
+,13228,U+13228,NL008,NL8,T-13-072,"An one-barbed harpoon, with handle, written horizontally (T21), on top of a crescent moon shape, connected by three lines, in front of a spear made into a standard, with a circle on either side of the spear tip, with a loop over the standard (Jsesh/Gardiner R15); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (8th nome of Lower Egypt),C
+,13229,U+13229,NL009,NL9,C-32-014,"Man/god, standing, with a double plume/feather headdress, right arm forward, hand at the height of the shoulder, holding a crook (S38) of the size of the man, left arm hanging beside the body, holding a flagellum (S45) horizontally; on top of a standard used for the carrying of religious symbols (R12) on top of a parcel of land with irrigation ditches (N24).",Logogram (9th nome of Lower Egypt),C
+,1322A,U+1322A,NL010,NL10,E-23-049,"A piece of crocodile skin with horizontal spines, or tail of a crocodile (I6), in front of a bovid (bull), standing; on top of a standard used for the carrying of religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).",Logogram (10th nome of Lower Egypt),C
+,1322B,U+1322B,NL011,NL11,E-23-050,"A pustule or gland, or a packet of mummy bandages (Aa2), in front of a bovid (bull), standing (E1); on top of a standard used for the carrying of religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).",Logogram (11th nome of Lower Egypt),C
+,1322C,U+1322C,NL012,NL12,E-23-051,"A newborn bubalis antelope, lying down, legs folded beneath the body, long tail downwards (E9), in front of a bovid (bull), standing (E1); on top of a standard used for the carrying of religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).",Logogram (12th nome of Lower Egypt),C
+,1322D,U+1322D,NL013,NL13,N-11-044,"A double forked tool for the mending of nets, with a broad middle section (V26), written vertically, in front of a crook (S38); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (13th nome of Lower Egypt),C
+,1322E,U+1322E,NL014,NL14,N-11-036,"A schematic representation of three sealed water pots in a rack, without horizontal line at the bottom, with the downward lines descending to the bottom (W017A), in front of a spear made into a standard, with a circle on either side of the spear tip, with a loop over the standard (Jsesh R15); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (14th nome of Upper Egypt),C
+,1322F,U+1322F,NL015,NL15,G-11-107,"An African sacred ibis (Threskiornis aethiopicus) (G26A), on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (Thot nome, 15th nome of Lower Egypt)",C
+,13230,U+13230,NL016,NL16,K-01-034,"A fish, with its tail orientated downwards (K4A), on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).",Logogram (First-of-fishes nome (16th nome of Lower Egypt)),C
+,13231,U+13231,NL017,NL17,N-11-045,"A tusk of an elephant (F18), above a human hand (D46); above a half round loaf of bread (X1) beside a plan of a crossroads in a village (O49); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).","Logogram (Behdet, 17th nome of Lower Egypt)",C
+,13232,U+13232,NL017A,NL17A,N-11-046,"A windpipe and lungs (F36), in front of a cluster of signs consisting of a tusk of an elephant (F18), above a human hand (D46); above a half round loaf of bread (X1) beside a plan of a crossroads in a village (O49); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (17th nome of Lower Egypt (Diospolis)),C
+,13233,U+13233,NL018,NL18,N-11-038,,,C
+,13234,U+13234,NL019,NL19,N-11-039,,,C
+,13235,U+13235,NL020,NL20,G-12-157,,,C
+,13236,U+13236,NU001,NU1,N-11-047,"A strip of land (N17), above a cluster of signs consisting of a bow, of an archaic type (Aa23), in front of a half round loaf of bread (X1), over a strip of land (N17); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).","Logogram (Nubia, 1st nome of Upper Egypt)",C
+,13237,U+13237,NU002,NU2,G-12-153,"The pole of a balance, with the crossbar resembling a feather (H6), written horizontally (U39D), in front of a falcon (G5); on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (Throne of Horus (Edfu, 2nd nome of Upper Egypt))",C
+,13238,U+13238,NU003,NU3,S-09-044,"Two feathers (H6), orientated outwards, on top of a plan of a prehistoric building at the town of Nekhen, written as a circle / A circle with two vertical strokes, arranged horizontally, written within it (O48); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (3rd nome of Upper Egypt),C
+,13239,U+13239,NU004,NU4,R-16-004,"A sceptre with a straight shaft, a forked base, topped with the head of the Seth animal (S40), with a fillet and a backwards angled feather (H6) on top of the staff (R19); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (Thebes),C
+,1323A,U+1323A,NU005,NU5,G-12-154,"Two falcons (G5), arranged horizontally, on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (The two gods, 5th nome of Upper Egypt)",C
+,1323B,U+1323B,NU006,NU6,I-03-017,"A Nile crocodile (Crocodylus niloticus), with a feather (H6), angled backwards, on its head; on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (Iqer, 6th nome of Upper Egypt)",C
+,1323C,U+1323C,NU007,NU7,R-21-002,"An emblem with a human face with cow ears, with two upwards line which curl inwards (R129), on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (Bat (7th nome of Upper Egypt)),C
+,1323D,U+1323D,NU008,NU8,S-09-045,"A wig, with a fillet, with a headdress consisting of two feathers, on top of a vertical pole, on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (8th nome of Upper Egypt),C
+,1323E,U+1323E,NU009,NU9,R-18-007,"A feather (H6), on top of two bones of a fossil squid (belemnite) (R22), on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (9th nome of Upper Egypt),C
+,1323F,U+1323F,NU010,NU10,I-09-015,"A cobra in repose (Naja haje) (I10), with a feather (H6) on its back, angling backwards; on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (Wadjet, 10th nome of Upper Egypt)",C
+,13240,U+13240,NU010A,NU10A,I-09-023,"A stem of papyrus with a bud (M13), in front of a half round loaf of bread (X1), written below a cobra in repose (Naja haje) (I10); on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (Wadjet, 10th nome of Upper Egypt)",C
+,13241,U+13241,NU011,NU11,E-02-040,"The animal of Seth, lying down, tail up (E21), on top of a standard used for the carrying of religious symbols (R12) on top of a parcel of land with irrigation ditches (N24).",Logogram (11th nome of Upper Egypt),C
+,13242,U+13242,NU011A,NU11A,N-11-048,"A wick of twisted flax, consisting of 3 loops (V28), in front of the red crown (S3), in front of three ripples of water, vertically aligned above one another (N35A); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (11th nome of Upper Egypt (commonly under stẖ/stš/šꜣ),C
+,13243,U+13243,NU012,NU12,N-13-027,"A sand covered mountain over the edge of the cultivated areas (N26), above a horned desert viper (Cerastes cerastes) (I9); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (12th nome of Upper Egypt),C
+,13244,U+13244,NU013,NU13,N-11-040,"A horned desert viper (Cerastes cerastes) (I9), written over a tree (M1), in front of a schematic representation of three sealed water pots in a rack, without horizontal line at the bottom, with the downward lines descending to the bottom (W017A); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (13th nome of Upper Egypt),C
+,13245,U+13245,NU014,NU14,N-11-041,"A horned desert viper (Cerastes cerastes) (I9), written over a tree (M1), in front of hindquarters of a seated lion or leopard (F22) above a half round loaf of bread (X1); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (14th nome of Upper Egypt),C
+E34B,13246,U+13246,NU015,E34B,E-16-010,"A desert hare, lying down (E34), on top of a standard used for the carrying of religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).","Logogram (Hermopolis magna, 15th nome of Upper Egypt)",C
+,13247,U+13247,NU016,NU16,E-03-009,"A basket with four pieces of grain or fruit (M39) in front of an oryx, standing (E28), on top of a standard used for the carrying of religious symbols (R12) on top of a parcel of land with irrigation ditches (N24).","Logogram (Oryx nome, 16th nome of Upper Egypt)",C
+,13248,U+13248,NU017,NU17,E-07-030,"A jackal, lying down, tail downwards (E15), on top of a standard used for the carrying of religious symbols (R12) on top of a parcel of land with irrigation ditches (N24).",Logogram (Anubis nome (17th nome of Upper Egypt)),C
+,13249,U+13249,NU018,NU18,G-13-028,"A falcon, standing, with extended wings at either side of the body, at 45 degree; on top of a standard used for carrying religious symbols (R12), on top of a parcel of land with irrigation ditches (N24).",Logogram (18th nome of Upper Egypt (known as nmty as well)),C
+,1324A,U+1324A,NU018A,NU18A,G-12-155,,,C
+,1324B,U+1324B,NU019,NU19,S-23-015,"A human foot and lower leg (D58), written between two sceptres with a straight shaft, a forked base, topped with the head of the Seth animal (S40), on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).","Logogram (place of Igai, 19th nome of Upper Egypt)",C
+,1324C,U+1324C,NU020,NU20,N-11-042,"A tree (M1), in front of a schematic representation of three sealed water pots in a rack, without horizontal line at the bottom, with the downward lines descending to the bottom (W017A); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (20th nome of Upper Egypt),C
+,1324D,U+1324D,NU021,NU21,N-11-043,"A tree (M1), in front of hindquarters of a seated lion or leopard (F22) above a half round loaf of bread (X1); on top of a standard used for carrying religious symbols (R12), written on top of a parcel of land with irrigation ditches (N24).",Logogram (21th nome of Upper Egypt),C
+,1324E,U+1324E,NU022,NU22,T-18-052,,Logogram (22th nome of Upper Egypt),C
+,1324F,U+1324F,NU022A,,T-18-054,,Logogram (22th nome of Upper Egypt),C
+O1,13250,U+13250,O001,O1,O-01-001,A house or enclosure.,"Logogram (house, domain)",C
+,13251,U+13251,O001A,,O-01-005,"A tie or strap, used with sandals (ankh sign) (S34), written with its loop inside a house or enclosure (O1).","Logogram (scriptorum, school (house of life))",L
+O2,13252,U+13252,O002,O2,O-01-047,"A mace with a pear-shaped head, written vertically (T3), intruding with the top inside a house or enclosure (O1).",Logogram (treasury),L
+O3,13253,U+13253,O003,O3,O-01-054,"An oar, written vertically (P8), intruding with the top inside a house or enclosure (O1), with a loaf of bread, without internal detail (X3) left of the oar, and a beer-jug (W22) right of the oar.",Logogram (invocation offering),C
+O4,13254,U+13254,O004,O4,O-02-001,A plan of a courtyard or reed shelter.,Phonemogram,C
+O5,13255,U+13255,O005,O5,O-02-008,A plan of a winding wall.,Phonemogram,C
+O5u,13256,U+13256,O005A,O5U,O-02-009,,,L
+O6,13257,U+13257,O006,O6,O-03-005,"A plan of a rectangular enclosure, with an internal rectangle in the lower corner away from the reading direction.","Logogram (temple, mansion, estate)",C
+,13258,U+13258,O006A,,O-03-017,,,C
+,13259,U+13259,O006B,,O-03-023,,,C
+,1325A,U+1325A,O006C,,O-03-025,,,C
+O85A,1325B,U+1325B,O006D,O85A,O-03-024,,,C
+O85,1325C,U+1325C,O006E,O85,O-03-022,,,C
+,1325D,U+1325D,O006F,,O-03-018,,,C
+O7,1325E,U+1325E,O007,O7,O-03-027,"A half round loaf of bread (X1), written inside a plan of a rectangular enclosure, with an internal rectangle in the lower corner away from the reading direction (O6).","Logogram (temple, mansion, estate)",L
+,1325F,U+1325F,O008,O8,O-03-044,"A wooden column, written horizontally (O29), written over a half round loaf of bread (X1), written inside a plan of a rectangular enclosure, with an internal rectangle in the lower corner away from the reading direction (O6).","Logogram (the great domain, temple)",L
+O9,13260,U+13260,O009,O9,O-03-175,"A wickerwork basket (V30), on top of a plan of a rectangular enclosure, with an internal rectangle in the lower corner away from the reading direction (O6), with a half round loaf of bread (X1), written inside the enclosure.",Logogram (Nephthys (divinity)),L
+O10,13261,U+13261,O010,O10,O-03-106,"A falcon (G5), written inside a plan of a rectangular enclosure, with an internal rectangle in the top corner away from the reading direction.",Logogram (Hathor (divinity)),L
+,13262,U+13262,O010A,,O-03-121,"A tie or strap, used with sandals (ankh sign) (S34), written inside a plan of a rectangular enclosure, with an internal rectangle in the lower corner away from the reading direction (O6).",Logogram (mansion of life),L
+,13263,U+13263,O010B,,O-03-105,,,L
+,13264,U+13264,O010C,US248O10CEXTU,O-09-013,,,L
+O11,13265,U+13265,O011,O11,O-04-007,"A wall of the palace, with ornamental chevaux de frise on top of the wall, with internal decoration.",Logogram (palace),C
+O12,13266,U+13266,O012,O12,O-04-012,"A forearm, with the palm of the hand facing upwards (D36), written over a wall of the palace, with ornamental chevaux de frise on top of the wall, with internal decoration (O11).",Logogram (palace),L
+,13267,U+13267,O013,O13,O-05-001,"An enclosure wall with battlements on the front side and top, and on the vertical line of the opening.","Classifier enfolding, enclosing, walling in",C
+O14,13268,U+13268,O014,O14,O-19-007,"The corner of a wall, with battlements, with the opening in the bottom right corner.",Classifier gateway,C
+O15,13269,U+13269,O015,O15,O-05-038,"A wide cup (W10) above a half round loaf of bread (X1), written inside the enclosed part of an enclosure wall without battlements, with a block on each corner.",Logogram (court),C
+,1326A,U+1326A,O016,,O-08-014," A plan and façade of a hall, with a cornice with Uraei on top, with half orientated forwards and half orientated backwards.","Logogram (portal, portico)",C
+O17,1326B,U+1326B,O017,O17,O-08-023," A plan of a hall, with a cornice with uraei.",Phonemogram,C
+O18,1326C,U+1326C,O018,O18,O-09-011,"A shrine, seen from the side, with a downward sloping roof.","Classifier shrine, chapel",C
+,1326D,U+1326D,O019,O19,O-09-057,"An archaic shrine, seen from the side, with a downward sloping roof, with vertical poles in front of the shrine itself, connected to the shrine.",Classifier shrine,C
+O19A,1326E,U+1326E,O019A,O19A,O-09-062,"An archaic shrine, seen from the side, with a downward sloping roof, with upward curving lines coming from the roof, and short vertical lines in front of the shrine.","Logogram (shrine, row of shrines)",C
+O20,1326F,U+1326F,O020,O20,O-09-079,"A tall shrine with a round roof, with two vertical lines enclosing the top, on a base, with internal decoration consisting of two vertical lines","Classifier sanctuary, shrine",C
+,13270,U+13270,O020A,,O-09-078,,,L
+O21,13271,U+13271,O021,O21,O-07-009,"A façade of a shrine with a flat roof, with vertical sides, with a small doorway.","Logogram (pavilion, hall, booth)",C
+O22,13272,U+13272,O022,O22,O-10-034,An open booth supported by a pole.,Classifier booth,C
+O23,13273,U+13273,O023,O23,O-11-004,"A double pavilion, with flower-topped capitals on the columns, with curved roofs, with two carrying chairs (Q2) facing away from one another.","Logogram (jubilee, sed-festival)",C
+O24,13274,U+13274,O024,O24,O-12-002,A pyramid with an enclosure wall.,"Classifier pyramid, tomb",C
+,13275,U+13275,O024A,,O-12-003,An Old Kingdom solar temple with an enclosure wall.,Classifier solar temple,C
+O25,13276,U+13276,O025,O25,O-13-005,"An obelisk, with base.",Classifier obelisk,C
+,13277,U+13277,O025A,,O-13-001,"An obelisk of an Old Kingdom sun temple, with a circle (sun disk) on top of the obelisk.",Classifier solar temple,C
+O26,13278,U+13278,O026,O26,O-14-002,A stela on a base.,Classifier stela,C
+O27,13279,U+13279,O027,O27,O-15-003,A hall supported by two columns.,"Classifier hall, office",C
+,1327A,U+1327A,O028,,O-16-001,"A column with a tenon at the top, represented as a vertical line.",Phonemogram,C
+O29,1327B,U+1327B,O029,O29,O-16-024,"A wooden column, written horizontally.",Phonemogram,C
+O29v,1327C,U+1327C,O029A,O29v,O-16-022,"A wooden column, written vertically.",Phonemogram,L
+O30,1327D,U+1327D,O030,O30,O-16-026,A forked pole for supporting a roof.,"Logogram (pole, support)",C
+,1327E,U+1327E,O030A,,O-16-028,,,L
+O31,1327F,U+1327F,O031,O31,O-17-001,"A tenoned door, written horizontally.",Logogram (gate),C
+O32,13280,U+13280,O032,O32,O-08-003,A gateway.,Classifier doorway,C
+,13281,U+13281,O033,O33,O-06-051,"A façade of a palace or tomb, with the top resembling two floating horizontal lines.",Classifier palace façade,C
+,13282,U+13282,O033A,,O-06-054,,,C
+O34,13283,U+13283,O034,O34,O-18-006,A door bolt.,Phonemogram,C
+O35,13284,U+13284,O035,O35,O-18-015,"A door bolt (O034) placed above legs in a walking posture, with feet oriented toward the reading direction (D054).",Phonemogram,C
+O36,13285,U+13285,O036,O36,O-05-108,"A wall, written vertically, with battlements on the corners, and one in the middle of the long sides.",Logogram (wall),C
+,13286,U+13286,O036A,,O-05-115,,,C
+,13287,U+13287,O036B,,O-05-116,,,C
+,13288,U+13288,O036C,,O-05-106,,,C
+,13289,U+13289,O036D,,O-05-107,,,C
+O37,1328A,U+1328A,O037,O37,O-05-100,"A wall, with battlements on the corners, and one in the middle of the long sides, written at a forward angle.","Classifier overthrow, demolish",C
+O38,1328B,U+1328B,O038,O38,O-19-003,"The corner of a wall, with the opening in the bottom right corner.",Classifier passage,C
+O39,1328C,U+1328C,O039,O39,O-24-002,A rectangular stone slab or brick.,"Classifier stone, brick, pebble",C
+O40,1328D,U+1328D,O040,O40,O-20-003,A stairway.,Logogram stairway,C
+O41,1328E,U+1328E,O041,O41,O-20-001,A double stairway.,"Classifier ascending, being high",C
+O42,1328F,U+1328F,O042,O42,O-21-013,"A fence, consisting of a horizontal base with four lines with bulbs at the end, angled backwards, with a curved line connecting the front of the base and the first line with a bulb, with a horizontal line with a loop at the front through the bulbs.",Phonemogram,C
+O43,13290,U+13290,O043,O43,O-21-017,"A fence, consisting of a horizontal base, with five vertical lines with a bulb on top of it, with a horizontal line through the bulbs.",Phonemogram,C
+O44,13291,U+13291,O044,O44,O-24-013,"The emblem erected outside the temple of Min, resembling the horns of a bovid (F13) on top of a stem of papyrus with a bud (M13), with a coil of rope (V1) between the horns.","Logogram (office, rank, function)",C
+O45,13292,U+13292,O045,O45,O-24-023,"A domed building, in the form of a quarter of a circle, with a smaller quarter circle inside the corner away from the reading direction.","Logogram (harim, inner chamber)",C
+O46,13293,U+13293,O046,O46,O-24-029,"A domed building, with a rectangle in the corner away from the reading direction.","Logogram (harim, inner chamber)",C
+,13294,U+13294,O047,O47,O-24-031,"A plan of a prehistoric building at the town of Nekhen, written as an oval, without the angled lines touching the oval.",Logogram (Hierakonpolis),C
+O48,13295,U+13295,O048,O48,O-24-048,"A plan of a prehistoric building at the town of Nekhen, written as a circle / A circle with two vertical strokes, arranged horizontally, written within it.","Logogram (time, occasion)",C
+O49,13296,U+13296,O049,O49,O-24-060,A plan of a crossroads in a village.,"Logogram (city, village)",C
+,13297,U+13297,O050,O50,O-24-054,A circular threshing floor covered with grain.,Classifier treshing floor,C
+,13298,U+13298,O050A,Ff8,O-24-052,,,L
+,13299,U+13299,O050B,Ff8A,O-24-051,"A circle, with two lines at 45 degree coming from the front of the circle.","Phono-repeater/classifier (time, occasion)",C
+O51,1329A,U+1329A,O051,O51,O-22-002,A heap of grain on a raised floor.,Logogram (granary),C
+P1,1329B,U+1329B,P001,P1,P-01-015,"A boat/ship, resembling a crescent moon, on top of a rectangle representing water, with a carrying chair (Q2) inside the boat/ship, with an oar/rudder at the back.",Classifier movement,C
+P1A,1329C,U+1329C,P001A,P1A,P-01-017,"An upside-down boat/ship, resembling a crescent moon, on top of a rectangle representing water, with a carrying chair (Q2) inside the boat/ship, with an oar/rudder at the back.","Classifier to upset, to overturn",C
+P2,1329D,U+1329D,P002,P2,P-02-018,,,C
+,1329E,U+1329E,P003,,P-01-061,"A boat/ship with a vertical prow and a stern resembling the handle of a sickle (U1), on top of a rectangle resembling water, with an oval with rounded corners in the boat/ship, with an oar/rudder at the back.",Classifier bark/boat,C
+,1329F,U+1329F,P003A,,P-01-066,,,C
+P4,132A0,U+132A0,P004,P4,P-04-005,"A fisherman's boat, on top of a rectangle representing water, with a net inside the boat, without internal detail.","Logogram (to loosen, to explain)",C
+P5,132A1,U+132A1,P005,P5,P-06-027,"A rectangular sail, on a mast of a ship with two prongs, connected by vertical lines (P6), written behind the sail.","Logogram (wind, breath, air)",C
+P6,132A2,U+132A2,P006,P6,P-07-004,"A mast of a ship with two prongs, connected by vertical lines.",Phonemogram,C
+P7,132A3,U+132A3,P007,P7,P-07-020,"A forearm, with the palm of the hand facing upwards (D36), written over a mast of a ship with two prongs, connected by vertical lines (P6).",Phonemogram,L
+P8,132A4,U+132A4,P008,P8,P-08-001,"An oar, written vertically.",Phonemogram,C
+P9,132A5,U+132A5,P009,P9,P-08-008,"A horned desert viper (Cerastes cerastes) (I9), written over an oar, written vertically (P8).",Phonemogram,L
+P10,132A6,U+132A6,P010,P10,P-09-001,An oar used for the steering of a ship (rudder).,Logogram (steering oar),C
+P11,132A7,U+132A7,P011,P11,P-10-003,A mooring post.,Classifier mooring post,C
+Q1,132A8,U+132A8,Q001,Q1,Q-01-003,A seat.,"Logogram (seat, throne, place)",C
+Q2,132A9,U+132A9,Q002,Q2,Q-01-015,A carrying chair.,Phonemogram,C
+Q3,132AA,U+132AA,Q003,Q3,Q-01-022,A stool made of reed matting.,Phonemogram,C
+Q4,132AB,U+132AB,Q004,Q4,Q-02-001,A headrest.,Classifier headrest,C
+Q5,132AC,U+132AC,Q005,Q5,Q-05-051,"A rectangular chest, with legs at the side.",Classifier box,C
+Q6,132AD,U+132AD,Q006,Q6,Q-05-034,"A rectangular coffin with a rounded lid, and upstanding sides, with legs at the side.",Classifier coffin,C
+Q7,132AE,U+132AE,Q007,Q7,Q-06-003," A brazier with a flame rising from it, flame angling towards the front.","Classifier fire, flame, heat",C
+R1,132AF,U+132AF,R001,R1,R-01-006,"A loaf of bread (X3), a flat-bottom jar with handles (W23) and a round loaf of bread (X6), arranged horizontally on an one-legged table.",Classifier altar,C
+R2,132B0,U+132B0,R002,R2,R-01-018,"A one-legged table with long upright loaves of bread, cut in halves.",Logogram (altar),C
+R1G,132B1,U+132B1,R002A,R1G,R-01-009,"Three circular items, arranged horizontally, on a one-legged table with a bowl-shaped surface.",Logogram (altar),C
+R3,132B2,U+132B2,R003,R3,R-02-009,"A round loaf of bread (X6), a tall water-jug (W14) and a loaf of bread (X3), arranged horizontally on a table with an inwards incline of the legs, with a horizontal beam connecting the legs (R3P).",Classifier festival,C
+,132B3,U+132B3,R003A,R3P,R-02-008,"A table with an inwards incline of the legs, with a horizontal beam connecting the legs.",Classifier offering table/jar-stand,C
+,132B4,U+132B4,R003B,R3PA,R-02-012,,,C
+R4,132B5,U+132B5,R004,R4,R-04-001,A loaf of bread on a reed mat.,Logogram (offering),C
+R5,132B6,U+132B6,R005,R5,R-05-001,"A censer for fumigation, written horizontally, with a forward, downward line at the front.",Classifier fumigation/censing,C
+R6,132B7,U+132B7,R006,R6,R-05-003,"A censer for fumigation, written horizontally, with a trapezoidal  shape at the front, with a backward, downward line at the back.","Logogram (to fumigate, to cense)",C
+R7,132B8,U+132B8,R007,R7,R-06-002,A bowl for incense with smoke rising from the bowl.,Logogram (incense),C
+R8,132B9,U+132B9,R008,R8,R-07-001,"A cloth wound on a pole, an emblem of divinity.",Logogram (god),C
+R9,132BA,U+132BA,R009,R9,R-07-017,"A cloth wound on a pole, an emblem of divinity (R8), on top of a bag or a sack of linen, with a tie towards the front, and a (small) loop at the back (V33).",Classifier natron,C
+R10,132BB,U+132BB,R010,R10,R-07-053,"A cloth wound on a pole, an emblem of divinity (R8), written between a butcher's block and a sandy hill slope (N29).",Logogram (necropolis),C
+,132BC,U+132BC,R010A,,R-07-033,"A cloth wound on a pole, an emblem of divinity (R8), written over a butcher's block, with the pole at the bottom of the block.",Logogram (necropolis),C
+R11,132BD,U+132BD,R011,R11,R-08-001,A column imitating a bundle of stalks tied together.,Phonemogram,C
+R12,132BE,U+132BE,R012,R12,R-09-024,A standard used for carrying religious symbols.,Classifier standard,C
+R13,132BF,U+132BF,R013,R13,G-12-116,"A falcon (G5) on a standard with a rounded top, with a feather (H6), angled forwards, attached to the standard in front of the falcon.","Logogram (west, right side)",C
+R14,132C0,U+132C0,R014,R14,R-11-017,"A feather (H6), angled forwards on top of a standard with a round top, with an short vertical line beside the main pole.",Logogram (west),C
+,132C1,U+132C1,R015,R15,R-12-014,"A spear made into a standard, with a circle on either side of the spear tip, with a loop over the standard.",Phonemogram,C
+R16,132C2,U+132C2,R016,R16,R-14-022,"Two plumes (S9), mounted symmetrically on a papyrus stalk (M13), with a band of string or fabric (V12) written over the stem.","Classifier fray, battle",C
+,132C3,U+132C3,R016A,,R-15-005,A standard resembling a lotus flower with two plumes on top.,Logogram (Nefertem),C
+R17,132C4,U+132C4,R017,R17,R-14-024,"A wig with a fillet, with a headdress consisting of two plumes (S9), on top of a pole.",Logogram (8th nome of Upper Egypt),C
+R18,132C5,U+132C5,R018,R18,R-14-007,"A wig, with a fillet, with a headdress consisting of two feathers on top of the horns of a ram (S77), on top of a vertical pole, on top of a parcel of land with irrigation ditches (N24).",Logogram (8th nome of Upper Egypt),C
+R19,132C6,U+132C6,R019,R19,R-16-001,"A sceptre with a straight shaft, a forked base, topped with the head of the Seth animal (S40), with a fillet and a backwards angled feather (H6) on top of the staff.",Logogram (Thebes),C
+R20,132C7,U+132C7,R020,R20,R-17-003,"A flower with a long stem, enclosed by the horns of a bovid, upside-down.",Logogram (Seshat (divinity)),C
+R21,132C8,U+132C8,R021,R21,R-17-002,"A flower with a long stem, enclosed by the horns of a bovid, upside-down, with two plumes (S9) on top of the horns.",Logogram (Seshat (divinity)),C
+R22,132C9,U+132C9,R022,R22,R-18-005,Two bones of a fossil squid (belemnite).,Logogram (Letopolis),C
+R23,132CA,U+132CA,R023,R23,R-18-004,"Two bones of a fossil squid (belemnite), with an extra triangular shape at each side of the circle.",Logogram (Min (divinity)),C
+R24,132CB,U+132CB,R024,R24,R-19-003,"Two bows, strung together as a package.",Logogram (Neith (divinity)),C
+R25,132CC,U+132CC,R025,R25,R-19-008,"Two bows, strung together as a package, written vertically, with internal detail in the package.",Logogram (Neith (divinity)),C
+,132CD,U+132CD,R026,,F-24-027,"A windpipe and lungs (F36), with a wide cup on each side of the lungs, from which two flowers come, one vertical, the other crossing the windpipe, to angle downwards on top of the vertical flower on the other side, with a stem of papyrus with a flowering bud between the two flowers.",Phonemogram,C
+,132CE,U+132CE,R027,,R-12-029,,Logogram (Neith (divinity)),C
+R129,132CF,U+132CF,R028,R129,R-21-001,"An emblem with a human face with cow ears, with two upward lines which curl inwards.",Logogram (Bat (7th nome of Upper Egypt)),C
+O196,132D0,U+132D0,R029,O196,O-14-010,"A snake with a coiled tail, written vertically (I114), written inside a narrow shrine or stela on a base (O195A).","Logogram (shrine, row of shrines)",C
+S1,132D1,U+132D1,S001,S1,S-01-001,The white crown of Upper Egypt.,Phonemogram,C
+S2,132D2,U+132D2,S002,S2,S-01-017,"The white crown (S1), on top of a wickerwork basket (V30).",Classifier crown,C
+,132D3,U+132D3,S002A,,S-01-014,"The white crown (S1), on top of a plan of a crossroads in a village (O49).",Logogram (Upper Egypt),C
+S3,132D4,U+132D4,S003,S3,S-02-001,The red crown of Lower Egypt.,Phonemogram,C
+S4,132D5,U+132D5,S004,S4,S-02-003,"The red crown (S3), on top of a wickerwork basket (V30).",Classifier crown,C
+S5,132D6,U+132D6,S005,S5,S-03-001,"The union of the red crown of Lower Egypt and the white crown of Upper Egypt, with the white crown worn within the red crown. (i.e., the double crown).",Classifier double crown,C
+S6,132D7,U+132D7,S006,S6,S-03-008,"The union of the red crown of Lower Egypt and the white crown of Upper Egypt, with the white crown worn within the red crown. (i.e., the double crown, S5), on top of a wickerwork basket (V30).",Classifier double crown,C
+,132D8,U+132D8,S006A,,S-02-008,"The red crown (S3), on top of a plan of a crossroads in a village (O49).",Logogram (Lower Egypt),C
+S7,132D9,U+132D9,S007,S7,S-04-001,The blue crown.,Classifier crown,C
+S8,132DA,U+132DA,S008,S8,S-07-002,The Atef crown with ram horns and a sun disk.,Logogram (Atef crown),C
+S9,132DB,U+132DB,S009,S9,S-09-017,A headdress consisting of two plumes.,Logogram (double plumes/two feather crown),C
+S10,132DC,U+132DC,S010,S10,S-10-001,"A band of cloth, used as a fillet.","Logogram (strip of cloth, fillet)",C
+S11,132DD,U+132DD,S011,S11,S-11-012,A collar of beads with ornamental terminals.,"Logogram (necklace, collar)",C
+S12,132DE,U+132DE,S012,S12,S-11-034,A collar of beads.,Logogram (gold),C
+S13,132DF,U+132DF,S013,S13,S-11-039,"A collar of beads (S12), written over a human foot and lower leg (D58).",Phonemogram,L
+S14,132E0,U+132E0,S014,S14,T-01-052,"A collar of beads (S12), written over a mace with a pear-shaped head, written vertically (T3).",Logogram (silver),L
+S14A,132E1,U+132E1,S014A,S14A,S-11-043,"A collar of beads (S12), written over a sceptre with a straight shaft, a forked base, topped with the head of the Seth animal (S40).","Logogram (white gold, fine gold, electrum)",L
+,132E2,U+132E2,S014B,,S-11-044,,,C
+S15,132E3,U+132E3,S015,S15,S-11-047,A pectoral of three glass or faïence beads.,"Logogram (faience, glass)",C
+S16,132E4,U+132E4,S016,S16,S-11-063,A pectoral consisting of a circle with three strands of glass or faïence beads.,"Logogram (faience, glass)",C
+S17,132E5,U+132E5,S017,S17,S-11-064,"A pectoral consisting of a horizontal rectangle with a loop on top, with three vertical strands of glass or faience beads, resembling ripples.","Logogram (faience, glass)",C
+,132E6,U+132E6,S017A,S17A,S-11-067,"A girdle worn by various gods, with four hanging pieces.",Phonemogram,C
+S18,132E7,U+132E7,S018,S18,S-11-074,A bead necklace with a counterweight.,Classifier necklace,C
+S19,132E8,U+132E8,S019,S19,S-12-001,"A seal, attached to a neck string, with the sting curving backwards and downwards, with a loop below the seal.",Logogram (sealbearer),C
+S20,132E9,U+132E9,S020,S20,S-12-006,"A seal, attached to a neck string.","Logogram (seal, lock, sealing)",C
+S21,132EA,U+132EA,S021,S21,S-12-011,A ring or bracelet.,"Logogram (necklace, collar)",C
+S22,132EB,U+132EB,S022,S22,S-13-001,"A shoulder knot, with loops a the top ends and ties at the bottom ends.",Phonemogram,C
+S23,132EC,U+132EC,S023,S23,S-26-014,Two pieces of cloth strung together / Two flagellums (S45) on top of/written through a cartouche in a round form (V9).,"Logogram (to unite, to assemble)",C
+S24,132ED,U+132ED,S024,S24,S-13-010,A girdle knot.,"Classifier to tie, to bind",C
+S25,132EE,U+132EE,S025,S25,S-13-014,A garment with downward curving ties at both sides.,"Classifier garment, mantle, kilt",C
+S26,132EF,U+132EF,S026,S26,S-14-001,A kilt or apron.,"Classifier kilt, royal apron",C
+,132F0,U+132F0,S026A,,S-15-062,An oval bale of cloth.,"Logogram (loincloth, garment)",C
+,132F1,U+132F1,S026B,,S-15-065,,,L
+S27,132F2,U+132F2,S027,S27,S-15-006,A horizontal strip of cloth with two fringes.,Logogram (clothing),C
+,132F3,U+132F3,S028,S28,S-15-013,"A horizontal strip of cloth with fringes, combined with a folded piece of cloth (S29).",Classifier clothing,C
+S29,132F4,U+132F4,S029,S29,S-15-019,A folded piece of cloth.,Phonemogram,C
+S30,132F5,U+132F5,S030,S30,S-15-027,"A horned desert viper (Cerastes cerastes) (I9), written over a folded piece of cloth (S29).",Phonemogram,L
+S31,132F6,U+132F6,S031,S31,S-15-024,"A sickle (U1), written over a folded piece of cloth (S29).",Phonemogram,L
+S32,132F7,U+132F7,S032,S32,S-15-055,"A rectangular piece of cloth, with sloping fringes on its front short side, without internal decoration.",Phonemogram,C
+S33,132F8,U+132F8,S033,S33,S-16-001,A sandal.,Classifier sandal,C
+S34,132F9,U+132F9,S034,S34,S-17-001,"A tie or strap, used with sandals (ankh sign).",Logogram (life),C
+S35,132FA,U+132FA,S035,S35,S-19-001,"A sun shade, made of a staff which holds feathers at the top, resembling a half circle, with internal detail.","Classifier shadow, shade",C
+,132FB,U+132FB,S035A,,S-19-002,,,L
+S36,132FC,U+132FC,S036,S36,S-20-001,"A sun shade, made of a staff which holds feathers at the top, resembling a half circle, without internal detail.","Logogram (shadow, shade)",C
+S37,132FD,U+132FD,S037,S37,S-21-002,"A one handed fan, with a handle resembling a stem of papyrus with a bud (M13).",Logogram (fan),C
+S38,132FE,U+132FE,S038,S38,S-22-001,A crook.,Phonemogram,C
+S39,132FF,U+132FF,S039,S39,S-25-021,A shepherd's crook.,Logogram (shepherd's crook),C
+S40,13300,U+13300,S040,S40,S-23-001,"A sceptre with a straight shaft, a forked base, topped with the head of the Seth animal.",Phonemogram,C
+S41,13301,U+13301,S041,S41,S-23-010,"A sceptre with a spiral shaft, a forked base, topped with the head of the Seth animal.",Classifier sceptre,C
+S42,13302,U+13302,S042,S42,S-24-001,A sceptre.,Phonemogram,C
+S43,13303,U+13303,S043,S43,S-25-001,A staff which widens towards the bottom.,Phonemogram,C
+,13304,U+13304,S044,,S-25-014,"A vertical staff, with a flagellum (S45) attached to the back.","Classifier staff, sceptre",C
+S45,13305,U+13305,S045,S45,S-26-001,"A flagellum or flail, with the stick oriented forwards.",Logogram (flagellum),C
+S56,13306,U+13306,S046,S56,S-05-001,A head-cloth.,Phonemogram,C
+T1,13307,U+13307,T001,T1,T-01-013,"A mace with cup or dish shaped head, written horizontally.",Phonemogram,C
+T2,13308,U+13308,T002,T2,T-01-001,"A mace with a pear-shaped head, written 45 degree forwards.","Classifier striking, hitting",C
+T3,13309,U+13309,T003,T3,T-01-004,"A mace with a pear-shaped head, written vertically.",Phonemogram,C
+T43,1330A,U+1330A,T003A,T43,T-01-049,"A mace with pear shaped head, written vertically (T3), on top of a sand covered mountain over the edge of the cultivated areas (N26).",Phonemogram,C
+T4,1330B,U+1330B,T004,T4,T-01-039,"A mace with pear shaped head, written vertically, with a strap around the handle, loop towards the front.",Phonemogram,C
+T5,1330C,U+1330C,T005,T5,T-01-025,"A cobra in repose (Naja haje) (I10), written over a mace with a pear-shaped head, written vertically (T3).",Phonemogram,L
+T6,1330D,U+1330D,T006,T6,T-01-032,"Two cobras in repose (Naja haje) (I10), arranged vertically, written over a mace with a pear-shaped head, written vertically (T3).",Phonemogram,L
+T7,1330E,U+1330E,T007,T7,T-03-007,An axe with a round blade and a curved handle.,"Logogram (carpenter, shipwright)",C
+T7A,1330F,U+1330F,T007A,T7A,T-03-005,"An axe with a hourglass-shaped blade, with a straight handle, written vertically.","Classifier axe, battle-axe",C
+T8,13310,U+13310,T008,T8,T-05-004,A dagger within a round tipped sheath.,Phonemogram,C
+T8A,13311,U+13311,T008A,T8A,T-05-005,A dagger with a pointed tip.,Phonemogram,C
+T9,13312,U+13312,T009,T9,T-06-001,"A bow, written horizontally, with a rectangular central section, with the tips of the bow forming a bowl-shaped loop.","Classifier bow, weapon",C
+T9A,13313,U+13313,T009A,T9A,T-06-010,"A bow, written horizontally, with a straight middle section, with the limbs forming a bowl-shaped loop.",Phonemogram,C
+T10,13314,U+13314,T010,T10,T-06-004,"A composite bow, with handle bound to the bowstring when out of use.",Logogram (bow),C
+T11,13315,U+13315,T011,T11,T-07-007,An arrow with rounded fletching.,Phonemogram,C
+T60B,13316,U+13316,T011A,,T-07-021,,,C
+T12,13317,U+13317,T012,T12,T-08-001,"A bowstring, coiled up, with a loop at the front end, and the back end angled downwards, with a loop on it.",Phonemogram,C
+T13,13318,U+13318,T013,T13,T-09-004,"Pieces of wood, lashed together with the top piece at an angle, with a loop and tie at the back.",Phono-repeater,C
+T14,13319,U+13319,T014,T14,T-09-006,"A throwing-stick, or a club used by foreign people.",Phono-repeater,C
+T15,1331A,U+1331A,T015,T15,T-09-022,"A throwing-stick, or a club used by foreign people (T14), angled backwards.",Phonemogram,C
+T16,1331B,U+1331B,T016,T16,T-10-001,"A scimitar (khopesh), written horizontally.","Classifier curved blade, scimitar",C
+T16A,1331C,U+1331C,T016A,T16A,T-10-002,"A scimitar (khopesh), written vertically, blade curving forwards, with a handle resembling a stem of papyrus with a bud (M13).","Classifier strong arm, power, strength",C
+T17,1331D,U+1331D,T017,T17,T-11-001,A chariot.,Logogram (chariot),C
+T18,1331E,U+1331E,T018,T18,T-12-002,"A shepherd's crook with a package lashed to it, with a tie above and below the package.","Logogram (follower, retainer)",C
+T19B,1331F,U+1331F,T019,T19B,T-13-004,A harpoon-head with two horizontal strokes on top and an angled stroke below a curl as point. ,Classifier bone,C
+T20,13320,U+13320,T020,T20,T-13-005,"A harpoon-head with one horizontal stroke on top, and two angled strokes as point.",Classifier harpoon,C
+T21,13321,U+13321,T021,T21,T-13-031,"An one-barbed harpoon, with handle, written horizontally.","Logogram (one, sole)",C
+T22,13322,U+13322,T022,T22,T-13-048,"A two-barbed arrowhead, with the point facing downwards.",Phonemogram,C
+T23,13323,U+13323,T023,T23,T-13-054,"A rounded two-barbed arrowhead, with the point facing downwards.",Phonemogram,C
+T24,13324,U+13324,T024,T24,T-14-011,A net used for fishing or fowling.,"Classifier catching, netting",C
+T25,13325,U+13325,T025,T25,T-15-009,"A float, made of reed, with a tie towards the front at the top.",Phonemogram,C
+T26,13326,U+13326,T026,T26,T-16-014,"A bird trap consisting of a horizontal beam and vertical beam, with two lines running from the horizontal beam to the vertical beam, crossing in the middle.","Classifier catching, netting",C
+T27,13327,U+13327,T027,T27,T-16-020,"A bird trap, with a horizontal and vertical pole, with one line running from the front of the horizontal beam to the middle of the vertical beam, and one line running from the middle of the horizontal beam to the top of the vertical beam.","Classifier weaving, woven material",C
+T28,13328,U+13328,T028,T28,T-17-002,A butcher's block.,Phonemogram,C
+T29,13329,U+13329,T029,T29,T-18-048,"A knife with a rounded blade and rounded handle (T30), written on top of a butcher's block (T28).",Logogram (place of slaughter),C
+T30,1332A,U+1332A,T030,T30,T-18-042,A knife with a rounded blade and rounded handle.,"Classifier cutting, slaughter",C
+,1332B,U+1332B,T031,T31,T-18-039,A knife sharpener with a rounded body and a loop at the back.,Phonemogram,C
+,1332C,U+1332C,T032,T32,T-18-056,"A knife sharpener with a rounded body and a loop at the back (T31), on top of legs in a walking posture, feet orientated towards the reading direction (D54)",Phonemogram,C
+S123,1332D,U+1332D,T032A,S123,S-15-032,"A knife sharpener with a rounded body and a loop at the back (T31), written over a folded piece of cloth (S29).",Phonemogram,L
+T33,1332E,U+1332E,T033,T33,T-19-004,"A knife sharpener, with a thin, curved body, and a loop at the end.",Logogram (butcher),C
+,1332F,U+1332F,T033A,,T-19-005,,,L
+T34,13330,U+13330,T034,T34,T-19-001,"A vertical slaughtering knife, with cup-shaped handle.",Classifier knife,C
+T35,13331,U+13331,T035,T35,T-19-003,"A vertical slaughtering knife, without distinct handle.",Logogram (knife),C
+,13332,U+13332,T036,,T-02-001,"A shield with a rounded top, with a loop on top, with a boss in the center of the shield.",Classifier shield,C
+U1,13333,U+13333,U001,U1,U-01-001,A sickle.,Phonemogram,C
+U2,13334,U+13334,U002,U2,U-01-003,A sickle with a more horizontal blade.,Phonemogram,C
+U3,13335,U+13335,U003,U3,U-01-004,"An eye (D4), written above the blade of a sickle (U1).","Phonemogram (in mꜣꜣ, to see)",L
+U4,13336,U+13336,U004,U4,U-01-007,"A platform with a sloping front (Aa11), written above the blade of a sickle (U1).",Phonemogram,L
+U5,13337,U+13337,U005,U5,U-01-006,"A platform with a sloping front (Aa11), written above the blade of a sickle with a more horizontal blade (U2).",Phonemogram,L
+U6,13338,U+13338,U006,U6,U-02-001,"A hoe with a rope connecting the two pieces, written at an angle.",Phonemogram,C
+,13339,U+13339,U006A,,U-02-003,,,L
+,1333A,U+1333A,U006B,,U-02-004,,,L
+U7,1333B,U+1333B,U007,U7,U-02-006,"A hoe with a rope connecting the two pieces, written horizontally.",Phonemogram,L
+U8,1333C,U+1333C,U008,U8,U-02-010,A hoe without a rope connecting the two pieces.,Phonemogram,C
+U9,1333D,U+1333D,U009,U9,U-03-008,"A grain measure, with a forward and downward line of grain coming from the front.",Classifier grain/barley,C
+U10,1333E,U+1333E,U010,U10,U-03-007,"A grain measure, with a forward and downward line of grain coming from the front, with three grains of corn, arranged horizontally (M33), above the grain measure.","Logogram (harvest, crop)",C
+U11,1333F,U+1333F,U011,U11,U-03-009,"A grain measure, with a forward and downward line of grain coming from the front, with a hook on top of the measure, resembling a crook (S38).","Logogram (bushel (a corn measure, 10 hin))",C
+U12,13340,U+13340,U012,U12,U-03-010,"A grain measure, with a forward and downward line of grain coming from the front, with a vertical human finger (D50) on top of the measure.","Logogram (bushel (a corn measure, 10 hin))",C
+U13,13341,U+13341,U013,U13,U-05-014,"A plough, with a crossbar and two vertical lines on the end of the long beam.",Classifier plough/plowed material,C
+U14,13342,U+13342,U014,U14,U-05-008,"Two branches of wood, joined at one end.",Phono-repeater,C
+U15,13343,U+13343,U015,U15,U-06-001,A sledge.,Phonemogram,C
+U16,13344,U+13344,U016,U16,U-06-005,"A sledge, with the head of a canine at the front, with a rectangle on the sledge.",Phonemogram,C
+U17,13345,U+13345,U017,U17,U-07-002,"A hoe or pick excavating a rectangular pool, with the handle angling downwards.",Phonemogram,C
+U18,13346,U+13346,U018,U18,U-07-001,"A hoe or pick excavating a rectangular pool with sloping sides (N38), with the handle angling downwards.","Logogram (to found, to establish, to hunt, to lay (a trap))",C
+U19,13347,U+13347,U019,U19,U-08-001,An adze.,Phonemogram,C
+U20,13348,U+13348,U020,U20,U-08-007,An adze without the downward curve at the end of the handle.,Phonemogram,C
+U21,13349,U+13349,U021,U21,U-08-012,"An adze, with an attached blade at the front (U19A), in a piece of wood.",Phonemogram,C
+U22,1334A,U+1334A,U022,U22,U-09-008,A chisel with a conical handle and short blade.,Phono-repeater,C
+U23,1334B,U+1334B,U023,U23,U-09-025,"A hairpin or burin, with a horizontal line above and below the oval of the pin.",Phonemogram,C
+U23A,1334C,U+1334C,U023A,U23A,U-09-026,"A hairpin or burin, without the horizontal line on the top.",Phonemogram,C
+U24,1334D,U+1334D,U024,U24,U-09-085,"A drill, with a half-circle handle, with a backward tick on top of the handle, with a forked drill-bit with a horizontal line on top of the forked drill-bit, with a short vertical stroke next to the drill, connected to the handle.",Logogram (craftsman),C
+,1334E,U+1334E,U025,U25,U-09-076,"A stoneworker's drill weighted at the top with stones, lashed together with strings.",Logogram (craft),C
+U26,1334F,U+1334F,U026,U26,U-09-088,"A drill with a truncated pyramid-shaped handle, with a round drill-bit with a horizontal line over it. ",Logogram (to open),C
+U27,13350,U+13350,U027,U27,U-09-015,"A drill for drilling holes in beads, with a rectangular handle, and a round drill bit.",Classifier to open,C
+U28,13351,U+13351,U028,U28,U-10-001,A fire-drill in a piece of wood.,Phonemogram,C
+U29,13352,U+13352,U029,U29,U-10-003,A fire-drill on top of a piece of wood.,Phonemogram,C
+U29A,13353,U+13353,U029A,U29A,U-10-006,"A spiral, winding counterclockwise away from its central point, ending at the right lower corner after about one and a half turns (Z7), written behind a fire-drill in a piece of wood (U28).",Phonemogram,L
+U30,13354,U+13354,U030,U30,U-11-005,A pottery kiln.,Phonemogram,C
+U31,13355,U+13355,U031,U31,U-20-001,A baker's raker or two crossed castanet sticks.,Classifier to restrain,C
+U32,13356,U+13356,U032,U32,U-12-001,"A pestle, inside a round-bottomed mortar.","Logogram (to pound, to crush)",C
+,13357,U+13357,U032A,,U-12-008,A pestle with a handle/tick at the front.,Phono-repeater,C
+U33,13358,U+13358,U033,U33,U-12-011,A pestle.,Phonemogram,C
+U34,13359,U+13359,U034,U34,U-13-001,A spindle.,Phonemogram,C
+U35,1335A,U+1335A,U035,U35,U-13-007,"A horned desert viper (Cerastes cerastes) (I9), written over a spindle (U34).",Phonemogram,L
+U36,1335B,U+1335B,U036,U36,U-14-001,A club used by washermen for beating laundry.,Phonemogram,C
+U37,1335C,U+1335C,U037,U37,U-15-002,A razor.,Logogram (razor),C
+U38,1335D,U+1335D,U038,U38,U-16-004,"A balance, with a plummet resembling a heart (F34).",Logogram (balance),C
+U39,1335E,U+1335E,U039,U39,U-16-033,"The pole of a balance, on a horizontal base, with a angled line on each side as support.","Classifier balance, scale",C
+U40,1335F,U+1335F,U040,U40,U-16-026,The semi-Hieratic form of a pole of a balance.,Phonemogram,C
+U41,13360,U+13360,U041,U41,U-22-001,The plummet of a balance.,Classifier plummet,C
+U116,13361,U+13361,U042,U116,U-04-001,A staff or pole with a two-pronged end piece for holding down snakes.,Logogram (staff),C
+V1,13362,U+13362,V001,V1,V-01-003,A coil of rope.,Logogram (100),C
+,13363,U+13363,V001A,,V-01-005,,200,C
+,13364,U+13364,V001B,,V-01-006,,300,C
+,13365,U+13365,V001C,,V-01-007,,400,C
+,13366,U+13366,V001D,,V-01-008,,500,C
+,13367,U+13367,V001E,,V-01-009,,600,C
+,13368,U+13368,V001F,,V-01-010,,700,C
+,13369,U+13369,V001G,,V-01-011,,800,C
+,1336A,U+1336A,V001H,,V-01-012,,900,C
+,1336B,U+1336B,V001I,,V-01-013,,500,C
+V2,1336C,U+1336C,V002,V2,V-01-019,"A horizontal line, intersected in the middle by a coil of rope (V1).","Logogram (to drag, to pull, to draw)",C
+,1336D,U+1336D,V002A,Ff6,V-01-052,"Hieroglyphic representation of the Hieratic form of a horizontal line, intersected in the middle by a coil of rope (V2).",Phonemogram,C
+V3,1336E,U+1336E,V003,V3,V-01-021,"A horizontal line, intersected in the middle by three coils of rope (V1).",Phonemogram,C
+V4,1336F,U+1336F,V004,V4,V-01-029,"A lasso, with a big loop at the front, with a tie at the front and a small loop at the back, with an upward, downward curving line behind the loop.",Phonemogram,C
+V5,13370,U+13370,V005,V5,V-01-036,"A looped rope, with two small loops at the bottom, and a small loop within a big loop above the small loops.",Logogram (foundation),C
+V6,13371,U+13371,V006,V6,V-01-041,A loop of cord with the ends upwards.,Phonemogram,C
+V7,13372,U+13372,V007,V7,V-01-045,A loop of cord with the ends downwards.,Phonemogram,C
+V60,13373,U+13373,V007A,V60,V-04-003,A folded piece of cloth.,Classifier cloth,C
+V49A,13374,U+13374,V007B,V49A,V-01-047,"A loop of cord with the ends downwards (V7), on top of a vertical line, on top of a horizontal base.",Phonemogram,C
+V8,13375,U+13375,V008,V8,V-01-048,"A half-round loaf of bread (X1), written inside a loop of cord with the ends downwards (V7).",Phonemogram,C
+V9,13376,U+13376,V009,V9,V-02-003,A cartouche in a round form.,"Logogram (to surround, to encircle)",C
+V10,13377,U+13377,V010,V10,V-03-005,An oval cartouche.,Logogram (name),C
+V11,13378,U+13378,V011,V11,V-03-017,"The rear half of a cartouche, with the opening to the back.","Classifier half, part, portion",C
+V11A,13379,U+13379,V011A,V11A,V-03-018,,,C
+,1337A,U+1337A,V011B,,V-03-019,,,C
+,1337B,U+1337B,V011C,,V-03-020,,,C
+V12,1337C,U+1337C,V012,V12,V-04-005,A band of string or fabric.,Classifier papyrus/book/document,C
+H27,1337D,U+1337D,V012A,H27,H-08-007,A feather bent forward.,Phonemogram,C
+,1337E,U+1337E,V012B,,V-04-007,"A wide band of string or fabric, with the shorter section lying on top of the larger section.",Classifier papyrus/book/document,C
+V13,1337F,U+1337F,V013,V13,V-04-011,A rope used for the tethering of animals.,Phonemogram,C
+V14,13380,U+13380,V014,V14,V-04-013,"A rope used for the tethering of animals, with an diacritic stroke added to the large loop.",Phonemogram,C
+V15,13381,U+13381,V015,V15,V-04-017,"A rope used for the tethering of animals (V13), written on top of legs in a walking posture, feet orientated towards the reading direction (D54).",Phonemogram,C
+V16,13382,U+13382,V016,V16,V-04-022,"A looped cord, used as a hobble for cattle, with two horizontal loops and eight vertical loops.",Phonemogram,C
+V17,13383,U+13383,V017,V17,V-04-026,A rolled-up herdsman's shelter of papyrus with a rectangle at either side of the loop.,Logogram (protection),C
+V18,13384,U+13384,V018,V18,V-04-030,A rolled-up herdsman's shelter of papyrus.,Logogram (protection),C
+V19,13385,U+13385,V019,V19,V-04-031,A hobble for cattle with a crossbar.,Logogram (stable),C
+V20,13386,U+13386,V020,V20,V-04-038,A hobble for cattle without a crossbar.,Logogram (10),C
+,13387,U+13387,V020A,,V-04-040,,20,C
+,13388,U+13388,V020B,,V-04-041,,30,C
+,13389,U+13389,V020C,,V-04-042,,40,C
+,1338A,U+1338A,V020D,,V-04-043,,50,C
+,1338B,U+1338B,V020E,,V-04-044,,60,C
+,1338C,U+1338C,V020F,,V-04-045,,70,C
+,1338D,U+1338D,V020G,,V-04-046,,80,C
+,1338E,U+1338E,V020H,,V-04-047,,90,C
+,1338F,U+1338F,V020I,,V-04-048,,20,C
+,13390,U+13390,V020J,,V-04-049,,30,C
+,13391,U+13391,V020K,,V-04-050,,40,C
+,13392,U+13392,V020L,,V-04-051,,50,C
+,13393,U+13393,V021,V21,V-04-055,"A cobra in repose (Naja haje) (I10), written over a hobble for cattle without a crossbar (V20).",Logogram (stable),C
+V22,13394,U+13394,V022,V22,V-05-001,A whip.,Phonemogram,C
+V23,13395,U+13395,V023,V23,V-05-002,"A whip, without internal detail.",Phonemogram,C
+V23A,13396,U+13396,V023A,V23A,V-05-003,A whip with a loop at the front.,Phonemogram,C
+V24,13397,U+13397,V024,V24,V-06-001,A string wound on a stick.,Phonemogram,C
+V25,13398,U+13398,V025,V25,V-06-002,"A string wound on a stick, with a tie sticking out at the front.",Phonemogram,C
+V26,13399,U+13399,V026,V26,V-07-001,"A double forked tool for the mending of nets, with a broad middle section.",Phonemogram,C
+V27,1339A,U+1339A,V027,V27,V-07-002,"A double forked tool for the mending of nets, with a thin middle section.",Phonemogram,C
+V28,1339B,U+1339B,V028,V28,V-08-001,"A wick of twisted flax, consisting of three loops.",Phonemogram,C
+V71,1339C,U+1339C,V028A,V71,V-08-009,"A forearm, with the palm of the hand facing upwards (D36), written over a wick of twisted flax, consisting of three loops (V28).",Phonemogram,L
+V29,1339D,U+1339D,V029,V29,V-08-032,A swab made from a hank of fiber with two loops.,Phonemogram,C
+V90,1339E,U+1339E,V029A,V90,V-08-047,"A swab made from a hank of fiber with two loops (V29), written over a wickerwork basket with a handle, orientated with the handle to the back (V31).",Phonemogram,L
+V30,1339F,U+1339F,V030,V30,V-09-001,A wickerwork basket.,Phonemogram,C
+,133A0,U+133A0,V030A,,V-09-002,,,L
+V31,133A1,U+133A1,V031,V31,V-09-009," A wickerwork basket with a handle, orientated with the handle to the back.",Phonemogram,C
+V31A,133A2,U+133A2,V031A,V31A,V-09-010," A wickerwork basket with a handle, orientated with the handle to the front.",Phonemogram,L
+V32,133A3,U+133A3,V032,V32,V-11-003,A wickerwork frail with ties.,Phonemogram,C
+V33,133A4,U+133A4,V033,V33,V-12-003,"A bag or a sack of linen, with a tie towards the front, and a (small) loop at the back.",Classifier linen,C
+,133A5,U+133A5,V033A,US1V33AEXTU,V-12-005,"An oval bag or sack with linen, without ties or loops, with three horizontal lines over the bag.","Classifier sack, bundle",C
+V34,133A6,U+133A6,V034,V34,V-12-006,"A bag or a sack of linen, with a tie towards the front, and a (small) loop at the back, with a horizontal line over the bag.",Classifier (perfume),C
+V35,133A7,U+133A7,V035,V35,V-13-001,"A bag or sack of linen, with a hollow bottom.",Logogram (linen),C
+V36,133A8,U+133A8,V036,V36,V-14-009,"A sheath or receptacle with V shaped indentation at the top, bound at the top with a tie at the backside.",Phonemogram,C
+V37,133A9,U+133A9,V037,V37,V-15-002,A fastening knot of a dress on the shoulder.,Phono-repeater,C
+F143A,133AA,U+133AA,V037A,F143A,V-15-006,"A basket-shaped bag with a tied off end at the front, resembling a loop / A uterus of a cow, tied off at the front.",Phonemogram,C
+V38,133AB,U+133AB,V038,V38,V-15-001,A bandage.,"Classifier to bandage, to wrap",C
+V39,133AC,U+133AC,V039,V39,S-18-001,"A tie or straps with a loop at the top, and a downward hanging loop at either side of the strings.",Logogram (Tit-amulet),C
+V20h,133AD,U+133AD,V040,V20h,V-04-052,,10,C
+,133AE,U+133AE,V040A,,V-04-053,,20,C
+W1,133AF,U+133AF,W001,W1,W-01-001,"A sealed ointment jar, with ties.","Classifier oil, unguent",C
+W2,133B0,U+133B0,W002,W2,W-01-002,"A sealed ointment jar, without ties.",Phonemogram,C
+W3,133B1,U+133B1,W003,W3,W-02-001,An alabaster basin with a diamond shaped inner marking.,Logogram (festival),C
+,133B2,U+133B2,W003A,,W-02-002,,,L
+W4,133B3,U+133B3,W004,W4,O-11-013,"An open booth supported by a pole (O22), on top of an alabaster basin with a diamond shaped inner marking (W3).",Logogram (festival),C
+W5,133B4,U+133B4,W005,W5,W-02-009,"A butcher's block (T28), on top of an alabaster basin with a diamond shaped inner marking (W3).",Logogram (lector priest),C
+W6,133B5,U+133B5,W006,W6,W-11-077,A flat bottom cauldron with handles and an upstanding rim.,Classifier cauldron,C
+W7,133B6,U+133B6,W007,W7,W-11-012,A granite vessel with small handles.,Classifier granite,C
+W8,133B7,U+133B7,W008,W8,W-11-119,"A low broad oval, with a triangular shape at both short ends of the oval.",Phono-repeater,C
+W9,133B8,U+133B8,W009,W9,W-03-007,"A stone jug with a large handle connecting to the rim, and a small round handle.",Phonemogram,C
+,133B9,U+133B9,W009A,W9R,W-03-008,,,L
+W10,133BA,U+133BA,W010,W10,W-04-001,A wide cup.,Phonemogram,C
+W10A,133BB,U+133BB,W010A,W10A,W-04-002,A wide cup with a spout.,Phonemogram,C
+W11,133BC,U+133BC,W011,W11,W-05-005,A ring-stand for jars.,Phonemogram,C
+W12,133BD,U+133BD,W012,W12,W-05-007,"A ring-stand for jars, with a level bottom.",Phonemogram,C
+W13,133BE,U+133BE,W013,W13,W-05-008,A red earthenware pot.,Classifier red (earthenware) vessel,C
+W14,133BF,U+133BF,W014,W14,W-06-001,A tall water pot.,Phonemogram,C
+,133C0,U+133C0,W014A,,W-06-033,,,L
+W15,133C1,U+133C1,W015,W15,W-06-018,"A tall water pot, with a forward, downward line of liquid coming from the top of the vessel.","Logogram (to be cool, to cool)",C
+W16,133C2,U+133C2,W016,W16,W-06-032,"A tall water pot with a spout at the back, with a forward, downward line of liquid coming from the top of the vessel; inside a ring-stand.",Classifier libation water,C
+W17,133C3,U+133C3,W017,W17,W-06-034,Three sealed water pots in a rack.,Phonemogram,C
+,133C4,U+133C4,W017A,US22W17BVARE,W-06-051,"A schematic representation of three sealed water pots in a rack, without horizontal line at the bottom, with the downward curving lines descending to the bottom.",Phonemogram,C
+W18,133C5,U+133C5,W018,W18,W-06-037,Four sealed water pots in a rack.,Phonemogram,C
+,133C6,U+133C6,W018A,US22W17BVARD,W-06-052,,,C
+W19,133C7,U+133C7,W019,W19,W-07-001,A milk jar in a carrying sling.,Phonemogram,C
+W20,133C8,U+133C8,W020,W20,W-07-006,"A milk jar with two horizontal lines over the jar, with a leaf covering the milk.",Classifier milk,C
+W21,133C9,U+133C9,W021,W21,W-10-007,"A twin set of conical wine jars, bound together.",Classifier wine,C
+W22,133CA,U+133CA,W022,W22,W-11-042,A beer-jug.,Logogram (beer),C
+W23,133CB,U+133CB,W023,W23,W-11-013,A flat bottom jar with handles.,Logogram (beer),C
+W24,133CC,U+133CC,W024,W24,W-11-020,A round vessel with an upstanding rim.,Phonemogram,C
+,133CD,U+133CD,W024A,,W-11-027,,,L
+W25,133CE,U+133CE,W025,W25,W-11-023,"A round vessel with an upstanding rim (W24), on top of long legs in a walking posture, feet orientated towards the reading direction.",Phonemogram,C
+X1,133CF,U+133CF,X001,X1,X-01-001,A half round loaf of bread.,Phonemogram,C
+X2,133D0,U+133D0,X002,X2,X-02-001,A loaf of bread with a horizontal line inside the bread.,Logogram (bread),C
+X3,133D1,U+133D1,X003,X3,X-03-010,"A loaf of bread, without internal detail.",Classifier bread/food,C
+X4F,133D2,U+133D2,X004,X4F,X-04-010,"A roll of bread, with a diamond in the middle.",Classifier festival,C
+,133D3,U+133D3,X004A,X4A,X-04-008,"An roll of bread, with round imprints at the var sides and in the middle.",Phonemogram,C
+,133D4,U+133D4,X004B,,X-04-011,A roll of bread without internal detail.,"Classifier bread, festival; Phonemogram t; Logogram t (bread); Phono-repeater: sn, fḳꜣ",C
+X5,133D5,U+133D5,X005,X5,X-05-001,"An horizontal oval shape, with two upward curving strokes added at the front short side.",Phono-repeater,C
+X6,133D6,U+133D6,X006,X6,X-06-007,A round loaf with a finger mark at the bottom.,"Classifier offering, cake, loaf",C
+,133D7,U+133D7,X006A,US1X6AEXTU,X-06-005,,,L
+X7,133D8,U+133D8,X007,X7,X-08-001,A half loaf of bread.,Classifier food,C
+X8,133D9,U+133D9,X008,X8,X-07-001,"A conical loaf of bread, with a triangular finger mark at the bottom.",Phonemogram,C
+,133DA,U+133DA,X008A,,X-07-002,A conical loaf of bread without internal detail.,Classifier bread,C
+Y1,133DB,U+133DB,Y001,Y1,Y-01-006,"A papyrus scroll, rolled-up, tied and sealed, written horizontally, with ties.",Classifier abstract words,C
+Y1v,133DC,U+133DC,Y001A,Y1v,Y-01-005,"A papyrus scroll, rolled-up, tied and sealed, written vertically, with ties.","Logogram (papyrus scroll, book)",L
+Y2,133DD,U+133DD,Y002,Y2,Y-01-002,"A papyrus scroll, rolled-up, tied and sealed, written horizontally.","Classifier writing, things written",C
+Y3,133DE,U+133DE,Y003,Y3,Y-02-005,"A scribe's kit, consisting of a palette, ink or paint pouch and a reed pen.",Logogram (scribe),C
+Y4,133DF,U+133DF,Y004,Y4,Y-02-003,"A scribe's kit, consisting of a palette, ink or paint pouch and reed pen, with the reed pen towards the front.",Logogram (scribe),L
+Y5,133E0,U+133E0,Y005,Y5,Y-03-002,A game board (of Senet) with game pieces.,Phonemogram,C
+Y6,133E1,U+133E1,Y006,Y6,Y-03-005,"A game piece, pawn, or draughtsman.","Classifier game, gamepiece",C
+Y7,133E2,U+133E2,Y007,Y7,Y-04-001,A rounded harp.,Classifier harp,C
+Y8,133E3,U+133E3,Y008,Y8,Y-06-016,"A sistrum, with the top piece in the form of a shrine encased by two curls.",Classifier sistrum,C
+Z1,133E4,U+133E4,Z001,Z1,Z-01-001,A vertical stroke.,Classifier semogram,C
+Z2,133E5,U+133E5,Z002,Z2,Z-01-011, Three vertical strokes in a horizontal orientation.,Classifier plural,C
+,133E6,U+133E6,Z002A,Z2D,Z-01-017,,,C
+,133E7,U+133E7,Z002B,,Z-01-012,,,C
+Z2A,133E8,U+133E8,Z002C,Z2A,Z-01-014, Three vertical strokes in a triangular orientation with one stroke a the top.,Classifier plural,C
+Z2B,133E9,U+133E9,Z002D,Z2B,Z-01-015, Three vertical strokes in a triangular orientation with one stroke a the bottom.,Classifier plural,L
+Z3,133EA,U+133EA,Z003,Z3,Z-01-002,Three vertical strokes in a vertical orientation.,Classifier plural,C
+Z3A,133EB,U+133EB,Z003A,Z3A,Z-01-018,Three horizontal strokes arranged vertically.,Classifier plural,L
+,133EC,U+133EC,Z003B,,Z-01-013,,,L
+Z4,133ED,U+133ED,Z004,Z4,Z-01-008,Two diagonal strokes arranged horizontally.,Phonemogram,C
+Z4A,133EE,U+133EE,Z004A,Z4A,Z-01-009,Two vertical strokes arranged horizontally.,Logogram (two),C
+Z5,133EF,U+133EF,Z005,Z5,Z-01-005,"A doubly curved, diagonal stroke.",Substitute for dangerous signs,C
+Z5A,133F0,U+133F0,Z005A,,Z-01-006,A diagonal stroke.,Classifier divinity (replacing G7),C
+Z6,133F1,U+133F1,Z006,Z6,Z-07-004,"A slightly inclined stroke with two smaller strokes protruding at its right lower end, the upper one being shorter than the lower of them.",Classifier death,C
+Z7,133F2,U+133F2,Z007,Z7,Z-07-005," A spiral, winding counterclockwise away from its central point, ending at the right lower corner after about one and a half turns.",Phonemogram,C
+,133F3,U+133F3,Z008,Z8,Z-06-001,A short horizontal oval.,"Classifier round, oval",C
+Z9,133F4,U+133F4,Z009,Z9,Z-02-001,A cross.,Classifier divide,C
+Z10,133F5,U+133F5,Z010,Z10,Z-02-002,"Two crossed diagonal strokes with acute angles at the left and right side, and obtuse angles at the upper and lower side. ",Classifier break,C
+Z11,133F6,U+133F6,Z011,Z11,Z-02-003,"A short horizontal stroke overlapped by a longer vertical stroke, the crossing point is in the middle of both strokes.",Phonemogram,C
+Z12,133F7,U+133F7,Z012,Z12,T-21-003,"Two short horizontal lines, arranged vertically, connected by a downward, outward sloping line. ",Phonemogram,C
+,133F8,U+133F8,Z013,US1Z13EXTU,Z-05-003,A geometrical circle.,,C
+,133F9,U+133F9,Z014,Ff1,Z-01-019,A curved diagonal stroke.,Classifier semogram,C
+,133FA,U+133FA,Z015,,Z-01-023,,"Logogram (one, sole)",C
+,133FB,U+133FB,Z015A,,Z-01-024,,Logogram (two),C
+,133FC,U+133FC,Z015B,,Z-01-025,,Logogram (three),C
+,133FD,U+133FD,Z015C,,Z-01-026,,Logogram (four),C
+,133FE,U+133FE,Z015D,,Z-01-027,,Logogram (five),C
+,133FF,U+133FF,Z015E,,Z-01-028,,Logogram (six),C
+,13400,U+13400,Z015F,,Z-01-029,,Logogram (seven),C
+,13401,U+13401,Z015G,,Z-01-030,,Logogram (eight),C
+,13402,U+13402,Z015H,,Z-01-031,,Logogram (nine),C
+,13403,U+13403,Z015I,,Z-01-032,,Logogram (five),L
+,13404,U+13404,Z016,,Z-01-034,,"Logogram (one, sole)",C
+,13405,U+13405,Z016A,,Z-01-035,,Logogram (two),C
+,13406,U+13406,Z016B,,Z-01-036,,Logogram (three),C
+,13407,U+13407,Z016C,,Z-01-037,,Logogram (four),C
+,13408,U+13408,Z016D,,Z-01-038,,Logogram (five),C
+,13409,U+13409,Z016E,,Z-01-039,,Logogram (six),C
+,1340A,U+1340A,Z016F,,Z-01-040,,Logogram (seven),C
+,1340B,U+1340B,Z016G,,Z-01-041,,Logogram ḫmn (eight)/Logogram ḫmnw (Hermopolis),C
+,1340C,U+1340C,Z016H,,Z-01-042,,Logogram (nine),C
+,1340D,U+1340D,AA001,Aa1,F-31-003,A human placenta (a circle with lines written horizontally).,Phonemogram,C
+AA2,1340E,U+1340E,AA002,Aa2,F-30-003,"A pustule or gland, or a packet of mummy bandages.",Classifier bad/evil,C
+AA3,1340F,U+1340F,AA003,Aa3,F-30-008,"A pustule or gland, with a forward, downward line of fluid issuing forth.","Classifier efflux, smell (i.e., excrement)",C
+AA4,13410,U+13410,AA004,Aa4,W-04-003,A spouted cup.,Phonemogram,C
+AA5,13411,U+13411,AA005,Aa5,P-11-008,"A part of the steering gear of ships, consisting of two beams.",Classifier oar,C
+AA6,13412,U+13412,AA006,Aa6,AA-06-001,Two pieces of cloth strung together / a line of thread being woven into a weave.,Phono-repeater,C
+AA7,13413,U+13413,AA007,Aa7,U-22-022,"A vertical tool, with an upward curved handle, with the handle towards the back.",Classifier to present,C
+,13414,U+13414,AA007A,,U-22-023,"A vertical tool, with an upward curved handle, with the handle towards the front.",Classifier to present,L
+,13415,U+13415,AA007B,Aa7B,F-19-008,,,C
+AA8,13416,U+13416,AA008,Aa8,N-12-001,A single line of irrigation canals.,"Logogram (nome, district)",C
+AA9,13417,U+13417,AA009,Aa9,Q-07-006,Part of a carrying-chair.,Classifier suffering,C
+AA10,13418,U+13418,AA010,Aa10,Y-02-017,A graver.,Classifier writing,C
+AA11,13419,U+13419,AA011,Aa11,O-24-070,A platform with a sloping front.,Phonemogram,C
+AA12,1341A,U+1341A,AA012,Aa12,O-24-072,A rectangular platform.,Phonemogram,C
+AA13,1341B,U+1341B,AA013,Aa13,F-26-017,"A representation of two ribs, top line curving downwards.",Phonemogram,C
+AA14,1341C,U+1341C,AA014,Aa14,F-26-018,"A representation of two ribs, lines curving outwards.","Logogram (side, half)",C
+AA15,1341D,U+1341D,AA015,Aa15,F-26-012,"A representation of two ribs, written parallel.",Phonemogram,C
+AA16,1341E,U+1341E,AA016,Aa16,F-26-019,"A representation of two ribs, written parallel, short form.","Logogram (side, half)",C
+AA17,1341F,U+1341F,AA017,Aa17,T-07-056,A cover of a quiver.,Phonemogram,C
+AA18,13420,U+13420,AA018,Aa18,T-07-059,A cover of a quiver with a smaller rectangle inset.,Phonemogram,C
+AA19,13421,U+13421,AA019,Aa19,V-04-033,A parabolic shape with a dot at each side.,"Classifier shrine, chapel",C
+AA20,13422,U+13422,AA020,Aa20,S-28-008,"A type of ornament, with two ties at the top.",Phonemogram,C
+AA21,13423,U+13423,AA021,Aa21,S-27-005,"An object consisting of a horizontal rectangle with a triangular indentation at the bottom, with a vertical line on top of it, connected through a triangle.","Logogram (to judge, to separate)",C
+AA22,13424,U+13424,AA022,Aa22,S-27-006,"A forearm, with the palm of the hand facing upwards (D36), written over an object consisting of a horizontal rectangle with a triangular indentation at the bottom, with a vertical line on top of it, connected through a triangle (Aa21).","Logogram (to judge, to separate)",L
+AA23,13425,U+13425,AA023,Aa23,U-18-033,"A warp, stretched between two forked poles.","Logogram (to press, to cling (to))",C
+AA24,13426,U+13426,AA024,Aa24,U-18-042,"A warp, stretched between two poles resembling cup-like shapes with upward ticks on them.","Logogram (to press, to cling (to))",C
+AA25,13427,U+13427,AA025,Aa25,AA-22-001,"A crescent moon shape written over a thin triangle, point downwards.",Phonemogram,C
+AA26,13428,U+13428,AA026,Aa26,AA-22-004,A pole with a hook at the front to which one binds an enemy.,Phonemogram,C
+AA27,13429,U+13429,AA027,Aa27,U-21-001,"A milling tool, with a long vertical stick under a circle with triangular shapes at the sides and the top.",Phonemogram,C
+AA28,1342A,U+1342A,AA028,Aa28,U-22-019,"An instrument used by bricklayers, with a triangular extension with a horizontal top at the front.",Phonemogram,C
+,1342B,U+1342B,AA029,Aa29,U-22-021,"An instrument used by bricklayers, with a round extension at the front.",Phonemogram,C
+AA30,1342C,U+1342C,AA030,Aa30,O-23-001,"An ornamental chevaux de frise on top of walls, with a circle dividing the top and base.",Logogram (ornament),C
+,1342D,U+1342D,AA031,,O-23-008,"An ornamental chevaux de frise on top of walls, with a flat base.",Logogram (ornament),C
+AA32,1342E,U+1342E,AA032,Aa32,T-06-015,"A bow, of an archaic type, with the ends towards the back.",Logogram (Nubia),C
+,1342F,U+1342F,V011D,,V-03-021,,,C

@@ -1,0 +1,190 @@
+{
+  "module": "M10.1H Automatic Archetype Number Estimation",
+  "k_range": [
+    2,
+    30
+  ],
+  "best_k": 3,
+  "best_metrics": {
+    "k": 3,
+    "silhouette": 0.469871,
+    "davies_bouldin": 0.722631,
+    "calinski_harabasz": 925.914019
+  },
+  "results": [
+    {
+      "k": 2,
+      "silhouette": 0.430719,
+      "davies_bouldin": 0.905057,
+      "calinski_harabasz": 880.190867
+    },
+    {
+      "k": 3,
+      "silhouette": 0.469871,
+      "davies_bouldin": 0.722631,
+      "calinski_harabasz": 925.914019
+    },
+    {
+      "k": 4,
+      "silhouette": 0.364596,
+      "davies_bouldin": 0.853199,
+      "calinski_harabasz": 914.831758
+    },
+    {
+      "k": 5,
+      "silhouette": 0.390005,
+      "davies_bouldin": 0.775538,
+      "calinski_harabasz": 1048.833766
+    },
+    {
+      "k": 6,
+      "silhouette": 0.366426,
+      "davies_bouldin": 0.814046,
+      "calinski_harabasz": 1072.146727
+    },
+    {
+      "k": 7,
+      "silhouette": 0.32597,
+      "davies_bouldin": 0.875311,
+      "calinski_harabasz": 1017.16248
+    },
+    {
+      "k": 8,
+      "silhouette": 0.331332,
+      "davies_bouldin": 0.859323,
+      "calinski_harabasz": 993.832472
+    },
+    {
+      "k": 9,
+      "silhouette": 0.337664,
+      "davies_bouldin": 0.866081,
+      "calinski_harabasz": 960.421389
+    },
+    {
+      "k": 10,
+      "silhouette": 0.342952,
+      "davies_bouldin": 0.878381,
+      "calinski_harabasz": 941.752134
+    },
+    {
+      "k": 11,
+      "silhouette": 0.309282,
+      "davies_bouldin": 0.917617,
+      "calinski_harabasz": 890.555177
+    },
+    {
+      "k": 12,
+      "silhouette": 0.309526,
+      "davies_bouldin": 0.927681,
+      "calinski_harabasz": 905.227948
+    },
+    {
+      "k": 13,
+      "silhouette": 0.310906,
+      "davies_bouldin": 0.998435,
+      "calinski_harabasz": 862.109657
+    },
+    {
+      "k": 14,
+      "silhouette": 0.296404,
+      "davies_bouldin": 0.941525,
+      "calinski_harabasz": 851.482303
+    },
+    {
+      "k": 15,
+      "silhouette": 0.271348,
+      "davies_bouldin": 1.044609,
+      "calinski_harabasz": 785.71322
+    },
+    {
+      "k": 16,
+      "silhouette": 0.287113,
+      "davies_bouldin": 0.978728,
+      "calinski_harabasz": 811.346613
+    },
+    {
+      "k": 17,
+      "silhouette": 0.29413,
+      "davies_bouldin": 0.931387,
+      "calinski_harabasz": 779.552065
+    },
+    {
+      "k": 18,
+      "silhouette": 0.297087,
+      "davies_bouldin": 0.927117,
+      "calinski_harabasz": 843.442556
+    },
+    {
+      "k": 19,
+      "silhouette": 0.308032,
+      "davies_bouldin": 0.899536,
+      "calinski_harabasz": 877.832767
+    },
+    {
+      "k": 20,
+      "silhouette": 0.298607,
+      "davies_bouldin": 0.954314,
+      "calinski_harabasz": 763.619521
+    },
+    {
+      "k": 21,
+      "silhouette": 0.295343,
+      "davies_bouldin": 0.946341,
+      "calinski_harabasz": 722.581001
+    },
+    {
+      "k": 22,
+      "silhouette": 0.290706,
+      "davies_bouldin": 0.956645,
+      "calinski_harabasz": 723.036907
+    },
+    {
+      "k": 23,
+      "silhouette": 0.285043,
+      "davies_bouldin": 0.967666,
+      "calinski_harabasz": 732.054229
+    },
+    {
+      "k": 24,
+      "silhouette": 0.297405,
+      "davies_bouldin": 0.937159,
+      "calinski_harabasz": 771.130179
+    },
+    {
+      "k": 25,
+      "silhouette": 0.287063,
+      "davies_bouldin": 0.951355,
+      "calinski_harabasz": 709.683887
+    },
+    {
+      "k": 26,
+      "silhouette": 0.294852,
+      "davies_bouldin": 0.980439,
+      "calinski_harabasz": 792.467908
+    },
+    {
+      "k": 27,
+      "silhouette": 0.288395,
+      "davies_bouldin": 0.949753,
+      "calinski_harabasz": 657.48964
+    },
+    {
+      "k": 28,
+      "silhouette": 0.279611,
+      "davies_bouldin": 0.952119,
+      "calinski_harabasz": 681.591904
+    },
+    {
+      "k": 29,
+      "silhouette": 0.272819,
+      "davies_bouldin": 0.961501,
+      "calinski_harabasz": 715.725116
+    },
+    {
+      "k": 30,
+      "silhouette": 0.277882,
+      "davies_bouldin": 0.975764,
+      "calinski_harabasz": 691.842019
+    }
+  ]
+}

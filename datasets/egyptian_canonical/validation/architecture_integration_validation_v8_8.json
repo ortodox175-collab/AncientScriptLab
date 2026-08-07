@@ -1,0 +1,42 @@
+{
+  "version": "V8.8",
+  "feature_ranges": {
+    "Symmetry": {
+      "min": 0.09,
+      "max": 1.0,
+      "mean": 0.47592264145658264
+    },
+    "Hierarchy": {
+      "min": 0.0,
+      "max": 0.575,
+      "mean": 0.22510553127917834
+    },
+    "Complexity": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5238265312791783
+    },
+    "Balance": {
+      "min": 0.0,
+      "max": 0.609091,
+      "mean": 0.11563642296918768
+    }
+  },
+  "compactness_mean": 0.12925065521502158,
+  "separation_mean": 0.0571445060219492,
+  "marker_distribution": {
+    "Symmetry": 17,
+    "Hierarchy": 8,
+    "Complexity": 20,
+    "Balance": 5
+  },
+  "validation": {
+    "ranges_ok": true,
+    "feature_count_ok": true,
+    "compactness_ok": true,
+    "separation_ok": true,
+    "marker_diversity_ok": true,
+    "integrity_score": 1.0,
+    "overall_status": true
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="-100 -980 986 1080"
+     width="512" height="512">
+  <g transform="scale(1,-1)">
+    <path d="M394 780Q665 755 688 486Q660 220 394 193Q128 220 101 486Q125 755 394 780ZM394 880Q23 858 0 486Q23 181 273 115H0V0H786V115H514Q764 181 786 486Q764 856 394 880Z" fill="black"/>
+  </g>
+</svg>

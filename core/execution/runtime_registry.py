@@ -1,96 +1,84 @@
 """
 AncientScriptLab
 
-Runtime Registry
+Runtime Registry (Stable M7 Hybrid)
 
-Stores runtime Algorithm objects.
+Pack-based execution registry.
 """
 
 from __future__ import annotations
 
-from typing import Dict, Iterable
+from typing import Dict, Any
 
+# Core algorithm interface
 from core.execution.algorithm import Algorithm
+
+# Feature Packs
+from core.packs.geometry_pack import GeometryPack
+from core.packs.topology_pack import TopologyPack
 
 
 class RuntimeRegistry:
+    """
+    Central registry for feature packs.
 
-    def __init__(self):
+    Architecture: Pack-based (M7 stable hybrid)
+    """
 
-        self._algorithms: Dict[str, Algorithm] = {}
+    def __init__(self) -> None:
 
-    # --------------------------------------------------
-    # Registration
-    # --------------------------------------------------
+        self._packs: Dict[str, Any] = {}
 
-    def register(
-        self,
-        algorithm: Algorithm,
-    ) -> None:
+        self._register_packs()
 
-        if algorithm.name in self._algorithms:
+    # ---------------------------------------------
+    # Pack registration
+    # ---------------------------------------------
 
-            raise ValueError(
-                f"Algorithm already registered: {algorithm.name}"
-            )
+    def _register_packs(self) -> None:
 
-        self._algorithms[algorithm.name] = algorithm
+        # Geometry Pack
+        self._packs["geometry"] = GeometryPack()
 
-    # --------------------------------------------------
-    # Lookup
-    # --------------------------------------------------
+        # Topology Pack (M7)
+        self._packs["topology"] = TopologyPack()
 
-    def exists(
-        self,
-        algorithm_name: str,
-    ) -> bool:
+    # ---------------------------------------------
+    # Public API
+    # ---------------------------------------------
 
-        return algorithm_name in self._algorithms
+    def get(self, name: str):
 
-    def get(
-        self,
-        algorithm_name: str,
-    ) -> Algorithm:
+        """
+        Access pattern:
+        - geometry.aspect_ratio
+        - topology.connected_components
+        - or direct pack access
+        """
 
-        if algorithm_name not in self._algorithms:
+        if name in self._packs:
+            return self._packs[name]
 
-            raise KeyError(
-                f"Unknown algorithm: {algorithm_name}"
-            )
+        if "." in name:
+            pack_name, feature_name = name.split(".", 1)
 
-        return self._algorithms[algorithm_name]
+            pack = self._packs.get(pack_name)
+            if not pack:
+                raise KeyError(f"Pack not found: {pack_name}")
 
-    # --------------------------------------------------
-    # Information
-    # --------------------------------------------------
+            return pack.get(feature_name)
 
-    @property
-    def algorithms(self):
+        raise KeyError(f"Feature not found: {name}")
 
-        return tuple(
-            sorted(self._algorithms.keys())
-        )
+    def list_packs(self):
 
-    def count(self):
+        return list(self._packs.keys())
 
-        return len(self._algorithms)
+    def list_features(self, pack_name: str):
 
-    def clear(self):
+        pack = self._packs.get(pack_name)
 
-        self._algorithms.clear()
+        if not pack:
+            raise KeyError(f"Pack not found: {pack_name}")
 
-    def __contains__(
-        self,
-        algorithm_name: str,
-    ):
-
-        return algorithm_name in self._algorithms
-
-    def __len__(self):
-
-        return len(self._algorithms)
-
-    def __iter__(self) -> Iterable[Algorithm]:
-
-        for name in sorted(self._algorithms.keys()):
-            yield self._algorithms[name]
+        return pack.list_features()

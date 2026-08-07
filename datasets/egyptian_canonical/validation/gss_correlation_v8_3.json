@@ -1,0 +1,56 @@
+{
+  "version": "V8.3",
+  "glyphs": 1071,
+  "summary": {
+    "Symmetry": {
+      "mean": 0.47592264145658264,
+      "min": 0.09,
+      "max": 1.0,
+      "variance": 0.025105636850140355
+    },
+    "Hierarchy": {
+      "mean": 0.22510553127917834,
+      "min": 0.0,
+      "max": 0.575,
+      "variance": 0.010688656999957705
+    },
+    "Complexity": {
+      "mean": 0.5238265312791783,
+      "min": 0.0,
+      "max": 1.0,
+      "variance": 0.06256503079910056
+    },
+    "Balance": {
+      "mean": 0.11563642296918768,
+      "min": 0.0,
+      "max": 0.609091,
+      "variance": 0.010565993800933142
+    }
+  },
+  "correlation": {
+    "Symmetry": {
+      "Symmetry": 0.9999999999999999,
+      "Hierarchy": -0.21500039820184938,
+      "Complexity": -0.1874737027571937,
+      "Balance": -0.05830749182449805
+    },
+    "Hierarchy": {
+      "Symmetry": -0.21500039820184938,
+      "Hierarchy": 0.9999999999999999,
+      "Complexity": 0.6973532179963318,
+      "Balance": 0.1708836939620927
+    },
+    "Complexity": {
+      "Symmetry": -0.1874737027571937,
+      "Hierarchy": 0.6973532179963318,
+      "Complexity": 1.0,
+      "Balance": 0.154860455911785
+    },
+    "Balance": {
+      "Symmetry": -0.05830749182449805,
+      "Hierarchy": 0.1708836939620927,
+      "Complexity": 0.154860455911785,
+      "Balance": 1.0
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "corpus": "ExampleCorpus",
+  "inscriptions": [
+    {
+      "id": "I001",
+      "source": "Synthetic example",
+      "confidence": 1.0,
+      "damaged_positions": [],
+      "signs": ["A12", "D36", "G17", "N5"]
+    },
+    {
+      "id": "I002",
+      "source": "Synthetic example",
+      "confidence": 1.0,
+      "damaged_positions": [2],
+      "signs": ["D36", "G17", "A12", "A12", "N5"]
+    }
+  ]
+}

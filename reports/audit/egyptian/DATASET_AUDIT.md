@@ -1,0 +1,1 @@
+# Egyptian dataset audit\n\n## Summary\n\n- Total images: 1072\n- File format: PNG\n- Duplicate images: 0\n- Empty images: 0\n- Corrupted images: 0\n\n## Prefix distribution\n\n- hiero: 1072\n\n## Image size distribution\n\n- 64x64: 1072\n\n## Metadata files\n\n- none detected\n

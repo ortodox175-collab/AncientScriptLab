@@ -1,0 +1,5362 @@
+[
+  {
+    "id": 0,
+    "unicode": "U+13000",
+    "character": "𓀀"
+  },
+  {
+    "id": 1,
+    "unicode": "U+13001",
+    "character": "𓀁"
+  },
+  {
+    "id": 2,
+    "unicode": "U+13002",
+    "character": "𓀂"
+  },
+  {
+    "id": 3,
+    "unicode": "U+13003",
+    "character": "𓀃"
+  },
+  {
+    "id": 4,
+    "unicode": "U+13004",
+    "character": "𓀄"
+  },
+  {
+    "id": 5,
+    "unicode": "U+13005",
+    "character": "𓀅"
+  },
+  {
+    "id": 6,
+    "unicode": "U+13006",
+    "character": "𓀆"
+  },
+  {
+    "id": 7,
+    "unicode": "U+13007",
+    "character": "𓀇"
+  },
+  {
+    "id": 8,
+    "unicode": "U+13008",
+    "character": "𓀈"
+  },
+  {
+    "id": 9,
+    "unicode": "U+13009",
+    "character": "𓀉"
+  },
+  {
+    "id": 10,
+    "unicode": "U+1300A",
+    "character": "𓀊"
+  },
+  {
+    "id": 11,
+    "unicode": "U+1300B",
+    "character": "𓀋"
+  },
+  {
+    "id": 12,
+    "unicode": "U+1300C",
+    "character": "𓀌"
+  },
+  {
+    "id": 13,
+    "unicode": "U+1300D",
+    "character": "𓀍"
+  },
+  {
+    "id": 14,
+    "unicode": "U+1300E",
+    "character": "𓀎"
+  },
+  {
+    "id": 15,
+    "unicode": "U+1300F",
+    "character": "𓀏"
+  },
+  {
+    "id": 16,
+    "unicode": "U+13010",
+    "character": "𓀐"
+  },
+  {
+    "id": 17,
+    "unicode": "U+13011",
+    "character": "𓀑"
+  },
+  {
+    "id": 18,
+    "unicode": "U+13012",
+    "character": "𓀒"
+  },
+  {
+    "id": 19,
+    "unicode": "U+13013",
+    "character": "𓀓"
+  },
+  {
+    "id": 20,
+    "unicode": "U+13014",
+    "character": "𓀔"
+  },
+  {
+    "id": 21,
+    "unicode": "U+13015",
+    "character": "𓀕"
+  },
+  {
+    "id": 22,
+    "unicode": "U+13016",
+    "character": "𓀖"
+  },
+  {
+    "id": 23,
+    "unicode": "U+13017",
+    "character": "𓀗"
+  },
+  {
+    "id": 24,
+    "unicode": "U+13018",
+    "character": "𓀘"
+  },
+  {
+    "id": 25,
+    "unicode": "U+13019",
+    "character": "𓀙"
+  },
+  {
+    "id": 26,
+    "unicode": "U+1301A",
+    "character": "𓀚"
+  },
+  {
+    "id": 27,
+    "unicode": "U+1301B",
+    "character": "𓀛"
+  },
+  {
+    "id": 28,
+    "unicode": "U+1301C",
+    "character": "𓀜"
+  },
+  {
+    "id": 29,
+    "unicode": "U+1301D",
+    "character": "𓀝"
+  },
+  {
+    "id": 30,
+    "unicode": "U+1301E",
+    "character": "𓀞"
+  },
+  {
+    "id": 31,
+    "unicode": "U+1301F",
+    "character": "𓀟"
+  },
+  {
+    "id": 32,
+    "unicode": "U+13020",
+    "character": "𓀠"
+  },
+  {
+    "id": 33,
+    "unicode": "U+13021",
+    "character": "𓀡"
+  },
+  {
+    "id": 34,
+    "unicode": "U+13022",
+    "character": "𓀢"
+  },
+  {
+    "id": 35,
+    "unicode": "U+13023",
+    "character": "𓀣"
+  },
+  {
+    "id": 36,
+    "unicode": "U+13024",
+    "character": "𓀤"
+  },
+  {
+    "id": 37,
+    "unicode": "U+13025",
+    "character": "𓀥"
+  },
+  {
+    "id": 38,
+    "unicode": "U+13026",
+    "character": "𓀦"
+  },
+  {
+    "id": 39,
+    "unicode": "U+13027",
+    "character": "𓀧"
+  },
+  {
+    "id": 40,
+    "unicode": "U+13028",
+    "character": "𓀨"
+  },
+  {
+    "id": 41,
+    "unicode": "U+13029",
+    "character": "𓀩"
+  },
+  {
+    "id": 42,
+    "unicode": "U+1302A",
+    "character": "𓀪"
+  },
+  {
+    "id": 43,
+    "unicode": "U+1302B",
+    "character": "𓀫"
+  },
+  {
+    "id": 44,
+    "unicode": "U+1302C",
+    "character": "𓀬"
+  },
+  {
+    "id": 45,
+    "unicode": "U+1302D",
+    "character": "𓀭"
+  },
+  {
+    "id": 46,
+    "unicode": "U+1302E",
+    "character": "𓀮"
+  },
+  {
+    "id": 47,
+    "unicode": "U+1302F",
+    "character": "𓀯"
+  },
+  {
+    "id": 48,
+    "unicode": "U+13030",
+    "character": "𓀰"
+  },
+  {
+    "id": 49,
+    "unicode": "U+13031",
+    "character": "𓀱"
+  },
+  {
+    "id": 50,
+    "unicode": "U+13032",
+    "character": "𓀲"
+  },
+  {
+    "id": 51,
+    "unicode": "U+13033",
+    "character": "𓀳"
+  },
+  {
+    "id": 52,
+    "unicode": "U+13034",
+    "character": "𓀴"
+  },
+  {
+    "id": 53,
+    "unicode": "U+13035",
+    "character": "𓀵"
+  },
+  {
+    "id": 54,
+    "unicode": "U+13036",
+    "character": "𓀶"
+  },
+  {
+    "id": 55,
+    "unicode": "U+13037",
+    "character": "𓀷"
+  },
+  {
+    "id": 56,
+    "unicode": "U+13038",
+    "character": "𓀸"
+  },
+  {
+    "id": 57,
+    "unicode": "U+13039",
+    "character": "𓀹"
+  },
+  {
+    "id": 58,
+    "unicode": "U+1303A",
+    "character": "𓀺"
+  },
+  {
+    "id": 59,
+    "unicode": "U+1303B",
+    "character": "𓀻"
+  },
+  {
+    "id": 60,
+    "unicode": "U+1303C",
+    "character": "𓀼"
+  },
+  {
+    "id": 61,
+    "unicode": "U+1303D",
+    "character": "𓀽"
+  },
+  {
+    "id": 62,
+    "unicode": "U+1303E",
+    "character": "𓀾"
+  },
+  {
+    "id": 63,
+    "unicode": "U+1303F",
+    "character": "𓀿"
+  },
+  {
+    "id": 64,
+    "unicode": "U+13040",
+    "character": "𓁀"
+  },
+  {
+    "id": 65,
+    "unicode": "U+13041",
+    "character": "𓁁"
+  },
+  {
+    "id": 66,
+    "unicode": "U+13042",
+    "character": "𓁂"
+  },
+  {
+    "id": 67,
+    "unicode": "U+13043",
+    "character": "𓁃"
+  },
+  {
+    "id": 68,
+    "unicode": "U+13044",
+    "character": "𓁄"
+  },
+  {
+    "id": 69,
+    "unicode": "U+13045",
+    "character": "𓁅"
+  },
+  {
+    "id": 70,
+    "unicode": "U+13046",
+    "character": "𓁆"
+  },
+  {
+    "id": 71,
+    "unicode": "U+13047",
+    "character": "𓁇"
+  },
+  {
+    "id": 72,
+    "unicode": "U+13048",
+    "character": "𓁈"
+  },
+  {
+    "id": 73,
+    "unicode": "U+13049",
+    "character": "𓁉"
+  },
+  {
+    "id": 74,
+    "unicode": "U+1304A",
+    "character": "𓁊"
+  },
+  {
+    "id": 75,
+    "unicode": "U+1304B",
+    "character": "𓁋"
+  },
+  {
+    "id": 76,
+    "unicode": "U+1304C",
+    "character": "𓁌"
+  },
+  {
+    "id": 77,
+    "unicode": "U+1304D",
+    "character": "𓁍"
+  },
+  {
+    "id": 78,
+    "unicode": "U+1304E",
+    "character": "𓁎"
+  },
+  {
+    "id": 79,
+    "unicode": "U+1304F",
+    "character": "𓁏"
+  },
+  {
+    "id": 80,
+    "unicode": "U+13050",
+    "character": "𓁐"
+  },
+  {
+    "id": 81,
+    "unicode": "U+13051",
+    "character": "𓁑"
+  },
+  {
+    "id": 82,
+    "unicode": "U+13052",
+    "character": "𓁒"
+  },
+  {
+    "id": 83,
+    "unicode": "U+13053",
+    "character": "𓁓"
+  },
+  {
+    "id": 84,
+    "unicode": "U+13054",
+    "character": "𓁔"
+  },
+  {
+    "id": 85,
+    "unicode": "U+13055",
+    "character": "𓁕"
+  },
+  {
+    "id": 86,
+    "unicode": "U+13056",
+    "character": "𓁖"
+  },
+  {
+    "id": 87,
+    "unicode": "U+13057",
+    "character": "𓁗"
+  },
+  {
+    "id": 88,
+    "unicode": "U+13058",
+    "character": "𓁘"
+  },
+  {
+    "id": 89,
+    "unicode": "U+13059",
+    "character": "𓁙"
+  },
+  {
+    "id": 90,
+    "unicode": "U+1305A",
+    "character": "𓁚"
+  },
+  {
+    "id": 91,
+    "unicode": "U+1305B",
+    "character": "𓁛"
+  },
+  {
+    "id": 92,
+    "unicode": "U+1305C",
+    "character": "𓁜"
+  },
+  {
+    "id": 93,
+    "unicode": "U+1305D",
+    "character": "𓁝"
+  },
+  {
+    "id": 94,
+    "unicode": "U+1305E",
+    "character": "𓁞"
+  },
+  {
+    "id": 95,
+    "unicode": "U+1305F",
+    "character": "𓁟"
+  },
+  {
+    "id": 96,
+    "unicode": "U+13060",
+    "character": "𓁠"
+  },
+  {
+    "id": 97,
+    "unicode": "U+13061",
+    "character": "𓁡"
+  },
+  {
+    "id": 98,
+    "unicode": "U+13062",
+    "character": "𓁢"
+  },
+  {
+    "id": 99,
+    "unicode": "U+13063",
+    "character": "𓁣"
+  },
+  {
+    "id": 100,
+    "unicode": "U+13064",
+    "character": "𓁤"
+  },
+  {
+    "id": 101,
+    "unicode": "U+13065",
+    "character": "𓁥"
+  },
+  {
+    "id": 102,
+    "unicode": "U+13066",
+    "character": "𓁦"
+  },
+  {
+    "id": 103,
+    "unicode": "U+13067",
+    "character": "𓁧"
+  },
+  {
+    "id": 104,
+    "unicode": "U+13068",
+    "character": "𓁨"
+  },
+  {
+    "id": 105,
+    "unicode": "U+13069",
+    "character": "𓁩"
+  },
+  {
+    "id": 106,
+    "unicode": "U+1306A",
+    "character": "𓁪"
+  },
+  {
+    "id": 107,
+    "unicode": "U+1306B",
+    "character": "𓁫"
+  },
+  {
+    "id": 108,
+    "unicode": "U+1306C",
+    "character": "𓁬"
+  },
+  {
+    "id": 109,
+    "unicode": "U+1306D",
+    "character": "𓁭"
+  },
+  {
+    "id": 110,
+    "unicode": "U+1306E",
+    "character": "𓁮"
+  },
+  {
+    "id": 111,
+    "unicode": "U+1306F",
+    "character": "𓁯"
+  },
+  {
+    "id": 112,
+    "unicode": "U+13070",
+    "character": "𓁰"
+  },
+  {
+    "id": 113,
+    "unicode": "U+13071",
+    "character": "𓁱"
+  },
+  {
+    "id": 114,
+    "unicode": "U+13072",
+    "character": "𓁲"
+  },
+  {
+    "id": 115,
+    "unicode": "U+13073",
+    "character": "𓁳"
+  },
+  {
+    "id": 116,
+    "unicode": "U+13074",
+    "character": "𓁴"
+  },
+  {
+    "id": 117,
+    "unicode": "U+13075",
+    "character": "𓁵"
+  },
+  {
+    "id": 118,
+    "unicode": "U+13076",
+    "character": "𓁶"
+  },
+  {
+    "id": 119,
+    "unicode": "U+13077",
+    "character": "𓁷"
+  },
+  {
+    "id": 120,
+    "unicode": "U+13078",
+    "character": "𓁸"
+  },
+  {
+    "id": 121,
+    "unicode": "U+13079",
+    "character": "𓁹"
+  },
+  {
+    "id": 122,
+    "unicode": "U+1307A",
+    "character": "𓁺"
+  },
+  {
+    "id": 123,
+    "unicode": "U+1307B",
+    "character": "𓁻"
+  },
+  {
+    "id": 124,
+    "unicode": "U+1307C",
+    "character": "𓁼"
+  },
+  {
+    "id": 125,
+    "unicode": "U+1307D",
+    "character": "𓁽"
+  },
+  {
+    "id": 126,
+    "unicode": "U+1307E",
+    "character": "𓁾"
+  },
+  {
+    "id": 127,
+    "unicode": "U+1307F",
+    "character": "𓁿"
+  },
+  {
+    "id": 128,
+    "unicode": "U+13080",
+    "character": "𓂀"
+  },
+  {
+    "id": 129,
+    "unicode": "U+13081",
+    "character": "𓂁"
+  },
+  {
+    "id": 130,
+    "unicode": "U+13082",
+    "character": "𓂂"
+  },
+  {
+    "id": 131,
+    "unicode": "U+13083",
+    "character": "𓂃"
+  },
+  {
+    "id": 132,
+    "unicode": "U+13084",
+    "character": "𓂄"
+  },
+  {
+    "id": 133,
+    "unicode": "U+13085",
+    "character": "𓂅"
+  },
+  {
+    "id": 134,
+    "unicode": "U+13086",
+    "character": "𓂆"
+  },
+  {
+    "id": 135,
+    "unicode": "U+13087",
+    "character": "𓂇"
+  },
+  {
+    "id": 136,
+    "unicode": "U+13088",
+    "character": "𓂈"
+  },
+  {
+    "id": 137,
+    "unicode": "U+13089",
+    "character": "𓂉"
+  },
+  {
+    "id": 138,
+    "unicode": "U+1308A",
+    "character": "𓂊"
+  },
+  {
+    "id": 139,
+    "unicode": "U+1308B",
+    "character": "𓂋"
+  },
+  {
+    "id": 140,
+    "unicode": "U+1308C",
+    "character": "𓂌"
+  },
+  {
+    "id": 141,
+    "unicode": "U+1308D",
+    "character": "𓂍"
+  },
+  {
+    "id": 142,
+    "unicode": "U+1308E",
+    "character": "𓂎"
+  },
+  {
+    "id": 143,
+    "unicode": "U+1308F",
+    "character": "𓂏"
+  },
+  {
+    "id": 144,
+    "unicode": "U+13090",
+    "character": "𓂐"
+  },
+  {
+    "id": 145,
+    "unicode": "U+13091",
+    "character": "𓂑"
+  },
+  {
+    "id": 146,
+    "unicode": "U+13092",
+    "character": "𓂒"
+  },
+  {
+    "id": 147,
+    "unicode": "U+13093",
+    "character": "𓂓"
+  },
+  {
+    "id": 148,
+    "unicode": "U+13094",
+    "character": "𓂔"
+  },
+  {
+    "id": 149,
+    "unicode": "U+13095",
+    "character": "𓂕"
+  },
+  {
+    "id": 150,
+    "unicode": "U+13096",
+    "character": "𓂖"
+  },
+  {
+    "id": 151,
+    "unicode": "U+13097",
+    "character": "𓂗"
+  },
+  {
+    "id": 152,
+    "unicode": "U+13098",
+    "character": "𓂘"
+  },
+  {
+    "id": 153,
+    "unicode": "U+13099",
+    "character": "𓂙"
+  },
+  {
+    "id": 154,
+    "unicode": "U+1309A",
+    "character": "𓂚"
+  },
+  {
+    "id": 155,
+    "unicode": "U+1309B",
+    "character": "𓂛"
+  },
+  {
+    "id": 156,
+    "unicode": "U+1309C",
+    "character": "𓂜"
+  },
+  {
+    "id": 157,
+    "unicode": "U+1309D",
+    "character": "𓂝"
+  },
+  {
+    "id": 158,
+    "unicode": "U+1309E",
+    "character": "𓂞"
+  },
+  {
+    "id": 159,
+    "unicode": "U+1309F",
+    "character": "𓂟"
+  },
+  {
+    "id": 160,
+    "unicode": "U+130A0",
+    "character": "𓂠"
+  },
+  {
+    "id": 161,
+    "unicode": "U+130A1",
+    "character": "𓂡"
+  },
+  {
+    "id": 162,
+    "unicode": "U+130A2",
+    "character": "𓂢"
+  },
+  {
+    "id": 163,
+    "unicode": "U+130A3",
+    "character": "𓂣"
+  },
+  {
+    "id": 164,
+    "unicode": "U+130A4",
+    "character": "𓂤"
+  },
+  {
+    "id": 165,
+    "unicode": "U+130A5",
+    "character": "𓂥"
+  },
+  {
+    "id": 166,
+    "unicode": "U+130A6",
+    "character": "𓂦"
+  },
+  {
+    "id": 167,
+    "unicode": "U+130A7",
+    "character": "𓂧"
+  },
+  {
+    "id": 168,
+    "unicode": "U+130A8",
+    "character": "𓂨"
+  },
+  {
+    "id": 169,
+    "unicode": "U+130A9",
+    "character": "𓂩"
+  },
+  {
+    "id": 170,
+    "unicode": "U+130AA",
+    "character": "𓂪"
+  },
+  {
+    "id": 171,
+    "unicode": "U+130AB",
+    "character": "𓂫"
+  },
+  {
+    "id": 172,
+    "unicode": "U+130AC",
+    "character": "𓂬"
+  },
+  {
+    "id": 173,
+    "unicode": "U+130AD",
+    "character": "𓂭"
+  },
+  {
+    "id": 174,
+    "unicode": "U+130AE",
+    "character": "𓂮"
+  },
+  {
+    "id": 175,
+    "unicode": "U+130AF",
+    "character": "𓂯"
+  },
+  {
+    "id": 176,
+    "unicode": "U+130B0",
+    "character": "𓂰"
+  },
+  {
+    "id": 177,
+    "unicode": "U+130B1",
+    "character": "𓂱"
+  },
+  {
+    "id": 178,
+    "unicode": "U+130B2",
+    "character": "𓂲"
+  },
+  {
+    "id": 179,
+    "unicode": "U+130B3",
+    "character": "𓂳"
+  },
+  {
+    "id": 180,
+    "unicode": "U+130B4",
+    "character": "𓂴"
+  },
+  {
+    "id": 181,
+    "unicode": "U+130B5",
+    "character": "𓂵"
+  },
+  {
+    "id": 182,
+    "unicode": "U+130B6",
+    "character": "𓂶"
+  },
+  {
+    "id": 183,
+    "unicode": "U+130B7",
+    "character": "𓂷"
+  },
+  {
+    "id": 184,
+    "unicode": "U+130B8",
+    "character": "𓂸"
+  },
+  {
+    "id": 185,
+    "unicode": "U+130B9",
+    "character": "𓂹"
+  },
+  {
+    "id": 186,
+    "unicode": "U+130BA",
+    "character": "𓂺"
+  },
+  {
+    "id": 187,
+    "unicode": "U+130BB",
+    "character": "𓂻"
+  },
+  {
+    "id": 188,
+    "unicode": "U+130BC",
+    "character": "𓂼"
+  },
+  {
+    "id": 189,
+    "unicode": "U+130BD",
+    "character": "𓂽"
+  },
+  {
+    "id": 190,
+    "unicode": "U+130BE",
+    "character": "𓂾"
+  },
+  {
+    "id": 191,
+    "unicode": "U+130BF",
+    "character": "𓂿"
+  },
+  {
+    "id": 192,
+    "unicode": "U+130C0",
+    "character": "𓃀"
+  },
+  {
+    "id": 193,
+    "unicode": "U+130C1",
+    "character": "𓃁"
+  },
+  {
+    "id": 194,
+    "unicode": "U+130C2",
+    "character": "𓃂"
+  },
+  {
+    "id": 195,
+    "unicode": "U+130C3",
+    "character": "𓃃"
+  },
+  {
+    "id": 196,
+    "unicode": "U+130C4",
+    "character": "𓃄"
+  },
+  {
+    "id": 197,
+    "unicode": "U+130C5",
+    "character": "𓃅"
+  },
+  {
+    "id": 198,
+    "unicode": "U+130C6",
+    "character": "𓃆"
+  },
+  {
+    "id": 199,
+    "unicode": "U+130C7",
+    "character": "𓃇"
+  },
+  {
+    "id": 200,
+    "unicode": "U+130C8",
+    "character": "𓃈"
+  },
+  {
+    "id": 201,
+    "unicode": "U+130C9",
+    "character": "𓃉"
+  },
+  {
+    "id": 202,
+    "unicode": "U+130CA",
+    "character": "𓃊"
+  },
+  {
+    "id": 203,
+    "unicode": "U+130CB",
+    "character": "𓃋"
+  },
+  {
+    "id": 204,
+    "unicode": "U+130CC",
+    "character": "𓃌"
+  },
+  {
+    "id": 205,
+    "unicode": "U+130CD",
+    "character": "𓃍"
+  },
+  {
+    "id": 206,
+    "unicode": "U+130CE",
+    "character": "𓃎"
+  },
+  {
+    "id": 207,
+    "unicode": "U+130CF",
+    "character": "𓃏"
+  },
+  {
+    "id": 208,
+    "unicode": "U+130D0",
+    "character": "𓃐"
+  },
+  {
+    "id": 209,
+    "unicode": "U+130D1",
+    "character": "𓃑"
+  },
+  {
+    "id": 210,
+    "unicode": "U+130D2",
+    "character": "𓃒"
+  },
+  {
+    "id": 211,
+    "unicode": "U+130D3",
+    "character": "𓃓"
+  },
+  {
+    "id": 212,
+    "unicode": "U+130D4",
+    "character": "𓃔"
+  },
+  {
+    "id": 213,
+    "unicode": "U+130D5",
+    "character": "𓃕"
+  },
+  {
+    "id": 214,
+    "unicode": "U+130D6",
+    "character": "𓃖"
+  },
+  {
+    "id": 215,
+    "unicode": "U+130D7",
+    "character": "𓃗"
+  },
+  {
+    "id": 216,
+    "unicode": "U+130D8",
+    "character": "𓃘"
+  },
+  {
+    "id": 217,
+    "unicode": "U+130D9",
+    "character": "𓃙"
+  },
+  {
+    "id": 218,
+    "unicode": "U+130DA",
+    "character": "𓃚"
+  },
+  {
+    "id": 219,
+    "unicode": "U+130DB",
+    "character": "𓃛"
+  },
+  {
+    "id": 220,
+    "unicode": "U+130DC",
+    "character": "𓃜"
+  },
+  {
+    "id": 221,
+    "unicode": "U+130DD",
+    "character": "𓃝"
+  },
+  {
+    "id": 222,
+    "unicode": "U+130DE",
+    "character": "𓃞"
+  },
+  {
+    "id": 223,
+    "unicode": "U+130DF",
+    "character": "𓃟"
+  },
+  {
+    "id": 224,
+    "unicode": "U+130E0",
+    "character": "𓃠"
+  },
+  {
+    "id": 225,
+    "unicode": "U+130E1",
+    "character": "𓃡"
+  },
+  {
+    "id": 226,
+    "unicode": "U+130E2",
+    "character": "𓃢"
+  },
+  {
+    "id": 227,
+    "unicode": "U+130E3",
+    "character": "𓃣"
+  },
+  {
+    "id": 228,
+    "unicode": "U+130E4",
+    "character": "𓃤"
+  },
+  {
+    "id": 229,
+    "unicode": "U+130E5",
+    "character": "𓃥"
+  },
+  {
+    "id": 230,
+    "unicode": "U+130E6",
+    "character": "𓃦"
+  },
+  {
+    "id": 231,
+    "unicode": "U+130E7",
+    "character": "𓃧"
+  },
+  {
+    "id": 232,
+    "unicode": "U+130E8",
+    "character": "𓃨"
+  },
+  {
+    "id": 233,
+    "unicode": "U+130E9",
+    "character": "𓃩"
+  },
+  {
+    "id": 234,
+    "unicode": "U+130EA",
+    "character": "𓃪"
+  },
+  {
+    "id": 235,
+    "unicode": "U+130EB",
+    "character": "𓃫"
+  },
+  {
+    "id": 236,
+    "unicode": "U+130EC",
+    "character": "𓃬"
+  },
+  {
+    "id": 237,
+    "unicode": "U+130ED",
+    "character": "𓃭"
+  },
+  {
+    "id": 238,
+    "unicode": "U+130EE",
+    "character": "𓃮"
+  },
+  {
+    "id": 239,
+    "unicode": "U+130EF",
+    "character": "𓃯"
+  },
+  {
+    "id": 240,
+    "unicode": "U+130F0",
+    "character": "𓃰"
+  },
+  {
+    "id": 241,
+    "unicode": "U+130F1",
+    "character": "𓃱"
+  },
+  {
+    "id": 242,
+    "unicode": "U+130F2",
+    "character": "𓃲"
+  },
+  {
+    "id": 243,
+    "unicode": "U+130F3",
+    "character": "𓃳"
+  },
+  {
+    "id": 244,
+    "unicode": "U+130F4",
+    "character": "𓃴"
+  },
+  {
+    "id": 245,
+    "unicode": "U+130F5",
+    "character": "𓃵"
+  },
+  {
+    "id": 246,
+    "unicode": "U+130F6",
+    "character": "𓃶"
+  },
+  {
+    "id": 247,
+    "unicode": "U+130F7",
+    "character": "𓃷"
+  },
+  {
+    "id": 248,
+    "unicode": "U+130F8",
+    "character": "𓃸"
+  },
+  {
+    "id": 249,
+    "unicode": "U+130F9",
+    "character": "𓃹"
+  },
+  {
+    "id": 250,
+    "unicode": "U+130FA",
+    "character": "𓃺"
+  },
+  {
+    "id": 251,
+    "unicode": "U+130FB",
+    "character": "𓃻"
+  },
+  {
+    "id": 252,
+    "unicode": "U+130FC",
+    "character": "𓃼"
+  },
+  {
+    "id": 253,
+    "unicode": "U+130FD",
+    "character": "𓃽"
+  },
+  {
+    "id": 254,
+    "unicode": "U+130FE",
+    "character": "𓃾"
+  },
+  {
+    "id": 255,
+    "unicode": "U+130FF",
+    "character": "𓃿"
+  },
+  {
+    "id": 256,
+    "unicode": "U+13100",
+    "character": "𓄀"
+  },
+  {
+    "id": 257,
+    "unicode": "U+13101",
+    "character": "𓄁"
+  },
+  {
+    "id": 258,
+    "unicode": "U+13102",
+    "character": "𓄂"
+  },
+  {
+    "id": 259,
+    "unicode": "U+13103",
+    "character": "𓄃"
+  },
+  {
+    "id": 260,
+    "unicode": "U+13104",
+    "character": "𓄄"
+  },
+  {
+    "id": 261,
+    "unicode": "U+13105",
+    "character": "𓄅"
+  },
+  {
+    "id": 262,
+    "unicode": "U+13106",
+    "character": "𓄆"
+  },
+  {
+    "id": 263,
+    "unicode": "U+13107",
+    "character": "𓄇"
+  },
+  {
+    "id": 264,
+    "unicode": "U+13108",
+    "character": "𓄈"
+  },
+  {
+    "id": 265,
+    "unicode": "U+13109",
+    "character": "𓄉"
+  },
+  {
+    "id": 266,
+    "unicode": "U+1310A",
+    "character": "𓄊"
+  },
+  {
+    "id": 267,
+    "unicode": "U+1310B",
+    "character": "𓄋"
+  },
+  {
+    "id": 268,
+    "unicode": "U+1310C",
+    "character": "𓄌"
+  },
+  {
+    "id": 269,
+    "unicode": "U+1310D",
+    "character": "𓄍"
+  },
+  {
+    "id": 270,
+    "unicode": "U+1310E",
+    "character": "𓄎"
+  },
+  {
+    "id": 271,
+    "unicode": "U+1310F",
+    "character": "𓄏"
+  },
+  {
+    "id": 272,
+    "unicode": "U+13110",
+    "character": "𓄐"
+  },
+  {
+    "id": 273,
+    "unicode": "U+13111",
+    "character": "𓄑"
+  },
+  {
+    "id": 274,
+    "unicode": "U+13112",
+    "character": "𓄒"
+  },
+  {
+    "id": 275,
+    "unicode": "U+13113",
+    "character": "𓄓"
+  },
+  {
+    "id": 276,
+    "unicode": "U+13114",
+    "character": "𓄔"
+  },
+  {
+    "id": 277,
+    "unicode": "U+13115",
+    "character": "𓄕"
+  },
+  {
+    "id": 278,
+    "unicode": "U+13116",
+    "character": "𓄖"
+  },
+  {
+    "id": 279,
+    "unicode": "U+13117",
+    "character": "𓄗"
+  },
+  {
+    "id": 280,
+    "unicode": "U+13118",
+    "character": "𓄘"
+  },
+  {
+    "id": 281,
+    "unicode": "U+13119",
+    "character": "𓄙"
+  },
+  {
+    "id": 282,
+    "unicode": "U+1311A",
+    "character": "𓄚"
+  },
+  {
+    "id": 283,
+    "unicode": "U+1311B",
+    "character": "𓄛"
+  },
+  {
+    "id": 284,
+    "unicode": "U+1311C",
+    "character": "𓄜"
+  },
+  {
+    "id": 285,
+    "unicode": "U+1311D",
+    "character": "𓄝"
+  },
+  {
+    "id": 286,
+    "unicode": "U+1311E",
+    "character": "𓄞"
+  },
+  {
+    "id": 287,
+    "unicode": "U+1311F",
+    "character": "𓄟"
+  },
+  {
+    "id": 288,
+    "unicode": "U+13120",
+    "character": "𓄠"
+  },
+  {
+    "id": 289,
+    "unicode": "U+13121",
+    "character": "𓄡"
+  },
+  {
+    "id": 290,
+    "unicode": "U+13122",
+    "character": "𓄢"
+  },
+  {
+    "id": 291,
+    "unicode": "U+13123",
+    "character": "𓄣"
+  },
+  {
+    "id": 292,
+    "unicode": "U+13124",
+    "character": "𓄤"
+  },
+  {
+    "id": 293,
+    "unicode": "U+13125",
+    "character": "𓄥"
+  },
+  {
+    "id": 294,
+    "unicode": "U+13126",
+    "character": "𓄦"
+  },
+  {
+    "id": 295,
+    "unicode": "U+13127",
+    "character": "𓄧"
+  },
+  {
+    "id": 296,
+    "unicode": "U+13128",
+    "character": "𓄨"
+  },
+  {
+    "id": 297,
+    "unicode": "U+13129",
+    "character": "𓄩"
+  },
+  {
+    "id": 298,
+    "unicode": "U+1312A",
+    "character": "𓄪"
+  },
+  {
+    "id": 299,
+    "unicode": "U+1312B",
+    "character": "𓄫"
+  },
+  {
+    "id": 300,
+    "unicode": "U+1312C",
+    "character": "𓄬"
+  },
+  {
+    "id": 301,
+    "unicode": "U+1312D",
+    "character": "𓄭"
+  },
+  {
+    "id": 302,
+    "unicode": "U+1312E",
+    "character": "𓄮"
+  },
+  {
+    "id": 303,
+    "unicode": "U+1312F",
+    "character": "𓄯"
+  },
+  {
+    "id": 304,
+    "unicode": "U+13130",
+    "character": "𓄰"
+  },
+  {
+    "id": 305,
+    "unicode": "U+13131",
+    "character": "𓄱"
+  },
+  {
+    "id": 306,
+    "unicode": "U+13132",
+    "character": "𓄲"
+  },
+  {
+    "id": 307,
+    "unicode": "U+13133",
+    "character": "𓄳"
+  },
+  {
+    "id": 308,
+    "unicode": "U+13134",
+    "character": "𓄴"
+  },
+  {
+    "id": 309,
+    "unicode": "U+13135",
+    "character": "𓄵"
+  },
+  {
+    "id": 310,
+    "unicode": "U+13136",
+    "character": "𓄶"
+  },
+  {
+    "id": 311,
+    "unicode": "U+13137",
+    "character": "𓄷"
+  },
+  {
+    "id": 312,
+    "unicode": "U+13138",
+    "character": "𓄸"
+  },
+  {
+    "id": 313,
+    "unicode": "U+13139",
+    "character": "𓄹"
+  },
+  {
+    "id": 314,
+    "unicode": "U+1313A",
+    "character": "𓄺"
+  },
+  {
+    "id": 315,
+    "unicode": "U+1313B",
+    "character": "𓄻"
+  },
+  {
+    "id": 316,
+    "unicode": "U+1313C",
+    "character": "𓄼"
+  },
+  {
+    "id": 317,
+    "unicode": "U+1313D",
+    "character": "𓄽"
+  },
+  {
+    "id": 318,
+    "unicode": "U+1313E",
+    "character": "𓄾"
+  },
+  {
+    "id": 319,
+    "unicode": "U+1313F",
+    "character": "𓄿"
+  },
+  {
+    "id": 320,
+    "unicode": "U+13140",
+    "character": "𓅀"
+  },
+  {
+    "id": 321,
+    "unicode": "U+13141",
+    "character": "𓅁"
+  },
+  {
+    "id": 322,
+    "unicode": "U+13142",
+    "character": "𓅂"
+  },
+  {
+    "id": 323,
+    "unicode": "U+13143",
+    "character": "𓅃"
+  },
+  {
+    "id": 324,
+    "unicode": "U+13144",
+    "character": "𓅄"
+  },
+  {
+    "id": 325,
+    "unicode": "U+13145",
+    "character": "𓅅"
+  },
+  {
+    "id": 326,
+    "unicode": "U+13146",
+    "character": "𓅆"
+  },
+  {
+    "id": 327,
+    "unicode": "U+13147",
+    "character": "𓅇"
+  },
+  {
+    "id": 328,
+    "unicode": "U+13148",
+    "character": "𓅈"
+  },
+  {
+    "id": 329,
+    "unicode": "U+13149",
+    "character": "𓅉"
+  },
+  {
+    "id": 330,
+    "unicode": "U+1314A",
+    "character": "𓅊"
+  },
+  {
+    "id": 331,
+    "unicode": "U+1314B",
+    "character": "𓅋"
+  },
+  {
+    "id": 332,
+    "unicode": "U+1314C",
+    "character": "𓅌"
+  },
+  {
+    "id": 333,
+    "unicode": "U+1314D",
+    "character": "𓅍"
+  },
+  {
+    "id": 334,
+    "unicode": "U+1314E",
+    "character": "𓅎"
+  },
+  {
+    "id": 335,
+    "unicode": "U+1314F",
+    "character": "𓅏"
+  },
+  {
+    "id": 336,
+    "unicode": "U+13150",
+    "character": "𓅐"
+  },
+  {
+    "id": 337,
+    "unicode": "U+13151",
+    "character": "𓅑"
+  },
+  {
+    "id": 338,
+    "unicode": "U+13152",
+    "character": "𓅒"
+  },
+  {
+    "id": 339,
+    "unicode": "U+13153",
+    "character": "𓅓"
+  },
+  {
+    "id": 340,
+    "unicode": "U+13154",
+    "character": "𓅔"
+  },
+  {
+    "id": 341,
+    "unicode": "U+13155",
+    "character": "𓅕"
+  },
+  {
+    "id": 342,
+    "unicode": "U+13156",
+    "character": "𓅖"
+  },
+  {
+    "id": 343,
+    "unicode": "U+13157",
+    "character": "𓅗"
+  },
+  {
+    "id": 344,
+    "unicode": "U+13158",
+    "character": "𓅘"
+  },
+  {
+    "id": 345,
+    "unicode": "U+13159",
+    "character": "𓅙"
+  },
+  {
+    "id": 346,
+    "unicode": "U+1315A",
+    "character": "𓅚"
+  },
+  {
+    "id": 347,
+    "unicode": "U+1315B",
+    "character": "𓅛"
+  },
+  {
+    "id": 348,
+    "unicode": "U+1315C",
+    "character": "𓅜"
+  },
+  {
+    "id": 349,
+    "unicode": "U+1315D",
+    "character": "𓅝"
+  },
+  {
+    "id": 350,
+    "unicode": "U+1315E",
+    "character": "𓅞"
+  },
+  {
+    "id": 351,
+    "unicode": "U+1315F",
+    "character": "𓅟"
+  },
+  {
+    "id": 352,
+    "unicode": "U+13160",
+    "character": "𓅠"
+  },
+  {
+    "id": 353,
+    "unicode": "U+13161",
+    "character": "𓅡"
+  },
+  {
+    "id": 354,
+    "unicode": "U+13162",
+    "character": "𓅢"
+  },
+  {
+    "id": 355,
+    "unicode": "U+13163",
+    "character": "𓅣"
+  },
+  {
+    "id": 356,
+    "unicode": "U+13164",
+    "character": "𓅤"
+  },
+  {
+    "id": 357,
+    "unicode": "U+13165",
+    "character": "𓅥"
+  },
+  {
+    "id": 358,
+    "unicode": "U+13166",
+    "character": "𓅦"
+  },
+  {
+    "id": 359,
+    "unicode": "U+13167",
+    "character": "𓅧"
+  },
+  {
+    "id": 360,
+    "unicode": "U+13168",
+    "character": "𓅨"
+  },
+  {
+    "id": 361,
+    "unicode": "U+13169",
+    "character": "𓅩"
+  },
+  {
+    "id": 362,
+    "unicode": "U+1316A",
+    "character": "𓅪"
+  },
+  {
+    "id": 363,
+    "unicode": "U+1316B",
+    "character": "𓅫"
+  },
+  {
+    "id": 364,
+    "unicode": "U+1316C",
+    "character": "𓅬"
+  },
+  {
+    "id": 365,
+    "unicode": "U+1316D",
+    "character": "𓅭"
+  },
+  {
+    "id": 366,
+    "unicode": "U+1316E",
+    "character": "𓅮"
+  },
+  {
+    "id": 367,
+    "unicode": "U+1316F",
+    "character": "𓅯"
+  },
+  {
+    "id": 368,
+    "unicode": "U+13170",
+    "character": "𓅰"
+  },
+  {
+    "id": 369,
+    "unicode": "U+13171",
+    "character": "𓅱"
+  },
+  {
+    "id": 370,
+    "unicode": "U+13172",
+    "character": "𓅲"
+  },
+  {
+    "id": 371,
+    "unicode": "U+13173",
+    "character": "𓅳"
+  },
+  {
+    "id": 372,
+    "unicode": "U+13174",
+    "character": "𓅴"
+  },
+  {
+    "id": 373,
+    "unicode": "U+13175",
+    "character": "𓅵"
+  },
+  {
+    "id": 374,
+    "unicode": "U+13176",
+    "character": "𓅶"
+  },
+  {
+    "id": 375,
+    "unicode": "U+13177",
+    "character": "𓅷"
+  },
+  {
+    "id": 376,
+    "unicode": "U+13178",
+    "character": "𓅸"
+  },
+  {
+    "id": 377,
+    "unicode": "U+13179",
+    "character": "𓅹"
+  },
+  {
+    "id": 378,
+    "unicode": "U+1317A",
+    "character": "𓅺"
+  },
+  {
+    "id": 379,
+    "unicode": "U+1317B",
+    "character": "𓅻"
+  },
+  {
+    "id": 380,
+    "unicode": "U+1317C",
+    "character": "𓅼"
+  },
+  {
+    "id": 381,
+    "unicode": "U+1317D",
+    "character": "𓅽"
+  },
+  {
+    "id": 382,
+    "unicode": "U+1317E",
+    "character": "𓅾"
+  },
+  {
+    "id": 383,
+    "unicode": "U+1317F",
+    "character": "𓅿"
+  },
+  {
+    "id": 384,
+    "unicode": "U+13180",
+    "character": "𓆀"
+  },
+  {
+    "id": 385,
+    "unicode": "U+13181",
+    "character": "𓆁"
+  },
+  {
+    "id": 386,
+    "unicode": "U+13182",
+    "character": "𓆂"
+  },
+  {
+    "id": 387,
+    "unicode": "U+13183",
+    "character": "𓆃"
+  },
+  {
+    "id": 388,
+    "unicode": "U+13184",
+    "character": "𓆄"
+  },
+  {
+    "id": 389,
+    "unicode": "U+13185",
+    "character": "𓆅"
+  },
+  {
+    "id": 390,
+    "unicode": "U+13186",
+    "character": "𓆆"
+  },
+  {
+    "id": 391,
+    "unicode": "U+13187",
+    "character": "𓆇"
+  },
+  {
+    "id": 392,
+    "unicode": "U+13188",
+    "character": "𓆈"
+  },
+  {
+    "id": 393,
+    "unicode": "U+13189",
+    "character": "𓆉"
+  },
+  {
+    "id": 394,
+    "unicode": "U+1318A",
+    "character": "𓆊"
+  },
+  {
+    "id": 395,
+    "unicode": "U+1318B",
+    "character": "𓆋"
+  },
+  {
+    "id": 396,
+    "unicode": "U+1318C",
+    "character": "𓆌"
+  },
+  {
+    "id": 397,
+    "unicode": "U+1318D",
+    "character": "𓆍"
+  },
+  {
+    "id": 398,
+    "unicode": "U+1318E",
+    "character": "𓆎"
+  },
+  {
+    "id": 399,
+    "unicode": "U+1318F",
+    "character": "𓆏"
+  },
+  {
+    "id": 400,
+    "unicode": "U+13190",
+    "character": "𓆐"
+  },
+  {
+    "id": 401,
+    "unicode": "U+13191",
+    "character": "𓆑"
+  },
+  {
+    "id": 402,
+    "unicode": "U+13192",
+    "character": "𓆒"
+  },
+  {
+    "id": 403,
+    "unicode": "U+13193",
+    "character": "𓆓"
+  },
+  {
+    "id": 404,
+    "unicode": "U+13194",
+    "character": "𓆔"
+  },
+  {
+    "id": 405,
+    "unicode": "U+13195",
+    "character": "𓆕"
+  },
+  {
+    "id": 406,
+    "unicode": "U+13196",
+    "character": "𓆖"
+  },
+  {
+    "id": 407,
+    "unicode": "U+13197",
+    "character": "𓆗"
+  },
+  {
+    "id": 408,
+    "unicode": "U+13198",
+    "character": "𓆘"
+  },
+  {
+    "id": 409,
+    "unicode": "U+13199",
+    "character": "𓆙"
+  },
+  {
+    "id": 410,
+    "unicode": "U+1319A",
+    "character": "𓆚"
+  },
+  {
+    "id": 411,
+    "unicode": "U+1319B",
+    "character": "𓆛"
+  },
+  {
+    "id": 412,
+    "unicode": "U+1319C",
+    "character": "𓆜"
+  },
+  {
+    "id": 413,
+    "unicode": "U+1319D",
+    "character": "𓆝"
+  },
+  {
+    "id": 414,
+    "unicode": "U+1319E",
+    "character": "𓆞"
+  },
+  {
+    "id": 415,
+    "unicode": "U+1319F",
+    "character": "𓆟"
+  },
+  {
+    "id": 416,
+    "unicode": "U+131A0",
+    "character": "𓆠"
+  },
+  {
+    "id": 417,
+    "unicode": "U+131A1",
+    "character": "𓆡"
+  },
+  {
+    "id": 418,
+    "unicode": "U+131A2",
+    "character": "𓆢"
+  },
+  {
+    "id": 419,
+    "unicode": "U+131A3",
+    "character": "𓆣"
+  },
+  {
+    "id": 420,
+    "unicode": "U+131A4",
+    "character": "𓆤"
+  },
+  {
+    "id": 421,
+    "unicode": "U+131A5",
+    "character": "𓆥"
+  },
+  {
+    "id": 422,
+    "unicode": "U+131A6",
+    "character": "𓆦"
+  },
+  {
+    "id": 423,
+    "unicode": "U+131A7",
+    "character": "𓆧"
+  },
+  {
+    "id": 424,
+    "unicode": "U+131A8",
+    "character": "𓆨"
+  },
+  {
+    "id": 425,
+    "unicode": "U+131A9",
+    "character": "𓆩"
+  },
+  {
+    "id": 426,
+    "unicode": "U+131AA",
+    "character": "𓆪"
+  },
+  {
+    "id": 427,
+    "unicode": "U+131AB",
+    "character": "𓆫"
+  },
+  {
+    "id": 428,
+    "unicode": "U+131AC",
+    "character": "𓆬"
+  },
+  {
+    "id": 429,
+    "unicode": "U+131AD",
+    "character": "𓆭"
+  },
+  {
+    "id": 430,
+    "unicode": "U+131AE",
+    "character": "𓆮"
+  },
+  {
+    "id": 431,
+    "unicode": "U+131AF",
+    "character": "𓆯"
+  },
+  {
+    "id": 432,
+    "unicode": "U+131B0",
+    "character": "𓆰"
+  },
+  {
+    "id": 433,
+    "unicode": "U+131B1",
+    "character": "𓆱"
+  },
+  {
+    "id": 434,
+    "unicode": "U+131B2",
+    "character": "𓆲"
+  },
+  {
+    "id": 435,
+    "unicode": "U+131B3",
+    "character": "𓆳"
+  },
+  {
+    "id": 436,
+    "unicode": "U+131B4",
+    "character": "𓆴"
+  },
+  {
+    "id": 437,
+    "unicode": "U+131B5",
+    "character": "𓆵"
+  },
+  {
+    "id": 438,
+    "unicode": "U+131B6",
+    "character": "𓆶"
+  },
+  {
+    "id": 439,
+    "unicode": "U+131B7",
+    "character": "𓆷"
+  },
+  {
+    "id": 440,
+    "unicode": "U+131B8",
+    "character": "𓆸"
+  },
+  {
+    "id": 441,
+    "unicode": "U+131B9",
+    "character": "𓆹"
+  },
+  {
+    "id": 442,
+    "unicode": "U+131BA",
+    "character": "𓆺"
+  },
+  {
+    "id": 443,
+    "unicode": "U+131BB",
+    "character": "𓆻"
+  },
+  {
+    "id": 444,
+    "unicode": "U+131BC",
+    "character": "𓆼"
+  },
+  {
+    "id": 445,
+    "unicode": "U+131BD",
+    "character": "𓆽"
+  },
+  {
+    "id": 446,
+    "unicode": "U+131BE",
+    "character": "𓆾"
+  },
+  {
+    "id": 447,
+    "unicode": "U+131BF",
+    "character": "𓆿"
+  },
+  {
+    "id": 448,
+    "unicode": "U+131C0",
+    "character": "𓇀"
+  },
+  {
+    "id": 449,
+    "unicode": "U+131C1",
+    "character": "𓇁"
+  },
+  {
+    "id": 450,
+    "unicode": "U+131C2",
+    "character": "𓇂"
+  },
+  {
+    "id": 451,
+    "unicode": "U+131C3",
+    "character": "𓇃"
+  },
+  {
+    "id": 452,
+    "unicode": "U+131C4",
+    "character": "𓇄"
+  },
+  {
+    "id": 453,
+    "unicode": "U+131C5",
+    "character": "𓇅"
+  },
+  {
+    "id": 454,
+    "unicode": "U+131C6",
+    "character": "𓇆"
+  },
+  {
+    "id": 455,
+    "unicode": "U+131C7",
+    "character": "𓇇"
+  },
+  {
+    "id": 456,
+    "unicode": "U+131C8",
+    "character": "𓇈"
+  },
+  {
+    "id": 457,
+    "unicode": "U+131C9",
+    "character": "𓇉"
+  },
+  {
+    "id": 458,
+    "unicode": "U+131CA",
+    "character": "𓇊"
+  },
+  {
+    "id": 459,
+    "unicode": "U+131CB",
+    "character": "𓇋"
+  },
+  {
+    "id": 460,
+    "unicode": "U+131CC",
+    "character": "𓇌"
+  },
+  {
+    "id": 461,
+    "unicode": "U+131CD",
+    "character": "𓇍"
+  },
+  {
+    "id": 462,
+    "unicode": "U+131CE",
+    "character": "𓇎"
+  },
+  {
+    "id": 463,
+    "unicode": "U+131CF",
+    "character": "𓇏"
+  },
+  {
+    "id": 464,
+    "unicode": "U+131D0",
+    "character": "𓇐"
+  },
+  {
+    "id": 465,
+    "unicode": "U+131D1",
+    "character": "𓇑"
+  },
+  {
+    "id": 466,
+    "unicode": "U+131D2",
+    "character": "𓇒"
+  },
+  {
+    "id": 467,
+    "unicode": "U+131D3",
+    "character": "𓇓"
+  },
+  {
+    "id": 468,
+    "unicode": "U+131D4",
+    "character": "𓇔"
+  },
+  {
+    "id": 469,
+    "unicode": "U+131D5",
+    "character": "𓇕"
+  },
+  {
+    "id": 470,
+    "unicode": "U+131D6",
+    "character": "𓇖"
+  },
+  {
+    "id": 471,
+    "unicode": "U+131D7",
+    "character": "𓇗"
+  },
+  {
+    "id": 472,
+    "unicode": "U+131D8",
+    "character": "𓇘"
+  },
+  {
+    "id": 473,
+    "unicode": "U+131D9",
+    "character": "𓇙"
+  },
+  {
+    "id": 474,
+    "unicode": "U+131DA",
+    "character": "𓇚"
+  },
+  {
+    "id": 475,
+    "unicode": "U+131DB",
+    "character": "𓇛"
+  },
+  {
+    "id": 476,
+    "unicode": "U+131DC",
+    "character": "𓇜"
+  },
+  {
+    "id": 477,
+    "unicode": "U+131DD",
+    "character": "𓇝"
+  },
+  {
+    "id": 478,
+    "unicode": "U+131DE",
+    "character": "𓇞"
+  },
+  {
+    "id": 479,
+    "unicode": "U+131DF",
+    "character": "𓇟"
+  },
+  {
+    "id": 480,
+    "unicode": "U+131E0",
+    "character": "𓇠"
+  },
+  {
+    "id": 481,
+    "unicode": "U+131E1",
+    "character": "𓇡"
+  },
+  {
+    "id": 482,
+    "unicode": "U+131E2",
+    "character": "𓇢"
+  },
+  {
+    "id": 483,
+    "unicode": "U+131E3",
+    "character": "𓇣"
+  },
+  {
+    "id": 484,
+    "unicode": "U+131E4",
+    "character": "𓇤"
+  },
+  {
+    "id": 485,
+    "unicode": "U+131E5",
+    "character": "𓇥"
+  },
+  {
+    "id": 486,
+    "unicode": "U+131E6",
+    "character": "𓇦"
+  },
+  {
+    "id": 487,
+    "unicode": "U+131E7",
+    "character": "𓇧"
+  },
+  {
+    "id": 488,
+    "unicode": "U+131E8",
+    "character": "𓇨"
+  },
+  {
+    "id": 489,
+    "unicode": "U+131E9",
+    "character": "𓇩"
+  },
+  {
+    "id": 490,
+    "unicode": "U+131EA",
+    "character": "𓇪"
+  },
+  {
+    "id": 491,
+    "unicode": "U+131EB",
+    "character": "𓇫"
+  },
+  {
+    "id": 492,
+    "unicode": "U+131EC",
+    "character": "𓇬"
+  },
+  {
+    "id": 493,
+    "unicode": "U+131ED",
+    "character": "𓇭"
+  },
+  {
+    "id": 494,
+    "unicode": "U+131EE",
+    "character": "𓇮"
+  },
+  {
+    "id": 495,
+    "unicode": "U+131EF",
+    "character": "𓇯"
+  },
+  {
+    "id": 496,
+    "unicode": "U+131F0",
+    "character": "𓇰"
+  },
+  {
+    "id": 497,
+    "unicode": "U+131F1",
+    "character": "𓇱"
+  },
+  {
+    "id": 498,
+    "unicode": "U+131F2",
+    "character": "𓇲"
+  },
+  {
+    "id": 499,
+    "unicode": "U+131F3",
+    "character": "𓇳"
+  },
+  {
+    "id": 500,
+    "unicode": "U+131F4",
+    "character": "𓇴"
+  },
+  {
+    "id": 501,
+    "unicode": "U+131F5",
+    "character": "𓇵"
+  },
+  {
+    "id": 502,
+    "unicode": "U+131F6",
+    "character": "𓇶"
+  },
+  {
+    "id": 503,
+    "unicode": "U+131F7",
+    "character": "𓇷"
+  },
+  {
+    "id": 504,
+    "unicode": "U+131F8",
+    "character": "𓇸"
+  },
+  {
+    "id": 505,
+    "unicode": "U+131F9",
+    "character": "𓇹"
+  },
+  {
+    "id": 506,
+    "unicode": "U+131FA",
+    "character": "𓇺"
+  },
+  {
+    "id": 507,
+    "unicode": "U+131FB",
+    "character": "𓇻"
+  },
+  {
+    "id": 508,
+    "unicode": "U+131FC",
+    "character": "𓇼"
+  },
+  {
+    "id": 509,
+    "unicode": "U+131FD",
+    "character": "𓇽"
+  },
+  {
+    "id": 510,
+    "unicode": "U+131FE",
+    "character": "𓇾"
+  },
+  {
+    "id": 511,
+    "unicode": "U+131FF",
+    "character": "𓇿"
+  },
+  {
+    "id": 512,
+    "unicode": "U+13200",
+    "character": "𓈀"
+  },
+  {
+    "id": 513,
+    "unicode": "U+13201",
+    "character": "𓈁"
+  },
+  {
+    "id": 514,
+    "unicode": "U+13202",
+    "character": "𓈂"
+  },
+  {
+    "id": 515,
+    "unicode": "U+13203",
+    "character": "𓈃"
+  },
+  {
+    "id": 516,
+    "unicode": "U+13204",
+    "character": "𓈄"
+  },
+  {
+    "id": 517,
+    "unicode": "U+13205",
+    "character": "𓈅"
+  },
+  {
+    "id": 518,
+    "unicode": "U+13206",
+    "character": "𓈆"
+  },
+  {
+    "id": 519,
+    "unicode": "U+13207",
+    "character": "𓈇"
+  },
+  {
+    "id": 520,
+    "unicode": "U+13208",
+    "character": "𓈈"
+  },
+  {
+    "id": 521,
+    "unicode": "U+13209",
+    "character": "𓈉"
+  },
+  {
+    "id": 522,
+    "unicode": "U+1320A",
+    "character": "𓈊"
+  },
+  {
+    "id": 523,
+    "unicode": "U+1320B",
+    "character": "𓈋"
+  },
+  {
+    "id": 524,
+    "unicode": "U+1320C",
+    "character": "𓈌"
+  },
+  {
+    "id": 525,
+    "unicode": "U+1320D",
+    "character": "𓈍"
+  },
+  {
+    "id": 526,
+    "unicode": "U+1320E",
+    "character": "𓈎"
+  },
+  {
+    "id": 527,
+    "unicode": "U+1320F",
+    "character": "𓈏"
+  },
+  {
+    "id": 528,
+    "unicode": "U+13210",
+    "character": "𓈐"
+  },
+  {
+    "id": 529,
+    "unicode": "U+13211",
+    "character": "𓈑"
+  },
+  {
+    "id": 530,
+    "unicode": "U+13212",
+    "character": "𓈒"
+  },
+  {
+    "id": 531,
+    "unicode": "U+13213",
+    "character": "𓈓"
+  },
+  {
+    "id": 532,
+    "unicode": "U+13214",
+    "character": "𓈔"
+  },
+  {
+    "id": 533,
+    "unicode": "U+13215",
+    "character": "𓈕"
+  },
+  {
+    "id": 534,
+    "unicode": "U+13216",
+    "character": "𓈖"
+  },
+  {
+    "id": 535,
+    "unicode": "U+13217",
+    "character": "𓈗"
+  },
+  {
+    "id": 536,
+    "unicode": "U+13218",
+    "character": "𓈘"
+  },
+  {
+    "id": 537,
+    "unicode": "U+13219",
+    "character": "𓈙"
+  },
+  {
+    "id": 538,
+    "unicode": "U+1321A",
+    "character": "𓈚"
+  },
+  {
+    "id": 539,
+    "unicode": "U+1321B",
+    "character": "𓈛"
+  },
+  {
+    "id": 540,
+    "unicode": "U+1321C",
+    "character": "𓈜"
+  },
+  {
+    "id": 541,
+    "unicode": "U+1321D",
+    "character": "𓈝"
+  },
+  {
+    "id": 542,
+    "unicode": "U+1321E",
+    "character": "𓈞"
+  },
+  {
+    "id": 543,
+    "unicode": "U+1321F",
+    "character": "𓈟"
+  },
+  {
+    "id": 544,
+    "unicode": "U+13220",
+    "character": "𓈠"
+  },
+  {
+    "id": 545,
+    "unicode": "U+13221",
+    "character": "𓈡"
+  },
+  {
+    "id": 546,
+    "unicode": "U+13222",
+    "character": "𓈢"
+  },
+  {
+    "id": 547,
+    "unicode": "U+13223",
+    "character": "𓈣"
+  },
+  {
+    "id": 548,
+    "unicode": "U+13224",
+    "character": "𓈤"
+  },
+  {
+    "id": 549,
+    "unicode": "U+13225",
+    "character": "𓈥"
+  },
+  {
+    "id": 550,
+    "unicode": "U+13226",
+    "character": "𓈦"
+  },
+  {
+    "id": 551,
+    "unicode": "U+13227",
+    "character": "𓈧"
+  },
+  {
+    "id": 552,
+    "unicode": "U+13228",
+    "character": "𓈨"
+  },
+  {
+    "id": 553,
+    "unicode": "U+13229",
+    "character": "𓈩"
+  },
+  {
+    "id": 554,
+    "unicode": "U+1322A",
+    "character": "𓈪"
+  },
+  {
+    "id": 555,
+    "unicode": "U+1322B",
+    "character": "𓈫"
+  },
+  {
+    "id": 556,
+    "unicode": "U+1322C",
+    "character": "𓈬"
+  },
+  {
+    "id": 557,
+    "unicode": "U+1322D",
+    "character": "𓈭"
+  },
+  {
+    "id": 558,
+    "unicode": "U+1322E",
+    "character": "𓈮"
+  },
+  {
+    "id": 559,
+    "unicode": "U+1322F",
+    "character": "𓈯"
+  },
+  {
+    "id": 560,
+    "unicode": "U+13230",
+    "character": "𓈰"
+  },
+  {
+    "id": 561,
+    "unicode": "U+13231",
+    "character": "𓈱"
+  },
+  {
+    "id": 562,
+    "unicode": "U+13232",
+    "character": "𓈲"
+  },
+  {
+    "id": 563,
+    "unicode": "U+13233",
+    "character": "𓈳"
+  },
+  {
+    "id": 564,
+    "unicode": "U+13234",
+    "character": "𓈴"
+  },
+  {
+    "id": 565,
+    "unicode": "U+13235",
+    "character": "𓈵"
+  },
+  {
+    "id": 566,
+    "unicode": "U+13236",
+    "character": "𓈶"
+  },
+  {
+    "id": 567,
+    "unicode": "U+13237",
+    "character": "𓈷"
+  },
+  {
+    "id": 568,
+    "unicode": "U+13238",
+    "character": "𓈸"
+  },
+  {
+    "id": 569,
+    "unicode": "U+13239",
+    "character": "𓈹"
+  },
+  {
+    "id": 570,
+    "unicode": "U+1323A",
+    "character": "𓈺"
+  },
+  {
+    "id": 571,
+    "unicode": "U+1323B",
+    "character": "𓈻"
+  },
+  {
+    "id": 572,
+    "unicode": "U+1323C",
+    "character": "𓈼"
+  },
+  {
+    "id": 573,
+    "unicode": "U+1323D",
+    "character": "𓈽"
+  },
+  {
+    "id": 574,
+    "unicode": "U+1323E",
+    "character": "𓈾"
+  },
+  {
+    "id": 575,
+    "unicode": "U+1323F",
+    "character": "𓈿"
+  },
+  {
+    "id": 576,
+    "unicode": "U+13240",
+    "character": "𓉀"
+  },
+  {
+    "id": 577,
+    "unicode": "U+13241",
+    "character": "𓉁"
+  },
+  {
+    "id": 578,
+    "unicode": "U+13242",
+    "character": "𓉂"
+  },
+  {
+    "id": 579,
+    "unicode": "U+13243",
+    "character": "𓉃"
+  },
+  {
+    "id": 580,
+    "unicode": "U+13244",
+    "character": "𓉄"
+  },
+  {
+    "id": 581,
+    "unicode": "U+13245",
+    "character": "𓉅"
+  },
+  {
+    "id": 582,
+    "unicode": "U+13246",
+    "character": "𓉆"
+  },
+  {
+    "id": 583,
+    "unicode": "U+13247",
+    "character": "𓉇"
+  },
+  {
+    "id": 584,
+    "unicode": "U+13248",
+    "character": "𓉈"
+  },
+  {
+    "id": 585,
+    "unicode": "U+13249",
+    "character": "𓉉"
+  },
+  {
+    "id": 586,
+    "unicode": "U+1324A",
+    "character": "𓉊"
+  },
+  {
+    "id": 587,
+    "unicode": "U+1324B",
+    "character": "𓉋"
+  },
+  {
+    "id": 588,
+    "unicode": "U+1324C",
+    "character": "𓉌"
+  },
+  {
+    "id": 589,
+    "unicode": "U+1324D",
+    "character": "𓉍"
+  },
+  {
+    "id": 590,
+    "unicode": "U+1324E",
+    "character": "𓉎"
+  },
+  {
+    "id": 591,
+    "unicode": "U+1324F",
+    "character": "𓉏"
+  },
+  {
+    "id": 592,
+    "unicode": "U+13250",
+    "character": "𓉐"
+  },
+  {
+    "id": 593,
+    "unicode": "U+13251",
+    "character": "𓉑"
+  },
+  {
+    "id": 594,
+    "unicode": "U+13252",
+    "character": "𓉒"
+  },
+  {
+    "id": 595,
+    "unicode": "U+13253",
+    "character": "𓉓"
+  },
+  {
+    "id": 596,
+    "unicode": "U+13254",
+    "character": "𓉔"
+  },
+  {
+    "id": 597,
+    "unicode": "U+13255",
+    "character": "𓉕"
+  },
+  {
+    "id": 598,
+    "unicode": "U+13256",
+    "character": "𓉖"
+  },
+  {
+    "id": 599,
+    "unicode": "U+13257",
+    "character": "𓉗"
+  },
+  {
+    "id": 600,
+    "unicode": "U+13258",
+    "character": "𓉘"
+  },
+  {
+    "id": 601,
+    "unicode": "U+13259",
+    "character": "𓉙"
+  },
+  {
+    "id": 602,
+    "unicode": "U+1325A",
+    "character": "𓉚"
+  },
+  {
+    "id": 603,
+    "unicode": "U+1325B",
+    "character": "𓉛"
+  },
+  {
+    "id": 604,
+    "unicode": "U+1325C",
+    "character": "𓉜"
+  },
+  {
+    "id": 605,
+    "unicode": "U+1325D",
+    "character": "𓉝"
+  },
+  {
+    "id": 606,
+    "unicode": "U+1325E",
+    "character": "𓉞"
+  },
+  {
+    "id": 607,
+    "unicode": "U+1325F",
+    "character": "𓉟"
+  },
+  {
+    "id": 608,
+    "unicode": "U+13260",
+    "character": "𓉠"
+  },
+  {
+    "id": 609,
+    "unicode": "U+13261",
+    "character": "𓉡"
+  },
+  {
+    "id": 610,
+    "unicode": "U+13262",
+    "character": "𓉢"
+  },
+  {
+    "id": 611,
+    "unicode": "U+13263",
+    "character": "𓉣"
+  },
+  {
+    "id": 612,
+    "unicode": "U+13264",
+    "character": "𓉤"
+  },
+  {
+    "id": 613,
+    "unicode": "U+13265",
+    "character": "𓉥"
+  },
+  {
+    "id": 614,
+    "unicode": "U+13266",
+    "character": "𓉦"
+  },
+  {
+    "id": 615,
+    "unicode": "U+13267",
+    "character": "𓉧"
+  },
+  {
+    "id": 616,
+    "unicode": "U+13268",
+    "character": "𓉨"
+  },
+  {
+    "id": 617,
+    "unicode": "U+13269",
+    "character": "𓉩"
+  },
+  {
+    "id": 618,
+    "unicode": "U+1326A",
+    "character": "𓉪"
+  },
+  {
+    "id": 619,
+    "unicode": "U+1326B",
+    "character": "𓉫"
+  },
+  {
+    "id": 620,
+    "unicode": "U+1326C",
+    "character": "𓉬"
+  },
+  {
+    "id": 621,
+    "unicode": "U+1326D",
+    "character": "𓉭"
+  },
+  {
+    "id": 622,
+    "unicode": "U+1326E",
+    "character": "𓉮"
+  },
+  {
+    "id": 623,
+    "unicode": "U+1326F",
+    "character": "𓉯"
+  },
+  {
+    "id": 624,
+    "unicode": "U+13270",
+    "character": "𓉰"
+  },
+  {
+    "id": 625,
+    "unicode": "U+13271",
+    "character": "𓉱"
+  },
+  {
+    "id": 626,
+    "unicode": "U+13272",
+    "character": "𓉲"
+  },
+  {
+    "id": 627,
+    "unicode": "U+13273",
+    "character": "𓉳"
+  },
+  {
+    "id": 628,
+    "unicode": "U+13274",
+    "character": "𓉴"
+  },
+  {
+    "id": 629,
+    "unicode": "U+13275",
+    "character": "𓉵"
+  },
+  {
+    "id": 630,
+    "unicode": "U+13276",
+    "character": "𓉶"
+  },
+  {
+    "id": 631,
+    "unicode": "U+13277",
+    "character": "𓉷"
+  },
+  {
+    "id": 632,
+    "unicode": "U+13278",
+    "character": "𓉸"
+  },
+  {
+    "id": 633,
+    "unicode": "U+13279",
+    "character": "𓉹"
+  },
+  {
+    "id": 634,
+    "unicode": "U+1327A",
+    "character": "𓉺"
+  },
+  {
+    "id": 635,
+    "unicode": "U+1327B",
+    "character": "𓉻"
+  },
+  {
+    "id": 636,
+    "unicode": "U+1327C",
+    "character": "𓉼"
+  },
+  {
+    "id": 637,
+    "unicode": "U+1327D",
+    "character": "𓉽"
+  },
+  {
+    "id": 638,
+    "unicode": "U+1327E",
+    "character": "𓉾"
+  },
+  {
+    "id": 639,
+    "unicode": "U+1327F",
+    "character": "𓉿"
+  },
+  {
+    "id": 640,
+    "unicode": "U+13280",
+    "character": "𓊀"
+  },
+  {
+    "id": 641,
+    "unicode": "U+13281",
+    "character": "𓊁"
+  },
+  {
+    "id": 642,
+    "unicode": "U+13282",
+    "character": "𓊂"
+  },
+  {
+    "id": 643,
+    "unicode": "U+13283",
+    "character": "𓊃"
+  },
+  {
+    "id": 644,
+    "unicode": "U+13284",
+    "character": "𓊄"
+  },
+  {
+    "id": 645,
+    "unicode": "U+13285",
+    "character": "𓊅"
+  },
+  {
+    "id": 646,
+    "unicode": "U+13286",
+    "character": "𓊆"
+  },
+  {
+    "id": 647,
+    "unicode": "U+13287",
+    "character": "𓊇"
+  },
+  {
+    "id": 648,
+    "unicode": "U+13288",
+    "character": "𓊈"
+  },
+  {
+    "id": 649,
+    "unicode": "U+13289",
+    "character": "𓊉"
+  },
+  {
+    "id": 650,
+    "unicode": "U+1328A",
+    "character": "𓊊"
+  },
+  {
+    "id": 651,
+    "unicode": "U+1328B",
+    "character": "𓊋"
+  },
+  {
+    "id": 652,
+    "unicode": "U+1328C",
+    "character": "𓊌"
+  },
+  {
+    "id": 653,
+    "unicode": "U+1328D",
+    "character": "𓊍"
+  },
+  {
+    "id": 654,
+    "unicode": "U+1328E",
+    "character": "𓊎"
+  },
+  {
+    "id": 655,
+    "unicode": "U+1328F",
+    "character": "𓊏"
+  },
+  {
+    "id": 656,
+    "unicode": "U+13290",
+    "character": "𓊐"
+  },
+  {
+    "id": 657,
+    "unicode": "U+13291",
+    "character": "𓊑"
+  },
+  {
+    "id": 658,
+    "unicode": "U+13292",
+    "character": "𓊒"
+  },
+  {
+    "id": 659,
+    "unicode": "U+13293",
+    "character": "𓊓"
+  },
+  {
+    "id": 660,
+    "unicode": "U+13294",
+    "character": "𓊔"
+  },
+  {
+    "id": 661,
+    "unicode": "U+13295",
+    "character": "𓊕"
+  },
+  {
+    "id": 662,
+    "unicode": "U+13296",
+    "character": "𓊖"
+  },
+  {
+    "id": 663,
+    "unicode": "U+13297",
+    "character": "𓊗"
+  },
+  {
+    "id": 664,
+    "unicode": "U+13298",
+    "character": "𓊘"
+  },
+  {
+    "id": 665,
+    "unicode": "U+13299",
+    "character": "𓊙"
+  },
+  {
+    "id": 666,
+    "unicode": "U+1329A",
+    "character": "𓊚"
+  },
+  {
+    "id": 667,
+    "unicode": "U+1329B",
+    "character": "𓊛"
+  },
+  {
+    "id": 668,
+    "unicode": "U+1329C",
+    "character": "𓊜"
+  },
+  {
+    "id": 669,
+    "unicode": "U+1329D",
+    "character": "𓊝"
+  },
+  {
+    "id": 670,
+    "unicode": "U+1329E",
+    "character": "𓊞"
+  },
+  {
+    "id": 671,
+    "unicode": "U+1329F",
+    "character": "𓊟"
+  },
+  {
+    "id": 672,
+    "unicode": "U+132A0",
+    "character": "𓊠"
+  },
+  {
+    "id": 673,
+    "unicode": "U+132A1",
+    "character": "𓊡"
+  },
+  {
+    "id": 674,
+    "unicode": "U+132A2",
+    "character": "𓊢"
+  },
+  {
+    "id": 675,
+    "unicode": "U+132A3",
+    "character": "𓊣"
+  },
+  {
+    "id": 676,
+    "unicode": "U+132A4",
+    "character": "𓊤"
+  },
+  {
+    "id": 677,
+    "unicode": "U+132A5",
+    "character": "𓊥"
+  },
+  {
+    "id": 678,
+    "unicode": "U+132A6",
+    "character": "𓊦"
+  },
+  {
+    "id": 679,
+    "unicode": "U+132A7",
+    "character": "𓊧"
+  },
+  {
+    "id": 680,
+    "unicode": "U+132A8",
+    "character": "𓊨"
+  },
+  {
+    "id": 681,
+    "unicode": "U+132A9",
+    "character": "𓊩"
+  },
+  {
+    "id": 682,
+    "unicode": "U+132AA",
+    "character": "𓊪"
+  },
+  {
+    "id": 683,
+    "unicode": "U+132AB",
+    "character": "𓊫"
+  },
+  {
+    "id": 684,
+    "unicode": "U+132AC",
+    "character": "𓊬"
+  },
+  {
+    "id": 685,
+    "unicode": "U+132AD",
+    "character": "𓊭"
+  },
+  {
+    "id": 686,
+    "unicode": "U+132AE",
+    "character": "𓊮"
+  },
+  {
+    "id": 687,
+    "unicode": "U+132AF",
+    "character": "𓊯"
+  },
+  {
+    "id": 688,
+    "unicode": "U+132B0",
+    "character": "𓊰"
+  },
+  {
+    "id": 689,
+    "unicode": "U+132B1",
+    "character": "𓊱"
+  },
+  {
+    "id": 690,
+    "unicode": "U+132B2",
+    "character": "𓊲"
+  },
+  {
+    "id": 691,
+    "unicode": "U+132B3",
+    "character": "𓊳"
+  },
+  {
+    "id": 692,
+    "unicode": "U+132B4",
+    "character": "𓊴"
+  },
+  {
+    "id": 693,
+    "unicode": "U+132B5",
+    "character": "𓊵"
+  },
+  {
+    "id": 694,
+    "unicode": "U+132B6",
+    "character": "𓊶"
+  },
+  {
+    "id": 695,
+    "unicode": "U+132B7",
+    "character": "𓊷"
+  },
+  {
+    "id": 696,
+    "unicode": "U+132B8",
+    "character": "𓊸"
+  },
+  {
+    "id": 697,
+    "unicode": "U+132B9",
+    "character": "𓊹"
+  },
+  {
+    "id": 698,
+    "unicode": "U+132BA",
+    "character": "𓊺"
+  },
+  {
+    "id": 699,
+    "unicode": "U+132BB",
+    "character": "𓊻"
+  },
+  {
+    "id": 700,
+    "unicode": "U+132BC",
+    "character": "𓊼"
+  },
+  {
+    "id": 701,
+    "unicode": "U+132BD",
+    "character": "𓊽"
+  },
+  {
+    "id": 702,
+    "unicode": "U+132BE",
+    "character": "𓊾"
+  },
+  {
+    "id": 703,
+    "unicode": "U+132BF",
+    "character": "𓊿"
+  },
+  {
+    "id": 704,
+    "unicode": "U+132C0",
+    "character": "𓋀"
+  },
+  {
+    "id": 705,
+    "unicode": "U+132C1",
+    "character": "𓋁"
+  },
+  {
+    "id": 706,
+    "unicode": "U+132C2",
+    "character": "𓋂"
+  },
+  {
+    "id": 707,
+    "unicode": "U+132C3",
+    "character": "𓋃"
+  },
+  {
+    "id": 708,
+    "unicode": "U+132C4",
+    "character": "𓋄"
+  },
+  {
+    "id": 709,
+    "unicode": "U+132C5",
+    "character": "𓋅"
+  },
+  {
+    "id": 710,
+    "unicode": "U+132C6",
+    "character": "𓋆"
+  },
+  {
+    "id": 711,
+    "unicode": "U+132C7",
+    "character": "𓋇"
+  },
+  {
+    "id": 712,
+    "unicode": "U+132C8",
+    "character": "𓋈"
+  },
+  {
+    "id": 713,
+    "unicode": "U+132C9",
+    "character": "𓋉"
+  },
+  {
+    "id": 714,
+    "unicode": "U+132CA",
+    "character": "𓋊"
+  },
+  {
+    "id": 715,
+    "unicode": "U+132CB",
+    "character": "𓋋"
+  },
+  {
+    "id": 716,
+    "unicode": "U+132CC",
+    "character": "𓋌"
+  },
+  {
+    "id": 717,
+    "unicode": "U+132CD",
+    "character": "𓋍"
+  },
+  {
+    "id": 718,
+    "unicode": "U+132CE",
+    "character": "𓋎"
+  },
+  {
+    "id": 719,
+    "unicode": "U+132CF",
+    "character": "𓋏"
+  },
+  {
+    "id": 720,
+    "unicode": "U+132D0",
+    "character": "𓋐"
+  },
+  {
+    "id": 721,
+    "unicode": "U+132D1",
+    "character": "𓋑"
+  },
+  {
+    "id": 722,
+    "unicode": "U+132D2",
+    "character": "𓋒"
+  },
+  {
+    "id": 723,
+    "unicode": "U+132D3",
+    "character": "𓋓"
+  },
+  {
+    "id": 724,
+    "unicode": "U+132D4",
+    "character": "𓋔"
+  },
+  {
+    "id": 725,
+    "unicode": "U+132D5",
+    "character": "𓋕"
+  },
+  {
+    "id": 726,
+    "unicode": "U+132D6",
+    "character": "𓋖"
+  },
+  {
+    "id": 727,
+    "unicode": "U+132D7",
+    "character": "𓋗"
+  },
+  {
+    "id": 728,
+    "unicode": "U+132D8",
+    "character": "𓋘"
+  },
+  {
+    "id": 729,
+    "unicode": "U+132D9",
+    "character": "𓋙"
+  },
+  {
+    "id": 730,
+    "unicode": "U+132DA",
+    "character": "𓋚"
+  },
+  {
+    "id": 731,
+    "unicode": "U+132DB",
+    "character": "𓋛"
+  },
+  {
+    "id": 732,
+    "unicode": "U+132DC",
+    "character": "𓋜"
+  },
+  {
+    "id": 733,
+    "unicode": "U+132DD",
+    "character": "𓋝"
+  },
+  {
+    "id": 734,
+    "unicode": "U+132DE",
+    "character": "𓋞"
+  },
+  {
+    "id": 735,
+    "unicode": "U+132DF",
+    "character": "𓋟"
+  },
+  {
+    "id": 736,
+    "unicode": "U+132E0",
+    "character": "𓋠"
+  },
+  {
+    "id": 737,
+    "unicode": "U+132E1",
+    "character": "𓋡"
+  },
+  {
+    "id": 738,
+    "unicode": "U+132E2",
+    "character": "𓋢"
+  },
+  {
+    "id": 739,
+    "unicode": "U+132E3",
+    "character": "𓋣"
+  },
+  {
+    "id": 740,
+    "unicode": "U+132E4",
+    "character": "𓋤"
+  },
+  {
+    "id": 741,
+    "unicode": "U+132E5",
+    "character": "𓋥"
+  },
+  {
+    "id": 742,
+    "unicode": "U+132E6",
+    "character": "𓋦"
+  },
+  {
+    "id": 743,
+    "unicode": "U+132E7",
+    "character": "𓋧"
+  },
+  {
+    "id": 744,
+    "unicode": "U+132E8",
+    "character": "𓋨"
+  },
+  {
+    "id": 745,
+    "unicode": "U+132E9",
+    "character": "𓋩"
+  },
+  {
+    "id": 746,
+    "unicode": "U+132EA",
+    "character": "𓋪"
+  },
+  {
+    "id": 747,
+    "unicode": "U+132EB",
+    "character": "𓋫"
+  },
+  {
+    "id": 748,
+    "unicode": "U+132EC",
+    "character": "𓋬"
+  },
+  {
+    "id": 749,
+    "unicode": "U+132ED",
+    "character": "𓋭"
+  },
+  {
+    "id": 750,
+    "unicode": "U+132EE",
+    "character": "𓋮"
+  },
+  {
+    "id": 751,
+    "unicode": "U+132EF",
+    "character": "𓋯"
+  },
+  {
+    "id": 752,
+    "unicode": "U+132F0",
+    "character": "𓋰"
+  },
+  {
+    "id": 753,
+    "unicode": "U+132F1",
+    "character": "𓋱"
+  },
+  {
+    "id": 754,
+    "unicode": "U+132F2",
+    "character": "𓋲"
+  },
+  {
+    "id": 755,
+    "unicode": "U+132F3",
+    "character": "𓋳"
+  },
+  {
+    "id": 756,
+    "unicode": "U+132F4",
+    "character": "𓋴"
+  },
+  {
+    "id": 757,
+    "unicode": "U+132F5",
+    "character": "𓋵"
+  },
+  {
+    "id": 758,
+    "unicode": "U+132F6",
+    "character": "𓋶"
+  },
+  {
+    "id": 759,
+    "unicode": "U+132F7",
+    "character": "𓋷"
+  },
+  {
+    "id": 760,
+    "unicode": "U+132F8",
+    "character": "𓋸"
+  },
+  {
+    "id": 761,
+    "unicode": "U+132F9",
+    "character": "𓋹"
+  },
+  {
+    "id": 762,
+    "unicode": "U+132FA",
+    "character": "𓋺"
+  },
+  {
+    "id": 763,
+    "unicode": "U+132FB",
+    "character": "𓋻"
+  },
+  {
+    "id": 764,
+    "unicode": "U+132FC",
+    "character": "𓋼"
+  },
+  {
+    "id": 765,
+    "unicode": "U+132FD",
+    "character": "𓋽"
+  },
+  {
+    "id": 766,
+    "unicode": "U+132FE",
+    "character": "𓋾"
+  },
+  {
+    "id": 767,
+    "unicode": "U+132FF",
+    "character": "𓋿"
+  },
+  {
+    "id": 768,
+    "unicode": "U+13300",
+    "character": "𓌀"
+  },
+  {
+    "id": 769,
+    "unicode": "U+13301",
+    "character": "𓌁"
+  },
+  {
+    "id": 770,
+    "unicode": "U+13302",
+    "character": "𓌂"
+  },
+  {
+    "id": 771,
+    "unicode": "U+13303",
+    "character": "𓌃"
+  },
+  {
+    "id": 772,
+    "unicode": "U+13304",
+    "character": "𓌄"
+  },
+  {
+    "id": 773,
+    "unicode": "U+13305",
+    "character": "𓌅"
+  },
+  {
+    "id": 774,
+    "unicode": "U+13306",
+    "character": "𓌆"
+  },
+  {
+    "id": 775,
+    "unicode": "U+13307",
+    "character": "𓌇"
+  },
+  {
+    "id": 776,
+    "unicode": "U+13308",
+    "character": "𓌈"
+  },
+  {
+    "id": 777,
+    "unicode": "U+13309",
+    "character": "𓌉"
+  },
+  {
+    "id": 778,
+    "unicode": "U+1330A",
+    "character": "𓌊"
+  },
+  {
+    "id": 779,
+    "unicode": "U+1330B",
+    "character": "𓌋"
+  },
+  {
+    "id": 780,
+    "unicode": "U+1330C",
+    "character": "𓌌"
+  },
+  {
+    "id": 781,
+    "unicode": "U+1330D",
+    "character": "𓌍"
+  },
+  {
+    "id": 782,
+    "unicode": "U+1330E",
+    "character": "𓌎"
+  },
+  {
+    "id": 783,
+    "unicode": "U+1330F",
+    "character": "𓌏"
+  },
+  {
+    "id": 784,
+    "unicode": "U+13310",
+    "character": "𓌐"
+  },
+  {
+    "id": 785,
+    "unicode": "U+13311",
+    "character": "𓌑"
+  },
+  {
+    "id": 786,
+    "unicode": "U+13312",
+    "character": "𓌒"
+  },
+  {
+    "id": 787,
+    "unicode": "U+13313",
+    "character": "𓌓"
+  },
+  {
+    "id": 788,
+    "unicode": "U+13314",
+    "character": "𓌔"
+  },
+  {
+    "id": 789,
+    "unicode": "U+13315",
+    "character": "𓌕"
+  },
+  {
+    "id": 790,
+    "unicode": "U+13316",
+    "character": "𓌖"
+  },
+  {
+    "id": 791,
+    "unicode": "U+13317",
+    "character": "𓌗"
+  },
+  {
+    "id": 792,
+    "unicode": "U+13318",
+    "character": "𓌘"
+  },
+  {
+    "id": 793,
+    "unicode": "U+13319",
+    "character": "𓌙"
+  },
+  {
+    "id": 794,
+    "unicode": "U+1331A",
+    "character": "𓌚"
+  },
+  {
+    "id": 795,
+    "unicode": "U+1331B",
+    "character": "𓌛"
+  },
+  {
+    "id": 796,
+    "unicode": "U+1331C",
+    "character": "𓌜"
+  },
+  {
+    "id": 797,
+    "unicode": "U+1331D",
+    "character": "𓌝"
+  },
+  {
+    "id": 798,
+    "unicode": "U+1331E",
+    "character": "𓌞"
+  },
+  {
+    "id": 799,
+    "unicode": "U+1331F",
+    "character": "𓌟"
+  },
+  {
+    "id": 800,
+    "unicode": "U+13320",
+    "character": "𓌠"
+  },
+  {
+    "id": 801,
+    "unicode": "U+13321",
+    "character": "𓌡"
+  },
+  {
+    "id": 802,
+    "unicode": "U+13322",
+    "character": "𓌢"
+  },
+  {
+    "id": 803,
+    "unicode": "U+13323",
+    "character": "𓌣"
+  },
+  {
+    "id": 804,
+    "unicode": "U+13324",
+    "character": "𓌤"
+  },
+  {
+    "id": 805,
+    "unicode": "U+13325",
+    "character": "𓌥"
+  },
+  {
+    "id": 806,
+    "unicode": "U+13326",
+    "character": "𓌦"
+  },
+  {
+    "id": 807,
+    "unicode": "U+13327",
+    "character": "𓌧"
+  },
+  {
+    "id": 808,
+    "unicode": "U+13328",
+    "character": "𓌨"
+  },
+  {
+    "id": 809,
+    "unicode": "U+13329",
+    "character": "𓌩"
+  },
+  {
+    "id": 810,
+    "unicode": "U+1332A",
+    "character": "𓌪"
+  },
+  {
+    "id": 811,
+    "unicode": "U+1332B",
+    "character": "𓌫"
+  },
+  {
+    "id": 812,
+    "unicode": "U+1332C",
+    "character": "𓌬"
+  },
+  {
+    "id": 813,
+    "unicode": "U+1332D",
+    "character": "𓌭"
+  },
+  {
+    "id": 814,
+    "unicode": "U+1332E",
+    "character": "𓌮"
+  },
+  {
+    "id": 815,
+    "unicode": "U+1332F",
+    "character": "𓌯"
+  },
+  {
+    "id": 816,
+    "unicode": "U+13330",
+    "character": "𓌰"
+  },
+  {
+    "id": 817,
+    "unicode": "U+13331",
+    "character": "𓌱"
+  },
+  {
+    "id": 818,
+    "unicode": "U+13332",
+    "character": "𓌲"
+  },
+  {
+    "id": 819,
+    "unicode": "U+13333",
+    "character": "𓌳"
+  },
+  {
+    "id": 820,
+    "unicode": "U+13334",
+    "character": "𓌴"
+  },
+  {
+    "id": 821,
+    "unicode": "U+13335",
+    "character": "𓌵"
+  },
+  {
+    "id": 822,
+    "unicode": "U+13336",
+    "character": "𓌶"
+  },
+  {
+    "id": 823,
+    "unicode": "U+13337",
+    "character": "𓌷"
+  },
+  {
+    "id": 824,
+    "unicode": "U+13338",
+    "character": "𓌸"
+  },
+  {
+    "id": 825,
+    "unicode": "U+13339",
+    "character": "𓌹"
+  },
+  {
+    "id": 826,
+    "unicode": "U+1333A",
+    "character": "𓌺"
+  },
+  {
+    "id": 827,
+    "unicode": "U+1333B",
+    "character": "𓌻"
+  },
+  {
+    "id": 828,
+    "unicode": "U+1333C",
+    "character": "𓌼"
+  },
+  {
+    "id": 829,
+    "unicode": "U+1333D",
+    "character": "𓌽"
+  },
+  {
+    "id": 830,
+    "unicode": "U+1333E",
+    "character": "𓌾"
+  },
+  {
+    "id": 831,
+    "unicode": "U+1333F",
+    "character": "𓌿"
+  },
+  {
+    "id": 832,
+    "unicode": "U+13340",
+    "character": "𓍀"
+  },
+  {
+    "id": 833,
+    "unicode": "U+13341",
+    "character": "𓍁"
+  },
+  {
+    "id": 834,
+    "unicode": "U+13342",
+    "character": "𓍂"
+  },
+  {
+    "id": 835,
+    "unicode": "U+13343",
+    "character": "𓍃"
+  },
+  {
+    "id": 836,
+    "unicode": "U+13344",
+    "character": "𓍄"
+  },
+  {
+    "id": 837,
+    "unicode": "U+13345",
+    "character": "𓍅"
+  },
+  {
+    "id": 838,
+    "unicode": "U+13346",
+    "character": "𓍆"
+  },
+  {
+    "id": 839,
+    "unicode": "U+13347",
+    "character": "𓍇"
+  },
+  {
+    "id": 840,
+    "unicode": "U+13348",
+    "character": "𓍈"
+  },
+  {
+    "id": 841,
+    "unicode": "U+13349",
+    "character": "𓍉"
+  },
+  {
+    "id": 842,
+    "unicode": "U+1334A",
+    "character": "𓍊"
+  },
+  {
+    "id": 843,
+    "unicode": "U+1334B",
+    "character": "𓍋"
+  },
+  {
+    "id": 844,
+    "unicode": "U+1334C",
+    "character": "𓍌"
+  },
+  {
+    "id": 845,
+    "unicode": "U+1334D",
+    "character": "𓍍"
+  },
+  {
+    "id": 846,
+    "unicode": "U+1334E",
+    "character": "𓍎"
+  },
+  {
+    "id": 847,
+    "unicode": "U+1334F",
+    "character": "𓍏"
+  },
+  {
+    "id": 848,
+    "unicode": "U+13350",
+    "character": "𓍐"
+  },
+  {
+    "id": 849,
+    "unicode": "U+13351",
+    "character": "𓍑"
+  },
+  {
+    "id": 850,
+    "unicode": "U+13352",
+    "character": "𓍒"
+  },
+  {
+    "id": 851,
+    "unicode": "U+13353",
+    "character": "𓍓"
+  },
+  {
+    "id": 852,
+    "unicode": "U+13354",
+    "character": "𓍔"
+  },
+  {
+    "id": 853,
+    "unicode": "U+13355",
+    "character": "𓍕"
+  },
+  {
+    "id": 854,
+    "unicode": "U+13356",
+    "character": "𓍖"
+  },
+  {
+    "id": 855,
+    "unicode": "U+13357",
+    "character": "𓍗"
+  },
+  {
+    "id": 856,
+    "unicode": "U+13358",
+    "character": "𓍘"
+  },
+  {
+    "id": 857,
+    "unicode": "U+13359",
+    "character": "𓍙"
+  },
+  {
+    "id": 858,
+    "unicode": "U+1335A",
+    "character": "𓍚"
+  },
+  {
+    "id": 859,
+    "unicode": "U+1335B",
+    "character": "𓍛"
+  },
+  {
+    "id": 860,
+    "unicode": "U+1335C",
+    "character": "𓍜"
+  },
+  {
+    "id": 861,
+    "unicode": "U+1335D",
+    "character": "𓍝"
+  },
+  {
+    "id": 862,
+    "unicode": "U+1335E",
+    "character": "𓍞"
+  },
+  {
+    "id": 863,
+    "unicode": "U+1335F",
+    "character": "𓍟"
+  },
+  {
+    "id": 864,
+    "unicode": "U+13360",
+    "character": "𓍠"
+  },
+  {
+    "id": 865,
+    "unicode": "U+13361",
+    "character": "𓍡"
+  },
+  {
+    "id": 866,
+    "unicode": "U+13362",
+    "character": "𓍢"
+  },
+  {
+    "id": 867,
+    "unicode": "U+13363",
+    "character": "𓍣"
+  },
+  {
+    "id": 868,
+    "unicode": "U+13364",
+    "character": "𓍤"
+  },
+  {
+    "id": 869,
+    "unicode": "U+13365",
+    "character": "𓍥"
+  },
+  {
+    "id": 870,
+    "unicode": "U+13366",
+    "character": "𓍦"
+  },
+  {
+    "id": 871,
+    "unicode": "U+13367",
+    "character": "𓍧"
+  },
+  {
+    "id": 872,
+    "unicode": "U+13368",
+    "character": "𓍨"
+  },
+  {
+    "id": 873,
+    "unicode": "U+13369",
+    "character": "𓍩"
+  },
+  {
+    "id": 874,
+    "unicode": "U+1336A",
+    "character": "𓍪"
+  },
+  {
+    "id": 875,
+    "unicode": "U+1336B",
+    "character": "𓍫"
+  },
+  {
+    "id": 876,
+    "unicode": "U+1336C",
+    "character": "𓍬"
+  },
+  {
+    "id": 877,
+    "unicode": "U+1336D",
+    "character": "𓍭"
+  },
+  {
+    "id": 878,
+    "unicode": "U+1336E",
+    "character": "𓍮"
+  },
+  {
+    "id": 879,
+    "unicode": "U+1336F",
+    "character": "𓍯"
+  },
+  {
+    "id": 880,
+    "unicode": "U+13370",
+    "character": "𓍰"
+  },
+  {
+    "id": 881,
+    "unicode": "U+13371",
+    "character": "𓍱"
+  },
+  {
+    "id": 882,
+    "unicode": "U+13372",
+    "character": "𓍲"
+  },
+  {
+    "id": 883,
+    "unicode": "U+13373",
+    "character": "𓍳"
+  },
+  {
+    "id": 884,
+    "unicode": "U+13374",
+    "character": "𓍴"
+  },
+  {
+    "id": 885,
+    "unicode": "U+13375",
+    "character": "𓍵"
+  },
+  {
+    "id": 886,
+    "unicode": "U+13376",
+    "character": "𓍶"
+  },
+  {
+    "id": 887,
+    "unicode": "U+13377",
+    "character": "𓍷"
+  },
+  {
+    "id": 888,
+    "unicode": "U+13378",
+    "character": "𓍸"
+  },
+  {
+    "id": 889,
+    "unicode": "U+13379",
+    "character": "𓍹"
+  },
+  {
+    "id": 890,
+    "unicode": "U+1337A",
+    "character": "𓍺"
+  },
+  {
+    "id": 891,
+    "unicode": "U+1337B",
+    "character": "𓍻"
+  },
+  {
+    "id": 892,
+    "unicode": "U+1337C",
+    "character": "𓍼"
+  },
+  {
+    "id": 893,
+    "unicode": "U+1337D",
+    "character": "𓍽"
+  },
+  {
+    "id": 894,
+    "unicode": "U+1337E",
+    "character": "𓍾"
+  },
+  {
+    "id": 895,
+    "unicode": "U+1337F",
+    "character": "𓍿"
+  },
+  {
+    "id": 896,
+    "unicode": "U+13380",
+    "character": "𓎀"
+  },
+  {
+    "id": 897,
+    "unicode": "U+13381",
+    "character": "𓎁"
+  },
+  {
+    "id": 898,
+    "unicode": "U+13382",
+    "character": "𓎂"
+  },
+  {
+    "id": 899,
+    "unicode": "U+13383",
+    "character": "𓎃"
+  },
+  {
+    "id": 900,
+    "unicode": "U+13384",
+    "character": "𓎄"
+  },
+  {
+    "id": 901,
+    "unicode": "U+13385",
+    "character": "𓎅"
+  },
+  {
+    "id": 902,
+    "unicode": "U+13386",
+    "character": "𓎆"
+  },
+  {
+    "id": 903,
+    "unicode": "U+13387",
+    "character": "𓎇"
+  },
+  {
+    "id": 904,
+    "unicode": "U+13388",
+    "character": "𓎈"
+  },
+  {
+    "id": 905,
+    "unicode": "U+13389",
+    "character": "𓎉"
+  },
+  {
+    "id": 906,
+    "unicode": "U+1338A",
+    "character": "𓎊"
+  },
+  {
+    "id": 907,
+    "unicode": "U+1338B",
+    "character": "𓎋"
+  },
+  {
+    "id": 908,
+    "unicode": "U+1338C",
+    "character": "𓎌"
+  },
+  {
+    "id": 909,
+    "unicode": "U+1338D",
+    "character": "𓎍"
+  },
+  {
+    "id": 910,
+    "unicode": "U+1338E",
+    "character": "𓎎"
+  },
+  {
+    "id": 911,
+    "unicode": "U+1338F",
+    "character": "𓎏"
+  },
+  {
+    "id": 912,
+    "unicode": "U+13390",
+    "character": "𓎐"
+  },
+  {
+    "id": 913,
+    "unicode": "U+13391",
+    "character": "𓎑"
+  },
+  {
+    "id": 914,
+    "unicode": "U+13392",
+    "character": "𓎒"
+  },
+  {
+    "id": 915,
+    "unicode": "U+13393",
+    "character": "𓎓"
+  },
+  {
+    "id": 916,
+    "unicode": "U+13394",
+    "character": "𓎔"
+  },
+  {
+    "id": 917,
+    "unicode": "U+13395",
+    "character": "𓎕"
+  },
+  {
+    "id": 918,
+    "unicode": "U+13396",
+    "character": "𓎖"
+  },
+  {
+    "id": 919,
+    "unicode": "U+13397",
+    "character": "𓎗"
+  },
+  {
+    "id": 920,
+    "unicode": "U+13398",
+    "character": "𓎘"
+  },
+  {
+    "id": 921,
+    "unicode": "U+13399",
+    "character": "𓎙"
+  },
+  {
+    "id": 922,
+    "unicode": "U+1339A",
+    "character": "𓎚"
+  },
+  {
+    "id": 923,
+    "unicode": "U+1339B",
+    "character": "𓎛"
+  },
+  {
+    "id": 924,
+    "unicode": "U+1339C",
+    "character": "𓎜"
+  },
+  {
+    "id": 925,
+    "unicode": "U+1339D",
+    "character": "𓎝"
+  },
+  {
+    "id": 926,
+    "unicode": "U+1339E",
+    "character": "𓎞"
+  },
+  {
+    "id": 927,
+    "unicode": "U+1339F",
+    "character": "𓎟"
+  },
+  {
+    "id": 928,
+    "unicode": "U+133A0",
+    "character": "𓎠"
+  },
+  {
+    "id": 929,
+    "unicode": "U+133A1",
+    "character": "𓎡"
+  },
+  {
+    "id": 930,
+    "unicode": "U+133A2",
+    "character": "𓎢"
+  },
+  {
+    "id": 931,
+    "unicode": "U+133A3",
+    "character": "𓎣"
+  },
+  {
+    "id": 932,
+    "unicode": "U+133A4",
+    "character": "𓎤"
+  },
+  {
+    "id": 933,
+    "unicode": "U+133A5",
+    "character": "𓎥"
+  },
+  {
+    "id": 934,
+    "unicode": "U+133A6",
+    "character": "𓎦"
+  },
+  {
+    "id": 935,
+    "unicode": "U+133A7",
+    "character": "𓎧"
+  },
+  {
+    "id": 936,
+    "unicode": "U+133A8",
+    "character": "𓎨"
+  },
+  {
+    "id": 937,
+    "unicode": "U+133A9",
+    "character": "𓎩"
+  },
+  {
+    "id": 938,
+    "unicode": "U+133AA",
+    "character": "𓎪"
+  },
+  {
+    "id": 939,
+    "unicode": "U+133AB",
+    "character": "𓎫"
+  },
+  {
+    "id": 940,
+    "unicode": "U+133AC",
+    "character": "𓎬"
+  },
+  {
+    "id": 941,
+    "unicode": "U+133AD",
+    "character": "𓎭"
+  },
+  {
+    "id": 942,
+    "unicode": "U+133AE",
+    "character": "𓎮"
+  },
+  {
+    "id": 943,
+    "unicode": "U+133AF",
+    "character": "𓎯"
+  },
+  {
+    "id": 944,
+    "unicode": "U+133B0",
+    "character": "𓎰"
+  },
+  {
+    "id": 945,
+    "unicode": "U+133B1",
+    "character": "𓎱"
+  },
+  {
+    "id": 946,
+    "unicode": "U+133B2",
+    "character": "𓎲"
+  },
+  {
+    "id": 947,
+    "unicode": "U+133B3",
+    "character": "𓎳"
+  },
+  {
+    "id": 948,
+    "unicode": "U+133B4",
+    "character": "𓎴"
+  },
+  {
+    "id": 949,
+    "unicode": "U+133B5",
+    "character": "𓎵"
+  },
+  {
+    "id": 950,
+    "unicode": "U+133B6",
+    "character": "𓎶"
+  },
+  {
+    "id": 951,
+    "unicode": "U+133B7",
+    "character": "𓎷"
+  },
+  {
+    "id": 952,
+    "unicode": "U+133B8",
+    "character": "𓎸"
+  },
+  {
+    "id": 953,
+    "unicode": "U+133B9",
+    "character": "𓎹"
+  },
+  {
+    "id": 954,
+    "unicode": "U+133BA",
+    "character": "𓎺"
+  },
+  {
+    "id": 955,
+    "unicode": "U+133BB",
+    "character": "𓎻"
+  },
+  {
+    "id": 956,
+    "unicode": "U+133BC",
+    "character": "𓎼"
+  },
+  {
+    "id": 957,
+    "unicode": "U+133BD",
+    "character": "𓎽"
+  },
+  {
+    "id": 958,
+    "unicode": "U+133BE",
+    "character": "𓎾"
+  },
+  {
+    "id": 959,
+    "unicode": "U+133BF",
+    "character": "𓎿"
+  },
+  {
+    "id": 960,
+    "unicode": "U+133C0",
+    "character": "𓏀"
+  },
+  {
+    "id": 961,
+    "unicode": "U+133C1",
+    "character": "𓏁"
+  },
+  {
+    "id": 962,
+    "unicode": "U+133C2",
+    "character": "𓏂"
+  },
+  {
+    "id": 963,
+    "unicode": "U+133C3",
+    "character": "𓏃"
+  },
+  {
+    "id": 964,
+    "unicode": "U+133C4",
+    "character": "𓏄"
+  },
+  {
+    "id": 965,
+    "unicode": "U+133C5",
+    "character": "𓏅"
+  },
+  {
+    "id": 966,
+    "unicode": "U+133C6",
+    "character": "𓏆"
+  },
+  {
+    "id": 967,
+    "unicode": "U+133C7",
+    "character": "𓏇"
+  },
+  {
+    "id": 968,
+    "unicode": "U+133C8",
+    "character": "𓏈"
+  },
+  {
+    "id": 969,
+    "unicode": "U+133C9",
+    "character": "𓏉"
+  },
+  {
+    "id": 970,
+    "unicode": "U+133CA",
+    "character": "𓏊"
+  },
+  {
+    "id": 971,
+    "unicode": "U+133CB",
+    "character": "𓏋"
+  },
+  {
+    "id": 972,
+    "unicode": "U+133CC",
+    "character": "𓏌"
+  },
+  {
+    "id": 973,
+    "unicode": "U+133CD",
+    "character": "𓏍"
+  },
+  {
+    "id": 974,
+    "unicode": "U+133CE",
+    "character": "𓏎"
+  },
+  {
+    "id": 975,
+    "unicode": "U+133CF",
+    "character": "𓏏"
+  },
+  {
+    "id": 976,
+    "unicode": "U+133D0",
+    "character": "𓏐"
+  },
+  {
+    "id": 977,
+    "unicode": "U+133D1",
+    "character": "𓏑"
+  },
+  {
+    "id": 978,
+    "unicode": "U+133D2",
+    "character": "𓏒"
+  },
+  {
+    "id": 979,
+    "unicode": "U+133D3",
+    "character": "𓏓"
+  },
+  {
+    "id": 980,
+    "unicode": "U+133D4",
+    "character": "𓏔"
+  },
+  {
+    "id": 981,
+    "unicode": "U+133D5",
+    "character": "𓏕"
+  },
+  {
+    "id": 982,
+    "unicode": "U+133D6",
+    "character": "𓏖"
+  },
+  {
+    "id": 983,
+    "unicode": "U+133D7",
+    "character": "𓏗"
+  },
+  {
+    "id": 984,
+    "unicode": "U+133D8",
+    "character": "𓏘"
+  },
+  {
+    "id": 985,
+    "unicode": "U+133D9",
+    "character": "𓏙"
+  },
+  {
+    "id": 986,
+    "unicode": "U+133DA",
+    "character": "𓏚"
+  },
+  {
+    "id": 987,
+    "unicode": "U+133DB",
+    "character": "𓏛"
+  },
+  {
+    "id": 988,
+    "unicode": "U+133DC",
+    "character": "𓏜"
+  },
+  {
+    "id": 989,
+    "unicode": "U+133DD",
+    "character": "𓏝"
+  },
+  {
+    "id": 990,
+    "unicode": "U+133DE",
+    "character": "𓏞"
+  },
+  {
+    "id": 991,
+    "unicode": "U+133DF",
+    "character": "𓏟"
+  },
+  {
+    "id": 992,
+    "unicode": "U+133E0",
+    "character": "𓏠"
+  },
+  {
+    "id": 993,
+    "unicode": "U+133E1",
+    "character": "𓏡"
+  },
+  {
+    "id": 994,
+    "unicode": "U+133E2",
+    "character": "𓏢"
+  },
+  {
+    "id": 995,
+    "unicode": "U+133E3",
+    "character": "𓏣"
+  },
+  {
+    "id": 996,
+    "unicode": "U+133E4",
+    "character": "𓏤"
+  },
+  {
+    "id": 997,
+    "unicode": "U+133E5",
+    "character": "𓏥"
+  },
+  {
+    "id": 998,
+    "unicode": "U+133E6",
+    "character": "𓏦"
+  },
+  {
+    "id": 999,
+    "unicode": "U+133E7",
+    "character": "𓏧"
+  },
+  {
+    "id": 1000,
+    "unicode": "U+133E8",
+    "character": "𓏨"
+  },
+  {
+    "id": 1001,
+    "unicode": "U+133E9",
+    "character": "𓏩"
+  },
+  {
+    "id": 1002,
+    "unicode": "U+133EA",
+    "character": "𓏪"
+  },
+  {
+    "id": 1003,
+    "unicode": "U+133EB",
+    "character": "𓏫"
+  },
+  {
+    "id": 1004,
+    "unicode": "U+133EC",
+    "character": "𓏬"
+  },
+  {
+    "id": 1005,
+    "unicode": "U+133ED",
+    "character": "𓏭"
+  },
+  {
+    "id": 1006,
+    "unicode": "U+133EE",
+    "character": "𓏮"
+  },
+  {
+    "id": 1007,
+    "unicode": "U+133EF",
+    "character": "𓏯"
+  },
+  {
+    "id": 1008,
+    "unicode": "U+133F0",
+    "character": "𓏰"
+  },
+  {
+    "id": 1009,
+    "unicode": "U+133F1",
+    "character": "𓏱"
+  },
+  {
+    "id": 1010,
+    "unicode": "U+133F2",
+    "character": "𓏲"
+  },
+  {
+    "id": 1011,
+    "unicode": "U+133F3",
+    "character": "𓏳"
+  },
+  {
+    "id": 1012,
+    "unicode": "U+133F4",
+    "character": "𓏴"
+  },
+  {
+    "id": 1013,
+    "unicode": "U+133F5",
+    "character": "𓏵"
+  },
+  {
+    "id": 1014,
+    "unicode": "U+133F6",
+    "character": "𓏶"
+  },
+  {
+    "id": 1015,
+    "unicode": "U+133F7",
+    "character": "𓏷"
+  },
+  {
+    "id": 1016,
+    "unicode": "U+133F8",
+    "character": "𓏸"
+  },
+  {
+    "id": 1017,
+    "unicode": "U+133F9",
+    "character": "𓏹"
+  },
+  {
+    "id": 1018,
+    "unicode": "U+133FA",
+    "character": "𓏺"
+  },
+  {
+    "id": 1019,
+    "unicode": "U+133FB",
+    "character": "𓏻"
+  },
+  {
+    "id": 1020,
+    "unicode": "U+133FC",
+    "character": "𓏼"
+  },
+  {
+    "id": 1021,
+    "unicode": "U+133FD",
+    "character": "𓏽"
+  },
+  {
+    "id": 1022,
+    "unicode": "U+133FE",
+    "character": "𓏾"
+  },
+  {
+    "id": 1023,
+    "unicode": "U+133FF",
+    "character": "𓏿"
+  },
+  {
+    "id": 1024,
+    "unicode": "U+13400",
+    "character": "𓐀"
+  },
+  {
+    "id": 1025,
+    "unicode": "U+13401",
+    "character": "𓐁"
+  },
+  {
+    "id": 1026,
+    "unicode": "U+13402",
+    "character": "𓐂"
+  },
+  {
+    "id": 1027,
+    "unicode": "U+13403",
+    "character": "𓐃"
+  },
+  {
+    "id": 1028,
+    "unicode": "U+13404",
+    "character": "𓐄"
+  },
+  {
+    "id": 1029,
+    "unicode": "U+13405",
+    "character": "𓐅"
+  },
+  {
+    "id": 1030,
+    "unicode": "U+13406",
+    "character": "𓐆"
+  },
+  {
+    "id": 1031,
+    "unicode": "U+13407",
+    "character": "𓐇"
+  },
+  {
+    "id": 1032,
+    "unicode": "U+13408",
+    "character": "𓐈"
+  },
+  {
+    "id": 1033,
+    "unicode": "U+13409",
+    "character": "𓐉"
+  },
+  {
+    "id": 1034,
+    "unicode": "U+1340A",
+    "character": "𓐊"
+  },
+  {
+    "id": 1035,
+    "unicode": "U+1340B",
+    "character": "𓐋"
+  },
+  {
+    "id": 1036,
+    "unicode": "U+1340C",
+    "character": "𓐌"
+  },
+  {
+    "id": 1037,
+    "unicode": "U+1340D",
+    "character": "𓐍"
+  },
+  {
+    "id": 1038,
+    "unicode": "U+1340E",
+    "character": "𓐎"
+  },
+  {
+    "id": 1039,
+    "unicode": "U+1340F",
+    "character": "𓐏"
+  },
+  {
+    "id": 1040,
+    "unicode": "U+13410",
+    "character": "𓐐"
+  },
+  {
+    "id": 1041,
+    "unicode": "U+13411",
+    "character": "𓐑"
+  },
+  {
+    "id": 1042,
+    "unicode": "U+13412",
+    "character": "𓐒"
+  },
+  {
+    "id": 1043,
+    "unicode": "U+13413",
+    "character": "𓐓"
+  },
+  {
+    "id": 1044,
+    "unicode": "U+13414",
+    "character": "𓐔"
+  },
+  {
+    "id": 1045,
+    "unicode": "U+13415",
+    "character": "𓐕"
+  },
+  {
+    "id": 1046,
+    "unicode": "U+13416",
+    "character": "𓐖"
+  },
+  {
+    "id": 1047,
+    "unicode": "U+13417",
+    "character": "𓐗"
+  },
+  {
+    "id": 1048,
+    "unicode": "U+13418",
+    "character": "𓐘"
+  },
+  {
+    "id": 1049,
+    "unicode": "U+13419",
+    "character": "𓐙"
+  },
+  {
+    "id": 1050,
+    "unicode": "U+1341A",
+    "character": "𓐚"
+  },
+  {
+    "id": 1051,
+    "unicode": "U+1341B",
+    "character": "𓐛"
+  },
+  {
+    "id": 1052,
+    "unicode": "U+1341C",
+    "character": "𓐜"
+  },
+  {
+    "id": 1053,
+    "unicode": "U+1341D",
+    "character": "𓐝"
+  },
+  {
+    "id": 1054,
+    "unicode": "U+1341E",
+    "character": "𓐞"
+  },
+  {
+    "id": 1055,
+    "unicode": "U+1341F",
+    "character": "𓐟"
+  },
+  {
+    "id": 1056,
+    "unicode": "U+13420",
+    "character": "𓐠"
+  },
+  {
+    "id": 1057,
+    "unicode": "U+13421",
+    "character": "𓐡"
+  },
+  {
+    "id": 1058,
+    "unicode": "U+13422",
+    "character": "𓐢"
+  },
+  {
+    "id": 1059,
+    "unicode": "U+13423",
+    "character": "𓐣"
+  },
+  {
+    "id": 1060,
+    "unicode": "U+13424",
+    "character": "𓐤"
+  },
+  {
+    "id": 1061,
+    "unicode": "U+13425",
+    "character": "𓐥"
+  },
+  {
+    "id": 1062,
+    "unicode": "U+13426",
+    "character": "𓐦"
+  },
+  {
+    "id": 1063,
+    "unicode": "U+13427",
+    "character": "𓐧"
+  },
+  {
+    "id": 1064,
+    "unicode": "U+13428",
+    "character": "𓐨"
+  },
+  {
+    "id": 1065,
+    "unicode": "U+13429",
+    "character": "𓐩"
+  },
+  {
+    "id": 1066,
+    "unicode": "U+1342A",
+    "character": "𓐪"
+  },
+  {
+    "id": 1067,
+    "unicode": "U+1342B",
+    "character": "𓐫"
+  },
+  {
+    "id": 1068,
+    "unicode": "U+1342C",
+    "character": "𓐬"
+  },
+  {
+    "id": 1069,
+    "unicode": "U+1342D",
+    "character": "𓐭"
+  },
+  {
+    "id": 1070,
+    "unicode": "U+1342E",
+    "character": "𓐮"
+  },
+  {
+    "id": 1071,
+    "unicode": "U+1342F",
+    "character": "𓐯"
+  }
+]

@@ -1,0 +1,65 @@
+import cv2
+from pathlib import Path
+
+from core.context.feature_context import FeatureContext
+from core.algorithms.topology.connected_components import execute as cc
+from core.algorithms.topology.hole_count import execute as hc
+from core.algorithms.topology.euler_characteristic import execute as ec
+
+IMAGE_DIR = Path("validation/synthetic/images")
+SCALES = [0.75, 1.25]
+
+def topo(img):
+    ctx = FeatureContext(img)
+    return (
+        int(cc(ctx)),
+        int(hc(ctx)),
+        int(ec(ctx)),
+    )
+
+print("M7.2B V6 Scale Robustness")
+print("=========================")
+
+passed = 0
+total = 0
+
+for path in sorted(IMAGE_DIR.glob("*.png")):
+    img = cv2.imread(str(path), cv2.IMREAD_GRAYSCALE)
+    ref = topo(img)
+
+    ok = True
+
+    for scale in SCALES:
+        resized = cv2.resize(
+            img,
+            None,
+            fx=scale,
+            fy=scale,
+            interpolation=cv2.INTER_NEAREST,
+        )
+
+        canvas = 255 * cv2.UMat(64,64,cv2.CV_8UC1).get()
+
+        h, w = resized.shape
+        x = (64 - w) // 2
+        y = (64 - h) // 2
+        canvas[y:y+h, x:x+w] = resized
+
+        cur = topo(canvas)
+
+        if ref != cur:
+            ok = False
+            break
+
+    total += 1
+
+    if ok:
+        passed += 1
+        status = "PASS"
+    else:
+        status = "FAIL"
+
+    print(f"{path.stem:20} {status}")
+
+print()
+print(f"V6 Scale validation: {passed}/{total} PASS")
