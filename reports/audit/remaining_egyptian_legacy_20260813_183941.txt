@@ -1,0 +1,1821 @@
+AncientScriptLab
+REMAINING EGYPTIAN LEGACY AUDIT
+Generated: Thu Aug 13 18:39:41 UTC 2026
+
+=== OLD PATH REFERENCES ===
+tools/build_gardiner_reference_corpus.py:8:RAW = Path('datasets/egyptian/raw')
+tools/build_gardiner_reference_corpus.py:9:OUT = Path('datasets/egyptian/images')
+tools/build_gardiner_reference_corpus.py:10:META = Path('datasets/egyptian/metadata')
+tools/build_canonical_gardiner_registry.py:5:MAP_PATH = Path('datasets/egyptian/registry/franken_gardiner_mapping.csv')
+tools/build_canonical_gardiner_registry.py:6:OUT_DIR = Path('datasets/egyptian/registry')
+tools/build_gardiner_registry.py:6:IMG_DIR = Path('datasets/egyptian/images')
+tools/build_gardiner_registry.py:7:OUT_DIR = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry.py:6:OUT = Path('datasets/egyptian/registry')
+tools/normalize_mdc_corpus.py:6:IN_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence.json')
+tools/normalize_mdc_corpus.py:7:OUT_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence_clean.json')
+tools/map_real_corpus_to_archetypes.py:5:CORPUS_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence.json')
+tools/map_real_corpus_to_archetypes.py:7:OUT_DIR = Path('datasets/egyptian/sequences')
+tools/build_unikemet_registry_v5.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v5.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry_v32.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v32.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry_v4.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v4.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry_v31.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v31.py:6:OUT = Path('datasets/egyptian/registry')
+tools/analyze_egyptian_feature_informativeness.py:8:CSV_PATH = Path("datasets/egyptian/features/egyptian_feature_vectors.csv")
+tools/audit_primitive_graphs.py:8:GRAPH_PATH = Path("datasets/egyptian/primitive_graphs/primitive_graphs.json")
+tools/import_mdc_corpus.py:6:RAW_PATH = Path('datasets/egyptian/raw/mdc_corpus.txt')
+tools/import_mdc_corpus.py:7:OUT_DIR = Path('datasets/egyptian/corpus')
+tools/build_egyptian_corpus_sequence.py:6:CSV_PATH = Path("datasets/egyptian/raw/gardiner_sequences.csv")
+tools/build_egyptian_corpus_sequence.py:7:OUT_DIR = Path("datasets/egyptian/corpus")
+tools/analyze_structural_primitives.py:8:SIG_PATH = Path("datasets/egyptian/signatures/structural_signatures.json")
+tools/build_unikemet_unicode_registry.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_unicode_registry.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_archetype_sequences.py:7:OUT_DIR = Path("datasets/egyptian/sequences")
+
+=== FILE CONTENTS ===
+
+================================================================
+tools/analyze_egyptian_feature_informativeness.py
+================================================================
+from pathlib import Path
+import csv
+import json
+import math
+from collections import Counter
+from statistics import mean, median
+
+CSV_PATH = Path("datasets/egyptian/features/egyptian_feature_vectors.csv")
+OUT_DIR = Path("reports/statistics/egyptian")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT = OUT_DIR / "feature_informativeness.json"
+CSV_OUT = OUT_DIR / "feature_ranking.csv"
+MD_OUT = OUT_DIR / "baseline_egyptian_profile_v1.md"
+
+FEATURES = [
+    "topology.connected_components",
+    "topology.hole_count",
+    "topology.euler_characteristic",
+    "topology.total_foreground_area",
+    "topology.largest_component_area",
+    "topology.smallest_component_area",
+    "topology.mean_component_area",
+    "topology.component_area_ratio",
+    "topology.foreground_density",
+    "topology.component_density",
+]
+
+rows = []
+with open(CSV_PATH, newline="") as f:
+    reader = csv.DictReader(f)
+    rows = list(reader)
+
+N = len(rows)
+results = {}
+
+for feature in FEATURES:
+    values = [float(r[feature]) for r in rows]
+    counts = Counter(values)
+
+    m = mean(values)
+    var = sum((x - m) ** 2 for x in values) / N
+    std = math.sqrt(var)
+
+    cv = std / abs(m) if abs(m) > 1e-12 else 0.0
+
+    h = 0.0
+    for c in counts.values():
+        p = c / N
+        h -= p * math.log2(p)
+
+    unique_ratio = len(counts) / N
+    dominant_ratio = counts.most_common(1)[0][1] / N
+
+    discriminative_power = 1.0 - dominant_ratio
+
+    score = (
+        0.35 * (h / max(math.log2(len(counts)), 1e-9))
+        + 0.25 * min(cv, 1.0)
+        + 0.20 * unique_ratio
+        + 0.20 * discriminative_power
+    )
+
+    results[feature] = {
+        "mean": m,
+        "median": median(values),
+        "variance": var,
+        "std": std,
+        "coefficient_of_variation": cv,
+        "entropy": h,
+        "unique_values": len(counts),
+        "unique_value_ratio": unique_ratio,
+        "dominant_value_ratio": dominant_ratio,
+        "discriminative_power": discriminative_power,
+        "informativeness_score": score,
+    }
+
+ranking = sorted(
+    results.items(),
+    key=lambda x: x[1]["informativeness_score"],
+    reverse=True,
+)
+
+with open(JSON_OUT, "w") as f:
+    json.dump(results, f, indent=2)
+
+with open(CSV_OUT, "w", newline="") as f:
+    w = csv.writer(f)
+    w.writerow(
+        [
+            "rank",
+            "feature",
+            "score",
+            "entropy",
+            "cv",
+            "unique_ratio",
+            "discriminative_power",
+        ]
+    )
+    for i, (feature, r) in enumerate(ranking, 1):
+        w.writerow(
+            [
+                i,
+                feature,
+                r["informativeness_score"],
+                r["entropy"],
+                r["coefficient_of_variation"],
+                r["unique_value_ratio"],
+                r["discriminative_power"],
+            ]
+        )
+
+core = [f for f, r in ranking if r["informativeness_score"] >= 0.60]
+supporting = [
+    f
+    for f, r in ranking
+    if 0.40 <= r["informativeness_score"] < 0.60
+]
+weak = [f for f, r in ranking if r["informativeness_score"] < 0.40]
+
+with open(MD_OUT, "w") as f:
+    f.write("# Baseline Egyptian structural profile v1.0\\n\\n")
+    f.write(f"Images analyzed: {N}\\n\\n")
+
+    f.write("## Feature ranking\\n\\n")
+    for i, (feature, r) in enumerate(ranking, 1):
+        f.write(
+            f"{i}. {feature}: {r['informativeness_score']:.3f}\\n"
+        )
+
+    f.write("\\n## Core Feature Set\\n\\n")
+    for feature in core:
+        f.write(f"- {feature}\\n")
+
+    f.write("\\n## Supporting features\\n\\n")
+    for feature in supporting:
+        f.write(f"- {feature}\\n")
+
+    f.write("\\n## Weak features\\n\\n")
+    for feature in weak:
+        f.write(f"- {feature}\\n")
+
+print("M8.2A Egyptian feature informativeness analysis")
+print("==============================================")
+print(f"Images analyzed : {N}")
+print(f"JSON report     : {JSON_OUT}")
+print(f"CSV ranking     : {CSV_OUT}")
+print(f"Markdown report : {MD_OUT}")
+print()
+print("Top 5 informative features:")
+for i, (feature, r) in enumerate(ranking[:5], 1):
+    print(f"{i}. {feature}: {r['informativeness_score']:.3f}")
+
+================================================================
+tools/analyze_structural_primitives.py
+================================================================
+from pathlib import Path
+import json
+import csv
+import math
+from collections import Counter
+from statistics import mean, median, pstdev
+
+SIG_PATH = Path("datasets/egyptian/signatures/structural_signatures.json")
+OUT_DIR = Path("reports/statistics/egyptian")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT = OUT_DIR / "structural_primitive_informativeness.json"
+CSV_OUT = OUT_DIR / "structural_primitive_ranking.csv"
+MD_OUT = OUT_DIR / "structural_primitive_report_v1.md"
+
+data = json.loads(SIG_PATH.read_text())
+rows = data["signatures"]
+
+features = [k for k in rows[0].keys() if k != "image_id"]
+
+results = []
+
+for feat in features:
+    values = [r[feat] for r in rows]
+    cnt = Counter(values)
+
+    entropy = 0.0
+    for c in cnt.values():
+        p = c / len(values)
+        entropy -= p * math.log2(p)
+
+    unique = len(cnt)
+    vmin = min(values)
+    vmax = max(values)
+    m = mean(values)
+    med = median(values)
+    std = pstdev(values)
+    cv = std / abs(m) if abs(m) > 1e-9 else 0.0
+
+    score = 0.45 * (entropy / math.log2(unique) if unique > 1 else 0.0) + 0.35 * min(cv, 2.0) / 2.0 + 0.20 * min(unique / len(values), 1.0)
+
+    results.append({
+        "feature": feat,
+        "entropy": entropy,
+        "unique_values": unique,
+        "min": vmin,
+        "max": vmax,
+        "mean": m,
+        "median": med,
+        "std": std,
+        "cv": cv,
+        "informativeness": score,
+    })
+
+results.sort(key=lambda x: x["informativeness"], reverse=True)
+
+JSON_OUT.write_text(json.dumps(results, indent=2))
+
+with open(CSV_OUT, "w", newline="") as f:
+    w = csv.writer(f)
+    w.writerow(["rank", "feature", "informativeness", "entropy", "unique_values", "cv"])
+    for i, r in enumerate(results, 1):
+        w.writerow([i, r["feature"], round(r["informativeness"], 6), round(r["entropy"], 6), r["unique_values"], round(r["cv"], 6)])
+
+with open(MD_OUT, "w") as f:
+    f.write("# Structural primitive informativeness report v1.0\\n\\n")
+    f.write(f"Signs analyzed: {len(rows)}\\n\\n")
+    f.write("## Ranking\\n\\n")
+    for i, r in enumerate(results, 1):
+        f.write(f"{i}. {r['feature']} — {r['informativeness']:.3f}\\n")
+
+print("M10.1B Structural primitive informativeness")
+print("==========================================")
+print(f"Signs analyzed : {len(rows)}")
+print(f"Features       : {len(features)}")
+print()
+print("Top 5 informative primitives:")
+for i, r in enumerate(results[:5], 1):
+    print(f"{i}. {r['feature']}: {r['informativeness']:.3f}")
+print()
+print(f"JSON report    : {JSON_OUT}")
+print(f"CSV ranking    : {CSV_OUT}")
+print(f"Markdown report: {MD_OUT}")
+
+================================================================
+tools/audit_primitive_graphs.py
+================================================================
+from pathlib import Path
+import json
+import csv
+import math
+from collections import Counter
+from statistics import mean, median, pstdev
+
+GRAPH_PATH = Path("datasets/egyptian/primitive_graphs/primitive_graphs.json")
+OUT_DIR = Path("reports/statistics/egyptian")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT = OUT_DIR / "primitive_graph_audit.json"
+CSV_OUT = OUT_DIR / "primitive_graph_signature_ranking.csv"
+MD_OUT = OUT_DIR / "primitive_graph_audit_v1.md"
+
+data = json.loads(GRAPH_PATH.read_text())
+graphs = data["graphs"]
+
+node_counts = []
+edge_counts = []
+endpoint_counts = []
+junction_counts = []
+avg_degrees = []
+signatures = []
+
+for g in graphs:
+    sig = g["graph_signature"]
+    node_counts.append(sig["node_count"])
+    edge_counts.append(sig["edge_count"])
+    endpoint_counts.append(sig["endpoint_count"])
+    junction_counts.append(sig["junction_count"])
+    avg_degrees.append(sig["average_degree"])
+
+    signatures.append(
+        (
+            sig["node_count"],
+            sig["edge_count"],
+            sig["endpoint_count"],
+            sig["junction_count"],
+            round(sig["average_degree"], 3),
+        )
+    )
+
+def entropy(values):
+    cnt = Counter(values)
+    e = 0.0
+    for c in cnt.values():
+        p = c / len(values)
+        e -= p * math.log2(p)
+    return e
+
+def summary(values):
+    return {
+        "min": min(values),
+        "max": max(values),
+        "mean": round(mean(values), 6),
+        "median": round(median(values), 6),
+        "std": round(pstdev(values), 6),
+        "entropy": round(entropy(values), 6),
+        "unique_values": len(set(values)),
+    }
+
+signature_counter = Counter(signatures)
+top_signatures = signature_counter.most_common(20)
+
+report = {
+    "graphs_analyzed": len(graphs),
+    "node_count": summary(node_counts),
+    "edge_count": summary(edge_counts),
+    "endpoint_count": summary(endpoint_counts),
+    "junction_count": summary(junction_counts),
+    "average_degree": summary(avg_degrees),
+    "top_signatures": [
+        {
+            "signature": {
+                "node_count": s[0],
+                "edge_count": s[1],
+                "endpoint_count": s[2],
+                "junction_count": s[3],
+                "average_degree": s[4],
+            },
+            "count": c,
+            "frequency": round(c / len(graphs), 6),
+        }
+        for s, c in top_signatures
+    ],
+}
+
+JSON_OUT.write_text(json.dumps(report, indent=2))
+
+with open(CSV_OUT, "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(
+        [
+            "rank",
+            "node_count",
+            "edge_count",
+            "endpoint_count",
+            "junction_count",
+            "average_degree",
+            "count",
+            "frequency",
+        ]
+    )
+    for i, (s, c) in enumerate(top_signatures, 1):
+        writer.writerow(
+            [
+                i,
+                s[0],
+                s[1],
+                s[2],
+                s[3],
+                s[4],
+                c,
+                round(c / len(graphs), 6),
+            ]
+        )
+
+with open(MD_OUT, "w") as f:
+    f.write("# Primitive graph audit v1.0\\n\\n")
+    f.write(f"Graphs analyzed: {len(graphs)}\\n\\n")
+    f.write("## Summary\\n\\n")
+    for key in [
+        "node_count",
+        "edge_count",
+        "endpoint_count",
+        "junction_count",
+        "average_degree",
+    ]:
+        s = report[key]
+        f.write(
+            f"### {key}\\n"
+            f"- mean: {s['mean']}\\n"
+            f"- median: {s['median']}\\n"
+            f"- entropy: {s['entropy']}\\n"
+            f"- unique values: {s['unique_values']}\\n\\n"
+        )
+
+print("M10.1F Primitive Graph Audit")
+print("============================")
+print(f"Graphs analyzed : {len(graphs)}")
+print()
+print("Entropy summary:")
+print(f"Node count      : {report['node_count']['entropy']}")
+print(f"Edge count      : {report['edge_count']['entropy']}")
+print(f"Endpoint count  : {report['endpoint_count']['entropy']}")
+print(f"Junction count  : {report['junction_count']['entropy']}")
+print(f"Average degree  : {report['average_degree']['entropy']}")
+print()
+print(f"Top signatures  : {len(top_signatures)} reported")
+print(f"JSON report     : {JSON_OUT}")
+print(f"CSV ranking     : {CSV_OUT}")
+print(f"Markdown report : {MD_OUT}")
+
+================================================================
+tools/build_archetype_sequences.py
+================================================================
+from pathlib import Path
+import json
+from collections import Counter
+
+SEQ_PATH = Path("validation/examples/corpus_sequence_example.json")
+HIER_PATH = Path("reports/statistics/egyptian/hierarchical_archetypes.json")
+OUT_DIR = Path("datasets/egyptian/sequences")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT = OUT_DIR / "archetype_sequences.json"
+MD_OUT = Path("reports/statistics/egyptian/archetype_sequence_report_v1.md")
+
+hier = json.loads(HIER_PATH.read_text())
+mapping = {}
+
+for macro in hier["hierarchy"]:
+    ma = macro["macro_archetype"]
+    for meso in macro["meso_archetypes"]:
+        me = meso["meso_archetype"]
+        for micro in meso["micro_archetypes"]:
+            mi = micro["micro_archetype"]
+            for s in micro["sample_signs"]:
+                mapping[s] = {
+                    "macro": ma,
+                    "meso": me,
+                    "micro": mi,
+                }
+
+seq = json.loads(SEQ_PATH.read_text())
+out = []
+macro_counter = Counter()
+meso_counter = Counter()
+micro_counter = Counter()
+
+for ins in seq["inscriptions"]:
+    macro_seq = []
+    meso_seq = []
+    micro_seq = []
+
+    for sign in ins["signs"]:
+        a = mapping.get(sign)
+        if a is None:
+            macro_seq.append(None)
+            meso_seq.append(None)
+            micro_seq.append(None)
+        else:
+            macro_seq.append(a["macro"])
+            meso_seq.append(a["meso"])
+            micro_seq.append(a["micro"])
+            macro_counter[a["macro"]] += 1
+            meso_counter[a["meso"]] += 1
+            micro_counter[a["micro"]] += 1
+
+    out.append({
+        "id": ins["id"],
+        "sign_sequence": ins["signs"],
+        "macro_sequence": macro_seq,
+        "meso_sequence": meso_seq,
+        "micro_sequence": micro_seq,
+    })
+
+result = {
+    "module": "M11.1A Archetype Sequence Mapping",
+    "inscriptions": len(out),
+    "macro_distribution": dict(macro_counter),
+    "meso_distribution": dict(meso_counter),
+    "micro_distribution": dict(micro_counter),
+    "archetype_sequences": out,
+}
+
+JSON_OUT.write_text(json.dumps(result, indent=2))
+
+with open(MD_OUT, "w") as f:
+    f.write("# Archetype sequence report v1.0\\n\\n")
+    f.write(f"Inscriptions: {len(out)}\\n\\n")
+    f.write("## Macro distribution\\n\\n")
+    for k, v in sorted(macro_counter.items()):
+        f.write(f"- Macro {k}: {v}\\n")
+
+print("M11.1A Archetype Sequence Mapping")
+print("=================================")
+print(f"Inscriptions mapped : {len(out)}")
+print(f"JSON dataset        : {JSON_OUT}")
+print(f"Markdown report     : {MD_OUT}")
+
+================================================================
+tools/build_canonical_gardiner_registry.py
+================================================================
+from pathlib import Path
+import json
+import csv
+
+MAP_PATH = Path('datasets/egyptian/registry/franken_gardiner_mapping.csv')
+OUT_DIR = Path('datasets/egyptian/registry')
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT = OUT_DIR / 'canonical_gardiner_registry.json'
+CSV_OUT = OUT_DIR / 'canonical_gardiner_registry.csv'
+MD_OUT = Path('reports/metrology/canonical_gardiner_registry_report.md')
+
+if not MAP_PATH.exists():
+    print('Franken mapping not found:')
+    print(MAP_PATH)
+    raise SystemExit(1)
+
+registry = {}
+
+with open(MAP_PATH, newline='', encoding='utf-8') as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        code = row['gardiner_code'].strip()
+        if not code:
+            continue
+        if code not in registry:
+            registry[code] = {
+                'gardiner_code': code,
+                'image_path': row['franken_image'],
+                'feature_vector': None,
+                'macro_archetype': None,
+                'meso_archetype': None,
+                'micro_archetype': None,
+                'source': 'Franken/GlyphReader'
+            }
+
+records = sorted(registry.values(), key=lambda x: x['gardiner_code'])
+
+JSON_OUT.write_text(json.dumps({
+    'module': 'M10.3D Canonical Egyptian Sign Registry',
+    'registry': records
+}, indent=2))
+
+with open(CSV_OUT, 'w', newline='', encoding='utf-8') as f:
+    w = csv.DictWriter(f, fieldnames=[
+        'gardiner_code',
+        'image_path',
+        'feature_vector',
+        'macro_archetype',
+        'meso_archetype',
+        'micro_archetype',
+        'source'
+    ])
+    w.writeheader()
+    w.writerows(records)
+
+with open(MD_OUT, 'w', encoding='utf-8') as f:
+    f.write('# Canonical Gardiner Registry\\n\\n')
+    f.write(f'Total canonical signs: {len(records)}\\n')
+    f.write('Primary identifier: gardiner_code\\n')
+    f.write('Image is treated as an attribute, not identity.\\n')
+
+print('M10.3D Canonical Egyptian Sign Registry')
+print('=======================================')
+print(f'Canonical signs : {len(records)}')
+print()
+print(f'JSON registry   : {JSON_OUT}')
+print(f'CSV registry    : {CSV_OUT}')
+print(f'Report          : {MD_OUT}')
+
+================================================================
+tools/build_egyptian_corpus_sequence.py
+================================================================
+from pathlib import Path
+import json
+import csv
+from collections import Counter
+
+CSV_PATH = Path("datasets/egyptian/raw/gardiner_sequences.csv")
+OUT_DIR = Path("datasets/egyptian/corpus")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT = OUT_DIR / "egyptian_corpus_sequence.json"
+MD_OUT = Path("reports/statistics/egyptian/egyptian_corpus_sequence_report_v1.md")
+
+if not CSV_PATH.exists():
+    print("M11.1B Egyptian CorpusSequence Construction")
+    print("===========================================")
+    print("Source file not found:")
+    print(CSV_PATH)
+    print()
+    print("Expected CSV format:")
+    print("inscription_id,sequence")
+    print("E001,A12 D36 G17 N5")
+    print("E002,G1 Z1 D21")
+    raise SystemExit(1)
+
+inscriptions = []
+total_tokens = 0
+lengths = []
+sign_counter = Counter()
+
+with open(CSV_PATH, newline="", encoding="utf-8") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        seq = [s.strip() for s in row["sequence"].split() if s.strip()]
+        inscriptions.append({
+            "id": row["inscription_id"],
+            "signs": seq,
+            "source": "Gardiner",
+            "confidence": 1.0
+        })
+        total_tokens += len(seq)
+        lengths.append(len(seq))
+        sign_counter.update(seq)
+
+corpus = {
+    "corpus": "Egyptian",
+    "version": "1.0",
+    "inscriptions": inscriptions,
+    "statistics": {
+        "inscription_count": len(inscriptions),
+        "total_sign_tokens": total_tokens,
+        "unique_signs": len(sign_counter),
+        "mean_length": round(sum(lengths)/len(lengths), 3) if lengths else 0,
+        "max_length": max(lengths) if lengths else 0,
+        "min_length": min(lengths) if lengths else 0,
+    }
+}
+
+JSON_OUT.write_text(json.dumps(corpus, indent=2))
+
+with open(MD_OUT, "w", encoding="utf-8") as f:
+    f.write("# Egyptian CorpusSequence Report v1.0\\n\\n")
+    f.write(f"Inscriptions: {len(inscriptions)}\\n")
+    f.write(f"Total sign tokens: {total_tokens}\\n")
+    f.write(f"Unique signs: {len(sign_counter)}\\n")
+    if lengths:
+        f.write(f"Mean length: {sum(lengths)/len(lengths):.3f}\\n")
+
+print("M11.1B Egyptian CorpusSequence Construction")
+print("===========================================")
+print(f"Inscriptions      : {len(inscriptions)}")
+print(f"Total sign tokens : {total_tokens}")
+print(f"Unique signs      : {len(sign_counter)}")
+print()
+print(f"JSON corpus       : {JSON_OUT}")
+print(f"Markdown report   : {MD_OUT}")
+
+================================================================
+tools/build_gardiner_reference_corpus.py
+================================================================
+from pathlib import Path
+import json
+import time
+import cv2
+import numpy as np
+import requests
+
+RAW = Path('datasets/egyptian/raw')
+OUT = Path('datasets/egyptian/images')
+META = Path('datasets/egyptian/metadata')
+
+RAW.mkdir(parents=True, exist_ok=True)
+OUT.mkdir(parents=True, exist_ok=True)
+META.mkdir(parents=True, exist_ok=True)
+
+HEADERS = {'User-Agent': 'AncientScriptLab/1.0'}
+
+# первые 200 Unicode Egyptian Hieroglyphs
+BASE = 'https://commons.wikimedia.org/wiki/Special:FilePath/'
+
+metadata = []
+count = 0
+
+for code in range(0x13000, 0x130C8):   # 200 знаков
+    name = f'Egyptian_hieroglyph_{code:05X}.svg'
+    url = BASE + name
+
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=30)
+
+        if r.status_code != 200:
+            time.sleep(0.5)
+            continue
+
+        svg_path = RAW / f'{count:04d}.svg'
+        svg_path.write_bytes(r.content)
+
+        png_path = RAW / f'{count:04d}.png'
+
+        # если rsvg-convert не установлен, пропускаем
+        import subprocess
+        res = subprocess.run(
+            ['rsvg-convert', '-w', '256', '-h', '256',
+             str(svg_path), '-o', str(png_path)],
+            capture_output=True
+        )
+
+        if res.returncode != 0:
+            continue
+
+        img = cv2.imread(str(png_path), cv2.IMREAD_GRAYSCALE)
+
+        if img is None:
+            continue
+
+        _, binary = cv2.threshold(img, 240, 255, cv2.THRESH_BINARY_INV)
+
+        coords = cv2.findNonZero(binary)
+
+        if coords is None:
+            continue
+
+        x, y, w, h = cv2.boundingRect(coords)
+
+        crop = binary[y:y+h, x:x+w]
+
+        canvas = np.zeros((64, 64), np.uint8)
+
+        scale = min(56 / w, 56 / h)
+
+        nw = max(1, int(w * scale))
+        nh = max(1, int(h * scale))
+
+        resized = cv2.resize(
+            crop,
+            (nw, nh),
+            interpolation=cv2.INTER_NEAREST,
+        )
+
+        ox = (64 - nw) // 2
+        oy = (64 - nh) // 2
+
+        canvas[oy:oy+nh, ox:ox+nw] = resized
+
+        final = 255 - canvas
+
+        out_path = OUT / f'hiero_{count:04d}.png'
+
+        cv2.imwrite(str(out_path), final)
+
+        metadata.append(
+            {
+                'id': count,
+                'unicode': f'U+{code:05X}',
+                'source': url,
+            }
+        )
+
+        count += 1
+
+        print(f'[{count}] U+{code:05X}')
+
+        time.sleep(0.5)
+
+    except Exception:
+        time.sleep(0.5)
+        continue
+
+(META / 'gardiner_metadata.json').write_text(
+    json.dumps(metadata, indent=2),
+    encoding='utf-8',
+)
+
+print()
+print('=' * 60)
+print(f'Prepared signs: {count}')
+print('=' * 60)
+
+================================================================
+tools/build_gardiner_registry.py
+================================================================
+from pathlib import Path
+import json
+import csv
+import re
+
+IMG_DIR = Path('datasets/egyptian/images')
+OUT_DIR = Path('datasets/egyptian/registry')
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT = OUT_DIR / 'gardiner_sign_registry.json'
+CSV_OUT = OUT_DIR / 'gardiner_sign_registry.csv'
+MD_OUT = Path('reports/metrology/gardiner_registry_report.md')
+
+CODE_RE = re.compile(r'^(Aa|[A-Z])[0-9]+[A-Z]?$')
+
+registry = []
+recognized = 0
+unrecognized = 0
+
+for p in sorted(IMG_DIR.iterdir()):
+    if not p.is_file():
+        continue
+
+    stem = p.stem
+    m = CODE_RE.match(stem)
+
+    if m:
+        code = m.group(0)
+        recognized += 1
+    else:
+        code = None
+        unrecognized += 1
+
+    registry.append({
+        'image_id': stem,
+        'gardiner_code': code,
+        'filename': p.name
+    })
+
+JSON_OUT.write_text(json.dumps({
+    'module': 'M10.3A Gardiner Sign Registry',
+    'registry': registry
+}, indent=2))
+
+with open(CSV_OUT, 'w', newline='', encoding='utf-8') as f:
+    w = csv.DictWriter(f, fieldnames=['image_id','gardiner_code','filename'])
+    w.writeheader()
+    w.writerows(registry)
+
+with open(MD_OUT, 'w', encoding='utf-8') as f:
+    f.write('# Gardiner sign registry report\\n\\n')
+    f.write(f'Total images: {len(registry)}\\n')
+    f.write(f'Recognized Gardiner codes: {recognized}\\n')
+    f.write(f'Unrecognized filenames: {unrecognized}\\n')
+
+print('M10.3A Gardiner Sign Registry')
+print('=============================')
+print(f'Total images          : {len(registry)}')
+print(f'Recognized Gardiner   : {recognized}')
+print(f'Unrecognized filenames: {unrecognized}')
+print()
+print(f'JSON registry         : {JSON_OUT}')
+print(f'CSV registry          : {CSV_OUT}')
+print(f'Report                : {MD_OUT}')
+
+================================================================
+tools/build_unikemet_registry.py
+================================================================
+from pathlib import Path
+import csv
+import json
+
+SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+OUT = Path('datasets/egyptian/registry')
+OUT.mkdir(parents=True, exist_ok=True)
+
+CSV_OUT = OUT / 'canonical_gardiner_registry_v3.csv'
+JSON_OUT = OUT / 'canonical_gardiner_registry_v3.json'
+REPORT = Path('reports/metrology/unikemet_registry_report.md')
+
+records = {}
+
+with SRC.open('r', encoding='utf-8') as f:
+    for line in f:
+        if not line.strip() or line.startswith('#'):
+            continue
+
+        parts = line.rstrip('\n').split('\t')
+        if len(parts) != 3:
+            continue
+
+        cp, tag, value = parts
+
+        if not cp.startswith('U+'):
+            continue
+
+        cp_hex = cp[2:]
+        cp_int = int(cp_hex, 16)
+
+        if not (0x13000 <= cp_int <= 0x1345F):
+            continue
+
+        rec = records.setdefault(cp_hex, {
+            'unicode_cp': cp_hex,
+            'unicode': f'U+{cp_hex}',
+            'gardiner_code': None,
+            'unikemet_code': None,
+            'jsesh_code': None,
+            'category': None,
+            'description': None,
+            'function': None,
+            'core': None,
+        })
+
+        if tag == 'kEH_HG':
+            rec['gardiner_code'] = value
+        elif tag == 'kEH_UniK':
+            rec['unikemet_code'] = value
+        elif tag == 'kEH_JSesh':
+            rec['jsesh_code'] = value
+        elif tag == 'kEH_Cat':
+            rec['category'] = value
+        elif tag == 'kEH_Desc':
+            rec['description'] = value
+        elif tag == 'kEH_Func':
+            rec['function'] = value
+        elif tag == 'kEH_Core':
+            rec['core'] = value
+
+registry = sorted(records.values(), key=lambda r: int(r['unicode_cp'], 16))
+
+with CSV_OUT.open('w', newline='', encoding='utf-8') as f:
+    writer = csv.DictWriter(f, fieldnames=[
+        'gardiner_code',
+        'unicode_cp',
+        'unicode',
+        'unikemet_code',
+        'jsesh_code',
+        'category',
+        'description',
+        'function',
+        'core',
+    ])
+    writer.writeheader()
+    writer.writerows(registry)
+
+with JSON_OUT.open('w', encoding='utf-8') as f:
+    json.dump(registry, f, ensure_ascii=False, indent=2)
+
+gardiner = sum(1 for r in registry if r['gardiner_code'])
+jsesh = sum(1 for r in registry if r['jsesh_code'])
+descriptions = sum(1 for r in registry if r['description'])
+
+REPORT.parent.mkdir(parents=True, exist_ok=True)
+REPORT.write_text(
+    'M10.3G Unicode Unikemet Registry\n'
+    '================================\n'
+    f'Total Unicode Egyptian records : {len(registry)}\n'
+    f'Gardiner codes available       : {gardiner}\n'
+    f'JSesh codes available          : {jsesh}\n'
+    f'Descriptions available         : {descriptions}\n',
+    encoding='utf-8'
+)
+
+print('M10.3G Unicode Unikemet Registry')
+print('================================')
+print('Unicode Egyptian records :', len(registry))
+print('Gardiner codes          :', gardiner)
+print('JSesh codes             :', jsesh)
+print('Descriptions            :', descriptions)
+print('CSV                     :', CSV_OUT)
+print('JSON                    :', JSON_OUT)
+print('Report                  :', REPORT)
+
+================================================================
+tools/build_unikemet_registry_v31.py
+================================================================
+from pathlib import Path
+import csv
+import json
+
+SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+OUT = Path('datasets/egyptian/registry')
+OUT.mkdir(parents=True, exist_ok=True)
+
+CSV_OUT = OUT / 'canonical_gardiner_registry_v31.csv'
+JSON_OUT = OUT / 'canonical_gardiner_registry_v31.json'
+REPORT = Path('reports/metrology/unikemet_registry_v31_report.md')
+
+records = {}
+
+with SRC.open('r', encoding='utf-8') as f:
+    for line in f:
+        if not line.strip() or line.startswith('#'):
+            continue
+
+        parts = line.rstrip('\n').split('\t')
+        if len(parts) != 3:
+            continue
+
+        cp, tag, value = parts
+
+        if not cp.startswith('U+'):
+            continue
+
+        cp_hex = cp[2:]
+        cp_int = int(cp_hex, 16)
+
+        if not (0x13000 <= cp_int <= 0x1345F):
+            continue
+
+        rec = records.setdefault(cp_hex, {
+            'unicode_cp': cp_hex,
+            'unicode': f'U+{cp_hex}',
+            'gardiner_code': None,
+            'gardiner_source': None,
+            'unikemet_code': None,
+            'jsesh_code': None,
+            'category': None,
+            'description': None,
+            'function': None,
+            'core': None,
+        })
+
+        if tag == 'kEH_HG':
+            rec['gardiner_code'] = value
+            rec['gardiner_source'] = 'kEH_HG'
+        elif tag == 'kEH_JSesh':
+            rec['jsesh_code'] = value
+            if rec['gardiner_code'] is None:
+                rec['gardiner_code'] = value
+                rec['gardiner_source'] = 'kEH_JSesh'
+        elif tag == 'kEH_UniK':
+            rec['unikemet_code'] = value
+        elif tag == 'kEH_Cat':
+            rec['category'] = value
+        elif tag == 'kEH_Desc':
+            rec['description'] = value
+        elif tag == 'kEH_Func':
+            rec['function'] = value
+        elif tag == 'kEH_Core':
+            rec['core'] = value
+
+registry = sorted(records.values(), key=lambda r: int(r['unicode_cp'], 16))
+
+with CSV_OUT.open('w', newline='', encoding='utf-8') as f:
+    writer = csv.DictWriter(f, fieldnames=[
+        'gardiner_code',
+        'gardiner_source',
+        'unicode_cp',
+        'unicode',
+        'unikemet_code',
+        'jsesh_code',
+        'category',
+        'description',
+        'function',
+        'core',
+    ])
+    writer.writeheader()
+    writer.writerows(registry)
+
+with JSON_OUT.open('w', encoding='utf-8') as f:
+    json.dump(registry, f, ensure_ascii=False, indent=2)
+
+hg = sum(1 for r in registry if r['gardiner_source'] == 'kEH_HG')
+js = sum(1 for r in registry if r['gardiner_source'] == 'kEH_JSesh')
+
+REPORT.parent.mkdir(parents=True, exist_ok=True)
+REPORT.write_text(
+    'M10.3G Unicode Unikemet Registry v3.1\n'
+    '====================================\n'
+    f'Total Unicode Egyptian records : {len(registry)}\n'
+    f'Primary kEH_HG mappings        : {hg}\n'
+    f'Fallback kEH_JSesh mappings    : {js}\n'
+    f'Total Gardiner mappings        : {hg + js}\n',
+    encoding='utf-8'
+)
+
+print('M10.3G Unicode Unikemet Registry v3.1')
+print('====================================')
+print('Unicode Egyptian records :', len(registry))
+print('Primary kEH_HG mappings :', hg)
+print('Fallback kEH_JSesh      :', js)
+print('Total Gardiner mappings :', hg + js)
+print('CSV                     :', CSV_OUT)
+print('JSON                    :', JSON_OUT)
+print('Report                  :', REPORT)
+
+================================================================
+tools/build_unikemet_registry_v32.py
+================================================================
+from pathlib import Path
+import csv
+import json
+
+SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+OUT = Path('datasets/egyptian/registry')
+OUT.mkdir(parents=True, exist_ok=True)
+
+CSV_OUT = OUT / 'canonical_gardiner_registry_v32.csv'
+JSON_OUT = OUT / 'canonical_gardiner_registry_v32.json'
+REPORT = Path('reports/metrology/unikemet_registry_v32_report.md')
+
+records = {}
+
+def normalize(code):
+    if not code:
+        return None
+    code = code.strip()
+    if code.startswith('AA'):
+        code = 'Aa' + code[2:]
+    return code
+
+with SRC.open('r', encoding='utf-8') as f:
+    for line in f:
+        if not line.strip() or line.startswith('#'):
+            continue
+
+        parts = line.rstrip('\n').split('\t')
+        if len(parts) != 3:
+            continue
+
+        cp, tag, value = parts
+
+        if not cp.startswith('U+'):
+            continue
+
+        cp_hex = cp[2:]
+
+        rec = records.setdefault(cp_hex, {
+            'unicode_cp': cp_hex,
+            'unicode': cp,
+            'gardiner_code': None,
+            'gardiner_source': None,
+            'unikemet_code': None,
+            'jsesh_code': None,
+            'category': None,
+            'description': None,
+            'function': None,
+            'core': None,
+        })
+
+        if tag == 'kEH_HG':
+            rec['gardiner_code'] = normalize(value)
+            rec['gardiner_source'] = 'kEH_HG'
+
+        elif tag == 'kEH_JSesh':
+            rec['jsesh_code'] = normalize(value)
+            if rec['gardiner_code'] is None:
+                rec['gardiner_code'] = rec['jsesh_code']
+                rec['gardiner_source'] = 'kEH_JSesh'
+
+        elif tag == 'kEH_UniK':
+            rec['unikemet_code'] = value
+
+        elif tag == 'kEH_Cat':
+            rec['category'] = value
+
+        elif tag == 'kEH_Desc':
+            rec['description'] = value
+
+        elif tag == 'kEH_Func':
+            rec['function'] = value
+
+        elif tag == 'kEH_Core':
+            rec['core'] = value
+
+registry = [r for r in records.values() if r['gardiner_code'] is not None]
+registry.sort(key=lambda r: int(r['unicode_cp'], 16))
+
+with CSV_OUT.open('w', newline='', encoding='utf-8') as f:
+    writer = csv.DictWriter(f, fieldnames=[
+        'gardiner_code',
+        'gardiner_source',
+        'unicode_cp',
+        'unicode',
+        'unikemet_code',
+        'jsesh_code',
+        'category',
+        'description',
+        'function',
+        'core',
+    ])
+    writer.writeheader()
+    writer.writerows(registry)
+
+with JSON_OUT.open('w', encoding='utf-8') as f:
+    json.dump(registry, f, ensure_ascii=False, indent=2)
+
+hg = sum(1 for r in registry if r['gardiner_source'] == 'kEH_HG')
+js = sum(1 for r in registry if r['gardiner_source'] == 'kEH_JSesh')
+
+REPORT.parent.mkdir(parents=True, exist_ok=True)
+REPORT.write_text(
+    'M10.3G Unicode Unikemet Registry v3.2\n'
+    '====================================\n'
+    f'Total registry records         : {len(registry)}\n'
+    f'Primary kEH_HG mappings        : {hg}\n'
+    f'Fallback kEH_JSesh mappings    : {js}\n'
+    f'Total Gardiner mappings        : {hg + js}\n',
+    encoding='utf-8'
+)
+
+print('M10.3G Unicode Unikemet Registry v3.2')
+print('====================================')
+print('Registry records        :', len(registry))
+print('Primary kEH_HG mappings :', hg)
+print('Fallback kEH_JSesh      :', js)
+print('Total Gardiner mappings :', hg + js)
+print('CSV                     :', CSV_OUT)
+print('JSON                    :', JSON_OUT)
+print('Report                  :', REPORT)
+
+================================================================
+tools/build_unikemet_registry_v4.py
+================================================================
+from pathlib import Path
+import csv
+import json
+
+SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+OUT = Path('datasets/egyptian/registry')
+OUT.mkdir(parents=True, exist_ok=True)
+
+CSV_OUT = OUT / 'canonical_gardiner_registry_v4.csv'
+JSON_OUT = OUT / 'canonical_gardiner_registry_v4.json'
+REPORT = Path('reports/metrology/unikemet_registry_v4_report.md')
+
+# Сначала собираем свойства по Unicode-кодовой точке
+by_cp = {}
+
+def normalize(code):
+    if not code:
+        return None
+    code = code.strip()
+    if code.startswith('AA'):
+        code = 'Aa' + code[2:]
+    return code
+
+with SRC.open('r', encoding='utf-8') as f:
+    for line in f:
+        if not line.strip() or line.startswith('#'):
+            continue
+
+        parts = line.rstrip('\n').split('\t')
+        if len(parts) != 3:
+            continue
+
+        cp, tag, value = parts
+
+        if not cp.startswith('U+'):
+            continue
+
+        cp_hex = cp[2:]
+
+        rec = by_cp.setdefault(cp_hex, {
+            'unicode_cp': cp_hex,
+            'unicode': cp,
+            'kEH_HG': None,
+            'kEH_JSesh': None,
+            'kEH_UniK': None,
+            'kEH_Cat': None,
+            'kEH_Desc': None,
+            'kEH_Func': None,
+            'kEH_Core': None,
+        })
+
+        rec[tag] = value
+
+# Теперь строим реестр по уникальным Gardiner-кодам
+registry = {}
+
+for rec in by_cp.values():
+    code = normalize(rec.get('kEH_HG'))
+    source = 'kEH_HG'
+
+    if code is None:
+        code = normalize(rec.get('kEH_JSesh'))
+        source = 'kEH_JSesh'
+
+    if code is None:
+        continue
+
+    existing = registry.get(code)
+
+    if existing is None or source == 'kEH_HG':
+        registry[code] = {
+            'gardiner_code': code,
+            'gardiner_source': source,
+            'unicode_cp': rec['unicode_cp'],
+            'unicode': rec['unicode'],
+            'unikemet_code': rec.get('kEH_UniK'),
+            'jsesh_code': normalize(rec.get('kEH_JSesh')),
+            'category': rec.get('kEH_Cat'),
+            'description': rec.get('kEH_Desc'),
+            'function': rec.get('kEH_Func'),
+            'core': rec.get('kEH_Core'),
+        }
+
+records = sorted(
+    registry.values(),
+    key=lambda r: (
+        r['gardiner_code'].replace('Aa', 'ZZ'),
+        int(r['unicode_cp'], 16),
+    ),
+)
+
+with CSV_OUT.open('w', newline='', encoding='utf-8') as f:
+    writer = csv.DictWriter(
+        f,
+        fieldnames=[
+            'gardiner_code',
+            'gardiner_source',
+            'unicode_cp',
+            'unicode',
+            'unikemet_code',
+            'jsesh_code',
+            'category',
+            'description',
+            'function',
+            'core',
+        ],
+    )
+    writer.writeheader()
+    writer.writerows(records)
+
+with JSON_OUT.open('w', encoding='utf-8') as f:
+    json.dump(records, f, ensure_ascii=False, indent=2)
+
+hg = sum(1 for r in records if r['gardiner_source'] == 'kEH_HG')
+js = sum(1 for r in records if r['gardiner_source'] == 'kEH_JSesh')
+
+REPORT.parent.mkdir(parents=True, exist_ok=True)
+REPORT.write_text(
+    'M10.3G Unicode Unikemet Registry v4\n'
+    '==================================\n'
+    f'Unique Gardiner codes        : {len(records)}\n'
+    f'Primary kEH_HG mappings      : {hg}\n'
+    f'Fallback kEH_JSesh mappings  : {js}\n',
+    encoding='utf-8'
+)
+
+print('M10.3G Unicode Unikemet Registry v4')
+print('==================================')
+print('Unique Gardiner codes       :', len(records))
+print('Primary kEH_HG mappings     :', hg)
+print('Fallback kEH_JSesh mappings :', js)
+print('CSV                         :', CSV_OUT)
+print('JSON                        :', JSON_OUT)
+print('Report                      :', REPORT)
+
+================================================================
+tools/build_unikemet_registry_v5.py
+================================================================
+from pathlib import Path
+import csv
+import json
+
+SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+OUT = Path('datasets/egyptian/registry')
+OUT.mkdir(parents=True, exist_ok=True)
+
+CSV_OUT = OUT / 'canonical_gardiner_registry_v5.csv'
+JSON_OUT = OUT / 'canonical_gardiner_registry_v5.json'
+REPORT = Path('reports/metrology/unikemet_registry_v5_report.md')
+
+records = {}
+
+def normalize(code):
+    if not code:
+        return None
+    code = code.strip()
+    if code.startswith('AA'):
+        code = 'Aa' + code[2:]
+    return code
+
+with SRC.open('r', encoding='utf-8') as f:
+    for line in f:
+        if not line.strip() or line.startswith('#'):
+            continue
+
+        parts = line.rstrip('\n').split('\t')
+        if len(parts) != 3:
+            continue
+
+        cp, tag, value = parts
+
+        if not cp.startswith('U+'):
+            continue
+
+        cp_hex = cp[2:]
+
+        rec = records.setdefault(cp_hex, {
+            'unicode_cp': cp_hex,
+            'unicode': cp,
+            'gardiner_code': None,
+            'hieroglyphica_code': None,
+            'jsesh_code': None,
+            'category': None,
+            'description': None,
+            'function': None,
+            'core': None,
+        })
+
+        if tag == 'kEH_UniK':
+            rec['gardiner_code'] = normalize(value)
+        elif tag == 'kEH_HG':
+            rec['hieroglyphica_code'] = normalize(value)
+        elif tag == 'kEH_JSesh':
+            rec['jsesh_code'] = normalize(value)
+        elif tag == 'kEH_Cat':
+            rec['category'] = value
+        elif tag == 'kEH_Desc':
+            rec['description'] = value
+        elif tag == 'kEH_Func':
+            rec['function'] = value
+        elif tag == 'kEH_Core':
+            rec['core'] = value
+
+registry = [
+    r for r in records.values()
+    if r['gardiner_code'] is not None
+]
+
+registry.sort(key=lambda r: int(r['unicode_cp'], 16))
+
+with CSV_OUT.open('w', newline='', encoding='utf-8') as f:
+    writer = csv.DictWriter(
+        f,
+        fieldnames=[
+            'gardiner_code',
+            'unicode_cp',
+            'unicode',
+            'hieroglyphica_code',
+            'jsesh_code',
+            'category',
+            'description',
+            'function',
+            'core',
+        ],
+    )
+    writer.writeheader()
+    writer.writerows(registry)
+
+with JSON_OUT.open('w', encoding='utf-8') as f:
+    json.dump(registry, f, ensure_ascii=False, indent=2)
+
+REPORT.parent.mkdir(parents=True, exist_ok=True)
+REPORT.write_text(
+    'M10.3G Unicode Unikemet Registry v5\n'
+    '==================================\n'
+    f'Canonical Gardiner records : {len(registry)}\n',
+    encoding='utf-8'
+)
+
+print('M10.3G Unicode Unikemet Registry v5')
+print('==================================')
+print('Canonical Gardiner records :', len(registry))
+print('CSV                        :', CSV_OUT)
+print('JSON                       :', JSON_OUT)
+print('Report                     :', REPORT)
+
+================================================================
+tools/build_unikemet_unicode_registry.py
+================================================================
+from pathlib import Path
+import csv
+import json
+
+SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+OUT = Path('datasets/egyptian/registry')
+OUT.mkdir(parents=True, exist_ok=True)
+
+CSV_OUT = OUT / 'unicode_immutable_registry.csv'
+JSON_OUT = OUT / 'unicode_immutable_registry.json'
+REPORT = Path('reports/metrology/unicode_immutable_registry_report.md')
+
+RANGES = [
+    (0x13000, 0x1345F),  # Egyptian Hieroglyphs + Format Controls
+    (0x13460, 0x143FF),  # Egyptian Hieroglyphs Extended-A
+]
+
+def is_egyptian(cp_hex):
+    cp = int(cp_hex, 16)
+    return any(a <= cp <= b for a, b in RANGES)
+
+records = {}
+
+with SRC.open('r', encoding='utf-8') as f:
+    for line in f:
+        if line.startswith('#') or not line.strip():
+            continue
+
+        parts = line.rstrip('\n').split('\t')
+        if len(parts) != 3:
+            continue
+
+        cp, tag, value = parts
+
+        if not cp.startswith('U+'):
+            continue
+
+        cp_hex = cp[2:]
+
+        if not is_egyptian(cp_hex):
+            continue
+
+        rec = records.setdefault(cp_hex, {
+            'unicode_cp': cp_hex,
+            'unicode': cp,
+        })
+
+        rec[tag] = value
+
+registry = sorted(
+    records.values(),
+    key=lambda r: int(r['unicode_cp'], 16)
+)
+
+fieldnames = set()
+for r in registry:
+    fieldnames.update(r.keys())
+
+fieldnames = ['unicode_cp', 'unicode'] + sorted(
+    x for x in fieldnames
+    if x not in ('unicode_cp', 'unicode')
+)
+
+with CSV_OUT.open('w', newline='', encoding='utf-8') as f:
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(registry)
+
+with JSON_OUT.open('w', encoding='utf-8') as f:
+    json.dump(registry, f, ensure_ascii=False, indent=2)
+
+REPORT.parent.mkdir(parents=True, exist_ok=True)
+REPORT.write_text(
+    'M10.3I Immutable Unicode Registry\n'
+    '================================\n'
+    f'Unicode Egyptian records : {len(registry)}\n',
+    encoding='utf-8'
+)
+
+print('M10.3I Immutable Unicode Registry')
+print('================================')
+print('Unicode Egyptian records :', len(registry))
+print('CSV                      :', CSV_OUT)
+print('JSON                     :', JSON_OUT)
+print('Report                   :', REPORT)
+
+================================================================
+tools/import_mdc_corpus.py
+================================================================
+from pathlib import Path
+import json
+import re
+from collections import Counter
+
+RAW_PATH = Path('datasets/egyptian/raw/mdc_corpus.txt')
+OUT_DIR = Path('datasets/egyptian/corpus')
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT = OUT_DIR / 'egyptian_corpus_sequence.json'
+MD_OUT = Path('reports/statistics/egyptian/egyptian_corpus_sequence_report_v2.md')
+
+TOKEN_RE = re.compile(r'(?:Aa|[A-Z][a-z]?)[0-9]+[A-Z]?')
+
+if not RAW_PATH.exists():
+    print('M11.1B v2.0 Manuel de Codage import engine')
+    print('==========================================')
+    print('Source file not found:')
+    print(RAW_PATH)
+    raise SystemExit(1)
+
+inscriptions = []
+sign_counter = Counter()
+lengths = []
+
+for line in RAW_PATH.read_text(encoding='utf-8').splitlines():
+    line = line.strip()
+    if not line or line.startswith('#'):
+        continue
+
+    if ':' in line:
+        ins_id, text = line.split(':', 1)
+        ins_id = ins_id.strip()
+    else:
+        ins_id = f'E{len(inscriptions)+1:05d}'
+        text = line
+
+    clean = text.replace('\\\\', '')
+    signs = TOKEN_RE.findall(clean)
+
+    inscriptions.append({
+        'id': ins_id,
+        'signs': signs,
+        'source': 'MdC',
+        'confidence': 1.0
+    })
+
+    sign_counter.update(signs)
+    lengths.append(len(signs))
+
+corpus = {
+    'corpus': 'Egyptian',
+    'version': '2.0',
+    'format': 'Manuel de Codage',
+    'inscriptions': inscriptions,
+    'statistics': {
+        'inscription_count': len(inscriptions),
+        'total_sign_tokens': sum(lengths),
+        'unique_signs': len(sign_counter),
+        'mean_length': round(sum(lengths)/len(lengths), 3) if lengths else 0,
+        'max_length': max(lengths) if lengths else 0,
+        'min_length': min(lengths) if lengths else 0,
+    }
+}
+
+JSON_OUT.write_text(json.dumps(corpus, indent=2))
+
+with open(MD_OUT, 'w', encoding='utf-8') as f:
+    f.write('# Egyptian CorpusSequence Report v2.0\\n\\n')
+    f.write(f'Format: Manuel de Codage (MdC)\\n')
+    f.write(f'Inscriptions: {len(inscriptions)}\\n')
+    f.write(f'Total sign tokens: {sum(lengths)}\\n')
+    f.write(f'Unique signs: {len(sign_counter)}\\n')
+    if lengths:
+        f.write(f'Mean length: {sum(lengths)/len(lengths):.3f}\\n')
+
+print('M11.1B v2.0 Manuel de Codage import engine')
+print('==========================================')
+print(f'Inscriptions      : {len(inscriptions)}')
+print(f'Total sign tokens : {sum(lengths)}')
+print(f'Unique signs      : {len(sign_counter)}')
+print()
+print(f'JSON corpus       : {JSON_OUT}')
+print(f'Markdown report   : {MD_OUT}')
+
+================================================================
+tools/map_real_corpus_to_archetypes.py
+================================================================
+from pathlib import Path
+import json
+from collections import Counter
+
+CORPUS_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence.json')
+HIER_PATH = Path('reports/statistics/egyptian/hierarchical_archetypes.json')
+OUT_DIR = Path('datasets/egyptian/sequences')
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT = OUT_DIR / 'real_archetype_sequences.json'
+MD_OUT = Path('reports/statistics/egyptian/real_archetype_sequence_report_v1.md')
+
+corpus = json.loads(CORPUS_PATH.read_text())
+hier = json.loads(HIER_PATH.read_text())
+
+mapping = {}
+
+for macro in hier['hierarchy']:
+    ma = macro['macro_archetype']
+    for meso in macro['meso_archetypes']:
+        me = meso['meso_archetype']
+        for micro in meso['micro_archetypes']:
+            mi = micro['micro_archetype']
+            for s in micro['sample_signs']:
+                mapping[s] = {
+                    'macro': ma,
+                    'meso': me,
+                    'micro': mi,
+                }
+
+macro_counter = Counter()
+meso_counter = Counter()
+micro_counter = Counter()
+
+mapped_tokens = 0
+unmapped_tokens = 0
+unmapped_signs = Counter()
+
+out = []
+
+for ins in corpus['inscriptions']:
+    macro_seq = []
+    meso_seq = []
+    micro_seq = []
+
+    for sign in ins['signs']:
+        a = mapping.get(sign)
+        if a is None:
+            macro_seq.append(None)
+            meso_seq.append(None)
+            micro_seq.append(None)
+            unmapped_tokens += 1
+            unmapped_signs[sign] += 1
+        else:
+            macro_seq.append(a['macro'])
+            meso_seq.append(a['meso'])
+            micro_seq.append(a['micro'])
+            macro_counter[a['macro']] += 1
+            meso_counter[a['meso']] += 1
+            micro_counter[a['micro']] += 1
+            mapped_tokens += 1
+
+    out.append({
+        'id': ins['id'],
+        'sign_sequence': ins['signs'],
+        'macro_sequence': macro_seq,
+        'meso_sequence': meso_seq,
+        'micro_sequence': micro_seq,
+    })
+
+coverage = mapped_tokens / (mapped_tokens + unmapped_tokens) if (mapped_tokens + unmapped_tokens) else 0
+
+result = {
+    'module': 'M11.2A Real Corpus Archetype Mapping',
+    'inscriptions': len(out),
+    'mapped_tokens': mapped_tokens,
+    'unmapped_tokens': unmapped_tokens,
+    'coverage': coverage,
+    'macro_distribution': dict(macro_counter),
+    'meso_distribution': dict(meso_counter),
+    'micro_distribution': dict(micro_counter),
+    'top_unmapped_signs': unmapped_signs.most_common(30),
+    'archetype_sequences': out,
+}
+
+JSON_OUT.write_text(json.dumps(result, indent=2))
+
+with open(MD_OUT, 'w', encoding='utf-8') as f:
+    f.write('# Real archetype sequence report v1.0\\n\\n')
+    f.write(f'Inscriptions: {len(out)}\\n')
+    f.write(f'Mapped tokens: {mapped_tokens}\\n')
+    f.write(f'Unmapped tokens: {unmapped_tokens}\\n')
+    f.write(f'Coverage: {coverage:.3f}\\n\\n')
+    f.write('## Top unmapped signs\\n\\n')
+    for sign, count in unmapped_signs.most_common(20):
+        f.write(f'- {sign}: {count}\\n')
+
+print('M11.2A Real Corpus Archetype Mapping')
+print('====================================')
+print(f'Inscriptions      : {len(out)}')
+print(f'Mapped tokens     : {mapped_tokens}')
+print(f'Unmapped tokens   : {unmapped_tokens}')
+print(f'Coverage          : {coverage:.3f}')
+print()
+print(f'JSON dataset      : {JSON_OUT}')
+print(f'Markdown report   : {MD_OUT}')
+
+================================================================
+tools/normalize_mdc_corpus.py
+================================================================
+from pathlib import Path
+import json
+import re
+from collections import Counter
+
+IN_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence.json')
+OUT_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence_clean.json')
+
+data = json.loads(IN_PATH.read_text())
+
+# Допустимые Gardiner-коды: A1, A5A, Aa16, NL5, NU3 и т.д.
+TOKEN_RE = re.compile(r'^(Aa|NL|NU|[A-Z])(\d+)([A-Z]?)$')
+
+removed = 0
+normalized = 0
+all_signs = []
+
+for ins in data['inscriptions']:
+    cleaned = []
+
+    for token in ins['signs']:
+        token = token.strip()
+
+        # удалить внутренние технические токены
+        if token.startswith('Ff'):
+            removed += 1
+            continue
+
+        m = TOKEN_RE.match(token)
+        if not m:
+            removed += 1
+            continue
+
+        prefix, number, suffix = m.groups()
+        norm = f'{prefix}{int(number)}{suffix}'
+
+        if norm != token:
+            normalized += 1
+
+        cleaned.append(norm)
+        all_signs.append(norm)
+
+    ins['signs'] = cleaned
+
+counter = Counter(all_signs)
+
+data['statistics'] = {
+    'inscriptions': len(data['inscriptions']),
+    'total_sign_tokens': len(all_signs),
+    'unique_signs': len(counter),
+    'average_length': (
+        sum(len(i['signs']) for i in data['inscriptions']) /
+        len(data['inscriptions'])
+        if data['inscriptions'] else 0
+    )
+}
+
+OUT_PATH.write_text(json.dumps(data, indent=2))
+
+print('M11.1B Corpus normalization')
+print('===========================')
+print('Inscriptions :', len(data['inscriptions']))
+print('Removed      :', removed)
+print('Normalized   :', normalized)
+print('Unique signs :', len(counter))
+print('Output       :', OUT_PATH)
