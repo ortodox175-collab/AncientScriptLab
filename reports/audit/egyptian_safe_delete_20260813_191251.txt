@@ -1,0 +1,53 @@
+AncientScriptLab — Egyptian Safe Delete
+Generated: Thu Aug 13 19:12:52 UTC 2026
+
+=== REMOVED FILE CHECK ===
+REMOVED: tools/analyze_egyptian_feature_informativeness.py
+REMOVED: tools/analyze_structural_primitives.py
+REMOVED: tools/audit_primitive_graphs.py
+REMOVED: tools/build_archetype_sequences.py
+REMOVED: tools/map_real_corpus_to_archetypes.py
+
+=== PYTHON SYNTAX ===
+compileall rc=0
+
+=== TESTS ===
+TEST SUMMARY: PASS=15 FAIL=0
+
+=== MAIN ===
+AncientScriptLab — Core Measurement Baseline
+===========================================
+Connected components : 1.0
+Holes                : 0.0
+Euler characteristic : 1.0
+Foreground area      : 9.0
+Foreground density   : 0.1836734693877551
+Aspect ratio         : 1.0
+main.py rc=0
+
+=== REMAINING OLD EGYPTIAN PATH REFERENCES ===
+tools/build_gardiner_reference_corpus.py:8:RAW = Path('datasets/egyptian/raw')
+tools/build_gardiner_reference_corpus.py:9:OUT = Path('datasets/egyptian/images')
+tools/build_gardiner_reference_corpus.py:10:META = Path('datasets/egyptian/metadata')
+tools/build_canonical_gardiner_registry.py:5:MAP_PATH = Path('datasets/egyptian/registry/franken_gardiner_mapping.csv')
+tools/build_canonical_gardiner_registry.py:6:OUT_DIR = Path('datasets/egyptian/registry')
+tools/build_gardiner_registry.py:6:IMG_DIR = Path('datasets/egyptian/images')
+tools/build_gardiner_registry.py:7:OUT_DIR = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry.py:6:OUT = Path('datasets/egyptian/registry')
+tools/normalize_mdc_corpus.py:6:IN_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence.json')
+tools/normalize_mdc_corpus.py:7:OUT_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence_clean.json')
+tools/build_unikemet_registry_v5.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v5.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry_v32.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v32.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry_v4.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v4.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry_v31.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v31.py:6:OUT = Path('datasets/egyptian/registry')
+tools/import_mdc_corpus.py:6:RAW_PATH = Path('datasets/egyptian/raw/mdc_corpus.txt')
+tools/import_mdc_corpus.py:7:OUT_DIR = Path('datasets/egyptian/corpus')
+tools/build_egyptian_corpus_sequence.py:6:CSV_PATH = Path("datasets/egyptian/raw/gardiner_sequences.csv")
+tools/build_egyptian_corpus_sequence.py:7:OUT_DIR = Path("datasets/egyptian/corpus")
+tools/build_unikemet_unicode_registry.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_unicode_registry.py:6:OUT = Path('datasets/egyptian/registry')
