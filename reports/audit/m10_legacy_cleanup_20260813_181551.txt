@@ -1,0 +1,152 @@
+AncientScriptLab — Egyptian M10 Legacy Cleanup
+Generated: Thu Aug 13 18:15:51 UTC 2026
+
+=== GIT STATUS ===
+ D analysis/clustering.py
+ D analysis/indus_v8.py
+ D analysis/latent.py
+ D analysis/load_indus.py
+ M core/algorithms/geometry/aspect_ratio.py
+ M core/algorithms/topology/_binary_utils.py
+ M core/algorithms/topology/foreground_density.py
+ M core/algorithms/topology/hole_count.py
+ M core/context/feature_context.py
+ M core/corpus/corpus_sequence.py
+ D core/import_rongorongo.py
+ M core/packs/geometry_pack.py
+ M core/registry/sign_registry.py
+ D generation/markov.py
+ M main.py
+ M reports/metrology/noise/v7b_monte_carlo/noise_probability_profiles.json
+ M tests/test_bounding_box.py
+ M tests/test_execution_engine.py
+ M tests/test_feature_context.py
+ D tools/audit_egyptian_dataset.py
+ D tools/build_egyptian_reference_corpus.py
+ D tools/build_egyptian_sign_registry.py
+ D tools/build_egyptian_structural_profile.py
+ D tools/cluster_graph_signatures.py
+D  tools/component_relation_analysis.py
+D  tools/estimate_archetype_number.py
+D  tools/export_egyptian_feature_vectors.py
+D  tools/extract_hierarchical_archetypes.py
+ D tools/integrate_franken_registry.py
+D  tools/primitive_extraction.py
+D  tools/primitive_graph_extraction.py
+D  tools/run_m10_pipeline_validation.py
+D  tools/spatial_distribution_analysis.py
+ M tools/test_center_normalization.py
+ M tools/test_component_area_ratio.py
+ M tools/test_component_area_ratio_pipeline.py
+ M tools/test_component_density.py
+ M tools/test_component_density_pipeline.py
+ M tools/test_distance_matrix.py
+ M tools/test_euler_characteristic.py
+ M tools/test_euler_characteristic_pipeline.py
+ M tools/test_feature_contribution.py
+ M tools/test_feature_statistics.py
+ M tools/test_foreground_density.py
+ M tools/test_foreground_density_pipeline.py
+ M tools/test_largest_component_area.py
+ M tools/test_largest_component_area_pipeline.py
+ M tools/test_mean_component_area.py
+ M tools/test_mean_component_area_pipeline.py
+ M tools/test_similarity.py
+ M tools/test_smallest_component_area.py
+ M tools/test_smallest_component_area_pipeline.py
+ M tools/test_topology_pipeline.py
+ M tools/test_total_foreground_area.py
+ M tools/test_total_foreground_area_pipeline.py
+D  tools/validate_archetype_stability.py
+ M tools/validate_geometry_pack.py
+ D tools/verify_egyptian_export.py
+?? core/observation_registry.py
+?? core/sequence/
+?? reports/audit/m10_legacy_cleanup_20260813_181551.txt
+?? tests/test_aspect_ratio_architecture.py
+?? tests/test_feature_context_contract.py
+?? tests/test_foreground_density_contract.py
+?? tests/test_observation_identity_layers.py
+?? tests/test_sequence_boundaries.py
+?? tests/test_sign_registry_duplicates.py
+?? tests/test_topology_connectivity.py
+?? tests/test_topology_ground_truth.py
+
+=== REMOVED FILE CHECK ===
+REMOVED: tools/component_relation_analysis.py
+REMOVED: tools/primitive_graph_extraction.py
+REMOVED: tools/primitive_extraction.py
+REMOVED: tools/export_egyptian_feature_vectors.py
+REMOVED: tools/estimate_archetype_number.py
+REMOVED: tools/validate_archetype_stability.py
+REMOVED: tools/extract_hierarchical_archetypes.py
+REMOVED: tools/spatial_distribution_analysis.py
+REMOVED: tools/run_m10_pipeline_validation.py
+
+=== REFERENCES TO REMOVED MODULE NAMES ===
+
+=== REMAINING datasets/egyptian/ REFERENCES ===
+tools/build_gardiner_reference_corpus.py:8:RAW = Path('datasets/egyptian/raw')
+tools/build_gardiner_reference_corpus.py:9:OUT = Path('datasets/egyptian/images')
+tools/build_gardiner_reference_corpus.py:10:META = Path('datasets/egyptian/metadata')
+tools/build_canonical_gardiner_registry.py:5:MAP_PATH = Path('datasets/egyptian/registry/franken_gardiner_mapping.csv')
+tools/build_canonical_gardiner_registry.py:6:OUT_DIR = Path('datasets/egyptian/registry')
+tools/build_gardiner_registry.py:6:IMG_DIR = Path('datasets/egyptian/images')
+tools/build_gardiner_registry.py:7:OUT_DIR = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry.py:6:OUT = Path('datasets/egyptian/registry')
+tools/normalize_mdc_corpus.py:6:IN_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence.json')
+tools/normalize_mdc_corpus.py:7:OUT_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence_clean.json')
+tools/map_real_corpus_to_archetypes.py:5:CORPUS_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence.json')
+tools/map_real_corpus_to_archetypes.py:7:OUT_DIR = Path('datasets/egyptian/sequences')
+tools/build_unikemet_registry_v5.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v5.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry_v32.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v32.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry_v4.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v4.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_unikemet_registry_v31.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_registry_v31.py:6:OUT = Path('datasets/egyptian/registry')
+tools/analyze_egyptian_feature_informativeness.py:8:CSV_PATH = Path("datasets/egyptian/features/egyptian_feature_vectors.csv")
+tools/audit_primitive_graphs.py:8:GRAPH_PATH = Path("datasets/egyptian/primitive_graphs/primitive_graphs.json")
+tools/import_mdc_corpus.py:6:RAW_PATH = Path('datasets/egyptian/raw/mdc_corpus.txt')
+tools/import_mdc_corpus.py:7:OUT_DIR = Path('datasets/egyptian/corpus')
+tools/build_egyptian_corpus_sequence.py:6:CSV_PATH = Path("datasets/egyptian/raw/gardiner_sequences.csv")
+tools/build_egyptian_corpus_sequence.py:7:OUT_DIR = Path("datasets/egyptian/corpus")
+tools/analyze_structural_primitives.py:8:SIG_PATH = Path("datasets/egyptian/signatures/structural_signatures.json")
+tools/build_unikemet_unicode_registry.py:5:SRC = Path('datasets/egyptian/sources/Unikemet.txt')
+tools/build_unikemet_unicode_registry.py:6:OUT = Path('datasets/egyptian/registry')
+tools/build_archetype_sequences.py:7:OUT_DIR = Path("datasets/egyptian/sequences")
+
+=== PYTHON SYNTAX ===
+compileall rc=0
+
+=== TESTS ===
+PASS  tests/test_aspect_ratio_architecture.py
+PASS  tests/test_bounding_box.py
+PASS  tests/test_epigraphic_identity.py
+PASS  tests/test_execution_engine.py
+PASS  tests/test_feature_context.py
+PASS  tests/test_feature_context_contract.py
+PASS  tests/test_feature_vector.py
+PASS  tests/test_foreground_density_contract.py
+PASS  tests/test_identity_registry.py
+PASS  tests/test_image_loader.py
+PASS  tests/test_observation_identity_layers.py
+PASS  tests/test_sequence_boundaries.py
+PASS  tests/test_sign_registry_duplicates.py
+PASS  tests/test_topology_connectivity.py
+PASS  tests/test_topology_ground_truth.py
+
+TEST SUMMARY: PASS=15 FAIL=0
+
+=== MAIN ===
+AncientScriptLab — Core Measurement Baseline
+===========================================
+Connected components : 1.0
+Holes                : 0.0
+Euler characteristic : 1.0
+Foreground area      : 9.0
+Foreground density   : 0.1836734693877551
+Aspect ratio         : 1.0
+main.py rc=0
