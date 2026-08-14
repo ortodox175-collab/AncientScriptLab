@@ -1,0 +1,52 @@
+AncientScriptLab — Egyptian Registry Builders Cleanup
+Generated: Fri Aug 14 09:18:57 UTC 2026
+
+=== STAGED DELETIONS ===
+D	tools/build_canonical_gardiner_registry.py
+D	tools/build_gardiner_reference_corpus.py
+D	tools/build_gardiner_registry.py
+D	tools/build_unikemet_registry.py
+D	tools/build_unikemet_registry_v31.py
+D	tools/build_unikemet_registry_v32.py
+D	tools/build_unikemet_registry_v4.py
+D	tools/build_unikemet_registry_v5.py
+D	tools/build_unikemet_unicode_registry.py
+
+=== SAFETY CHECK ===
+SAFETY CHECK: PASS
+
+=== REMOVED FILE CHECK ===
+REMOVED: tools/build_gardiner_reference_corpus.py
+REMOVED: tools/build_gardiner_registry.py
+REMOVED: tools/build_canonical_gardiner_registry.py
+REMOVED: tools/build_unikemet_registry.py
+REMOVED: tools/build_unikemet_registry_v31.py
+REMOVED: tools/build_unikemet_registry_v32.py
+REMOVED: tools/build_unikemet_registry_v4.py
+REMOVED: tools/build_unikemet_registry_v5.py
+REMOVED: tools/build_unikemet_unicode_registry.py
+
+=== PYTHON SYNTAX ===
+compileall rc=0
+
+=== TESTS ===
+TEST SUMMARY: PASS=15 FAIL=0
+
+=== MAIN ===
+AncientScriptLab — Core Measurement Baseline
+===========================================
+Connected components : 1.0
+Holes                : 0.0
+Euler characteristic : 1.0
+Foreground area      : 9.0
+Foreground density   : 0.1836734693877551
+Aspect ratio         : 1.0
+main.py rc=0
+
+=== REMAINING OLD EGYPTIAN PATH REFERENCES ===
+tools/normalize_mdc_corpus.py:6:IN_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence.json')
+tools/normalize_mdc_corpus.py:7:OUT_PATH = Path('datasets/egyptian/corpus/egyptian_corpus_sequence_clean.json')
+tools/import_mdc_corpus.py:6:RAW_PATH = Path('datasets/egyptian/raw/mdc_corpus.txt')
+tools/import_mdc_corpus.py:7:OUT_DIR = Path('datasets/egyptian/corpus')
+tools/build_egyptian_corpus_sequence.py:6:CSV_PATH = Path("datasets/egyptian/raw/gardiner_sequences.csv")
+tools/build_egyptian_corpus_sequence.py:7:OUT_DIR = Path("datasets/egyptian/corpus")
