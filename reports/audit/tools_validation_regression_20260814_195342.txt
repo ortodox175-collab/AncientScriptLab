@@ -1,0 +1,1972 @@
+AncientScriptLab — Tools / Validation Regression
+Generated: Fri Aug 14 19:53:42 UTC 2026
+
+=== PYTHON SYNTAX ===
+compileall rc=0
+
+=== TOOLS EXECUTION ===
+
+------------------------------------------------------------
+FILE: tools/__init__.py
+------------------------------------------------------------
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/analyze_corpus_frequency.py
+------------------------------------------------------------
+Usage: python tools/analyze_corpus_frequency.py <corpus_sequence.json> <corpus_name>
+RESULT: FAIL rc=1
+
+------------------------------------------------------------
+FILE: tools/analyze_corpus_structure.py
+------------------------------------------------------------
+Usage: python tools/analyze_corpus_structure.py <corpus_sequence.json> <corpus_name>
+RESULT: FAIL rc=1
+
+------------------------------------------------------------
+FILE: tools/archetype_layer_validation_v8_7.py
+------------------------------------------------------------
+Archetype Layer Validation V8.7 completed
+Output: datasets/egyptian_canonical/validation/archetype_layer_validation_v8_7.json
+
+Validation summary
+----------------------------------------------------------------
+GSS ranges valid            : True
+Category compactness valid  : True
+Architecture separation     : True
+Marker diversity            : True
+
+Compactness mean            : 0.1293
+Nearest distance mean       : 0.0571
+
+ARCHETYPE LAYER STATUS: VALIDATED
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/architecture_integration_validation_v8_8.py
+------------------------------------------------------------
+Architecture Integration Validation V8.8 completed
+Output: datasets/egyptian_canonical/validation/architecture_integration_validation_v8_8.json
+
+Stage integration
+------------------------------------------------------------------------
+Ranges valid                : True
+Feature completeness        : True
+Category compactness        : True
+Architecture separation     : True
+Marker diversity            : True
+
+Compactness mean            : 0.1293
+Nearest distance mean       : 0.0571
+Architecture Integrity Score: 1.0
+
+STAGES 4–6 STATUS: FULLY VALIDATED
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/build_corpus_frequency_profile.py
+------------------------------------------------------------
+Usage: python tools/build_corpus_frequency_profile.py <csv_path> <corpus_name>
+RESULT: FAIL rc=1
+
+------------------------------------------------------------
+FILE: tools/build_topology_reference_corpus_v2.py
+------------------------------------------------------------
+Reference corpus v2 generated: 9 images
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/build_validation_synthetic_corpus.py
+------------------------------------------------------------
+Synthetic validation corpus generated: 6 images
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/category_fingerprint_analysis_v8_6.py
+------------------------------------------------------------
+Category Fingerprint Analysis V8.6 completed
+Output: datasets/egyptian_canonical/archetypes/category_fingerprint_v8_6.json
+
+Category fingerprints
+------------------------------------------------------------------------------------------------
+Cat  N    Compact    Nearest    Distance   Top marker      
+A      84     0.0911 B              0.0293 Complexity      
+B      10     0.0833 C              0.0256 Complexity      
+C      29     0.0881 B              0.0256 Complexity      
+D      92     0.1339 M              0.0174 Complexity      
+E      52     0.0787 G              0.0318 Complexity      
+F      73     0.1348 P              0.0251 Complexity      
+G      73     0.0941 E              0.0318 Complexity      
+H      10     0.1112 U              0.1083 Symmetry        
+I      22     0.1206 G              0.0717 Complexity      
+K       9     0.0929 L              0.0683 Balance         
+L      10     0.1195 S              0.0619 Hierarchy       
+M      65     0.1349 D              0.0174 Complexity      
+N      63     0.1646 S              0.0553 Symmetry        
+O      82     0.1861 V              0.0567 Symmetry        
+P      14     0.1167 F              0.0251 Complexity      
+Q       8     0.1669 N              0.0685 Symmetry        
+R      34     0.1455 P              0.0256 Complexity      
+S      62     0.1380 V              0.0268 Complexity      
+T      55     0.1339 U              0.0277 Complexity      
+U      54     0.1371 T              0.0277 Complexity      
+V      76     0.1620 S              0.0268 Complexity      
+W      32     0.1195 X              0.0472 Complexity      
+X      12     0.1497 W              0.0472 Complexity      
+Y      10     0.1191 M              0.1504 Balance         
+Z      40     0.2093 E              0.3294 Symmetry        
+
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/certify_reference_corpus_v2.py
+------------------------------------------------------------
+M7.3A Reference Corpus Certification
+====================================
+bridge               PASS  truth={'components': 1, 'holes': 0, 'euler': 1} measured={'components': 1, 'holes': 0, 'euler': 1}
+diagonal_contact     PASS  truth={'components': 1, 'holes': 0, 'euler': 1} measured={'components': 1, 'holes': 0, 'euler': 1}
+nested_rings         FAIL  truth={'components': 1, 'holes': 2, 'euler': -1} measured={'components': 2, 'holes': 2, 'euler': 0}
+ring                 PASS  truth={'components': 1, 'holes': 1, 'euler': 0} measured={'components': 1, 'holes': 1, 'euler': 0}
+square               PASS  truth={'components': 1, 'holes': 0, 'euler': 1} measured={'components': 1, 'holes': 0, 'euler': 1}
+square_hole          PASS  truth={'components': 1, 'holes': 1, 'euler': 0} measured={'components': 1, 'holes': 1, 'euler': 0}
+three_rings          PASS  truth={'components': 3, 'holes': 3, 'euler': 0} measured={'components': 3, 'holes': 3, 'euler': 0}
+three_squares        PASS  truth={'components': 3, 'holes': 0, 'euler': 3} measured={'components': 3, 'holes': 0, 'euler': 3}
+two_squares          PASS  truth={'components': 2, 'holes': 0, 'euler': 2} measured={'components': 2, 'holes': 0, 'euler': 2}
+
+Certification: 8/9 PASS
+Reference Corpus v2.0 NOT CERTIFIED
+Report saved to: reports/metrology/reference_corpus_v2_certification.json
+RESULT: PRINTED_FAILURE rc=0
+
+------------------------------------------------------------
+FILE: tools/corpus_validation_m7.py
+------------------------------------------------------------
+========================================================================
+AncientScriptLab M7.2 Corpus Validation
+========================================================================
+
+Corpus           : datasets/indus/images
+Images processed : 1446
+
+topology.component_area_ratio
+  mean=0.704044  std=0.275802  min=0.168067  max=1.000000
+
+topology.component_density
+  mean=0.000657  std=0.000482  min=0.000244  max=0.003174
+
+topology.connected_components
+  mean=2.689488  std=1.972771  min=1.000000  max=13.000000
+
+topology.euler_characteristic
+  mean=1.966113  std=2.782496  min=-11.000000  max=13.000000
+
+topology.foreground_density
+  mean=0.097646  std=0.035592  min=0.020020  max=0.274414
+
+topology.hole_count
+  mean=0.723375  std=1.502269  min=0.000000  max=12.000000
+
+topology.largest_component_area
+  mean=262.966805  std=119.345542  min=78.000000  max=940.000000
+
+topology.mean_component_area
+  mean=207.552953  std=124.470566  min=37.571429  max=721.000000
+
+topology.smallest_component_area
+  mean=160.033887  std=151.148552  min=1.000000  max=721.000000
+
+topology.total_foreground_area
+  mean=399.958506  std=145.784076  min=82.000000  max=1124.000000
+
+Report saved to: reports/corpus_validation/indus_report.json
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/generate_m10_final_certificate.py
+------------------------------------------------------------
+/workspaces/AncientScriptLab/tools/generate_m10_final_certificate.py:16: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "date": datetime.utcnow().isoformat() + "Z",
+M10 Final Validation Certificate
+================================
+Status               : FOUNDATION VALIDATED
+Structural engine    : Structural Archetype Engine v1.0
+Validated corpus     : 1072 Egyptian signs
+Macro archetypes     : 3
+Meso archetypes      : 10
+Micro archetypes     : 27
+
+JSON certificate     : reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json
+Markdown certificate : reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.md
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/generate_reference_dataset.py
+------------------------------------------------------------
+
+Reference dataset created
+tests/data/reference
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/glyph_structural_signature_v8_1.py
+------------------------------------------------------------
+Glyph Structural Signature V8.1 completed
+Output: datasets/egyptian_canonical/metrology/glyph_structural_signature_v8_1.json
+Glyphs: 1071
+Average symmetry : 0.3235
+Average hierarchy: 0.2251
+Average branching: 0.0033
+Average stability: 0.9273
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/glyph_structural_signature_v8_2.py
+------------------------------------------------------------
+Glyph Structural Signature V8.2 completed
+Output: datasets/egyptian_canonical/metrology/glyph_structural_signature_v8_2.json
+Glyphs: 1071
+Average symmetry  : 0.4759
+Average hierarchy : 0.2251
+Average complexity: 0.5238
+Average balance   : 0.1156
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/gss_archetype_validation_v8_4.py
+------------------------------------------------------------
+GSS archetype validation V8.4 completed
+Output: datasets/egyptian_canonical/validation/gss_archetype_validation_v8_4.json
+
+Category profiles
+------------------------------------------------------------------------
+Cat  N     Sym      Hier     Comp     Bal     
+A       84    0.399    0.147    0.315    0.072
+B       10    0.417    0.162    0.327    0.058
+C       29    0.428    0.170    0.334    0.078
+D       92    0.439    0.269    0.584    0.120
+E       52    0.503    0.201    0.403    0.074
+F       73    0.444    0.273    0.619    0.123
+G       73    0.476    0.211    0.409    0.087
+H       10    0.330    0.292    0.539    0.113
+I       22    0.408    0.225    0.398    0.101
+K        9    0.501    0.232    0.501    0.072
+L       10    0.512    0.274    0.521    0.121
+M       65    0.427    0.264    0.580    0.130
+N       63    0.542    0.247    0.577    0.116
+O       82    0.543    0.205    0.546    0.148
+P       14    0.455    0.262    0.608    0.140
+Q        8    0.581    0.218    0.609    0.153
+R       34    0.450    0.237    0.612    0.142
+S       62    0.492    0.231    0.561    0.123
+T       55    0.402    0.246    0.640    0.126
+U       54    0.390    0.265    0.625    0.120
+V       76    0.498    0.208    0.574    0.127
+W       32    0.519    0.241    0.633    0.135
+X       12    0.536    0.246    0.673    0.116
+Y       10    0.401    0.264    0.517    0.264
+Z       40    0.814    0.116    0.353    0.115
+
+Most distant category pairs
+------------------------------------------------------------------------
+H - Z: 0.547
+U - Z: 0.525
+T - Z: 0.519
+Y - Z: 0.492
+F - Z: 0.482
+M - Z: 0.473
+D - Z: 0.466
+P - Z: 0.465
+R - Z: 0.464
+X - Z: 0.443
+
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/gss_correlation_analysis_v8_3.py
+------------------------------------------------------------
+GSS correlation analysis V8.3 completed
+Output: datasets/egyptian_canonical/validation/gss_correlation_v8_3.json
+Glyphs analyzed: 1071
+
+Feature statistics
+----------------------------------------------------------------
+Symmetry     mean = 0.4759 var = 0.02511 range = 0.09 - 1.0
+Hierarchy    mean = 0.2251 var = 0.01069 range = 0.0 - 0.575
+Complexity   mean = 0.5238 var = 0.06257 range = 0.0 - 1.0
+Balance      mean = 0.1156 var = 0.01057 range = 0.0 - 0.6091
+
+Correlation matrix
+----------------------------------------------------------------
+            Symmetry    Hierarchy   Complexity  Balance     
+Symmetry           1.000      -0.215      -0.187      -0.058
+Hierarchy         -0.215       1.000       0.697       0.171
+Complexity        -0.187       0.697       1.000       0.155
+Balance           -0.058       0.171       0.155       1.000
+
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/gss_feature_separation_v8_5.py
+------------------------------------------------------------
+GSS feature separation V8.5 completed
+Output: datasets/egyptian_canonical/validation/gss_feature_separation_v8_5.json
+
+Feature separation ratios
+------------------------------------------------------------------------
+Feature      Between      Within       Ratio       
+Symmetry          0.00820      0.01736        0.472
+Hierarchy         0.00181      0.00871        0.207
+Complexity        0.01178      0.04563        0.258
+Balance           0.00151      0.01023        0.148
+
+Best separating feature: Symmetry
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/hierarchical_architecture_model_v8_11.py
+------------------------------------------------------------
+HIERARCHICAL ARCHITECTURE MODEL V8.11
+================================================================================
+
+LEVEL 1: GLYPH INTEGRITY
+GII : 1.0000
+
+LEVEL 2: CATEGORY INTEGRITY
+Mean compactness      : 0.1293
+Compactness variance  : 0.001022
+CII                   : 0.9990
+
+LEVEL 3: CORPUS STRUCTURE
+Symmetry  : 0.008197
+Hierarchy : 0.001806
+Complexity: 0.011781
+Balance   : 0.001510
+
+Separation ratio      : 5.7004
+CSI                   : 0.8508
+
+MARKER ORGANIZATION
+Marker diversity      : 1.0000
+
+================================================================================
+ARCHITECTURE INTEGRITY INDEX V3.2
+================================================================================
+AII v3.2 : 0.9549
+
+Output: datasets/egyptian_canonical/validation/hierarchical_architecture_model_v8_11.json
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/hierarchical_architecture_model_v8_12.py
+------------------------------------------------------------
+HIERARCHICAL ARCHITECTURE MODEL V8.12
+====================================================================================================
+
+WITHIN-CATEGORY VARIANCE
+Symmetry  : 0.017362
+Hierarchy : 0.008713
+Complexity: 0.045634
+Balance   : 0.010234
+
+BETWEEN-CATEGORY VARIANCE
+Symmetry  : 0.008197
+Hierarchy : 0.001806
+Complexity: 0.011781
+Balance   : 0.001510
+
+SEPARATION RATIOS
+Symmetry  : 0.4721
+Hierarchy : 0.2073
+Complexity: 0.2582
+Balance   : 0.1476
+
+====================================================================================================
+INTEGRITY INDICES
+GII : 1.0000
+CII : 0.9992
+CSI : 0.2134
+Marker diversity : 1.0000
+
+====================================================================================================
+EMPIRICAL ARCHITECTURE INTEGRITY INDEX V3.3
+AII v3.3 : 0.6852
+
+Output: datasets/egyptian_canonical/validation/hierarchical_architecture_model_v8_12.json
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/import_indus_corpus.py
+------------------------------------------------------------
+Imported images: 0
+Target directory: datasets/indus/images
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/master_validation_report_v8_9R.py
+------------------------------------------------------------
+MASTER VALIDATION REPORT V8.9R
+========================================================================================================================
+
+Cat  N    Sym     Hier    Comp    Bal     Compact  Near  Dist    Marker    
+------------------------------------------------------------------------------------------------------------------------
+A      84   0.399   0.147   0.315   0.072    0.091 B       0.029 Complexity
+B      10   0.417   0.162   0.327   0.058    0.083 C       0.026 Complexity
+C      29   0.428   0.170   0.334   0.078    0.088 B       0.026 Complexity
+D      92   0.439   0.269   0.584   0.120    0.134 M       0.017 Complexity
+E      52   0.503   0.201   0.403   0.074    0.079 G       0.032 Complexity
+F      73   0.444   0.273   0.619   0.123    0.135 P       0.025 Complexity
+G      73   0.476   0.211   0.409   0.087    0.094 E       0.032 Complexity
+H      10   0.330   0.292   0.539   0.113    0.111 U       0.108 Symmetry  
+I      22   0.408   0.225   0.398   0.101    0.121 G       0.072 Complexity
+K       9   0.501   0.232   0.501   0.072    0.093 L       0.068 Balance   
+L      10   0.512   0.274   0.521   0.121    0.119 S       0.062 Hierarchy 
+M      65   0.427   0.264   0.580   0.130    0.135 D       0.017 Complexity
+N      63   0.542   0.247   0.577   0.116    0.165 S       0.055 Symmetry  
+O      82   0.543   0.205   0.546   0.148    0.186 V       0.057 Symmetry  
+P      14   0.455   0.262   0.608   0.140    0.117 F       0.025 Complexity
+Q       8   0.581   0.218   0.609   0.153    0.167 N       0.069 Symmetry  
+R      34   0.450   0.237   0.612   0.142    0.146 P       0.026 Complexity
+S      62   0.492   0.231   0.561   0.123    0.138 V       0.027 Complexity
+T      55   0.402   0.246   0.640   0.126    0.134 U       0.028 Complexity
+U      54   0.390   0.265   0.625   0.120    0.137 T       0.028 Complexity
+V      76   0.498   0.208   0.574   0.127    0.162 S       0.027 Complexity
+W      32   0.519   0.241   0.633   0.135    0.119 X       0.047 Complexity
+X      12   0.536   0.246   0.673   0.116    0.150 W       0.047 Complexity
+Y      10   0.401   0.264   0.517   0.264    0.119 M       0.150 Balance   
+Z      40   0.814   0.116   0.353   0.115    0.209 E       0.329 Symmetry  
+
+========================================================================================================================
+КОЛИЧЕСТВЕННАЯ ВАЛИДАЦИЯ
+========================================================================================================================
+Canonical uniqueness : 1.0000
+Feature completeness : 1.0000
+Compactness mean     : 0.1293
+Compactness quality  : 0.1383
+Separation mean      : 0.0571
+Separation quality   : 0.9524
+Marker diversity     : 1.0000
+
+ARCHITECTURE INTEGRITY INDEX (AII): 0.8181
+
+Top 5 most compact categories:
+E : 0.0787
+B : 0.0833
+C : 0.0881
+A : 0.0911
+K : 0.0929
+
+Top 5 most isolated categories:
+Z : 0.3294
+Y : 0.1504
+H : 0.1083
+I : 0.0717
+Q : 0.0685
+
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/master_validation_report_v8_9S.py
+------------------------------------------------------------
+MASTER VALIDATION REPORT V8.9S
+========================================================================================================================
+
+Cat  N    Sym     Hier    Comp    Bal     Compact  Near  Dist    Marker    
+------------------------------------------------------------------------------------------------------------------------
+A      84   0.399   0.147   0.315   0.072    0.091 B       0.029 Complexity
+B      10   0.417   0.162   0.327   0.058    0.083 C       0.026 Complexity
+C      29   0.428   0.170   0.334   0.078    0.088 B       0.026 Complexity
+D      92   0.439   0.269   0.584   0.120    0.134 M       0.017 Complexity
+E      52   0.503   0.201   0.403   0.074    0.079 G       0.032 Complexity
+F      73   0.444   0.273   0.619   0.123    0.135 P       0.025 Complexity
+G      73   0.476   0.211   0.409   0.087    0.094 E       0.032 Complexity
+H      10   0.330   0.292   0.539   0.113    0.111 U       0.108 Symmetry  
+I      22   0.408   0.225   0.398   0.101    0.121 G       0.072 Complexity
+K       9   0.501   0.232   0.501   0.072    0.093 L       0.068 Balance   
+L      10   0.512   0.274   0.521   0.121    0.119 S       0.062 Hierarchy 
+M      65   0.427   0.264   0.580   0.130    0.135 D       0.017 Complexity
+N      63   0.542   0.247   0.577   0.116    0.165 S       0.055 Symmetry  
+O      82   0.543   0.205   0.546   0.148    0.186 V       0.057 Symmetry  
+P      14   0.455   0.262   0.608   0.140    0.117 F       0.025 Complexity
+Q       8   0.581   0.218   0.609   0.153    0.167 N       0.069 Symmetry  
+R      34   0.450   0.237   0.612   0.142    0.146 P       0.026 Complexity
+S      62   0.492   0.231   0.561   0.123    0.138 V       0.027 Complexity
+T      55   0.402   0.246   0.640   0.126    0.134 U       0.028 Complexity
+U      54   0.390   0.265   0.625   0.120    0.137 T       0.028 Complexity
+V      76   0.498   0.208   0.574   0.127    0.162 S       0.027 Complexity
+W      32   0.519   0.241   0.633   0.135    0.119 X       0.047 Complexity
+X      12   0.536   0.246   0.673   0.116    0.150 W       0.047 Complexity
+Y      10   0.401   0.264   0.517   0.264    0.119 M       0.150 Balance   
+Z      40   0.814   0.116   0.353   0.115    0.209 E       0.329 Symmetry  
+
+========================================================================================================================
+КОЛИЧЕСТВЕННАЯ ВАЛИДАЦИЯ
+========================================================================================================================
+Canonical uniqueness : 1.0000
+Feature completeness : 1.0000
+Range score          : 1.0000
+
+Compactness mean     : 0.1293
+Compactness score    : 1.0000
+
+Separation mean      : 0.0571
+Separation score     : 1.0000
+
+Marker diversity     : 1.0000
+
+========================================================================================================================
+ARCHITECTURE INTEGRITY INDEX V2.0
+========================================================================================================================
+AII                 : 1.0000
+
+Top 5 most compact categories:
+E : 0.0787
+B : 0.0833
+C : 0.0881
+A : 0.0911
+K : 0.0929
+
+Top 5 most isolated categories:
+Z : 0.3294
+Y : 0.1504
+H : 0.1083
+I : 0.0717
+Q : 0.0685
+
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/master_validation_v8_9.py
+------------------------------------------------------------
+MASTER VALIDATION V8.9
+========================================================================================================================
+
+Cat  N    Symmetry  Hierarchy  Complexity  Balance  Compact  Nearest Distance Top marker  
+------------------------------------------------------------------------------------------------------------------------
+A      84    0.3986     0.1472      0.3155   0.0721   0.0911 B         0.0293 Complexity  
+B      10    0.4169     0.1617      0.3267   0.0583   0.0833 C         0.0256 Complexity  
+C      29    0.4281     0.1700      0.3343   0.0784   0.0881 B         0.0256 Complexity  
+D      92    0.4394     0.2691      0.5844   0.1196   0.1339 M         0.0174 Complexity  
+E      52    0.5027     0.2013      0.4028   0.0738   0.0787 G         0.0318 Complexity  
+F      73    0.4440     0.2726      0.6186   0.1231   0.1348 P         0.0251 Complexity  
+G      73    0.4762     0.2108      0.4092   0.0871   0.0941 E         0.0318 Complexity  
+H      10    0.3304     0.2916      0.5388   0.1134   0.1112 U         0.1083 Symmetry    
+I      22    0.4084     0.2254      0.3976   0.1006   0.1206 G         0.0717 Complexity  
+K       9    0.5010     0.2321      0.5012   0.0720   0.0929 L         0.0683 Balance     
+L      10    0.5122     0.2739      0.5212   0.1209   0.1195 S         0.0619 Hierarchy   
+M      65    0.4273     0.2641      0.5801   0.1303   0.1349 D         0.0174 Complexity  
+N      63    0.5425     0.2466      0.5768   0.1157   0.1646 S         0.0553 Symmetry    
+O      82    0.5431     0.2053      0.5464   0.1479   0.1861 V         0.0567 Symmetry    
+P      14    0.4545     0.2623      0.6078   0.1403   0.1167 F         0.0251 Complexity  
+Q       8    0.5809     0.2181      0.6092   0.1526   0.1669 N         0.0685 Symmetry    
+R      34    0.4496     0.2375      0.6116   0.1417   0.1455 P         0.0256 Complexity  
+S      62    0.4925     0.2307      0.5609   0.1227   0.1380 V         0.0268 Complexity  
+T      55    0.4022     0.2460      0.6396   0.1259   0.1339 U         0.0277 Complexity  
+U      54    0.3903     0.2654      0.6249   0.1201   0.1371 T         0.0277 Complexity  
+V      76    0.4981     0.2084      0.5738   0.1273   0.1620 S         0.0268 Complexity  
+W      32    0.5187     0.2408      0.6333   0.1354   0.1195 X         0.0472 Complexity  
+X      12    0.5358     0.2457      0.6727   0.1164   0.1497 W         0.0472 Complexity  
+Y      10    0.4012     0.2641      0.5169   0.2642   0.1191 M         0.1504 Balance     
+Z      40    0.8143     0.1159      0.3532   0.1149   0.2093 E         0.3294 Symmetry    
+
+========================================================================================================================
+СВОДНЫЕ ПОКАЗАТЕЛИ
+========================================================================================================================
+Всего знаков                    : 1071
+Уникальных Gardiner-кодов       : 1071
+Дубликатов                      : 0
+
+Symmetry    : min=0.0900 max=1.0000 mean=0.4759 missing=0
+Hierarchy   : min=0.0000 max=0.5750 mean=0.2251 missing=0
+Complexity  : min=0.0000 max=1.0000 mean=0.5238 missing=0
+Balance     : min=0.0000 max=0.6091 mean=0.1156 missing=0
+
+Средняя компактность категорий  : 0.1293
+Минимальная компактность        : 0.0787
+Максимальная компактность       : 0.2093
+
+Среднее расстояние категорий    : 0.0571
+Минимальное расстояние          : 0.0174
+Максимальное расстояние         : 0.3294
+
+РАСПРЕДЕЛЕНИЕ ГЛАВНЫХ МАРКЕРОВ
+------------------------------------------------------------------------------------------------------------------------
+Symmetry    : 5
+Hierarchy   : 1
+Complexity  : 17
+Balance     : 2
+
+========================================================================================================================
+ИТОГОВАЯ ВАЛИДАЦИЯ
+========================================================================================================================
+Диапазоны признаков            : True
+Полнота признаков              : True
+Компактность категорий         : True
+Разделение категорий           : True
+Разнообразие маркеров          : True
+Architecture Integrity Score   : 1.0000
+
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/normalization_validation_protocol.py
+------------------------------------------------------------
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/rotational_symmetry_analyzer_v6r.py
+------------------------------------------------------------
+Rotational Symmetry Analyzer V6R completed
+Output: datasets/egyptian_canonical/metrology/glyph_symmetry_spectrum_v6R.json
+Glyphs analyzed: 1071
+
+Average vertical SHI: 0.2261
+Average horizontal SHI: 0.2241
+
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/run_normalization_validation.py
+------------------------------------------------------------
+
+========================================================================
+AncientScriptLab
+M6.4 Scientific Validation
+========================================================================
+
+------------------------------------------------------------------------
+No Normalization
+------------------------------------------------------------------------
+Status : Available
+
+[ ] Distance Stability
+[ ] Feature Contribution
+[ ] Outlier Sensitivity
+[ ] Small Corpus Behaviour
+[ ] Large Corpus Behaviour
+[ ] Numerical Stability
+[ ] Scientific Interpretability
+[ ] Reproducibility
+
+------------------------------------------------------------------------
+Min-Max
+------------------------------------------------------------------------
+Status : Available
+
+[ ] Distance Stability
+[ ] Feature Contribution
+[ ] Outlier Sensitivity
+[ ] Small Corpus Behaviour
+[ ] Large Corpus Behaviour
+[ ] Numerical Stability
+[ ] Scientific Interpretability
+[ ] Reproducibility
+
+------------------------------------------------------------------------
+Z-Score
+------------------------------------------------------------------------
+Status : Planned
+
+[ ] Distance Stability
+[ ] Feature Contribution
+[ ] Outlier Sensitivity
+[ ] Small Corpus Behaviour
+[ ] Large Corpus Behaviour
+[ ] Numerical Stability
+[ ] Scientific Interpretability
+[ ] Reproducibility
+
+------------------------------------------------------------------------
+Robust
+------------------------------------------------------------------------
+Status : Planned
+
+[ ] Distance Stability
+[ ] Feature Contribution
+[ ] Outlier Sensitivity
+[ ] Small Corpus Behaviour
+[ ] Large Corpus Behaviour
+[ ] Numerical Stability
+[ ] Scientific Interpretability
+[ ] Reproducibility
+
+------------------------------------------------------------------------
+Percentile
+------------------------------------------------------------------------
+Status : Planned
+
+[ ] Distance Stability
+[ ] Feature Contribution
+[ ] Outlier Sensitivity
+[ ] Small Corpus Behaviour
+[ ] Large Corpus Behaviour
+[ ] Numerical Stability
+[ ] Scientific Interpretability
+[ ] Reproducibility
+
+------------------------------------------------------------------------
+Log Scaling
+------------------------------------------------------------------------
+Status : Planned
+
+[ ] Distance Stability
+[ ] Feature Contribution
+[ ] Outlier Sensitivity
+[ ] Small Corpus Behaviour
+[ ] Large Corpus Behaviour
+[ ] Numerical Stability
+[ ] Scientific Interpretability
+[ ] Reproducibility
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/scientific_validation_m7.py
+------------------------------------------------------------
+========================================================================
+AncientScriptLab M7.1 Scientific Validation Protocol
+========================================================================
+
+
+Images processed              : 1000
+Algorithms executed           : 10
+Total computations            : 10000
+
+Execution failures            : 0
+Scientific consistency errors : 0
+
+Total execution time          : 0.925 s
+Mean time per image           : 0.925 ms
+Peak memory usage             : 1.02 MB
+
+SCIENTIFIC VALIDATION : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/statistical_architecture_baseline_v8_10A.py
+------------------------------------------------------------
+STATISTICAL ARCHITECTURE BASELINE V8.10A
+========================================================================================================================
+
+Cat  N    P_arch   P_comp   P_dist  
+------------------------------------------------------------------------------------------------------------------------
+A      84    0.333    0.320    0.960
+B      10    0.293    0.160    0.560
+C      29    0.413    0.240    0.560
+D      92    0.613    0.880    0.160
+E      52    0.453    0.080    0.880
+F      73    0.533    0.800    0.320
+G      73    0.653    0.480    0.880
+H      10    0.387    0.560    0.160
+I      22    0.573    0.960    0.240
+K       9    0.533    0.400    0.400
+L      10    0.587    0.800    0.480
+M      65    0.520    0.720    0.160
+N      63    0.560    0.240    0.640
+O      82    0.400    0.080    0.560
+P      14    0.560    0.640    0.320
+Q       8    0.307    0.160    0.320
+R      34    0.573    0.480    0.400
+S      62    0.787    0.560    0.720
+T      55    0.613    0.960    0.880
+U      54    0.533    0.640    0.880
+V      76    0.627    0.320    0.720
+W      32    0.573    0.880    0.720
+X      12    0.520    0.400    0.720
+Y      10    0.387    0.720    0.080
+Z      40    0.187    0.000    0.000
+
+========================================================================================================================
+EMPIRICAL BASELINE
+========================================================================================================================
+Compactness median = 0.1339 MAD = 0.0172
+Distance median    = 0.0318 MAD = 0.0144
+
+========================================================================================================================
+EMPIRICAL ARCHITECTURE INTEGRITY INDEX
+========================================================================================================================
+AII v3.0 = 0.5259
+
+Output: datasets/egyptian_canonical/validation/statistical_architecture_baseline_v8_10A.json
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/statistical_architecture_baseline_v8_10B.py
+------------------------------------------------------------
+STATISTICAL ARCHITECTURE BASELINE V8.10B
+================================================================================
+
+Compactness median       : 0.1339
+Compactness MAD          : 0.0172
+Distance median          : 0.0318
+Distance MAD             : 0.0144
+
+================================================================================
+ARCHITECTURE CONSISTENCY
+================================================================================
+Within variability       : 0.0172
+Between variability      : 0.0318
+Separation ratio         : 1.8520
+Compactness consistency  : 0.8718
+Marker diversity         : 1.0000
+
+================================================================================
+EMPIRICAL ARCHITECTURE INTEGRITY INDEX
+================================================================================
+AII v3.1                 : 0.9494
+
+Output: datasets/egyptian_canonical/validation/statistical_architecture_baseline_v8_10B.json
+STATUS: PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_all_normalization_methods.py
+------------------------------------------------------------
+
+============================================================
+No Normalization
+============================================================
+Vector 1
+  A: 10.000000
+  B: 100.000000
+
+Vector 2
+  A: 20.000000
+  B: 200.000000
+
+Vector 3
+  A: 30.000000
+  B: 300.000000
+
+
+============================================================
+Min-Max
+============================================================
+Vector 1
+  A: 0.000000
+  B: 0.000000
+
+Vector 2
+  A: 0.500000
+  B: 0.500000
+
+Vector 3
+  A: 1.000000
+  B: 1.000000
+
+
+============================================================
+Z-Score
+============================================================
+Planned for M6.4.
+
+============================================================
+Robust
+============================================================
+Planned for M6.4.
+
+============================================================
+Percentile
+============================================================
+Planned for M6.4.
+
+============================================================
+Log Scaling
+============================================================
+Planned for M6.4.
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_center_normalization.py
+------------------------------------------------------------
+Original
+--------
+Centroid X  : 49.75409836065574
+Centroid Y  : 60.0
+Width       : 100.0
+Height      : 100.0
+
+Bounding Box Center
+-------------------
+Centroid X  : 48.75409836065574
+Centroid Y  : 59.0
+Width       : 100.0
+Height      : 100.0
+
+Center Of Mass
+--------------
+Centroid X  : 49.75409836065574
+Centroid Y  : 49.0
+Width       : 100.0
+Height      : 100.0
+
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_component_area_ratio.py
+------------------------------------------------------------
+========================================================================
+Component Area Ratio Unit Test
+========================================================================
+
+Computed ratio : 0.800000
+Expected ratio : 0.800000
+
+Unit test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_component_area_ratio_pipeline.py
+------------------------------------------------------------
+========================================================================
+Component Area Ratio Pipeline Integration Test
+========================================================================
+
+Computed ratio : 0.800000
+Expected ratio : 0.800000
+
+Pipeline test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_component_density.py
+------------------------------------------------------------
+========================================================================
+Component Density Unit Test
+========================================================================
+
+Computed density : 0.005000
+Expected density : 0.005000
+
+Unit test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_component_density_pipeline.py
+------------------------------------------------------------
+========================================================================
+Component Density Pipeline Integration Test
+========================================================================
+
+Computed density : 0.005000
+Expected density : 0.005000
+
+Pipeline test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_distance_matrix.py
+------------------------------------------------------------
+==========================================================================================
+AncientScriptLab
+Distance Matrix
+==========================================================================================
+
+                    001_square  002_rectangle     003_circle   004_triangle      005_cross
+001_square              0.0000         1.1973         1.0676         1.2975         1.2175
+002_rectangle           1.1973         0.0000         1.8405         1.4462         1.6653
+003_circle              1.0676         1.8405         0.0000         1.4655         1.7366
+004_triangle            1.2975         1.4462         1.4655         0.0000         1.3868
+005_cross               1.2175         1.6653         1.7366         1.3868         0.0000
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_euler_characteristic.py
+------------------------------------------------------------
+========================================================================
+Euler Characteristic Unit Test
+========================================================================
+
+Computed Euler characteristic : 0.000000
+Expected Euler characteristic : 0.000000
+
+Unit test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_euler_characteristic_pipeline.py
+------------------------------------------------------------
+========================================================================
+Euler Characteristic Pipeline Integration Test
+========================================================================
+
+Computed Euler characteristic : 0.000000
+Expected Euler characteristic : 0.000000
+
+Pipeline test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_experiment_framework.py
+------------------------------------------------------------
+
+========================================================================
+Experiment Framework
+========================================================================
+
+experiment: Dummy Experiment
+status: PASS
+measurements: {'example_value': 42.0}
+metadata: {'version': '1.0'}
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_experiment_registry.py
+------------------------------------------------------------
+
+========================================================================
+Experiment Registry
+========================================================================
+
+Registered experiments:
+  - Dummy Experiment
+
+Retrieved experiment:
+  Name : Dummy Experiment
+
+Registry test: PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_feature_contribution.py
+------------------------------------------------------------
+========================================================================
+AncientScriptLab
+Feature Contribution
+========================================================================
+
+Reference : 001_square
+Compared  : 003_circle
+
+G-001       0.000000
+G-002       0.000000
+G-003       0.000000
+G-004       0.032590
+G-005       0.056156
+G-006       0.000000
+G-007       0.032590
+G-008       1.000000
+G-009       0.002268
+G-010       0.016219
+
+Squared Sum : 1.139822
+Distance    : 1.067624
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_feature_statistics.py
+------------------------------------------------------------
+======================================================================
+Feature Statistics
+======================================================================
+G-001  count=5  min=100.000000 max=100.000000 mean=100.000000
+G-002  count=5  min=100.000000 max=100.000000 mean=100.000000
+G-003  count=5  min=10000.000000 max=10000.000000 mean=10000.000000
+G-004  count=5  min=1100.000000 max=3000.000000 mean=1769.600000
+G-005  count=5  min=131.882250 max=233.656854 mean=188.478383
+G-006  count=5  min=1.000000 max=1.000000 mean=1.000000
+G-007  count=5  min=0.110000 max=0.300000 mean=0.176960
+G-008  count=5  min=49.500000 max=50.000000 mean=49.650820
+G-009  count=5  min=49.500000 max=60.000000 mean=51.700000
+G-010  count=5  min=0.226259 max=0.866999 mean=0.639267
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_foreground_density.py
+------------------------------------------------------------
+========================================================================
+Foreground Density Unit Test
+========================================================================
+
+Computed density : 0.050000
+Expected density : 0.050000
+
+Unit test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_foreground_density_pipeline.py
+------------------------------------------------------------
+========================================================================
+Foreground Density Pipeline Integration Test
+========================================================================
+
+Computed density : 0.050000
+Expected density : 0.050000
+
+Pipeline test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_hole_count.py
+------------------------------------------------------------
+========================================================================
+Hole Count Unit Test
+========================================================================
+
+Computed holes : 1.000000
+Expected holes : 1.000000
+
+Unit test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_hole_count_pipeline.py
+------------------------------------------------------------
+========================================================================
+Hole Count Pipeline Integration Test
+========================================================================
+
+Computed holes : 1.000000
+Expected holes : 1.000000
+
+Pipeline test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_largest_component_area.py
+------------------------------------------------------------
+========================================================================
+Largest Component Area Unit Test
+========================================================================
+
+Computed largest area : 64.000000
+Expected largest area : 64.000000
+
+Unit test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_largest_component_area_pipeline.py
+------------------------------------------------------------
+========================================================================
+Largest Component Area Pipeline Integration Test
+========================================================================
+
+Computed largest area : 64.000000
+Expected largest area : 64.000000
+
+Pipeline test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_mean_component_area.py
+------------------------------------------------------------
+========================================================================
+Mean Component Area Unit Test
+========================================================================
+
+Computed mean area : 40.000000
+Expected mean area : 40.000000
+
+Unit test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_mean_component_area_pipeline.py
+------------------------------------------------------------
+========================================================================
+Mean Component Area Pipeline Integration Test
+========================================================================
+
+Computed mean area : 40.000000
+Expected mean area : 40.000000
+
+Pipeline test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_min_max_normalization.py
+------------------------------------------------------------
+
+========================================================================
+Min-Max Normalization
+========================================================================
+
+Vector 1
+  A: 0.000000
+  B: 0.000000
+
+Vector 2
+  A: 0.500000
+  B: 0.500000
+
+Vector 3
+  A: 1.000000
+  B: 1.000000
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_normalization_experiment.py
+------------------------------------------------------------
+
+========================================================================
+Normalization Validation Experiment
+========================================================================
+
+experiment: Normalization Validation
+status: PASS
+measurements: {'vectors_processed': 3.0}
+metadata: {'method': 'min-max'}
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_normalization_registry.py
+------------------------------------------------------------
+
+========================================================================
+Normalization Registry
+========================================================================
+
+Registered methods:
+  - min-max
+
+Retrieved method:
+  Name : Min-Max
+
+Registry test: PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_normalization_validation.py
+------------------------------------------------------------
+
+===== Min-Max =====
+Vector 1
+  A: 0.000000
+  B: 0.000000
+
+Vector 2
+  A: 0.500000
+  B: 0.500000
+
+Vector 3
+  A: 1.000000
+  B: 1.000000
+
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_similarity.py
+------------------------------------------------------------
+========================================================================
+AncientScriptLab
+First Similarity Experiment
+========================================================================
+
+Reference : 001_square.png
+
+001_square.png       distance = 0.000000
+002_rectangle.png    distance = 1.197305
+003_circle.png       distance = 1.067624
+004_triangle.png     distance = 1.297480
+005_cross.png        distance = 1.217468
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_smallest_component_area.py
+------------------------------------------------------------
+========================================================================
+Smallest Component Area Unit Test
+========================================================================
+
+Computed smallest area : 16.000000
+Expected smallest area : 16.000000
+
+Unit test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_smallest_component_area_pipeline.py
+------------------------------------------------------------
+========================================================================
+Smallest Component Area Pipeline Integration Test
+========================================================================
+
+Computed smallest area : 16.000000
+Expected smallest area : 16.000000
+
+Pipeline test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_topology_pipeline.py
+------------------------------------------------------------
+========================================================================
+Topology Pipeline Integration Test
+========================================================================
+
+Computed connected components : 2.000000
+Expected connected components : 2.000000
+
+Pipeline status : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_total_foreground_area.py
+------------------------------------------------------------
+========================================================================
+Total Foreground Area Unit Test
+========================================================================
+
+Computed area : 80.000000
+Expected area : 80.000000
+
+Unit test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_total_foreground_area_pipeline.py
+------------------------------------------------------------
+========================================================================
+Total Foreground Area Pipeline Integration Test
+========================================================================
+
+Computed area : 80.000000
+Expected area : 80.000000
+
+Pipeline test : PASSED
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_validation_protocol.py
+------------------------------------------------------------
+
+========================================================================
+AncientScriptLab
+Normalization Validation Protocol
+========================================================================
+
+1. Distance Stability
+   Are pairwise distances stable?
+
+2. Feature Contribution
+   Does one feature dominate the distance?
+
+3. Outlier Sensitivity
+   How strongly do outliers affect normalization?
+
+4. Small Corpus Behaviour
+   How does the method behave on very small datasets?
+
+5. Large Corpus Behaviour
+   How does the method behave on large datasets?
+
+6. Numerical Stability
+   Does the method remain numerically stable?
+
+7. Scientific Interpretability
+   Are the results scientifically explainable?
+
+8. Reproducibility
+   Does repeated execution produce identical results?
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/test_validation_report.py
+------------------------------------------------------------
+
+========================================================================
+M6.4 Validation of Normalization Methods
+========================================================================
+Method : Min-Max
+
+Distance Stability          : PASS
+Feature Contribution        : WARNING
+Outlier Sensitivity         : PASS
+Small Corpus Behaviour      : WARNING
+Large Corpus Behaviour      : PASS
+Numerical Stability         : PASS
+Scientific Interpretability : PASS
+Reproducibility             : PASS
+
+Overall Status : WARNING
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/update_validation_metadata.py
+------------------------------------------------------------
+Validation metadata updated
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validate_corpus_sequence.py
+------------------------------------------------------------
+M9.0 CorpusSequence Foundation
+==============================
+Corpus             : ExampleCorpus
+Inscriptions       : 2
+Total sign tokens  : 9
+Unique signs       : 4
+Validation status  : PASS
+
+Validation report  : reports/statistics/corpus_sequence_validation.json
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validate_geometry_pack.py
+------------------------------------------------------------
+==============================================================================================================
+AncientScriptLab Geometry Validation
+==============================================================================================================
+
+001_square.png
+  Width       : 100.0
+  Height      : 100.0
+  BBoxArea    : 10000.0
+  Foreground  : 1600.0
+  Perimeter   : 156.0
+  Aspect      : 1.0
+  Extent      : 0.16
+  CentroidX   : 49.5
+  CentroidY   : 49.5
+  Compactness : 0.7853981633974482
+
+002_rectangle.png
+  Width       : 100.0
+  Height      : 100.0
+  BBoxArea    : 10000.0
+  Foreground  : 3000.0
+  Perimeter   : 216.0
+  Aspect      : 1.0
+  Extent      : 0.3
+  CentroidX   : 49.5
+  CentroidY   : 49.5
+  Compactness : 0.7786646400487047
+
+003_circle.png
+  Width       : 100.0
+  Height      : 100.0
+  BBoxArea    : 10000.0
+  Foreground  : 1257.0
+  Perimeter   : 131.88224983215332
+  Aspect      : 1.0
+  Extent      : 0.1257
+  CentroidX   : 50.0
+  CentroidY   : 50.0
+  Compactness : 0.8669986383319356
+
+004_triangle.png
+  Width       : 100.0
+  Height      : 100.0
+  BBoxArea    : 10000.0
+  Foreground  : 1891.0
+  Perimeter   : 204.85281229019165
+  Aspect      : 1.0
+  Extent      : 0.1891
+  CentroidX   : 49.75409836065574
+  CentroidY   : 60.0
+  Compactness : 0.5390120920947209
+
+005_cross.png
+  Width       : 100.0
+  Height      : 100.0
+  BBoxArea    : 10000.0
+  Foreground  : 1100.0
+  Perimeter   : 233.65685415267944
+  Aspect      : 1.0
+  Extent      : 0.11
+  CentroidX   : 49.5
+  CentroidY   : 49.5
+  Compactness : 0.2262592438203752
+
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validate_normalization_methods.py
+------------------------------------------------------------
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validate_registry.py
+------------------------------------------------------------
+=============================================
+AncientScriptLab Registry Validator
+=============================================
+
+Project   : AncientScriptLab
+Registry  : Feature Registry
+Version   : 1.0
+Features  : 1
+
+Status    : VALID
+Errors    : 0
+
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_report.py
+------------------------------------------------------------
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_suite_m72b.py
+------------------------------------------------------------
+M7.2B Validation Suite
+======================
+single_square        PASS C=1 H=0 χ=1 expected C=1 H=0 χ=1
+two_squares          PASS C=2 H=0 χ=2 expected C=2 H=0 χ=2
+three_squares        PASS C=3 H=0 χ=3 expected C=3 H=0 χ=3
+square_with_hole     PASS C=1 H=1 χ=0 expected C=1 H=1 χ=0
+ring                 PASS C=1 H=1 χ=0 expected C=1 H=1 χ=0
+three_rings          PASS C=3 H=3 χ=0 expected C=3 H=3 χ=0
+
+V1 Euler validation: 6/6 PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v2_area.py
+------------------------------------------------------------
+M7.2B V2 Area Conservation
+===========================
+single_square        PASS total=1024 expected=1024 largest=1024 smallest=1024 mean=1024.00 ratio=1.000
+two_squares          PASS total= 512 expected= 512 largest= 256 smallest= 256 mean= 256.00 ratio=0.500
+three_squares        PASS total= 507 expected= 507 largest= 169 smallest= 169 mean= 169.00 ratio=0.333
+square_with_hole     PASS total=1344 expected=1344 largest=1344 smallest=1344 mean=1344.00 ratio=1.000
+ring                 PASS total= 940 expected= 940 largest= 940 smallest= 940 mean= 940.00 ratio=1.000
+three_rings          PASS total= 480 expected= 480 largest= 160 smallest= 160 mean= 160.00 ratio=0.333
+
+V2 Area validation: 6/6 PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v3_density.py
+------------------------------------------------------------
+M7.2B V3 Density Identity
+=========================
+single_square        PASS alg=0.250000000 formula=0.250000000 numpy=0.250000000
+two_squares          PASS alg=0.125000000 formula=0.125000000 numpy=0.125000000
+three_squares        PASS alg=0.123779297 formula=0.123779297 numpy=0.123779297
+square_with_hole     PASS alg=0.328125000 formula=0.328125000 numpy=0.328125000
+ring                 PASS alg=0.229492188 formula=0.229492188 numpy=0.229492188
+three_rings          PASS alg=0.117187500 formula=0.117187500 numpy=0.117187500
+
+V3 Density validation: 6/6 PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v4_translation.py
+------------------------------------------------------------
+M7.2B V4 Translation Invariance
+================================
+ring                 PASS
+single_square        PASS
+square_with_hole     PASS
+three_rings          FAIL
+three_squares        FAIL
+two_squares          PASS
+
+V4 Translation validation: 4/6 PASS
+RESULT: PRINTED_FAILURE rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v4a_safe_translation.py
+------------------------------------------------------------
+M7.2B V4A Safe Translation Invariance
+=====================================
+ring                 PASS
+single_square        PASS
+square_with_hole     PASS
+three_rings          PASS
+three_squares        PASS
+two_squares          PASS
+
+V4A Safe Translation validation: 6/6 PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v5_rotation.py
+------------------------------------------------------------
+M7.2B V5 Rotation Invariance
+============================
+ring                 PASS
+single_square        PASS
+square_with_hole     PASS
+three_rings          PASS
+three_squares        PASS
+two_squares          PASS
+
+V5 Rotation validation: 6/6 PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v5b_reflection.py
+------------------------------------------------------------
+M7.2B V5B Reflection Invariance
+================================
+ring                 PASS
+single_square        PASS
+square_with_hole     PASS
+three_rings          PASS
+three_squares        PASS
+two_squares          PASS
+
+V5B Reflection validation: 6/6 PASS
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v6_scale.py
+------------------------------------------------------------
+M7.2B V6 Scale Robustness
+=========================
+ring                 FAIL
+single_square        FAIL
+square_with_hole     FAIL
+three_rings          FAIL
+three_squares        FAIL
+two_squares          FAIL
+
+V6 Scale validation: 0/6 PASS
+RESULT: PRINTED_FAILURE rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v6a_diagnostic.py
+------------------------------------------------------------
+Original
+  size: 64x64
+  components: 1.0
+  holes:      0.0
+  euler:      1.0
+  area:       1024.0
+
+Scaled 90%
+  size: 64x64
+  components: 2.0
+  holes:      1.0
+  euler:      1.0
+  area:       1563.0
+
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v6a_resolution.py
+------------------------------------------------------------
+M7.2B V6A Resolution Robustness
+================================
+ring                 changes at 90%
+single_square        changes at 90%
+square_with_hole     changes at 90%
+three_rings          changes at 90%
+three_squares        changes at 90%
+two_squares          changes at 90%
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v6b_binary_scale.py
+------------------------------------------------------------
+M7.2B V6B Binary Scale Robustness
+=================================
+ring                 FAIL
+single_square        FAIL
+square_with_hole     FAIL
+three_rings          FAIL
+three_squares        FAIL
+two_squares          FAIL
+
+V6B Binary Scale validation: 0/6 PASS
+RESULT: PRINTED_FAILURE rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v6c_extended.py
+------------------------------------------------------------
+M7.2B V6C+ Extended Resolution Profile
+======================================
+
+ring
+  reference : C=1 H=1 χ=0
+  stable to : 10%
+
+single_square
+  reference : C=1 H=0 χ=1
+  stable to : 10%
+
+square_with_hole
+  reference : C=1 H=1 χ=0
+  stable to : 10%
+
+three_rings
+  reference : C=3 H=3 χ=0
+  critical  : 20%
+  changed   : C=3 H=0 χ=3
+
+three_squares
+  reference : C=3 H=0 χ=3
+  stable to : 10%
+
+two_squares
+  reference : C=2 H=0 χ=2
+  stable to : 10%
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v6c_resolution_profile.py
+------------------------------------------------------------
+M7.2B V6C Resolution Stability Profile
+======================================
+
+ring
+  reference: C=1 H=1 χ=0
+  95%  stable   C=1 H=1 χ=0
+  90%  stable   C=1 H=1 χ=0
+  85%  stable   C=1 H=1 χ=0
+  80%  stable   C=1 H=1 χ=0
+  75%  stable   C=1 H=1 χ=0
+  70%  stable   C=1 H=1 χ=0
+  65%  stable   C=1 H=1 χ=0
+  60%  stable   C=1 H=1 χ=0
+  55%  stable   C=1 H=1 χ=0
+  50%  stable   C=1 H=1 χ=0
+
+single_square
+  reference: C=1 H=0 χ=1
+  95%  stable   C=1 H=0 χ=1
+  90%  stable   C=1 H=0 χ=1
+  85%  stable   C=1 H=0 χ=1
+  80%  stable   C=1 H=0 χ=1
+  75%  stable   C=1 H=0 χ=1
+  70%  stable   C=1 H=0 χ=1
+  65%  stable   C=1 H=0 χ=1
+  60%  stable   C=1 H=0 χ=1
+  55%  stable   C=1 H=0 χ=1
+  50%  stable   C=1 H=0 χ=1
+
+square_with_hole
+  reference: C=1 H=1 χ=0
+  95%  stable   C=1 H=1 χ=0
+  90%  stable   C=1 H=1 χ=0
+  85%  stable   C=1 H=1 χ=0
+  80%  stable   C=1 H=1 χ=0
+  75%  stable   C=1 H=1 χ=0
+  70%  stable   C=1 H=1 χ=0
+  65%  stable   C=1 H=1 χ=0
+  60%  stable   C=1 H=1 χ=0
+  55%  stable   C=1 H=1 χ=0
+  50%  stable   C=1 H=1 χ=0
+
+three_rings
+  reference: C=3 H=3 χ=0
+  95%  stable   C=3 H=3 χ=0
+  90%  stable   C=3 H=3 χ=0
+  85%  stable   C=3 H=3 χ=0
+  80%  stable   C=3 H=3 χ=0
+  75%  stable   C=3 H=3 χ=0
+  70%  stable   C=3 H=3 χ=0
+  65%  stable   C=3 H=3 χ=0
+  60%  stable   C=3 H=3 χ=0
+  55%  stable   C=3 H=3 χ=0
+  50%  stable   C=3 H=3 χ=0
+
+three_squares
+  reference: C=3 H=0 χ=3
+  95%  stable   C=3 H=0 χ=3
+  90%  stable   C=3 H=0 χ=3
+  85%  stable   C=3 H=0 χ=3
+  80%  stable   C=3 H=0 χ=3
+  75%  stable   C=3 H=0 χ=3
+  70%  stable   C=3 H=0 χ=3
+  65%  stable   C=3 H=0 χ=3
+  60%  stable   C=3 H=0 χ=3
+  55%  stable   C=3 H=0 χ=3
+  50%  stable   C=3 H=0 χ=3
+
+two_squares
+  reference: C=2 H=0 χ=2
+  95%  stable   C=2 H=0 χ=2
+  90%  stable   C=2 H=0 χ=2
+  85%  stable   C=2 H=0 χ=2
+  80%  stable   C=2 H=0 χ=2
+  75%  stable   C=2 H=0 χ=2
+  70%  stable   C=2 H=0 χ=2
+  65%  stable   C=2 H=0 χ=2
+  60%  stable   C=2 H=0 χ=2
+  55%  stable   C=2 H=0 χ=2
+  50%  stable   C=2 H=0 χ=2
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v7a_noise_profile.py
+------------------------------------------------------------
+M7.3B V7A Noise Stability Profile
+=================================
+
+bridge
+  reference : C=1 H=0 χ=1
+  critical  : 0.1% noise
+  changed   : C=3 H=0 χ=3
+
+diagonal_contact
+  reference : C=1 H=0 χ=1
+  critical  : 0.1% noise
+  changed   : C=2 H=1 χ=1
+
+double_hole_component
+  reference : C=1 H=2 χ=-1
+  critical  : 0.3% noise
+  changed   : C=5 H=4 χ=1
+
+nested_rings
+  reference : C=2 H=2 χ=0
+  critical  : 0.1% noise
+  changed   : C=4 H=2 χ=2
+
+ring
+  reference : C=1 H=1 χ=0
+  critical  : 0.1% noise
+  changed   : C=3 H=2 χ=1
+
+square
+  reference : C=1 H=0 χ=1
+  critical  : 0.1% noise
+  changed   : C=1 H=1 χ=0
+
+square_hole
+  reference : C=1 H=1 χ=0
+  critical  : 0.1% noise
+  changed   : C=2 H=2 χ=0
+
+three_rings
+  reference : C=3 H=3 χ=0
+  critical  : 0.1% noise
+  changed   : C=4 H=3 χ=1
+
+three_squares
+  reference : C=3 H=0 χ=3
+  critical  : 0.1% noise
+  changed   : C=5 H=0 χ=5
+
+two_squares
+  reference : C=2 H=0 χ=2
+  critical  : 0.1% noise
+  changed   : C=4 H=0 χ=4
+RESULT: PASS rc=0
+
+------------------------------------------------------------
+FILE: tools/validation_v7b_monte_carlo.py
+------------------------------------------------------------
+M7.3B V7B Monte Carlo Noise Metrology
+====================================
+Trials per level: 100\n
+bridge
+   0.1% noise : P=0.030 (3/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+diagonal_contact
+   0.1% noise : P=0.020 (2/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+double_hole_component
+   0.1% noise : P=0.140 (14/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+nested_rings
+   0.1% noise : P=0.100 (10/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+ring
+   0.1% noise : P=0.060 (6/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+square
+   0.1% noise : P=0.070 (7/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+square_hole
+   0.1% noise : P=0.110 (11/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+three_rings
+   0.1% noise : P=0.010 (1/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+three_squares
+   0.1% noise : P=0.020 (2/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+two_squares
+   0.1% noise : P=0.020 (2/100)
+   0.3% noise : P=0.000 (0/100)
+   0.5% noise : P=0.000 (0/100)
+   1.0% noise : P=0.000 (0/100)
+   2.0% noise : P=0.000 (0/100)
+   3.0% noise : P=0.000 (0/100)
+   5.0% noise : P=0.000 (0/100)
+
+Report saved to: reports/metrology/noise/v7b_monte_carlo/noise_probability_profiles.json
+RESULT: PASS rc=0
+
+=== SUMMARY ===
+PASS=77
+FAIL=3
+PRINTED_FAILURE_RC0=4
+
+=== TEST SUITE ===
+TEST SUMMARY: PASS=15 FAIL=0
+
+=== MAIN ===
+AncientScriptLab — Core Measurement Baseline
+===========================================
+Connected components : 1.0
+Holes                : 0.0
+Euler characteristic : 1.0
+Foreground area      : 9.0
+Foreground density   : 0.1836734693877551
+Aspect ratio         : 1.0
+main.py rc=0
