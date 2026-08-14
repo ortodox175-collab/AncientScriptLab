@@ -1,0 +1,29 @@
+AncientScriptLab — Final Egyptian Corpus Legacy Cleanup
+Generated: Fri Aug 14 19:16:27 UTC 2026
+
+=== REMOVED FILE CHECK ===
+REMOVED: tools/import_mdc_corpus.py
+REMOVED: tools/normalize_mdc_corpus.py
+REMOVED: tools/build_egyptian_corpus_sequence.py
+
+=== REFERENCES TO REMOVED MODULES ===
+
+=== OLD EGYPTIAN PATH REFERENCES ===
+OLD EGYPTIAN PATH REFERENCES: 0
+
+=== PYTHON SYNTAX ===
+compileall rc=0
+
+=== TESTS ===
+TEST SUMMARY: PASS=15 FAIL=0
+
+=== MAIN ===
+AncientScriptLab — Core Measurement Baseline
+===========================================
+Connected components : 1.0
+Holes                : 0.0
+Euler characteristic : 1.0
+Foreground area      : 9.0
+Foreground density   : 0.1836734693877551
+Aspect ratio         : 1.0
+main.py rc=0
