@@ -6,6 +6,11 @@ SIZE = 64
 OUT = Path("validation/reference_v2/images")
 OUT.mkdir(parents=True, exist_ok=True)
 
+# Generated corpus must be deterministic.
+# Remove stale images from previous corpus versions.
+for stale in OUT.glob("*.png"):
+    stale.unlink()
+
 metadata = {}
 
 def save(name, draw_fn, truth):
@@ -96,6 +101,17 @@ save(
     {"components":1,"holes":0,"euler":1},
 )
 
+# one connected component with two independent holes
+save(
+    "double_hole_component",
+    lambda d: (
+        d.rectangle([8,8,56,56], fill=0),
+        d.rectangle([16,20,28,36], fill=255),
+        d.rectangle([36,20,48,36], fill=255),
+    ),
+    {"components":1,"holes":2,"euler":-1},
+)
+
 # nested rings
 save(
     "nested_rings",
@@ -105,7 +121,7 @@ save(
         d.ellipse([24,24,40,40], fill=0),
         d.ellipse([29,29,35,35], fill=255),
     ),
-    {"components":1,"holes":2,"euler":-1},
+    {"components":2,"holes":2,"euler":0},
 )
 
 with open("validation/reference_v2/metadata.json", "w") as f:

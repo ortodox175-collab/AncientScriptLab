@@ -39,14 +39,14 @@
     "holes": 0,
     "euler": 1
   },
-  "nested_rings": {
-    "components": 2,
-    "holes": 2,
-    "euler": 0
-  },
   "double_hole_component": {
     "components": 1,
     "holes": 2,
     "euler": -1
+  },
+  "nested_rings": {
+    "components": 2,
+    "holes": 2,
+    "euler": 0
   }
 }

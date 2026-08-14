@@ -1,0 +1,16 @@
+AncientScriptLab — Reference Corpus v2 Repair
+Generated: Fri Aug 14 20:42:37 UTC 2026
+
+Ground truth:
+double_hole_component = components 1, holes 2, Euler -1
+nested_rings          = components 2, holes 2, Euler 0
+
+Reference corpus objects: 10
+Certification: 10/10 PASS
+Core tests: 15/15 PASS
+compileall rc=0
+
+Infrastructure repairs:
+- deterministic generated-image cleanup
+- missing image detection in certifier
+- certification failure now returns non-zero exit code

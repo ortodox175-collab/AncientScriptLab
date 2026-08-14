@@ -28,7 +28,20 @@ print("M7.3A Reference Corpus Certification")
 print("====================================")
 
 for name, truth in sorted(meta.items()):
-    img = cv2.imread(str(IMAGE_DIR / f"{name}.png"), cv2.IMREAD_GRAYSCALE)
+    image_path = IMAGE_DIR / f"{name}.png"
+    img = cv2.imread(str(image_path), cv2.IMREAD_GRAYSCALE)
+
+    if img is None:
+        report["results"][name] = {
+            "truth": truth,
+            "measured": None,
+            "pass": False,
+            "error": f"missing or unreadable image: {image_path}",
+        }
+        total += 1
+        print(f"{name:20} FAIL  missing image: {image_path}")
+        continue
+
     ctx = FeatureContext(img)
 
     measured = {
@@ -76,3 +89,6 @@ else:
     print("Reference Corpus v2.0 NOT CERTIFIED")
 
 print(f"Report saved to: {out}")
+
+if passed != total:
+    raise SystemExit(1)
