@@ -1,0 +1,15 @@
+AncientScriptLab — Tools Regression Runner Repair
+Generated: Sat Aug 15 09:04:31 UTC 2026
+
+PASS=80
+CLI_REQUIRES_ARGS=3
+FAIL=0
+PRINTED_FAILURE=0
+runner rc=0
+TEST SUMMARY: PASS=15 FAIL=0
+compileall rc=0
+
+CLI tools classified:
+- tools/analyze_corpus_frequency.py
+- tools/analyze_corpus_structure.py
+- tools/build_corpus_frequency_profile.py
