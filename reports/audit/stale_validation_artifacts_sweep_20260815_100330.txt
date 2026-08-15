@@ -1,0 +1,326 @@
+AncientScriptLab — Stale Validation Artifacts Sweep
+Generated: Sat Aug 15 10:03:30 UTC 2026
+
+=== OLD V8 OUTPUT FILES ===
+datasets/egyptian_canonical/validation/archetype_layer_validation_v8_7.json
+datasets/egyptian_canonical/validation/architecture_integration_validation_v8_8.json
+reports/audit/EGYPTIAN_M10_MIGRATION_DECISIONS.md
+reports/audit/m10_legacy_cleanup_20260813_181551.txt
+reports/validation/M10_PIPELINE_VALIDATION_REPORT.md
+reports/validation/m10_pipeline_validation.json
+
+=== REFERENCES TO OLD V8 MODULE/OUTPUT NAMES ===
+./Documentation_Consolidation_Audit_v1.0.md:82:- M10_FINAL_VALIDATION_CERTIFICATE.md
+./reports/audit/stale_claims_cleanup_20260815_093732.txt:5:REMOVED: tools/generate_m10_final_certificate.py
+./reports/audit/stale_claims_cleanup_20260815_093732.txt:6:REMOVED: reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json
+./reports/audit/stale_claims_cleanup_20260815_093732.txt:7:REMOVED: reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.md
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:5:tools/architecture_integration_validation_v8_8.py:195:    print('STAGES 4–6 STATUS: FULLY VALIDATED')
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:6:tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:7:tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:8:tools/generate_m10_final_certificate.py:18:        "M10.1A Structural Primitive Extraction",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:9:tools/generate_m10_final_certificate.py:19:        "M10.1B Structural Primitive Informativeness",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:10:tools/generate_m10_final_certificate.py:20:        "M10.1C Spatial Distribution Analysis",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:11:tools/generate_m10_final_certificate.py:21:        "M10.1D Component Relation Analysis",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:12:tools/generate_m10_final_certificate.py:22:        "M10.1E Primitive Graph Extraction",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:13:tools/generate_m10_final_certificate.py:23:        "M10.1F Primitive Graph Audit",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:14:tools/generate_m10_final_certificate.py:24:        "M10.1G Graph Signature Clustering",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:15:tools/generate_m10_final_certificate.py:25:        "M10.1H Automatic Archetype Number Estimation",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:16:tools/generate_m10_final_certificate.py:26:        "M10.1I Multilayer Archetype Stability Validation",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:17:tools/generate_m10_final_certificate.py:27:        "M10.1J Hierarchical Archetype Extraction"
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:18:tools/generate_m10_final_certificate.py:36:        "best_k": 3,
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:19:tools/generate_m10_final_certificate.py:40:        "The complete structural analysis pipeline has been validated as an integrated system.",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:20:tools/generate_m10_final_certificate.py:45:    "next_stage": "M11 Sequence Structure Analysis"
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:21:tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:22:tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:23:tools/generate_m10_final_certificate.py:61:    f.write("- Macro archetypes: 3\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:24:tools/generate_m10_final_certificate.py:62:    f.write("- Meso archetypes: 10\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:25:tools/generate_m10_final_certificate.py:63:    f.write("- Micro archetypes: 27\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:26:tools/generate_m10_final_certificate.py:64:    f.write("- Best validated K: 3\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:27:tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:28:tools/generate_m10_final_certificate.py:71:    f.write("**M11 — Sequence Structure Analysis**\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:29:tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:30:tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:31:tools/generate_m10_final_certificate.py:78:print("Macro archetypes     : 3")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:32:tools/generate_m10_final_certificate.py:79:print("Meso archetypes      : 10")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:33:tools/generate_m10_final_certificate.py:80:print("Micro archetypes     : 27")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:39:tools/__pycache__/archetype_layer_validation_v8_7.cpython-312.pyc
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:43:tools/__pycache__/generate_m10_final_certificate.cpython-312.pyc
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:50:tools/archetype_layer_validation_v8_7.py
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:51:tools/generate_m10_final_certificate.py
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:57:./tools/generate_m10_final_certificate.py:8:JSON_OUT = OUT_DIR / "M10_FINAL_VALIDATION_CERTIFICATE.json"
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:58:./tools/generate_m10_final_certificate.py:9:MD_OUT = OUT_DIR / "M10_FINAL_VALIDATION_CERTIFICATE.md"
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:59:./tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:60:./tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:61:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:62:./tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:63:./Documentation_Consolidation_Audit_v1.0.md:82:- M10_FINAL_VALIDATION_CERTIFICATE.md
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:68:reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:69:reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.md
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:74:./tools/architecture_integration_validation_v8_8.py:195:    print('STAGES 4–6 STATUS: FULLY VALIDATED')
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:75:./tools/archetype_layer_validation_v8_7.py:192:    print('ARCHETYPE LAYER STATUS: VALIDATED')
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:76:./tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:77:./tools/generate_m10_final_certificate.py:40:        "The complete structural analysis pipeline has been validated as an integrated system.",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:78:./tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:79:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:80:./tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:81:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json:5:  "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:82:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json:30:    "The complete structural analysis pipeline has been validated as an integrated system.",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:83:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.md:1:# M10 final validation certificate\n\n## AncientScriptLab Research Edition\n\n**Structural Archetype Engine v1.0**\n\n### Status\n\n**FOUNDATION VALIDATED**\n\n### Validation summary\n\n- Pipeline status: PASS\n- Count consistency: True\n- Hierarchy consistency: True\n- Egyptian corpus: 1072 signs\n- Macro archetypes: 3\n- Meso archetypes: 10\n- Micro archetypes: 27\n- Best validated K: 3\n\n### Certified modules\n\n- M10.1A Structural Primitive Extraction\n- M10.1B Structural Primitive Informativeness\n- M10.1C Spatial Distribution Analysis\n- M10.1D Component Relation Analysis\n- M10.1E Primitive Graph Extraction\n- M10.1F Primitive Graph Audit\n- M10.1G Graph Signature Clustering\n- M10.1H Automatic Archetype Number Estimation\n- M10.1I Multilayer Archetype Stability Validation\n- M10.1J Hierarchical Archetype Extraction\n\n### Scientific conclusion\n\nThe Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\n\n### Next stage\n\n**M11 — Sequence Structure Analysis**\n
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:94:tools/archetype_layer_validation_v8_7.py: PASS rc=0
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:95:tools/architecture_integration_validation_v8_8.py: PASS rc=0
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:102:tools/generate_m10_final_certificate.py: PASS rc=0
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:8:tools/generate_m10_final_certificate.py:8:JSON_OUT = OUT_DIR / "M10_FINAL_VALIDATION_CERTIFICATE.json"
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:9:tools/generate_m10_final_certificate.py:9:MD_OUT = OUT_DIR / "M10_FINAL_VALIDATION_CERTIFICATE.md"
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:10:tools/generate_m10_final_certificate.py:12:    "certificate": "M10 Final Validation Certificate",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:11:tools/generate_m10_final_certificate.py:18:        "M10.1A Structural Primitive Extraction",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:12:tools/generate_m10_final_certificate.py:19:        "M10.1B Structural Primitive Informativeness",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:13:tools/generate_m10_final_certificate.py:20:        "M10.1C Spatial Distribution Analysis",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:14:tools/generate_m10_final_certificate.py:21:        "M10.1D Component Relation Analysis",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:15:tools/generate_m10_final_certificate.py:22:        "M10.1E Primitive Graph Extraction",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:16:tools/generate_m10_final_certificate.py:23:        "M10.1F Primitive Graph Audit",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:17:tools/generate_m10_final_certificate.py:24:        "M10.1G Graph Signature Clustering",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:18:tools/generate_m10_final_certificate.py:25:        "M10.1H Automatic Archetype Number Estimation",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:19:tools/generate_m10_final_certificate.py:26:        "M10.1I Multilayer Archetype Stability Validation",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:20:tools/generate_m10_final_certificate.py:27:        "M10.1J Hierarchical Archetype Extraction"
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:21:tools/generate_m10_final_certificate.py:43:        "The foundation is suitable for sequence-level structural analysis (M11)."
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:22:tools/generate_m10_final_certificate.py:45:    "next_stage": "M11 Sequence Structure Analysis"
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:23:tools/generate_m10_final_certificate.py:51:    f.write("# M10 final validation certificate\\n\\n")
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:24:tools/generate_m10_final_certificate.py:71:    f.write("**M11 — Sequence Structure Analysis**\\n")
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:25:tools/generate_m10_final_certificate.py:73:print("M10 Final Validation Certificate")
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:278:tools/architecture_integration_validation_v8_8.py:1:from pathlib import Path
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:279:tools/architecture_integration_validation_v8_8.py:2:import json
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:280:tools/architecture_integration_validation_v8_8.py:3:from statistics import mean
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:290:tools/archetype_layer_validation_v8_7.py:1:from pathlib import Path
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:291:tools/archetype_layer_validation_v8_7.py:2:import json
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:292:tools/archetype_layer_validation_v8_7.py:3:from statistics import mean
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:464:tools/generate_m10_final_certificate.py:1:from pathlib import Path
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:465:tools/generate_m10_final_certificate.py:2:import json
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:466:tools/generate_m10_final_certificate.py:3:from datetime import datetime
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:789:tools/archetype_layer_validation_v8_7.py
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:790:tools/architecture_integration_validation_v8_8.py
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:797:tools/generate_m10_final_certificate.py
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:880:tools/archetype_layer_validation_v8_7.py: PASS rc=0
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:881:tools/architecture_integration_validation_v8_8.py: PASS rc=0
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:888:tools/generate_m10_final_certificate.py: PASS rc=0
+./reports/audit/tools_validation_regression_20260814_195342.txt:27:FILE: tools/archetype_layer_validation_v8_7.py
+./reports/audit/tools_validation_regression_20260814_195342.txt:30:Output: datasets/egyptian_canonical/validation/archetype_layer_validation_v8_7.json
+./reports/audit/tools_validation_regression_20260814_195342.txt:47:FILE: tools/architecture_integration_validation_v8_8.py
+./reports/audit/tools_validation_regression_20260814_195342.txt:50:Output: datasets/egyptian_canonical/validation/architecture_integration_validation_v8_8.json
+./reports/audit/tools_validation_regression_20260814_195342.txt:188:FILE: tools/generate_m10_final_certificate.py
+./reports/audit/tools_validation_regression_20260814_195342.txt:190:/workspaces/AncientScriptLab/tools/generate_m10_final_certificate.py:16: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+./reports/audit/tools_validation_regression_20260814_195342.txt:201:JSON certificate     : reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json
+./reports/audit/tools_validation_regression_20260814_195342.txt:202:Markdown certificate : reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.md
+./reports/audit/tools_validation_regression_post_reclass_20260815_081438.txt:20:FILE: tools/archetype_layer_validation_v8_7.py
+./reports/audit/tools_validation_regression_post_reclass_20260815_081438.txt:23:FILE: tools/architecture_integration_validation_v8_8.py
+./reports/audit/tools_validation_regression_post_reclass_20260815_081438.txt:45:FILE: tools/generate_m10_final_certificate.py
+
+=== M10 CLAIMS OUTSIDE AUDIT HISTORY ===
+./reports/statistics/egyptian/archetype_stability_validation_v2.json:2:  "module": "M10.1I Multilayer Archetype Stability Validation",
+./reports/statistics/egyptian/archetype_number_estimation.json:2:  "module": "M10.1H Automatic Archetype Number Estimation",
+./reports/statistics/egyptian/graph_signature_clusters.json:2:  "module": "M10.1G Graph Signature Clustering",
+./reports/statistics/egyptian/hierarchical_archetypes.json:2:  "module": "M10.1J Hierarchical Archetype Extraction",
+./reports/statistics/egyptian/hierarchical_archetypes.json:10:      "meso_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:14:          "micro_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:62:          "micro_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:110:          "micro_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:158:          "micro_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:208:      "meso_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:212:          "micro_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:255:          "micro_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:299:          "micro_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:347:          "micro_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:377:      "meso_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:381:          "micro_archetypes": [
+./reports/statistics/egyptian/hierarchical_archetypes.json:415:          "micro_archetypes": [
+./reports/metrology/spatial_distribution_report.json:2:  "module": "M10.1C Spatial Distribution Analysis",
+./reports/metrology/primitive_graph_report.json:2:  "module": "M10.1E Primitive Graph Extraction",
+./reports/metrology/component_relation_report.json:2:  "module": "M10.1D Component Relation Analysis",
+./reports/metrology/primitive_extraction_report.json:2:  "module": "M10.1A Primitive Extraction",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:6:tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:7:tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:8:tools/generate_m10_final_certificate.py:18:        "M10.1A Structural Primitive Extraction",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:9:tools/generate_m10_final_certificate.py:19:        "M10.1B Structural Primitive Informativeness",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:10:tools/generate_m10_final_certificate.py:20:        "M10.1C Spatial Distribution Analysis",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:11:tools/generate_m10_final_certificate.py:21:        "M10.1D Component Relation Analysis",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:12:tools/generate_m10_final_certificate.py:22:        "M10.1E Primitive Graph Extraction",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:13:tools/generate_m10_final_certificate.py:23:        "M10.1F Primitive Graph Audit",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:14:tools/generate_m10_final_certificate.py:24:        "M10.1G Graph Signature Clustering",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:15:tools/generate_m10_final_certificate.py:25:        "M10.1H Automatic Archetype Number Estimation",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:16:tools/generate_m10_final_certificate.py:26:        "M10.1I Multilayer Archetype Stability Validation",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:17:tools/generate_m10_final_certificate.py:27:        "M10.1J Hierarchical Archetype Extraction"
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:21:tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:22:tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:26:tools/generate_m10_final_certificate.py:64:    f.write("- Best validated K: 3\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:27:tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:29:tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:30:tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:59:./tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:60:./tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:61:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:62:./tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:76:./tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:78:./tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:79:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:80:./tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:81:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json:5:  "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:83:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.md:1:# M10 final validation certificate\n\n## AncientScriptLab Research Edition\n\n**Structural Archetype Engine v1.0**\n\n### Status\n\n**FOUNDATION VALIDATED**\n\n### Validation summary\n\n- Pipeline status: PASS\n- Count consistency: True\n- Hierarchy consistency: True\n- Egyptian corpus: 1072 signs\n- Macro archetypes: 3\n- Meso archetypes: 10\n- Micro archetypes: 27\n- Best validated K: 3\n\n### Certified modules\n\n- M10.1A Structural Primitive Extraction\n- M10.1B Structural Primitive Informativeness\n- M10.1C Spatial Distribution Analysis\n- M10.1D Component Relation Analysis\n- M10.1E Primitive Graph Extraction\n- M10.1F Primitive Graph Audit\n- M10.1G Graph Signature Clustering\n- M10.1H Automatic Archetype Number Estimation\n- M10.1I Multilayer Archetype Stability Validation\n- M10.1J Hierarchical Archetype Extraction\n\n### Scientific conclusion\n\nThe Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\n\n### Next stage\n\n**M11 — Sequence Structure Analysis**\n
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:86:./reports/audit/tools_validation_regression_20260814_195342.txt:194:Status               : FOUNDATION VALIDATED
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:11:tools/generate_m10_final_certificate.py:18:        "M10.1A Structural Primitive Extraction",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:12:tools/generate_m10_final_certificate.py:19:        "M10.1B Structural Primitive Informativeness",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:13:tools/generate_m10_final_certificate.py:20:        "M10.1C Spatial Distribution Analysis",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:14:tools/generate_m10_final_certificate.py:21:        "M10.1D Component Relation Analysis",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:15:tools/generate_m10_final_certificate.py:22:        "M10.1E Primitive Graph Extraction",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:16:tools/generate_m10_final_certificate.py:23:        "M10.1F Primitive Graph Audit",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:17:tools/generate_m10_final_certificate.py:24:        "M10.1G Graph Signature Clustering",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:18:tools/generate_m10_final_certificate.py:25:        "M10.1H Automatic Archetype Number Estimation",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:19:tools/generate_m10_final_certificate.py:26:        "M10.1I Multilayer Archetype Stability Validation",
+./reports/audit/non_egyptian_legacy_dependency_sweep_20260815_090911.txt:20:tools/generate_m10_final_certificate.py:27:        "M10.1J Hierarchical Archetype Extraction"
+./reports/audit/tools_validation_regression_20260814_195342.txt:194:Status               : FOUNDATION VALIDATED
+./reports/audit/tools_validation_regression_20260814_195342.txt:195:Structural engine    : Structural Archetype Engine v1.0
+./reports/audit/migration_candidates_20260813_165952.txt:128:    "module": "M10.1D Component Relation Analysis",
+./reports/audit/migration_candidates_20260813_165952.txt:135:print("M10.1D Component Relation Analysis")
+./reports/audit/migration_candidates_20260813_165952.txt:302:    "module": "M10.1E Primitive Graph Extraction",
+./reports/audit/migration_candidates_20260813_165952.txt:308:print("M10.1E Primitive Graph Extraction v2.0")
+./reports/audit/migration_candidates_20260813_165952.txt:432:    "module": "M10.1A Primitive Extraction",
+./reports/audit/migration_candidates_20260813_165952.txt:441:print("M10.1A Structural Primitive Extraction")
+./reports/audit/migration_candidates_20260813_165952.txt:697:    "module": "M10.1H Automatic Archetype Number Estimation",
+./reports/audit/migration_candidates_20260813_165952.txt:716:print("M10.1H Automatic Archetype Number Estimation")
+./reports/audit/migration_candidates_20260813_165952.txt:799:    "module": "M10.1I Multilayer Archetype Stability Validation",
+./reports/audit/migration_candidates_20260813_165952.txt:822:print("M10.1I Multilayer Archetype Stability Validation v2.0")
+./reports/audit/migration_candidates_20260813_165952.txt:928:        "meso_archetypes": [
+./reports/audit/migration_candidates_20260813_165952.txt:932:                "micro_archetypes": [
+./reports/audit/migration_candidates_20260813_165952.txt:949:    "module": "M10.1J Hierarchical Archetype Extraction",
+./reports/audit/migration_candidates_20260813_165952.txt:971:        for me in h["meso_archetypes"]:
+./reports/audit/migration_candidates_20260813_165952.txt:973:            for mi in me["micro_archetypes"]:
+./reports/audit/migration_candidates_20260813_165952.txt:977:print("M10.1J Hierarchical Archetype Extraction")
+./reports/audit/migration_candidates_20260813_165952.txt:1087:    "module": "M10.1C Spatial Distribution Analysis",
+./reports/audit/migration_candidates_20260813_165952.txt:1096:print("M10.1C Spatial Distribution Analysis")
+./reports/audit/migration_candidates_20260813_165952.txt:1149:    "M10.1A Structural Signatures"
+./reports/audit/migration_candidates_20260813_165952.txt:1154:    "M10.1C Spatial Signatures"
+./reports/audit/migration_candidates_20260813_165952.txt:1159:    "M10.1D Component Graphs"
+./reports/audit/migration_candidates_20260813_165952.txt:1164:    "M10.1E Primitive Graphs"
+./reports/audit/migration_candidates_20260813_165952.txt:1169:    "M10.1G Graph Clusters"
+./reports/audit/migration_candidates_20260813_165952.txt:1174:    "M10.1H Archetype Number Estimation"
+./reports/audit/migration_candidates_20260813_165952.txt:1179:    "M10.1I Archetype Stability Validation"
+./reports/audit/migration_candidates_20260813_165952.txt:1184:    "M10.1J Hierarchical Archetypes"
+./reports/audit/remaining_egyptian_legacy_20260813_183941.txt:270:print("M10.1B Structural primitive informativeness")
+./reports/audit/remaining_egyptian_legacy_20260813_183941.txt:424:print("M10.1F Primitive Graph Audit")
+./reports/audit/remaining_egyptian_legacy_20260813_183941.txt:460:    for meso in macro["meso_archetypes"]:
+./reports/audit/remaining_egyptian_legacy_20260813_183941.txt:462:        for micro in meso["micro_archetypes"]:
+./reports/audit/remaining_egyptian_legacy_20260813_183941.txt:1665:    for meso in macro['meso_archetypes']:
+./reports/audit/remaining_egyptian_legacy_20260813_183941.txt:1667:        for micro in meso['micro_archetypes']:
+./reports/validation/M10_PIPELINE_VALIDATION_REPORT.md:1:# M10.2 integrated structural pipeline validation\n\nPipeline status: PASS\n\nCount consistency: True\nHierarchy consistency: True\n\n## M10.1A Structural Signatures\n- Exists: True\n- Valid JSON: True\n- Record count: None\n\n## M10.1C Spatial Signatures\n- Exists: True\n- Valid JSON: True\n- Record count: None\n\n## M10.1D Component Graphs\n- Exists: True\n- Valid JSON: True\n- Record count: 1072\n\n## M10.1E Primitive Graphs\n- Exists: True\n- Valid JSON: True\n- Record count: 1072\n\n## M10.1G Graph Clusters\n- Exists: True\n- Valid JSON: True\n- Record count: 8\n\n## M10.1H Archetype Number Estimation\n- Exists: True\n- Valid JSON: True\n- Record count: None\n\n## M10.1I Archetype Stability Validation\n- Exists: True\n- Valid JSON: True\n- Record count: None\n\n## M10.1J Hierarchical Archetypes\n- Exists: True\n- Valid JSON: True\n- Record count: 3\n\n
+./reports/validation/m10_pipeline_validation.json:8:      "module": "M10.1A Structural Signatures",
+./reports/validation/m10_pipeline_validation.json:15:      "module": "M10.1C Spatial Signatures",
+./reports/validation/m10_pipeline_validation.json:22:      "module": "M10.1D Component Graphs",
+./reports/validation/m10_pipeline_validation.json:29:      "module": "M10.1E Primitive Graphs",
+./reports/validation/m10_pipeline_validation.json:36:      "module": "M10.1G Graph Clusters",
+./reports/validation/m10_pipeline_validation.json:43:      "module": "M10.1H Archetype Number Estimation",
+./reports/validation/m10_pipeline_validation.json:50:      "module": "M10.1I Archetype Stability Validation",
+./reports/validation/m10_pipeline_validation.json:57:      "module": "M10.1J Hierarchical Archetypes",
+
+=== CURRENT DIAGNOSTIC OUTPUTS ===
+datasets/egyptian_canonical/validation/archetype_layer_diagnostic_v8_7.json
+datasets/egyptian_canonical/validation/architecture_integration_diagnostic_v8_8.json
+
+=== PYTHON BYTECODE LEGACY NAMES ===
+./tools/__pycache__/archetype_layer_validation_v8_7.cpython-312.pyc
+./tools/__pycache__/architecture_integration_validation_v8_8.cpython-312.pyc
+./tools/__pycache__/generate_m10_final_certificate.cpython-312.pyc
+./tools/__pycache__/run_m10_pipeline_validation.cpython-312.pyc
+
+=== STRICT TOOLS REGRESSION ===
+AncientScriptLab — Tools Regression
+===================================
+tools/__init__.py: PASS rc=0
+tools/analyze_corpus_frequency.py: CLI_REQUIRES_ARGS rc=1
+tools/analyze_corpus_structure.py: CLI_REQUIRES_ARGS rc=1
+tools/archetype_layer_diagnostic_v8_7.py: PASS rc=0
+tools/architecture_integration_diagnostic_v8_8.py: PASS rc=0
+tools/build_corpus_frequency_profile.py: CLI_REQUIRES_ARGS rc=1
+tools/build_topology_reference_corpus_v2.py: PASS rc=0
+tools/build_validation_synthetic_corpus.py: PASS rc=0
+tools/category_fingerprint_analysis_v8_6.py: PASS rc=0
+tools/certify_reference_corpus_v2.py: PASS rc=0
+tools/corpus_validation_m7.py: PASS rc=0
+tools/generate_reference_dataset.py: PASS rc=0
+tools/glyph_structural_signature_v8_1.py: PASS rc=0
+tools/glyph_structural_signature_v8_2.py: PASS rc=0
+tools/gss_archetype_validation_v8_4.py: PASS rc=0
+tools/gss_correlation_analysis_v8_3.py: PASS rc=0
+tools/gss_feature_separation_v8_5.py: PASS rc=0
+tools/hierarchical_architecture_model_v8_11.py: PASS rc=0
+tools/hierarchical_architecture_model_v8_12.py: PASS rc=0
+tools/import_indus_corpus.py: PASS rc=0
+tools/master_validation_report_v8_9R.py: PASS rc=0
+tools/master_validation_report_v8_9S.py: PASS rc=0
+tools/master_validation_v8_9.py: PASS rc=0
+tools/metrology_v6_scale_sensitivity.py: PASS rc=0
+tools/metrology_v6b_binary_scale_sensitivity.py: PASS rc=0
+tools/normalization_validation_protocol.py: PASS rc=0
+tools/rotational_symmetry_analyzer_v6r.py: PASS rc=0
+tools/run_normalization_validation.py: PASS rc=0
+tools/scientific_validation_m7.py: PASS rc=0
+tools/statistical_architecture_baseline_v8_10A.py: PASS rc=0
+tools/statistical_architecture_baseline_v8_10B.py: PASS rc=0
+tools/test_all_normalization_methods.py: PASS rc=0
+tools/test_center_normalization.py: PASS rc=0
+tools/test_component_area_ratio.py: PASS rc=0
+tools/test_component_area_ratio_pipeline.py: PASS rc=0
+tools/test_component_density.py: PASS rc=0
+tools/test_component_density_pipeline.py: PASS rc=0
+tools/test_distance_matrix.py: PASS rc=0
+tools/test_euler_characteristic.py: PASS rc=0
+tools/test_euler_characteristic_pipeline.py: PASS rc=0
+tools/test_experiment_framework.py: PASS rc=0
+tools/test_experiment_registry.py: PASS rc=0
+tools/test_feature_contribution.py: PASS rc=0
+tools/test_feature_statistics.py: PASS rc=0
+tools/test_foreground_density.py: PASS rc=0
+tools/test_foreground_density_pipeline.py: PASS rc=0
+tools/test_hole_count.py: PASS rc=0
+tools/test_hole_count_pipeline.py: PASS rc=0
+tools/test_largest_component_area.py: PASS rc=0
+tools/test_largest_component_area_pipeline.py: PASS rc=0
+tools/test_mean_component_area.py: PASS rc=0
+tools/test_mean_component_area_pipeline.py: PASS rc=0
+tools/test_min_max_normalization.py: PASS rc=0
+tools/test_normalization_experiment.py: PASS rc=0
+tools/test_normalization_registry.py: PASS rc=0
+tools/test_normalization_validation.py: PASS rc=0
+tools/test_similarity.py: PASS rc=0
+tools/test_smallest_component_area.py: PASS rc=0
+tools/test_smallest_component_area_pipeline.py: PASS rc=0
+tools/test_topology_pipeline.py: PASS rc=0
+tools/test_total_foreground_area.py: PASS rc=0
+tools/test_total_foreground_area_pipeline.py: PASS rc=0
+tools/test_validation_protocol.py: PASS rc=0
+tools/test_validation_report.py: PASS rc=0
+tools/update_validation_metadata.py: PASS rc=0
+tools/validate_corpus_sequence.py: PASS rc=0
+tools/validate_geometry_pack.py: PASS rc=0
+tools/validate_normalization_methods.py: PASS rc=0
+tools/validate_registry.py: PASS rc=0
+tools/validation_report.py: PASS rc=0
+tools/validation_suite_m72b.py: PASS rc=0
+tools/validation_v2_area.py: PASS rc=0
+tools/validation_v3_density.py: PASS rc=0
+tools/validation_v4a_safe_translation.py: PASS rc=0
+tools/validation_v5_rotation.py: PASS rc=0
+tools/validation_v5b_reflection.py: PASS rc=0
+tools/validation_v6a_diagnostic.py: PASS rc=0
+tools/validation_v6a_resolution.py: PASS rc=0
+tools/validation_v6c_extended.py: PASS rc=0
+tools/validation_v6c_resolution_profile.py: PASS rc=0
+tools/validation_v7a_noise_profile.py: PASS rc=0
+tools/validation_v7b_monte_carlo.py: PASS rc=0
+
+=== SUMMARY ===
+PASS=79
+CLI_REQUIRES_ARGS=3
+FAIL=0
+PRINTED_FAILURE=0
+tools runner rc=0
+
+=== TESTS ===
+TEST SUMMARY: PASS=15 FAIL=0
