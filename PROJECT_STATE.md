@@ -2,7 +2,7 @@
 
 # PROJECT STATE
 
-Version: Audited Core Baseline Candidate
+Version: Audited Core Baseline
 
 Date: 2026-08-15
 
@@ -10,9 +10,9 @@ Date: 2026-08-15
 
 ## Current Phase
 
-Final documentation synchronization and baseline regression.
+Audited core baseline recorded.
 
-New scientific feature development remains frozen until the baseline is recorded.
+New scientific development may resume only under the current measurement-first methodology and validation rules.
 
 ---
 
@@ -101,9 +101,9 @@ It does not mean every scientific claim made historically by that tool is valida
 
 ---
 
-## Current Regression Baseline Candidate
+## Recorded Regression Baseline
 
-Observed immediately before commit `f6de3df`:
+Final clean baseline validation on 2026-08-15:
 
 - Python compileall: rc=0
 - strict tools regression:
@@ -136,14 +136,15 @@ Useful concepts from rejected legacy code are preserved in audit/migration repor
 
 ---
 
-## Remaining Work Before Baseline
+## Baseline Status
 
-1. Synchronize governing documentation.
-2. Run final syntax, tools, tests and main regression.
-3. Confirm no unexpected working-tree changes.
-4. Record clean baseline commit.
+The audit and repair cycle is complete.
 
-Only after these steps may new scientific development resume.
+Final validation evidence:
+
+`reports/audit/final_clean_baseline_20260815_160530.txt`
+
+New scientific development may now proceed from this baseline without reintroducing rejected legacy assumptions.
 
 ---
 
