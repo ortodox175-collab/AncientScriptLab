@@ -1,0 +1,969 @@
+AncientScriptLab — Non-Egyptian Legacy / Dependency Sweep
+Generated: Sat Aug 15 09:09:11 UTC 2026
+
+=== PYTHON FILE COUNT ===
+175
+
+=== LEGACY / OBSOLETE NAME SEARCH ===
+tools/generate_m10_final_certificate.py:8:JSON_OUT = OUT_DIR / "M10_FINAL_VALIDATION_CERTIFICATE.json"
+tools/generate_m10_final_certificate.py:9:MD_OUT = OUT_DIR / "M10_FINAL_VALIDATION_CERTIFICATE.md"
+tools/generate_m10_final_certificate.py:12:    "certificate": "M10 Final Validation Certificate",
+tools/generate_m10_final_certificate.py:18:        "M10.1A Structural Primitive Extraction",
+tools/generate_m10_final_certificate.py:19:        "M10.1B Structural Primitive Informativeness",
+tools/generate_m10_final_certificate.py:20:        "M10.1C Spatial Distribution Analysis",
+tools/generate_m10_final_certificate.py:21:        "M10.1D Component Relation Analysis",
+tools/generate_m10_final_certificate.py:22:        "M10.1E Primitive Graph Extraction",
+tools/generate_m10_final_certificate.py:23:        "M10.1F Primitive Graph Audit",
+tools/generate_m10_final_certificate.py:24:        "M10.1G Graph Signature Clustering",
+tools/generate_m10_final_certificate.py:25:        "M10.1H Automatic Archetype Number Estimation",
+tools/generate_m10_final_certificate.py:26:        "M10.1I Multilayer Archetype Stability Validation",
+tools/generate_m10_final_certificate.py:27:        "M10.1J Hierarchical Archetype Extraction"
+tools/generate_m10_final_certificate.py:43:        "The foundation is suitable for sequence-level structural analysis (M11)."
+tools/generate_m10_final_certificate.py:45:    "next_stage": "M11 Sequence Structure Analysis"
+tools/generate_m10_final_certificate.py:51:    f.write("# M10 final validation certificate\\n\\n")
+tools/generate_m10_final_certificate.py:71:    f.write("**M11 — Sequence Structure Analysis**\\n")
+tools/generate_m10_final_certificate.py:73:print("M10 Final Validation Certificate")
+
+=== OLD DATASET PATHS ===
+tools/corpus_validation_m7.py:33:    corpus_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("datasets/indus/images")
+tools/import_indus_corpus.py:16:SOURCE_DIR = Path("datasets/indus/raw")
+tools/import_indus_corpus.py:17:TARGET_DIR = Path("datasets/indus/images")
+
+=== IMPORT STATEMENTS ===
+core/algorithms/topology/component_area_ratio.py:1:from __future__ import annotations
+core/algorithms/topology/component_area_ratio.py:3:from core.execution.algorithm import Algorithm
+core/algorithms/topology/component_area_ratio.py:4:from core.algorithms.topology._binary_utils import (
+core/algorithms/topology/euler_characteristic.py:16:from __future__ import annotations
+core/algorithms/topology/euler_characteristic.py:18:from core.execution.algorithm import Algorithm
+core/algorithms/topology/euler_characteristic.py:19:from core.algorithms.topology.connected_components import execute as connected_components_execute
+core/algorithms/topology/euler_characteristic.py:20:from core.algorithms.topology.hole_count import execute as hole_count_execute
+core/algorithms/topology/mean_component_area.py:1:from __future__ import annotations
+core/algorithms/topology/mean_component_area.py:3:from core.execution.algorithm import Algorithm
+core/algorithms/topology/mean_component_area.py:4:from core.algorithms.topology._binary_utils import connected_component_areas
+core/algorithms/topology/hole_count.py:15:from __future__ import annotations
+core/algorithms/topology/hole_count.py:17:import cv2
+core/algorithms/topology/hole_count.py:18:import numpy as np
+core/algorithms/topology/hole_count.py:20:from core.execution.algorithm import Algorithm
+core/algorithms/topology/hole_count.py:21:from core.algorithms.topology._binary_utils import (
+core/algorithms/topology/_binary_utils.py:15:from __future__ import annotations
+core/algorithms/topology/_binary_utils.py:17:import cv2
+core/algorithms/topology/_binary_utils.py:18:import numpy as np
+core/algorithms/topology/largest_component_area.py:1:from __future__ import annotations
+core/algorithms/topology/largest_component_area.py:3:from core.execution.algorithm import Algorithm
+core/algorithms/topology/largest_component_area.py:4:from core.algorithms.topology._binary_utils import connected_component_areas
+core/algorithms/topology/total_foreground_area.py:11:from __future__ import annotations
+core/algorithms/topology/total_foreground_area.py:13:from core.execution.algorithm import Algorithm
+core/algorithms/topology/total_foreground_area.py:14:from core.algorithms.topology._binary_utils import foreground_area
+core/algorithms/topology/foreground_density.py:11:from __future__ import annotations
+core/algorithms/topology/foreground_density.py:13:from core.execution.algorithm import Algorithm
+core/algorithms/topology/foreground_density.py:14:from core.algorithms.topology._binary_utils import (
+core/algorithms/topology/connected_components.py:11:from __future__ import annotations
+core/algorithms/topology/connected_components.py:13:from core.execution.algorithm import Algorithm
+core/algorithms/topology/connected_components.py:14:from core.algorithms.topology._binary_utils import connected_component_areas
+core/algorithms/topology/smallest_component_area.py:1:from __future__ import annotations
+core/algorithms/topology/smallest_component_area.py:3:from core.execution.algorithm import Algorithm
+core/algorithms/topology/smallest_component_area.py:4:from core.algorithms.topology._binary_utils import connected_component_areas
+core/algorithms/topology/component_density.py:1:from __future__ import annotations
+core/algorithms/topology/component_density.py:3:from core.execution.algorithm import Algorithm
+core/algorithms/topology/component_density.py:4:from core.algorithms.topology._binary_utils import (
+core/algorithms/geometry/compactness.py:13:from __future__ import annotations
+core/algorithms/geometry/compactness.py:15:import cv2
+core/algorithms/geometry/compactness.py:16:import math
+core/algorithms/geometry/compactness.py:18:from core.execution.algorithm import Algorithm
+core/algorithms/geometry/aspect_ratio.py:1:from __future__ import annotations
+core/algorithms/geometry/aspect_ratio.py:3:from core.execution.algorithm import Algorithm
+core/algorithms/geometry/centroid_x.py:13:from __future__ import annotations
+core/algorithms/geometry/centroid_x.py:15:import cv2
+core/algorithms/geometry/centroid_x.py:17:from core.execution.algorithm import Algorithm
+core/algorithms/geometry/foreground_area.py:13:from __future__ import annotations
+core/algorithms/geometry/foreground_area.py:15:import numpy as np
+core/algorithms/geometry/foreground_area.py:17:from core.execution.algorithm import Algorithm
+core/algorithms/geometry/bounding_box_area.py:9:from __future__ import annotations
+core/algorithms/geometry/bounding_box_area.py:11:from core.execution.algorithm import Algorithm
+core/algorithms/geometry/bounding_box_area.py:12:from core.features.geometry.bounding_box import BoundingBoxFeatures
+core/algorithms/geometry/extent.py:13:from __future__ import annotations
+core/algorithms/geometry/extent.py:15:from core.execution.algorithm import Algorithm
+core/algorithms/geometry/bounding_box_height.py:13:from __future__ import annotations
+core/algorithms/geometry/bounding_box_height.py:15:from core.execution.algorithm import Algorithm
+core/algorithms/geometry/bounding_box_height.py:16:from core.features.geometry.bounding_box import BoundingBoxFeatures
+core/algorithms/geometry/perimeter.py:12:from __future__ import annotations
+core/algorithms/geometry/perimeter.py:14:import cv2
+core/algorithms/geometry/perimeter.py:16:from core.execution.algorithm import Algorithm
+core/algorithms/geometry/bounding_box_width.py:9:from __future__ import annotations
+core/algorithms/geometry/bounding_box_width.py:11:from core.execution.algorithm import Algorithm
+core/algorithms/geometry/bounding_box_width.py:12:from core.features.geometry.bounding_box import BoundingBoxFeatures
+core/algorithms/geometry/centroid_y.py:13:from __future__ import annotations
+core/algorithms/geometry/centroid_y.py:15:import cv2
+core/algorithms/geometry/centroid_y.py:17:from core.execution.algorithm import Algorithm
+core/identity_registry.py:10:from __future__ import annotations
+core/identity_registry.py:12:from typing import Dict, List, Optional
+core/identity_registry.py:14:from core.epigraphic_identity import (
+core/import_engine.py:1:from pathlib import Path
+core/import_engine.py:3:from core.record import TextRecord
+core/features/geometry/bounding_box.py:14:from __future__ import annotations
+core/features/geometry/bounding_box.py:16:from core.context.feature_context import FeatureContext
+core/analysis_result.py:1:from dataclasses import dataclass, field
+core/analysis_result.py:2:from typing import Any, Dict
+core/analysis_result.py:3:from datetime import datetime
+core/sign_dataset.py:1:from __future__ import annotations
+core/sign_dataset.py:3:from core.sign_library import SignLibrary
+core/sign_dataset.py:4:from core.record import TextRecord
+core/import_text.py:1:from core.record import TextRecord
+core/statistics/feature_statistics.py:12:from __future__ import annotations
+core/statistics/feature_statistics.py:14:from collections import defaultdict
+core/statistics/feature_statistics.py:16:from core.vector.feature_vector import FeatureVector
+core/sign_library.py:1:from __future__ import annotations
+core/sign_library.py:3:from typing import Dict, Optional, Iterable
+core/sign_library.py:5:from core.sign import SignReference
+core/comparison/feature_distance.py:11:from __future__ import annotations
+core/comparison/feature_distance.py:13:import math
+core/comparison/feature_distance.py:15:from core.vector.feature_vector import FeatureVector
+core/comparison/comparison_result.py:9:from __future__ import annotations
+core/comparison/comparison_result.py:11:from core.vector.feature_vector import FeatureVector
+core/comparison/feature_normalizer.py:12:from __future__ import annotations
+core/comparison/feature_normalizer.py:14:from core.vector.feature_vector import FeatureVector
+core/execution/engine.py:9:from __future__ import annotations
+core/execution/engine.py:11:from typing import Iterable
+core/execution/engine.py:13:from core.context.feature_context import FeatureContext
+core/execution/engine.py:14:from core.execution.runtime_registry import RuntimeRegistry
+core/execution/runtime_registry.py:9:from __future__ import annotations
+core/execution/runtime_registry.py:11:from typing import Dict, Any
+core/execution/runtime_registry.py:14:from core.execution.algorithm import Algorithm
+core/execution/runtime_registry.py:17:from core.packs.geometry_pack import GeometryPack
+core/execution/runtime_registry.py:18:from core.packs.topology_pack import TopologyPack
+core/execution/algorithm.py:9:from __future__ import annotations
+core/execution/algorithm.py:11:from dataclasses import dataclass, field
+core/execution/algorithm.py:12:from typing import Callable
+core/observation_registry.py:10:from __future__ import annotations
+core/observation_registry.py:12:from dataclasses import dataclass
+core/observation_registry.py:13:from typing import Dict, List, Optional
+core/epigraphic_identity.py:11:from __future__ import annotations
+core/epigraphic_identity.py:13:from dataclasses import dataclass
+core/epigraphic_identity.py:14:from enum import Enum
+core/epigraphic_identity.py:15:from typing import Optional
+core/pipeline.py:1:from dataclasses import dataclass, field
+core/pipeline.py:2:from typing import Callable, List, Any
+core/context/feature_context.py:9:from __future__ import annotations
+core/context/feature_context.py:11:from dataclasses import dataclass, field
+core/context/feature_context.py:12:from typing import Optional
+core/context/feature_context.py:14:import cv2
+core/context/feature_context.py:15:import numpy as np
+core/context/feature_context.py:17:from core.geometry.objects import BoundingBox
+core/record.py:1:from dataclasses import dataclass, field
+core/record.py:2:from typing import Any, Dict, List, Optional
+core/registry/sign_registry.py:12:from __future__ import annotations
+core/registry/sign_registry.py:14:from dataclasses import dataclass, asdict
+core/registry/sign_registry.py:15:from pathlib import Path
+core/registry/sign_registry.py:16:from typing import Dict, Optional
+core/registry/sign_registry.py:17:import json
+core/registry/validator.py:7:from __future__ import annotations
+core/registry/validator.py:9:from .models import FeatureRegistry
+core/registry/loader.py:7:from __future__ import annotations
+core/registry/loader.py:9:from pathlib import Path
+core/registry/loader.py:11:import yaml
+core/registry/loader.py:13:from .models import (
+core/registry/models.py:9:from __future__ import annotations
+core/registry/models.py:11:from dataclasses import dataclass, field
+core/registry/models.py:12:from typing import List, Dict, Optional
+core/utils.py:10:from typing import Any
+core/sequence/bigrams.py:7:from __future__ import annotations
+core/sequence/bigrams.py:9:from collections import Counter
+core/sequence/bigrams.py:10:from typing import Iterable, Tuple
+core/sequence/bigrams.py:12:from core.corpus.corpus_sequence import CorpusSequence, Inscription
+core/normalization/center.py:11:from __future__ import annotations
+core/normalization/center.py:13:import cv2
+core/normalization/center.py:14:import numpy as np
+core/normalization/center_of_mass.py:14:from __future__ import annotations
+core/normalization/center_of_mass.py:16:import cv2
+core/normalization/center_of_mass.py:17:import numpy as np
+core/normalization/registry.py:9:from __future__ import annotations
+core/normalization/registry.py:11:from core.normalization.base import NormalizationMethod
+core/normalization/registry.py:12:from core.normalization.min_max import MinMaxNormalization
+core/normalization/base.py:9:from __future__ import annotations
+core/normalization/base.py:11:from abc import ABC, abstractmethod
+core/normalization/base.py:13:from core.vector.feature_vector import FeatureVector
+core/normalization/min_max.py:9:from __future__ import annotations
+core/normalization/min_max.py:11:from core.normalization.base import NormalizationMethod
+core/normalization/min_max.py:12:from core.vector.feature_vector import FeatureVector
+core/vector/feature_vector.py:7:from __future__ import annotations
+core/corpus/corpus_sequence.py:1:from dataclasses import dataclass, field
+core/corpus/corpus_sequence.py:2:from typing import List, Literal
+core/corpus/corpus_sequence.py:3:import json
+core/corpus/corpus_sequence.py:4:from pathlib import Path
+core/corpus.py:1:from core.record import TextRecord
+core/corpus.py:2:from core.import_engine import ImportEngine
+core/io/image_loader.py:7:from __future__ import annotations
+core/io/image_loader.py:9:from pathlib import Path
+core/io/image_loader.py:11:import cv2
+core/io/image_loader.py:12:import numpy as np
+core/geometry/objects.py:11:from __future__ import annotations
+core/geometry/objects.py:13:from dataclasses import dataclass
+core/experiments/runner.py:9:from __future__ import annotations
+core/experiments/runner.py:11:from core.experiments.experiment import Experiment
+core/experiments/runner.py:12:from core.experiments.result import ExperimentResult
+core/experiments/result.py:9:from __future__ import annotations
+core/experiments/result.py:11:from dataclasses import dataclass, field
+core/experiments/experiment.py:9:from __future__ import annotations
+core/experiments/experiment.py:11:from abc import ABC, abstractmethod
+core/experiments/registry.py:9:from __future__ import annotations
+core/experiments/registry.py:11:from core.experiments.experiment import Experiment
+core/experiments/normalization_validation.py:9:from __future__ import annotations
+core/experiments/normalization_validation.py:11:from core.experiments.experiment import Experiment
+core/experiments/normalization_validation.py:12:from core.experiments.result import ExperimentResult
+core/experiments/normalization_validation.py:13:from tools.validate_normalization_methods import (
+core/sign.py:1:from dataclasses import dataclass, field
+core/sign.py:2:from typing import Any, Dict, List, Optional
+core/packs/topology_pack.py:13:from __future__ import annotations
+core/packs/topology_pack.py:15:from typing import Dict
+core/packs/topology_pack.py:17:from core.execution.algorithm import Algorithm
+core/packs/topology_pack.py:19:from core.algorithms.topology.connected_components import (
+core/packs/topology_pack.py:22:from core.algorithms.topology.hole_count import (
+core/packs/topology_pack.py:25:from core.algorithms.topology.euler_characteristic import (
+core/packs/topology_pack.py:28:from core.algorithms.topology.largest_component_area import (
+core/packs/topology_pack.py:31:from core.algorithms.topology.smallest_component_area import (
+core/packs/topology_pack.py:34:from core.algorithms.topology.mean_component_area import (
+core/packs/topology_pack.py:37:from core.algorithms.topology.component_area_ratio import (
+core/packs/topology_pack.py:40:from core.algorithms.topology.total_foreground_area import (
+core/packs/topology_pack.py:43:from core.algorithms.topology.component_density import (
+core/packs/topology_pack.py:46:from core.algorithms.topology.foreground_density import (
+core/packs/geometry_pack.py:11:from __future__ import annotations
+core/packs/geometry_pack.py:13:from typing import Dict
+core/packs/geometry_pack.py:15:from core.execution.algorithm import Algorithm
+core/packs/geometry_pack.py:17:from core.algorithms.geometry.aspect_ratio import (
+core/packs/geometry_pack.py:20:from core.algorithms.geometry.bounding_box_width import (
+core/packs/geometry_pack.py:23:from core.algorithms.geometry.bounding_box_height import (
+core/packs/geometry_pack.py:26:from core.algorithms.geometry.bounding_box_area import (
+core/packs/geometry_pack.py:29:from core.algorithms.geometry.centroid_x import (
+core/packs/geometry_pack.py:32:from core.algorithms.geometry.centroid_y import (
+core/packs/geometry_pack.py:35:from core.algorithms.geometry.compactness import (
+core/packs/geometry_pack.py:38:from core.algorithms.geometry.extent import (
+core/packs/geometry_pack.py:41:from core.algorithms.geometry.foreground_area import (
+core/packs/geometry_pack.py:44:from core.algorithms.geometry.perimeter import (
+analysis/bigrams.py:1:from collections import Counter
+analysis/entropy.py:1:import math
+analysis/entropy.py:2:from collections import Counter
+analysis/quality.py:1:from analysis.bigrams import build_bigrams
+analysis/quality.py:2:from collections import Counter
+analysis/embeddings.py:1:from collections import defaultdict
+analysis/embeddings.py:2:import math
+analysis/graph.py:1:from collections import defaultdict
+analysis/graph.py:2:from analysis.bigrams import build_bigrams
+analysis/frequency.py:1:from collections import Counter
+analysis/frequency.py:2:from core.utils import sign_id
+tools/run_tools_regression.py:1:from pathlib import Path
+tools/run_tools_regression.py:2:import subprocess
+tools/run_tools_regression.py:3:import sys
+tools/run_tools_regression.py:4:import re
+tools/validation_v3_density.py:1:import json
+tools/validation_v3_density.py:2:import cv2
+tools/validation_v3_density.py:3:import numpy as np
+tools/validation_v3_density.py:5:from core.context.feature_context import FeatureContext
+tools/validation_v3_density.py:6:from core.algorithms.topology.foreground_density import execute as density
+tools/validation_v3_density.py:7:from core.algorithms.topology.total_foreground_area import execute as total_area
+tools/test_euler_characteristic.py:11:from __future__ import annotations
+tools/test_euler_characteristic.py:13:import numpy as np
+tools/test_euler_characteristic.py:15:from core.context.feature_context import FeatureContext
+tools/test_euler_characteristic.py:16:from core.algorithms.topology.euler_characteristic import ALGORITHM
+tools/test_experiment_registry.py:9:from __future__ import annotations
+tools/test_experiment_registry.py:11:from core.experiments.experiment import Experiment
+tools/test_experiment_registry.py:12:from core.experiments.registry import ExperimentRegistry
+tools/test_experiment_registry.py:13:from core.experiments.result import ExperimentResult
+tools/rotational_symmetry_analyzer_v6r.py:1:from pathlib import Path
+tools/rotational_symmetry_analyzer_v6r.py:2:import json
+tools/rotational_symmetry_analyzer_v6r.py:3:from statistics import mean
+tools/rotational_symmetry_analyzer_v6r.py:4:from math import log, exp
+tools/rotational_symmetry_analyzer_v6r.py:5:from fontTools.ttLib import TTFont
+tools/rotational_symmetry_analyzer_v6r.py:6:from fontTools.pens.recordingPen import RecordingPen
+tools/rotational_symmetry_analyzer_v6r.py:7:from fontTools.pens.boundsPen import BoundsPen
+tools/architecture_integration_validation_v8_8.py:1:from pathlib import Path
+tools/architecture_integration_validation_v8_8.py:2:import json
+tools/architecture_integration_validation_v8_8.py:3:from statistics import mean
+tools/validate_corpus_sequence.py:1:from pathlib import Path
+tools/validate_corpus_sequence.py:2:from core.corpus.corpus_sequence import CorpusSequence
+tools/validate_corpus_sequence.py:3:import json
+tools/validate_normalization_methods.py:9:from __future__ import annotations
+tools/validate_normalization_methods.py:11:from core.statistics.feature_statistics import FeatureStatistics
+tools/validate_normalization_methods.py:12:from core.normalization.registry import NormalizationRegistry
+tools/statistical_architecture_baseline_v8_10B.py:1:from pathlib import Path
+tools/statistical_architecture_baseline_v8_10B.py:2:import json
+tools/statistical_architecture_baseline_v8_10B.py:3:from statistics import median, mean
+tools/archetype_layer_validation_v8_7.py:1:from pathlib import Path
+tools/archetype_layer_validation_v8_7.py:2:import json
+tools/archetype_layer_validation_v8_7.py:3:from statistics import mean
+tools/test_normalization_experiment.py:9:from __future__ import annotations
+tools/test_normalization_experiment.py:11:from core.vector.feature_vector import FeatureVector
+tools/test_normalization_experiment.py:12:from core.experiments.runner import ExperimentRunner
+tools/test_normalization_experiment.py:13:from core.experiments.registry import ExperimentRegistry
+tools/test_normalization_experiment.py:14:from core.experiments.normalization_validation import (
+tools/corpus_validation_m7.py:1:from __future__ import annotations
+tools/corpus_validation_m7.py:3:import json
+tools/corpus_validation_m7.py:4:import sys
+tools/corpus_validation_m7.py:5:from pathlib import Path
+tools/corpus_validation_m7.py:7:import cv2
+tools/corpus_validation_m7.py:8:import numpy as np
+tools/corpus_validation_m7.py:10:from core.execution.engine import ExecutionEngine
+tools/corpus_validation_m7.py:11:from core.execution.runtime_registry import RuntimeRegistry
+tools/corpus_validation_m7.py:12:from core.context.feature_context import FeatureContext
+tools/metrology_v6_scale_sensitivity.py:1:import cv2
+tools/metrology_v6_scale_sensitivity.py:2:from pathlib import Path
+tools/metrology_v6_scale_sensitivity.py:4:from core.context.feature_context import FeatureContext
+tools/metrology_v6_scale_sensitivity.py:5:from core.algorithms.topology.connected_components import execute as cc
+tools/metrology_v6_scale_sensitivity.py:6:from core.algorithms.topology.hole_count import execute as hc
+tools/metrology_v6_scale_sensitivity.py:7:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/test_foreground_density.py:11:from __future__ import annotations
+tools/test_foreground_density.py:13:import numpy as np
+tools/test_foreground_density.py:15:from core.context.feature_context import FeatureContext
+tools/test_foreground_density.py:16:from core.algorithms.topology.foreground_density import ALGORITHM
+tools/build_topology_reference_corpus_v2.py:1:from pathlib import Path
+tools/build_topology_reference_corpus_v2.py:2:import json
+tools/build_topology_reference_corpus_v2.py:3:from PIL import Image, ImageDraw
+tools/test_min_max_normalization.py:9:from __future__ import annotations
+tools/test_min_max_normalization.py:11:from core.vector.feature_vector import FeatureVector
+tools/test_min_max_normalization.py:12:from core.statistics.feature_statistics import FeatureStatistics
+tools/test_min_max_normalization.py:13:from core.normalization.min_max import MinMaxNormalization
+tools/test_component_area_ratio.py:11:from __future__ import annotations
+tools/test_component_area_ratio.py:13:import numpy as np
+tools/test_component_area_ratio.py:15:from core.context.feature_context import FeatureContext
+tools/test_component_area_ratio.py:16:from core.algorithms.topology.component_area_ratio import ALGORITHM
+tools/validation_v7b_monte_carlo.py:1:import cv2
+tools/validation_v7b_monte_carlo.py:2:import numpy as np
+tools/validation_v7b_monte_carlo.py:3:import json
+tools/validation_v7b_monte_carlo.py:4:from pathlib import Path
+tools/validation_v7b_monte_carlo.py:6:from core.context.feature_context import FeatureContext
+tools/validation_v7b_monte_carlo.py:7:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_v7b_monte_carlo.py:8:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_v7b_monte_carlo.py:9:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/test_hole_count_pipeline.py:11:from __future__ import annotations
+tools/test_hole_count_pipeline.py:13:import numpy as np
+tools/test_hole_count_pipeline.py:15:from core.context.feature_context import FeatureContext
+tools/test_hole_count_pipeline.py:16:from core.execution.engine import ExecutionEngine
+tools/test_hole_count_pipeline.py:17:from core.execution.runtime_registry import RuntimeRegistry
+tools/validation_v5_rotation.py:1:import cv2
+tools/validation_v5_rotation.py:2:from pathlib import Path
+tools/validation_v5_rotation.py:4:from core.context.feature_context import FeatureContext
+tools/validation_v5_rotation.py:5:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_v5_rotation.py:6:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_v5_rotation.py:7:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/validation_v5_rotation.py:8:from core.algorithms.topology.total_foreground_area import execute as ta
+tools/validation_v5_rotation.py:9:from core.algorithms.topology.largest_component_area import execute as la
+tools/validation_v5_rotation.py:10:from core.algorithms.topology.smallest_component_area import execute as sa
+tools/validation_v5_rotation.py:11:from core.algorithms.topology.mean_component_area import execute as ma
+tools/validation_v5_rotation.py:12:from core.algorithms.topology.component_area_ratio import execute as ar
+tools/validation_v5_rotation.py:13:from core.algorithms.topology.component_density import execute as cd
+tools/validation_v5_rotation.py:14:from core.algorithms.topology.foreground_density import execute as fd
+tools/validation_v5b_reflection.py:1:import cv2
+tools/validation_v5b_reflection.py:2:from pathlib import Path
+tools/validation_v5b_reflection.py:4:from core.context.feature_context import FeatureContext
+tools/validation_v5b_reflection.py:5:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_v5b_reflection.py:6:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_v5b_reflection.py:7:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/validation_v5b_reflection.py:8:from core.algorithms.topology.total_foreground_area import execute as ta
+tools/validation_v5b_reflection.py:9:from core.algorithms.topology.largest_component_area import execute as la
+tools/validation_v5b_reflection.py:10:from core.algorithms.topology.smallest_component_area import execute as sa
+tools/validation_v5b_reflection.py:11:from core.algorithms.topology.mean_component_area import execute as ma
+tools/validation_v5b_reflection.py:12:from core.algorithms.topology.component_area_ratio import execute as ar
+tools/validation_v5b_reflection.py:13:from core.algorithms.topology.component_density import execute as cd
+tools/validation_v5b_reflection.py:14:from core.algorithms.topology.foreground_density import execute as fd
+tools/test_mean_component_area_pipeline.py:11:from __future__ import annotations
+tools/test_mean_component_area_pipeline.py:13:import numpy as np
+tools/test_mean_component_area_pipeline.py:15:from core.context.feature_context import FeatureContext
+tools/test_mean_component_area_pipeline.py:16:from core.execution.engine import ExecutionEngine
+tools/test_mean_component_area_pipeline.py:17:from core.execution.runtime_registry import RuntimeRegistry
+tools/normalization_validation_protocol.py:15:from __future__ import annotations
+tools/test_total_foreground_area.py:11:from __future__ import annotations
+tools/test_total_foreground_area.py:13:import numpy as np
+tools/test_total_foreground_area.py:15:from core.context.feature_context import FeatureContext
+tools/test_total_foreground_area.py:16:from core.algorithms.topology.total_foreground_area import ALGORITHM
+tools/test_experiment_framework.py:9:from __future__ import annotations
+tools/test_experiment_framework.py:11:from core.experiments.experiment import Experiment
+tools/test_experiment_framework.py:12:from core.experiments.result import ExperimentResult
+tools/test_experiment_framework.py:13:from core.experiments.runner import ExperimentRunner
+tools/validation_v6c_extended.py:1:import cv2
+tools/validation_v6c_extended.py:2:from pathlib import Path
+tools/validation_v6c_extended.py:4:from core.context.feature_context import FeatureContext
+tools/validation_v6c_extended.py:5:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_v6c_extended.py:6:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_v6c_extended.py:7:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/scientific_validation_m7.py:7:from __future__ import annotations
+tools/scientific_validation_m7.py:9:import random
+tools/scientific_validation_m7.py:10:import time
+tools/scientific_validation_m7.py:11:import tracemalloc
+tools/scientific_validation_m7.py:13:import cv2
+tools/scientific_validation_m7.py:14:import numpy as np
+tools/scientific_validation_m7.py:16:from core.context.feature_context import FeatureContext
+tools/scientific_validation_m7.py:17:from core.execution.engine import ExecutionEngine
+tools/scientific_validation_m7.py:18:from core.execution.runtime_registry import RuntimeRegistry
+tools/metrology_v6b_binary_scale_sensitivity.py:1:import cv2
+tools/metrology_v6b_binary_scale_sensitivity.py:2:from pathlib import Path
+tools/metrology_v6b_binary_scale_sensitivity.py:4:from core.context.feature_context import FeatureContext
+tools/metrology_v6b_binary_scale_sensitivity.py:5:from core.algorithms.topology.connected_components import execute as cc
+tools/metrology_v6b_binary_scale_sensitivity.py:6:from core.algorithms.topology.hole_count import execute as hc
+tools/metrology_v6b_binary_scale_sensitivity.py:7:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/test_normalization_registry.py:9:from __future__ import annotations
+tools/test_normalization_registry.py:11:from core.normalization.registry import NormalizationRegistry
+tools/analyze_corpus_structure.py:1:from pathlib import Path
+tools/analyze_corpus_structure.py:2:import json
+tools/analyze_corpus_structure.py:3:import math
+tools/analyze_corpus_structure.py:4:import csv
+tools/analyze_corpus_structure.py:5:import sys
+tools/analyze_corpus_structure.py:6:from collections import Counter
+tools/analyze_corpus_structure.py:7:from statistics import mean, median
+tools/test_component_density_pipeline.py:11:from __future__ import annotations
+tools/test_component_density_pipeline.py:13:import numpy as np
+tools/test_component_density_pipeline.py:15:from core.context.feature_context import FeatureContext
+tools/test_component_density_pipeline.py:16:from core.execution.engine import ExecutionEngine
+tools/test_component_density_pipeline.py:17:from core.execution.runtime_registry import RuntimeRegistry
+tools/test_euler_characteristic_pipeline.py:11:from __future__ import annotations
+tools/test_euler_characteristic_pipeline.py:13:import numpy as np
+tools/test_euler_characteristic_pipeline.py:15:from core.context.feature_context import FeatureContext
+tools/test_euler_characteristic_pipeline.py:16:from core.execution.engine import ExecutionEngine
+tools/test_euler_characteristic_pipeline.py:17:from core.execution.runtime_registry import RuntimeRegistry
+tools/test_similarity.py:9:from pathlib import Path
+tools/test_similarity.py:11:from core.io.image_loader import load_image
+tools/test_similarity.py:12:from core.context.feature_context import FeatureContext
+tools/test_similarity.py:14:from core.execution.runtime_registry import RuntimeRegistry
+tools/test_similarity.py:15:from core.execution.engine import ExecutionEngine
+tools/test_similarity.py:16:from core.packs.geometry_pack import GeometryPack
+tools/test_similarity.py:18:from core.vector.feature_vector import FeatureVector
+tools/test_similarity.py:20:from core.statistics.feature_statistics import FeatureStatistics
+tools/test_similarity.py:21:from core.comparison.feature_normalizer import FeatureNormalizer
+tools/test_similarity.py:22:from core.comparison.feature_distance import FeatureDistance
+tools/validate_registry.py:8:from pathlib import Path
+tools/validate_registry.py:9:import sys
+tools/validate_registry.py:11:from core.registry.loader import RegistryLoader
+tools/validate_registry.py:12:from core.registry.validator import RegistryValidator
+tools/test_topology_pipeline.py:23:from __future__ import annotations
+tools/test_topology_pipeline.py:25:import numpy as np
+tools/test_topology_pipeline.py:27:from core.context.feature_context import FeatureContext
+tools/test_topology_pipeline.py:28:from core.execution.engine import ExecutionEngine
+tools/test_topology_pipeline.py:29:from core.execution.runtime_registry import RuntimeRegistry
+tools/build_corpus_frequency_profile.py:1:from pathlib import Path
+tools/build_corpus_frequency_profile.py:2:import csv
+tools/build_corpus_frequency_profile.py:3:import json
+tools/build_corpus_frequency_profile.py:4:import math
+tools/build_corpus_frequency_profile.py:5:import sys
+tools/build_corpus_frequency_profile.py:6:from collections import Counter
+tools/validate_geometry_pack.py:10:from pathlib import Path
+tools/validate_geometry_pack.py:12:from core.io.image_loader import load_image
+tools/validate_geometry_pack.py:13:from core.context.feature_context import FeatureContext
+tools/validate_geometry_pack.py:14:from core.execution.runtime_registry import RuntimeRegistry
+tools/validate_geometry_pack.py:15:from core.execution.engine import ExecutionEngine
+tools/validate_geometry_pack.py:16:from core.packs.geometry_pack import GeometryPack
+tools/gss_feature_separation_v8_5.py:1:from pathlib import Path
+tools/gss_feature_separation_v8_5.py:2:import json
+tools/gss_feature_separation_v8_5.py:3:from statistics import mean
+tools/master_validation_report_v8_9S.py:1:from pathlib import Path
+tools/master_validation_report_v8_9S.py:2:import json
+tools/master_validation_report_v8_9S.py:3:from statistics import mean
+tools/validation_v6a_resolution.py:1:import cv2
+tools/validation_v6a_resolution.py:2:from pathlib import Path
+tools/validation_v6a_resolution.py:4:from core.context.feature_context import FeatureContext
+tools/validation_v6a_resolution.py:5:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_v6a_resolution.py:6:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_v6a_resolution.py:7:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/generate_m10_final_certificate.py:1:from pathlib import Path
+tools/generate_m10_final_certificate.py:2:import json
+tools/generate_m10_final_certificate.py:3:from datetime import datetime
+tools/test_largest_component_area_pipeline.py:11:from __future__ import annotations
+tools/test_largest_component_area_pipeline.py:13:import numpy as np
+tools/test_largest_component_area_pipeline.py:15:from core.context.feature_context import FeatureContext
+tools/test_largest_component_area_pipeline.py:16:from core.execution.engine import ExecutionEngine
+tools/test_largest_component_area_pipeline.py:17:from core.execution.runtime_registry import RuntimeRegistry
+tools/validation_suite_m72b.py:1:from pathlib import Path
+tools/validation_suite_m72b.py:2:import json
+tools/validation_suite_m72b.py:3:import cv2
+tools/validation_suite_m72b.py:5:from core.context.feature_context import FeatureContext
+tools/validation_suite_m72b.py:6:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_suite_m72b.py:7:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_suite_m72b.py:8:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/validation_v2_area.py:1:import json
+tools/validation_v2_area.py:2:import cv2
+tools/validation_v2_area.py:4:from core.context.feature_context import FeatureContext
+tools/validation_v2_area.py:5:from core.algorithms.topology.total_foreground_area import execute as total_area
+tools/validation_v2_area.py:6:from core.algorithms.topology.largest_component_area import execute as largest_area
+tools/validation_v2_area.py:7:from core.algorithms.topology.smallest_component_area import execute as smallest_area
+tools/validation_v2_area.py:8:from core.algorithms.topology.mean_component_area import execute as mean_area
+tools/validation_v2_area.py:9:from core.algorithms.topology.component_area_ratio import execute as ratio
+tools/build_validation_synthetic_corpus.py:1:from pathlib import Path
+tools/build_validation_synthetic_corpus.py:2:import json
+tools/build_validation_synthetic_corpus.py:3:from PIL import Image, ImageDraw
+tools/category_fingerprint_analysis_v8_6.py:1:from pathlib import Path
+tools/category_fingerprint_analysis_v8_6.py:2:import json
+tools/category_fingerprint_analysis_v8_6.py:3:from statistics import mean
+tools/category_fingerprint_analysis_v8_6.py:4:from math import sqrt
+tools/update_validation_metadata.py:1:import json
+tools/gss_correlation_analysis_v8_3.py:1:from pathlib import Path
+tools/gss_correlation_analysis_v8_3.py:2:import json
+tools/gss_correlation_analysis_v8_3.py:3:from statistics import mean
+tools/gss_correlation_analysis_v8_3.py:4:from math import sqrt
+tools/test_component_area_ratio_pipeline.py:11:from __future__ import annotations
+tools/test_component_area_ratio_pipeline.py:13:import numpy as np
+tools/test_component_area_ratio_pipeline.py:15:from core.context.feature_context import FeatureContext
+tools/test_component_area_ratio_pipeline.py:16:from core.execution.engine import ExecutionEngine
+tools/test_component_area_ratio_pipeline.py:17:from core.execution.runtime_registry import RuntimeRegistry
+tools/test_hole_count.py:11:from __future__ import annotations
+tools/test_hole_count.py:13:import numpy as np
+tools/test_hole_count.py:15:from core.context.feature_context import FeatureContext
+tools/test_hole_count.py:16:from core.algorithms.topology.hole_count import execute
+tools/test_normalization_validation.py:9:from __future__ import annotations
+tools/test_normalization_validation.py:11:from core.vector.feature_vector import FeatureVector
+tools/test_normalization_validation.py:12:from tools.validate_normalization_methods import (
+tools/glyph_structural_signature_v8_2.py:1:from pathlib import Path
+tools/glyph_structural_signature_v8_2.py:2:import json
+tools/glyph_structural_signature_v8_2.py:3:from statistics import mean
+tools/analyze_corpus_frequency.py:1:from pathlib import Path
+tools/analyze_corpus_frequency.py:2:import json
+tools/analyze_corpus_frequency.py:3:import math
+tools/analyze_corpus_frequency.py:4:import csv
+tools/analyze_corpus_frequency.py:5:import sys
+tools/analyze_corpus_frequency.py:6:from collections import Counter
+tools/analyze_corpus_frequency.py:7:from statistics import mean, median
+tools/test_all_normalization_methods.py:11:from __future__ import annotations
+tools/test_all_normalization_methods.py:13:from core.vector.feature_vector import FeatureVector
+tools/test_all_normalization_methods.py:14:from tools.validate_normalization_methods import (
+tools/validation_v7a_noise_profile.py:1:import cv2
+tools/validation_v7a_noise_profile.py:2:import numpy as np
+tools/validation_v7a_noise_profile.py:3:from pathlib import Path
+tools/validation_v7a_noise_profile.py:5:from core.context.feature_context import FeatureContext
+tools/validation_v7a_noise_profile.py:6:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_v7a_noise_profile.py:7:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_v7a_noise_profile.py:8:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/master_validation_report_v8_9R.py:1:from pathlib import Path
+tools/master_validation_report_v8_9R.py:2:import json
+tools/master_validation_report_v8_9R.py:3:from statistics import mean
+tools/run_normalization_validation.py:12:from __future__ import annotations
+tools/run_normalization_validation.py:14:from tools.validate_normalization_methods import (
+tools/run_normalization_validation.py:17:from tools.normalization_validation_protocol import (
+tools/run_normalization_validation.py:20:from core.vector.feature_vector import FeatureVector
+tools/test_feature_contribution.py:9:from pathlib import Path
+tools/test_feature_contribution.py:10:from math import sqrt
+tools/test_feature_contribution.py:12:from core.io.image_loader import load_image
+tools/test_feature_contribution.py:13:from core.context.feature_context import FeatureContext
+tools/test_feature_contribution.py:15:from core.execution.runtime_registry import RuntimeRegistry
+tools/test_feature_contribution.py:16:from core.execution.engine import ExecutionEngine
+tools/test_feature_contribution.py:17:from core.packs.geometry_pack import GeometryPack
+tools/test_feature_contribution.py:19:from core.vector.feature_vector import FeatureVector
+tools/test_feature_contribution.py:20:from core.statistics.feature_statistics import FeatureStatistics
+tools/test_feature_contribution.py:21:from core.comparison.feature_normalizer import FeatureNormalizer
+tools/glyph_structural_signature_v8_1.py:1:from pathlib import Path
+tools/glyph_structural_signature_v8_1.py:2:import json
+tools/glyph_structural_signature_v8_1.py:3:from statistics import mean
+tools/test_validation_protocol.py:1:from tools.normalization_validation_protocol import ValidationProtocol
+tools/certify_reference_corpus_v2.py:1:import json
+tools/certify_reference_corpus_v2.py:2:from pathlib import Path
+tools/certify_reference_corpus_v2.py:3:import cv2
+tools/certify_reference_corpus_v2.py:5:from core.context.feature_context import FeatureContext
+tools/certify_reference_corpus_v2.py:6:from core.algorithms.topology.connected_components import execute as cc
+tools/certify_reference_corpus_v2.py:7:from core.algorithms.topology.hole_count import execute as hc
+tools/certify_reference_corpus_v2.py:8:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/test_center_normalization.py:7:from core.io.image_loader import load_image
+tools/test_center_normalization.py:8:from core.context.feature_context import FeatureContext
+tools/test_center_normalization.py:10:from core.normalization.center import center_image
+tools/test_center_normalization.py:11:from core.normalization.center_of_mass import center_of_mass
+tools/test_center_normalization.py:13:from core.execution.runtime_registry import RuntimeRegistry
+tools/test_center_normalization.py:14:from core.execution.engine import ExecutionEngine
+tools/test_center_normalization.py:15:from core.packs.geometry_pack import GeometryPack
+tools/test_distance_matrix.py:9:from pathlib import Path
+tools/test_distance_matrix.py:11:from core.io.image_loader import load_image
+tools/test_distance_matrix.py:12:from core.context.feature_context import FeatureContext
+tools/test_distance_matrix.py:14:from core.execution.runtime_registry import RuntimeRegistry
+tools/test_distance_matrix.py:15:from core.execution.engine import ExecutionEngine
+tools/test_distance_matrix.py:16:from core.packs.geometry_pack import GeometryPack
+tools/test_distance_matrix.py:18:from core.vector.feature_vector import FeatureVector
+tools/test_distance_matrix.py:20:from core.statistics.feature_statistics import FeatureStatistics
+tools/test_distance_matrix.py:21:from core.comparison.feature_normalizer import FeatureNormalizer
+tools/test_distance_matrix.py:22:from core.comparison.feature_distance import FeatureDistance
+tools/gss_archetype_validation_v8_4.py:1:from pathlib import Path
+tools/gss_archetype_validation_v8_4.py:2:import json
+tools/gss_archetype_validation_v8_4.py:3:from statistics import mean
+tools/gss_archetype_validation_v8_4.py:4:from math import sqrt
+tools/test_component_density.py:11:from __future__ import annotations
+tools/test_component_density.py:13:import numpy as np
+tools/test_component_density.py:15:from core.context.feature_context import FeatureContext
+tools/test_component_density.py:16:from core.algorithms.topology.component_density import ALGORITHM
+tools/test_smallest_component_area_pipeline.py:11:from __future__ import annotations
+tools/test_smallest_component_area_pipeline.py:13:import numpy as np
+tools/test_smallest_component_area_pipeline.py:15:from core.context.feature_context import FeatureContext
+tools/test_smallest_component_area_pipeline.py:16:from core.execution.engine import ExecutionEngine
+tools/test_smallest_component_area_pipeline.py:17:from core.execution.runtime_registry import RuntimeRegistry
+tools/generate_reference_dataset.py:7:from pathlib import Path
+tools/generate_reference_dataset.py:9:import cv2
+tools/generate_reference_dataset.py:10:import numpy as np
+tools/validation_v4a_safe_translation.py:1:import cv2
+tools/validation_v4a_safe_translation.py:2:import numpy as np
+tools/validation_v4a_safe_translation.py:3:from pathlib import Path
+tools/validation_v4a_safe_translation.py:5:from core.context.feature_context import FeatureContext
+tools/validation_v4a_safe_translation.py:6:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_v4a_safe_translation.py:7:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_v4a_safe_translation.py:8:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/validation_v4a_safe_translation.py:9:from core.algorithms.topology.total_foreground_area import execute as ta
+tools/validation_v4a_safe_translation.py:10:from core.algorithms.topology.largest_component_area import execute as la
+tools/validation_v4a_safe_translation.py:11:from core.algorithms.topology.smallest_component_area import execute as sa
+tools/validation_v4a_safe_translation.py:12:from core.algorithms.topology.mean_component_area import execute as ma
+tools/validation_v4a_safe_translation.py:13:from core.algorithms.topology.component_area_ratio import execute as ar
+tools/validation_v4a_safe_translation.py:14:from core.algorithms.topology.component_density import execute as cd
+tools/validation_v4a_safe_translation.py:15:from core.algorithms.topology.foreground_density import execute as fd
+tools/validation_v6a_diagnostic.py:1:import cv2
+tools/validation_v6a_diagnostic.py:3:from core.context.feature_context import FeatureContext
+tools/validation_v6a_diagnostic.py:4:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_v6a_diagnostic.py:5:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_v6a_diagnostic.py:6:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/validation_v6a_diagnostic.py:7:from core.algorithms.topology.total_foreground_area import execute as ta
+tools/test_mean_component_area.py:11:from __future__ import annotations
+tools/test_mean_component_area.py:13:import numpy as np
+tools/test_mean_component_area.py:15:from core.context.feature_context import FeatureContext
+tools/test_mean_component_area.py:16:from core.algorithms.topology.mean_component_area import ALGORITHM
+tools/test_total_foreground_area_pipeline.py:11:from __future__ import annotations
+tools/test_total_foreground_area_pipeline.py:13:import numpy as np
+tools/test_total_foreground_area_pipeline.py:15:from core.context.feature_context import FeatureContext
+tools/test_total_foreground_area_pipeline.py:16:from core.execution.engine import ExecutionEngine
+tools/test_total_foreground_area_pipeline.py:17:from core.execution.runtime_registry import RuntimeRegistry
+tools/statistical_architecture_baseline_v8_10A.py:1:from pathlib import Path
+tools/statistical_architecture_baseline_v8_10A.py:2:import json
+tools/statistical_architecture_baseline_v8_10A.py:3:from statistics import median, mean
+tools/master_validation_v8_9.py:1:from pathlib import Path
+tools/master_validation_v8_9.py:2:import json
+tools/master_validation_v8_9.py:3:from statistics import mean
+tools/test_foreground_density_pipeline.py:11:from __future__ import annotations
+tools/test_foreground_density_pipeline.py:13:import numpy as np
+tools/test_foreground_density_pipeline.py:15:from core.context.feature_context import FeatureContext
+tools/test_foreground_density_pipeline.py:16:from core.execution.engine import ExecutionEngine
+tools/test_foreground_density_pipeline.py:17:from core.execution.runtime_registry import RuntimeRegistry
+tools/validation_report.py:9:from __future__ import annotations
+tools/validation_report.py:11:from dataclasses import dataclass, field
+tools/test_feature_statistics.py:7:from pathlib import Path
+tools/test_feature_statistics.py:9:from core.io.image_loader import load_image
+tools/test_feature_statistics.py:10:from core.context.feature_context import FeatureContext
+tools/test_feature_statistics.py:12:from core.execution.runtime_registry import RuntimeRegistry
+tools/test_feature_statistics.py:13:from core.execution.engine import ExecutionEngine
+tools/test_feature_statistics.py:15:from core.packs.geometry_pack import GeometryPack
+tools/test_feature_statistics.py:17:from core.vector.feature_vector import FeatureVector
+tools/test_feature_statistics.py:18:from core.statistics.feature_statistics import FeatureStatistics
+tools/hierarchical_architecture_model_v8_11.py:1:from pathlib import Path
+tools/hierarchical_architecture_model_v8_11.py:2:import json
+tools/hierarchical_architecture_model_v8_11.py:3:from statistics import mean
+tools/test_largest_component_area.py:11:from __future__ import annotations
+tools/test_largest_component_area.py:13:import numpy as np
+tools/test_largest_component_area.py:15:from core.context.feature_context import FeatureContext
+tools/test_largest_component_area.py:16:from core.algorithms.topology.largest_component_area import ALGORITHM
+tools/test_smallest_component_area.py:11:from __future__ import annotations
+tools/test_smallest_component_area.py:13:import numpy as np
+tools/test_smallest_component_area.py:15:from core.context.feature_context import FeatureContext
+tools/test_smallest_component_area.py:16:from core.algorithms.topology.smallest_component_area import ALGORITHM
+tools/import_indus_corpus.py:9:from __future__ import annotations
+tools/import_indus_corpus.py:11:from pathlib import Path
+tools/import_indus_corpus.py:13:import cv2
+tools/test_validation_report.py:1:from tools.validation_report import ValidationReport
+tools/validation_v6c_resolution_profile.py:1:import cv2
+tools/validation_v6c_resolution_profile.py:2:from pathlib import Path
+tools/validation_v6c_resolution_profile.py:4:from core.context.feature_context import FeatureContext
+tools/validation_v6c_resolution_profile.py:5:from core.algorithms.topology.connected_components import execute as cc
+tools/validation_v6c_resolution_profile.py:6:from core.algorithms.topology.hole_count import execute as hc
+tools/validation_v6c_resolution_profile.py:7:from core.algorithms.topology.euler_characteristic import execute as ec
+tools/hierarchical_architecture_model_v8_12.py:1:from pathlib import Path
+tools/hierarchical_architecture_model_v8_12.py:2:import json
+tools/hierarchical_architecture_model_v8_12.py:3:from statistics import mean
+tests/test_feature_vector.py:7:from core.vector.feature_vector import FeatureVector
+tests/test_epigraphic_identity.py:1:from core.epigraphic_identity import (
+tests/test_feature_context.py:7:import numpy as np
+tests/test_feature_context.py:9:from core.context.feature_context import FeatureContext
+tests/test_feature_context.py:10:from core.features.geometry.bounding_box import BoundingBoxFeatures
+tests/test_observation_identity_layers.py:1:from core.observation_registry import (
+tests/test_observation_identity_layers.py:5:from core.corpus.corpus_sequence import (
+tests/test_topology_connectivity.py:1:import numpy as np
+tests/test_topology_connectivity.py:3:from core.context.feature_context import FeatureContext
+tests/test_topology_connectivity.py:4:from core.algorithms.topology.connected_components import execute as components
+tests/test_topology_connectivity.py:5:from core.algorithms.topology.hole_count import execute as holes
+tests/test_sign_registry_duplicates.py:1:from core.registry.sign_registry import SignRecord, SignRegistry
+tests/test_topology_ground_truth.py:1:import numpy as np
+tests/test_topology_ground_truth.py:3:from core.context.feature_context import FeatureContext
+tests/test_topology_ground_truth.py:5:from core.algorithms.topology.connected_components import execute as C
+tests/test_topology_ground_truth.py:6:from core.algorithms.topology.hole_count import execute as H
+tests/test_topology_ground_truth.py:7:from core.algorithms.topology.euler_characteristic import execute as E
+tests/test_topology_ground_truth.py:8:from core.algorithms.topology.total_foreground_area import execute as FG
+tests/test_topology_ground_truth.py:9:from core.algorithms.topology.largest_component_area import execute as LARGEST
+tests/test_topology_ground_truth.py:10:from core.algorithms.topology.smallest_component_area import execute as SMALLEST
+tests/test_topology_ground_truth.py:11:from core.algorithms.topology.mean_component_area import execute as MEAN
+tests/test_topology_ground_truth.py:12:from core.algorithms.topology.component_area_ratio import execute as RATIO
+tests/test_topology_ground_truth.py:13:from core.algorithms.topology.component_density import execute as CDENS
+tests/test_topology_ground_truth.py:14:from core.algorithms.topology.foreground_density import execute as FDENS
+tests/test_foreground_density_contract.py:1:import numpy as np
+tests/test_foreground_density_contract.py:3:from core.context.feature_context import FeatureContext
+tests/test_foreground_density_contract.py:4:from core.algorithms.topology.foreground_density import execute
+tests/test_feature_context_contract.py:1:import numpy as np
+tests/test_feature_context_contract.py:3:from core.context.feature_context import FeatureContext
+tests/test_sequence_boundaries.py:1:from core.corpus.corpus_sequence import CorpusSequence, Inscription
+tests/test_sequence_boundaries.py:2:from core.sequence.bigrams import corpus_bigrams, inscription_bigrams
+tests/test_aspect_ratio_architecture.py:1:import numpy as np
+tests/test_aspect_ratio_architecture.py:3:from core.context.feature_context import FeatureContext
+tests/test_aspect_ratio_architecture.py:4:from core.algorithms.geometry.aspect_ratio import execute, ALGORITHM
+tests/test_aspect_ratio_architecture.py:5:from core.packs.geometry_pack import GeometryPack
+tests/test_identity_registry.py:1:from core.epigraphic_identity import (
+tests/test_identity_registry.py:6:from core.identity_registry import IdentityRegistry
+tests/test_image_loader.py:7:from pathlib import Path
+tests/test_image_loader.py:9:from core.io.image_loader import load_image
+tests/test_bounding_box.py:9:import numpy as np
+tests/test_bounding_box.py:11:from core.context.feature_context import FeatureContext
+tests/test_bounding_box.py:12:from core.features.geometry.bounding_box import BoundingBoxFeatures
+tests/test_execution_engine.py:9:import numpy as np
+tests/test_execution_engine.py:11:from core.context.feature_context import FeatureContext
+tests/test_execution_engine.py:12:from core.execution.runtime_registry import RuntimeRegistry
+tests/test_execution_engine.py:13:from core.execution.engine import ExecutionEngine
+main.py:10:from __future__ import annotations
+main.py:12:import numpy as np
+main.py:14:from core.context.feature_context import FeatureContext
+main.py:15:from core.algorithms.topology.connected_components import execute as connected_components
+main.py:16:from core.algorithms.topology.hole_count import execute as hole_count
+main.py:17:from core.algorithms.topology.euler_characteristic import execute as euler_characteristic
+main.py:18:from core.algorithms.topology.total_foreground_area import execute as foreground_area
+main.py:19:from core.algorithms.topology.foreground_density import execute as foreground_density
+main.py:20:from core.algorithms.geometry.aspect_ratio import execute as aspect_ratio
+
+=== POSSIBLE REMOVED MODULE REFERENCES ===
+
+=== TODO / FIXME / HACK ===
+
+=== REQUIREMENTS ===
+numpy>=1.26
+opencv-python>=4.10
+PyYAML>=6.0
+
+=== TOP-LEVEL MODULE INVENTORY ===
+analysis/bigrams.py
+analysis/embeddings.py
+analysis/entropy.py
+analysis/frequency.py
+analysis/graph.py
+analysis/length.py
+analysis/quality.py
+core/__init__.py
+core/analysis_result.py
+core/comparison/comparison_result.py
+core/comparison/feature_distance.py
+core/comparison/feature_normalizer.py
+core/context/feature_context.py
+core/corpus.py
+core/corpus/__init__.py
+core/corpus/corpus_sequence.py
+core/epigraphic_identity.py
+core/execution/algorithm.py
+core/execution/engine.py
+core/execution/runtime_registry.py
+core/experiments/experiment.py
+core/experiments/normalization_validation.py
+core/experiments/registry.py
+core/experiments/result.py
+core/experiments/runner.py
+core/geometry/objects.py
+core/identity_registry.py
+core/import_engine.py
+core/import_text.py
+core/io.py
+core/io/__init__.py
+core/io/image_loader.py
+core/normalization/base.py
+core/normalization/center.py
+core/normalization/center_of_mass.py
+core/normalization/min_max.py
+core/normalization/registry.py
+core/observation_registry.py
+core/packs/geometry_pack.py
+core/packs/topology_pack.py
+core/pipeline.py
+core/record.py
+core/registry/__init__.py
+core/registry/loader.py
+core/registry/models.py
+core/registry/sign_registry.py
+core/registry/validator.py
+core/sequence/bigrams.py
+core/sign.py
+core/sign_dataset.py
+core/sign_library.py
+core/statistics/feature_statistics.py
+core/utils.py
+core/vector/feature_vector.py
+tools/__init__.py
+tools/analyze_corpus_frequency.py
+tools/analyze_corpus_structure.py
+tools/archetype_layer_validation_v8_7.py
+tools/architecture_integration_validation_v8_8.py
+tools/build_corpus_frequency_profile.py
+tools/build_topology_reference_corpus_v2.py
+tools/build_validation_synthetic_corpus.py
+tools/category_fingerprint_analysis_v8_6.py
+tools/certify_reference_corpus_v2.py
+tools/corpus_validation_m7.py
+tools/generate_m10_final_certificate.py
+tools/generate_reference_dataset.py
+tools/glyph_structural_signature_v8_1.py
+tools/glyph_structural_signature_v8_2.py
+tools/gss_archetype_validation_v8_4.py
+tools/gss_correlation_analysis_v8_3.py
+tools/gss_feature_separation_v8_5.py
+tools/hierarchical_architecture_model_v8_11.py
+tools/hierarchical_architecture_model_v8_12.py
+tools/import_indus_corpus.py
+tools/master_validation_report_v8_9R.py
+tools/master_validation_report_v8_9S.py
+tools/master_validation_v8_9.py
+tools/metrology_v6_scale_sensitivity.py
+tools/metrology_v6b_binary_scale_sensitivity.py
+tools/normalization_validation_protocol.py
+tools/rotational_symmetry_analyzer_v6r.py
+tools/run_normalization_validation.py
+tools/run_tools_regression.py
+tools/scientific_validation_m7.py
+tools/statistical_architecture_baseline_v8_10A.py
+tools/statistical_architecture_baseline_v8_10B.py
+tools/test_all_normalization_methods.py
+tools/test_center_normalization.py
+tools/test_component_area_ratio.py
+tools/test_component_area_ratio_pipeline.py
+tools/test_component_density.py
+tools/test_component_density_pipeline.py
+tools/test_distance_matrix.py
+tools/test_euler_characteristic.py
+tools/test_euler_characteristic_pipeline.py
+tools/test_experiment_framework.py
+tools/test_experiment_registry.py
+tools/test_feature_contribution.py
+tools/test_feature_statistics.py
+tools/test_foreground_density.py
+tools/test_foreground_density_pipeline.py
+tools/test_hole_count.py
+tools/test_hole_count_pipeline.py
+tools/test_largest_component_area.py
+tools/test_largest_component_area_pipeline.py
+tools/test_mean_component_area.py
+tools/test_mean_component_area_pipeline.py
+tools/test_min_max_normalization.py
+tools/test_normalization_experiment.py
+tools/test_normalization_registry.py
+tools/test_normalization_validation.py
+tools/test_similarity.py
+tools/test_smallest_component_area.py
+tools/test_smallest_component_area_pipeline.py
+tools/test_topology_pipeline.py
+tools/test_total_foreground_area.py
+tools/test_total_foreground_area_pipeline.py
+tools/test_validation_protocol.py
+tools/test_validation_report.py
+tools/update_validation_metadata.py
+tools/validate_corpus_sequence.py
+tools/validate_geometry_pack.py
+tools/validate_normalization_methods.py
+tools/validate_registry.py
+tools/validation_report.py
+tools/validation_suite_m72b.py
+tools/validation_v2_area.py
+tools/validation_v3_density.py
+tools/validation_v4a_safe_translation.py
+tools/validation_v5_rotation.py
+tools/validation_v5b_reflection.py
+tools/validation_v6a_diagnostic.py
+tools/validation_v6a_resolution.py
+tools/validation_v6c_extended.py
+tools/validation_v6c_resolution_profile.py
+tools/validation_v7a_noise_profile.py
+tools/validation_v7b_monte_carlo.py
+
+=== SYNTAX ===
+compileall rc=0
+
+=== STRICT TOOLS REGRESSION ===
+AncientScriptLab — Tools Regression
+===================================
+tools/__init__.py: PASS rc=0
+tools/analyze_corpus_frequency.py: CLI_REQUIRES_ARGS rc=1
+tools/analyze_corpus_structure.py: CLI_REQUIRES_ARGS rc=1
+tools/archetype_layer_validation_v8_7.py: PASS rc=0
+tools/architecture_integration_validation_v8_8.py: PASS rc=0
+tools/build_corpus_frequency_profile.py: CLI_REQUIRES_ARGS rc=1
+tools/build_topology_reference_corpus_v2.py: PASS rc=0
+tools/build_validation_synthetic_corpus.py: PASS rc=0
+tools/category_fingerprint_analysis_v8_6.py: PASS rc=0
+tools/certify_reference_corpus_v2.py: PASS rc=0
+tools/corpus_validation_m7.py: PASS rc=0
+tools/generate_m10_final_certificate.py: PASS rc=0
+tools/generate_reference_dataset.py: PASS rc=0
+tools/glyph_structural_signature_v8_1.py: PASS rc=0
+tools/glyph_structural_signature_v8_2.py: PASS rc=0
+tools/gss_archetype_validation_v8_4.py: PASS rc=0
+tools/gss_correlation_analysis_v8_3.py: PASS rc=0
+tools/gss_feature_separation_v8_5.py: PASS rc=0
+tools/hierarchical_architecture_model_v8_11.py: PASS rc=0
+tools/hierarchical_architecture_model_v8_12.py: PASS rc=0
+tools/import_indus_corpus.py: PASS rc=0
+tools/master_validation_report_v8_9R.py: PASS rc=0
+tools/master_validation_report_v8_9S.py: PASS rc=0
+tools/master_validation_v8_9.py: PASS rc=0
+tools/metrology_v6_scale_sensitivity.py: PASS rc=0
+tools/metrology_v6b_binary_scale_sensitivity.py: PASS rc=0
+tools/normalization_validation_protocol.py: PASS rc=0
+tools/rotational_symmetry_analyzer_v6r.py: PASS rc=0
+tools/run_normalization_validation.py: PASS rc=0
+tools/scientific_validation_m7.py: PASS rc=0
+tools/statistical_architecture_baseline_v8_10A.py: PASS rc=0
+tools/statistical_architecture_baseline_v8_10B.py: PASS rc=0
+tools/test_all_normalization_methods.py: PASS rc=0
+tools/test_center_normalization.py: PASS rc=0
+tools/test_component_area_ratio.py: PASS rc=0
+tools/test_component_area_ratio_pipeline.py: PASS rc=0
+tools/test_component_density.py: PASS rc=0
+tools/test_component_density_pipeline.py: PASS rc=0
+tools/test_distance_matrix.py: PASS rc=0
+tools/test_euler_characteristic.py: PASS rc=0
+tools/test_euler_characteristic_pipeline.py: PASS rc=0
+tools/test_experiment_framework.py: PASS rc=0
+tools/test_experiment_registry.py: PASS rc=0
+tools/test_feature_contribution.py: PASS rc=0
+tools/test_feature_statistics.py: PASS rc=0
+tools/test_foreground_density.py: PASS rc=0
+tools/test_foreground_density_pipeline.py: PASS rc=0
+tools/test_hole_count.py: PASS rc=0
+tools/test_hole_count_pipeline.py: PASS rc=0
+tools/test_largest_component_area.py: PASS rc=0
+tools/test_largest_component_area_pipeline.py: PASS rc=0
+tools/test_mean_component_area.py: PASS rc=0
+tools/test_mean_component_area_pipeline.py: PASS rc=0
+tools/test_min_max_normalization.py: PASS rc=0
+tools/test_normalization_experiment.py: PASS rc=0
+tools/test_normalization_registry.py: PASS rc=0
+tools/test_normalization_validation.py: PASS rc=0
+tools/test_similarity.py: PASS rc=0
+tools/test_smallest_component_area.py: PASS rc=0
+tools/test_smallest_component_area_pipeline.py: PASS rc=0
+tools/test_topology_pipeline.py: PASS rc=0
+tools/test_total_foreground_area.py: PASS rc=0
+tools/test_total_foreground_area_pipeline.py: PASS rc=0
+tools/test_validation_protocol.py: PASS rc=0
+tools/test_validation_report.py: PASS rc=0
+tools/update_validation_metadata.py: PASS rc=0
+tools/validate_corpus_sequence.py: PASS rc=0
+tools/validate_geometry_pack.py: PASS rc=0
+tools/validate_normalization_methods.py: PASS rc=0
+tools/validate_registry.py: PASS rc=0
+tools/validation_report.py: PASS rc=0
+tools/validation_suite_m72b.py: PASS rc=0
+tools/validation_v2_area.py: PASS rc=0
+tools/validation_v3_density.py: PASS rc=0
+tools/validation_v4a_safe_translation.py: PASS rc=0
+tools/validation_v5_rotation.py: PASS rc=0
+tools/validation_v5b_reflection.py: PASS rc=0
+tools/validation_v6a_diagnostic.py: PASS rc=0
+tools/validation_v6a_resolution.py: PASS rc=0
+tools/validation_v6c_extended.py: PASS rc=0
+tools/validation_v6c_resolution_profile.py: PASS rc=0
+tools/validation_v7a_noise_profile.py: PASS rc=0
+tools/validation_v7b_monte_carlo.py: PASS rc=0
+
+=== SUMMARY ===
+PASS=80
+CLI_REQUIRES_ARGS=3
+FAIL=0
+PRINTED_FAILURE=0
+tools runner rc=0
+
+=== TESTS ===
+TEST SUMMARY: PASS=15 FAIL=0
