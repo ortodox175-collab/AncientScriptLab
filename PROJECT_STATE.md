@@ -2,155 +2,165 @@
 
 # PROJECT STATE
 
-Version: Research Snapshot v1.0
+Version: Audited Core Baseline Candidate
+
+Date: 2026-08-15
 
 ---
 
-## Current Milestone
+## Current Phase
 
-M6.4 — Validation of Normalization Methods
+Final documentation synchronization and baseline regression.
 
----
-
-## Completed Milestones
-
-✓ M1 — Core Architecture
-
-✓ M2 — Execution Engine
-
-✓ M3 — Algorithm Registry
-
-✓ M4 — Geometry Framework
-
-✓ M5 — Geometry Feature Pack
-
-✓ M5.5 — Image Centering & Normalization
-
-✓ M6.1 — Feature Distance
-
-✓ M6.2 — Feature Statistics
-
-✓ M6.3 — Distance Matrix & Contribution Analysis
+New scientific feature development remains frozen until the baseline is recorded.
 
 ---
 
-## Current Objective
+## Scientific Workflow
 
-Validate mathematical normalization methods before introducing similarity scores.
+Corpus → Measurement → Pipeline → Validation → Result → Report
 
----
+For an unknown corpus, observation-level measurement precedes canonical identity assignment.
 
-## Architecture Status
+Interpretation remains the responsibility of the researcher.
 
-Status: Stable
-
-The current architecture is considered stable.
-
-Further modifications require objective technical justification.
+AncientScriptLab does not decipher, translate or assign meaning.
 
 ---
 
-## Scientific Model
+## Audited Core
 
-Status: Stable
+The following components have completed the current repair/regression cycle:
 
-The current mathematical model is internally consistent and experimentally validated for the implemented feature set.
-
----
-
-## Implemented Feature Set
-
-Geometry Features
-
-- Width
-- Height
-- Bounding Box Area
-- Foreground Area
-- Perimeter
-- Aspect Ratio
-- Extent
-- Centroid X
-- Centroid Y
-- Compactness
+- FeatureContext contract
+- canonical binary representation
+- digital topology connectivity convention
+- connected components
+- hole count
+- Euler characteristic
+- foreground area
+- foreground density
+- geometry aspect ratio
+- GeometryPack / RuntimeRegistry integration
+- SignRegistry duplicate contract
+- ObservationRegistry
+- epigraphic identity separation
+- inscription boundary-safe bigrams
+- explicit damaged-position handling
+- reference topology corpus
 
 ---
 
-## Implemented Systems
+## Architecture
 
-- Execution Engine
-- Algorithm Registry
-- Geometry Pack
-- Feature Vector
-- Feature Normalizer
-- Feature Distance
-- Feature Statistics
-- Distance Matrix
-- Contribution Analysis
+Current execution chain:
 
----
+Algorithm → Feature Pack → RuntimeRegistry → ExecutionEngine
 
-## Current Scientific Questions
+Scientific data chain:
 
-1. Validation of feature normalization methods.
+Corpus → Measurement → Pipeline → Validation → Result → Report
 
-2. Proper weighting of heterogeneous feature groups.
+Observation identity and canonical epigraphic identity are separate layers.
 
-3. Mathematical calibration of feature space.
-
-4. Stability of distance metrics on large corpora.
+Geometric invariance must not be interpreted as epigraphic identity.
 
 ---
 
-## Technical Debt
+## Egyptian Data Status
 
-None identified.
+`datasets/egyptian_canonical/` is the current canonical Egyptian sign inventory.
 
-The codebase remains internally consistent.
+It is suitable as a controlled sign-image resource for measurement work.
 
-Future refactoring should occur only when objectively justified.
+It must not be described as a validated real-text sequence corpus.
 
----
+Legacy Egyptian material has been isolated or removed from active pipelines.
 
-## Repository Status
-
-Architecture : Stable
-
-Documentation : Active
-
-Testing : Active
-
-Research : Active
+Historical audit reports are retained as provenance.
 
 ---
 
-## Next Planned Milestone
+## Validation Semantics
 
-Continue M6.4
+Validation:
+- predefined expected criterion;
+- explicit PASS/FAIL semantics;
+- non-zero return code on validation failure.
 
-Validation of normalization methods using larger experimental datasets before implementing similarity scores.
+Metrology:
+- quantitative measurement/profile;
+- no PASS/FAIL unless a threshold was defined before measurement.
 
----
+Diagnostic:
+- reports observations or historical criteria;
+- does not establish general scientific validity.
 
-# Change History
-
-2026-07-06
-
-- Research Snapshot v1.0 created.
-- Documentation system introduced.
-- README.md completed.
-- DEVELOPMENT_PRINCIPLES.md completed.
-- RESEARCH_RULES.md completed.
-- ROADMAP.md synchronized.
-- PROJECT_STATE.md created.
-- BACKLOG.md created.
+Tool execution PASS means the tool executed according to its current regression contract.
+It does not mean every scientific claim made historically by that tool is validated.
 
 ---
 
-## Update Rule
+## Current Regression Baseline Candidate
 
-Every completed Milestone must append a new entry to this history.
+Observed immediately before commit `f6de3df`:
 
-Existing entries are never modified.
+- Python compileall: rc=0
+- strict tools regression:
+  - PASS=79
+  - CLI_REQUIRES_ARGS=3
+  - FAIL=0
+  - PRINTED_FAILURE=0
+- core tests:
+  - PASS=15
+  - FAIL=0
+- main.py: rc=0
 
-The Change History is a permanent chronological record of the evolution of AncientScriptLab.
+These values describe the tested repository state and are not a claim that the entire scientific project is validated.
 
+---
+
+## Removed / Rejected Legacy
+
+The active baseline no longer relies on:
+
+- old Rongorongo import path
+- Indus V8 experimental subsystem
+- old latent/clustering prototypes
+- Markov generation prototype
+- obsolete Egyptian M10 structural pipeline
+- M10 final validation certificate
+- stale V8.7/V8.8 global validation claims
+
+Useful concepts from rejected legacy code are preserved in audit/migration reports where appropriate.
+
+---
+
+## Remaining Work Before Baseline
+
+1. Synchronize governing documentation.
+2. Run final syntax, tools, tests and main regression.
+3. Confirm no unexpected working-tree changes.
+4. Record clean baseline commit.
+
+Only after these steps may new scientific development resume.
+
+---
+
+## Scientific Status
+
+Repaired components have regression evidence.
+
+The complete AncientScriptLab project is **not** declared scientifically validated.
+
+Known writing systems are controls for testing the laboratory.
+
+Unknown writing systems are measured by the validated components of the laboratory.
+
+---
+
+## Change History
+
+Historical milestone records remain available in repository history and audit reports.
+
+This file represents the current operational state and supersedes obsolete milestone-status summaries.

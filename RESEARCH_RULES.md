@@ -194,7 +194,7 @@ Scientific knowledge must be preserved inside the repository rather than in exte
 
 AncientScriptLab is a scientific research platform.
 
-The objective is not to produce attractive similarity scores, but to build an explainable, reproducible and scientifically validated mathematical foundation for the objective analysis and possible decipherment of unknown writing systems.\n\n---\n## Обязательная диагностика системности
+The objective is not to produce attractive similarity scores, but to build an explainable and reproducible mathematical measurement foundation for objective analysis of known and unknown writing systems. Validation claims are permitted only for explicitly defined validation protocols and must not be generalized beyond the tested component.\n\n---\n## Обязательная диагностика системности
 
 Любой неизвестный корпус проходит обязательную процедуру оценки системности перед началом структурного анализа.
 

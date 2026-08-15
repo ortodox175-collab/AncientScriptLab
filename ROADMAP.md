@@ -246,7 +246,7 @@ Only after successful validation may the next Milestone begin.
 
 # Long-Term Vision
 
-AncientScriptLab aims to become a universal scientific platform for the objective analysis and possible decipherment of any writing system.
+AncientScriptLab aims to become a universal scientific laboratory for objective, reproducible and explainable measurement and analysis of known and unknown writing systems.
 
 The project prioritizes scientific correctness, reproducibility and explainable mathematical models over implementation speed or feature quantity.
 

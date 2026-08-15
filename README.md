@@ -1,6 +1,6 @@
 # AncientScriptLab
 
-> A scientific research platform for the objective analysis, comparison and decipherment of ancient and unknown writing systems.
+> A scientific research platform for objective, reproducible and explainable measurement and comparison of ancient and unknown writing systems.
 
 ---
 
@@ -40,7 +40,7 @@ Understanding these documents is considered a prerequisite for making architectu
 
 # Project Goal
 
-The long-term goal of AncientScriptLab is to build a reproducible and explainable computational framework capable of assisting in the decipherment of unknown writing systems.
+The long-term goal of AncientScriptLab is to build a reproducible and explainable computational laboratory for measuring and comparing known and unknown writing systems.
 
 The system does not attempt to "guess" translations.
 
@@ -66,7 +66,7 @@ The system automatically:
 - identifies recurring graphical structures;
 - performs statistical analysis;
 - provides explainable similarity results;
-- assists researchers in constructing decipherment hypotheses.
+- provides quantitative evidence that researchers may use when constructing and evaluating hypotheses.
 
 ---
 
@@ -148,9 +148,9 @@ Together these documents define both the engineering process and the scientific 
 
 # Long-Term Vision
 
-The ultimate objective is to create a universal scientific platform capable of analysing any writing system, known or unknown.
+The ultimate objective is to create a universal scientific laboratory capable of measuring and analysing any writing system, known or unknown.
 
-AncientScriptLab should become a research instrument that enables scholars to move from images of ancient symbols to mathematically supported hypotheses about their structure, relationships and possible meanings.
+AncientScriptLab should become a research instrument that enables scholars to move from observations of signs and inscriptions to reproducible quantitative evidence about their structure and relationships.
 
-The final goal is not automatic translation, but scientifically justified decipherment supported by objective computational evidence.
+AncientScriptLab does not decipher or translate. Interpretation and any semantic hypothesis remain the responsibility of the researcher.
 
