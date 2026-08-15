@@ -8,7 +8,7 @@ from statistics import mean
 
 gss_path = Path('datasets/egyptian_canonical/metrology/glyph_structural_signature_v8_2.json')
 fingerprint_path = Path('datasets/egyptian_canonical/archetypes/category_fingerprint_v8_6.json')
-output_path = Path('datasets/egyptian_canonical/validation/architecture_integration_validation_v8_8.json')
+output_path = Path('datasets/egyptian_canonical/validation/architecture_integration_diagnostic_v8_8.json')
 
 FEATURES = ['Symmetry', 'Hierarchy', 'Complexity', 'Balance']
 
@@ -170,7 +170,7 @@ with output_path.open('w', encoding='utf-8') as f:
 # Report
 # -------------------------------------------------
 
-print('Architecture Integration Validation V8.8 completed')
+print('Architecture Integration Diagnostic V8.8 completed')
 print('Output:', output_path)
 print()
 
@@ -192,8 +192,8 @@ print('Architecture Integrity Score:', round(integrity_score, 4))
 print()
 
 if overall:
-    print('STAGES 4–6 STATUS: FULLY VALIDATED')
+    print('STAGES 4–6 DIAGNOSTIC: ALL HISTORICAL CRITERIA MET')
 else:
-    print('STAGES 4–6 STATUS: REVIEW REQUIRED')
+    print('STAGES 4–6 DIAGNOSTIC: SOME HISTORICAL CRITERIA NOT MET')
 
-print('STATUS: PASS')
+print('STATUS: COMPLETED')

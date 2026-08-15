@@ -8,7 +8,7 @@ from statistics import mean
 
 gss_path = Path('datasets/egyptian_canonical/metrology/glyph_structural_signature_v8_2.json')
 fingerprint_path = Path('datasets/egyptian_canonical/archetypes/category_fingerprint_v8_6.json')
-output_path = Path('datasets/egyptian_canonical/validation/archetype_layer_validation_v8_7.json')
+output_path = Path('datasets/egyptian_canonical/validation/archetype_layer_diagnostic_v8_7.json')
 
 FEATURES = ['Symmetry', 'Hierarchy', 'Complexity', 'Balance']
 
@@ -165,11 +165,11 @@ with output_path.open('w', encoding='utf-8') as f:
 # Report
 # -------------------------------------------------
 
-print('Archetype Layer Validation V8.7 completed')
+print('Archetype Layer Diagnostic V8.7 completed')
 print('Output:', output_path)
 print()
 
-print('Validation summary')
+print('Diagnostic criteria summary')
 print('-' * 64)
 
 print('GSS ranges valid            :', validation['gss_ranges_valid'])
@@ -189,8 +189,8 @@ print('Nearest distance mean       :', round(distance_mean, 4))
 print()
 
 if validation['overall_status']:
-    print('ARCHETYPE LAYER STATUS: VALIDATED')
+    print('ARCHETYPE LAYER DIAGNOSTIC: ALL HISTORICAL CRITERIA MET')
 else:
-    print('ARCHETYPE LAYER STATUS: REVIEW REQUIRED')
+    print('ARCHETYPE LAYER DIAGNOSTIC: SOME HISTORICAL CRITERIA NOT MET')
 
-print('STATUS: PASS')
+print('STATUS: COMPLETED')
