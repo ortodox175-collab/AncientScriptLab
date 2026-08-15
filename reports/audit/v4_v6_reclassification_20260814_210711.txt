@@ -1,0 +1,60 @@
+AncientScriptLab — V4/V6 Validation Reclassification
+Generated: Fri Aug 14 21:07:11 UTC 2026
+
+=== CLASSIFICATION ===
+V4  : obsolete; superseded by V4A safe translation
+V6  : metrology — scale sensitivity
+V6B : metrology — binary scale sensitivity
+
+=== FILE CHECK ===
+V4 OLD FILE: REMOVED
+PRESENT: tools/metrology_v6_scale_sensitivity.py
+PRESENT: tools/metrology_v6b_binary_scale_sensitivity.py
+PRESENT: tools/validation_v4a_safe_translation.py
+
+=== STALE MODULE REFERENCES ===
+
+=== V4A REGRESSION ===
+M7.2B V4A Safe Translation Invariance
+=====================================
+ring                 PASS
+single_square        PASS
+square_with_hole     PASS
+three_rings          PASS
+three_squares        PASS
+two_squares          PASS
+
+V4A Safe Translation validation: 6/6 PASS
+V4A rc=0
+
+=== V6 METROLOGY ===
+M7.2B V6 Scale Sensitivity Metrology
+==================================
+ring                 FAIL
+single_square        FAIL
+square_with_hole     FAIL
+three_rings          FAIL
+three_squares        FAIL
+two_squares          FAIL
+
+V6 Scale sensitivity summary: 0/6 topology-preserving
+V6 metrology rc=0
+
+=== V6B METROLOGY ===
+M7.2B V6B Binary Scale Sensitivity Metrology
+=========================================
+ring                 FAIL
+single_square        FAIL
+square_with_hole     FAIL
+three_rings          FAIL
+three_squares        FAIL
+two_squares          FAIL
+
+V6B Binary scale sensitivity summary: 0/6 topology-preserving
+V6B metrology rc=0
+
+=== TESTS ===
+TEST SUMMARY: PASS=15 FAIL=0
+
+=== SYNTAX ===
+compileall rc=0
