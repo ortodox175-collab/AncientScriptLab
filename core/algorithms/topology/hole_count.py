@@ -5,7 +5,11 @@ Topology Algorithm
 
 Hole Count
 
-Topology Refactor v2.0
+Digital topology convention:
+    Foreground = 8-connectivity
+    Background = 4-connectivity
+
+Topology Refactor v2.1
 """
 
 from __future__ import annotations
@@ -14,21 +18,26 @@ import cv2
 import numpy as np
 
 from core.execution.algorithm import Algorithm
-from core.algorithms.topology._binary_utils import binary_image
+from core.algorithms.topology._binary_utils import (
+    binary_image,
+    BACKGROUND_CONNECTIVITY,
+)
 
 
 def execute(context) -> float:
     """
-    Number of enclosed holes in foreground objects.
+    Number of enclosed background components (holes).
+
+    Background components touching the image border are exterior
+    background and therefore are not counted as holes.
     """
 
     binary = binary_image(context)
-
     background = cv2.bitwise_not(binary)
 
     num_labels, labels = cv2.connectedComponents(
         background,
-        connectivity=8,
+        connectivity=BACKGROUND_CONNECTIVITY,
     )
 
     border_labels = set()
@@ -49,12 +58,12 @@ def execute(context) -> float:
 ALGORITHM = Algorithm(
     name="topology.hole_count",
     title="Hole Count",
-    version="2.0",
+    version="2.1",
     author="AncientScriptLab",
     features=("T-002",),
     implementation=execute,
     dependencies=("topology.connected_components",),
     complexity="O(N)",
     deterministic=True,
-    reference="Connected-component analysis of background regions",
+    reference="Background connected-component analysis using complementary 4-connectivity",
 )

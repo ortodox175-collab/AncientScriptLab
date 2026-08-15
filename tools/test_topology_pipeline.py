@@ -40,13 +40,13 @@ def main() -> None:
     print("=" * 72)
     print()
 
-    image = np.zeros((10, 10), dtype=np.uint8)
+    image = np.full((10, 10), 255, dtype=np.uint8)
 
     # First component
-    image[1:4, 1:4] = 255
+    image[1:4, 1:4] = 0
 
     # Second component
-    image[6:9, 6:9] = 255
+    image[6:9, 6:9] = 0
 
     context = FeatureContext(image)
 

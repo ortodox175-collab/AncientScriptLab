@@ -33,13 +33,13 @@ def main() -> None:
     # Smallest component area = 16 pixels
     #
 
-    image = np.zeros((30, 30), dtype=np.uint8)
+    image = np.full((30, 30), 255, dtype=np.uint8)
 
     # Small component
-    image[2:6, 2:6] = 255
+    image[2:6, 2:6] = 0
 
     # Large component
-    image[12:20, 12:20] = 255
+    image[12:20, 12:20] = 0
 
     context = FeatureContext(image)
 
@@ -58,10 +58,10 @@ def main() -> None:
     print(f"Expected smallest area : {expected:.6f}")
     print()
 
-    if abs(value - expected) < 1e-9:
-        print("Pipeline test : PASSED")
-    else:
-        print("Pipeline test : FAILED")
+    assert abs(value - expected) < 1e-9, (
+        f"Expected {expected}, got {value}"
+    )
+    print("Pipeline test : PASSED")
 
 
 if __name__ == "__main__":

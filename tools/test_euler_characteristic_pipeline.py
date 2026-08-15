@@ -18,25 +18,26 @@ from core.execution.runtime_registry import RuntimeRegistry
 
 
 def main() -> None:
-
     print("=" * 72)
     print("Euler Characteristic Pipeline Integration Test")
     print("=" * 72)
     print()
 
-    # One component with one hole
+    # Canonical image convention:
+    # background = 255
+    # foreground = 0
     #
-    # Euler characteristic = 1 − 1 = 0
+    # One component with one enclosed hole:
+    # Euler = 1 - 1 = 0
 
-    image = np.zeros((20, 20), dtype=np.uint8)
+    image = np.full((20, 20), 255, dtype=np.uint8)
 
-    image[2:18, 2:18] = 255
-    image[6:14, 6:14] = 0
+    image[2:18, 2:18] = 0
+    image[6:14, 6:14] = 255
 
     context = FeatureContext(image)
 
     registry = RuntimeRegistry()
-
     engine = ExecutionEngine(registry)
 
     value = engine.compute(
@@ -50,10 +51,11 @@ def main() -> None:
     print(f"Expected Euler characteristic : {expected:.6f}")
     print()
 
-    if abs(value - expected) < 1e-9:
-        print("Pipeline test : PASSED")
-    else:
-        print("Pipeline test : FAILED")
+    assert abs(value - expected) < 1e-9, (
+        f"Expected {expected}, got {value}"
+    )
+
+    print("Pipeline test : PASSED")
 
 
 if __name__ == "__main__":

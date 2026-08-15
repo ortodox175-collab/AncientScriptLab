@@ -5,13 +5,21 @@ Topology Binary Utilities
 
 Shared binary-image utilities for all topology algorithms.
 
-Topology Refactor v2.0
+Digital topology convention:
+    Foreground = 8-connectivity
+    Background = 4-connectivity
+
+Topology Refactor v2.1
 """
 
 from __future__ import annotations
 
 import cv2
 import numpy as np
+
+
+FOREGROUND_CONNECTIVITY = 8
+BACKGROUND_CONNECTIVITY = 4
 
 
 def binary_image(context) -> np.ndarray:
@@ -21,7 +29,6 @@ def binary_image(context) -> np.ndarray:
     Foreground (sign) = 255
     Background = 0
     """
-
     return context.binary
 
 
@@ -41,16 +48,14 @@ def connected_components_stats(context):
 
     return cv2.connectedComponentsWithStats(
         binary,
-        connectivity=8,
+        connectivity=FOREGROUND_CONNECTIVITY,
     )
 
 
 def connected_component_areas(context):
     num_labels, labels, stats, centroids = connected_components_stats(context)
 
-    areas = [
+    return [
         int(stats[label, cv2.CC_STAT_AREA])
         for label in range(1, num_labels)
     ]
-
-    return areas

@@ -32,10 +32,10 @@ def main() -> None:
     # Density = 2 / 400 = 0.005
     #
 
-    image = np.zeros((20, 20), dtype=np.uint8)
+    image = np.full((20, 20), 255, dtype=np.uint8)
 
-    image[2:4, 2:4] = 255
-    image[10:14, 10:14] = 255
+    image[2:4, 2:4] = 0
+    image[10:14, 10:14] = 0
 
     context = FeatureContext(image)
 
@@ -47,10 +47,10 @@ def main() -> None:
     print(f"Expected density : {expected:.6f}")
     print()
 
-    if abs(value - expected) < 1e-9:
-        print("Unit test : PASSED")
-    else:
-        print("Unit test : FAILED")
+    assert abs(value - expected) < 1e-9, (
+        f"Expected {expected}, got {value}"
+    )
+    print("Unit test : PASSED")
 
 
 if __name__ == "__main__":

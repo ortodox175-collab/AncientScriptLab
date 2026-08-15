@@ -16,7 +16,7 @@ from core.packs.geometry_pack import GeometryPack
 
 
 registry = RuntimeRegistry()
-GeometryPack.register_all(registry)
+# RuntimeRegistry loads canonical packs automatically
 engine = ExecutionEngine(registry)
 
 

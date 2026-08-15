@@ -1,88 +1,39 @@
-from core.corpus import Corpus
+"""
+AncientScriptLab
 
-from analysis.entropy import entropy
-from analysis.frequency import frequency, top_symbols
-from analysis.bigrams import top_bigrams
-from analysis.graph import build_graph, normalize_graph
+Current Core smoke entrypoint.
 
-from analysis.embeddings import (
-    build_cooccurrence,
-    compute_pmi,
-    build_embeddings
-)
+AncientScriptLab measures sign material.
+It does not decipher, translate, or assign meaning.
+"""
 
-from analysis.clustering import kmeans, print_clusters
-from analysis.latent import latent_structure, print_latent
+from __future__ import annotations
 
-from generation.markov import (
-    choose_start,
-    generate_v3,
-    build_context_model,
-    generate_v31,
-    structure_score
-)
+import numpy as np
+
+from core.context.feature_context import FeatureContext
+from core.algorithms.topology.connected_components import execute as connected_components
+from core.algorithms.topology.hole_count import execute as hole_count
+from core.algorithms.topology.euler_characteristic import execute as euler_characteristic
+from core.algorithms.topology.total_foreground_area import execute as foreground_area
+from core.algorithms.topology.foreground_density import execute as foreground_density
+from core.algorithms.geometry.aspect_ratio import execute as aspect_ratio
 
 
-def main():
-    corpus = Corpus()
+def main() -> None:
+    image = np.full((7, 7), 255, dtype=np.uint8)
+    image[2:5, 2:5] = 0
 
-    print("AncientScriptLab v5 → v7 FULL SYSTEM\n")
+    context = FeatureContext(image)
 
-    corpus.load_rongorongo("data/raw/rongorongo.txt")
-
-    seq = corpus.all_sequences("Rongorongo")
-    freq = frequency(seq)
-
-    print("Records:", len(corpus.records))
-    print("Total symbols:", len(seq))
-    print("Entropy:", entropy(seq))
-
-    # =========================
-    # GRAPH (v2-v4)
-    # =========================
-    graph = build_graph(seq)
-    prob_graph = normalize_graph(graph)
-
-    start = choose_start(seq, freq)
-    gen = generate_v3(prob_graph, start)
-
-    print("\nGenerated (v3):")
-    print(gen)
-
-    # =========================
-    # v3.1
-    # =========================
-    context_model = build_context_model(seq, order=2)
-    gen2 = generate_v31(context_model, gen)
-
-    print("\nGenerated (v3.1):")
-    print(gen2)
-
-    # =========================
-    # v4 score
-    # =========================
-    print("\nStructure score:", round(structure_score(gen2), 3))
-
-    # =========================
-    # v5 embeddings
-    # =========================
-    co = build_cooccurrence(seq)
-    pmi = compute_pmi(co)
-    vectors = build_embeddings(pmi)
-
-    print("\nEmbeddings size:", len(vectors))
-
-    # =========================
-    # v6 clustering
-    # =========================
-    clusters = kmeans(vectors, k=3)
-    print_clusters(clusters)
-
-    # =========================
-    # v7 latent structure
-    # =========================
-    latent = latent_structure(seq)
-    print_latent(latent)
+    print("AncientScriptLab — Core Measurement Baseline")
+    print("===========================================")
+    print("Connected components :", connected_components(context))
+    print("Holes                :", hole_count(context))
+    print("Euler characteristic :", euler_characteristic(context))
+    print("Foreground area      :", foreground_area(context))
+    print("Foreground density   :", foreground_density(context))
+    print("Aspect ratio         :", aspect_ratio(context))
 
 
 if __name__ == "__main__":

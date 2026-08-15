@@ -24,7 +24,7 @@ REFERENCE = Path("tests/data/reference")
 def main():
 
     registry = RuntimeRegistry()
-    GeometryPack.register_all(registry)
+    # RuntimeRegistry loads canonical packs automatically
 
     engine = ExecutionEngine(registry)
 

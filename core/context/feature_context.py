@@ -3,7 +3,7 @@ AncientScriptLab
 
 Feature Context
 
-Central cache for all expensive computations.
+Central immutable computation context.
 """
 
 from __future__ import annotations
@@ -22,7 +22,14 @@ class FeatureContext:
     """
     Central computation context.
 
-    Every expensive operation is computed once and cached.
+    Contract:
+    - image must be a 2D grayscale numpy array
+    - dtype must be uint8
+    - image values therefore lie in [0, 255]
+    - input is copied on construction and made read-only
+    - foreground mask convention:
+        foreground = 255
+        background = 0
     """
 
     image: np.ndarray
@@ -39,23 +46,33 @@ class FeatureContext:
         repr=False,
     )
 
+    def __post_init__(self) -> None:
+        if not isinstance(self.image, np.ndarray):
+            raise TypeError("image must be a numpy.ndarray")
+
+        if self.image.ndim != 2:
+            raise ValueError("FeatureContext requires a 2D grayscale image.")
+
+        if self.image.dtype != np.uint8:
+            raise TypeError(
+                f"FeatureContext requires dtype uint8, got {self.image.dtype}."
+            )
+
+        image = np.array(self.image, dtype=np.uint8, copy=True)
+        image.flags.writeable = False
+        self.image = image
+
     @property
     def binary(self) -> np.ndarray:
         """
-        Binary foreground mask.
+        Canonical binary foreground mask.
 
-        Convention:
-        foreground (sign) = 255
-        background = 0
+        Threshold contract:
+        source <= 127 -> foreground 255
+        source > 127  -> background 0
         """
 
         if self._binary is None:
-
-            if self.image.ndim != 2:
-                raise ValueError(
-                    "Grayscale image expected."
-                )
-
             _, binary = cv2.threshold(
                 self.image,
                 127,
@@ -63,6 +80,7 @@ class FeatureContext:
                 cv2.THRESH_BINARY_INV,
             )
 
+            binary.flags.writeable = False
             self._binary = binary
 
         return self._binary
@@ -70,11 +88,14 @@ class FeatureContext:
     @property
     def bounding_box(self) -> BoundingBox:
         """
-        Lazily compute Bounding Box.
+        Lazily compute foreground bounding box.
+
+        Coordinates follow OpenCV boundingRect:
+        x, y = top-left pixel
+        width, height = inclusive pixel extent expressed as dimensions
         """
 
         if self._bounding_box is None:
-
             points = cv2.findNonZero(self.binary)
 
             if points is None:

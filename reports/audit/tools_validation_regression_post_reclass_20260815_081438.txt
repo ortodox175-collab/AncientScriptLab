@@ -1,0 +1,298 @@
+AncientScriptLab — Tools Regression After V4/V6 Reclassification
+Generated: Sat Aug 15 08:14:38 UTC 2026
+
+=== PYTHON SYNTAX ===
+compileall rc=0
+
+=== TOOLS EXECUTION ===
+
+FILE: tools/__init__.py
+RESULT: PASS rc=0
+
+FILE: tools/analyze_corpus_frequency.py
+RESULT: FAIL rc=1
+Usage: python tools/analyze_corpus_frequency.py <corpus_sequence.json> <corpus_name>
+
+FILE: tools/analyze_corpus_structure.py
+RESULT: FAIL rc=1
+Usage: python tools/analyze_corpus_structure.py <corpus_sequence.json> <corpus_name>
+
+FILE: tools/archetype_layer_validation_v8_7.py
+RESULT: PASS rc=0
+
+FILE: tools/architecture_integration_validation_v8_8.py
+RESULT: PASS rc=0
+
+FILE: tools/build_corpus_frequency_profile.py
+RESULT: FAIL rc=1
+Usage: python tools/build_corpus_frequency_profile.py <csv_path> <corpus_name>
+
+FILE: tools/build_topology_reference_corpus_v2.py
+RESULT: PASS rc=0
+
+FILE: tools/build_validation_synthetic_corpus.py
+RESULT: PASS rc=0
+
+FILE: tools/category_fingerprint_analysis_v8_6.py
+RESULT: PASS rc=0
+
+FILE: tools/certify_reference_corpus_v2.py
+RESULT: PASS rc=0
+
+FILE: tools/corpus_validation_m7.py
+RESULT: PASS rc=0
+
+FILE: tools/generate_m10_final_certificate.py
+RESULT: PASS rc=0
+
+FILE: tools/generate_reference_dataset.py
+RESULT: PASS rc=0
+
+FILE: tools/glyph_structural_signature_v8_1.py
+RESULT: PASS rc=0
+
+FILE: tools/glyph_structural_signature_v8_2.py
+RESULT: PASS rc=0
+
+FILE: tools/gss_archetype_validation_v8_4.py
+RESULT: PASS rc=0
+
+FILE: tools/gss_correlation_analysis_v8_3.py
+RESULT: PASS rc=0
+
+FILE: tools/gss_feature_separation_v8_5.py
+RESULT: PASS rc=0
+
+FILE: tools/hierarchical_architecture_model_v8_11.py
+RESULT: PASS rc=0
+
+FILE: tools/hierarchical_architecture_model_v8_12.py
+RESULT: PASS rc=0
+
+FILE: tools/import_indus_corpus.py
+RESULT: PASS rc=0
+
+FILE: tools/master_validation_report_v8_9R.py
+RESULT: PASS rc=0
+
+FILE: tools/master_validation_report_v8_9S.py
+RESULT: PASS rc=0
+
+FILE: tools/master_validation_v8_9.py
+RESULT: PASS rc=0
+
+FILE: tools/metrology_v6_scale_sensitivity.py
+RESULT: PRINTED_FAILURE rc=0
+M7.2B V6 Scale Sensitivity Metrology
+==================================
+ring                 FAIL
+single_square        FAIL
+square_with_hole     FAIL
+three_rings          FAIL
+three_squares        FAIL
+two_squares          FAIL
+
+V6 Scale sensitivity summary: 0/6 topology-preserving
+
+FILE: tools/metrology_v6b_binary_scale_sensitivity.py
+RESULT: PRINTED_FAILURE rc=0
+M7.2B V6B Binary Scale Sensitivity Metrology
+=========================================
+ring                 FAIL
+single_square        FAIL
+square_with_hole     FAIL
+three_rings          FAIL
+three_squares        FAIL
+two_squares          FAIL
+
+V6B Binary scale sensitivity summary: 0/6 topology-preserving
+
+FILE: tools/normalization_validation_protocol.py
+RESULT: PASS rc=0
+
+FILE: tools/rotational_symmetry_analyzer_v6r.py
+RESULT: PASS rc=0
+
+FILE: tools/run_normalization_validation.py
+RESULT: PASS rc=0
+
+FILE: tools/scientific_validation_m7.py
+RESULT: PASS rc=0
+
+FILE: tools/statistical_architecture_baseline_v8_10A.py
+RESULT: PASS rc=0
+
+FILE: tools/statistical_architecture_baseline_v8_10B.py
+RESULT: PASS rc=0
+
+FILE: tools/test_all_normalization_methods.py
+RESULT: PASS rc=0
+
+FILE: tools/test_center_normalization.py
+RESULT: PASS rc=0
+
+FILE: tools/test_component_area_ratio.py
+RESULT: PASS rc=0
+
+FILE: tools/test_component_area_ratio_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_component_density.py
+RESULT: PASS rc=0
+
+FILE: tools/test_component_density_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_distance_matrix.py
+RESULT: PASS rc=0
+
+FILE: tools/test_euler_characteristic.py
+RESULT: PASS rc=0
+
+FILE: tools/test_euler_characteristic_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_experiment_framework.py
+RESULT: PASS rc=0
+
+FILE: tools/test_experiment_registry.py
+RESULT: PASS rc=0
+
+FILE: tools/test_feature_contribution.py
+RESULT: PASS rc=0
+
+FILE: tools/test_feature_statistics.py
+RESULT: PASS rc=0
+
+FILE: tools/test_foreground_density.py
+RESULT: PASS rc=0
+
+FILE: tools/test_foreground_density_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_hole_count.py
+RESULT: PASS rc=0
+
+FILE: tools/test_hole_count_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_largest_component_area.py
+RESULT: PASS rc=0
+
+FILE: tools/test_largest_component_area_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_mean_component_area.py
+RESULT: PASS rc=0
+
+FILE: tools/test_mean_component_area_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_min_max_normalization.py
+RESULT: PASS rc=0
+
+FILE: tools/test_normalization_experiment.py
+RESULT: PASS rc=0
+
+FILE: tools/test_normalization_registry.py
+RESULT: PASS rc=0
+
+FILE: tools/test_normalization_validation.py
+RESULT: PASS rc=0
+
+FILE: tools/test_similarity.py
+RESULT: PASS rc=0
+
+FILE: tools/test_smallest_component_area.py
+RESULT: PASS rc=0
+
+FILE: tools/test_smallest_component_area_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_topology_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_total_foreground_area.py
+RESULT: PASS rc=0
+
+FILE: tools/test_total_foreground_area_pipeline.py
+RESULT: PASS rc=0
+
+FILE: tools/test_validation_protocol.py
+RESULT: PASS rc=0
+
+FILE: tools/test_validation_report.py
+RESULT: PASS rc=0
+
+FILE: tools/update_validation_metadata.py
+RESULT: PASS rc=0
+
+FILE: tools/validate_corpus_sequence.py
+RESULT: PASS rc=0
+
+FILE: tools/validate_geometry_pack.py
+RESULT: PASS rc=0
+
+FILE: tools/validate_normalization_methods.py
+RESULT: PASS rc=0
+
+FILE: tools/validate_registry.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_report.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_suite_m72b.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v2_area.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v3_density.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v4a_safe_translation.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v5_rotation.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v5b_reflection.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v6a_diagnostic.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v6a_resolution.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v6c_extended.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v6c_resolution_profile.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v7a_noise_profile.py
+RESULT: PASS rc=0
+
+FILE: tools/validation_v7b_monte_carlo.py
+RESULT: PASS rc=0
+
+=== SUMMARY ===
+PASS=78
+FAIL=3
+PRINTED_FAILURE_RC0=2
+
+=== TEST SUITE ===
+TEST SUMMARY: PASS=15 FAIL=0
+
+=== MAIN ===
+AncientScriptLab — Core Measurement Baseline
+===========================================
+Connected components : 1.0
+Holes                : 0.0
+Euler characteristic : 1.0
+Foreground area      : 9.0
+Foreground density   : 0.1836734693877551
+Aspect ratio         : 1.0
+main.py rc=0

@@ -1,59 +1,33 @@
 """
 AncientScriptLab
 
-Test:
-Bounding Box Engine
+Bounding Box regression test.
+
+Uses canonical FeatureContext foreground convention.
 """
 
 import numpy as np
 
-from core.features.geometry.bounding_box import BoundingBoxEngine
+from core.context.feature_context import FeatureContext
+from core.features.geometry.bounding_box import BoundingBoxFeatures
 
 
-# ----------------------------------------------------
-# Artificial Binary Image
-# ----------------------------------------------------
+image = np.full((100, 100), 255, dtype=np.uint8)
 
-image = np.zeros((100, 100), dtype=np.uint8)
-
-# Rectangle:
+# Foreground rectangle:
 # x = 20..59
 # y = 30..69
+image[30:70, 20:60] = 0
 
-image[30:70, 20:60] = 255
-
-bbox = BoundingBoxEngine.compute(image)
-
-print()
-
-print("Bounding Box")
-print("----------------")
-print("x      :", bbox.x)
-print("y      :", bbox.y)
-print("width  :", bbox.width)
-print("height :", bbox.height)
-
-print()
-
-print("Feature G-001 (Width)")
-print(
-    BoundingBoxEngine.feature_g001(image)
-)
-
-print()
-
-print("Feature G-002 (Height)")
-print(
-    BoundingBoxEngine.feature_g002(image)
-)
+ctx = FeatureContext(image)
+bbox = ctx.bounding_box
 
 assert bbox.x == 20
 assert bbox.y == 30
 assert bbox.width == 40
 assert bbox.height == 40
 
-assert BoundingBoxEngine.feature_g001(image) == 40.0
-assert BoundingBoxEngine.feature_g002(image) == 40.0
+assert BoundingBoxFeatures.feature_g001(ctx) == 40.0
+assert BoundingBoxFeatures.feature_g002(ctx) == 40.0
 
-print()
-print("BOUNDING BOX ENGINE READY")
+print("BOUNDING BOX CONTRACT: PASS")

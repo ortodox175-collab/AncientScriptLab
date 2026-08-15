@@ -2,30 +2,27 @@
 AncientScriptLab
 
 Execution Engine Integration Test
+
+Tests canonical pack-based RuntimeRegistry.
 """
 
 import numpy as np
 
 from core.context.feature_context import FeatureContext
-
 from core.execution.runtime_registry import RuntimeRegistry
 from core.execution.engine import ExecutionEngine
 
-from core.algorithms.geometry.bounding_box_width import ALGORITHM
-
 
 def main():
-
-    image = np.zeros((100, 100), dtype=np.uint8)
-
-    image[30:70, 20:60] = 255
+    # Canonical image convention:
+    # background = white
+    # foreground sign = black
+    image = np.full((100, 100), 255, dtype=np.uint8)
+    image[30:70, 20:60] = 0
 
     context = FeatureContext(image)
 
     registry = RuntimeRegistry()
-
-    registry.register(ALGORITHM)
-
     engine = ExecutionEngine(registry)
 
     result = engine.compute(
@@ -33,24 +30,13 @@ def main():
         context,
     )
 
-    print()
-
-    print("===================================")
-    print("Execution Engine Test")
-    print("===================================")
-
-    print()
-
-    print("Algorithm :", ALGORITHM.name)
-    print("Result    :", result)
-
     assert result == 40.0
 
-    print()
+    assert "geometry" in registry.list_packs()
+    assert "bounding_box.width" in registry.list_features("geometry")
 
-    print("TEST PASSED")
+    print("EXECUTION ENGINE PACK REGISTRY: PASS")
 
 
 if __name__ == "__main__":
-
     main()
