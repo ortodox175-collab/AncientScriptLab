@@ -1,0 +1,1381 @@
+AncientScriptLab — Final Pre-Baseline Sweep
+Generated: Sat Aug 15 15:11:06 UTC 2026
+
+=== HEAD ===
+7e8f170 Replace stale validation artifacts with diagnostics
+
+=== WORKTREE STATUS ===
+ D analysis/clustering.py
+ D analysis/indus_v8.py
+ D analysis/latent.py
+ D analysis/load_indus.py
+ M core/algorithms/geometry/aspect_ratio.py
+ M core/algorithms/topology/_binary_utils.py
+ M core/algorithms/topology/foreground_density.py
+ M core/algorithms/topology/hole_count.py
+ M core/context/feature_context.py
+ M core/corpus/corpus_sequence.py
+ D core/import_rongorongo.py
+ M core/packs/geometry_pack.py
+ M core/registry/sign_registry.py
+ D generation/markov.py
+ M main.py
+ M reports/corpus_validation/indus_report.json
+ M reports/metrology/noise/v7b_monte_carlo/noise_probability_profiles.json
+ M tests/test_bounding_box.py
+ M tests/test_execution_engine.py
+ M tests/test_feature_context.py
+ D tools/audit_egyptian_dataset.py
+ D tools/build_egyptian_reference_corpus.py
+ D tools/build_egyptian_sign_registry.py
+ D tools/build_egyptian_structural_profile.py
+ D tools/cluster_graph_signatures.py
+ D tools/integrate_franken_registry.py
+ M tools/test_center_normalization.py
+ M tools/test_component_area_ratio.py
+ M tools/test_component_area_ratio_pipeline.py
+ M tools/test_component_density.py
+ M tools/test_component_density_pipeline.py
+ M tools/test_distance_matrix.py
+ M tools/test_euler_characteristic.py
+ M tools/test_euler_characteristic_pipeline.py
+ M tools/test_feature_contribution.py
+ M tools/test_feature_statistics.py
+ M tools/test_foreground_density.py
+ M tools/test_foreground_density_pipeline.py
+ M tools/test_largest_component_area.py
+ M tools/test_largest_component_area_pipeline.py
+ M tools/test_mean_component_area.py
+ M tools/test_mean_component_area_pipeline.py
+ M tools/test_similarity.py
+ M tools/test_smallest_component_area.py
+ M tools/test_smallest_component_area_pipeline.py
+ M tools/test_topology_pipeline.py
+ M tools/test_total_foreground_area.py
+ M tools/test_total_foreground_area_pipeline.py
+ M tools/validate_geometry_pack.py
+ D tools/verify_egyptian_export.py
+?? core/observation_registry.py
+?? core/sequence/
+?? reports/audit/egyptian_registry_builders_cleanup_20260813_192749.txt
+?? reports/audit/final_prebaseline_sweep_20260815_151106.txt
+?? reports/audit/tools_validation_regression_post_reclass_20260815_081438.txt
+?? tests/test_aspect_ratio_architecture.py
+?? tests/test_feature_context_contract.py
+?? tests/test_foreground_density_contract.py
+?? tests/test_observation_identity_layers.py
+?? tests/test_sequence_boundaries.py
+?? tests/test_sign_registry_duplicates.py
+?? tests/test_topology_connectivity.py
+?? tests/test_topology_ground_truth.py
+
+=== ACTIVE LEGACY / REMOVED MODULE REFERENCES ===
+datasets/egyptian_legacy/registry/sign_registry.json:7:      "image_path": "datasets/egyptian/images/hiero_0000.png",
+datasets/egyptian_legacy/registry/sign_registry.json:16:      "image_path": "datasets/egyptian/images/hiero_0001.png",
+datasets/egyptian_legacy/registry/sign_registry.json:25:      "image_path": "datasets/egyptian/images/hiero_0002.png",
+datasets/egyptian_legacy/registry/sign_registry.json:34:      "image_path": "datasets/egyptian/images/hiero_0003.png",
+datasets/egyptian_legacy/registry/sign_registry.json:43:      "image_path": "datasets/egyptian/images/hiero_0004.png",
+datasets/egyptian_legacy/registry/sign_registry.json:52:      "image_path": "datasets/egyptian/images/hiero_0005.png",
+datasets/egyptian_legacy/registry/sign_registry.json:61:      "image_path": "datasets/egyptian/images/hiero_0006.png",
+datasets/egyptian_legacy/registry/sign_registry.json:70:      "image_path": "datasets/egyptian/images/hiero_0007.png",
+datasets/egyptian_legacy/registry/sign_registry.json:79:      "image_path": "datasets/egyptian/images/hiero_0008.png",
+datasets/egyptian_legacy/registry/sign_registry.json:88:      "image_path": "datasets/egyptian/images/hiero_0009.png",
+datasets/egyptian_legacy/registry/sign_registry.json:97:      "image_path": "datasets/egyptian/images/hiero_0010.png",
+datasets/egyptian_legacy/registry/sign_registry.json:106:      "image_path": "datasets/egyptian/images/hiero_0011.png",
+datasets/egyptian_legacy/registry/sign_registry.json:115:      "image_path": "datasets/egyptian/images/hiero_0012.png",
+datasets/egyptian_legacy/registry/sign_registry.json:124:      "image_path": "datasets/egyptian/images/hiero_0013.png",
+datasets/egyptian_legacy/registry/sign_registry.json:133:      "image_path": "datasets/egyptian/images/hiero_0014.png",
+datasets/egyptian_legacy/registry/sign_registry.json:142:      "image_path": "datasets/egyptian/images/hiero_0015.png",
+datasets/egyptian_legacy/registry/sign_registry.json:151:      "image_path": "datasets/egyptian/images/hiero_0016.png",
+datasets/egyptian_legacy/registry/sign_registry.json:160:      "image_path": "datasets/egyptian/images/hiero_0017.png",
+datasets/egyptian_legacy/registry/sign_registry.json:169:      "image_path": "datasets/egyptian/images/hiero_0018.png",
+datasets/egyptian_legacy/registry/sign_registry.json:178:      "image_path": "datasets/egyptian/images/hiero_0019.png",
+datasets/egyptian_legacy/registry/sign_registry.json:187:      "image_path": "datasets/egyptian/images/hiero_0020.png",
+datasets/egyptian_legacy/registry/sign_registry.json:196:      "image_path": "datasets/egyptian/images/hiero_0021.png",
+datasets/egyptian_legacy/registry/sign_registry.json:205:      "image_path": "datasets/egyptian/images/hiero_0022.png",
+datasets/egyptian_legacy/registry/sign_registry.json:214:      "image_path": "datasets/egyptian/images/hiero_0023.png",
+datasets/egyptian_legacy/registry/sign_registry.json:223:      "image_path": "datasets/egyptian/images/hiero_0024.png",
+datasets/egyptian_legacy/registry/sign_registry.json:232:      "image_path": "datasets/egyptian/images/hiero_0025.png",
+datasets/egyptian_legacy/registry/sign_registry.json:241:      "image_path": "datasets/egyptian/images/hiero_0026.png",
+datasets/egyptian_legacy/registry/sign_registry.json:250:      "image_path": "datasets/egyptian/images/hiero_0027.png",
+datasets/egyptian_legacy/registry/sign_registry.json:259:      "image_path": "datasets/egyptian/images/hiero_0028.png",
+datasets/egyptian_legacy/registry/sign_registry.json:268:      "image_path": "datasets/egyptian/images/hiero_0029.png",
+datasets/egyptian_legacy/registry/sign_registry.json:277:      "image_path": "datasets/egyptian/images/hiero_0030.png",
+datasets/egyptian_legacy/registry/sign_registry.json:286:      "image_path": "datasets/egyptian/images/hiero_0031.png",
+datasets/egyptian_legacy/registry/sign_registry.json:295:      "image_path": "datasets/egyptian/images/hiero_0032.png",
+datasets/egyptian_legacy/registry/sign_registry.json:304:      "image_path": "datasets/egyptian/images/hiero_0033.png",
+datasets/egyptian_legacy/registry/sign_registry.json:313:      "image_path": "datasets/egyptian/images/hiero_0034.png",
+datasets/egyptian_legacy/registry/sign_registry.json:322:      "image_path": "datasets/egyptian/images/hiero_0035.png",
+datasets/egyptian_legacy/registry/sign_registry.json:331:      "image_path": "datasets/egyptian/images/hiero_0036.png",
+datasets/egyptian_legacy/registry/sign_registry.json:340:      "image_path": "datasets/egyptian/images/hiero_0037.png",
+datasets/egyptian_legacy/registry/sign_registry.json:349:      "image_path": "datasets/egyptian/images/hiero_0038.png",
+datasets/egyptian_legacy/registry/sign_registry.json:358:      "image_path": "datasets/egyptian/images/hiero_0039.png",
+datasets/egyptian_legacy/registry/sign_registry.json:367:      "image_path": "datasets/egyptian/images/hiero_0040.png",
+datasets/egyptian_legacy/registry/sign_registry.json:376:      "image_path": "datasets/egyptian/images/hiero_0041.png",
+datasets/egyptian_legacy/registry/sign_registry.json:385:      "image_path": "datasets/egyptian/images/hiero_0042.png",
+datasets/egyptian_legacy/registry/sign_registry.json:394:      "image_path": "datasets/egyptian/images/hiero_0043.png",
+datasets/egyptian_legacy/registry/sign_registry.json:403:      "image_path": "datasets/egyptian/images/hiero_0044.png",
+datasets/egyptian_legacy/registry/sign_registry.json:412:      "image_path": "datasets/egyptian/images/hiero_0045.png",
+datasets/egyptian_legacy/registry/sign_registry.json:421:      "image_path": "datasets/egyptian/images/hiero_0046.png",
+datasets/egyptian_legacy/registry/sign_registry.json:430:      "image_path": "datasets/egyptian/images/hiero_0047.png",
+datasets/egyptian_legacy/registry/sign_registry.json:439:      "image_path": "datasets/egyptian/images/hiero_0048.png",
+datasets/egyptian_legacy/registry/sign_registry.json:448:      "image_path": "datasets/egyptian/images/hiero_0049.png",
+datasets/egyptian_legacy/registry/sign_registry.json:457:      "image_path": "datasets/egyptian/images/hiero_0050.png",
+datasets/egyptian_legacy/registry/sign_registry.json:466:      "image_path": "datasets/egyptian/images/hiero_0051.png",
+datasets/egyptian_legacy/registry/sign_registry.json:475:      "image_path": "datasets/egyptian/images/hiero_0052.png",
+datasets/egyptian_legacy/registry/sign_registry.json:484:      "image_path": "datasets/egyptian/images/hiero_0053.png",
+datasets/egyptian_legacy/registry/sign_registry.json:493:      "image_path": "datasets/egyptian/images/hiero_0054.png",
+datasets/egyptian_legacy/registry/sign_registry.json:502:      "image_path": "datasets/egyptian/images/hiero_0055.png",
+datasets/egyptian_legacy/registry/sign_registry.json:511:      "image_path": "datasets/egyptian/images/hiero_0056.png",
+datasets/egyptian_legacy/registry/sign_registry.json:520:      "image_path": "datasets/egyptian/images/hiero_0057.png",
+datasets/egyptian_legacy/registry/sign_registry.json:529:      "image_path": "datasets/egyptian/images/hiero_0058.png",
+datasets/egyptian_legacy/registry/sign_registry.json:538:      "image_path": "datasets/egyptian/images/hiero_0059.png",
+datasets/egyptian_legacy/registry/sign_registry.json:547:      "image_path": "datasets/egyptian/images/hiero_0060.png",
+datasets/egyptian_legacy/registry/sign_registry.json:556:      "image_path": "datasets/egyptian/images/hiero_0061.png",
+datasets/egyptian_legacy/registry/sign_registry.json:565:      "image_path": "datasets/egyptian/images/hiero_0062.png",
+datasets/egyptian_legacy/registry/sign_registry.json:574:      "image_path": "datasets/egyptian/images/hiero_0063.png",
+datasets/egyptian_legacy/registry/sign_registry.json:583:      "image_path": "datasets/egyptian/images/hiero_0064.png",
+datasets/egyptian_legacy/registry/sign_registry.json:592:      "image_path": "datasets/egyptian/images/hiero_0065.png",
+datasets/egyptian_legacy/registry/sign_registry.json:601:      "image_path": "datasets/egyptian/images/hiero_0066.png",
+datasets/egyptian_legacy/registry/sign_registry.json:610:      "image_path": "datasets/egyptian/images/hiero_0067.png",
+datasets/egyptian_legacy/registry/sign_registry.json:619:      "image_path": "datasets/egyptian/images/hiero_0068.png",
+datasets/egyptian_legacy/registry/sign_registry.json:628:      "image_path": "datasets/egyptian/images/hiero_0069.png",
+datasets/egyptian_legacy/registry/sign_registry.json:637:      "image_path": "datasets/egyptian/images/hiero_0070.png",
+datasets/egyptian_legacy/registry/sign_registry.json:646:      "image_path": "datasets/egyptian/images/hiero_0071.png",
+datasets/egyptian_legacy/registry/sign_registry.json:655:      "image_path": "datasets/egyptian/images/hiero_0072.png",
+datasets/egyptian_legacy/registry/sign_registry.json:664:      "image_path": "datasets/egyptian/images/hiero_0073.png",
+datasets/egyptian_legacy/registry/sign_registry.json:673:      "image_path": "datasets/egyptian/images/hiero_0074.png",
+datasets/egyptian_legacy/registry/sign_registry.json:682:      "image_path": "datasets/egyptian/images/hiero_0075.png",
+datasets/egyptian_legacy/registry/sign_registry.json:691:      "image_path": "datasets/egyptian/images/hiero_0076.png",
+datasets/egyptian_legacy/registry/sign_registry.json:700:      "image_path": "datasets/egyptian/images/hiero_0077.png",
+datasets/egyptian_legacy/registry/sign_registry.json:709:      "image_path": "datasets/egyptian/images/hiero_0078.png",
+datasets/egyptian_legacy/registry/sign_registry.json:718:      "image_path": "datasets/egyptian/images/hiero_0079.png",
+datasets/egyptian_legacy/registry/sign_registry.json:727:      "image_path": "datasets/egyptian/images/hiero_0080.png",
+datasets/egyptian_legacy/registry/sign_registry.json:736:      "image_path": "datasets/egyptian/images/hiero_0081.png",
+datasets/egyptian_legacy/registry/sign_registry.json:745:      "image_path": "datasets/egyptian/images/hiero_0082.png",
+datasets/egyptian_legacy/registry/sign_registry.json:754:      "image_path": "datasets/egyptian/images/hiero_0083.png",
+datasets/egyptian_legacy/registry/sign_registry.json:763:      "image_path": "datasets/egyptian/images/hiero_0084.png",
+datasets/egyptian_legacy/registry/sign_registry.json:772:      "image_path": "datasets/egyptian/images/hiero_0085.png",
+datasets/egyptian_legacy/registry/sign_registry.json:781:      "image_path": "datasets/egyptian/images/hiero_0086.png",
+datasets/egyptian_legacy/registry/sign_registry.json:790:      "image_path": "datasets/egyptian/images/hiero_0087.png",
+datasets/egyptian_legacy/registry/sign_registry.json:799:      "image_path": "datasets/egyptian/images/hiero_0088.png",
+datasets/egyptian_legacy/registry/sign_registry.json:808:      "image_path": "datasets/egyptian/images/hiero_0089.png",
+datasets/egyptian_legacy/registry/sign_registry.json:817:      "image_path": "datasets/egyptian/images/hiero_0090.png",
+datasets/egyptian_legacy/registry/sign_registry.json:826:      "image_path": "datasets/egyptian/images/hiero_0091.png",
+datasets/egyptian_legacy/registry/sign_registry.json:835:      "image_path": "datasets/egyptian/images/hiero_0092.png",
+datasets/egyptian_legacy/registry/sign_registry.json:844:      "image_path": "datasets/egyptian/images/hiero_0093.png",
+datasets/egyptian_legacy/registry/sign_registry.json:853:      "image_path": "datasets/egyptian/images/hiero_0094.png",
+datasets/egyptian_legacy/registry/sign_registry.json:862:      "image_path": "datasets/egyptian/images/hiero_0095.png",
+datasets/egyptian_legacy/registry/sign_registry.json:871:      "image_path": "datasets/egyptian/images/hiero_0096.png",
+datasets/egyptian_legacy/registry/sign_registry.json:880:      "image_path": "datasets/egyptian/images/hiero_0097.png",
+datasets/egyptian_legacy/registry/sign_registry.json:889:      "image_path": "datasets/egyptian/images/hiero_0098.png",
+datasets/egyptian_legacy/registry/sign_registry.json:898:      "image_path": "datasets/egyptian/images/hiero_0099.png",
+datasets/egyptian_legacy/registry/sign_registry.json:907:      "image_path": "datasets/egyptian/images/hiero_0100.png",
+datasets/egyptian_legacy/registry/sign_registry.json:916:      "image_path": "datasets/egyptian/images/hiero_0101.png",
+datasets/egyptian_legacy/registry/sign_registry.json:925:      "image_path": "datasets/egyptian/images/hiero_0102.png",
+datasets/egyptian_legacy/registry/sign_registry.json:934:      "image_path": "datasets/egyptian/images/hiero_0103.png",
+datasets/egyptian_legacy/registry/sign_registry.json:943:      "image_path": "datasets/egyptian/images/hiero_0104.png",
+datasets/egyptian_legacy/registry/sign_registry.json:952:      "image_path": "datasets/egyptian/images/hiero_0105.png",
+datasets/egyptian_legacy/registry/sign_registry.json:961:      "image_path": "datasets/egyptian/images/hiero_0106.png",
+datasets/egyptian_legacy/registry/sign_registry.json:970:      "image_path": "datasets/egyptian/images/hiero_0107.png",
+datasets/egyptian_legacy/registry/sign_registry.json:979:      "image_path": "datasets/egyptian/images/hiero_0108.png",
+datasets/egyptian_legacy/registry/sign_registry.json:988:      "image_path": "datasets/egyptian/images/hiero_0109.png",
+datasets/egyptian_legacy/registry/sign_registry.json:997:      "image_path": "datasets/egyptian/images/hiero_0110.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1006:      "image_path": "datasets/egyptian/images/hiero_0111.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1015:      "image_path": "datasets/egyptian/images/hiero_0112.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1024:      "image_path": "datasets/egyptian/images/hiero_0113.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1033:      "image_path": "datasets/egyptian/images/hiero_0114.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1042:      "image_path": "datasets/egyptian/images/hiero_0115.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1051:      "image_path": "datasets/egyptian/images/hiero_0116.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1060:      "image_path": "datasets/egyptian/images/hiero_0117.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1069:      "image_path": "datasets/egyptian/images/hiero_0118.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1078:      "image_path": "datasets/egyptian/images/hiero_0119.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1087:      "image_path": "datasets/egyptian/images/hiero_0120.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1096:      "image_path": "datasets/egyptian/images/hiero_0121.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1105:      "image_path": "datasets/egyptian/images/hiero_0122.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1114:      "image_path": "datasets/egyptian/images/hiero_0123.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1123:      "image_path": "datasets/egyptian/images/hiero_0124.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1132:      "image_path": "datasets/egyptian/images/hiero_0125.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1141:      "image_path": "datasets/egyptian/images/hiero_0126.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1150:      "image_path": "datasets/egyptian/images/hiero_0127.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1159:      "image_path": "datasets/egyptian/images/hiero_0128.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1168:      "image_path": "datasets/egyptian/images/hiero_0129.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1177:      "image_path": "datasets/egyptian/images/hiero_0130.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1186:      "image_path": "datasets/egyptian/images/hiero_0131.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1195:      "image_path": "datasets/egyptian/images/hiero_0132.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1204:      "image_path": "datasets/egyptian/images/hiero_0133.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1213:      "image_path": "datasets/egyptian/images/hiero_0134.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1222:      "image_path": "datasets/egyptian/images/hiero_0135.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1231:      "image_path": "datasets/egyptian/images/hiero_0136.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1240:      "image_path": "datasets/egyptian/images/hiero_0137.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1249:      "image_path": "datasets/egyptian/images/hiero_0138.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1258:      "image_path": "datasets/egyptian/images/hiero_0139.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1267:      "image_path": "datasets/egyptian/images/hiero_0140.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1276:      "image_path": "datasets/egyptian/images/hiero_0141.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1285:      "image_path": "datasets/egyptian/images/hiero_0142.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1294:      "image_path": "datasets/egyptian/images/hiero_0143.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1303:      "image_path": "datasets/egyptian/images/hiero_0144.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1312:      "image_path": "datasets/egyptian/images/hiero_0145.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1321:      "image_path": "datasets/egyptian/images/hiero_0146.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1330:      "image_path": "datasets/egyptian/images/hiero_0147.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1339:      "image_path": "datasets/egyptian/images/hiero_0148.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1348:      "image_path": "datasets/egyptian/images/hiero_0149.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1357:      "image_path": "datasets/egyptian/images/hiero_0150.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1366:      "image_path": "datasets/egyptian/images/hiero_0151.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1375:      "image_path": "datasets/egyptian/images/hiero_0152.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1384:      "image_path": "datasets/egyptian/images/hiero_0153.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1393:      "image_path": "datasets/egyptian/images/hiero_0154.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1402:      "image_path": "datasets/egyptian/images/hiero_0155.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1411:      "image_path": "datasets/egyptian/images/hiero_0156.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1420:      "image_path": "datasets/egyptian/images/hiero_0157.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1429:      "image_path": "datasets/egyptian/images/hiero_0158.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1438:      "image_path": "datasets/egyptian/images/hiero_0159.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1447:      "image_path": "datasets/egyptian/images/hiero_0160.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1456:      "image_path": "datasets/egyptian/images/hiero_0161.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1465:      "image_path": "datasets/egyptian/images/hiero_0162.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1474:      "image_path": "datasets/egyptian/images/hiero_0163.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1483:      "image_path": "datasets/egyptian/images/hiero_0164.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1492:      "image_path": "datasets/egyptian/images/hiero_0165.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1501:      "image_path": "datasets/egyptian/images/hiero_0166.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1510:      "image_path": "datasets/egyptian/images/hiero_0167.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1519:      "image_path": "datasets/egyptian/images/hiero_0168.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1528:      "image_path": "datasets/egyptian/images/hiero_0169.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1537:      "image_path": "datasets/egyptian/images/hiero_0170.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1546:      "image_path": "datasets/egyptian/images/hiero_0171.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1555:      "image_path": "datasets/egyptian/images/hiero_0172.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1564:      "image_path": "datasets/egyptian/images/hiero_0173.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1573:      "image_path": "datasets/egyptian/images/hiero_0174.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1582:      "image_path": "datasets/egyptian/images/hiero_0175.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1591:      "image_path": "datasets/egyptian/images/hiero_0176.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1600:      "image_path": "datasets/egyptian/images/hiero_0177.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1609:      "image_path": "datasets/egyptian/images/hiero_0178.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1618:      "image_path": "datasets/egyptian/images/hiero_0179.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1627:      "image_path": "datasets/egyptian/images/hiero_0180.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1636:      "image_path": "datasets/egyptian/images/hiero_0181.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1645:      "image_path": "datasets/egyptian/images/hiero_0182.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1654:      "image_path": "datasets/egyptian/images/hiero_0183.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1663:      "image_path": "datasets/egyptian/images/hiero_0184.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1672:      "image_path": "datasets/egyptian/images/hiero_0185.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1681:      "image_path": "datasets/egyptian/images/hiero_0186.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1690:      "image_path": "datasets/egyptian/images/hiero_0187.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1699:      "image_path": "datasets/egyptian/images/hiero_0188.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1708:      "image_path": "datasets/egyptian/images/hiero_0189.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1717:      "image_path": "datasets/egyptian/images/hiero_0190.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1726:      "image_path": "datasets/egyptian/images/hiero_0191.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1735:      "image_path": "datasets/egyptian/images/hiero_0192.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1744:      "image_path": "datasets/egyptian/images/hiero_0193.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1753:      "image_path": "datasets/egyptian/images/hiero_0194.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1762:      "image_path": "datasets/egyptian/images/hiero_0195.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1771:      "image_path": "datasets/egyptian/images/hiero_0196.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1780:      "image_path": "datasets/egyptian/images/hiero_0197.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1789:      "image_path": "datasets/egyptian/images/hiero_0198.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1798:      "image_path": "datasets/egyptian/images/hiero_0199.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1807:      "image_path": "datasets/egyptian/images/hiero_0200.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1816:      "image_path": "datasets/egyptian/images/hiero_0201.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1825:      "image_path": "datasets/egyptian/images/hiero_0202.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1834:      "image_path": "datasets/egyptian/images/hiero_0203.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1843:      "image_path": "datasets/egyptian/images/hiero_0204.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1852:      "image_path": "datasets/egyptian/images/hiero_0205.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1861:      "image_path": "datasets/egyptian/images/hiero_0206.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1870:      "image_path": "datasets/egyptian/images/hiero_0207.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1879:      "image_path": "datasets/egyptian/images/hiero_0208.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1888:      "image_path": "datasets/egyptian/images/hiero_0209.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1897:      "image_path": "datasets/egyptian/images/hiero_0210.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1906:      "image_path": "datasets/egyptian/images/hiero_0211.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1915:      "image_path": "datasets/egyptian/images/hiero_0212.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1924:      "image_path": "datasets/egyptian/images/hiero_0213.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1933:      "image_path": "datasets/egyptian/images/hiero_0214.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1942:      "image_path": "datasets/egyptian/images/hiero_0215.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1951:      "image_path": "datasets/egyptian/images/hiero_0216.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1960:      "image_path": "datasets/egyptian/images/hiero_0217.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1969:      "image_path": "datasets/egyptian/images/hiero_0218.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1978:      "image_path": "datasets/egyptian/images/hiero_0219.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1987:      "image_path": "datasets/egyptian/images/hiero_0220.png",
+datasets/egyptian_legacy/registry/sign_registry.json:1996:      "image_path": "datasets/egyptian/images/hiero_0221.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2005:      "image_path": "datasets/egyptian/images/hiero_0222.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2014:      "image_path": "datasets/egyptian/images/hiero_0223.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2023:      "image_path": "datasets/egyptian/images/hiero_0224.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2032:      "image_path": "datasets/egyptian/images/hiero_0225.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2041:      "image_path": "datasets/egyptian/images/hiero_0226.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2050:      "image_path": "datasets/egyptian/images/hiero_0227.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2059:      "image_path": "datasets/egyptian/images/hiero_0228.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2068:      "image_path": "datasets/egyptian/images/hiero_0229.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2077:      "image_path": "datasets/egyptian/images/hiero_0230.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2086:      "image_path": "datasets/egyptian/images/hiero_0231.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2095:      "image_path": "datasets/egyptian/images/hiero_0232.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2104:      "image_path": "datasets/egyptian/images/hiero_0233.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2113:      "image_path": "datasets/egyptian/images/hiero_0234.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2122:      "image_path": "datasets/egyptian/images/hiero_0235.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2131:      "image_path": "datasets/egyptian/images/hiero_0236.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2140:      "image_path": "datasets/egyptian/images/hiero_0237.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2149:      "image_path": "datasets/egyptian/images/hiero_0238.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2158:      "image_path": "datasets/egyptian/images/hiero_0239.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2167:      "image_path": "datasets/egyptian/images/hiero_0240.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2176:      "image_path": "datasets/egyptian/images/hiero_0241.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2185:      "image_path": "datasets/egyptian/images/hiero_0242.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2194:      "image_path": "datasets/egyptian/images/hiero_0243.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2203:      "image_path": "datasets/egyptian/images/hiero_0244.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2212:      "image_path": "datasets/egyptian/images/hiero_0245.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2221:      "image_path": "datasets/egyptian/images/hiero_0246.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2230:      "image_path": "datasets/egyptian/images/hiero_0247.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2239:      "image_path": "datasets/egyptian/images/hiero_0248.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2248:      "image_path": "datasets/egyptian/images/hiero_0249.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2257:      "image_path": "datasets/egyptian/images/hiero_0250.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2266:      "image_path": "datasets/egyptian/images/hiero_0251.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2275:      "image_path": "datasets/egyptian/images/hiero_0252.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2284:      "image_path": "datasets/egyptian/images/hiero_0253.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2293:      "image_path": "datasets/egyptian/images/hiero_0254.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2302:      "image_path": "datasets/egyptian/images/hiero_0255.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2311:      "image_path": "datasets/egyptian/images/hiero_0256.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2320:      "image_path": "datasets/egyptian/images/hiero_0257.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2329:      "image_path": "datasets/egyptian/images/hiero_0258.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2338:      "image_path": "datasets/egyptian/images/hiero_0259.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2347:      "image_path": "datasets/egyptian/images/hiero_0260.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2356:      "image_path": "datasets/egyptian/images/hiero_0261.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2365:      "image_path": "datasets/egyptian/images/hiero_0262.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2374:      "image_path": "datasets/egyptian/images/hiero_0263.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2383:      "image_path": "datasets/egyptian/images/hiero_0264.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2392:      "image_path": "datasets/egyptian/images/hiero_0265.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2401:      "image_path": "datasets/egyptian/images/hiero_0266.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2410:      "image_path": "datasets/egyptian/images/hiero_0267.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2419:      "image_path": "datasets/egyptian/images/hiero_0268.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2428:      "image_path": "datasets/egyptian/images/hiero_0269.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2437:      "image_path": "datasets/egyptian/images/hiero_0270.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2446:      "image_path": "datasets/egyptian/images/hiero_0271.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2455:      "image_path": "datasets/egyptian/images/hiero_0272.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2464:      "image_path": "datasets/egyptian/images/hiero_0273.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2473:      "image_path": "datasets/egyptian/images/hiero_0274.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2482:      "image_path": "datasets/egyptian/images/hiero_0275.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2491:      "image_path": "datasets/egyptian/images/hiero_0276.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2500:      "image_path": "datasets/egyptian/images/hiero_0277.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2509:      "image_path": "datasets/egyptian/images/hiero_0278.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2518:      "image_path": "datasets/egyptian/images/hiero_0279.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2527:      "image_path": "datasets/egyptian/images/hiero_0280.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2536:      "image_path": "datasets/egyptian/images/hiero_0281.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2545:      "image_path": "datasets/egyptian/images/hiero_0282.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2554:      "image_path": "datasets/egyptian/images/hiero_0283.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2563:      "image_path": "datasets/egyptian/images/hiero_0284.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2572:      "image_path": "datasets/egyptian/images/hiero_0285.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2581:      "image_path": "datasets/egyptian/images/hiero_0286.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2590:      "image_path": "datasets/egyptian/images/hiero_0287.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2599:      "image_path": "datasets/egyptian/images/hiero_0288.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2608:      "image_path": "datasets/egyptian/images/hiero_0289.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2617:      "image_path": "datasets/egyptian/images/hiero_0290.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2626:      "image_path": "datasets/egyptian/images/hiero_0291.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2635:      "image_path": "datasets/egyptian/images/hiero_0292.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2644:      "image_path": "datasets/egyptian/images/hiero_0293.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2653:      "image_path": "datasets/egyptian/images/hiero_0294.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2662:      "image_path": "datasets/egyptian/images/hiero_0295.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2671:      "image_path": "datasets/egyptian/images/hiero_0296.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2680:      "image_path": "datasets/egyptian/images/hiero_0297.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2689:      "image_path": "datasets/egyptian/images/hiero_0298.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2698:      "image_path": "datasets/egyptian/images/hiero_0299.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2707:      "image_path": "datasets/egyptian/images/hiero_0300.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2716:      "image_path": "datasets/egyptian/images/hiero_0301.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2725:      "image_path": "datasets/egyptian/images/hiero_0302.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2734:      "image_path": "datasets/egyptian/images/hiero_0303.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2743:      "image_path": "datasets/egyptian/images/hiero_0304.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2752:      "image_path": "datasets/egyptian/images/hiero_0305.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2761:      "image_path": "datasets/egyptian/images/hiero_0306.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2770:      "image_path": "datasets/egyptian/images/hiero_0307.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2779:      "image_path": "datasets/egyptian/images/hiero_0308.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2788:      "image_path": "datasets/egyptian/images/hiero_0309.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2797:      "image_path": "datasets/egyptian/images/hiero_0310.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2806:      "image_path": "datasets/egyptian/images/hiero_0311.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2815:      "image_path": "datasets/egyptian/images/hiero_0312.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2824:      "image_path": "datasets/egyptian/images/hiero_0313.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2833:      "image_path": "datasets/egyptian/images/hiero_0314.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2842:      "image_path": "datasets/egyptian/images/hiero_0315.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2851:      "image_path": "datasets/egyptian/images/hiero_0316.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2860:      "image_path": "datasets/egyptian/images/hiero_0317.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2869:      "image_path": "datasets/egyptian/images/hiero_0318.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2878:      "image_path": "datasets/egyptian/images/hiero_0319.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2887:      "image_path": "datasets/egyptian/images/hiero_0320.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2896:      "image_path": "datasets/egyptian/images/hiero_0321.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2905:      "image_path": "datasets/egyptian/images/hiero_0322.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2914:      "image_path": "datasets/egyptian/images/hiero_0323.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2923:      "image_path": "datasets/egyptian/images/hiero_0324.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2932:      "image_path": "datasets/egyptian/images/hiero_0325.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2941:      "image_path": "datasets/egyptian/images/hiero_0326.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2950:      "image_path": "datasets/egyptian/images/hiero_0327.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2959:      "image_path": "datasets/egyptian/images/hiero_0328.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2968:      "image_path": "datasets/egyptian/images/hiero_0329.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2977:      "image_path": "datasets/egyptian/images/hiero_0330.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2986:      "image_path": "datasets/egyptian/images/hiero_0331.png",
+datasets/egyptian_legacy/registry/sign_registry.json:2995:      "image_path": "datasets/egyptian/images/hiero_0332.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3004:      "image_path": "datasets/egyptian/images/hiero_0333.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3013:      "image_path": "datasets/egyptian/images/hiero_0334.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3022:      "image_path": "datasets/egyptian/images/hiero_0335.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3031:      "image_path": "datasets/egyptian/images/hiero_0336.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3040:      "image_path": "datasets/egyptian/images/hiero_0337.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3049:      "image_path": "datasets/egyptian/images/hiero_0338.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3058:      "image_path": "datasets/egyptian/images/hiero_0339.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3067:      "image_path": "datasets/egyptian/images/hiero_0340.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3076:      "image_path": "datasets/egyptian/images/hiero_0341.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3085:      "image_path": "datasets/egyptian/images/hiero_0342.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3094:      "image_path": "datasets/egyptian/images/hiero_0343.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3103:      "image_path": "datasets/egyptian/images/hiero_0344.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3112:      "image_path": "datasets/egyptian/images/hiero_0345.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3121:      "image_path": "datasets/egyptian/images/hiero_0346.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3130:      "image_path": "datasets/egyptian/images/hiero_0347.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3139:      "image_path": "datasets/egyptian/images/hiero_0348.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3148:      "image_path": "datasets/egyptian/images/hiero_0349.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3157:      "image_path": "datasets/egyptian/images/hiero_0350.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3166:      "image_path": "datasets/egyptian/images/hiero_0351.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3175:      "image_path": "datasets/egyptian/images/hiero_0352.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3184:      "image_path": "datasets/egyptian/images/hiero_0353.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3193:      "image_path": "datasets/egyptian/images/hiero_0354.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3202:      "image_path": "datasets/egyptian/images/hiero_0355.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3211:      "image_path": "datasets/egyptian/images/hiero_0356.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3220:      "image_path": "datasets/egyptian/images/hiero_0357.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3229:      "image_path": "datasets/egyptian/images/hiero_0358.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3238:      "image_path": "datasets/egyptian/images/hiero_0359.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3247:      "image_path": "datasets/egyptian/images/hiero_0360.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3256:      "image_path": "datasets/egyptian/images/hiero_0361.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3265:      "image_path": "datasets/egyptian/images/hiero_0362.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3274:      "image_path": "datasets/egyptian/images/hiero_0363.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3283:      "image_path": "datasets/egyptian/images/hiero_0364.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3292:      "image_path": "datasets/egyptian/images/hiero_0365.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3301:      "image_path": "datasets/egyptian/images/hiero_0366.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3310:      "image_path": "datasets/egyptian/images/hiero_0367.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3319:      "image_path": "datasets/egyptian/images/hiero_0368.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3328:      "image_path": "datasets/egyptian/images/hiero_0369.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3337:      "image_path": "datasets/egyptian/images/hiero_0370.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3346:      "image_path": "datasets/egyptian/images/hiero_0371.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3355:      "image_path": "datasets/egyptian/images/hiero_0372.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3364:      "image_path": "datasets/egyptian/images/hiero_0373.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3373:      "image_path": "datasets/egyptian/images/hiero_0374.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3382:      "image_path": "datasets/egyptian/images/hiero_0375.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3391:      "image_path": "datasets/egyptian/images/hiero_0376.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3400:      "image_path": "datasets/egyptian/images/hiero_0377.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3409:      "image_path": "datasets/egyptian/images/hiero_0378.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3418:      "image_path": "datasets/egyptian/images/hiero_0379.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3427:      "image_path": "datasets/egyptian/images/hiero_0380.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3436:      "image_path": "datasets/egyptian/images/hiero_0381.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3445:      "image_path": "datasets/egyptian/images/hiero_0382.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3454:      "image_path": "datasets/egyptian/images/hiero_0383.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3463:      "image_path": "datasets/egyptian/images/hiero_0384.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3472:      "image_path": "datasets/egyptian/images/hiero_0385.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3481:      "image_path": "datasets/egyptian/images/hiero_0386.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3490:      "image_path": "datasets/egyptian/images/hiero_0387.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3499:      "image_path": "datasets/egyptian/images/hiero_0388.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3508:      "image_path": "datasets/egyptian/images/hiero_0389.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3517:      "image_path": "datasets/egyptian/images/hiero_0390.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3526:      "image_path": "datasets/egyptian/images/hiero_0391.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3535:      "image_path": "datasets/egyptian/images/hiero_0392.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3544:      "image_path": "datasets/egyptian/images/hiero_0393.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3553:      "image_path": "datasets/egyptian/images/hiero_0394.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3562:      "image_path": "datasets/egyptian/images/hiero_0395.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3571:      "image_path": "datasets/egyptian/images/hiero_0396.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3580:      "image_path": "datasets/egyptian/images/hiero_0397.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3589:      "image_path": "datasets/egyptian/images/hiero_0398.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3598:      "image_path": "datasets/egyptian/images/hiero_0399.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3607:      "image_path": "datasets/egyptian/images/hiero_0400.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3616:      "image_path": "datasets/egyptian/images/hiero_0401.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3625:      "image_path": "datasets/egyptian/images/hiero_0402.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3634:      "image_path": "datasets/egyptian/images/hiero_0403.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3643:      "image_path": "datasets/egyptian/images/hiero_0404.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3652:      "image_path": "datasets/egyptian/images/hiero_0405.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3661:      "image_path": "datasets/egyptian/images/hiero_0406.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3670:      "image_path": "datasets/egyptian/images/hiero_0407.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3679:      "image_path": "datasets/egyptian/images/hiero_0408.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3688:      "image_path": "datasets/egyptian/images/hiero_0409.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3697:      "image_path": "datasets/egyptian/images/hiero_0410.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3706:      "image_path": "datasets/egyptian/images/hiero_0411.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3715:      "image_path": "datasets/egyptian/images/hiero_0412.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3724:      "image_path": "datasets/egyptian/images/hiero_0413.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3733:      "image_path": "datasets/egyptian/images/hiero_0414.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3742:      "image_path": "datasets/egyptian/images/hiero_0415.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3751:      "image_path": "datasets/egyptian/images/hiero_0416.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3760:      "image_path": "datasets/egyptian/images/hiero_0417.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3769:      "image_path": "datasets/egyptian/images/hiero_0418.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3778:      "image_path": "datasets/egyptian/images/hiero_0419.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3787:      "image_path": "datasets/egyptian/images/hiero_0420.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3796:      "image_path": "datasets/egyptian/images/hiero_0421.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3805:      "image_path": "datasets/egyptian/images/hiero_0422.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3814:      "image_path": "datasets/egyptian/images/hiero_0423.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3823:      "image_path": "datasets/egyptian/images/hiero_0424.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3832:      "image_path": "datasets/egyptian/images/hiero_0425.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3841:      "image_path": "datasets/egyptian/images/hiero_0426.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3850:      "image_path": "datasets/egyptian/images/hiero_0427.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3859:      "image_path": "datasets/egyptian/images/hiero_0428.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3868:      "image_path": "datasets/egyptian/images/hiero_0429.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3877:      "image_path": "datasets/egyptian/images/hiero_0430.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3886:      "image_path": "datasets/egyptian/images/hiero_0431.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3895:      "image_path": "datasets/egyptian/images/hiero_0432.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3904:      "image_path": "datasets/egyptian/images/hiero_0433.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3913:      "image_path": "datasets/egyptian/images/hiero_0434.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3922:      "image_path": "datasets/egyptian/images/hiero_0435.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3931:      "image_path": "datasets/egyptian/images/hiero_0436.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3940:      "image_path": "datasets/egyptian/images/hiero_0437.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3949:      "image_path": "datasets/egyptian/images/hiero_0438.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3958:      "image_path": "datasets/egyptian/images/hiero_0439.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3967:      "image_path": "datasets/egyptian/images/hiero_0440.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3976:      "image_path": "datasets/egyptian/images/hiero_0441.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3985:      "image_path": "datasets/egyptian/images/hiero_0442.png",
+datasets/egyptian_legacy/registry/sign_registry.json:3994:      "image_path": "datasets/egyptian/images/hiero_0443.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4003:      "image_path": "datasets/egyptian/images/hiero_0444.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4012:      "image_path": "datasets/egyptian/images/hiero_0445.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4021:      "image_path": "datasets/egyptian/images/hiero_0446.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4030:      "image_path": "datasets/egyptian/images/hiero_0447.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4039:      "image_path": "datasets/egyptian/images/hiero_0448.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4048:      "image_path": "datasets/egyptian/images/hiero_0449.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4057:      "image_path": "datasets/egyptian/images/hiero_0450.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4066:      "image_path": "datasets/egyptian/images/hiero_0451.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4075:      "image_path": "datasets/egyptian/images/hiero_0452.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4084:      "image_path": "datasets/egyptian/images/hiero_0453.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4093:      "image_path": "datasets/egyptian/images/hiero_0454.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4102:      "image_path": "datasets/egyptian/images/hiero_0455.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4111:      "image_path": "datasets/egyptian/images/hiero_0456.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4120:      "image_path": "datasets/egyptian/images/hiero_0457.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4129:      "image_path": "datasets/egyptian/images/hiero_0458.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4138:      "image_path": "datasets/egyptian/images/hiero_0459.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4147:      "image_path": "datasets/egyptian/images/hiero_0460.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4156:      "image_path": "datasets/egyptian/images/hiero_0461.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4165:      "image_path": "datasets/egyptian/images/hiero_0462.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4174:      "image_path": "datasets/egyptian/images/hiero_0463.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4183:      "image_path": "datasets/egyptian/images/hiero_0464.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4192:      "image_path": "datasets/egyptian/images/hiero_0465.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4201:      "image_path": "datasets/egyptian/images/hiero_0466.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4210:      "image_path": "datasets/egyptian/images/hiero_0467.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4219:      "image_path": "datasets/egyptian/images/hiero_0468.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4228:      "image_path": "datasets/egyptian/images/hiero_0469.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4237:      "image_path": "datasets/egyptian/images/hiero_0470.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4246:      "image_path": "datasets/egyptian/images/hiero_0471.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4255:      "image_path": "datasets/egyptian/images/hiero_0472.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4264:      "image_path": "datasets/egyptian/images/hiero_0473.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4273:      "image_path": "datasets/egyptian/images/hiero_0474.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4282:      "image_path": "datasets/egyptian/images/hiero_0475.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4291:      "image_path": "datasets/egyptian/images/hiero_0476.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4300:      "image_path": "datasets/egyptian/images/hiero_0477.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4309:      "image_path": "datasets/egyptian/images/hiero_0478.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4318:      "image_path": "datasets/egyptian/images/hiero_0479.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4327:      "image_path": "datasets/egyptian/images/hiero_0480.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4336:      "image_path": "datasets/egyptian/images/hiero_0481.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4345:      "image_path": "datasets/egyptian/images/hiero_0482.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4354:      "image_path": "datasets/egyptian/images/hiero_0483.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4363:      "image_path": "datasets/egyptian/images/hiero_0484.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4372:      "image_path": "datasets/egyptian/images/hiero_0485.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4381:      "image_path": "datasets/egyptian/images/hiero_0486.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4390:      "image_path": "datasets/egyptian/images/hiero_0487.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4399:      "image_path": "datasets/egyptian/images/hiero_0488.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4408:      "image_path": "datasets/egyptian/images/hiero_0489.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4417:      "image_path": "datasets/egyptian/images/hiero_0490.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4426:      "image_path": "datasets/egyptian/images/hiero_0491.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4435:      "image_path": "datasets/egyptian/images/hiero_0492.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4444:      "image_path": "datasets/egyptian/images/hiero_0493.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4453:      "image_path": "datasets/egyptian/images/hiero_0494.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4462:      "image_path": "datasets/egyptian/images/hiero_0495.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4471:      "image_path": "datasets/egyptian/images/hiero_0496.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4480:      "image_path": "datasets/egyptian/images/hiero_0497.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4489:      "image_path": "datasets/egyptian/images/hiero_0498.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4498:      "image_path": "datasets/egyptian/images/hiero_0499.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4507:      "image_path": "datasets/egyptian/images/hiero_0500.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4516:      "image_path": "datasets/egyptian/images/hiero_0501.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4525:      "image_path": "datasets/egyptian/images/hiero_0502.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4534:      "image_path": "datasets/egyptian/images/hiero_0503.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4543:      "image_path": "datasets/egyptian/images/hiero_0504.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4552:      "image_path": "datasets/egyptian/images/hiero_0505.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4561:      "image_path": "datasets/egyptian/images/hiero_0506.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4570:      "image_path": "datasets/egyptian/images/hiero_0507.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4579:      "image_path": "datasets/egyptian/images/hiero_0508.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4588:      "image_path": "datasets/egyptian/images/hiero_0509.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4597:      "image_path": "datasets/egyptian/images/hiero_0510.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4606:      "image_path": "datasets/egyptian/images/hiero_0511.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4615:      "image_path": "datasets/egyptian/images/hiero_0512.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4624:      "image_path": "datasets/egyptian/images/hiero_0513.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4633:      "image_path": "datasets/egyptian/images/hiero_0514.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4642:      "image_path": "datasets/egyptian/images/hiero_0515.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4651:      "image_path": "datasets/egyptian/images/hiero_0516.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4660:      "image_path": "datasets/egyptian/images/hiero_0517.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4669:      "image_path": "datasets/egyptian/images/hiero_0518.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4678:      "image_path": "datasets/egyptian/images/hiero_0519.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4687:      "image_path": "datasets/egyptian/images/hiero_0520.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4696:      "image_path": "datasets/egyptian/images/hiero_0521.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4705:      "image_path": "datasets/egyptian/images/hiero_0522.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4714:      "image_path": "datasets/egyptian/images/hiero_0523.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4723:      "image_path": "datasets/egyptian/images/hiero_0524.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4732:      "image_path": "datasets/egyptian/images/hiero_0525.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4741:      "image_path": "datasets/egyptian/images/hiero_0526.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4750:      "image_path": "datasets/egyptian/images/hiero_0527.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4759:      "image_path": "datasets/egyptian/images/hiero_0528.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4768:      "image_path": "datasets/egyptian/images/hiero_0529.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4777:      "image_path": "datasets/egyptian/images/hiero_0530.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4786:      "image_path": "datasets/egyptian/images/hiero_0531.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4795:      "image_path": "datasets/egyptian/images/hiero_0532.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4804:      "image_path": "datasets/egyptian/images/hiero_0533.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4813:      "image_path": "datasets/egyptian/images/hiero_0534.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4822:      "image_path": "datasets/egyptian/images/hiero_0535.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4831:      "image_path": "datasets/egyptian/images/hiero_0536.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4840:      "image_path": "datasets/egyptian/images/hiero_0537.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4849:      "image_path": "datasets/egyptian/images/hiero_0538.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4858:      "image_path": "datasets/egyptian/images/hiero_0539.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4867:      "image_path": "datasets/egyptian/images/hiero_0540.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4876:      "image_path": "datasets/egyptian/images/hiero_0541.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4885:      "image_path": "datasets/egyptian/images/hiero_0542.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4894:      "image_path": "datasets/egyptian/images/hiero_0543.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4903:      "image_path": "datasets/egyptian/images/hiero_0544.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4912:      "image_path": "datasets/egyptian/images/hiero_0545.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4921:      "image_path": "datasets/egyptian/images/hiero_0546.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4930:      "image_path": "datasets/egyptian/images/hiero_0547.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4939:      "image_path": "datasets/egyptian/images/hiero_0548.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4948:      "image_path": "datasets/egyptian/images/hiero_0549.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4957:      "image_path": "datasets/egyptian/images/hiero_0550.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4966:      "image_path": "datasets/egyptian/images/hiero_0551.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4975:      "image_path": "datasets/egyptian/images/hiero_0552.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4984:      "image_path": "datasets/egyptian/images/hiero_0553.png",
+datasets/egyptian_legacy/registry/sign_registry.json:4993:      "image_path": "datasets/egyptian/images/hiero_0554.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5002:      "image_path": "datasets/egyptian/images/hiero_0555.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5011:      "image_path": "datasets/egyptian/images/hiero_0556.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5020:      "image_path": "datasets/egyptian/images/hiero_0557.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5029:      "image_path": "datasets/egyptian/images/hiero_0558.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5038:      "image_path": "datasets/egyptian/images/hiero_0559.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5047:      "image_path": "datasets/egyptian/images/hiero_0560.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5056:      "image_path": "datasets/egyptian/images/hiero_0561.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5065:      "image_path": "datasets/egyptian/images/hiero_0562.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5074:      "image_path": "datasets/egyptian/images/hiero_0563.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5083:      "image_path": "datasets/egyptian/images/hiero_0564.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5092:      "image_path": "datasets/egyptian/images/hiero_0565.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5101:      "image_path": "datasets/egyptian/images/hiero_0566.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5110:      "image_path": "datasets/egyptian/images/hiero_0567.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5119:      "image_path": "datasets/egyptian/images/hiero_0568.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5128:      "image_path": "datasets/egyptian/images/hiero_0569.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5137:      "image_path": "datasets/egyptian/images/hiero_0570.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5146:      "image_path": "datasets/egyptian/images/hiero_0571.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5155:      "image_path": "datasets/egyptian/images/hiero_0572.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5164:      "image_path": "datasets/egyptian/images/hiero_0573.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5173:      "image_path": "datasets/egyptian/images/hiero_0574.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5182:      "image_path": "datasets/egyptian/images/hiero_0575.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5191:      "image_path": "datasets/egyptian/images/hiero_0576.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5200:      "image_path": "datasets/egyptian/images/hiero_0577.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5209:      "image_path": "datasets/egyptian/images/hiero_0578.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5218:      "image_path": "datasets/egyptian/images/hiero_0579.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5227:      "image_path": "datasets/egyptian/images/hiero_0580.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5236:      "image_path": "datasets/egyptian/images/hiero_0581.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5245:      "image_path": "datasets/egyptian/images/hiero_0582.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5254:      "image_path": "datasets/egyptian/images/hiero_0583.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5263:      "image_path": "datasets/egyptian/images/hiero_0584.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5272:      "image_path": "datasets/egyptian/images/hiero_0585.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5281:      "image_path": "datasets/egyptian/images/hiero_0586.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5290:      "image_path": "datasets/egyptian/images/hiero_0587.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5299:      "image_path": "datasets/egyptian/images/hiero_0588.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5308:      "image_path": "datasets/egyptian/images/hiero_0589.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5317:      "image_path": "datasets/egyptian/images/hiero_0590.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5326:      "image_path": "datasets/egyptian/images/hiero_0591.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5335:      "image_path": "datasets/egyptian/images/hiero_0592.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5344:      "image_path": "datasets/egyptian/images/hiero_0593.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5353:      "image_path": "datasets/egyptian/images/hiero_0594.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5362:      "image_path": "datasets/egyptian/images/hiero_0595.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5371:      "image_path": "datasets/egyptian/images/hiero_0596.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5380:      "image_path": "datasets/egyptian/images/hiero_0597.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5389:      "image_path": "datasets/egyptian/images/hiero_0598.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5398:      "image_path": "datasets/egyptian/images/hiero_0599.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5407:      "image_path": "datasets/egyptian/images/hiero_0600.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5416:      "image_path": "datasets/egyptian/images/hiero_0601.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5425:      "image_path": "datasets/egyptian/images/hiero_0602.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5434:      "image_path": "datasets/egyptian/images/hiero_0603.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5443:      "image_path": "datasets/egyptian/images/hiero_0604.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5452:      "image_path": "datasets/egyptian/images/hiero_0605.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5461:      "image_path": "datasets/egyptian/images/hiero_0606.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5470:      "image_path": "datasets/egyptian/images/hiero_0607.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5479:      "image_path": "datasets/egyptian/images/hiero_0608.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5488:      "image_path": "datasets/egyptian/images/hiero_0609.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5497:      "image_path": "datasets/egyptian/images/hiero_0610.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5506:      "image_path": "datasets/egyptian/images/hiero_0611.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5515:      "image_path": "datasets/egyptian/images/hiero_0612.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5524:      "image_path": "datasets/egyptian/images/hiero_0613.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5533:      "image_path": "datasets/egyptian/images/hiero_0614.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5542:      "image_path": "datasets/egyptian/images/hiero_0615.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5551:      "image_path": "datasets/egyptian/images/hiero_0616.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5560:      "image_path": "datasets/egyptian/images/hiero_0617.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5569:      "image_path": "datasets/egyptian/images/hiero_0618.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5578:      "image_path": "datasets/egyptian/images/hiero_0619.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5587:      "image_path": "datasets/egyptian/images/hiero_0620.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5596:      "image_path": "datasets/egyptian/images/hiero_0621.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5605:      "image_path": "datasets/egyptian/images/hiero_0622.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5614:      "image_path": "datasets/egyptian/images/hiero_0623.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5623:      "image_path": "datasets/egyptian/images/hiero_0624.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5632:      "image_path": "datasets/egyptian/images/hiero_0625.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5641:      "image_path": "datasets/egyptian/images/hiero_0626.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5650:      "image_path": "datasets/egyptian/images/hiero_0627.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5659:      "image_path": "datasets/egyptian/images/hiero_0628.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5668:      "image_path": "datasets/egyptian/images/hiero_0629.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5677:      "image_path": "datasets/egyptian/images/hiero_0630.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5686:      "image_path": "datasets/egyptian/images/hiero_0631.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5695:      "image_path": "datasets/egyptian/images/hiero_0632.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5704:      "image_path": "datasets/egyptian/images/hiero_0633.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5713:      "image_path": "datasets/egyptian/images/hiero_0634.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5722:      "image_path": "datasets/egyptian/images/hiero_0635.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5731:      "image_path": "datasets/egyptian/images/hiero_0636.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5740:      "image_path": "datasets/egyptian/images/hiero_0637.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5749:      "image_path": "datasets/egyptian/images/hiero_0638.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5758:      "image_path": "datasets/egyptian/images/hiero_0639.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5767:      "image_path": "datasets/egyptian/images/hiero_0640.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5776:      "image_path": "datasets/egyptian/images/hiero_0641.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5785:      "image_path": "datasets/egyptian/images/hiero_0642.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5794:      "image_path": "datasets/egyptian/images/hiero_0643.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5803:      "image_path": "datasets/egyptian/images/hiero_0644.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5812:      "image_path": "datasets/egyptian/images/hiero_0645.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5821:      "image_path": "datasets/egyptian/images/hiero_0646.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5830:      "image_path": "datasets/egyptian/images/hiero_0647.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5839:      "image_path": "datasets/egyptian/images/hiero_0648.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5848:      "image_path": "datasets/egyptian/images/hiero_0649.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5857:      "image_path": "datasets/egyptian/images/hiero_0650.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5866:      "image_path": "datasets/egyptian/images/hiero_0651.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5875:      "image_path": "datasets/egyptian/images/hiero_0652.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5884:      "image_path": "datasets/egyptian/images/hiero_0653.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5893:      "image_path": "datasets/egyptian/images/hiero_0654.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5902:      "image_path": "datasets/egyptian/images/hiero_0655.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5911:      "image_path": "datasets/egyptian/images/hiero_0656.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5920:      "image_path": "datasets/egyptian/images/hiero_0657.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5929:      "image_path": "datasets/egyptian/images/hiero_0658.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5938:      "image_path": "datasets/egyptian/images/hiero_0659.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5947:      "image_path": "datasets/egyptian/images/hiero_0660.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5956:      "image_path": "datasets/egyptian/images/hiero_0661.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5965:      "image_path": "datasets/egyptian/images/hiero_0662.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5974:      "image_path": "datasets/egyptian/images/hiero_0663.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5983:      "image_path": "datasets/egyptian/images/hiero_0664.png",
+datasets/egyptian_legacy/registry/sign_registry.json:5992:      "image_path": "datasets/egyptian/images/hiero_0665.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6001:      "image_path": "datasets/egyptian/images/hiero_0666.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6010:      "image_path": "datasets/egyptian/images/hiero_0667.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6019:      "image_path": "datasets/egyptian/images/hiero_0668.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6028:      "image_path": "datasets/egyptian/images/hiero_0669.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6037:      "image_path": "datasets/egyptian/images/hiero_0670.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6046:      "image_path": "datasets/egyptian/images/hiero_0671.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6055:      "image_path": "datasets/egyptian/images/hiero_0672.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6064:      "image_path": "datasets/egyptian/images/hiero_0673.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6073:      "image_path": "datasets/egyptian/images/hiero_0674.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6082:      "image_path": "datasets/egyptian/images/hiero_0675.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6091:      "image_path": "datasets/egyptian/images/hiero_0676.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6100:      "image_path": "datasets/egyptian/images/hiero_0677.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6109:      "image_path": "datasets/egyptian/images/hiero_0678.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6118:      "image_path": "datasets/egyptian/images/hiero_0679.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6127:      "image_path": "datasets/egyptian/images/hiero_0680.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6136:      "image_path": "datasets/egyptian/images/hiero_0681.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6145:      "image_path": "datasets/egyptian/images/hiero_0682.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6154:      "image_path": "datasets/egyptian/images/hiero_0683.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6163:      "image_path": "datasets/egyptian/images/hiero_0684.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6172:      "image_path": "datasets/egyptian/images/hiero_0685.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6181:      "image_path": "datasets/egyptian/images/hiero_0686.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6190:      "image_path": "datasets/egyptian/images/hiero_0687.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6199:      "image_path": "datasets/egyptian/images/hiero_0688.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6208:      "image_path": "datasets/egyptian/images/hiero_0689.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6217:      "image_path": "datasets/egyptian/images/hiero_0690.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6226:      "image_path": "datasets/egyptian/images/hiero_0691.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6235:      "image_path": "datasets/egyptian/images/hiero_0692.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6244:      "image_path": "datasets/egyptian/images/hiero_0693.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6253:      "image_path": "datasets/egyptian/images/hiero_0694.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6262:      "image_path": "datasets/egyptian/images/hiero_0695.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6271:      "image_path": "datasets/egyptian/images/hiero_0696.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6280:      "image_path": "datasets/egyptian/images/hiero_0697.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6289:      "image_path": "datasets/egyptian/images/hiero_0698.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6298:      "image_path": "datasets/egyptian/images/hiero_0699.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6307:      "image_path": "datasets/egyptian/images/hiero_0700.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6316:      "image_path": "datasets/egyptian/images/hiero_0701.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6325:      "image_path": "datasets/egyptian/images/hiero_0702.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6334:      "image_path": "datasets/egyptian/images/hiero_0703.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6343:      "image_path": "datasets/egyptian/images/hiero_0704.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6352:      "image_path": "datasets/egyptian/images/hiero_0705.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6361:      "image_path": "datasets/egyptian/images/hiero_0706.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6370:      "image_path": "datasets/egyptian/images/hiero_0707.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6379:      "image_path": "datasets/egyptian/images/hiero_0708.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6388:      "image_path": "datasets/egyptian/images/hiero_0709.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6397:      "image_path": "datasets/egyptian/images/hiero_0710.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6406:      "image_path": "datasets/egyptian/images/hiero_0711.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6415:      "image_path": "datasets/egyptian/images/hiero_0712.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6424:      "image_path": "datasets/egyptian/images/hiero_0713.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6433:      "image_path": "datasets/egyptian/images/hiero_0714.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6442:      "image_path": "datasets/egyptian/images/hiero_0715.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6451:      "image_path": "datasets/egyptian/images/hiero_0716.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6460:      "image_path": "datasets/egyptian/images/hiero_0717.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6469:      "image_path": "datasets/egyptian/images/hiero_0718.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6478:      "image_path": "datasets/egyptian/images/hiero_0719.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6487:      "image_path": "datasets/egyptian/images/hiero_0720.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6496:      "image_path": "datasets/egyptian/images/hiero_0721.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6505:      "image_path": "datasets/egyptian/images/hiero_0722.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6514:      "image_path": "datasets/egyptian/images/hiero_0723.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6523:      "image_path": "datasets/egyptian/images/hiero_0724.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6532:      "image_path": "datasets/egyptian/images/hiero_0725.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6541:      "image_path": "datasets/egyptian/images/hiero_0726.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6550:      "image_path": "datasets/egyptian/images/hiero_0727.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6559:      "image_path": "datasets/egyptian/images/hiero_0728.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6568:      "image_path": "datasets/egyptian/images/hiero_0729.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6577:      "image_path": "datasets/egyptian/images/hiero_0730.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6586:      "image_path": "datasets/egyptian/images/hiero_0731.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6595:      "image_path": "datasets/egyptian/images/hiero_0732.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6604:      "image_path": "datasets/egyptian/images/hiero_0733.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6613:      "image_path": "datasets/egyptian/images/hiero_0734.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6622:      "image_path": "datasets/egyptian/images/hiero_0735.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6631:      "image_path": "datasets/egyptian/images/hiero_0736.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6640:      "image_path": "datasets/egyptian/images/hiero_0737.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6649:      "image_path": "datasets/egyptian/images/hiero_0738.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6658:      "image_path": "datasets/egyptian/images/hiero_0739.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6667:      "image_path": "datasets/egyptian/images/hiero_0740.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6676:      "image_path": "datasets/egyptian/images/hiero_0741.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6685:      "image_path": "datasets/egyptian/images/hiero_0742.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6694:      "image_path": "datasets/egyptian/images/hiero_0743.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6703:      "image_path": "datasets/egyptian/images/hiero_0744.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6712:      "image_path": "datasets/egyptian/images/hiero_0745.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6721:      "image_path": "datasets/egyptian/images/hiero_0746.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6730:      "image_path": "datasets/egyptian/images/hiero_0747.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6739:      "image_path": "datasets/egyptian/images/hiero_0748.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6748:      "image_path": "datasets/egyptian/images/hiero_0749.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6757:      "image_path": "datasets/egyptian/images/hiero_0750.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6766:      "image_path": "datasets/egyptian/images/hiero_0751.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6775:      "image_path": "datasets/egyptian/images/hiero_0752.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6784:      "image_path": "datasets/egyptian/images/hiero_0753.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6793:      "image_path": "datasets/egyptian/images/hiero_0754.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6802:      "image_path": "datasets/egyptian/images/hiero_0755.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6811:      "image_path": "datasets/egyptian/images/hiero_0756.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6820:      "image_path": "datasets/egyptian/images/hiero_0757.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6829:      "image_path": "datasets/egyptian/images/hiero_0758.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6838:      "image_path": "datasets/egyptian/images/hiero_0759.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6847:      "image_path": "datasets/egyptian/images/hiero_0760.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6856:      "image_path": "datasets/egyptian/images/hiero_0761.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6865:      "image_path": "datasets/egyptian/images/hiero_0762.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6874:      "image_path": "datasets/egyptian/images/hiero_0763.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6883:      "image_path": "datasets/egyptian/images/hiero_0764.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6892:      "image_path": "datasets/egyptian/images/hiero_0765.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6901:      "image_path": "datasets/egyptian/images/hiero_0766.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6910:      "image_path": "datasets/egyptian/images/hiero_0767.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6919:      "image_path": "datasets/egyptian/images/hiero_0768.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6928:      "image_path": "datasets/egyptian/images/hiero_0769.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6937:      "image_path": "datasets/egyptian/images/hiero_0770.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6946:      "image_path": "datasets/egyptian/images/hiero_0771.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6955:      "image_path": "datasets/egyptian/images/hiero_0772.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6964:      "image_path": "datasets/egyptian/images/hiero_0773.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6973:      "image_path": "datasets/egyptian/images/hiero_0774.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6982:      "image_path": "datasets/egyptian/images/hiero_0775.png",
+datasets/egyptian_legacy/registry/sign_registry.json:6991:      "image_path": "datasets/egyptian/images/hiero_0776.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7000:      "image_path": "datasets/egyptian/images/hiero_0777.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7009:      "image_path": "datasets/egyptian/images/hiero_0778.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7018:      "image_path": "datasets/egyptian/images/hiero_0779.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7027:      "image_path": "datasets/egyptian/images/hiero_0780.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7036:      "image_path": "datasets/egyptian/images/hiero_0781.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7045:      "image_path": "datasets/egyptian/images/hiero_0782.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7054:      "image_path": "datasets/egyptian/images/hiero_0783.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7063:      "image_path": "datasets/egyptian/images/hiero_0784.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7072:      "image_path": "datasets/egyptian/images/hiero_0785.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7081:      "image_path": "datasets/egyptian/images/hiero_0786.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7090:      "image_path": "datasets/egyptian/images/hiero_0787.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7099:      "image_path": "datasets/egyptian/images/hiero_0788.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7108:      "image_path": "datasets/egyptian/images/hiero_0789.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7117:      "image_path": "datasets/egyptian/images/hiero_0790.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7126:      "image_path": "datasets/egyptian/images/hiero_0791.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7135:      "image_path": "datasets/egyptian/images/hiero_0792.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7144:      "image_path": "datasets/egyptian/images/hiero_0793.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7153:      "image_path": "datasets/egyptian/images/hiero_0794.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7162:      "image_path": "datasets/egyptian/images/hiero_0795.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7171:      "image_path": "datasets/egyptian/images/hiero_0796.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7180:      "image_path": "datasets/egyptian/images/hiero_0797.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7189:      "image_path": "datasets/egyptian/images/hiero_0798.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7198:      "image_path": "datasets/egyptian/images/hiero_0799.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7207:      "image_path": "datasets/egyptian/images/hiero_0800.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7216:      "image_path": "datasets/egyptian/images/hiero_0801.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7225:      "image_path": "datasets/egyptian/images/hiero_0802.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7234:      "image_path": "datasets/egyptian/images/hiero_0803.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7243:      "image_path": "datasets/egyptian/images/hiero_0804.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7252:      "image_path": "datasets/egyptian/images/hiero_0805.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7261:      "image_path": "datasets/egyptian/images/hiero_0806.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7270:      "image_path": "datasets/egyptian/images/hiero_0807.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7279:      "image_path": "datasets/egyptian/images/hiero_0808.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7288:      "image_path": "datasets/egyptian/images/hiero_0809.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7297:      "image_path": "datasets/egyptian/images/hiero_0810.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7306:      "image_path": "datasets/egyptian/images/hiero_0811.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7315:      "image_path": "datasets/egyptian/images/hiero_0812.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7324:      "image_path": "datasets/egyptian/images/hiero_0813.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7333:      "image_path": "datasets/egyptian/images/hiero_0814.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7342:      "image_path": "datasets/egyptian/images/hiero_0815.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7351:      "image_path": "datasets/egyptian/images/hiero_0816.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7360:      "image_path": "datasets/egyptian/images/hiero_0817.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7369:      "image_path": "datasets/egyptian/images/hiero_0818.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7378:      "image_path": "datasets/egyptian/images/hiero_0819.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7387:      "image_path": "datasets/egyptian/images/hiero_0820.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7396:      "image_path": "datasets/egyptian/images/hiero_0821.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7405:      "image_path": "datasets/egyptian/images/hiero_0822.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7414:      "image_path": "datasets/egyptian/images/hiero_0823.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7423:      "image_path": "datasets/egyptian/images/hiero_0824.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7432:      "image_path": "datasets/egyptian/images/hiero_0825.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7441:      "image_path": "datasets/egyptian/images/hiero_0826.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7450:      "image_path": "datasets/egyptian/images/hiero_0827.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7459:      "image_path": "datasets/egyptian/images/hiero_0828.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7468:      "image_path": "datasets/egyptian/images/hiero_0829.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7477:      "image_path": "datasets/egyptian/images/hiero_0830.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7486:      "image_path": "datasets/egyptian/images/hiero_0831.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7495:      "image_path": "datasets/egyptian/images/hiero_0832.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7504:      "image_path": "datasets/egyptian/images/hiero_0833.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7513:      "image_path": "datasets/egyptian/images/hiero_0834.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7522:      "image_path": "datasets/egyptian/images/hiero_0835.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7531:      "image_path": "datasets/egyptian/images/hiero_0836.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7540:      "image_path": "datasets/egyptian/images/hiero_0837.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7549:      "image_path": "datasets/egyptian/images/hiero_0838.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7558:      "image_path": "datasets/egyptian/images/hiero_0839.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7567:      "image_path": "datasets/egyptian/images/hiero_0840.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7576:      "image_path": "datasets/egyptian/images/hiero_0841.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7585:      "image_path": "datasets/egyptian/images/hiero_0842.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7594:      "image_path": "datasets/egyptian/images/hiero_0843.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7603:      "image_path": "datasets/egyptian/images/hiero_0844.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7612:      "image_path": "datasets/egyptian/images/hiero_0845.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7621:      "image_path": "datasets/egyptian/images/hiero_0846.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7630:      "image_path": "datasets/egyptian/images/hiero_0847.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7639:      "image_path": "datasets/egyptian/images/hiero_0848.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7648:      "image_path": "datasets/egyptian/images/hiero_0849.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7657:      "image_path": "datasets/egyptian/images/hiero_0850.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7666:      "image_path": "datasets/egyptian/images/hiero_0851.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7675:      "image_path": "datasets/egyptian/images/hiero_0852.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7684:      "image_path": "datasets/egyptian/images/hiero_0853.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7693:      "image_path": "datasets/egyptian/images/hiero_0854.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7702:      "image_path": "datasets/egyptian/images/hiero_0855.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7711:      "image_path": "datasets/egyptian/images/hiero_0856.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7720:      "image_path": "datasets/egyptian/images/hiero_0857.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7729:      "image_path": "datasets/egyptian/images/hiero_0858.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7738:      "image_path": "datasets/egyptian/images/hiero_0859.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7747:      "image_path": "datasets/egyptian/images/hiero_0860.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7756:      "image_path": "datasets/egyptian/images/hiero_0861.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7765:      "image_path": "datasets/egyptian/images/hiero_0862.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7774:      "image_path": "datasets/egyptian/images/hiero_0863.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7783:      "image_path": "datasets/egyptian/images/hiero_0864.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7792:      "image_path": "datasets/egyptian/images/hiero_0865.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7801:      "image_path": "datasets/egyptian/images/hiero_0866.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7810:      "image_path": "datasets/egyptian/images/hiero_0867.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7819:      "image_path": "datasets/egyptian/images/hiero_0868.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7828:      "image_path": "datasets/egyptian/images/hiero_0869.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7837:      "image_path": "datasets/egyptian/images/hiero_0870.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7846:      "image_path": "datasets/egyptian/images/hiero_0871.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7855:      "image_path": "datasets/egyptian/images/hiero_0872.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7864:      "image_path": "datasets/egyptian/images/hiero_0873.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7873:      "image_path": "datasets/egyptian/images/hiero_0874.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7882:      "image_path": "datasets/egyptian/images/hiero_0875.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7891:      "image_path": "datasets/egyptian/images/hiero_0876.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7900:      "image_path": "datasets/egyptian/images/hiero_0877.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7909:      "image_path": "datasets/egyptian/images/hiero_0878.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7918:      "image_path": "datasets/egyptian/images/hiero_0879.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7927:      "image_path": "datasets/egyptian/images/hiero_0880.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7936:      "image_path": "datasets/egyptian/images/hiero_0881.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7945:      "image_path": "datasets/egyptian/images/hiero_0882.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7954:      "image_path": "datasets/egyptian/images/hiero_0883.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7963:      "image_path": "datasets/egyptian/images/hiero_0884.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7972:      "image_path": "datasets/egyptian/images/hiero_0885.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7981:      "image_path": "datasets/egyptian/images/hiero_0886.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7990:      "image_path": "datasets/egyptian/images/hiero_0887.png",
+datasets/egyptian_legacy/registry/sign_registry.json:7999:      "image_path": "datasets/egyptian/images/hiero_0888.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8008:      "image_path": "datasets/egyptian/images/hiero_0889.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8017:      "image_path": "datasets/egyptian/images/hiero_0890.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8026:      "image_path": "datasets/egyptian/images/hiero_0891.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8035:      "image_path": "datasets/egyptian/images/hiero_0892.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8044:      "image_path": "datasets/egyptian/images/hiero_0893.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8053:      "image_path": "datasets/egyptian/images/hiero_0894.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8062:      "image_path": "datasets/egyptian/images/hiero_0895.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8071:      "image_path": "datasets/egyptian/images/hiero_0896.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8080:      "image_path": "datasets/egyptian/images/hiero_0897.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8089:      "image_path": "datasets/egyptian/images/hiero_0898.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8098:      "image_path": "datasets/egyptian/images/hiero_0899.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8107:      "image_path": "datasets/egyptian/images/hiero_0900.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8116:      "image_path": "datasets/egyptian/images/hiero_0901.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8125:      "image_path": "datasets/egyptian/images/hiero_0902.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8134:      "image_path": "datasets/egyptian/images/hiero_0903.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8143:      "image_path": "datasets/egyptian/images/hiero_0904.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8152:      "image_path": "datasets/egyptian/images/hiero_0905.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8161:      "image_path": "datasets/egyptian/images/hiero_0906.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8170:      "image_path": "datasets/egyptian/images/hiero_0907.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8179:      "image_path": "datasets/egyptian/images/hiero_0908.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8188:      "image_path": "datasets/egyptian/images/hiero_0909.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8197:      "image_path": "datasets/egyptian/images/hiero_0910.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8206:      "image_path": "datasets/egyptian/images/hiero_0911.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8215:      "image_path": "datasets/egyptian/images/hiero_0912.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8224:      "image_path": "datasets/egyptian/images/hiero_0913.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8233:      "image_path": "datasets/egyptian/images/hiero_0914.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8242:      "image_path": "datasets/egyptian/images/hiero_0915.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8251:      "image_path": "datasets/egyptian/images/hiero_0916.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8260:      "image_path": "datasets/egyptian/images/hiero_0917.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8269:      "image_path": "datasets/egyptian/images/hiero_0918.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8278:      "image_path": "datasets/egyptian/images/hiero_0919.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8287:      "image_path": "datasets/egyptian/images/hiero_0920.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8296:      "image_path": "datasets/egyptian/images/hiero_0921.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8305:      "image_path": "datasets/egyptian/images/hiero_0922.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8314:      "image_path": "datasets/egyptian/images/hiero_0923.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8323:      "image_path": "datasets/egyptian/images/hiero_0924.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8332:      "image_path": "datasets/egyptian/images/hiero_0925.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8341:      "image_path": "datasets/egyptian/images/hiero_0926.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8350:      "image_path": "datasets/egyptian/images/hiero_0927.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8359:      "image_path": "datasets/egyptian/images/hiero_0928.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8368:      "image_path": "datasets/egyptian/images/hiero_0929.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8377:      "image_path": "datasets/egyptian/images/hiero_0930.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8386:      "image_path": "datasets/egyptian/images/hiero_0931.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8395:      "image_path": "datasets/egyptian/images/hiero_0932.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8404:      "image_path": "datasets/egyptian/images/hiero_0933.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8413:      "image_path": "datasets/egyptian/images/hiero_0934.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8422:      "image_path": "datasets/egyptian/images/hiero_0935.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8431:      "image_path": "datasets/egyptian/images/hiero_0936.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8440:      "image_path": "datasets/egyptian/images/hiero_0937.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8449:      "image_path": "datasets/egyptian/images/hiero_0938.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8458:      "image_path": "datasets/egyptian/images/hiero_0939.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8467:      "image_path": "datasets/egyptian/images/hiero_0940.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8476:      "image_path": "datasets/egyptian/images/hiero_0941.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8485:      "image_path": "datasets/egyptian/images/hiero_0942.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8494:      "image_path": "datasets/egyptian/images/hiero_0943.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8503:      "image_path": "datasets/egyptian/images/hiero_0944.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8512:      "image_path": "datasets/egyptian/images/hiero_0945.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8521:      "image_path": "datasets/egyptian/images/hiero_0946.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8530:      "image_path": "datasets/egyptian/images/hiero_0947.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8539:      "image_path": "datasets/egyptian/images/hiero_0948.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8548:      "image_path": "datasets/egyptian/images/hiero_0949.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8557:      "image_path": "datasets/egyptian/images/hiero_0950.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8566:      "image_path": "datasets/egyptian/images/hiero_0951.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8575:      "image_path": "datasets/egyptian/images/hiero_0952.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8584:      "image_path": "datasets/egyptian/images/hiero_0953.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8593:      "image_path": "datasets/egyptian/images/hiero_0954.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8602:      "image_path": "datasets/egyptian/images/hiero_0955.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8611:      "image_path": "datasets/egyptian/images/hiero_0956.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8620:      "image_path": "datasets/egyptian/images/hiero_0957.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8629:      "image_path": "datasets/egyptian/images/hiero_0958.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8638:      "image_path": "datasets/egyptian/images/hiero_0959.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8647:      "image_path": "datasets/egyptian/images/hiero_0960.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8656:      "image_path": "datasets/egyptian/images/hiero_0961.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8665:      "image_path": "datasets/egyptian/images/hiero_0962.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8674:      "image_path": "datasets/egyptian/images/hiero_0963.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8683:      "image_path": "datasets/egyptian/images/hiero_0964.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8692:      "image_path": "datasets/egyptian/images/hiero_0965.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8701:      "image_path": "datasets/egyptian/images/hiero_0966.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8710:      "image_path": "datasets/egyptian/images/hiero_0967.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8719:      "image_path": "datasets/egyptian/images/hiero_0968.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8728:      "image_path": "datasets/egyptian/images/hiero_0969.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8737:      "image_path": "datasets/egyptian/images/hiero_0970.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8746:      "image_path": "datasets/egyptian/images/hiero_0971.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8755:      "image_path": "datasets/egyptian/images/hiero_0972.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8764:      "image_path": "datasets/egyptian/images/hiero_0973.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8773:      "image_path": "datasets/egyptian/images/hiero_0974.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8782:      "image_path": "datasets/egyptian/images/hiero_0975.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8791:      "image_path": "datasets/egyptian/images/hiero_0976.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8800:      "image_path": "datasets/egyptian/images/hiero_0977.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8809:      "image_path": "datasets/egyptian/images/hiero_0978.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8818:      "image_path": "datasets/egyptian/images/hiero_0979.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8827:      "image_path": "datasets/egyptian/images/hiero_0980.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8836:      "image_path": "datasets/egyptian/images/hiero_0981.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8845:      "image_path": "datasets/egyptian/images/hiero_0982.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8854:      "image_path": "datasets/egyptian/images/hiero_0983.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8863:      "image_path": "datasets/egyptian/images/hiero_0984.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8872:      "image_path": "datasets/egyptian/images/hiero_0985.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8881:      "image_path": "datasets/egyptian/images/hiero_0986.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8890:      "image_path": "datasets/egyptian/images/hiero_0987.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8899:      "image_path": "datasets/egyptian/images/hiero_0988.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8908:      "image_path": "datasets/egyptian/images/hiero_0989.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8917:      "image_path": "datasets/egyptian/images/hiero_0990.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8926:      "image_path": "datasets/egyptian/images/hiero_0991.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8935:      "image_path": "datasets/egyptian/images/hiero_0992.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8944:      "image_path": "datasets/egyptian/images/hiero_0993.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8953:      "image_path": "datasets/egyptian/images/hiero_0994.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8962:      "image_path": "datasets/egyptian/images/hiero_0995.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8971:      "image_path": "datasets/egyptian/images/hiero_0996.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8980:      "image_path": "datasets/egyptian/images/hiero_0997.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8989:      "image_path": "datasets/egyptian/images/hiero_0998.png",
+datasets/egyptian_legacy/registry/sign_registry.json:8998:      "image_path": "datasets/egyptian/images/hiero_0999.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9007:      "image_path": "datasets/egyptian/images/hiero_1000.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9016:      "image_path": "datasets/egyptian/images/hiero_1001.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9025:      "image_path": "datasets/egyptian/images/hiero_1002.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9034:      "image_path": "datasets/egyptian/images/hiero_1003.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9043:      "image_path": "datasets/egyptian/images/hiero_1004.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9052:      "image_path": "datasets/egyptian/images/hiero_1005.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9061:      "image_path": "datasets/egyptian/images/hiero_1006.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9070:      "image_path": "datasets/egyptian/images/hiero_1007.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9079:      "image_path": "datasets/egyptian/images/hiero_1008.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9088:      "image_path": "datasets/egyptian/images/hiero_1009.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9097:      "image_path": "datasets/egyptian/images/hiero_1010.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9106:      "image_path": "datasets/egyptian/images/hiero_1011.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9115:      "image_path": "datasets/egyptian/images/hiero_1012.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9124:      "image_path": "datasets/egyptian/images/hiero_1013.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9133:      "image_path": "datasets/egyptian/images/hiero_1014.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9142:      "image_path": "datasets/egyptian/images/hiero_1015.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9151:      "image_path": "datasets/egyptian/images/hiero_1016.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9160:      "image_path": "datasets/egyptian/images/hiero_1017.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9169:      "image_path": "datasets/egyptian/images/hiero_1018.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9178:      "image_path": "datasets/egyptian/images/hiero_1019.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9187:      "image_path": "datasets/egyptian/images/hiero_1020.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9196:      "image_path": "datasets/egyptian/images/hiero_1021.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9205:      "image_path": "datasets/egyptian/images/hiero_1022.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9214:      "image_path": "datasets/egyptian/images/hiero_1023.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9223:      "image_path": "datasets/egyptian/images/hiero_1024.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9232:      "image_path": "datasets/egyptian/images/hiero_1025.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9241:      "image_path": "datasets/egyptian/images/hiero_1026.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9250:      "image_path": "datasets/egyptian/images/hiero_1027.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9259:      "image_path": "datasets/egyptian/images/hiero_1028.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9268:      "image_path": "datasets/egyptian/images/hiero_1029.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9277:      "image_path": "datasets/egyptian/images/hiero_1030.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9286:      "image_path": "datasets/egyptian/images/hiero_1031.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9295:      "image_path": "datasets/egyptian/images/hiero_1032.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9304:      "image_path": "datasets/egyptian/images/hiero_1033.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9313:      "image_path": "datasets/egyptian/images/hiero_1034.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9322:      "image_path": "datasets/egyptian/images/hiero_1035.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9331:      "image_path": "datasets/egyptian/images/hiero_1036.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9340:      "image_path": "datasets/egyptian/images/hiero_1037.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9349:      "image_path": "datasets/egyptian/images/hiero_1038.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9358:      "image_path": "datasets/egyptian/images/hiero_1039.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9367:      "image_path": "datasets/egyptian/images/hiero_1040.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9376:      "image_path": "datasets/egyptian/images/hiero_1041.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9385:      "image_path": "datasets/egyptian/images/hiero_1042.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9394:      "image_path": "datasets/egyptian/images/hiero_1043.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9403:      "image_path": "datasets/egyptian/images/hiero_1044.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9412:      "image_path": "datasets/egyptian/images/hiero_1045.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9421:      "image_path": "datasets/egyptian/images/hiero_1046.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9430:      "image_path": "datasets/egyptian/images/hiero_1047.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9439:      "image_path": "datasets/egyptian/images/hiero_1048.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9448:      "image_path": "datasets/egyptian/images/hiero_1049.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9457:      "image_path": "datasets/egyptian/images/hiero_1050.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9466:      "image_path": "datasets/egyptian/images/hiero_1051.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9475:      "image_path": "datasets/egyptian/images/hiero_1052.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9484:      "image_path": "datasets/egyptian/images/hiero_1053.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9493:      "image_path": "datasets/egyptian/images/hiero_1054.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9502:      "image_path": "datasets/egyptian/images/hiero_1055.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9511:      "image_path": "datasets/egyptian/images/hiero_1056.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9520:      "image_path": "datasets/egyptian/images/hiero_1057.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9529:      "image_path": "datasets/egyptian/images/hiero_1058.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9538:      "image_path": "datasets/egyptian/images/hiero_1059.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9547:      "image_path": "datasets/egyptian/images/hiero_1060.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9556:      "image_path": "datasets/egyptian/images/hiero_1061.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9565:      "image_path": "datasets/egyptian/images/hiero_1062.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9574:      "image_path": "datasets/egyptian/images/hiero_1063.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9583:      "image_path": "datasets/egyptian/images/hiero_1064.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9592:      "image_path": "datasets/egyptian/images/hiero_1065.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9601:      "image_path": "datasets/egyptian/images/hiero_1066.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9610:      "image_path": "datasets/egyptian/images/hiero_1067.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9619:      "image_path": "datasets/egyptian/images/hiero_1068.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9628:      "image_path": "datasets/egyptian/images/hiero_1069.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9637:      "image_path": "datasets/egyptian/images/hiero_1070.png",
+datasets/egyptian_legacy/registry/sign_registry.json:9646:      "image_path": "datasets/egyptian/images/hiero_1071.png",
+datasets/egyptian_legacy/sources/acquisition_log.md:10:- datasets/egyptian/raw/mdc_corpus.txt
+datasets/egyptian_legacy/sources/acquisition_log.md:11:- datasets/egyptian/corpus/egyptian_corpus_sequence.json
+Documentation_Consolidation_Audit_v1.0.md:81:- M10_PIPELINE_VALIDATION_REPORT.md
+Documentation_Consolidation_Audit_v1.0.md:82:- M10_FINAL_VALIDATION_CERTIFICATE.md
+
+=== STALE SCIENTIFIC CLAIMS OUTSIDE AUDIT HISTORY ===
+./main.py:7:It does not decipher, translate, or assign meaning.
+./ROADMAP.md:249:AncientScriptLab aims to become a universal scientific platform for the objective analysis and possible decipherment of any writing system.
+./RESEARCH_RULES.md:197:The objective is not to produce attractive similarity scores, but to build an explainable, reproducible and scientifically validated mathematical foundation for the objective analysis and possible decipherment of unknown writing systems.\n\n---\n## Обязательная диагностика системности
+./docs/SESSION_HANDOVER.md:85:* perform automatic decipherment;
+./docs/PROJECT_PHILOSOPHY.md:127:AncientScriptLab does not attempt to decipher ancient writing systems.
+./README.md:3:> A scientific research platform for the objective analysis, comparison and decipherment of ancient and unknown writing systems.
+./README.md:9:AncientScriptLab is an open scientific platform designed to assist researchers in the study of ancient, undeciphered and poorly understood writing systems.
+./README.md:43:The long-term goal of AncientScriptLab is to build a reproducible and explainable computational framework capable of assisting in the decipherment of unknown writing systems.
+./README.md:69:- assists researchers in constructing decipherment hypotheses.
+./README.md:155:The final goal is not automatic translation, but scientifically justified decipherment supported by objective computational evidence.
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:5:tools/architecture_integration_validation_v8_8.py:195:    print('STAGES 4–6 STATUS: FULLY VALIDATED')
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:6:tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:7:tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:19:tools/generate_m10_final_certificate.py:40:        "The complete structural analysis pipeline has been validated as an integrated system.",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:21:tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:22:tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:27:tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:29:tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:30:tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:59:./tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:60:./tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:61:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:62:./tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:74:./tools/architecture_integration_validation_v8_8.py:195:    print('STAGES 4–6 STATUS: FULLY VALIDATED')
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:75:./tools/archetype_layer_validation_v8_7.py:192:    print('ARCHETYPE LAYER STATUS: VALIDATED')
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:76:./tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:77:./tools/generate_m10_final_certificate.py:40:        "The complete structural analysis pipeline has been validated as an integrated system.",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:78:./tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:79:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:80:./tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:81:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json:5:  "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:82:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json:30:    "The complete structural analysis pipeline has been validated as an integrated system.",
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:83:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.md:1:# M10 final validation certificate\n\n## AncientScriptLab Research Edition\n\n**Structural Archetype Engine v1.0**\n\n### Status\n\n**FOUNDATION VALIDATED**\n\n### Validation summary\n\n- Pipeline status: PASS\n- Count consistency: True\n- Hierarchy consistency: True\n- Egyptian corpus: 1072 signs\n- Macro archetypes: 3\n- Meso archetypes: 10\n- Micro archetypes: 27\n- Best validated K: 3\n\n### Certified modules\n\n- M10.1A Structural Primitive Extraction\n- M10.1B Structural Primitive Informativeness\n- M10.1C Spatial Distribution Analysis\n- M10.1D Component Relation Analysis\n- M10.1E Primitive Graph Extraction\n- M10.1F Primitive Graph Audit\n- M10.1G Graph Signature Clustering\n- M10.1H Automatic Archetype Number Estimation\n- M10.1I Multilayer Archetype Stability Validation\n- M10.1J Hierarchical Archetype Extraction\n\n### Scientific conclusion\n\nThe Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\n\n### Next stage\n\n**M11 — Sequence Structure Analysis**\n
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:84:./reports/audit/tools_validation_regression_20260814_195342.txt:42:ARCHETYPE LAYER STATUS: VALIDATED
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:85:./reports/audit/tools_validation_regression_20260814_195342.txt:64:STAGES 4–6 STATUS: FULLY VALIDATED
+./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:86:./reports/audit/tools_validation_regression_20260814_195342.txt:194:Status               : FOUNDATION VALIDATED
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:17:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:5:tools/architecture_integration_validation_v8_8.py:195:    print('STAGES 4–6 STATUS: FULLY VALIDATED')
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:18:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:6:tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:19:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:7:tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:31:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:19:tools/generate_m10_final_certificate.py:40:        "The complete structural analysis pipeline has been validated as an integrated system.",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:33:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:21:tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:34:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:22:tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:39:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:27:tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:41:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:29:tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:42:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:30:tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:52:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:59:./tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:53:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:60:./tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:54:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:61:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:55:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:62:./tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:59:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:74:./tools/architecture_integration_validation_v8_8.py:195:    print('STAGES 4–6 STATUS: FULLY VALIDATED')
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:60:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:75:./tools/archetype_layer_validation_v8_7.py:192:    print('ARCHETYPE LAYER STATUS: VALIDATED')
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:61:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:76:./tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:62:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:77:./tools/generate_m10_final_certificate.py:40:        "The complete structural analysis pipeline has been validated as an integrated system.",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:63:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:78:./tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:64:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:79:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:65:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:80:./tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:66:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:81:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json:5:  "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:67:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:82:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json:30:    "The complete structural analysis pipeline has been validated as an integrated system.",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:68:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:83:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.md:1:# M10 final validation certificate\n\n## AncientScriptLab Research Edition\n\n**Structural Archetype Engine v1.0**\n\n### Status\n\n**FOUNDATION VALIDATED**\n\n### Validation summary\n\n- Pipeline status: PASS\n- Count consistency: True\n- Hierarchy consistency: True\n- Egyptian corpus: 1072 signs\n- Macro archetypes: 3\n- Meso archetypes: 10\n- Micro archetypes: 27\n- Best validated K: 3\n\n### Certified modules\n\n- M10.1A Structural Primitive Extraction\n- M10.1B Structural Primitive Informativeness\n- M10.1C Spatial Distribution Analysis\n- M10.1D Component Relation Analysis\n- M10.1E Primitive Graph Extraction\n- M10.1F Primitive Graph Audit\n- M10.1G Graph Signature Clustering\n- M10.1H Automatic Archetype Number Estimation\n- M10.1I Multilayer Archetype Stability Validation\n- M10.1J Hierarchical Archetype Extraction\n\n### Scientific conclusion\n\nThe Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\n\n### Next stage\n\n**M11 — Sequence Structure Analysis**\n
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:139:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:6:tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:140:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:7:tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:151:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:21:tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:152:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:22:tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:154:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:27:tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:155:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:29:tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:156:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:30:tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:157:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:59:./tools/generate_m10_final_certificate.py:14:    "engine": "Structural Archetype Engine v1.0",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:158:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:60:./tools/generate_m10_final_certificate.py:53:    f.write("**Structural Archetype Engine v1.0**\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:159:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:61:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:160:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:62:./tools/generate_m10_final_certificate.py:76:print("Structural engine    : Structural Archetype Engine v1.0")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:161:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:76:./tools/generate_m10_final_certificate.py:15:    "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:162:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:78:./tools/generate_m10_final_certificate.py:55:    f.write("**FOUNDATION VALIDATED**\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:163:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:79:./tools/generate_m10_final_certificate.py:69:    f.write("The Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\\n\\n")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:164:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:80:./tools/generate_m10_final_certificate.py:75:print("Status               : FOUNDATION VALIDATED")
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:165:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:81:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.json:5:  "status": "FOUNDATION VALIDATED",
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:166:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:83:./reports/certificates/M10_FINAL_VALIDATION_CERTIFICATE.md:1:# M10 final validation certificate\n\n## AncientScriptLab Research Edition\n\n**Structural Archetype Engine v1.0**\n\n### Status\n\n**FOUNDATION VALIDATED**\n\n### Validation summary\n\n- Pipeline status: PASS\n- Count consistency: True\n- Hierarchy consistency: True\n- Egyptian corpus: 1072 signs\n- Macro archetypes: 3\n- Meso archetypes: 10\n- Micro archetypes: 27\n- Best validated K: 3\n\n### Certified modules\n\n- M10.1A Structural Primitive Extraction\n- M10.1B Structural Primitive Informativeness\n- M10.1C Spatial Distribution Analysis\n- M10.1D Component Relation Analysis\n- M10.1E Primitive Graph Extraction\n- M10.1F Primitive Graph Audit\n- M10.1G Graph Signature Clustering\n- M10.1H Automatic Archetype Number Estimation\n- M10.1I Multilayer Archetype Stability Validation\n- M10.1J Hierarchical Archetype Extraction\n\n### Scientific conclusion\n\nThe Structural Archetype Engine v1.0 has successfully passed integrated validation and is certified as the foundational structural analysis subsystem of AncientScriptLab.\n\n### Next stage\n\n**M11 — Sequence Structure Analysis**\n
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:167:./reports/audit/stale_scientific_claims_audit_20260815_091909.txt:86:./reports/audit/tools_validation_regression_20260814_195342.txt:194:Status               : FOUNDATION VALIDATED
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:178:./reports/audit/tools_validation_regression_20260814_195342.txt:194:Status               : FOUNDATION VALIDATED
+./reports/audit/stale_validation_artifacts_sweep_20260815_100330.txt:179:./reports/audit/tools_validation_regression_20260814_195342.txt:195:Structural engine    : Structural Archetype Engine v1.0
+./reports/audit/tools_validation_regression_20260814_195342.txt:42:ARCHETYPE LAYER STATUS: VALIDATED
+./reports/audit/tools_validation_regression_20260814_195342.txt:64:STAGES 4–6 STATUS: FULLY VALIDATED
+./reports/audit/tools_validation_regression_20260814_195342.txt:194:Status               : FOUNDATION VALIDATED
+./reports/audit/tools_validation_regression_20260814_195342.txt:195:Structural engine    : Structural Archetype Engine v1.0
+
+=== DOCUMENTATION LEGACY TERMS ===
+README.md:3:> A scientific research platform for the objective analysis, comparison and decipherment of ancient and unknown writing systems.
+README.md:9:AncientScriptLab is an open scientific platform designed to assist researchers in the study of ancient, undeciphered and poorly understood writing systems.
+README.md:43:The long-term goal of AncientScriptLab is to build a reproducible and explainable computational framework capable of assisting in the decipherment of unknown writing systems.
+README.md:69:- assists researchers in constructing decipherment hypotheses.
+README.md:155:The final goal is not automatic translation, but scientifically justified decipherment supported by objective computational evidence.
+DEVELOPMENT_PRINCIPLES.md:95:# AP-07 — automatic archetype discovery principle
+DEVELOPMENT_PRINCIPLES.md:103:AncientScriptLab **must never assume a fixed number of structural archetypes** for any writing system.
+DEVELOPMENT_PRINCIPLES.md:105:The number of archetypes is treated as a **measurable property of a corpus**, not as a system parameter.
+DEVELOPMENT_PRINCIPLES.md:109:1. automatically estimate the possible number of structural archetypes;
+DEVELOPMENT_PRINCIPLES.md:113:5. build a hierarchical archetype spectrum.
+DEVELOPMENT_PRINCIPLES.md:121:- one writing system may contain 3 fundamental archetypes;
+DEVELOPMENT_PRINCIPLES.md:127:Therefore the system must **discover archetypes rather than impose them**.
+DEVELOPMENT_PRINCIPLES.md:140:An archetype is considered validated only if it remains stable under:
+DEVELOPMENT_PRINCIPLES.md:149:The system stores not a single value of K, but a **hierarchical spectrum of archetypes**.
+DEVELOPMENT_PRINCIPLES.md:153:- macro-archetypes;
+DEVELOPMENT_PRINCIPLES.md:154:- meso-archetypes;
+DEVELOPMENT_PRINCIPLES.md:155:- micro-archetypes.
+DEVELOPMENT_PRINCIPLES.md:161:All AncientScriptLab modules must be designed to operate with a **dynamically determined number of archetypes**.
+DEVELOPMENT_PRINCIPLES.md:165:An archetype is **the result of analysis**, not an input parameter.
+RESEARCH_RULES.md:123:Min-Max Scaling
+RESEARCH_RULES.md:197:The objective is not to produce attractive similarity scores, but to build an explainable, reproducible and scientifically validated mathematical foundation for the objective analysis and possible decipherment of unknown writing systems.\n\n---\n## Обязательная диагностика системности
+BACKLOG.md:144:- Proto-Egyptian
+PROJECT_CONSTITUTION.md:58:### Egyptian Reference Corpus
+PROJECT_CONSTITUTION.md:64:Indus.
+PROJECT_CONSTITUTION.md:65:Rongorongo.
+Documentation_Consolidation_Audit_v1.0.md:81:- M10_PIPELINE_VALIDATION_REPORT.md
+Documentation_Consolidation_Audit_v1.0.md:82:- M10_FINAL_VALIDATION_CERTIFICATE.md
+Documentation_Consolidation_Audit_v1.0.md:154:- archetype_* reports;
+docs/SCIENTIFIC_WORKFLOW.md:173:- Indus
+docs/SCIENTIFIC_WORKFLOW.md:174:- Rongorongo
+docs/SESSION_HANDOVER.md:85:* perform automatic decipherment;
+docs/FEATURE_TAXONOMY.md:30:- Indus Script
+docs/FEATURE_TAXONOMY.md:31:- Rongorongo
+docs/FEATURE_TAXONOMY.md:40:chronology, writing system and semantic interpretation.
+docs/FEATURE_TAXONOMY.md:48:P2. Features never contain semantic interpretation.
+docs/PROJECT_PHILOSOPHY.md:127:AncientScriptLab does not attempt to decipher ancient writing systems.
+
+=== PYTHON SYNTAX ===
+compileall rc=0
+
+=== STRICT TOOLS REGRESSION ===
+AncientScriptLab — Tools Regression
+===================================
+tools/__init__.py: PASS rc=0
+tools/analyze_corpus_frequency.py: CLI_REQUIRES_ARGS rc=1
+tools/analyze_corpus_structure.py: CLI_REQUIRES_ARGS rc=1
+tools/archetype_layer_diagnostic_v8_7.py: PASS rc=0
+tools/architecture_integration_diagnostic_v8_8.py: PASS rc=0
+tools/build_corpus_frequency_profile.py: CLI_REQUIRES_ARGS rc=1
+tools/build_topology_reference_corpus_v2.py: PASS rc=0
+tools/build_validation_synthetic_corpus.py: PASS rc=0
+tools/category_fingerprint_analysis_v8_6.py: PASS rc=0
+tools/certify_reference_corpus_v2.py: PASS rc=0
+tools/corpus_validation_m7.py: PASS rc=0
+tools/generate_reference_dataset.py: PASS rc=0
+tools/glyph_structural_signature_v8_1.py: PASS rc=0
+tools/glyph_structural_signature_v8_2.py: PASS rc=0
+tools/gss_archetype_validation_v8_4.py: PASS rc=0
+tools/gss_correlation_analysis_v8_3.py: PASS rc=0
+tools/gss_feature_separation_v8_5.py: PASS rc=0
+tools/hierarchical_architecture_model_v8_11.py: PASS rc=0
+tools/hierarchical_architecture_model_v8_12.py: PASS rc=0
+tools/import_indus_corpus.py: PASS rc=0
+tools/master_validation_report_v8_9R.py: PASS rc=0
+tools/master_validation_report_v8_9S.py: PASS rc=0
+tools/master_validation_v8_9.py: PASS rc=0
+tools/metrology_v6_scale_sensitivity.py: PASS rc=0
+tools/metrology_v6b_binary_scale_sensitivity.py: PASS rc=0
+tools/normalization_validation_protocol.py: PASS rc=0
+tools/rotational_symmetry_analyzer_v6r.py: PASS rc=0
+tools/run_normalization_validation.py: PASS rc=0
+tools/scientific_validation_m7.py: PASS rc=0
+tools/statistical_architecture_baseline_v8_10A.py: PASS rc=0
+tools/statistical_architecture_baseline_v8_10B.py: PASS rc=0
+tools/test_all_normalization_methods.py: PASS rc=0
+tools/test_center_normalization.py: PASS rc=0
+tools/test_component_area_ratio.py: PASS rc=0
+tools/test_component_area_ratio_pipeline.py: PASS rc=0
+tools/test_component_density.py: PASS rc=0
+tools/test_component_density_pipeline.py: PASS rc=0
+tools/test_distance_matrix.py: PASS rc=0
+tools/test_euler_characteristic.py: PASS rc=0
+tools/test_euler_characteristic_pipeline.py: PASS rc=0
+tools/test_experiment_framework.py: PASS rc=0
+tools/test_experiment_registry.py: PASS rc=0
+tools/test_feature_contribution.py: PASS rc=0
+tools/test_feature_statistics.py: PASS rc=0
+tools/test_foreground_density.py: PASS rc=0
+tools/test_foreground_density_pipeline.py: PASS rc=0
+tools/test_hole_count.py: PASS rc=0
+tools/test_hole_count_pipeline.py: PASS rc=0
+tools/test_largest_component_area.py: PASS rc=0
+tools/test_largest_component_area_pipeline.py: PASS rc=0
+tools/test_mean_component_area.py: PASS rc=0
+tools/test_mean_component_area_pipeline.py: PASS rc=0
+tools/test_min_max_normalization.py: PASS rc=0
+tools/test_normalization_experiment.py: PASS rc=0
+tools/test_normalization_registry.py: PASS rc=0
+tools/test_normalization_validation.py: PASS rc=0
+tools/test_similarity.py: PASS rc=0
+tools/test_smallest_component_area.py: PASS rc=0
+tools/test_smallest_component_area_pipeline.py: PASS rc=0
+tools/test_topology_pipeline.py: PASS rc=0
+tools/test_total_foreground_area.py: PASS rc=0
+tools/test_total_foreground_area_pipeline.py: PASS rc=0
+tools/test_validation_protocol.py: PASS rc=0
+tools/test_validation_report.py: PASS rc=0
+tools/update_validation_metadata.py: PASS rc=0
+tools/validate_corpus_sequence.py: PASS rc=0
+tools/validate_geometry_pack.py: PASS rc=0
+tools/validate_normalization_methods.py: PASS rc=0
+tools/validate_registry.py: PASS rc=0
+tools/validation_report.py: PASS rc=0
+tools/validation_suite_m72b.py: PASS rc=0
+tools/validation_v2_area.py: PASS rc=0
+tools/validation_v3_density.py: PASS rc=0
+tools/validation_v4a_safe_translation.py: PASS rc=0
+tools/validation_v5_rotation.py: PASS rc=0
+tools/validation_v5b_reflection.py: PASS rc=0
+tools/validation_v6a_diagnostic.py: PASS rc=0
+tools/validation_v6a_resolution.py: PASS rc=0
+tools/validation_v6c_extended.py: PASS rc=0
+tools/validation_v6c_resolution_profile.py: PASS rc=0
+tools/validation_v7a_noise_profile.py: PASS rc=0
+tools/validation_v7b_monte_carlo.py: PASS rc=0
+
+=== SUMMARY ===
+PASS=79
+CLI_REQUIRES_ARGS=3
+FAIL=0
+PRINTED_FAILURE=0
+tools runner rc=0
+
+=== CORE TESTS ===
+TEST SUMMARY: PASS=15 FAIL=0
+
+=== MAIN ===
+AncientScriptLab — Core Measurement Baseline
+===========================================
+Connected components : 1.0
+Holes                : 0.0
+Euler characteristic : 1.0
+Foreground area      : 9.0
+Foreground density   : 0.1836734693877551
+Aspect ratio         : 1.0
+main rc=0
