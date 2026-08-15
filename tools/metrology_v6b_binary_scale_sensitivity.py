@@ -17,10 +17,10 @@ def topo(img):
         int(ec(ctx)),
     )
 
-print("M7.2B V6B Binary Scale Robustness")
-print("=================================")
+print("M7.2B V6B Binary Scale Sensitivity Metrology")
+print("=========================================")
 
-passed = 0
+preserved = 0
 total = 0
 
 for path in sorted(IMAGE_DIR.glob("*.png")):
@@ -61,12 +61,12 @@ for path in sorted(IMAGE_DIR.glob("*.png")):
     total += 1
 
     if ok:
-        passed += 1
-        status = "PASS"
+        preserved += 1
+        status = "PRESERVED"
     else:
-        status = "FAIL"
+        status = "CHANGED"
 
     print(f"{path.stem:20} {status}")
 
 print()
-print(f"V6B Binary Scale validation: {passed}/{total} PASS")
+print(f"V6B Binary scale sensitivity summary: {preserved}/{total} topology-preserving")

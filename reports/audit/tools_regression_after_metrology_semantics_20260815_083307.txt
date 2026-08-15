@@ -1,0 +1,35 @@
+AncientScriptLab — Tools Regression After Metrology Semantics Repair
+Generated: Sat Aug 15 08:33:07 UTC 2026
+
+=== SYNTAX ===
+compileall rc=0
+
+=== TOOLS ===
+FILE: tools/analyze_corpus_frequency.py
+RESULT: FAIL rc=1
+Usage: python tools/analyze_corpus_frequency.py <corpus_sequence.json> <corpus_name>
+FILE: tools/analyze_corpus_structure.py
+RESULT: FAIL rc=1
+Usage: python tools/analyze_corpus_structure.py <corpus_sequence.json> <corpus_name>
+FILE: tools/build_corpus_frequency_profile.py
+RESULT: FAIL rc=1
+Usage: python tools/build_corpus_frequency_profile.py <csv_path> <corpus_name>
+
+=== SUMMARY ===
+PASS=80
+FAIL=3
+PRINTED_FAILURE_RC0=0
+
+=== TESTS ===
+TEST SUMMARY: PASS=15 FAIL=0
+
+=== MAIN ===
+AncientScriptLab — Core Measurement Baseline
+===========================================
+Connected components : 1.0
+Holes                : 0.0
+Euler characteristic : 1.0
+Foreground area      : 9.0
+Foreground density   : 0.1836734693877551
+Aspect ratio         : 1.0
+main.py rc=0
